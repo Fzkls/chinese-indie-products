@@ -36,24 +36,6 @@ jobs:
         with:
           name: chinese-indie-products-dist
           path: dist
-      - name: Publish gh-pages backup branch
-        if: github.event_name != 'pull_request'
-        run: |
-          SITE_DIR="$(mktemp -d)"
-          cp -R dist/. "${SITE_DIR}/"
-          touch "${SITE_DIR}/.nojekyll"
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git clean -fdx
-          git fetch origin gh-pages
-          git switch --force-create gh-pages origin/gh-pages
-          git rm -rf . >/dev/null 2>&1 || true
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -R "${SITE_DIR}/." .
-          git add --all
-          git commit -m "deploy: publish ${GITHUB_SHA}" || true
-          git push --force origin gh-pages
       - name: Cancel stale Pages deployments
         if: github.event_name != 'pull_request'
         continue-on-error: true
@@ -78,6 +60,24 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: dist
+      - name: Publish gh-pages backup branch
+        if: github.event_name != 'pull_request'
+        run: |
+          SITE_DIR="$(mktemp -d)"
+          cp -R dist/. "${SITE_DIR}/"
+          touch "${SITE_DIR}/.nojekyll"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git clean -fdx
+          git fetch origin gh-pages
+          git switch --force-create gh-pages origin/gh-pages
+          git rm -rf . >/dev/null 2>&1 || true
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "${SITE_DIR}/." .
+          git add --all
+          git commit -m "deploy: publish ${GITHUB_SHA}" || true
+          git push --force origin gh-pages
 
   deploy:
     if: github.event_name != 'pull_request'
