@@ -1,0 +1,184 @@
+{
+  "generatedAt": "2026-08-06T12:35:57.534Z",
+  "recordCount": 2771,
+  "developerCount": 1641,
+  "cityCount": 82,
+  "missing": {
+    "date": 3,
+    "city": 1642,
+    "productUrl": 7,
+    "githubUrl": 688,
+    "description": 0
+  },
+  "statusCounts": {
+    "active": 2319,
+    "developing": 34,
+    "closed": 415,
+    "unknown": 3
+  },
+  "categoryCounts": {
+    "product": 1867,
+    "developer-tool": 289,
+    "game": 116,
+    "archive": 499
+  },
+  "warningCount": 23,
+  "warnings": [
+    {
+      "code": "missing-developer",
+      "sourceFile": "README.md",
+      "sourceLine": 5,
+      "rawText": "- [程序员版面](./pages/README-Programmer-Edition.md)：使用需要命令行或写代码"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "README.md",
+      "sourceLine": 4615,
+      "rawText": "* :white_check_mark: [找到每个任务的最佳 AI 工具](https://toollist.ai)：找到最好的 AI 工具"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "README.md",
+      "sourceLine": 4635,
+      "rawText": "* :white_check_mark: [AI Anime Generator](https://aianimegen.org)：免费的 AI 动漫图片生成器"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "README.md",
+      "sourceLine": 4858,
+      "rawText": "* :white_check_mark: [m3u8下载器](https://github.com/youwen21/flybird-m3u8downloader)：下载 m3u8 视频、直播、批量检测 IPTV m3u8 有效性，release有安装包。 支持 Windows, macOS 系统。"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "README.md",
+      "sourceLine": 5764,
+      "rawText": "* :white_check_mark: [减肥小助手](https://apps.apple.com/cn/app/id1583776291)：减肥期间的小工具，帮助记录体重和卡路里 - [更多介绍](https://ohee.cn/static/download/index.html)"
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "9c966406d9fc3d",
+      "duplicateId": "0180e14862ea03",
+      "sourceFile": "README.md",
+      "sourceLine": 1280
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "7f3513ab650db5",
+      "duplicateId": "e4c6cbe6609b55",
+      "sourceFile": "README.md",
+      "sourceLine": 1286
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "b9bd38be135273",
+      "duplicateId": "15d6c596c7aed7",
+      "sourceFile": "README.md",
+      "sourceLine": 1805
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "c05579dd089d27",
+      "duplicateId": "e5c9b889fb4485",
+      "sourceFile": "README.md",
+      "sourceLine": 1895
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "da10d0ff2c72ca",
+      "duplicateId": "da10d0ff2c72ca",
+      "sourceFile": "README.md",
+      "sourceLine": 2073
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "890d463dd034e3",
+      "duplicateId": "272fbb19eb043b",
+      "sourceFile": "README.md",
+      "sourceLine": 2553
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "b06b8a0db64ef5",
+      "duplicateId": "8a9c2c343834ad",
+      "sourceFile": "README.md",
+      "sourceLine": 3674
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "eba4e9a1983cb1",
+      "duplicateId": "cbe7e8f8be1f42",
+      "sourceFile": "README.md",
+      "sourceLine": 5863
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Programmer-Edition.md",
+      "sourceLine": 579,
+      "rawText": "* :white_check_mark: [Awesome-Iwb](https://github.com/Awesome-Iwb/Awesome-Iwb/)：一体机和电子白板实用软件合集"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Programmer-Edition.md",
+      "sourceLine": 724,
+      "rawText": "* :white_check_mark: [专注私有部署的智能简历解析系统](https://github.com/changwu/cvparser)：基于自然语言处理和机器学习的高精准度简历解析系统，生产环境中海量简历解析检验，稳健性和智能性得到一致肯定。一次购买、永久许可。市面上唯一可以私有云部署（本地部署）一键安装试用的智能简历解析系统，数据安全完全掌握在自己手里。"
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "7f3e3fda0ac311",
+      "duplicateId": "1cfa8d27c59078",
+      "sourceFile": "pages/README-Programmer-Edition.md",
+      "sourceLine": 390
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Game.md",
+      "sourceLine": 179,
+      "rawText": "* :white_check_mark: [PokePath-TD](https://play-pokepath-td.online/)：PokePath-TD一款海外爆火的宝可梦塔防游戏，在9 条不同的路线上抵御一波又一波的敌人，失败了也可以累积资源和升级宝可梦成员。"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Game.md",
+      "sourceLine": 182,
+      "rawText": "* :white_check_mark: [Riddle School](https://riddle-school.online/)：Riddle School 是一款以校园为背景的解谜冒险游戏，采用简单直观的点击操作方式，适合各类玩家上手。游戏通过一系列环环相扣的谜题，引导玩家不断思考不同道具和场景之间的关系。解谜过程清晰，让人能够专注于推理本身。"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Game.md",
+      "sourceLine": 193,
+      "rawText": "* :white_check_mark: [Duck Duck Clicker](https://duckduckclicker.space/)：如果你喜欢轻松的点击游戏，你应该试试Duck Duck Clicker。你只需轻点一只可爱的大鸭子，就可以建立自己的鸭子帝国——超级上瘾，而且有趣得令人惊讶。"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-Game.md",
+      "sourceLine": 196,
+      "rawText": "* :white_check_mark: [No Means Nothing Calculator](https://nomeansnothing.com)：Stream No Means Nothing 游戏工具网站"
+    },
+    {
+      "code": "duplicate-record",
+      "keptId": "ae1f0c74d0e4dd",
+      "duplicateId": "f36d9db292b518",
+      "sourceFile": "pages/README-Game.md",
+      "sourceLine": 139
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-2018-2020.md",
+      "sourceLine": 82,
+      "rawText": "* :white_check_mark: [名校讲座](http://qiniu.gaotenglife.com/gh_ce3241405e01_860.jpg): 收集发布北京上海等地名校的公开讲座，让更多的人聆听名校的声音 - [更多介绍](https://www.gaotenglife.com/?p=539)"
+    },
+    {
+      "code": "missing-developer",
+      "sourceFile": "pages/README-2018-2020.md",
+      "sourceLine": 137,
+      "rawText": "* :x: [MPAA 电影分级插件](https://old-panda.com/projects/mpaa-rating-extension-project/)：在豆瓣电影、腾讯视频页面显示该片的 MPAA 分级 - [更多介绍](https://creatorsdaily.com/posts/f3510a80-6c40-494d-9404-a158c283c140)"
+    }
+  ],
+  "upstreamRepository": "1c7/chinese-independent-developer",
+  "snapshotMode": "full-upstream",
+  "sourceFiles": [
+    "README.md",
+    "pages/README-Programmer-Edition.md",
+    "pages/README-Game.md",
+    "pages/README-2018-2020.md"
+  ]
+}

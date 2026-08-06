@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="中国独立开发者产品数据库：可搜索、可筛选、可视化的开源产品目录。" />
+    <title>中国独立开发者产品数据库</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar wrap" aria-label="主导航">
+        <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">独</span><span>IndieBase CN</span></a>
+        <div class="top-links">
+          <a href="#explore">发现产品</a>
+          <a href="#methodology">数据说明</a>
+          <a href="https://github.com/1c7/chinese-independent-developer" target="_blank" rel="noreferrer">上游仓库 ↗</a>
+        </div>
+      </nav>
+      <div class="wrap hero-grid" id="top">
+        <section>
+          <p class="eyebrow">OPEN DATA · INDEPENDENT PRODUCTS</p>
+          <h1>看见中国独立开发者<br />正在创造什么</h1>
+          <p class="hero-copy">将社区维护的 Markdown 清单转成结构化数据库，支持搜索、组合筛选、趋势分析和数据质量追溯。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#explore">浏览产品</a>
+            <button class="button secondary" id="download-data" type="button">下载当前 JSON</button>
+          </div>
+          <p class="snapshot-note" id="snapshot-note">正在读取数据快照…</p>
+        </section>
+        <aside class="hero-visual" aria-label="数据概览装饰图">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="visual-core"><span>DATASET</span><strong id="hero-total">—</strong><small>PRODUCT RECORDS</small></div>
+          <div class="float-tag tag-a">产品</div><div class="float-tag tag-b">工具</div><div class="float-tag tag-c">游戏</div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap metrics" aria-label="核心数据指标">
+        <article class="metric"><span>产品记录</span><strong id="metric-products">—</strong><small>去重后的可查询条目</small></article>
+        <article class="metric"><span>独立开发者</span><strong id="metric-developers">—</strong><small>按公开名称去重</small></article>
+        <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确填写地区</small></article>
+        <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>状态为已上线或开发中</small></article>
+      </section>
+
+      <section class="wrap dashboard" aria-labelledby="dashboard-title">
+        <div class="section-heading"><div><p class="eyebrow">ECOSYSTEM OVERVIEW</p><h2 id="dashboard-title">生态概览</h2></div><p>所有图表都会跟随下方筛选条件联动。</p></div>
+        <div class="chart-grid">
+          <article class="chart-panel wide">
+            <div class="panel-heading"><div><h3>收录趋势</h3><p>按项目添加年份统计</p></div><span class="chart-total" id="trend-total">— 条</span></div>
+            <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
+          </article>
+          <article class="chart-panel">
+            <div class="panel-heading"><div><h3>产品类型</h3><p>主产品、程序员工具与游戏</p></div></div>
+            <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条记录</span></div></div><div class="legend" id="category-legend"></div></div>
+          </article>
+          <article class="chart-panel">
+            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8</p></div></div>
+            <div class="bar-list" id="city-chart"></div>
+          </article>
+          <article class="chart-panel">
+            <div class="panel-heading"><div><h3>运行状态</h3><p>基于仓库中的状态标记</p></div></div>
+            <div class="status-grid" id="status-chart"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="explorer" id="explore"><div class="wrap">
+        <div class="section-heading explorer-heading"><div><p class="eyebrow">PRODUCT EXPLORER</p><h2>发现产品</h2></div><p id="result-summary" aria-live="polite">正在加载…</p></div>
+        <div class="filter-panel">
+          <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="产品、开发者、描述、城市…" autocomplete="off" /></label>
+          <label><span>类型</span><select id="category-filter"><option value="">全部类型</option></select></label>
+          <label><span>状态</span><select id="status-filter"><option value="">全部状态</option></select></label>
+          <label><span>年份</span><select id="year-filter"><option value="">全部年份</option></select></label>
+          <label><span>城市</span><select id="city-filter"><option value="">全部城市</option></select></label>
+          <button class="reset-button" id="reset-filters" type="button">清空筛选</button>
+        </div>
+        <div class="active-filters" id="active-filters" aria-live="polite"></div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="empty-state" hidden><strong>没有找到匹配项目</strong><p>尝试减少筛选条件或换一个关键词。</p></div>
+        <div class="load-more-wrap"><button class="button secondary" id="load-more" type="button">加载更多</button></div>
+      </div></section>
+
+      <section class="wrap methodology" id="methodology">
+        <div><p class="eyebrow">METHODOLOGY</p><h2>数据如何生成</h2></div>
+        <ol class="pipeline">
+          <li><span>01</span><div><strong>同步上游</strong><p>读取主列表、程序员版、游戏版和历史归档。</p></div></li>
+          <li><span>02</span><div><strong>结构化解析</strong><p>识别日期、开发者、城市、产品、状态、链接与描述。</p></div></li>
+          <li><span>03</span><div><strong>校验去重</strong><p>保留来源行号，报告缺失字段、重复项和解析异常。</p></div></li>
+          <li><span>04</span><div><strong>可视化发布</strong><p>生成无需后端即可部署的静态数据产品。</p></div></li>
+        </ol>
+        <div class="caveat"><strong>边界说明</strong><p>该数据库反映 GitHub 仓库主动收录的样本，不等同于中国独立开发者总体规模。项目状态和链接可能随时间变化，分析时应保留来源与快照日期。</p></div>
+      </section>
+    </main>
+    <footer><div class="wrap footer-inner"><p>IndieBase CN · 数据来源于 1c7/chinese-independent-developer</p><p id="generated-at">数据生成时间：—</p></div></footer>
+
+    <template id="product-template"><article class="product-card"><div class="card-topline"><span class="category-badge"></span><span class="status-badge"></span></div><div><h3 class="product-name"></h3><p class="product-description"></p></div><div class="product-meta"></div><div class="card-footer"><span class="source-date"></span><a class="visit-link" target="_blank" rel="noreferrer">访问产品 ↗</a></div></article></template>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
