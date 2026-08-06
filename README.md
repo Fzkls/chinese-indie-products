@@ -4,9 +4,9 @@
 
 ## 在线展示
 
-GitHub Pages 部署地址：`https://fzkls.github.io/chinese-indie-products/`
+GitHub Pages：<https://fzkls.github.io/chinese-indie-products/>
 
-首次推送后，需要在仓库 **Settings → Pages → Build and deployment → Source** 中选择 **GitHub Actions**。
+仓库已配置为使用 GitHub Actions 自动验证、构建并发布网站。
 
 ## 当前能力
 
