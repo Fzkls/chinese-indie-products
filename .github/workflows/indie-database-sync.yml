@@ -13,8 +13,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
           node-version: 22
       - name: Sync upstream records
@@ -25,6 +27,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: automation/upstream-data-sync
+          delete-branch: true
           commit-message: 'data: sync independent developer products'
           title: 'data: sync independent developer products'
           body: |
