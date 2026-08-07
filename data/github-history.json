@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-07T06:56:45.245Z",
+    "generatedAt": "2026-08-07T06:58:38.449Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -1724,7 +1724,7 @@
     "moeru-ai/airi": [
       {
         "date": "2026-08-07",
-        "stars": 47184,
+        "stars": 47185,
         "forks": 4664
       }
     ],
@@ -2390,7 +2390,7 @@
       {
         "date": "2026-08-07",
         "stars": 107652,
-        "forks": 13490
+        "forks": 13491
       }
     ],
     "super-inspire/super-inspire-end": [
@@ -2578,7 +2578,7 @@
     "version-fox/vfox": [
       {
         "date": "2026-08-07",
-        "stars": 3955,
+        "stars": 3956,
         "forks": 157
       }
     ],
