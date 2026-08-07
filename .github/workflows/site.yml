@@ -1,21 +1,25 @@
-name: Apply visualization and GitHub enrichment upgrade
+name: Verify and publish site
 
 on:
+  pull_request:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Every Monday at 10:17 Asia/Shanghai (02:17 UTC).
+    - cron: '17 2 * * 1'
 
 permissions:
   contents: write
 
 concurrency:
-  group: visualization-upgrade
-  cancel-in-progress: false
+  group: "site-${{ github.ref }}"
+  cancel-in-progress: true
 
 jobs:
-  apply-upgrade:
+  verify-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -25,18 +29,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-      - name: Apply staged upgrade
-        run: |
-          git fetch origin agent/visualization-upgrade-payload
-          for part in 01 02 03 04a 04b 04c 04d 05; do
-            git show "origin/agent/visualization-upgrade-payload:.upgrade/payload.${part}"
-          done > /tmp/indiebase-upgrade.b64
-          sed -i 's/JUMijuo/JUMujuo/; s/IVUFtray/IVUFTray/' /tmp/indiebase-upgrade.b64
-          test "$(wc -c < /tmp/indiebase-upgrade.b64)" -eq 32268
-          base64 --decode /tmp/indiebase-upgrade.b64 > /tmp/indiebase-upgrade.tar.gz
-          echo "af3b1dadeec74c228a9b6e4529d056af0040e33f79b0ba4f0b223befec173cdc  /tmp/indiebase-upgrade.tar.gz" | sha256sum --check
-          tar -xzf /tmp/indiebase-upgrade.tar.gz
-          git diff --check
       - name: Sync all upstream datasets
         run: npm run sync:data
       - name: Enrich direct GitHub repositories
@@ -46,18 +38,17 @@ jobs:
         run: npm run sync:github
       - name: Test, validate and build
         run: npm run verify
-      - name: Preserve completed site
-        run: |
-          SITE_DIR="$(mktemp -d)"
-          cp -R dist/. "${SITE_DIR}/"
-          echo "SITE_DIR=${SITE_DIR}" >> "$GITHUB_ENV"
-      - name: Commit upgrade and enriched data
+      - name: Commit refreshed data snapshot
+        if: github.event_name != 'pull_request' && github.actor != 'github-actions[bot]'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout HEAD -- .github/workflows/site.yml .github/workflows/indie-database-sync.yml
-          git add --all
-          git commit -m "feat: enrich GitHub data and chart interactions [skip ci]"
+          git add data/products.json data/tools.json data/quality-report.json data/github-repositories.json data/github-history.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "data: refresh source and GitHub snapshots"
           git push origin HEAD:main
       - name: Upload build for inspection
         uses: actions/upload-artifact@v4
@@ -65,17 +56,20 @@ jobs:
           name: indiebase-cn-dist
           path: dist
       - name: Publish gh-pages branch
+        if: github.event_name != 'pull_request'
         run: |
+          SITE_DIR="$(mktemp -d)"
+          cp -R dist/. "${SITE_DIR}/"
+          touch "${SITE_DIR}/.nojekyll"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git clean -fdx
           git fetch origin gh-pages
           git switch --force-create gh-pages origin/gh-pages
           git rm -rf . >/dev/null 2>&1 || true
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           cp -R "${SITE_DIR}/." .
-          touch .nojekyll
           git add --all
-          git commit -m "deploy: publish visualization and GitHub enrichment upgrade" || true
+          git commit -m "deploy: publish ${GITHUB_SHA}" || true
           git push --force origin gh-pages
-      - name: Remove payload branch
-        if: success()
-        run: git push origin --delete agent/visualization-upgrade-payload || true
