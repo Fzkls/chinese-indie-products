@@ -14,6 +14,7 @@
         <div class="top-links">
           <a href="#explore">独立产品</a>
           <a href="#tools">工具资源</a>
+          <a href="#github">GitHub 热度</a>
           <a href="#methodology">数据说明</a>
         </div>
       </nav>
@@ -44,6 +45,7 @@
         <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确地区</small></article>
         <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>已上线或开发中</small></article>
         <article class="metric"><span>工具资源</span><strong id="metric-tools">—</strong><small>独立数据集，不混入产品</small></article>
+        <article class="metric"><span>GitHub 仓库</span><strong id="metric-github">—</strong><small>仅统计可识别公开仓库</small></article>
       </section>
 
       <section class="wrap dashboard" aria-labelledby="dashboard-title">
@@ -53,21 +55,47 @@
         </div>
         <div class="chart-grid">
           <article class="chart-panel wide">
-            <div class="panel-heading"><div><h3>收录趋势</h3><p>按项目添加年份统计</p></div><span class="chart-total" id="trend-total">— 条</span></div>
+            <div class="panel-heading"><div><h3>收录趋势</h3><p>悬停查看详情，点击年份联动筛选</p></div><span class="chart-total" id="trend-total">— 条</span></div>
             <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>产品类型</h3><p>通用产品、程序员工具、游戏和历史归档</p></div></div>
+            <div class="panel-heading"><div><h3>产品类型</h3><p>悬停查看详情，点击图例联动筛选</p></div></div>
             <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8</p></div></div>
+            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8，可点击筛选</p></div></div>
             <div class="bar-list" id="city-chart"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>运行状态</h3><p>基于来源清单中的状态标记</p></div></div>
+            <div class="panel-heading"><div><h3>运行状态</h3><p>基于来源清单中的状态标记，可点击筛选</p></div></div>
             <div class="status-grid" id="status-chart"></div>
           </article>
+        </div>
+      </section>
+
+
+      <section class="github-insights" id="github">
+        <div class="wrap">
+          <div class="section-heading">
+            <div><p class="eyebrow">GITHUB ENRICHMENT</p><h2>开源项目热度与活跃度</h2></div>
+            <div class="github-heading-meta"><p id="github-insight-note">正在读取 GitHub 数据…</p><small id="github-generated-at">—</small></div>
+          </div>
+          <div class="dataset-note github-note"><strong>统计边界</strong><span>只统计产品或工具链接能够明确解析为公开 GitHub 仓库的记录。没有仓库的项目不会被视为 0 Star，Star 也不作为所有独立产品的统一价值排序。</span></div>
+          <div class="github-controls" role="group" aria-label="GitHub 项目范围">
+            <button class="scope-button is-active" type="button" data-github-scope="all">全部仓库</button>
+            <button class="scope-button" type="button" data-github-scope="product">独立产品</button>
+            <button class="scope-button" type="button" data-github-scope="tool">工具资源</button>
+          </div>
+          <div class="github-grid">
+            <article class="chart-panel github-ranking-panel">
+              <div class="panel-heading"><div><h3>GitHub 热门项目 Top 20</h3><p>按当前 Star 快照排序；悬停查看仓库详情，点击打开项目详情</p></div></div>
+              <div class="github-rank-list" id="github-top-list"></div>
+            </article>
+            <article class="chart-panel github-activity-panel">
+              <div class="panel-heading"><div><h3>仓库活跃度</h3><p>按最后提交时间与归档状态划分；点击筛选热门项目列表</p></div></div>
+              <div class="github-activity-grid" id="github-activity-grid"></div>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -123,6 +151,7 @@
         <div class="card-topline"><span class="category-badge"></span><span class="status-badge"></span></div>
         <div><h3 class="product-name"></h3><p class="product-description"></p></div>
         <div class="product-meta"></div>
+        <div class="github-slot"></div>
         <div class="record-sources"></div>
         <div class="card-footer"><span class="source-date"></span><a class="visit-link" target="_blank" rel="noreferrer">访问产品 ↗</a></div>
       </article>
@@ -132,10 +161,18 @@
       <article class="tool-card">
         <div class="card-topline"><span class="category-badge tool-category"></span><span class="status-badge tool-pricing"></span></div>
         <div><h3 class="tool-name"></h3><p class="tool-description"></p></div>
+        <div class="github-slot"></div>
         <div class="record-sources"></div>
         <div class="card-footer"><span>工具资源</span><a class="visit-link" target="_blank" rel="noreferrer">访问工具 ↗</a></div>
       </article>
     </template>
+
+    <div class="chart-tooltip" id="chart-tooltip" role="tooltip" aria-hidden="true" hidden></div>
+    <div class="detail-backdrop" id="detail-backdrop" hidden></div>
+    <aside class="detail-drawer" id="detail-drawer" aria-hidden="true" aria-label="项目详情">
+      <button class="drawer-close" id="detail-close" type="button" aria-label="关闭详情">×</button>
+      <div class="detail-content" id="detail-content"></div>
+    </aside>
 
     <script type="module" src="src/app.js"></script>
   </body>

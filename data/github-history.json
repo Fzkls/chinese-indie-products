@@ -1,0 +1,3062 @@
+{
+  "metadata": {
+    "generatedAt": "2026-08-07T03:52:36.534Z",
+    "cadence": "weekly",
+    "retentionWeeks": 104,
+    "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
+  },
+  "repositories": {
+    "0x676e67/reqwest-impersonate": [
+      {
+        "date": "2026-08-07",
+        "stars": 112,
+        "forks": 17
+      }
+    ],
+    "0x676e67/vproxy": [
+      {
+        "date": "2026-08-07",
+        "stars": 411,
+        "forks": 67
+      }
+    ],
+    "123pannextgen/123pan": [
+      {
+        "date": "2026-08-07",
+        "stars": 284,
+        "forks": 14
+      }
+    ],
+    "1c7/chinese-independent-developer": [
+      {
+        "date": "2026-08-07",
+        "stars": 60568,
+        "forks": 5264
+      }
+    ],
+    "619dev/astrbot_plugin_paperphoneplus": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 2
+      }
+    ],
+    "619dev/astrbot_plugin_url2img": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "619dev/global-disaster-monitor": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "619dev/mastodon-keijipan": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "619dev/minghe": [
+      {
+        "date": "2026-08-07",
+        "stars": 61,
+        "forks": 5
+      }
+    ],
+    "619dev/tafeng": [
+      {
+        "date": "2026-08-07",
+        "stars": 76,
+        "forks": 20
+      }
+    ],
+    "619dev/weixin_e2ee_crypt": [
+      {
+        "date": "2026-08-07",
+        "stars": 16,
+        "forks": 2
+      }
+    ],
+    "619dev/wenmo-android": [
+      {
+        "date": "2026-08-07",
+        "stars": 20,
+        "forks": 6
+      }
+    ],
+    "625781186/gitpyman": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "acmesh-official/acme.sh": [
+      {
+        "date": "2026-08-07",
+        "stars": 47419,
+        "forks": 5652
+      }
+    ],
+    "activecampaign/postmark-templates": [
+      {
+        "date": "2026-08-07",
+        "stars": 3194,
+        "forks": 1073
+      }
+    ],
+    "adra2n/otpbox": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 0
+      }
+    ],
+    "afetmin/agentpager": [
+      {
+        "date": "2026-08-07",
+        "stars": 18,
+        "forks": 2
+      }
+    ],
+    "agentsmesh/agentsmesh": [
+      {
+        "date": "2026-08-07",
+        "stars": 2307,
+        "forks": 236
+      }
+    ],
+    "aixp-labs/soulbot": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "albert-weasker/niubi_guard": [
+      {
+        "date": "2026-08-07",
+        "stars": 1311,
+        "forks": 154
+      }
+    ],
+    "albuer/iblockly": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 0
+      }
+    ],
+    "alexjason/zilch-editor": [
+      {
+        "date": "2026-08-07",
+        "stars": 37,
+        "forks": 9
+      }
+    ],
+    "alyssaxuu/screenity": [
+      {
+        "date": "2026-08-07",
+        "stars": 18473,
+        "forks": 1489
+      }
+    ],
+    "antfu-collective/vitesse-webext": [
+      {
+        "date": "2026-08-07",
+        "stars": 3377,
+        "forks": 250
+      }
+    ],
+    "appwrite/appwrite": [
+      {
+        "date": "2026-08-07",
+        "stars": 56795,
+        "forks": 5607
+      }
+    ],
+    "aprdeci/bili-music": [
+      {
+        "date": "2026-08-07",
+        "stars": 314,
+        "forks": 18
+      }
+    ],
+    "aqua5230/usage": [
+      {
+        "date": "2026-08-07",
+        "stars": 280,
+        "forks": 45
+      }
+    ],
+    "aquanlerou/wehalo": [
+      {
+        "date": "2026-08-07",
+        "stars": 2092,
+        "forks": 370
+      }
+    ],
+    "asdf17128/bili-webos": [
+      {
+        "date": "2026-08-07",
+        "stars": 123,
+        "forks": 10
+      }
+    ],
+    "ask-tao/image-splitter": [
+      {
+        "date": "2026-08-07",
+        "stars": 115,
+        "forks": 30
+      }
+    ],
+    "atlanticf/chinese-independent-developer": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "awesome-iwb/awesome-iwb": [
+      {
+        "date": "2026-08-07",
+        "stars": 538,
+        "forks": 38
+      }
+    ],
+    "ayangweb/ecopaste": [
+      {
+        "date": "2026-08-07",
+        "stars": 7274,
+        "forks": 364
+      }
+    ],
+    "b-yp/onin": [
+      {
+        "date": "2026-08-07",
+        "stars": 36,
+        "forks": 5
+      }
+    ],
+    "baigaoa/ink-cartridge": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 0
+      }
+    ],
+    "barvian/number-flow": [
+      {
+        "date": "2026-08-07",
+        "stars": 7609,
+        "forks": 154
+      }
+    ],
+    "beavailable/apt.sh": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 1
+      }
+    ],
+    "beavailable/share": [
+      {
+        "date": "2026-08-07",
+        "stars": 51,
+        "forks": 4
+      }
+    ],
+    "besscroft/picimpact": [
+      {
+        "date": "2026-08-07",
+        "stars": 1297,
+        "forks": 211
+      }
+    ],
+    "bhznjns/nfc-plinkd": [
+      {
+        "date": "2026-08-07",
+        "stars": 21,
+        "forks": 2
+      }
+    ],
+    "bistutu/fluentread": [
+      {
+        "date": "2026-08-07",
+        "stars": 7419,
+        "forks": 354
+      }
+    ],
+    "blocklang/blocklang-installer": [
+      {
+        "date": "2026-08-07",
+        "stars": 19,
+        "forks": 2
+      }
+    ],
+    "boommanpro/gaia-workflow-engine": [
+      {
+        "date": "2026-08-07",
+        "stars": 181,
+        "forks": 13
+      }
+    ],
+    "brancogao/redirect-checker": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "brancogao/ssl-certificate-monitor": [
+      {
+        "date": "2026-08-07",
+        "stars": 15,
+        "forks": 4
+      }
+    ],
+    "buuing/lucky-canvas": [
+      {
+        "date": "2026-08-07",
+        "stars": 8747,
+        "forks": 1034
+      }
+    ],
+    "callmeming/xiaoyuzhou-podcast-assistant": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "caomeiyouren/afdian-linker": [
+      {
+        "date": "2026-08-07",
+        "stars": 6,
+        "forks": 2
+      }
+    ],
+    "caomeiyouren/caomei-auth": [
+      {
+        "date": "2026-08-07",
+        "stars": 220,
+        "forks": 17
+      }
+    ],
+    "caomeiyouren/momei": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 0
+      }
+    ],
+    "caomeiyouren/rss-impact-server": [
+      {
+        "date": "2026-08-07",
+        "stars": 195,
+        "forks": 10
+      }
+    ],
+    "caorushizi/mediago": [
+      {
+        "date": "2026-08-07",
+        "stars": 9109,
+        "forks": 805
+      }
+    ],
+    "caronc/apprise": [
+      {
+        "date": "2026-08-07",
+        "stars": 17006,
+        "forks": 628
+      }
+    ],
+    "catdad/canvas-confetti": [
+      {
+        "date": "2026-08-07",
+        "stars": 12685,
+        "forks": 467
+      }
+    ],
+    "ccbikai/sink": [
+      {
+        "date": "2026-08-07",
+        "stars": 7000,
+        "forks": 5034
+      }
+    ],
+    "changwu/cvparser": [
+      {
+        "date": "2026-08-07",
+        "stars": 16,
+        "forks": 1
+      }
+    ],
+    "chaos-zhu/easynode": [
+      {
+        "date": "2026-08-07",
+        "stars": 1992,
+        "forks": 276
+      }
+    ],
+    "charsdavy/imagehosting": [
+      {
+        "date": "2026-08-07",
+        "stars": 18,
+        "forks": 4
+      }
+    ],
+    "chen-christins/xlsxsearcher": [
+      {
+        "date": "2026-08-07",
+        "stars": 5,
+        "forks": 1
+      }
+    ],
+    "chibat/chrome-extension-typescript-starter": [
+      {
+        "date": "2026-08-07",
+        "stars": 2821,
+        "forks": 463
+      }
+    ],
+    "chirumori/effectmidi": [
+      {
+        "date": "2026-08-07",
+        "stars": 36,
+        "forks": 3
+      }
+    ],
+    "ckfanzhe/minecraft-easyserver": [
+      {
+        "date": "2026-08-07",
+        "stars": 14,
+        "forks": 4
+      }
+    ],
+    "cloudcannon/pagefind": [
+      {
+        "date": "2026-08-07",
+        "stars": 5387,
+        "forks": 200
+      }
+    ],
+    "codercup/unibest": [
+      {
+        "date": "2026-08-07",
+        "stars": 2859,
+        "forks": 291
+      }
+    ],
+    "cqzhangxin/ai-reconciliation": [
+      {
+        "date": "2026-08-07",
+        "stars": 11,
+        "forks": 4
+      }
+    ],
+    "crewbeelab/crewbee": [
+      {
+        "date": "2026-08-07",
+        "stars": 18,
+        "forks": 4
+      }
+    ],
+    "crewbeelab/waggle": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "crxjs/chrome-extension-tools": [
+      {
+        "date": "2026-08-07",
+        "stars": 4145,
+        "forks": 243
+      }
+    ],
+    "cs-tao/whu-library-seat": [
+      {
+        "date": "2026-08-07",
+        "stars": 807,
+        "forks": 27
+      }
+    ],
+    "cteamx/thief": [
+      {
+        "date": "2026-08-07",
+        "stars": 6085,
+        "forks": 575
+      }
+    ],
+    "cuartpyaw/lazytabs": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "cy745/lmusic": [
+      {
+        "date": "2026-08-07",
+        "stars": 302,
+        "forks": 44
+      }
+    ],
+    "d2learn/xlings": [
+      {
+        "date": "2026-08-07",
+        "stars": 599,
+        "forks": 48
+      }
+    ],
+    "daily-ac/omnireach": [
+      {
+        "date": "2026-08-07",
+        "stars": 19,
+        "forks": 1
+      }
+    ],
+    "dais-project/dais": [
+      {
+        "date": "2026-08-07",
+        "stars": 82,
+        "forks": 6
+      }
+    ],
+    "daya0576/beaverhabits": [
+      {
+        "date": "2026-08-07",
+        "stars": 1812,
+        "forks": 73
+      }
+    ],
+    "ddzy/fe-necessary-book": [
+      {
+        "date": "2026-08-07",
+        "stars": 1466,
+        "forks": 182
+      }
+    ],
+    "derek-x-wang/attack-on-titans": [
+      {
+        "date": "2026-08-07",
+        "stars": 50,
+        "forks": 3
+      }
+    ],
+    "deweyreed/clipboardcleaner": [
+      {
+        "date": "2026-08-07",
+        "stars": 149,
+        "forks": 16
+      }
+    ],
+    "dong2019/thesis_paper": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "dorylab/dory": [
+      {
+        "date": "2026-08-07",
+        "stars": 269,
+        "forks": 19
+      }
+    ],
+    "dreamer365/topspeed-image-compressor": [
+      {
+        "date": "2026-08-07",
+        "stars": 238,
+        "forks": 6
+      }
+    ],
+    "dsd2077/cyberverse": [
+      {
+        "date": "2026-08-07",
+        "stars": 1544,
+        "forks": 213
+      }
+    ],
+    "duchengyao/gpu-based-image-stitching": [
+      {
+        "date": "2026-08-07",
+        "stars": 100,
+        "forks": 17
+      }
+    ],
+    "duckduckstudio/fufu_dev_tools": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 1
+      }
+    ],
+    "duckduckstudio/github-labels-manager": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 0
+      }
+    ],
+    "duckduckstudio/highlight-ad-extension": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "duckduckstudio/power_by_akasha_terminal": [
+      {
+        "date": "2026-08-07",
+        "stars": 5,
+        "forks": 0
+      }
+    ],
+    "duckduckstudio/sundry": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 0
+      }
+    ],
+    "duzexu/desktop-pet": [
+      {
+        "date": "2026-08-07",
+        "stars": 20,
+        "forks": 6
+      }
+    ],
+    "dwwkf520/remotion-vedio-edit": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "easychen/h2reader-host": [
+      {
+        "date": "2026-08-07",
+        "stars": 78,
+        "forks": 20
+      }
+    ],
+    "eatmoreduck/boss-zhipin-scraper": [
+      {
+        "date": "2026-08-07",
+        "stars": 1038,
+        "forks": 132
+      }
+    ],
+    "eryajf/kite-desktop": [
+      {
+        "date": "2026-08-07",
+        "stars": 319,
+        "forks": 30
+      }
+    ],
+    "ethanyoq/agent-xiaohongshu-workbench": [
+      {
+        "date": "2026-08-07",
+        "stars": 80,
+        "forks": 12
+      }
+    ],
+    "ethanyoq/agenthive": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 1
+      }
+    ],
+    "ethanyoq/ai-novel-writer": [
+      {
+        "date": "2026-08-07",
+        "stars": 322,
+        "forks": 46
+      }
+    ],
+    "ethanyoq/invoice-downloader": [
+      {
+        "date": "2026-08-07",
+        "stars": 142,
+        "forks": 15
+      }
+    ],
+    "ethanyoq/whisper-input": [
+      {
+        "date": "2026-08-07",
+        "stars": 40,
+        "forks": 4
+      }
+    ],
+    "euv-dev/euv": [
+      {
+        "date": "2026-08-07",
+        "stars": 8,
+        "forks": 1
+      }
+    ],
+    "everydoc/jrebel-license-server": [
+      {
+        "date": "2026-08-07",
+        "stars": 76,
+        "forks": 48
+      }
+    ],
+    "extension-js/extension.js": [
+      {
+        "date": "2026-08-07",
+        "stars": 5054,
+        "forks": 132
+      }
+    ],
+    "facebook/docusaurus": [
+      {
+        "date": "2026-08-07",
+        "stars": 65851,
+        "forks": 9994
+      }
+    ],
+    "fangnan700/ai-aides": [
+      {
+        "date": "2026-08-07",
+        "stars": 21,
+        "forks": 3
+      }
+    ],
+    "fangnan700/changepicbed": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 0
+      }
+    ],
+    "flyun/chatair": [
+      {
+        "date": "2026-08-07",
+        "stars": 815,
+        "forks": 67
+      }
+    ],
+    "fvftuu/ganttready": [
+      {
+        "date": "2026-08-07",
+        "stars": 6,
+        "forks": 2
+      }
+    ],
+    "gaodeng/biu-for-readhub": [
+      {
+        "date": "2026-08-07",
+        "stars": 77,
+        "forks": 5
+      }
+    ],
+    "gbammc/thor": [
+      {
+        "date": "2026-08-07",
+        "stars": 1322,
+        "forks": 80
+      }
+    ],
+    "gcwing/bitfun": [
+      {
+        "date": "2026-08-07",
+        "stars": 1498,
+        "forks": 172
+      }
+    ],
+    "gee1k/upic": [
+      {
+        "date": "2026-08-07",
+        "stars": 3718,
+        "forks": 266
+      }
+    ],
+    "geektcp/namjagbarwa-wow": [
+      {
+        "date": "2026-08-07",
+        "stars": 846,
+        "forks": 234
+      }
+    ],
+    "ghost-him/zerolaunch-rs": [
+      {
+        "date": "2026-08-07",
+        "stars": 551,
+        "forks": 24
+      }
+    ],
+    "gingiris/gingiris-aso-growth": [
+      {
+        "date": "2026-08-07",
+        "stars": 10,
+        "forks": 1
+      }
+    ],
+    "gingiris/gingiris-b2b-growth": [
+      {
+        "date": "2026-08-07",
+        "stars": 92,
+        "forks": 13
+      }
+    ],
+    "gingiris/gingiris-launch": [
+      {
+        "date": "2026-08-07",
+        "stars": 192,
+        "forks": 28
+      }
+    ],
+    "gingiris/gingiris-opensource": [
+      {
+        "date": "2026-08-07",
+        "stars": 245,
+        "forks": 40
+      }
+    ],
+    "gingiris/growth-tools": [
+      {
+        "date": "2026-08-07",
+        "stars": 168,
+        "forks": 6
+      }
+    ],
+    "gitbobobo/streammusic": [
+      {
+        "date": "2026-08-07",
+        "stars": 2316,
+        "forks": 91
+      }
+    ],
+    "gngpp/opengpt": [
+      {
+        "date": "2026-08-07",
+        "stars": 1678,
+        "forks": 282
+      }
+    ],
+    "gngpp/xunlei": [
+      {
+        "date": "2026-08-07",
+        "stars": 741,
+        "forks": 85
+      }
+    ],
+    "godfengliang/billcraft": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "godiao/free-way": [
+      {
+        "date": "2026-08-07",
+        "stars": 30,
+        "forks": 18
+      }
+    ],
+    "groupultra/telegram-search": [
+      {
+        "date": "2026-08-07",
+        "stars": 4045,
+        "forks": 270
+      }
+    ],
+    "gwills163/howuseaiinappenginnering": [
+      {
+        "date": "2026-08-07",
+        "stars": 11,
+        "forks": 4
+      }
+    ],
+    "h1ddenadm1n/capswriter-offline": [
+      {
+        "date": "2026-08-07",
+        "stars": 626,
+        "forks": 31
+      }
+    ],
+    "hacklcx/hfish": [
+      {
+        "date": "2026-08-07",
+        "stars": 4528,
+        "forks": 675
+      }
+    ],
+    "hanshuaikang/ai-media2doc": [
+      {
+        "date": "2026-08-07",
+        "stars": 3963,
+        "forks": 537
+      }
+    ],
+    "hanshuaikang/nezha": [
+      {
+        "date": "2026-08-07",
+        "stars": 1862,
+        "forks": 174
+      }
+    ],
+    "hefengbao/jingmo": [
+      {
+        "date": "2026-08-07",
+        "stars": 2196,
+        "forks": 203
+      }
+    ],
+    "hipepper/egressguard": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "hncboy/ai-beehive": [
+      {
+        "date": "2026-08-07",
+        "stars": 2212,
+        "forks": 627
+      }
+    ],
+    "hongshuo-wang/tomljump": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "hongui/fastair": [
+      {
+        "date": "2026-08-07",
+        "stars": 88,
+        "forks": 17
+      }
+    ],
+    "hoochanlon/free-ntfs-for-mac": [
+      {
+        "date": "2026-08-07",
+        "stars": 2324,
+        "forks": 164
+      }
+    ],
+    "hugh999999/nfc_tool_share_key": [
+      {
+        "date": "2026-08-07",
+        "stars": 173,
+        "forks": 38
+      }
+    ],
+    "hui-zz/runany": [
+      {
+        "date": "2026-08-07",
+        "stars": 1077,
+        "forks": 101
+      }
+    ],
+    "huifer/planar_algorithm": [
+      {
+        "date": "2026-08-07",
+        "stars": 118,
+        "forks": 37
+      }
+    ],
+    "huilang-me/cf-server-monitor": [
+      {
+        "date": "2026-08-07",
+        "stars": 1078,
+        "forks": 837
+      }
+    ],
+    "huqingyang/luoo.qy": [
+      {
+        "date": "2026-08-07",
+        "stars": 537,
+        "forks": 69
+      }
+    ],
+    "huqingyang/page.qy": [
+      {
+        "date": "2026-08-07",
+        "stars": 118,
+        "forks": 13
+      }
+    ],
+    "hushenghao/androideastereggs": [
+      {
+        "date": "2026-08-07",
+        "stars": 1259,
+        "forks": 86
+      }
+    ],
+    "hyperlane-dev/hyperlane": [
+      {
+        "date": "2026-08-07",
+        "stars": 118,
+        "forks": 8
+      }
+    ],
+    "iamcorey/birth": [
+      {
+        "date": "2026-08-07",
+        "stars": 362,
+        "forks": 16
+      }
+    ],
+    "iamcorey/kooky": [
+      {
+        "date": "2026-08-07",
+        "stars": 609,
+        "forks": 31
+      }
+    ],
+    "ilgnefz/once_power": [
+      {
+        "date": "2026-08-07",
+        "stars": 1046,
+        "forks": 43
+      }
+    ],
+    "imeiju/imeiju_mac": [
+      {
+        "date": "2026-08-07",
+        "stars": 220,
+        "forks": 37
+      }
+    ],
+    "imlinhanchao/chinese_holiday_spider_module": [
+      {
+        "date": "2026-08-07",
+        "stars": 23,
+        "forks": 13
+      }
+    ],
+    "imlinhanchao/growth-diary": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 2
+      }
+    ],
+    "imlinhanchao/keygenius": [
+      {
+        "date": "2026-08-07",
+        "stars": 22,
+        "forks": 1
+      }
+    ],
+    "imlinhanchao/ngx_proxy_wiki": [
+      {
+        "date": "2026-08-07",
+        "stars": 51,
+        "forks": 16
+      }
+    ],
+    "imlinhanchao/pwl-chat": [
+      {
+        "date": "2026-08-07",
+        "stars": 23,
+        "forks": 1
+      }
+    ],
+    "imlinhanchao/sticky_notes": [
+      {
+        "date": "2026-08-07",
+        "stars": 61,
+        "forks": 8
+      }
+    ],
+    "indiekky/bilibili-subtitle": [
+      {
+        "date": "2026-08-07",
+        "stars": 1163,
+        "forks": 117
+      }
+    ],
+    "inngest/inngest": [
+      {
+        "date": "2026-08-07",
+        "stars": 5695,
+        "forks": 332
+      }
+    ],
+    "inspurer/workattendancesystem": [
+      {
+        "date": "2026-08-07",
+        "stars": 666,
+        "forks": 217
+      }
+    ],
+    "itisyang/playerdemo": [
+      {
+        "date": "2026-08-07",
+        "stars": 1177,
+        "forks": 299
+      }
+    ],
+    "jackeyhate9/adeve": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "jackeyhate9/gongzhi-review": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "jahnli/awesome-flutter-plugins": [
+      {
+        "date": "2026-08-07",
+        "stars": 1862,
+        "forks": 172
+      }
+    ],
+    "jark006/ftpserver": [
+      {
+        "date": "2026-08-07",
+        "stars": 640,
+        "forks": 58
+      }
+    ],
+    "jark006/jarkviewer": [
+      {
+        "date": "2026-08-07",
+        "stars": 1222,
+        "forks": 48
+      }
+    ],
+    "jark006/weather_widget": [
+      {
+        "date": "2026-08-07",
+        "stars": 43,
+        "forks": 3
+      }
+    ],
+    "jaychouchannel/front-pattern": [
+      {
+        "date": "2026-08-07",
+        "stars": 8,
+        "forks": 2
+      }
+    ],
+    "jaychouchannel/plotcraft": [
+      {
+        "date": "2026-08-07",
+        "stars": 11,
+        "forks": 1
+      }
+    ],
+    "jaychouchannel/str-emoji-hash": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "jaychouchannel/tourism_management_system": [
+      {
+        "date": "2026-08-07",
+        "stars": 28,
+        "forks": 2
+      }
+    ],
+    "jezemy/masystem": [
+      {
+        "date": "2026-08-07",
+        "stars": 42,
+        "forks": 8
+      }
+    ],
+    "jezemy/videosubscanplayer": [
+      {
+        "date": "2026-08-07",
+        "stars": 26,
+        "forks": 6
+      }
+    ],
+    "jianchang512/clone-voice": [
+      {
+        "date": "2026-08-07",
+        "stars": 8990,
+        "forks": 985
+      }
+    ],
+    "jianchang512/pyvideotrans": [
+      {
+        "date": "2026-08-07",
+        "stars": 18609,
+        "forks": 2294
+      }
+    ],
+    "jianchang512/vocal-separate": [
+      {
+        "date": "2026-08-07",
+        "stars": 2001,
+        "forks": 220
+      }
+    ],
+    "jiang-xuan/tuchuang.space": [
+      {
+        "date": "2026-08-07",
+        "stars": 5,
+        "forks": 1
+      }
+    ],
+    "jiangbolee/weatherwx": [
+      {
+        "date": "2026-08-07",
+        "stars": 77,
+        "forks": 21
+      }
+    ],
+    "jin-yufeng/mp-html": [
+      {
+        "date": "2026-08-07",
+        "stars": 3733,
+        "forks": 529
+      }
+    ],
+    "jingkecn/interactive-math-pad-android": [
+      {
+        "date": "2026-08-07",
+        "stars": 18,
+        "forks": 3
+      }
+    ],
+    "jingle1267/hellocodedev": [
+      {
+        "date": "2026-08-07",
+        "stars": 15,
+        "forks": 0
+      }
+    ],
+    "jingmatrix/chromext": [
+      {
+        "date": "2026-08-07",
+        "stars": 1123,
+        "forks": 94
+      }
+    ],
+    "jingyuan-zheng/texttray": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "jonghakseo/chrome-extension-boilerplate-react-vite": [
+      {
+        "date": "2026-08-07",
+        "stars": 4912,
+        "forks": 661
+      }
+    ],
+    "jray0108/shuying": [
+      {
+        "date": "2026-08-07",
+        "stars": 10,
+        "forks": 1
+      }
+    ],
+    "jsmod2-java-c/jsmod2-core": [
+      {
+        "date": "2026-08-07",
+        "stars": 9,
+        "forks": 2
+      }
+    ],
+    "justlovemaki/aiclient-2-api": [
+      {
+        "date": "2026-08-07",
+        "stars": 8597,
+        "forks": 1357
+      }
+    ],
+    "kalcaddle/kodbox": [
+      {
+        "date": "2026-08-07",
+        "stars": 3291,
+        "forks": 491
+      }
+    ],
+    "kanglin/rabbitim": [
+      {
+        "date": "2026-08-07",
+        "stars": 549,
+        "forks": 261
+      }
+    ],
+    "kanglin/rabbitremotecontrol": [
+      {
+        "date": "2026-08-07",
+        "stars": 333,
+        "forks": 81
+      }
+    ],
+    "kasuganosoras/pigeon": [
+      {
+        "date": "2026-08-07",
+        "stars": 445,
+        "forks": 74
+      }
+    ],
+    "kay53n/rusty-req": [
+      {
+        "date": "2026-08-07",
+        "stars": 203,
+        "forks": 14
+      }
+    ],
+    "kevingong2013/apkgo": [
+      {
+        "date": "2026-08-07",
+        "stars": 144,
+        "forks": 26
+      }
+    ],
+    "kezhenxu94/house-renting": [
+      {
+        "date": "2026-08-07",
+        "stars": 790,
+        "forks": 142
+      }
+    ],
+    "kid-joker/npm-deprecated-check": [
+      {
+        "date": "2026-08-07",
+        "stars": 41,
+        "forks": 3
+      }
+    ],
+    "kid-joker/proxy-web-storage": [
+      {
+        "date": "2026-08-07",
+        "stars": 386,
+        "forks": 13
+      }
+    ],
+    "klemperer/binglish": [
+      {
+        "date": "2026-08-07",
+        "stars": 187,
+        "forks": 18
+      }
+    ],
+    "kry4r/nuka-physics": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "kuingsmile/pichoro": [
+      {
+        "date": "2026-08-07",
+        "stars": 1010,
+        "forks": 56
+      }
+    ],
+    "kuingsmile/piclist": [
+      {
+        "date": "2026-08-07",
+        "stars": 3724,
+        "forks": 156
+      }
+    ],
+    "kwf2030/hiprice-chatbot": [
+      {
+        "date": "2026-08-07",
+        "stars": 88,
+        "forks": 10
+      }
+    ],
+    "ky3-studio/ky3-launcher": [
+      {
+        "date": "2026-08-07",
+        "stars": 29,
+        "forks": 3
+      }
+    ],
+    "laosanyuan/daolang": [
+      {
+        "date": "2026-08-07",
+        "stars": 16,
+        "forks": 3
+      }
+    ],
+    "laosanyuan/hamibotremotecontrol": [
+      {
+        "date": "2026-08-07",
+        "stars": 38,
+        "forks": 7
+      }
+    ],
+    "laosanyuan/huohuan": [
+      {
+        "date": "2026-08-07",
+        "stars": 299,
+        "forks": 45
+      }
+    ],
+    "leftshine/apkexport": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "lencx/chatgpt": [
+      {
+        "date": "2026-08-07",
+        "stars": 54433,
+        "forks": 6137
+      }
+    ],
+    "leodenglovescode/pm2-webmanager": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 1
+      }
+    ],
+    "lhc70000/iina": [
+      {
+        "date": "2026-08-07",
+        "stars": 45835,
+        "forks": 2883
+      }
+    ],
+    "li150/mapping_scanning": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "lian-yang/ltools": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 2
+      }
+    ],
+    "lian-yang/trans": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "liangludev/weyuereader": [
+      {
+        "date": "2026-08-07",
+        "stars": 993,
+        "forks": 244
+      }
+    ],
+    "lihaoyun6/quickrecorder": [
+      {
+        "date": "2026-08-07",
+        "stars": 8564,
+        "forks": 502
+      }
+    ],
+    "lin-snow/ech0": [
+      {
+        "date": "2026-08-07",
+        "stars": 2036,
+        "forks": 151
+      }
+    ],
+    "liudf0716/apfree_wifidog": [
+      {
+        "date": "2026-08-07",
+        "stars": 10,
+        "forks": 7
+      }
+    ],
+    "liudf0716/xfrpc": [
+      {
+        "date": "2026-08-07",
+        "stars": 816,
+        "forks": 120
+      }
+    ],
+    "liujingxing/rxhttp": [
+      {
+        "date": "2026-08-07",
+        "stars": 3818,
+        "forks": 461
+      }
+    ],
+    "liujingxing/rxlife": [
+      {
+        "date": "2026-08-07",
+        "stars": 352,
+        "forks": 38
+      }
+    ],
+    "liyupi/ceshiya": [
+      {
+        "date": "2026-08-07",
+        "stars": 417,
+        "forks": 59
+      }
+    ],
+    "liyupi/sql-father-frontend-public": [
+      {
+        "date": "2026-08-07",
+        "stars": 1498,
+        "forks": 553
+      }
+    ],
+    "liyupi/sql-generator": [
+      {
+        "date": "2026-08-07",
+        "stars": 3430,
+        "forks": 691
+      }
+    ],
+    "liyupi/sql-mother": [
+      {
+        "date": "2026-08-07",
+        "stars": 4301,
+        "forks": 429
+      }
+    ],
+    "liyupi/yu-auto-reply": [
+      {
+        "date": "2026-08-07",
+        "stars": 891,
+        "forks": 361
+      }
+    ],
+    "liyupi/yuindex": [
+      {
+        "date": "2026-08-07",
+        "stars": 2126,
+        "forks": 717
+      }
+    ],
+    "loxi-opensource/luna-swapping": [
+      {
+        "date": "2026-08-07",
+        "stars": 363,
+        "forks": 74
+      }
+    ],
+    "lqomg/clueark": [
+      {
+        "date": "2026-08-07",
+        "stars": 53,
+        "forks": 16
+      }
+    ],
+    "luoxuhai/nightvision": [
+      {
+        "date": "2026-08-07",
+        "stars": 316,
+        "forks": 35
+      }
+    ],
+    "luzedong/anycoding": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 0
+      }
+    ],
+    "lvdunn/wechatassistant": [
+      {
+        "date": "2026-08-07",
+        "stars": 47,
+        "forks": 12
+      }
+    ],
+    "lzx2005/whattoeat": [
+      {
+        "date": "2026-08-07",
+        "stars": 158,
+        "forks": 24
+      }
+    ],
+    "magiclu550/edclass4j": [
+      {
+        "date": "2026-08-07",
+        "stars": 23,
+        "forks": 5
+      }
+    ],
+    "magiclu550/plugin4j": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "magiclu550/wenyan-lang_jvm": [
+      {
+        "date": "2026-08-07",
+        "stars": 33,
+        "forks": 4
+      }
+    ],
+    "maomao0350/maodataagent": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 1
+      }
+    ],
+    "marchbeta2087/binary_collatz": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "mark420524/guess": [
+      {
+        "date": "2026-08-07",
+        "stars": 39,
+        "forks": 10
+      }
+    ],
+    "marseventh/cloudflare-imgbed": [
+      {
+        "date": "2026-08-07",
+        "stars": 6101,
+        "forks": 7623
+      }
+    ],
+    "marseventh/sanyue-imghub": [
+      {
+        "date": "2026-08-07",
+        "stars": 202,
+        "forks": 126
+      }
+    ],
+    "mcpp-community/mcpp": [
+      {
+        "date": "2026-08-07",
+        "stars": 91,
+        "forks": 9
+      }
+    ],
+    "mcthesw/game-save-manager": [
+      {
+        "date": "2026-08-07",
+        "stars": 1128,
+        "forks": 42
+      }
+    ],
+    "meekdai/gmeek": [
+      {
+        "date": "2026-08-07",
+        "stars": 2354,
+        "forks": 377
+      }
+    ],
+    "menfre01/waveloom": [
+      {
+        "date": "2026-08-07",
+        "stars": 123,
+        "forks": 4
+      }
+    ],
+    "mengxianliang/xluikit": [
+      {
+        "date": "2026-08-07",
+        "stars": 1360,
+        "forks": 307
+      }
+    ],
+    "meowtec/imagine": [
+      {
+        "date": "2026-08-07",
+        "stars": 4395,
+        "forks": 317
+      }
+    ],
+    "milipolo/arsolarplayswift": [
+      {
+        "date": "2026-08-07",
+        "stars": 77,
+        "forks": 19
+      }
+    ],
+    "mirror29/inalpha": [
+      {
+        "date": "2026-08-07",
+        "stars": 24,
+        "forks": 4
+      }
+    ],
+    "mky508/querygpt": [
+      {
+        "date": "2026-08-07",
+        "stars": 38,
+        "forks": 0
+      }
+    ],
+    "mnikn/general-data-manager": [
+      {
+        "date": "2026-08-07",
+        "stars": 6,
+        "forks": 0
+      }
+    ],
+    "moeru-ai/airi": [
+      {
+        "date": "2026-08-07",
+        "stars": 47159,
+        "forks": 4664
+      }
+    ],
+    "mornhussakuyo-hub/ezc": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 1
+      }
+    ],
+    "mrbaoboer/fencun": [
+      {
+        "date": "2026-08-07",
+        "stars": 13,
+        "forks": 3
+      }
+    ],
+    "mrxujiang/h5-dooring": [
+      {
+        "date": "2026-08-07",
+        "stars": 9959,
+        "forks": 1828
+      }
+    ],
+    "msgbyte/tailchat": [
+      {
+        "date": "2026-08-07",
+        "stars": 3604,
+        "forks": 394
+      }
+    ],
+    "my19940202/cursor-thinking-stat": [
+      {
+        "date": "2026-08-07",
+        "stars": 14,
+        "forks": 5
+      }
+    ],
+    "mzlogin/guanggoo-android": [
+      {
+        "date": "2026-08-07",
+        "stars": 96,
+        "forks": 21
+      }
+    ],
+    "narcooo/inkos": [
+      {
+        "date": "2026-08-07",
+        "stars": 8784,
+        "forks": 1660
+      }
+    ],
+    "netdata/netdata": [
+      {
+        "date": "2026-08-07",
+        "stars": 80059,
+        "forks": 6572
+      }
+    ],
+    "nextauthjs/next-auth": [
+      {
+        "date": "2026-08-07",
+        "stars": 28317,
+        "forks": 4043
+      }
+    ],
+    "nikoksr/notify": [
+      {
+        "date": "2026-08-07",
+        "stars": 3750,
+        "forks": 278
+      }
+    ],
+    "niyongsheng/moler": [
+      {
+        "date": "2026-08-07",
+        "stars": 11,
+        "forks": 1
+      }
+    ],
+    "niyongsheng/mythpen": [
+      {
+        "date": "2026-08-07",
+        "stars": 32,
+        "forks": 5
+      }
+    ],
+    "nodemailer/nodemailer": [
+      {
+        "date": "2026-08-07",
+        "stars": 17644,
+        "forks": 1431
+      }
+    ],
+    "nojsja/shadowsocks-electron": [
+      {
+        "date": "2026-08-07",
+        "stars": 352,
+        "forks": 63
+      }
+    ],
+    "nowork-studio/notfair": [
+      {
+        "date": "2026-08-07",
+        "stars": 3325,
+        "forks": 411
+      }
+    ],
+    "nowork-studio/toprank": [
+      {
+        "date": "2026-08-07",
+        "stars": 3325,
+        "forks": 411
+      }
+    ],
+    "noyark-system/noyark_oaml_java": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 1
+      }
+    ],
+    "oh-bear/2life": [
+      {
+        "date": "2026-08-07",
+        "stars": 394,
+        "forks": 76
+      }
+    ],
+    "opendatalab/labelllm": [
+      {
+        "date": "2026-08-07",
+        "stars": 1270,
+        "forks": 132
+      }
+    ],
+    "opendatalab/labelu": [
+      {
+        "date": "2026-08-07",
+        "stars": 1646,
+        "forks": 185
+      }
+    ],
+    "openilink/openilink-hub": [
+      {
+        "date": "2026-08-07",
+        "stars": 1545,
+        "forks": 130
+      }
+    ],
+    "opsre/liteops": [
+      {
+        "date": "2026-08-07",
+        "stars": 508,
+        "forks": 47
+      }
+    ],
+    "panjf2000/ants": [
+      {
+        "date": "2026-08-07",
+        "stars": 14480,
+        "forks": 1438
+      }
+    ],
+    "panjf2000/gnet": [
+      {
+        "date": "2026-08-07",
+        "stars": 11228,
+        "forks": 1121
+      }
+    ],
+    "penpot/penpot": [
+      {
+        "date": "2026-08-07",
+        "stars": 58194,
+        "forks": 3902
+      }
+    ],
+    "phishdestroy/destroylist": [
+      {
+        "date": "2026-08-07",
+        "stars": 1626,
+        "forks": 428
+      }
+    ],
+    "pilotdeckagentlabs/pilotdeck": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "pinkr1ver/vibe-roast": [
+      {
+        "date": "2026-08-07",
+        "stars": 50,
+        "forks": 4
+      }
+    ],
+    "pjq/rpi": [
+      {
+        "date": "2026-08-07",
+        "stars": 57,
+        "forks": 8
+      }
+    ],
+    "planshit/projecteye": [
+      {
+        "date": "2026-08-07",
+        "stars": 1247,
+        "forks": 78
+      }
+    ],
+    "popcornboom/ezholodotnet": [
+      {
+        "date": "2026-08-07",
+        "stars": 76,
+        "forks": 2
+      }
+    ],
+    "purocean/yn": [
+      {
+        "date": "2026-08-07",
+        "stars": 6674,
+        "forks": 924
+      }
+    ],
+    "qc2168/mib": [
+      {
+        "date": "2026-08-07",
+        "stars": 229,
+        "forks": 10
+      }
+    ],
+    "qeesung/asciiplayer": [
+      {
+        "date": "2026-08-07",
+        "stars": 240,
+        "forks": 26
+      }
+    ],
+    "qeesung/image2ascii": [
+      {
+        "date": "2026-08-07",
+        "stars": 981,
+        "forks": 86
+      }
+    ],
+    "qiaolin-li/dubbo-desktop-manager": [
+      {
+        "date": "2026-08-07",
+        "stars": 63,
+        "forks": 4
+      }
+    ],
+    "qiweiii/github-custom-notifier": [
+      {
+        "date": "2026-08-07",
+        "stars": 20,
+        "forks": 1
+      }
+    ],
+    "quantaxis/quantaxis": [
+      {
+        "date": "2026-08-07",
+        "stars": 10981,
+        "forks": 3426
+      }
+    ],
+    "qwqcode/subrenamer": [
+      {
+        "date": "2026-08-07",
+        "stars": 1261,
+        "forks": 40
+      }
+    ],
+    "raullenchai/rapid-mlx": [
+      {
+        "date": "2026-08-07",
+        "stars": 3412,
+        "forks": 389
+      }
+    ],
+    "redamancy231-create/ai-collaboration-framework": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 3
+      }
+    ],
+    "redamancy231-create/claude-skills": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "redamancy231-create/docx-pipeline": [
+      {
+        "date": "2026-08-07",
+        "stars": 8,
+        "forks": 0
+      }
+    ],
+    "redamancy231-create/etf-pattern-match-pybind11": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 1
+      }
+    ],
+    "redamancy231-create/independent-review-toolkit": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "rockchinq/qchatgpt": [
+      {
+        "date": "2026-08-07",
+        "stars": 17312,
+        "forks": 1537
+      }
+    ],
+    "ruanrongman/intelliconnect": [
+      {
+        "date": "2026-08-07",
+        "stars": 138,
+        "forks": 34
+      }
+    ],
+    "rvelamen/octopus": [
+      {
+        "date": "2026-08-07",
+        "stars": 21,
+        "forks": 4
+      }
+    ],
+    "sallyn0225/elevenlabs-stt": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 2
+      }
+    ],
+    "samuelhe52/teleport": [
+      {
+        "date": "2026-08-07",
+        "stars": 174,
+        "forks": 9
+      }
+    ],
+    "sanjinhub/hexo-theme-geek": [
+      {
+        "date": "2026-08-07",
+        "stars": 398,
+        "forks": 66
+      }
+    ],
+    "seayj/mouseclick": [
+      {
+        "date": "2026-08-07",
+        "stars": 885,
+        "forks": 44
+      }
+    ],
+    "shadcn-ui/taxonomy": [
+      {
+        "date": "2026-08-07",
+        "stars": 19288,
+        "forks": 2738
+      }
+    ],
+    "shanleiguang/vbooks": [
+      {
+        "date": "2026-08-07",
+        "stars": 59,
+        "forks": 9
+      }
+    ],
+    "shaoyouvip/uptime": [
+      {
+        "date": "2026-08-07",
+        "stars": 52,
+        "forks": 44
+      }
+    ],
+    "sheepzh/make-zero": [
+      {
+        "date": "2026-08-07",
+        "stars": 22,
+        "forks": 4
+      }
+    ],
+    "sheepzh/timer": [
+      {
+        "date": "2026-08-07",
+        "stars": 938,
+        "forks": 74
+      }
+    ],
+    "shensky711/pretty-zhihu": [
+      {
+        "date": "2026-08-07",
+        "stars": 107,
+        "forks": 20
+      }
+    ],
+    "shensky711/run-with-you": [
+      {
+        "date": "2026-08-07",
+        "stars": 13,
+        "forks": 1
+      }
+    ],
+    "shensven/morphling": [
+      {
+        "date": "2026-08-07",
+        "stars": 10,
+        "forks": 1
+      }
+    ],
+    "shihuili1218/klein": [
+      {
+        "date": "2026-08-07",
+        "stars": 344,
+        "forks": 21
+      }
+    ],
+    "shiyucheng2018/polily": [
+      {
+        "date": "2026-08-07",
+        "stars": 13,
+        "forks": 1
+      }
+    ],
+    "shuyu-labs/antsk": [
+      {
+        "date": "2026-08-07",
+        "stars": 1323,
+        "forks": 214
+      }
+    ],
+    "shuyu-labs/bigbanana-ai-director": [
+      {
+        "date": "2026-08-07",
+        "stars": 1711,
+        "forks": 284
+      }
+    ],
+    "shuyu-labs/webcode": [
+      {
+        "date": "2026-08-07",
+        "stars": 288,
+        "forks": 42
+      }
+    ],
+    "silvren/codex-quota-dot": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "simon-he95/markstream-vue": [
+      {
+        "date": "2026-08-07",
+        "stars": 2865,
+        "forks": 174
+      }
+    ],
+    "simpleapples/fansky": [
+      {
+        "date": "2026-08-07",
+        "stars": 74,
+        "forks": 23
+      }
+    ],
+    "simpleapples/shakechoose": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 1
+      }
+    ],
+    "simpleapples/url2qrcode": [
+      {
+        "date": "2026-08-07",
+        "stars": 10,
+        "forks": 4
+      }
+    ],
+    "sipyourdrink-ltd/bernstein": [
+      {
+        "date": "2026-08-07",
+        "stars": 799,
+        "forks": 92
+      }
+    ],
+    "snowleopard-io/cogitoagent": [
+      {
+        "date": "2026-08-07",
+        "stars": 14,
+        "forks": 1
+      }
+    ],
+    "sollawen/microneo": [
+      {
+        "date": "2026-08-07",
+        "stars": 52,
+        "forks": 2
+      }
+    ],
+    "solobat/steward": [
+      {
+        "date": "2026-08-07",
+        "stars": 674,
+        "forks": 40
+      }
+    ],
+    "solobat/wordcard": [
+      {
+        "date": "2026-08-07",
+        "stars": 127,
+        "forks": 12
+      }
+    ],
+    "someu/aigotools": [
+      {
+        "date": "2026-08-07",
+        "stars": 654,
+        "forks": 117
+      }
+    ],
+    "soonxf/micro-firewall": [
+      {
+        "date": "2026-08-07",
+        "stars": 209,
+        "forks": 14
+      }
+    ],
+    "spacetimee/fusion-jetbrainsmaplemono": [
+      {
+        "date": "2026-08-07",
+        "stars": 2174,
+        "forks": 44
+      }
+    ],
+    "spacetimee/ona-pix": [
+      {
+        "date": "2026-08-07",
+        "stars": 161,
+        "forks": 6
+      }
+    ],
+    "spacetimee/sheas-cealer": [
+      {
+        "date": "2026-08-07",
+        "stars": 5112,
+        "forks": 603
+      }
+    ],
+    "spacetimee/sheas-cealer-droid": [
+      {
+        "date": "2026-08-07",
+        "stars": 511,
+        "forks": 43
+      }
+    ],
+    "spacetimee/vight-note": [
+      {
+        "date": "2026-08-07",
+        "stars": 21,
+        "forks": 1
+      }
+    ],
+    "ssshooter/mind-elixir-core": [
+      {
+        "date": "2026-08-07",
+        "stars": 3110,
+        "forks": 410
+      }
+    ],
+    "stardust1900/ashes_note": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 1
+      }
+    ],
+    "staringos/tefact": [
+      {
+        "date": "2026-08-07",
+        "stars": 346,
+        "forks": 50
+      }
+    ],
+    "steve-xmh/stevescratchc": [
+      {
+        "date": "2026-08-07",
+        "stars": 15,
+        "forks": 3
+      }
+    ],
+    "stomeonst/public-trend-signal-mvp": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "study8677/readme.skill": [
+      {
+        "date": "2026-08-07",
+        "stars": 158,
+        "forks": 9
+      }
+    ],
+    "sunflowerslwtech/polanyi-design": [
+      {
+        "date": "2026-08-07",
+        "stars": 13,
+        "forks": 0
+      }
+    ],
+    "sunmh207/site-guard": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "sunrisepeak/dstruct": [
+      {
+        "date": "2026-08-07",
+        "stars": 54,
+        "forks": 4
+      }
+    ],
+    "sunrisepeak/dsvisual": [
+      {
+        "date": "2026-08-07",
+        "stars": 17,
+        "forks": 1
+      }
+    ],
+    "sunrisepeak/khistory": [
+      {
+        "date": "2026-08-07",
+        "stars": 84,
+        "forks": 4
+      }
+    ],
+    "sunxfancy/ssui": [
+      {
+        "date": "2026-08-07",
+        "stars": 34,
+        "forks": 5
+      }
+    ],
+    "supabase/supabase": [
+      {
+        "date": "2026-08-07",
+        "stars": 107645,
+        "forks": 13489
+      }
+    ],
+    "super-inspire/super-inspire-end": [
+      {
+        "date": "2026-08-07",
+        "stars": 4179,
+        "forks": 294
+      }
+    ],
+    "supermonster003/ant-forest": [
+      {
+        "date": "2026-08-07",
+        "stars": 2854,
+        "forks": 565
+      }
+    ],
+    "tangjindi/posteasy": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 0
+      }
+    ],
+    "tangly1024/notionnext": [
+      {
+        "date": "2026-08-07",
+        "stars": 11720,
+        "forks": 14707
+      }
+    ],
+    "tangshimin/mujing": [
+      {
+        "date": "2026-08-07",
+        "stars": 4386,
+        "forks": 315
+      }
+    ],
+    "tans/photo-mint": [
+      {
+        "date": "2026-08-07",
+        "stars": 29,
+        "forks": 1
+      }
+    ],
+    "tefact/tefact-weekly": [
+      {
+        "date": "2026-08-07",
+        "stars": 41,
+        "forks": 3
+      }
+    ],
+    "thanatosxingyu/terminal-bio": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "tigergraph/gitbook2spa": [
+      {
+        "date": "2026-08-07",
+        "stars": 9,
+        "forks": 3
+      }
+    ],
+    "timi-liuliang/echo": [
+      {
+        "date": "2026-08-07",
+        "stars": 985,
+        "forks": 120
+      }
+    ],
+    "timwood0x10/codescope": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 0
+      }
+    ],
+    "timwood0x10/omniscope-rs": [
+      {
+        "date": "2026-08-07",
+        "stars": 6,
+        "forks": 0
+      }
+    ],
+    "tkkk-ioser/wechatplugin-macos": [
+      {
+        "date": "2026-08-07",
+        "stars": 14277,
+        "forks": 2448
+      }
+    ],
+    "trzsz/trzsz": [
+      {
+        "date": "2026-08-07",
+        "stars": 1439,
+        "forks": 63
+      }
+    ],
+    "tsonglew/intellij-etcdhelper": [
+      {
+        "date": "2026-08-07",
+        "stars": 33,
+        "forks": 6
+      }
+    ],
+    "tw93/miaoyan": [
+      {
+        "date": "2026-08-07",
+        "stars": 8509,
+        "forks": 500
+      }
+    ],
+    "tw93/pake": [
+      {
+        "date": "2026-08-07",
+        "stars": 60491,
+        "forks": 12329
+      }
+    ],
+    "typeorm/typeorm": [
+      {
+        "date": "2026-08-07",
+        "stars": 36617,
+        "forks": 6659
+      }
+    ],
+    "ufo5260987423/scheme-langserver": [
+      {
+        "date": "2026-08-07",
+        "stars": 292,
+        "forks": 20
+      }
+    ],
+    "umami-software/umami": [
+      {
+        "date": "2026-08-07",
+        "stars": 38087,
+        "forks": 7720
+      }
+    ],
+    "upscayl/upscayl": [
+      {
+        "date": "2026-08-07",
+        "stars": 47810,
+        "forks": 2374
+      }
+    ],
+    "usual2970/certimate": [
+      {
+        "date": "2026-08-07",
+        "stars": 15,
+        "forks": 0
+      }
+    ],
+    "v2ray/v2ray-core": [
+      {
+        "date": "2026-08-07",
+        "stars": 46945,
+        "forks": 8827
+      }
+    ],
+    "varletjs/varlet": [
+      {
+        "date": "2026-08-07",
+        "stars": 5335,
+        "forks": 624
+      }
+    ],
+    "vastsa/bokebox": [
+      {
+        "date": "2026-08-07",
+        "stars": 72,
+        "forks": 16
+      }
+    ],
+    "ventupx/upx-cli": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "version-fox/vfox": [
+      {
+        "date": "2026-08-07",
+        "stars": 3954,
+        "forks": 157
+      }
+    ],
+    "via007/bilibili-rag": [
+      {
+        "date": "2026-08-07",
+        "stars": 1283,
+        "forks": 92
+      }
+    ],
+    "videoroll/videoroll": [
+      {
+        "date": "2026-08-07",
+        "stars": 141,
+        "forks": 15
+      }
+    ],
+    "vladelaina/catime": [
+      {
+        "date": "2026-08-07",
+        "stars": 4625,
+        "forks": 184
+      }
+    ],
+    "vorojar/md-preview": [
+      {
+        "date": "2026-08-07",
+        "stars": 228,
+        "forks": 23
+      }
+    ],
+    "wandb/openui": [
+      {
+        "date": "2026-08-07",
+        "stars": 22497,
+        "forks": 2060
+      }
+    ],
+    "wanghongenpin/proxypin": [
+      {
+        "date": "2026-08-07",
+        "stars": 13675,
+        "forks": 1180
+      }
+    ],
+    "wanglian/workbase-server": [
+      {
+        "date": "2026-08-07",
+        "stars": 282,
+        "forks": 28
+      }
+    ],
+    "wasp-lang/open-saas": [
+      {
+        "date": "2026-08-07",
+        "stars": 15171,
+        "forks": 1812
+      }
+    ],
+    "watanabechika/earwormdiary": [
+      {
+        "date": "2026-08-07",
+        "stars": 8,
+        "forks": 0
+      }
+    ],
+    "wcy-dt/ponghub": [
+      {
+        "date": "2026-08-07",
+        "stars": 226,
+        "forks": 36
+      }
+    ],
+    "weijunext/smart-excel-ai": [
+      {
+        "date": "2026-08-07",
+        "stars": 1651,
+        "forks": 253
+      }
+    ],
+    "windowssnake/snake-pc-info": [
+      {
+        "date": "2026-08-07",
+        "stars": 21,
+        "forks": 0
+      }
+    ],
+    "wizyoung/googletranslate.popclipext": [
+      {
+        "date": "2026-08-07",
+        "stars": 373,
+        "forks": 30
+      }
+    ],
+    "work7z/laftools": [
+      {
+        "date": "2026-08-07",
+        "stars": 368,
+        "forks": 20
+      }
+    ],
+    "wq19901103wq/wechat-mac-rpa": [
+      {
+        "date": "2026-08-07",
+        "stars": 64,
+        "forks": 14
+      }
+    ],
+    "wtechtec/berth": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "wtechtec/web-hooker": [
+      {
+        "date": "2026-08-07",
+        "stars": 17,
+        "forks": 1
+      }
+    ],
+    "wujunwei928/edge-tts-go": [
+      {
+        "date": "2026-08-07",
+        "stars": 79,
+        "forks": 10
+      }
+    ],
+    "wujunwei928/parse-video": [
+      {
+        "date": "2026-08-07",
+        "stars": 1000,
+        "forks": 264
+      }
+    ],
+    "wzj177/ecommerce-image-suite": [
+      {
+        "date": "2026-08-07",
+        "stars": 307,
+        "forks": 79
+      }
+    ],
+    "wzj177/gbvr-iot": [
+      {
+        "date": "2026-08-07",
+        "stars": 31,
+        "forks": 12
+      }
+    ],
+    "xfseven7/novel-helper": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 2
+      }
+    ],
+    "xianfeng92/love-ethereum": [
+      {
+        "date": "2026-08-07",
+        "stars": 531,
+        "forks": 107
+      }
+    ],
+    "xiao-zaiyi/illa-helper": [
+      {
+        "date": "2026-08-07",
+        "stars": 2874,
+        "forks": 154
+      }
+    ],
+    "xiaopujun/light-chaser": [
+      {
+        "date": "2026-08-07",
+        "stars": 871,
+        "forks": 126
+      }
+    ],
+    "xigong93/xiaozhuan": [
+      {
+        "date": "2026-08-07",
+        "stars": 189,
+        "forks": 41
+      }
+    ],
+    "xingxingc/stray_avatar": [
+      {
+        "date": "2026-08-07",
+        "stars": 153,
+        "forks": 19
+      }
+    ],
+    "xjh22222228/boomb": [
+      {
+        "date": "2026-08-07",
+        "stars": 336,
+        "forks": 52
+      }
+    ],
+    "xnat9/tiny": [
+      {
+        "date": "2026-08-07",
+        "stars": 27,
+        "forks": 3
+      }
+    ],
+    "xnx3/templatespider": [
+      {
+        "date": "2026-08-07",
+        "stars": 986,
+        "forks": 197
+      }
+    ],
+    "xnx3/translate": [
+      {
+        "date": "2026-08-07",
+        "stars": 3034,
+        "forks": 478
+      }
+    ],
+    "xnx3/wangmarket": [
+      {
+        "date": "2026-08-07",
+        "stars": 345,
+        "forks": 110
+      }
+    ],
+    "xsong1205/nocturn": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 0
+      }
+    ],
+    "xsong1205/tqsync": [
+      {
+        "date": "2026-08-07",
+        "stars": 84,
+        "forks": 6
+      }
+    ],
+    "xtthaop/zxnote-web": [
+      {
+        "date": "2026-08-07",
+        "stars": 5,
+        "forks": 1
+      }
+    ],
+    "xurenda/enjoy-player": [
+      {
+        "date": "2026-08-07",
+        "stars": 35,
+        "forks": 10
+      }
+    ],
+    "xxdz-official/bilijiyin": [
+      {
+        "date": "2026-08-07",
+        "stars": 4,
+        "forks": 0
+      }
+    ],
+    "xxdz-official/bililike-counter": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "xxdz-official/shangbackground": [
+      {
+        "date": "2026-08-07",
+        "stars": 15,
+        "forks": 4
+      }
+    ],
+    "xxdz-official/xxdz-itoc": [
+      {
+        "date": "2026-08-07",
+        "stars": 11,
+        "forks": 0
+      }
+    ],
+    "yeayee/trace": [
+      {
+        "date": "2026-08-07",
+        "stars": 9,
+        "forks": 0
+      }
+    ],
+    "yelluo/12points": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 2
+      }
+    ],
+    "yils-lin/short-video-factory": [
+      {
+        "date": "2026-08-07",
+        "stars": 5083,
+        "forks": 720
+      }
+    ],
+    "youwen21/flybird-m3u8downloader": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 0
+      }
+    ],
+    "ys-ll/uniterm": [
+      {
+        "date": "2026-08-07",
+        "stars": 251,
+        "forks": 26
+      }
+    ],
+    "yu-core/swashbucklerdiary": [
+      {
+        "date": "2026-08-07",
+        "stars": 1571,
+        "forks": 146
+      }
+    ],
+    "yuhai0/shex": [
+      {
+        "date": "2026-08-07",
+        "stars": 22,
+        "forks": 0
+      }
+    ],
+    "yv1ing/mollyaudit": [
+      {
+        "date": "2026-08-07",
+        "stars": 3,
+        "forks": 0
+      }
+    ],
+    "yv1ing/mollyblog": [
+      {
+        "date": "2026-08-07",
+        "stars": 1,
+        "forks": 0
+      }
+    ],
+    "ywwhack/aidou-electron": [
+      {
+        "date": "2026-08-07",
+        "stars": 184,
+        "forks": 22
+      }
+    ],
+    "yzqzy/wechat-assistant": [
+      {
+        "date": "2026-08-07",
+        "stars": 743,
+        "forks": 84
+      }
+    ],
+    "zcf0508/autocut-client": [
+      {
+        "date": "2026-08-07",
+        "stars": 339,
+        "forks": 31
+      }
+    ],
+    "zengliangyi/chatcrystal": [
+      {
+        "date": "2026-08-07",
+        "stars": 51,
+        "forks": 3
+      }
+    ],
+    "zeweihan/aiworkdeck": [
+      {
+        "date": "2026-08-07",
+        "stars": 72,
+        "forks": 11
+      }
+    ],
+    "zhangdi168/vitepresssimple": [
+      {
+        "date": "2026-08-07",
+        "stars": 233,
+        "forks": 15
+      }
+    ],
+    "zhanghuanchong/icon-workshop": [
+      {
+        "date": "2026-08-07",
+        "stars": 2313,
+        "forks": 226
+      }
+    ],
+    "zhaoolee/chromeappheroes": [
+      {
+        "date": "2026-08-07",
+        "stars": 25770,
+        "forks": 2628
+      }
+    ],
+    "zhaoxiaozhao07/dynamic-photo-video-display-wall": [
+      {
+        "date": "2026-08-07",
+        "stars": 0,
+        "forks": 2
+      }
+    ],
+    "zhaoxiaozhao07/mouse-click": [
+      {
+        "date": "2026-08-07",
+        "stars": 7,
+        "forks": 0
+      }
+    ],
+    "zhennann/cabloy": [
+      {
+        "date": "2026-08-07",
+        "stars": 970,
+        "forks": 131
+      }
+    ],
+    "zhtyyx/ioe": [
+      {
+        "date": "2026-08-07",
+        "stars": 1457,
+        "forks": 285
+      }
+    ],
+    "zhu327/ifwechat": [
+      {
+        "date": "2026-08-07",
+        "stars": 88,
+        "forks": 9
+      }
+    ],
+    "zhuozhuocrayon/throttled-py": [
+      {
+        "date": "2026-08-07",
+        "stars": 643,
+        "forks": 35
+      }
+    ],
+    "zinglix/shellow": [
+      {
+        "date": "2026-08-07",
+        "stars": 6,
+        "forks": 1
+      }
+    ],
+    "zinglix/sillage": [
+      {
+        "date": "2026-08-07",
+        "stars": 12,
+        "forks": 1
+      }
+    ],
+    "zoumorn/tkreborn": [
+      {
+        "date": "2026-08-07",
+        "stars": 74,
+        "forks": 11
+      }
+    ],
+    "zsxh1990/pr-genius": [
+      {
+        "date": "2026-08-07",
+        "stars": 2,
+        "forks": 1
+      }
+    ],
+    "zzliu93-debug/focusd": [
+      {
+        "date": "2026-08-07",
+        "stars": 185,
+        "forks": 11
+      }
+    ]
+  }
+}
