@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="中国独立开发者产品数据库：可搜索、可筛选、可视化的开源产品目录。" />
-    <title>中国独立开发者产品数据库</title>
+    <meta name="description" content="IndieBase CN：中国独立开发者产品与独立开发工具的可搜索、可筛选、可视化数据库。" />
+    <title>IndieBase CN — 中国独立开发者产品可视化数据库</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -12,64 +12,70 @@
       <nav class="topbar wrap" aria-label="主导航">
         <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">独</span><span>IndieBase CN</span></a>
         <div class="top-links">
-          <a href="#explore">发现产品</a>
+          <a href="#explore">独立产品</a>
+          <a href="#tools">工具资源</a>
           <a href="#methodology">数据说明</a>
-          <a href="https://github.com/1c7/chinese-independent-developer" target="_blank" rel="noreferrer">上游仓库 ↗</a>
         </div>
       </nav>
       <div class="wrap hero-grid" id="top">
         <section>
           <p class="eyebrow">OPEN DATA · INDEPENDENT PRODUCTS</p>
           <h1>看见中国独立开发者<br />正在创造什么</h1>
-          <p class="hero-copy">将社区维护的 Markdown 清单转成结构化数据库，支持搜索、组合筛选、趋势分析和数据质量追溯。</p>
+          <p class="hero-copy">将多个社区维护的 Markdown 清单转换为结构化数据库。独立产品与工具资源分开收录、分开去重，并为每条记录保留准确来源。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#explore">浏览产品</a>
-            <button class="button secondary" id="download-data" type="button">下载当前 JSON</button>
+            <a class="button primary" href="#explore">浏览独立产品</a>
+            <a class="button secondary" href="#tools">浏览工具资源</a>
+            <button class="button secondary" id="download-products" type="button">下载产品 JSON</button>
           </div>
           <p class="snapshot-note" id="snapshot-note">正在读取数据快照…</p>
         </section>
         <aside class="hero-visual" aria-label="数据概览装饰图">
           <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-          <div class="visual-core"><span>DATASET</span><strong id="hero-total">—</strong><small>PRODUCT RECORDS</small></div>
-          <div class="float-tag tag-a">产品</div><div class="float-tag tag-b">工具</div><div class="float-tag tag-c">游戏</div>
+          <div class="visual-core"><span>PRODUCTS</span><strong id="hero-total">—</strong><small>DEDUPED RECORDS</small></div>
+          <div class="float-tag tag-a">产品</div><div class="float-tag tag-b">开发者</div><div class="float-tag tag-c">工具</div>
         </aside>
       </div>
     </header>
 
     <main>
       <section class="wrap metrics" aria-label="核心数据指标">
-        <article class="metric"><span>产品记录</span><strong id="metric-products">—</strong><small>去重后的可查询条目</small></article>
-        <article class="metric"><span>独立开发者</span><strong id="metric-developers">—</strong><small>按公开名称去重</small></article>
-        <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确填写地区</small></article>
-        <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>状态为已上线或开发中</small></article>
+        <article class="metric"><span>独立产品</span><strong id="metric-products">—</strong><small>跨产品来源去重</small></article>
+        <article class="metric"><span>独立开发者</span><strong id="metric-developers">—</strong><small>按公开名称统计</small></article>
+        <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确地区</small></article>
+        <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>已上线或开发中</small></article>
+        <article class="metric"><span>工具资源</span><strong id="metric-tools">—</strong><small>独立数据集，不混入产品</small></article>
       </section>
 
       <section class="wrap dashboard" aria-labelledby="dashboard-title">
-        <div class="section-heading"><div><p class="eyebrow">ECOSYSTEM OVERVIEW</p><h2 id="dashboard-title">生态概览</h2></div><p>所有图表都会跟随下方筛选条件联动。</p></div>
+        <div class="section-heading">
+          <div><p class="eyebrow">PRODUCT ECOSYSTEM</p><h2 id="dashboard-title">独立产品生态概览</h2></div>
+          <p>这里只统计独立产品数据。工具资源不会进入产品趋势、城市或状态图表。</p>
+        </div>
         <div class="chart-grid">
           <article class="chart-panel wide">
             <div class="panel-heading"><div><h3>收录趋势</h3><p>按项目添加年份统计</p></div><span class="chart-total" id="trend-total">— 条</span></div>
             <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>产品类型</h3><p>主产品、程序员工具与游戏</p></div></div>
-            <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条记录</span></div></div><div class="legend" id="category-legend"></div></div>
+            <div class="panel-heading"><div><h3>产品类型</h3><p>通用产品、程序员工具、游戏和历史归档</p></div></div>
+            <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
           </article>
           <article class="chart-panel">
             <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8</p></div></div>
             <div class="bar-list" id="city-chart"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>运行状态</h3><p>基于仓库中的状态标记</p></div></div>
+            <div class="panel-heading"><div><h3>运行状态</h3><p>基于来源清单中的状态标记</p></div></div>
             <div class="status-grid" id="status-chart"></div>
           </article>
         </div>
       </section>
 
       <section class="explorer" id="explore"><div class="wrap">
-        <div class="section-heading explorer-heading"><div><p class="eyebrow">PRODUCT EXPLORER</p><h2>发现产品</h2></div><p id="result-summary" aria-live="polite">正在加载…</p></div>
+        <div class="section-heading explorer-heading"><div><p class="eyebrow">PRODUCT EXPLORER</p><h2>独立产品</h2></div><p id="result-summary" aria-live="polite">正在加载…</p></div>
+        <div class="dataset-note"><strong>产品数据集</strong><span>来源于 1c7/chinese-independent-developer 与 XiaomingX/1000-chinese-independent-developer-plus；同类产品跨来源去重，并合并所有来源。</span></div>
         <div class="filter-panel">
-          <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="产品、开发者、描述、城市…" autocomplete="off" /></label>
+          <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="产品、开发者、描述、城市、来源…" autocomplete="off" /></label>
           <label><span>类型</span><select id="category-filter"><option value="">全部类型</option></select></label>
           <label><span>状态</span><select id="status-filter"><option value="">全部状态</option></select></label>
           <label><span>年份</span><select id="year-filter"><option value="">全部年份</option></select></label>
@@ -78,24 +84,59 @@
         </div>
         <div class="active-filters" id="active-filters" aria-live="polite"></div>
         <div class="product-grid" id="product-grid"></div>
-        <div class="empty-state" id="empty-state" hidden><strong>没有找到匹配项目</strong><p>尝试减少筛选条件或换一个关键词。</p></div>
-        <div class="load-more-wrap"><button class="button secondary" id="load-more" type="button">加载更多</button></div>
+        <div class="empty-state" id="empty-state" hidden><strong>没有找到匹配产品</strong><p>尝试减少筛选条件或换一个关键词。</p></div>
+        <div class="load-more-wrap"><button class="button secondary" id="load-more" type="button">加载更多产品</button></div>
+      </div></section>
+
+      <section class="tool-explorer" id="tools"><div class="wrap">
+        <div class="section-heading explorer-heading">
+          <div><p class="eyebrow">INDEPENDENT TOOLKIT</p><h2>独立开发工具与资源</h2></div>
+          <div class="section-actions"><p id="tool-result-summary" aria-live="polite">正在加载…</p><button class="button secondary compact" id="download-tools" type="button">下载工具 JSON</button></div>
+        </div>
+        <div class="dataset-note tool-note"><strong>工具数据集</strong><span>来源于 yaolifeng0629/Awesome-independent-tools。它是开发资源目录，不会混入独立产品列表或产品统计。</span></div>
+        <div class="tool-filter-panel">
+          <label class="search-field"><span>搜索工具</span><input id="tool-search" type="search" placeholder="工具名称、分类、描述、来源…" autocomplete="off" /></label>
+          <label><span>工具分类</span><select id="tool-category-filter"><option value="">全部分类</option></select></label>
+          <button class="reset-button" id="reset-tool-filters" type="button">清空筛选</button>
+        </div>
+        <div class="tool-grid" id="tool-grid"></div>
+        <div class="empty-state" id="tool-empty-state" hidden><strong>没有找到匹配工具</strong><p>尝试更换关键词或分类。</p></div>
+        <div class="load-more-wrap"><button class="button secondary" id="load-more-tools" type="button">加载更多工具</button></div>
       </div></section>
 
       <section class="wrap methodology" id="methodology">
         <div><p class="eyebrow">METHODOLOGY</p><h2>数据如何生成</h2></div>
         <ol class="pipeline">
-          <li><span>01</span><div><strong>同步上游</strong><p>读取主列表、程序员版、游戏版和历史归档。</p></div></li>
-          <li><span>02</span><div><strong>结构化解析</strong><p>识别日期、开发者、城市、产品、状态、链接与描述。</p></div></li>
-          <li><span>03</span><div><strong>校验去重</strong><p>保留来源行号，报告缺失字段、重复项和解析异常。</p></div></li>
-          <li><span>04</span><div><strong>可视化发布</strong><p>生成无需后端即可部署的静态数据产品。</p></div></li>
+          <li><span>01</span><div><strong>同步多来源</strong><p>读取三个仓库的主清单和分类文件。</p></div></li>
+          <li><span>02</span><div><strong>分类解析</strong><p>产品清单、项目表格和工具目录使用不同解析器。</p></div></li>
+          <li><span>03</span><div><strong>同类去重</strong><p>产品只与产品合并，工具只与工具合并。</p></div></li>
+          <li><span>04</span><div><strong>来源追溯</strong><p>保留仓库、文件、章节、行号和原始文本。</p></div></li>
         </ol>
-        <div class="caveat"><strong>边界说明</strong><p>该数据库反映 GitHub 仓库主动收录的样本，不等同于中国独立开发者总体规模。项目状态和链接可能随时间变化，分析时应保留来源与快照日期。</p></div>
+        <div class="caveat"><strong>来源与边界</strong><p>每条记录都带有 <code>sources[]</code>。同一条记录来自多个仓库时会保留全部来源。产品与工具即使 URL 相同也不会跨数据集合并，只会在质量报告中标记重叠。</p></div>
       </section>
     </main>
-    <footer><div class="wrap footer-inner"><p>IndieBase CN · 数据来源于 1c7/chinese-independent-developer</p><p id="generated-at">数据生成时间：—</p></div></footer>
 
-    <template id="product-template"><article class="product-card"><div class="card-topline"><span class="category-badge"></span><span class="status-badge"></span></div><div><h3 class="product-name"></h3><p class="product-description"></p></div><div class="product-meta"></div><div class="card-footer"><span class="source-date"></span><a class="visit-link" target="_blank" rel="noreferrer">访问产品 ↗</a></div></article></template>
+    <footer><div class="wrap footer-inner"><p>IndieBase CN · 多来源独立开发数据可视化</p><p id="generated-at">数据生成时间：—</p></div></footer>
+
+    <template id="product-template">
+      <article class="product-card">
+        <div class="card-topline"><span class="category-badge"></span><span class="status-badge"></span></div>
+        <div><h3 class="product-name"></h3><p class="product-description"></p></div>
+        <div class="product-meta"></div>
+        <div class="record-sources"></div>
+        <div class="card-footer"><span class="source-date"></span><a class="visit-link" target="_blank" rel="noreferrer">访问产品 ↗</a></div>
+      </article>
+    </template>
+
+    <template id="tool-template">
+      <article class="tool-card">
+        <div class="card-topline"><span class="category-badge tool-category"></span><span class="status-badge tool-pricing"></span></div>
+        <div><h3 class="tool-name"></h3><p class="tool-description"></p></div>
+        <div class="record-sources"></div>
+        <div class="card-footer"><span>工具资源</span><a class="visit-link" target="_blank" rel="noreferrer">访问工具 ↗</a></div>
+      </article>
+    </template>
+
     <script type="module" src="src/app.js"></script>
   </body>
 </html>
