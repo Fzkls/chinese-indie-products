@@ -1,8 +1,6 @@
-name: Sync upstream database
+name: Create data sync pull request
 
 on:
-  schedule:
-    - cron: '17 2 * * 1'
   workflow_dispatch:
 
 permissions:
@@ -12,6 +10,7 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -21,6 +20,11 @@ jobs:
           node-version: 22
       - name: Sync upstream records
         run: npm run sync:data
+      - name: Enrich direct GitHub repositories
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_SYNC_CONCURRENCY: 4
+        run: npm run sync:github
       - name: Verify generated database
         run: npm run verify
       - name: Create data update pull request
@@ -28,14 +32,19 @@ jobs:
         with:
           branch: automation/upstream-data-sync
           delete-branch: true
-          commit-message: 'data: sync independent developer products'
-          title: 'data: sync independent developer products'
+          commit-message: 'data: sync independent developer products and GitHub metadata'
+          title: 'data: sync independent developer products and GitHub metadata'
           body: |
-            Automated refresh from `1c7/chinese-independent-developer`.
+            Automated refresh of the product, tool and GitHub enrichment datasets.
 
-            - Rebuilt `data/products.json`
+            - Rebuilt `data/products.json` and `data/tools.json`
             - Rebuilt `data/quality-report.json`
+            - Refreshed `data/github-repositories.json`
+            - Appended compact weekly snapshots to `data/github-history.json`
             - Ran parser tests, data validation and static build
           add-paths: |
             data/products.json
+            data/tools.json
             data/quality-report.json
+            data/github-repositories.json
+            data/github-history.json
