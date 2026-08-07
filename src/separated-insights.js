@@ -9,7 +9,10 @@ const ACTIVITY_LABELS = {
 }
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
 const formatCompact = (value) => new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) || 0)
-const escapeHtml = (value = '') => String(value).replace(/[&<>'\"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '\"': '&quot;' })[char])
+const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
+  const entities = { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;' }
+  return char === '"' ? '&quot;' : entities[char]
+})
 
 function normalizeGitHubRepository(rawUrl) {
   if (!rawUrl) return null
