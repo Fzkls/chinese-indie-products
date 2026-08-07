@@ -6,15 +6,17 @@
     <meta name="description" content="IndieBase CN：中国独立开发者产品与独立开发工具的可搜索、可筛选、可视化数据库。" />
     <title>IndieBase CN — 中国独立开发者产品可视化数据库</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/separated-insights.css" />
   </head>
   <body>
     <header class="hero">
       <nav class="topbar wrap" aria-label="主导航">
         <a class="brand" href="#top" aria-label="返回顶部"><span class="brand-mark">独</span><span>IndieBase CN</span></a>
         <div class="top-links">
+          <a href="#product-dashboard">产品概览</a>
           <a href="#explore">独立产品</a>
+          <a href="#tool-dashboard">工具概览</a>
           <a href="#tools">工具资源</a>
-          <a href="#github">GitHub 热度</a>
           <a href="#methodology">数据说明</a>
         </div>
       </nav>
@@ -22,7 +24,7 @@
         <section>
           <p class="eyebrow">OPEN DATA · INDEPENDENT PRODUCTS</p>
           <h1>看见中国独立开发者<br />正在创造什么</h1>
-          <p class="hero-copy">将多个社区维护的 Markdown 清单转换为结构化数据库。独立产品与工具资源分开收录、分开去重，并为每条记录保留准确来源。</p>
+          <p class="hero-copy">将多个社区维护的 Markdown 清单转换为结构化数据库。独立产品与工具资源分开收录、分开统计、分开可视化，并为每条记录保留准确来源。</p>
           <div class="hero-actions">
             <a class="button primary" href="#explore">浏览独立产品</a>
             <a class="button secondary" href="#tools">浏览工具资源</a>
@@ -33,67 +35,60 @@
         <aside class="hero-visual" aria-label="数据概览装饰图">
           <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
           <div class="visual-core"><span>PRODUCTS</span><strong id="hero-total">—</strong><small>DEDUPED RECORDS</small></div>
-          <div class="float-tag tag-a">产品</div><div class="float-tag tag-b">开发者</div><div class="float-tag tag-c">工具</div>
+          <div class="float-tag tag-a">产品</div><div class="float-tag tag-b">开发者</div><div class="float-tag tag-c">开源</div>
         </aside>
       </div>
     </header>
 
     <main>
-      <section class="wrap metrics" aria-label="核心数据指标">
+      <section class="wrap metrics" aria-label="独立产品核心指标">
         <article class="metric"><span>独立产品</span><strong id="metric-products">—</strong><small>跨产品来源去重</small></article>
         <article class="metric"><span>独立开发者</span><strong id="metric-developers">—</strong><small>按公开名称统计</small></article>
         <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确地区</small></article>
         <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>已上线或开发中</small></article>
-        <article class="metric"><span>工具资源</span><strong id="metric-tools">—</strong><small>独立数据集，不混入产品</small></article>
-        <article class="metric"><span>GitHub 仓库</span><strong id="metric-github">—</strong><small>仅统计可识别公开仓库</small></article>
+        <article class="metric"><span>产品 GitHub 仓库</span><strong id="metric-github">—</strong><small>只统计独立产品关联仓库</small></article>
       </section>
 
-      <section class="wrap dashboard" aria-labelledby="dashboard-title">
+      <section class="wrap dashboard" id="product-dashboard" aria-labelledby="dashboard-title">
         <div class="section-heading">
           <div><p class="eyebrow">PRODUCT ECOSYSTEM</p><h2 id="dashboard-title">独立产品生态概览</h2></div>
-          <p>这里只统计独立产品数据。工具资源不会进入产品趋势、城市或状态图表。</p>
+          <p>这里只统计独立产品数据。工具资源不会进入产品趋势、类型、城市、状态或 GitHub 图表。</p>
         </div>
         <div class="chart-grid">
           <article class="chart-panel wide">
-            <div class="panel-heading"><div><h3>收录趋势</h3><p>悬停查看详情，点击年份联动筛选</p></div><span class="chart-total" id="trend-total">— 条</span></div>
+            <div class="panel-heading"><div><h3>收录趋势</h3><p>悬停查看详情，点击年份联动筛选独立产品</p></div><span class="chart-total" id="trend-total">— 条</span></div>
             <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>产品类型</h3><p>悬停查看详情，点击图例联动筛选</p></div></div>
+            <div class="panel-heading"><div><h3>产品类型</h3><p>悬停查看详情，点击图例联动筛选独立产品</p></div></div>
             <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8，可点击筛选</p></div></div>
+            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8，仅作用于产品数据</p></div></div>
             <div class="bar-list" id="city-chart"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>运行状态</h3><p>基于来源清单中的状态标记，可点击筛选</p></div></div>
+            <div class="panel-heading"><div><h3>运行状态</h3><p>基于产品来源清单中的状态标记</p></div></div>
             <div class="status-grid" id="status-chart"></div>
           </article>
         </div>
       </section>
 
-
-      <section class="github-insights" id="github">
+      <section class="separated-insights product-insights" id="product-github">
         <div class="wrap">
           <div class="section-heading">
-            <div><p class="eyebrow">GITHUB ENRICHMENT</p><h2>开源项目热度与活跃度</h2></div>
-            <div class="github-heading-meta"><p id="github-insight-note">正在读取 GitHub 数据…</p><small id="github-generated-at">—</small></div>
+            <div><p class="eyebrow">PRODUCT · GITHUB ENRICHMENT</p><h2>独立产品 GitHub 热度</h2></div>
+            <p id="product-github-count">正在读取产品 GitHub 数据…</p>
           </div>
-          <div class="dataset-note github-note"><strong>统计边界</strong><span>只统计产品或工具链接能够明确解析为公开 GitHub 仓库的记录。没有仓库的项目不会被视为 0 Star，Star 也不作为所有独立产品的统一价值排序。</span></div>
-          <div class="github-controls" role="group" aria-label="GitHub 项目范围">
-            <button class="scope-button is-active" type="button" data-github-scope="all">全部仓库</button>
-            <button class="scope-button" type="button" data-github-scope="product">独立产品</button>
-            <button class="scope-button" type="button" data-github-scope="tool">工具资源</button>
-          </div>
+          <div class="dataset-note separation-note"><strong>产品统计边界</strong><span id="product-github-note">只统计独立产品能够明确关联的公开 GitHub 仓库，不包含工具资源。</span></div>
           <div class="github-grid">
             <article class="chart-panel github-ranking-panel">
-              <div class="panel-heading"><div><h3>GitHub 热门项目 Top 20</h3><p>按当前 Star 快照排序；悬停查看仓库详情，点击打开项目详情</p></div></div>
-              <div class="github-rank-list" id="github-top-list"></div>
+              <div class="panel-heading"><div><h3>产品 GitHub Top 20</h3><p>按 Star 快照排序；点击项目只会定位到独立产品列表</p></div></div>
+              <div class="github-rank-list" id="product-github-top"></div>
             </article>
             <article class="chart-panel github-activity-panel">
-              <div class="panel-heading"><div><h3>仓库活跃度</h3><p>按最后提交时间与归档状态划分；点击筛选热门项目列表</p></div></div>
-              <div class="github-activity-grid" id="github-activity-grid"></div>
+              <div class="panel-heading"><div><h3>产品仓库活跃度</h3><p>只统计独立产品关联仓库</p></div></div>
+              <div class="github-activity-grid" id="product-github-activity"></div>
             </article>
           </div>
         </div>
@@ -115,6 +110,34 @@
         <div class="empty-state" id="empty-state" hidden><strong>没有找到匹配产品</strong><p>尝试减少筛选条件或换一个关键词。</p></div>
         <div class="load-more-wrap"><button class="button secondary" id="load-more" type="button">加载更多产品</button></div>
       </div></section>
+
+      <section class="wrap tool-dashboard" id="tool-dashboard" aria-labelledby="tool-dashboard-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">INDEPENDENT TOOLKIT · OVERVIEW</p><h2 id="tool-dashboard-title">独立开发工具与资源概览</h2></div>
+          <p>这里是独立的工具资源数据集。不会与独立产品的趋势、状态、城市或 GitHub 排名合并。</p>
+        </div>
+        <div class="tool-metrics" aria-label="工具资源核心指标">
+          <article class="tool-metric"><span>工具资源</span><strong id="metric-tools">—</strong><small>工具数据集总量</small></article>
+          <article class="tool-metric"><span>工具分类</span><strong id="tool-category-count">—</strong><small>按来源目录分类</small></article>
+          <article class="tool-metric"><span>工具 GitHub 仓库</span><strong id="tool-github-count">—</strong><small>只统计工具关联仓库</small></article>
+          <article class="tool-metric"><span>开源工具</span><strong id="tool-open-source-count">—</strong><small>按工具定价/授权标记统计</small></article>
+        </div>
+        <div class="dataset-note tool-note"><strong>工具统计边界</strong><span id="tool-github-note">这里只统计 yaolifeng0629/Awesome-independent-tools 数据，不包含独立产品。</span></div>
+        <div class="tool-chart-grid">
+          <article class="chart-panel wide">
+            <div class="panel-heading"><div><h3>工具分类分布</h3><p>点击分类直接筛选工具列表</p></div></div>
+            <div class="bar-list" id="tool-category-chart"></div>
+          </article>
+          <article class="chart-panel github-ranking-panel">
+            <div class="panel-heading"><div><h3>工具 GitHub Top 20</h3><p>只统计工具资源关联仓库；点击只定位到工具列表</p></div></div>
+            <div class="github-rank-list" id="tool-github-top"></div>
+          </article>
+          <article class="chart-panel github-activity-panel">
+            <div class="panel-heading"><div><h3>工具仓库活跃度</h3><p>只统计工具资源关联仓库</p></div></div>
+            <div class="github-activity-grid" id="tool-github-activity"></div>
+          </article>
+        </div>
+      </section>
 
       <section class="tool-explorer" id="tools"><div class="wrap">
         <div class="section-heading explorer-heading">
@@ -142,9 +165,17 @@
         </ol>
         <div class="caveat"><strong>来源与边界</strong><p>每条记录都带有 <code>sources[]</code>。同一条记录来自多个仓库时会保留全部来源。产品与工具即使 URL 相同也不会跨数据集合并，只会在质量报告中标记重叠。</p></div>
       </section>
+
+      <section class="github-insights legacy-github-insights" id="github" aria-hidden="true">
+        <div class="wrap">
+          <p id="github-insight-note"></p><small id="github-generated-at"></small>
+          <div><button type="button" data-github-scope="all">全部</button><button type="button" data-github-scope="product">产品</button><button type="button" data-github-scope="tool">工具</button></div>
+          <div id="github-top-list"></div><div id="github-activity-grid"></div>
+        </div>
+      </section>
     </main>
 
-    <footer><div class="wrap footer-inner"><p>IndieBase CN · 多来源独立开发数据可视化</p><p id="generated-at">数据生成时间：—</p></div></footer>
+    <footer><div class="wrap footer-inner"><p>IndieBase CN · 产品与工具分区的数据可视化</p><p id="generated-at">数据生成时间：—</p></div></footer>
 
     <template id="product-template">
       <article class="product-card">
@@ -175,5 +206,6 @@
     </aside>
 
     <script type="module" src="src/app.js"></script>
+    <script type="module" src="src/separated-insights.js"></script>
   </body>
 </html>
