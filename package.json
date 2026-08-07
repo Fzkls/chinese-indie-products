@@ -1,10 +1,11 @@
 {
   "name": "chinese-indie-developer-database",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
     "sync:data": "node scripts/sync-data.mjs",
+    "sync:github": "node scripts/sync-github.mjs",
     "build": "node scripts/build.mjs",
     "check:data": "node scripts/check-data.mjs",
     "test": "node --test tests/*.test.mjs",

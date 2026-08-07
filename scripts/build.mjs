@@ -6,12 +6,12 @@ await mkdir('dist/src', { recursive: true })
 await cp('index.html', 'dist/index.html')
 await cp('src/app.js', 'dist/src/app.js')
 await cp('src/styles.css', 'dist/src/styles.css')
-await cp('data/products.json', 'dist/data/products.json')
-await cp('data/tools.json', 'dist/data/tools.json')
-await cp('data/quality-report.json', 'dist/data/quality-report.json')
+for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json']) {
+  await cp(`data/${filename}`, `dist/data/${filename}`)
+}
 await writeFile('dist/.nojekyll', '')
 const app = await readFile('dist/src/app.js', 'utf8')
-if (!app.includes("fetch('data/products.json')") || !app.includes("fetch('data/tools.json')")) {
-  throw new Error('app.js must reference both separated datasets')
+for (const dataset of ['products.json', 'tools.json', 'github-repositories.json', 'github-history.json']) {
+  if (!app.includes(`data/${dataset}`)) throw new Error(`app.js must reference data/${dataset}`)
 }
 console.log('Static site built in dist/.')

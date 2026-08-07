@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-07T02:33:05.710Z",
+  "generatedAt": "2026-08-07T03:52:13.086Z",
   "products": {
-    "generatedAt": "2026-08-07T02:33:05.709Z",
+    "generatedAt": "2026-08-07T03:52:13.084Z",
     "dataset": "products",
-    "recordCount": 2744,
+    "recordCount": 2747,
     "sourceRepositoryCount": 2,
     "missing": {
       "name": 0,
@@ -11,12 +11,12 @@
       "description": 0,
       "sources": 0,
       "date": 4,
-      "city": 1619,
+      "city": 1622,
       "githubUrl": 681
     },
     "categoryCounts": {
-      "product": 1845,
-      "developer-tool": 286,
+      "product": 1847,
+      "developer-tool": 287,
       "game": 116,
       "archive": 497
     },
@@ -33,28 +33,28 @@
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4615,
+        "sourceLine": 4623,
         "rawText": "* :white_check_mark: [找到每个任务的最佳 AI 工具](https://toollist.ai)：找到最好的 AI 工具"
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4635,
+        "sourceLine": 4643,
         "rawText": "* :white_check_mark: [AI Anime Generator](https://aianimegen.org)：免费的 AI 动漫图片生成器"
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4858,
+        "sourceLine": 4866,
         "rawText": "* :white_check_mark: [m3u8下载器](https://github.com/youwen21/flybird-m3u8downloader)：下载 m3u8 视频、直播、批量检测 IPTV m3u8 有效性，release有安装包。 支持 Windows, macOS 系统。"
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 5764,
+        "sourceLine": 5772,
         "rawText": "* :white_check_mark: [减肥小助手](https://apps.apple.com/cn/app/id1583776291)：减肥期间的小工具，帮助记录体重和卡路里 - [更多介绍](https://ohee.cn/static/download/index.html)"
       },
       {
@@ -64,7 +64,7 @@
         "duplicateId": "c835eac5a096c4",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1280
+        "sourceLine": 1288
       },
       {
         "code": "duplicate-record",
@@ -73,7 +73,7 @@
         "duplicateId": "5eecadca7cd71e",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1286
+        "sourceLine": 1294
       },
       {
         "code": "duplicate-record",
@@ -82,7 +82,7 @@
         "duplicateId": "0b1d49e252cf69",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1329
+        "sourceLine": 1337
       },
       {
         "code": "duplicate-record",
@@ -91,7 +91,7 @@
         "duplicateId": "b878038372ddfc",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1445
+        "sourceLine": 1453
       },
       {
         "code": "duplicate-record",
@@ -100,7 +100,7 @@
         "duplicateId": "6b8b76ba05f115",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1702
+        "sourceLine": 1710
       },
       {
         "code": "duplicate-record",
@@ -109,7 +109,7 @@
         "duplicateId": "098a442940b874",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1805
+        "sourceLine": 1813
       },
       {
         "code": "duplicate-record",
@@ -118,7 +118,7 @@
         "duplicateId": "39bac173f29f7d",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1895
+        "sourceLine": 1903
       },
       {
         "code": "duplicate-record",
@@ -127,7 +127,7 @@
         "duplicateId": "42f9c13e162026",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 1984
+        "sourceLine": 1992
       },
       {
         "code": "duplicate-record",
@@ -136,7 +136,7 @@
         "duplicateId": "15906570dd2b73",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2018
+        "sourceLine": 2026
       },
       {
         "code": "duplicate-record",
@@ -145,7 +145,7 @@
         "duplicateId": "a39c523ebe03af",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2073
+        "sourceLine": 2081
       },
       {
         "code": "duplicate-record",
@@ -154,7 +154,7 @@
         "duplicateId": "58d1daeb4ea8f1",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2238
+        "sourceLine": 2246
       },
       {
         "code": "duplicate-record",
@@ -163,7 +163,7 @@
         "duplicateId": "056b26fa59611f",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2328
+        "sourceLine": 2336
       },
       {
         "code": "duplicate-record",
@@ -172,7 +172,7 @@
         "duplicateId": "0b1d49e252cf69",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2553
+        "sourceLine": 2561
       },
       {
         "code": "duplicate-record",
@@ -181,7 +181,7 @@
         "duplicateId": "527dd0b8e8e337",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 2649
+        "sourceLine": 2657
       },
       {
         "code": "duplicate-record",
@@ -190,7 +190,7 @@
         "duplicateId": "0e3df603c2ac54",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3155
+        "sourceLine": 3163
       },
       {
         "code": "duplicate-record",
@@ -199,7 +199,7 @@
         "duplicateId": "0dd065a6fa1c17",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3288
+        "sourceLine": 3296
       },
       {
         "code": "duplicate-record",
@@ -208,7 +208,7 @@
         "duplicateId": "514a848cc172c0",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3541
+        "sourceLine": 3549
       },
       {
         "code": "duplicate-record",
@@ -217,7 +217,7 @@
         "duplicateId": "ec23c00984d759",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3622
+        "sourceLine": 3630
       },
       {
         "code": "duplicate-record",
@@ -226,7 +226,7 @@
         "duplicateId": "bf52f074df05ca",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3674
+        "sourceLine": 3682
       },
       {
         "code": "duplicate-record",
@@ -235,7 +235,7 @@
         "duplicateId": "ad338584f38756",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3772
+        "sourceLine": 3780
       },
       {
         "code": "duplicate-record",
@@ -244,7 +244,7 @@
         "duplicateId": "f9d452eb72c9c2",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3902
+        "sourceLine": 3910
       },
       {
         "code": "duplicate-record",
@@ -253,7 +253,7 @@
         "duplicateId": "fc01aa91afdcb4",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3918
+        "sourceLine": 3926
       },
       {
         "code": "duplicate-record",
@@ -262,7 +262,7 @@
         "duplicateId": "b3cf48957edb25",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 3943
+        "sourceLine": 3951
       },
       {
         "code": "duplicate-record",
@@ -271,7 +271,7 @@
         "duplicateId": "293448f5f8a55a",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4186
+        "sourceLine": 4194
       },
       {
         "code": "duplicate-record",
@@ -280,7 +280,7 @@
         "duplicateId": "c4b73ea2165967",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4340
+        "sourceLine": 4348
       },
       {
         "code": "duplicate-record",
@@ -289,7 +289,7 @@
         "duplicateId": "e32e3e60daeb20",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4930
+        "sourceLine": 4938
       },
       {
         "code": "duplicate-record",
@@ -298,7 +298,7 @@
         "duplicateId": "eec72b77022940",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 4992
+        "sourceLine": 5000
       },
       {
         "code": "duplicate-record",
@@ -307,7 +307,7 @@
         "duplicateId": "807f5e5b170f96",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 5410
+        "sourceLine": 5418
       },
       {
         "code": "duplicate-record",
@@ -316,7 +316,7 @@
         "duplicateId": "f8a11d2f365676",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 5549
+        "sourceLine": 5557
       },
       {
         "code": "duplicate-record",
@@ -325,7 +325,7 @@
         "duplicateId": "d2fd57981a0f84",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 5863
+        "sourceLine": 5871
       },
       {
         "code": "duplicate-record",
@@ -334,20 +334,20 @@
         "duplicateId": "af53d7169b26ef",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "README.md",
-        "sourceLine": 5967
+        "sourceLine": 5975
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 579,
+        "sourceLine": 582,
         "rawText": "* :white_check_mark: [Awesome-Iwb](https://github.com/Awesome-Iwb/Awesome-Iwb/)：一体机和电子白板实用软件合集"
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 724,
+        "sourceLine": 727,
         "rawText": "* :white_check_mark: [专注私有部署的智能简历解析系统](https://github.com/changwu/cvparser)：基于自然语言处理和机器学习的高精准度简历解析系统，生产环境中海量简历解析检验，稳健性和智能性得到一致肯定。一次购买、永久许可。市面上唯一可以私有云部署（本地部署）一键安装试用的智能简历解析系统，数据安全完全掌握在自己手里。"
       },
       {
@@ -357,7 +357,7 @@
         "duplicateId": "9cf546712bffcd",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 193
+        "sourceLine": 196
       },
       {
         "code": "duplicate-record",
@@ -366,7 +366,7 @@
         "duplicateId": "4c1dd22197d27e",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 196
+        "sourceLine": 199
       },
       {
         "code": "duplicate-record",
@@ -375,7 +375,7 @@
         "duplicateId": "bd3c6e842d3406",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 390
+        "sourceLine": 393
       },
       {
         "code": "duplicate-record",
@@ -384,7 +384,7 @@
         "duplicateId": "3ead88121b9d7d",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": "pages/README-Programmer-Edition.md",
-        "sourceLine": 756
+        "sourceLine": 759
       },
       {
         "code": "missing-developer",
@@ -904,17 +904,17 @@
       }
     ],
     "dedupeStrategy": "canonical URL, falling back to normalized product name + developer; merge sources only within products",
-    "developerCount": 1633,
+    "developerCount": 1636,
     "cityCount": 82,
     "statusCounts": {
-      "active": 2296,
+      "active": 2299,
       "developing": 34,
       "closed": 410,
       "unknown": 4
     }
   },
   "tools": {
-    "generatedAt": "2026-08-07T02:33:05.710Z",
+    "generatedAt": "2026-08-07T03:52:13.086Z",
     "dataset": "tools",
     "recordCount": 284,
     "sourceRepositoryCount": 1,
