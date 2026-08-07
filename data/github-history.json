@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-07T06:58:38.449Z",
+    "generatedAt": "2026-08-07T08:52:27.504Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -30,8 +30,8 @@
     "1c7/chinese-independent-developer": [
       {
         "date": "2026-08-07",
-        "stars": 60574,
-        "forks": 5267
+        "stars": 60578,
+        "forks": 5268
       }
     ],
     "619dev/astrbot_plugin_paperphoneplus": [
@@ -100,15 +100,15 @@
     "acmesh-official/acme.sh": [
       {
         "date": "2026-08-07",
-        "stars": 47420,
+        "stars": 47422,
         "forks": 5652
       }
     ],
     "activecampaign/postmark-templates": [
       {
         "date": "2026-08-07",
-        "stars": 3194,
-        "forks": 1073
+        "stars": 3195,
+        "forks": 1074
       }
     ],
     "adra2n/otpbox": [
@@ -177,7 +177,7 @@
     "appwrite/appwrite": [
       {
         "date": "2026-08-07",
-        "stars": 56795,
+        "stars": 56794,
         "forks": 5608
       }
     ],
@@ -191,7 +191,7 @@
     "aqua5230/usage": [
       {
         "date": "2026-08-07",
-        "stars": 282,
+        "stars": 284,
         "forks": 45
       }
     ],
@@ -255,7 +255,7 @@
       {
         "date": "2026-08-07",
         "stars": 7610,
-        "forks": 154
+        "forks": 155
       }
     ],
     "beavailable/apt.sh": [
@@ -303,7 +303,7 @@
     "boommanpro/gaia-workflow-engine": [
       {
         "date": "2026-08-07",
-        "stars": 181,
+        "stars": 182,
         "forks": 13
       }
     ],
@@ -380,7 +380,7 @@
     "catdad/canvas-confetti": [
       {
         "date": "2026-08-07",
-        "stars": 12687,
+        "stars": 12688,
         "forks": 467
       }
     ],
@@ -388,7 +388,7 @@
       {
         "date": "2026-08-07",
         "stars": 7000,
-        "forks": 5035
+        "forks": 5036
       }
     ],
     "changwu/cvparser": [
@@ -443,14 +443,14 @@
     "cloudcannon/pagefind": [
       {
         "date": "2026-08-07",
-        "stars": 5387,
+        "stars": 5388,
         "forks": 200
       }
     ],
     "codercup/unibest": [
       {
         "date": "2026-08-07",
-        "stars": 2859,
+        "stars": 2858,
         "forks": 291
       }
     ],
@@ -583,7 +583,7 @@
     "dsd2077/cyberverse": [
       {
         "date": "2026-08-07",
-        "stars": 1544,
+        "stars": 1545,
         "forks": 214
       }
     ],
@@ -688,7 +688,7 @@
     "ethanyoq/invoice-downloader": [
       {
         "date": "2026-08-07",
-        "stars": 142,
+        "stars": 143,
         "forks": 15
       }
     ],
@@ -723,8 +723,8 @@
     "facebook/docusaurus": [
       {
         "date": "2026-08-07",
-        "stars": 65852,
-        "forks": 9995
+        "stars": 65851,
+        "forks": 9994
       }
     ],
     "fangnan700/ai-aides": [
@@ -772,8 +772,8 @@
     "gcwing/bitfun": [
       {
         "date": "2026-08-07",
-        "stars": 1515,
-        "forks": 173
+        "stars": 1531,
+        "forks": 174
       }
     ],
     "gee1k/upic": [
@@ -870,7 +870,7 @@
     "groupultra/telegram-search": [
       {
         "date": "2026-08-07",
-        "stars": 4045,
+        "stars": 4047,
         "forks": 270
       }
     ],
@@ -898,14 +898,14 @@
     "hanshuaikang/ai-media2doc": [
       {
         "date": "2026-08-07",
-        "stars": 3963,
+        "stars": 3965,
         "forks": 537
       }
     ],
     "hanshuaikang/nezha": [
       {
         "date": "2026-08-07",
-        "stars": 1862,
+        "stars": 1863,
         "forks": 174
       }
     ],
@@ -961,7 +961,7 @@
     "hui-zz/runany": [
       {
         "date": "2026-08-07",
-        "stars": 1077,
+        "stars": 1078,
         "forks": 101
       }
     ],
@@ -975,8 +975,8 @@
     "huilang-me/cf-server-monitor": [
       {
         "date": "2026-08-07",
-        "stars": 1080,
-        "forks": 842
+        "stars": 1081,
+        "forks": 845
       }
     ],
     "huqingyang/luoo.qy": [
@@ -1010,7 +1010,7 @@
     "iamcorey/birth": [
       {
         "date": "2026-08-07",
-        "stars": 363,
+        "stars": 366,
         "forks": 16
       }
     ],
@@ -1087,7 +1087,7 @@
     "inngest/inngest": [
       {
         "date": "2026-08-07",
-        "stars": 5697,
+        "stars": 5699,
         "forks": 332
       }
     ],
@@ -1199,7 +1199,7 @@
     "jianchang512/pyvideotrans": [
       {
         "date": "2026-08-07",
-        "stars": 18610,
+        "stars": 18611,
         "forks": 2294
       }
     ],
@@ -1283,7 +1283,7 @@
     "justlovemaki/aiclient-2-api": [
       {
         "date": "2026-08-07",
-        "stars": 8597,
+        "stars": 8599,
         "forks": 1357
       }
     ],
@@ -1423,7 +1423,7 @@
     "lencx/chatgpt": [
       {
         "date": "2026-08-07",
-        "stars": 54434,
+        "stars": 54432,
         "forks": 6137
       }
     ],
@@ -1438,7 +1438,7 @@
       {
         "date": "2026-08-07",
         "stars": 45835,
-        "forks": 2883
+        "forks": 2882
       }
     ],
     "li150/mapping_scanning": [
@@ -1640,7 +1640,7 @@
     "marseventh/cloudflare-imgbed": [
       {
         "date": "2026-08-07",
-        "stars": 6103,
+        "stars": 6105,
         "forks": 7625
       }
     ],
@@ -1724,8 +1724,8 @@
     "moeru-ai/airi": [
       {
         "date": "2026-08-07",
-        "stars": 47185,
-        "forks": 4664
+        "stars": 47203,
+        "forks": 4665
       }
     ],
     "mornhussakuyo-hub/ezc": [
@@ -1773,7 +1773,7 @@
     "narcooo/inkos": [
       {
         "date": "2026-08-07",
-        "stars": 8789,
+        "stars": 8791,
         "forks": 1661
       }
     ],
@@ -1781,13 +1781,13 @@
       {
         "date": "2026-08-07",
         "stars": 80059,
-        "forks": 6572
+        "forks": 6573
       }
     ],
     "nextauthjs/next-auth": [
       {
         "date": "2026-08-07",
-        "stars": 28317,
+        "stars": 28316,
         "forks": 4043
       }
     ],
@@ -1829,14 +1829,14 @@
     "nowork-studio/notfair": [
       {
         "date": "2026-08-07",
-        "stars": 3325,
+        "stars": 3326,
         "forks": 411
       }
     ],
     "nowork-studio/toprank": [
       {
         "date": "2026-08-07",
-        "stars": 3325,
+        "stars": 3326,
         "forks": 411
       }
     ],
@@ -1864,14 +1864,14 @@
     "opendatalab/labelu": [
       {
         "date": "2026-08-07",
-        "stars": 1646,
+        "stars": 1647,
         "forks": 185
       }
     ],
     "openilink/openilink-hub": [
       {
         "date": "2026-08-07",
-        "stars": 1547,
+        "stars": 1548,
         "forks": 130
       }
     ],
@@ -1899,14 +1899,14 @@
     "penpot/penpot": [
       {
         "date": "2026-08-07",
-        "stars": 58198,
+        "stars": 58204,
         "forks": 3903
       }
     ],
     "phishdestroy/destroylist": [
       {
         "date": "2026-08-07",
-        "stars": 1626,
+        "stars": 1623,
         "forks": 428
       }
     ],
@@ -1990,7 +1990,7 @@
     "quantaxis/quantaxis": [
       {
         "date": "2026-08-07",
-        "stars": 10981,
+        "stars": 10982,
         "forks": 3426
       }
     ],
@@ -2046,7 +2046,7 @@
     "rockchinq/qchatgpt": [
       {
         "date": "2026-08-07",
-        "stars": 17314,
+        "stars": 17318,
         "forks": 1537
       }
     ],
@@ -2389,7 +2389,7 @@
     "supabase/supabase": [
       {
         "date": "2026-08-07",
-        "stars": 107652,
+        "stars": 107655,
         "forks": 13491
       }
     ],
@@ -2417,8 +2417,8 @@
     "tangly1024/notionnext": [
       {
         "date": "2026-08-07",
-        "stars": 11722,
-        "forks": 14707
+        "stars": 11724,
+        "forks": 14706
       }
     ],
     "tangshimin/mujing": [
@@ -2501,21 +2501,21 @@
     "tw93/miaoyan": [
       {
         "date": "2026-08-07",
-        "stars": 8509,
+        "stars": 8508,
         "forks": 500
       }
     ],
     "tw93/pake": [
       {
         "date": "2026-08-07",
-        "stars": 60497,
-        "forks": 12328
+        "stars": 60498,
+        "forks": 12330
       }
     ],
     "typeorm/typeorm": [
       {
         "date": "2026-08-07",
-        "stars": 36617,
+        "stars": 36618,
         "forks": 6660
       }
     ],
@@ -2530,14 +2530,14 @@
       {
         "date": "2026-08-07",
         "stars": 38089,
-        "forks": 7718
+        "forks": 7719
       }
     ],
     "upscayl/upscayl": [
       {
         "date": "2026-08-07",
-        "stars": 47812,
-        "forks": 2374
+        "stars": 47821,
+        "forks": 2375
       }
     ],
     "usual2970/certimate": [
@@ -2578,7 +2578,7 @@
     "version-fox/vfox": [
       {
         "date": "2026-08-07",
-        "stars": 3956,
+        "stars": 3957,
         "forks": 157
       }
     ],
@@ -2634,7 +2634,7 @@
     "wasp-lang/open-saas": [
       {
         "date": "2026-08-07",
-        "stars": 15172,
+        "stars": 15175,
         "forks": 1812
       }
     ],
@@ -2718,7 +2718,7 @@
     "wzj177/ecommerce-image-suite": [
       {
         "date": "2026-08-07",
-        "stars": 307,
+        "stars": 308,
         "forks": 79
       }
     ],
@@ -2880,7 +2880,7 @@
       {
         "date": "2026-08-07",
         "stars": 5083,
-        "forks": 720
+        "forks": 721
       }
     ],
     "youwen21/flybird-m3u8downloader": [
@@ -2977,7 +2977,7 @@
     "zhaoolee/chromeappheroes": [
       {
         "date": "2026-08-07",
-        "stars": 25770,
+        "stars": 25771,
         "forks": 2628
       }
     ],
@@ -3005,7 +3005,7 @@
     "zhtyyx/ioe": [
       {
         "date": "2026-08-07",
-        "stars": 1457,
+        "stars": 1458,
         "forks": 285
       }
     ],
