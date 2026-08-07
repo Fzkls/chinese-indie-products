@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-07T08:53:23.906Z",
+    "generatedAt": "2026-08-07T09:05:30.771Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -100,7 +100,7 @@
     "acmesh-official/acme.sh": [
       {
         "date": "2026-08-07",
-        "stars": 47422,
+        "stars": 47423,
         "forks": 5652
       }
     ],
@@ -303,7 +303,7 @@
     "boommanpro/gaia-workflow-engine": [
       {
         "date": "2026-08-07",
-        "stars": 182,
+        "stars": 183,
         "forks": 13
       }
     ],
@@ -653,7 +653,7 @@
     "eatmoreduck/boss-zhipin-scraper": [
       {
         "date": "2026-08-07",
-        "stars": 1039,
+        "stars": 1040,
         "forks": 132
       }
     ],
@@ -772,7 +772,7 @@
     "gcwing/bitfun": [
       {
         "date": "2026-08-07",
-        "stars": 1531,
+        "stars": 1532,
         "forks": 174
       }
     ],
@@ -870,7 +870,7 @@
     "groupultra/telegram-search": [
       {
         "date": "2026-08-07",
-        "stars": 4047,
+        "stars": 4048,
         "forks": 270
       }
     ],
@@ -1263,7 +1263,7 @@
       {
         "date": "2026-08-07",
         "stars": 4912,
-        "forks": 662
+        "forks": 661
       }
     ],
     "jray0108/shuying": [
@@ -1640,8 +1640,8 @@
     "marseventh/cloudflare-imgbed": [
       {
         "date": "2026-08-07",
-        "stars": 6105,
-        "forks": 7625
+        "stars": 6106,
+        "forks": 7626
       }
     ],
     "marseventh/sanyue-imghub": [
@@ -1661,7 +1661,7 @@
     "mcthesw/game-save-manager": [
       {
         "date": "2026-08-07",
-        "stars": 1128,
+        "stars": 1129,
         "forks": 42
       }
     ],
@@ -1724,7 +1724,7 @@
     "moeru-ai/airi": [
       {
         "date": "2026-08-07",
-        "stars": 47203,
+        "stars": 47209,
         "forks": 4665
       }
     ],
@@ -1773,7 +1773,7 @@
     "narcooo/inkos": [
       {
         "date": "2026-08-07",
-        "stars": 8791,
+        "stars": 8793,
         "forks": 1661
       }
     ],
@@ -1899,7 +1899,7 @@
     "penpot/penpot": [
       {
         "date": "2026-08-07",
-        "stars": 58204,
+        "stars": 58206,
         "forks": 3903
       }
     ],
@@ -2284,7 +2284,7 @@
     "spacetimee/sheas-cealer": [
       {
         "date": "2026-08-07",
-        "stars": 5112,
+        "stars": 5111,
         "forks": 603
       }
     ],
@@ -2389,7 +2389,7 @@
     "supabase/supabase": [
       {
         "date": "2026-08-07",
-        "stars": 107655,
+        "stars": 107654,
         "forks": 13491
       }
     ],
@@ -2424,7 +2424,7 @@
     "tangshimin/mujing": [
       {
         "date": "2026-08-07",
-        "stars": 4386,
+        "stars": 4385,
         "forks": 316
       }
     ],
@@ -2536,7 +2536,7 @@
     "upscayl/upscayl": [
       {
         "date": "2026-08-07",
-        "stars": 47821,
+        "stars": 47822,
         "forks": 2375
       }
     ],
@@ -2634,8 +2634,8 @@
     "wasp-lang/open-saas": [
       {
         "date": "2026-08-07",
-        "stars": 15175,
-        "forks": 1812
+        "stars": 15176,
+        "forks": 1813
       }
     ],
     "watanabechika/earwormdiary": [

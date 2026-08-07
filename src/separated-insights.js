@@ -14,6 +14,25 @@ const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
   return char === '"' ? '&quot;' : entities[char]
 })
 
+const nativeScrollIntoView = Element.prototype.scrollIntoView
+let suppressChartAutoScroll = false
+
+function markChartInteraction(event) {
+  if (!event.target.closest('#product-dashboard, #product-github, #tool-dashboard')) return
+  suppressChartAutoScroll = true
+  queueMicrotask(() => { suppressChartAutoScroll = false })
+}
+
+Element.prototype.scrollIntoView = function (...args) {
+  if (suppressChartAutoScroll && (this.id === 'explore' || this.id === 'tools')) return
+  return nativeScrollIntoView.apply(this, args)
+}
+
+document.addEventListener('click', markChartInteraction, true)
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter' || event.key === ' ') markChartInteraction(event)
+}, true)
+
 function normalizeGitHubRepository(rawUrl) {
   if (!rawUrl) return null
   try {
@@ -86,10 +105,8 @@ function bindRecordNavigation(container, type) {
   for (const row of container.querySelectorAll('[data-record-name]')) {
     row.addEventListener('click', () => {
       const input = document.getElementById(type === 'product' ? 'search' : 'tool-search')
-      const section = document.getElementById(type === 'product' ? 'explore' : 'tools')
       input.value = row.dataset.recordName
       input.dispatchEvent(new Event('input', { bubbles: true }))
-      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   }
 }
@@ -144,7 +161,6 @@ function renderToolCategories(tools) {
       const select = document.getElementById('tool-category-filter')
       select.value = button.dataset.toolCategory
       select.dispatchEvent(new Event('change', { bubbles: true }))
-      document.getElementById('tools').scrollIntoView({ behavior: 'smooth', block: 'start' })
     })
   }
 }
