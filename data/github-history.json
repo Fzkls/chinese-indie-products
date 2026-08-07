@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-07T08:52:27.504Z",
+    "generatedAt": "2026-08-07T08:53:23.906Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -723,7 +723,7 @@
     "facebook/docusaurus": [
       {
         "date": "2026-08-07",
-        "stars": 65851,
+        "stars": 65852,
         "forks": 9994
       }
     ],
@@ -1263,7 +1263,7 @@
       {
         "date": "2026-08-07",
         "stars": 4912,
-        "forks": 661
+        "forks": 662
       }
     ],
     "jray0108/shuying": [
@@ -2425,7 +2425,7 @@
       {
         "date": "2026-08-07",
         "stars": 4386,
-        "forks": 315
+        "forks": 316
       }
     ],
     "tans/photo-mint": [
