@@ -9,7 +9,7 @@ const ACTIVITY_LABELS = {
 }
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
 const formatCompact = (value) => new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) || 0)
-const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char])
+const escapeHtml = (value = '') => String(value).replace(/[&<>'\"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '\"': '&quot;' })[char])
 
 function normalizeGitHubRepository(rawUrl) {
   if (!rawUrl) return null
@@ -56,6 +56,27 @@ function repositoryItems(records, repositories, type) {
 function setText(id, value) {
   const node = document.getElementById(id)
   if (node) node.textContent = value
+}
+
+function installResetControl(sectionId, type) {
+  const section = document.getElementById(sectionId)
+  const heading = section?.querySelector('.section-heading')
+  const resetTarget = document.getElementById(type === 'product' ? 'reset-filters' : 'reset-tool-filters')
+  if (!heading || !resetTarget || heading.querySelector(`[data-visual-reset="${type}"]`)) return
+
+  const trailing = [...heading.children].slice(1)
+  const actions = document.createElement('div')
+  actions.className = 'visual-heading-actions'
+  trailing.forEach((node) => actions.append(node))
+
+  const button = document.createElement('button')
+  button.type = 'button'
+  button.className = 'visual-reset'
+  button.dataset.visualReset = type
+  button.textContent = type === 'product' ? '清空产品筛选' : '清空工具筛选'
+  button.addEventListener('click', () => resetTarget.click())
+  actions.append(button)
+  heading.append(actions)
 }
 
 function bindRecordNavigation(container, type) {
@@ -143,6 +164,10 @@ async function initSeparatedInsights() {
     const repositories = githubPayload.repositories || {}
     const productRepositories = repositoryItems(products, repositories, 'product')
     const toolRepositories = repositoryItems(tools, repositories, 'tool')
+
+    installResetControl('product-dashboard', 'product')
+    installResetControl('product-github', 'product')
+    installResetControl('tool-dashboard', 'tool')
 
     setText('metric-github', productRepositories.length)
     setText('product-github-count', `${formatNumber(productRepositories.length)} 个公开仓库`)
