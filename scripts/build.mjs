@@ -4,8 +4,9 @@ await rm('dist', { recursive: true, force: true })
 await mkdir('dist/data', { recursive: true })
 await mkdir('dist/src', { recursive: true })
 await cp('index.html', 'dist/index.html')
-await cp('src/app.js', 'dist/src/app.js')
-await cp('src/styles.css', 'dist/src/styles.css')
+for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css']) {
+  await cp(`src/${filename}`, `dist/src/${filename}`)
+}
 for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json']) {
   await cp(`data/${filename}`, `dist/data/${filename}`)
 }
