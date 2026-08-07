@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Every Monday at 10:17 Asia/Shanghai (02:17 UTC).
+    - cron: '17 2 * * 1'
 
 permissions:
   contents: write
@@ -25,14 +28,26 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-      - name: Sync full upstream dataset
+      - name: Sync all upstream datasets
         run: npm run sync:data
       - name: Test, validate and build
         run: npm run verify
+      - name: Commit refreshed data snapshot
+        if: github.event_name != 'pull_request' && github.actor != 'github-actions[bot]'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/products.json data/tools.json data/quality-report.json
+          if git diff --cached --quiet; then
+            echo "No data changes to commit."
+            exit 0
+          fi
+          git commit -m "data: refresh source snapshot"
+          git push origin HEAD:main
       - name: Upload build for inspection
         uses: actions/upload-artifact@v4
         with:
-          name: chinese-indie-products-dist
+          name: indiebase-cn-dist
           path: dist
       - name: Publish gh-pages branch
         if: github.event_name != 'pull_request'
