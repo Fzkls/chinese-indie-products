@@ -7,8 +7,11 @@ await cp('index.html', 'dist/index.html')
 await cp('src/app.js', 'dist/src/app.js')
 await cp('src/styles.css', 'dist/src/styles.css')
 await cp('data/products.json', 'dist/data/products.json')
+await cp('data/tools.json', 'dist/data/tools.json')
 await cp('data/quality-report.json', 'dist/data/quality-report.json')
 await writeFile('dist/.nojekyll', '')
 const app = await readFile('dist/src/app.js', 'utf8')
-if (!app.includes("fetch('data/products.json')")) throw new Error('app.js does not reference product data')
+if (!app.includes("fetch('data/products.json')") || !app.includes("fetch('data/tools.json')")) {
+  throw new Error('app.js must reference both separated datasets')
+}
 console.log('Static site built in dist/.')
