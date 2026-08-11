@@ -4,7 +4,7 @@ await rm('dist', { recursive: true, force: true })
 await mkdir('dist/data', { recursive: true })
 await mkdir('dist/src', { recursive: true })
 await cp('index.html', 'dist/index.html')
-for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'dataset-tabs.js', 'dataset-tabs.css']) {
+for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'overview-interactions.js', 'overview-interactions.css', 'dataset-tabs.js', 'dataset-tabs.css']) {
   await cp(`src/${filename}`, `dist/src/${filename}`)
 }
 for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json', 'taxonomy.json', 'product-taxonomy.json']) {
@@ -15,8 +15,14 @@ let index = await readFile('dist/index.html', 'utf8')
 if (!index.includes('src/dataset-tabs.css')) {
   index = index.replace('</head>', '    <link rel="stylesheet" href="src/dataset-tabs.css" />\n  </head>')
 }
+if (!index.includes('src/overview-interactions.css')) {
+  index = index.replace('</head>', '    <link rel="stylesheet" href="src/overview-interactions.css" />\n  </head>')
+}
 if (!index.includes('src/taxonomy-insights.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/taxonomy-insights.js"></script>\n  </body>')
+}
+if (!index.includes('src/overview-interactions.js')) {
+  index = index.replace('</body>', '    <script type="module" src="src/overview-interactions.js"></script>\n  </body>')
 }
 if (!index.includes('src/dataset-tabs.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/dataset-tabs.js"></script>\n  </body>')
@@ -35,11 +41,17 @@ const taxonomyApp = await readFile('dist/src/taxonomy-insights.js', 'utf8')
 for (const dataset of ['taxonomy.json', 'product-taxonomy.json']) {
   if (!taxonomyApp.includes(`data/${dataset}`)) throw new Error(`taxonomy-insights.js must reference data/${dataset}`)
 }
+const overviewInteractions = await readFile('dist/src/overview-interactions.js', 'utf8')
+for (const dataset of ['products.json', 'product-taxonomy.json']) {
+  if (!overviewInteractions.includes(`data/${dataset}`)) throw new Error(`overview-interactions.js must reference data/${dataset}`)
+}
 const datasetTabs = await readFile('dist/src/dataset-tabs.js', 'utf8')
 for (const dataset of ['products.json', 'tools.json', 'taxonomy.json', 'product-taxonomy.json']) {
   if (!datasetTabs.includes(`data/${dataset}`)) throw new Error(`dataset-tabs.js must reference data/${dataset}`)
 }
 if (!index.includes('src/taxonomy-insights.js')) throw new Error('dist/index.html must load taxonomy-insights.js')
+if (!index.includes('src/overview-interactions.js') || !index.includes('src/overview-interactions.css')) throw new Error('dist/index.html must load overview interaction assets')
+if (index.indexOf('src/overview-interactions.js') > index.indexOf('src/dataset-tabs.js')) throw new Error('overview interaction guard must load before dataset-tabs.js')
 if (!index.includes('src/dataset-tabs.js') || !index.includes('src/dataset-tabs.css')) throw new Error('dist/index.html must load dataset tab assets')
 if (index.includes('dataset-tabs-refine')) throw new Error('legacy refinement assets must not be loaded')
 if (!index.includes('data-download-products-compat')) throw new Error('download compatibility anchor missing')
