@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-11T06:15:52.404Z",
+    "generatedAt": "2026-08-11T06:22:11.029Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -70,7 +70,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 60698,
+        "stars": 60699,
         "forks": 5287
       }
     ],
@@ -240,7 +240,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47449,
+        "stars": 47450,
         "forks": 5651
       }
     ],
@@ -699,7 +699,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 7450,
+        "stars": 7451,
         "forks": 357
       }
     ],
@@ -1872,7 +1872,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1664,
+        "stars": 1665,
         "forks": 181
       }
     ],
@@ -2365,8 +2365,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1184,
-        "forks": 981
+        "stars": 1185,
+        "forks": 983
       }
     ],
     "huqingyang/luoo.qy": [
@@ -4609,7 +4609,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 58368,
+        "stars": 58369,
         "forks": 3919
       }
     ],
@@ -5391,7 +5391,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 825,
+        "stars": 826,
         "forks": 100
       }
     ],
