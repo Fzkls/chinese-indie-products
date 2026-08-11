@@ -180,8 +180,11 @@ function syncHero() {
 
 function syncHeroTotal() {
   const target = $('#hero-total')
+  if (!target) return
+  const loadedTotal = ui.dataset === 'product' ? ui.products.length : ui.tools.length
   const source = ui.dataset === 'product' ? $('#metric-products') : $('#metric-tools')
-  if (target && source && source.textContent.trim() && source.textContent.trim() !== '—') target.textContent = source.textContent
+  const next = loadedTotal ? formatNumber(loadedTotal) : source?.textContent?.trim()
+  if (next && next !== '—' && target.textContent !== next) target.textContent = next
 }
 
 function activeSection() {
@@ -653,6 +656,7 @@ async function loadData() {
   ui.semanticById = new Map((semantic.records || []).map((item) => [item.productId, item]))
   ui.github = github.repositories || {}
   ui.filteredProducts = ui.products
+  syncHero()
   buildProjectFilters()
   bindProjectFilters()
   applyProjectFilters()
@@ -661,22 +665,21 @@ async function loadData() {
 }
 
 function observeDynamicUi() {
-  let scheduled = false
   const observer = new MutationObserver(() => {
-    if (scheduled) return
-    scheduled = true
-    queueMicrotask(() => {
-      scheduled = false
-      installToolBackControl()
-      ensureProductDirectionExplorer()
-      ensureToolCategoryExplorer()
-      translateLegacySemanticLabels()
-      makeOverviewChartsReadOnly()
-      syncHero()
-      applySectionVisibility()
-    })
+    observer.disconnect()
+    installToolBackControl()
+    ensureProductDirectionExplorer()
+    ensureToolCategoryExplorer()
+    translateLegacySemanticLabels()
+    makeOverviewChartsReadOnly()
+    applySectionVisibility()
+    if (!$('#product-direction-explorer') || !$('#tool-category-explorer')) {
+      observer.observe(document.body, { childList: true, subtree: true })
+    }
   })
-  observer.observe(document.body, { childList: true, subtree: true, characterData: true })
+  if (!$('#product-direction-explorer') || !$('#tool-category-explorer')) {
+    observer.observe(document.body, { childList: true, subtree: true })
+  }
 }
 
 async function init() {
