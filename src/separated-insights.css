@@ -1,4 +1,13 @@
 .legacy-github-insights{display:none!important}
+.top-links{display:flex;align-items:center;gap:12px}
+.dataset-tabs{display:inline-flex;align-items:center;gap:4px;padding:4px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035)}
+.dataset-tab{min-width:74px;height:34px;padding:0 14px;border:0;border-radius:8px;background:transparent;color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;transition:background .18s ease,color .18s ease,box-shadow .18s ease}
+.dataset-tab:hover{color:var(--text);background:rgba(255,255,255,.045)}
+.dataset-tab.is-active{background:var(--accent);color:#132000;box-shadow:0 6px 18px rgba(185,242,74,.12)}
+.dataset-methodology-link{padding-left:4px;color:var(--muted);font-size:13px;white-space:nowrap}
+.dataset-methodology-link:hover{color:var(--text)}
+body[data-dataset-view="product"] #tool-dashboard,body[data-dataset-view="product"] #tools{display:none!important}
+body[data-dataset-view="tool"] .metrics,body[data-dataset-view="tool"] #semantic-map,body[data-dataset-view="tool"] #product-dashboard,body[data-dataset-view="tool"] #product-github,body[data-dataset-view="tool"] #explore{display:none!important}
 .separated-insights{padding:76px 0}
 .separated-insights.product-insights{background:linear-gradient(180deg,rgba(89,220,196,.035),rgba(255,255,255,0))}
 .separated-insights.tool-insights{background:linear-gradient(180deg,rgba(255,179,92,.035),rgba(255,255,255,0))}
@@ -21,5 +30,5 @@
 .tool-chart-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .tool-chart-grid .wide{grid-column:1/-1}
 #tool-category-chart .bar-row{grid-template-columns:minmax(130px,1.4fr) minmax(140px,3fr) auto}
-@media (max-width:900px){.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-chart-grid{grid-template-columns:1fr}.visual-heading-actions{align-items:flex-start;justify-content:flex-start;max-width:none}.visual-heading-actions>p{text-align:left}}
-@media (max-width:600px){.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.github-activity-grid .activity-row{grid-template-columns:1fr auto}.github-activity-grid .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}}
+@media (max-width:900px){.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-chart-grid{grid-template-columns:1fr}.visual-heading-actions{align-items:flex-start;justify-content:flex-start;max-width:none}.visual-heading-actions>p{text-align:left}.top-links{gap:8px}.dataset-tab{min-width:64px;padding:0 11px}.dataset-methodology-link{display:none}}
+@media (max-width:600px){.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.github-activity-grid .activity-row{grid-template-columns:1fr auto}.github-activity-grid .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}.dataset-tabs{padding:3px}.dataset-tab{min-width:56px;height:32px;padding:0 10px;font-size:12px}}
