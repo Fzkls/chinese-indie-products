@@ -1,9 +1,9 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { classifyProduct } from '../scripts/lib/taxonomy.mjs'
+import { classifyProduct } from '../scripts/lib/taxonomy-v1.mjs'
 
-const record = (id, productName, description, category = 'product', productUrl = 'https://example.test') => ({
-  id, productName, description, category, productUrl, profileLinks: []
+const record = (id, productName, description, category = 'product', productUrl = 'https://example.test', profileLinks = []) => ({
+  id, productName, description, category, productUrl, profileLinks
 })
 
 test('classifies Nexus Shell as developer tools with SSH/DevOps tags', () => {
@@ -36,4 +36,34 @@ test('classifies browser AI assistant and captures browser-extension form', () =
   assert.ok(result.subCategories.includes('AI 助手'))
   assert.ok(result.tags.productForm.includes('browser-extension'))
   assert.ok(result.tags.platform.includes('browser'))
+})
+
+test('developer GitHub profile does not turn an unrelated product into a developer tool', () => {
+  const result = classifyProduct(record(
+    'timer',
+    'ClassroomTimers',
+    '面向教师和课堂场景的免费在线计时工具，主打大屏投影、全屏显示、无需注册',
+    'product',
+    'https://classroomtimers.app/',
+    [{ label: 'GitHub', url: 'https://github.com/example-developer' }]
+  ))
+  assert.notEqual(result.primaryCategory, 'developer-tools')
+  assert.equal(result.primaryCategory, 'education')
+})
+
+test('a public GitHub product URL alone does not imply developer-tool category', () => {
+  const result = classifyProduct(record(
+    'pet',
+    'desktop-pet',
+    '桌面宠物应用，在屏幕上陪伴用户并支持简单互动',
+    'product',
+    'https://github.com/example/desktop-pet'
+  ))
+  assert.notEqual(result.primaryCategory, 'developer-tools')
+})
+
+test('generic consumer tests are not treated as software testing tools', () => {
+  const result = classifyProduct(record('cps', 'CPS Test', '鼠标点击速度测试网站，集成专注力训练和反应速度测试等玩法'))
+  assert.notEqual(result.primaryCategory, 'developer-tools')
+  assert.equal(result.primaryCategory, 'education')
 })
