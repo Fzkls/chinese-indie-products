@@ -48,7 +48,7 @@ test('developer GitHub profile does not turn an unrelated product into a develop
     [{ label: 'GitHub', url: 'https://github.com/example-developer' }]
   ))
   assert.notEqual(result.primaryCategory, 'developer-tools')
-  assert.equal(result.primaryCategory, 'education')
+  assert.equal(result.primaryCategory, 'utilities')
 })
 
 test('a public GitHub product URL alone does not imply developer-tool category', () => {
