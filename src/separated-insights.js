@@ -1,3 +1,5 @@
+import './taxonomy-insights.js'
+
 const RESERVED_GITHUB_OWNERS = new Set(['about', 'apps', 'blog', 'collections', 'enterprise', 'events', 'explore', 'features', 'issues', 'marketplace', 'orgs', 'pricing', 'pulls', 'search', 'settings', 'sponsors', 'topics', 'trending'])
 const ACTIVITY_LABELS = {
   'active-30': '30 天内更新',
@@ -16,6 +18,7 @@ const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
 
 const nativeScrollIntoView = Element.prototype.scrollIntoView
 let suppressChartAutoScroll = false
+const insightState = { products: [], tools: [], repositories: {}, githubMetadata: {} }
 
 function markChartInteraction(event) {
   if (!event.target.closest('#product-dashboard, #product-github, #tool-dashboard')) return
@@ -125,7 +128,7 @@ function renderRankList(id, items, type) {
           <strong>★ ${formatCompact(item.repository.stars)}</strong>
         </button>`
       }).join('')
-    : '<div class="empty-state"><strong>暂无可统计的 GitHub 仓库</strong></div>'
+    : '<div class="empty-state"><strong>当前筛选暂无可统计的 GitHub 仓库</strong></div>'
   bindRecordNavigation(container, type)
 }
 
@@ -137,14 +140,15 @@ function renderActivity(id, items) {
     counts.set(activity, (counts.get(activity) || 0) + 1)
   }
   const max = Math.max(...counts.values(), 1)
+  const total = items.length
   const container = document.getElementById(id)
   container.innerHTML = order
     .filter((key) => counts.get(key))
-    .map((key) => `<div class="activity-row" title="${ACTIVITY_LABELS[key]}：${formatNumber(counts.get(key))} 个仓库">
+    .map((key) => `<div class="activity-row" title="${ACTIVITY_LABELS[key]}：${formatNumber(counts.get(key))} / ${formatNumber(total)}（${total ? Math.round(counts.get(key) / total * 100) : 0}%）">
       <span>${ACTIVITY_LABELS[key]}</span>
       <span class="bar-track"><span class="bar-fill" style="width:${counts.get(key) / max * 100}%"></span></span>
-      <strong>${formatNumber(counts.get(key))}</strong>
-    </div>`).join('')
+      <strong>${formatNumber(counts.get(key))} <small>${total ? Math.round(counts.get(key) / total * 100) : 0}%</small></strong>
+    </div>`).join('') || '<div class="empty-state"><strong>当前筛选暂无仓库活跃度数据</strong></div>'
 }
 
 function renderToolCategories(tools) {
@@ -165,6 +169,62 @@ function renderToolCategories(tools) {
   }
 }
 
+function currentProductFilters() {
+  return {
+    query: document.getElementById('search')?.value.trim().toLowerCase() || '',
+    category: document.getElementById('category-filter')?.value || '',
+    status: document.getElementById('status-filter')?.value || '',
+    year: document.getElementById('year-filter')?.value || '',
+    city: document.getElementById('city-filter')?.value || ''
+  }
+}
+
+function productMatchesCurrentFilters(record, filters) {
+  const sourceText = (record.sources || []).map((source) => `${source.repository || ''} ${source.sourceFile || ''}`).join(' ')
+  const key = normalizeGitHubRepository(record.productUrl)
+  const repository = key ? insightState.repositories[key] : null
+  const githubText = repository ? `${repository.fullName || ''} ${repository.language || ''} ${repository.license || ''}` : ''
+  const haystack = [record.productName, record.description, record.developerName, record.city, record.sourceCategory, sourceText, githubText].filter(Boolean).join(' ').toLowerCase()
+  return (!filters.query || haystack.includes(filters.query))
+    && (!filters.category || record.category === filters.category)
+    && (!filters.status || record.status === filters.status)
+    && (!filters.year || String(record.year) === filters.year)
+    && (!filters.city || record.city === filters.city)
+}
+
+function renderProductInsights() {
+  const filters = currentProductFilters()
+  const products = insightState.products.filter((record) => productMatchesCurrentFilters(record, filters))
+  const repositories = repositoryItems(products, insightState.repositories, 'product')
+  const allRepositories = repositoryItems(insightState.products, insightState.repositories, 'product')
+  const hasFilter = Object.values(filters).some(Boolean)
+
+  setText('metric-github', allRepositories.length)
+  setText('product-github-count', `${formatNumber(repositories.length)} 个公开仓库`)
+  setText('product-github-note', hasFilter
+    ? `当前产品筛选命中 ${formatNumber(products.length)} 条，其中可明确关联 ${formatNumber(repositories.length)} 个公开 GitHub 仓库；本区域会随产品筛选联动。`
+    : `全部 ${formatNumber(insightState.products.length)} 条产品中，可明确关联 ${formatNumber(repositories.length)} 个公开 GitHub 仓库；本区域会随产品筛选联动。`)
+  renderRankList('product-github-top', repositories, 'product')
+  renderActivity('product-github-activity', repositories)
+}
+
+function scheduleProductInsightsRender() {
+  queueMicrotask(renderProductInsights)
+}
+
+function bindProductInsightFilters() {
+  for (const id of ['search', 'category-filter', 'status-filter', 'year-filter', 'city-filter']) {
+    const node = document.getElementById(id)
+    if (!node) continue
+    node.addEventListener(id === 'search' ? 'input' : 'change', scheduleProductInsightsRender)
+  }
+  document.getElementById('reset-filters')?.addEventListener('click', scheduleProductInsightsRender)
+  document.getElementById('product-dashboard')?.addEventListener('click', scheduleProductInsightsRender)
+  document.getElementById('product-dashboard')?.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') scheduleProductInsightsRender()
+  })
+}
+
 async function initSeparatedInsights() {
   try {
     const [productsResponse, toolsResponse, githubResponse] = await Promise.all([
@@ -178,26 +238,25 @@ async function initSeparatedInsights() {
       toolsResponse.json(),
       githubResponse.json()
     ])
-    const products = productsPayload.records || []
-    const tools = toolsPayload.records || []
-    const repositories = githubPayload.repositories || {}
-    const productRepositories = repositoryItems(products, repositories, 'product')
-    const toolRepositories = repositoryItems(tools, repositories, 'tool')
+    insightState.products = productsPayload.records || []
+    insightState.tools = toolsPayload.records || []
+    insightState.repositories = githubPayload.repositories || {}
+    insightState.githubMetadata = githubPayload.metadata || {}
+
+    const tools = insightState.tools
+    const toolRepositories = repositoryItems(tools, insightState.repositories, 'tool')
 
     installResetControl('product-dashboard', 'product')
     installResetControl('product-github', 'product')
     installResetControl('tool-dashboard', 'tool')
 
-    setText('metric-github', productRepositories.length)
-    setText('product-github-count', `${formatNumber(productRepositories.length)} 个公开仓库`)
+    bindProductInsightFilters()
+    renderProductInsights()
     setText('tool-github-count', toolRepositories.length)
     setText('tool-category-count', new Set(tools.map((item) => item.category).filter(Boolean)).size)
     setText('tool-open-source-count', tools.filter((item) => item.pricing === 'open-source').length)
-    setText('product-github-note', `独立产品中可明确关联 ${formatNumber(productRepositories.length)} 个公开 GitHub 仓库。只统计产品数据，不包含工具资源。`)
     setText('tool-github-note', `工具资源中可明确关联 ${formatNumber(toolRepositories.length)} 个公开 GitHub 仓库。只统计工具数据，不包含独立产品。`)
 
-    renderRankList('product-github-top', productRepositories, 'product')
-    renderActivity('product-github-activity', productRepositories)
     renderToolCategories(tools)
     renderRankList('tool-github-top', toolRepositories, 'tool')
     renderActivity('tool-github-activity', toolRepositories)

@@ -1,9 +1,18 @@
 .taxonomy-section { padding-top: 28px; padding-bottom: 72px; }
 .taxonomy-heading { margin-bottom: 20px; }
-.taxonomy-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:18px 0 20px; }
+.taxonomy-kpis { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px; margin:18px 0 20px; }
 .taxonomy-kpis article { background:var(--panel,#13201c); border:1px solid rgba(255,255,255,.1); border-radius:16px; padding:16px 18px; }
 .taxonomy-kpis span,.taxonomy-kpis small { display:block; color:var(--muted,#8fa29a); }
 .taxonomy-kpis strong { display:block; margin:5px 0; font-size:28px; }
+.taxonomy-coverage-panel { margin:0 0 18px; }
+.taxonomy-coverage-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.taxonomy-coverage-item { min-width:0; padding:13px 14px; border:1px solid rgba(255,255,255,.08); border-radius:13px; background:rgba(255,255,255,.025); }
+.taxonomy-coverage-item > div:first-child { display:flex; justify-content:space-between; gap:10px; align-items:center; }
+.taxonomy-coverage-item > div:first-child span { font-weight:700; }
+.taxonomy-coverage-item > div:first-child strong { font-variant-numeric:tabular-nums; color:#b9f24a; }
+.taxonomy-coverage-track { height:8px; margin:8px 0; border-radius:999px; overflow:hidden; background:rgba(255,255,255,.08); }
+.taxonomy-coverage-track span { display:block; height:100%; border-radius:inherit; background:linear-gradient(90deg,#59dcc4,#b9f24a); }
+.taxonomy-coverage-item small { display:block; min-height:2.6em; color:var(--muted,#8fa29a); line-height:1.35; }
 .taxonomy-filter-panel { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)) auto; gap:10px; align-items:end; padding:14px; border:1px solid rgba(255,255,255,.09); border-radius:16px; background:rgba(255,255,255,.025); }
 .taxonomy-filter-panel label span { display:block; margin:0 0 6px; color:var(--muted,#8fa29a); font-size:12px; }
 .taxonomy-filter-panel select { width:100%; min-height:42px; border-radius:10px; }
@@ -19,6 +28,22 @@
 .taxonomy-bar-fill { display:block; height:100%; background:linear-gradient(90deg,#59dcc4,#b9f24a); border-radius:inherit; }
 .taxonomy-bar-row strong { text-align:right; font-variant-numeric:tabular-nums; }
 .taxonomy-bar-row small { color:var(--muted,#8fa29a); font-weight:400; }
+.taxonomy-status-legend { display:flex; flex-wrap:wrap; gap:8px 14px; margin-bottom:14px; color:var(--muted,#8fa29a); font-size:12px; }
+.taxonomy-status-key { display:inline-flex; gap:6px; align-items:center; }
+.taxonomy-status-key i { width:9px; height:9px; border-radius:3px; background:rgba(255,255,255,.2); }
+.taxonomy-status-key.status-active i,.taxonomy-status-segment.status-active { background:#59dcc4; }
+.taxonomy-status-key.status-developing i,.taxonomy-status-segment.status-developing { background:#b9f24a; }
+.taxonomy-status-key.status-closed i,.taxonomy-status-segment.status-closed { background:#ff8b7a; }
+.taxonomy-status-key.status-acquired i,.taxonomy-status-segment.status-acquired { background:#ffb35c; }
+.taxonomy-status-key.status-unknown i,.taxonomy-status-segment.status-unknown { background:#82978f; }
+.taxonomy-status-matrix { display:grid; gap:9px; }
+.taxonomy-status-row { width:100%; display:grid; grid-template-columns:minmax(120px,190px) minmax(220px,1fr) 150px; gap:12px; align-items:center; padding:6px 0; border:0; background:transparent; color:inherit; text-align:left; cursor:pointer; }
+.taxonomy-status-row:hover,.taxonomy-status-row.is-active { color:#b9f24a; }
+.taxonomy-status-label { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.taxonomy-status-track { display:flex; height:12px; overflow:hidden; border-radius:999px; background:rgba(255,255,255,.08); }
+.taxonomy-status-segment { display:block; min-width:2px; height:100%; }
+.taxonomy-status-row strong { text-align:right; font-variant-numeric:tabular-nums; }
+.taxonomy-status-row small { margin-left:5px; color:var(--muted,#8fa29a); font-weight:400; }
 .taxonomy-tag-cloud { display:flex; flex-wrap:wrap; gap:9px; }
 .taxonomy-capability { display:flex; gap:7px; align-items:center; padding:7px 10px; border:1px solid rgba(255,255,255,.1); border-radius:999px; background:rgba(255,255,255,.035); }
 .taxonomy-capability small { color:var(--muted,#8fa29a); }
@@ -38,5 +63,6 @@
 .taxonomy-tags span { border-radius:999px; padding:4px 7px; background:rgba(89,220,196,.08); border:1px solid rgba(89,220,196,.15); font-size:11px; }
 .taxonomy-product-meta { padding-top:10px; border-top:1px solid rgba(255,255,255,.07); color:var(--muted,#8fa29a); font-size:11px; }
 .taxonomy-error { margin:24px 0; padding:24px; border:1px solid rgba(255,179,92,.3); border-radius:16px; }
-@media (max-width:980px) { .taxonomy-kpis { grid-template-columns:repeat(2,1fr); } .taxonomy-filter-panel { grid-template-columns:repeat(2,1fr); } .taxonomy-product-grid { grid-template-columns:repeat(2,1fr); } }
-@media (max-width:640px) { .taxonomy-kpis,.taxonomy-filter-panel,.taxonomy-grid,.taxonomy-product-grid { grid-template-columns:1fr; } .taxonomy-panel.wide { grid-column:auto; } .taxonomy-bar-row { grid-template-columns:110px 1fr 70px; } .taxonomy-results-heading { align-items:flex-start; flex-direction:column; } }
+@media (max-width:1100px) { .taxonomy-kpis { grid-template-columns:repeat(3,1fr); } }
+@media (max-width:980px) { .taxonomy-kpis { grid-template-columns:repeat(2,1fr); } .taxonomy-coverage-grid { grid-template-columns:repeat(2,1fr); } .taxonomy-filter-panel { grid-template-columns:repeat(2,1fr); } .taxonomy-product-grid { grid-template-columns:repeat(2,1fr); } .taxonomy-status-row { grid-template-columns:130px 1fr 120px; } }
+@media (max-width:640px) { .taxonomy-kpis,.taxonomy-coverage-grid,.taxonomy-filter-panel,.taxonomy-grid,.taxonomy-product-grid { grid-template-columns:1fr; } .taxonomy-panel.wide { grid-column:auto; } .taxonomy-bar-row { grid-template-columns:110px 1fr 70px; } .taxonomy-status-row { grid-template-columns:100px 1fr; } .taxonomy-status-row strong { grid-column:2; } .taxonomy-results-heading { align-items:flex-start; flex-direction:column; } }
