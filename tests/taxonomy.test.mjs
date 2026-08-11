@@ -60,10 +60,36 @@ test('a public GitHub product URL alone does not imply developer-tool category',
     'https://github.com/example/desktop-pet'
   ))
   assert.notEqual(result.primaryCategory, 'developer-tools')
+  assert.equal(result.primaryCategory, 'lifestyle-health')
 })
 
 test('generic consumer tests are not treated as software testing tools', () => {
   const result = classifyProduct(record('cps', 'CPS Test', '鼠标点击速度测试网站，集成专注力训练和反应速度测试等玩法'))
   assert.notEqual(result.primaryCategory, 'developer-tools')
   assert.equal(result.primaryCategory, 'education')
+})
+
+test('window docking picture-in-picture helper is a utility rather than other', () => {
+  const result = classifyProduct(record(
+    'dock',
+    '摸鱼助手',
+    '可快速调整浏览器和桌面窗口的位置、尺寸、置顶与透明度，并自动识别浏览器画中画窗口停靠到屏幕指定位置',
+    'product',
+    'https://github.com/example/window-dock'
+  ))
+  assert.equal(result.primaryCategory, 'utilities')
+  assert.ok(result.subCategories.includes('系统工具'))
+})
+
+test('capability fallback recovers clear AI products instead of other', () => {
+  const result = classifyProduct(record('ai', '模型对话台', '接入大模型进行智能体对话与提示词管理'))
+  assert.equal(result.primaryCategory, 'ai-productivity')
+  assert.notEqual(result.classificationMethod, 'other')
+})
+
+test('programmer-list source is used only as a final low-confidence fallback', () => {
+  const result = classifyProduct(record('source-fallback', 'Tiny Helper', '一个轻量的小组件', 'developer-tool'))
+  assert.equal(result.primaryCategory, 'developer-tools')
+  assert.equal(result.classificationMethod, 'source-fallback')
+  assert.ok(result.confidence < 0.65)
 })

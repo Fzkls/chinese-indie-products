@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "primaryCategories": [
     {"id":"developer-tools","label":"开发工具","description":"编程、开发流程、API、DevOps、数据库、测试与工程效率"},
     {"id":"ai-productivity","label":"AI 与效率","description":"通用 AI 助手、写作、翻译、搜索、自动化与个人效率"},
@@ -12,11 +12,11 @@
     {"id":"ecommerce","label":"电商与交易","description":"商店、商品、订单、支付、交易平台与商家工具"},
     {"id":"social-community","label":"社交与社区","description":"社交、聊天、社区、论坛、兴趣连接与用户互动"},
     {"id":"lifestyle-health","label":"生活与健康","description":"健康、运动、习惯、旅行、饮食、家庭与日常生活"},
-    {"id":"media-entertainment","label":"媒体与娱乐","description":"音乐、音频、播客、影视、播放器与娱乐内容"},
-    {"id":"infrastructure-security","label":"基础设施与安全","description":"服务器、网络、云、监控、安全、隐私与运维基础设施"},
-    {"id":"utilities","label":"工具与实用","description":"文件、系统、下载、转换、计时、计算、截图等通用实用工具"},
+    {"id":"media-entertainment","label":"媒体与娱乐","description":"音乐、音频、播客、影视、阅读娱乐、播放器与媒体服务"},
+    {"id":"infrastructure-security","label":"基础设施与安全","description":"服务器、网络、云、监控、安全、认证、隐私与运维基础设施"},
+    {"id":"utilities","label":"工具与实用","description":"文件、系统、下载、转换、计时、计算、窗口与设备类通用工具"},
     {"id":"games","label":"游戏","description":"独立游戏与游戏相关产品"},
-    {"id":"other","label":"其他 / 待分类","description":"当前语义证据不足，保留为待后续细分的产品"}
+    {"id":"other","label":"其他","description":"语义明确但确实不属于当前主分类体系的少量产品；不再承担待分类兜底职责"}
   ],
   "subCategories": {
     "developer-tools": ["AI 编程","DevOps","API 工具","数据库工具","测试与调试","IDE 与编辑器","终端与 SSH","部署","开发者效率","代码与版本管理"],
