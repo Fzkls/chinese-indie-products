@@ -21,6 +21,9 @@ if (!index.includes('src/taxonomy-insights.js')) {
 if (!index.includes('src/dataset-tabs.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/dataset-tabs.js"></script>\n  </body>')
 }
+if (!index.includes('data-download-products-compat')) {
+  index = index.replace('</body>', '    <button id="download-products" type="button" hidden aria-hidden="true" tabindex="-1" data-download-products-compat></button>\n  </body>')
+}
 await writeFile('dist/index.html', index)
 await writeFile('dist/.nojekyll', '')
 
@@ -39,4 +42,5 @@ for (const dataset of ['products.json', 'tools.json', 'taxonomy.json', 'product-
 if (!index.includes('src/taxonomy-insights.js')) throw new Error('dist/index.html must load taxonomy-insights.js')
 if (!index.includes('src/dataset-tabs.js') || !index.includes('src/dataset-tabs.css')) throw new Error('dist/index.html must load dataset tab assets')
 if (index.includes('dataset-tabs-refine')) throw new Error('legacy refinement assets must not be loaded')
+if (!index.includes('data-download-products-compat')) throw new Error('download compatibility anchor missing')
 console.log('Static site built in dist/.')
