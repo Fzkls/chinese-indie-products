@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-11T06:48:42.674Z",
+    "generatedAt": "2026-08-11T06:49:58.705Z",
     "provider": "GitHub REST API",
     "endpoint": "/repos/{owner}/{repo}",
     "repositoryCandidates": 460,
@@ -51,7 +51,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:09.683Z",
-      "checkedAt": "2026-08-11T06:48:37.471Z",
+      "checkedAt": "2026-08-11T06:49:52.966Z",
       "etag": "W/\"71d514f3404f721bf73ed91fcd9a5675606484a84f976f07be172193e238ecac\"",
       "references": [
         {
@@ -100,7 +100,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:09.729Z",
-      "checkedAt": "2026-08-11T06:48:37.510Z",
+      "checkedAt": "2026-08-11T06:49:53.009Z",
       "etag": "W/\"34b954346cbae407dbb67c0f16e4162f10f27598ae2dd3505807c32d1aeee9fd\"",
       "references": [
         {
@@ -149,7 +149,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:09.730Z",
-      "checkedAt": "2026-08-11T06:48:37.511Z",
+      "checkedAt": "2026-08-11T06:49:53.010Z",
       "etag": "W/\"9d8e08eceb411d53bfea73d47be2dbceb1ee666ac849dbf55936461193b5cdd0\"",
       "references": [
         {
@@ -189,7 +189,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:09.732Z",
-      "checkedAt": "2026-08-11T06:48:37.512Z",
+      "checkedAt": "2026-08-11T06:49:53.011Z",
       "etag": "W/\"bad011f8c3b740ae5ccf868fcb577293912b6a00699f5382748199dc5c9202b8\"",
       "references": [
         {
@@ -237,7 +237,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:09.979Z",
-      "checkedAt": "2026-08-11T06:48:37.615Z",
+      "checkedAt": "2026-08-11T06:49:53.128Z",
       "etag": "W/\"4daf8db07baf9bede43bce4b57d7dd3914eefd885f3cf689c7e438dfae3c4676\"",
       "references": [
         {
@@ -273,7 +273,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:09.987Z",
-      "checkedAt": "2026-08-11T06:48:37.619Z",
+      "checkedAt": "2026-08-11T06:49:53.131Z",
       "etag": "W/\"93743375bc07b04f7e566a1924e70b1b419c4202c528775397f5f376b9bf74b4\"",
       "references": [
         {
@@ -309,7 +309,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:10.033Z",
-      "checkedAt": "2026-08-11T06:48:37.621Z",
+      "checkedAt": "2026-08-11T06:49:53.132Z",
       "etag": "W/\"14e81699bf072316895cf376aa86a1f82a9d8be7f10c441c624849aa69db2e4c\"",
       "references": [
         {
@@ -345,7 +345,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:10.160Z",
-      "checkedAt": "2026-08-11T06:48:37.623Z",
+      "checkedAt": "2026-08-11T06:49:53.133Z",
       "etag": "W/\"61042456be652b553e201806e07cbc9e486e72ac2a9de58835ca153247e14d97\"",
       "references": [
         {
@@ -381,7 +381,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:10.178Z",
-      "checkedAt": "2026-08-11T06:48:37.698Z",
+      "checkedAt": "2026-08-11T06:49:53.205Z",
       "etag": "W/\"38994e75d8e59165ca7ea18f8cec8d333365ae39adcb34edaa5c59ddd94aefd7\"",
       "references": [
         {
@@ -417,7 +417,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:10.182Z",
-      "checkedAt": "2026-08-11T06:48:37.712Z",
+      "checkedAt": "2026-08-11T06:49:53.232Z",
       "etag": "W/\"24f95cbb8fff2d9c051045d5896d8dfc6aa2ec35fed739d4f44b4753ab368b2c\"",
       "references": [
         {
@@ -453,7 +453,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:10.212Z",
-      "checkedAt": "2026-08-11T06:48:37.715Z",
+      "checkedAt": "2026-08-11T06:49:53.236Z",
       "etag": "W/\"62c848ee920a9917d8ef12b334093a330bb74458a15754f9315a2df91ed7846e\"",
       "references": [
         {
@@ -489,7 +489,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.368Z",
-      "checkedAt": "2026-08-11T06:48:37.727Z",
+      "checkedAt": "2026-08-11T06:49:53.244Z",
       "etag": "W/\"2872cca5d8f35723195e65d12a2cfb8a4f78ff9a6dc3e55e6ce94cc70f296b15\"",
       "references": [
         {
@@ -525,7 +525,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:10.385Z",
-      "checkedAt": "2026-08-11T06:48:37.739Z",
+      "checkedAt": "2026-08-11T06:49:53.247Z",
       "etag": "W/\"b2d06a2e8a463484f5b43547d452a353598b3114a61505d8f2e8401334b64111\"",
       "references": [
         {
@@ -545,7 +545,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:10.419Z",
-      "checkedAt": "2026-08-11T06:48:37.777Z",
+      "checkedAt": "2026-08-11T06:49:53.305Z",
       "references": [
         {
           "recordType": "product",
@@ -599,7 +599,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.424Z",
-      "checkedAt": "2026-08-11T06:48:37.784Z",
+      "checkedAt": "2026-08-11T06:49:53.307Z",
       "etag": "W/\"5fc3c9c5c5cf3c6aeeaac06df272dffa4409b206c65096638baee0abdc697a10\"",
       "references": [
         {
@@ -635,7 +635,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:10.540Z",
-      "checkedAt": "2026-08-11T06:48:37.796Z",
+      "checkedAt": "2026-08-11T06:49:53.317Z",
       "etag": "W/\"9f1abd09d289248af5f3b49f7f3e34a1f119eafaa58c541f57aa4823b20c1f2e\"",
       "references": [
         {
@@ -671,7 +671,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.569Z",
-      "checkedAt": "2026-08-11T06:48:37.808Z",
+      "checkedAt": "2026-08-11T06:49:53.318Z",
       "etag": "W/\"530f7f06f587f7f2b4db92444cef3501bcde7bce926b23a127a2a188e7433465\"",
       "references": [
         {
@@ -707,7 +707,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.638Z",
-      "checkedAt": "2026-08-11T06:48:37.846Z",
+      "checkedAt": "2026-08-11T06:49:53.356Z",
       "etag": "W/\"2596fa6ddb3128d9e8f34185d61352a0a205a40278d5abb9753659b598df4099\"",
       "references": [
         {
@@ -755,7 +755,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.721Z",
-      "checkedAt": "2026-08-11T06:48:37.846Z",
+      "checkedAt": "2026-08-11T06:49:53.362Z",
       "etag": "W/\"0ebcb11e792f6883438fb2b75df636ef2ddd12fde40c491c2d11a59e8daffe35\"",
       "references": [
         {
@@ -812,7 +812,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:10.751Z",
-      "checkedAt": "2026-08-11T06:48:37.866Z",
+      "checkedAt": "2026-08-11T06:49:53.381Z",
       "etag": "W/\"8a69145695afca519366c59ac1c05f6fa4220e1f89182634b4f483cf06951c10\"",
       "references": [
         {
@@ -858,7 +858,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.764Z",
-      "checkedAt": "2026-08-11T06:48:37.886Z",
+      "checkedAt": "2026-08-11T06:49:53.384Z",
       "etag": "W/\"ac9bb2883f39b8140438fecaccf22ebc940e78a4896ae03ede5852e4ed165c06\"",
       "references": [
         {
@@ -894,7 +894,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:10.824Z",
-      "checkedAt": "2026-08-11T06:48:37.886Z",
+      "checkedAt": "2026-08-11T06:49:53.422Z",
       "etag": "W/\"ba1cfb076405b310e1b4c6f82a11e5d43910e756cc96a0139de8a8de20b87169\"",
       "references": [
         {
@@ -936,7 +936,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:10.898Z",
-      "checkedAt": "2026-08-11T06:48:37.912Z",
+      "checkedAt": "2026-08-11T06:49:53.430Z",
       "etag": "W/\"ab458885762dd5a003d0ee238d5dc9ba0f6f1cca1b403dfdf153aead5addeaf0\"",
       "references": [
         {
@@ -989,7 +989,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.967Z",
-      "checkedAt": "2026-08-11T06:48:37.922Z",
+      "checkedAt": "2026-08-11T06:49:53.434Z",
       "etag": "W/\"436289c7eeac26aeca53b4ea8bf1f3ded70649360a0c7422840dfb7a5d81f693\"",
       "references": [
         {
@@ -1029,7 +1029,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:10.974Z",
-      "checkedAt": "2026-08-11T06:48:37.927Z",
+      "checkedAt": "2026-08-11T06:49:53.463Z",
       "etag": "W/\"cbc148d3ee587eee20243a47b93781f3b7fce79533936121e9abcd09cf4e1528\"",
       "references": [
         {
@@ -1086,7 +1086,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:10.986Z",
-      "checkedAt": "2026-08-11T06:48:37.936Z",
+      "checkedAt": "2026-08-11T06:49:53.468Z",
       "etag": "W/\"b0743beab32b0fdc37de05f48645f8b33f95ef4507e8caa9b29a11b37367e3b2\"",
       "references": [
         {
@@ -1128,7 +1128,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.159Z",
-      "checkedAt": "2026-08-11T06:48:37.962Z",
+      "checkedAt": "2026-08-11T06:49:53.468Z",
       "etag": "W/\"ac9d70bd2e2da3a2cbd618efc9e41df4ad45ab9181697558262341e40fd77cfa\"",
       "references": [
         {
@@ -1185,7 +1185,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.176Z",
-      "checkedAt": "2026-08-11T06:48:37.981Z",
+      "checkedAt": "2026-08-11T06:49:53.504Z",
       "etag": "W/\"2866c1c158014b0bd0f43e4ac613f39ecadc63cf86b170816ade6d0f4c87a062\"",
       "references": [
         {
@@ -1228,7 +1228,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:11.184Z",
-      "checkedAt": "2026-08-11T06:48:37.998Z",
+      "checkedAt": "2026-08-11T06:49:53.506Z",
       "etag": "W/\"d5c797bcea86f359c54afa1186a53acc4304ef69f390740208f2c49399ad81c3\"",
       "references": [
         {
@@ -1280,7 +1280,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.246Z",
-      "checkedAt": "2026-08-11T06:48:38.003Z",
+      "checkedAt": "2026-08-11T06:49:53.534Z",
       "etag": "W/\"c9446e2a883891dd726b2876063d0c64c037cc7783b6395742b89f1f914de89d\"",
       "references": [
         {
@@ -1316,7 +1316,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:11.333Z",
-      "checkedAt": "2026-08-11T06:48:38.029Z",
+      "checkedAt": "2026-08-11T06:49:53.534Z",
       "etag": "W/\"8beebcac0cf9c886e9991ac73e40e97b04fef58382a1e3d9fee68a3b1d486c3b\"",
       "references": [
         {
@@ -1352,7 +1352,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:11.375Z",
-      "checkedAt": "2026-08-11T06:48:38.042Z",
+      "checkedAt": "2026-08-11T06:49:53.545Z",
       "etag": "W/\"cf7bab7ec36b2742c0e7dd95c3fc1d8825e710c46d8e3f7f1a29b9dfc04fd6ad\"",
       "references": [
         {
@@ -1406,7 +1406,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:11.447Z",
-      "checkedAt": "2026-08-11T06:48:38.046Z",
+      "checkedAt": "2026-08-11T06:49:53.573Z",
       "etag": "W/\"9b3652d9041b20bd223b8cf71635bf3cce3fe8961976d04b76fd99e6e0b3a9a9\"",
       "references": [
         {
@@ -1455,7 +1455,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.507Z",
-      "checkedAt": "2026-08-11T06:48:38.067Z",
+      "checkedAt": "2026-08-11T06:49:53.574Z",
       "etag": "W/\"2e4fdae304049c986be5bfec49e4dec2e021e8f1555c7e02a3a78f571d2e5443\"",
       "references": [
         {
@@ -1491,7 +1491,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.579Z",
-      "checkedAt": "2026-08-11T06:48:38.077Z",
+      "checkedAt": "2026-08-11T06:49:53.600Z",
       "etag": "W/\"0c42375bf172abb6000511423fe007fb151f4f2a13b1570851529512fc77dcdf\"",
       "references": [
         {
@@ -1534,7 +1534,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.602Z",
-      "checkedAt": "2026-08-11T06:48:38.082Z",
+      "checkedAt": "2026-08-11T06:49:53.606Z",
       "etag": "W/\"f8d512ef8bb743568f3d992ebd9a5c292a2ecd5388bf4ff41ff4cfd5ae7936e4\"",
       "references": [
         {
@@ -1577,7 +1577,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:11.682Z",
-      "checkedAt": "2026-08-11T06:48:38.086Z",
+      "checkedAt": "2026-08-11T06:49:53.614Z",
       "etag": "W/\"d72a751e4d00dda5f2db89597b9a3e02694f2f4f3a827b1c6803dbe3dd3c6230\"",
       "references": [
         {
@@ -1597,7 +1597,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:11.795Z",
-      "checkedAt": "2026-08-11T06:48:38.108Z",
+      "checkedAt": "2026-08-11T06:49:53.618Z",
       "references": [
         {
           "recordType": "product",
@@ -1632,7 +1632,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:11.828Z",
-      "checkedAt": "2026-08-11T06:48:38.115Z",
+      "checkedAt": "2026-08-11T06:49:53.644Z",
       "etag": "W/\"075bccb2f261ec1c177a9bf2d204433c2e4754bef01f4ac6d203af59e7100dfc\"",
       "references": [
         {
@@ -1668,7 +1668,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:11.886Z",
-      "checkedAt": "2026-08-11T06:48:38.119Z",
+      "checkedAt": "2026-08-11T06:49:53.645Z",
       "etag": "W/\"b0f08dcc704f140d7859e7fc113b0bb6ae12aa20757839c15d2dc3f7a70f55e9\"",
       "references": [
         {
@@ -1718,7 +1718,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:11.914Z",
-      "checkedAt": "2026-08-11T06:48:38.122Z",
+      "checkedAt": "2026-08-11T06:49:53.662Z",
       "etag": "W/\"f57e5537975a750151daa02397fce033422e65a613e87259e59ee9bcbc3d4411\"",
       "references": [
         {
@@ -1759,7 +1759,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:11.923Z",
-      "checkedAt": "2026-08-11T06:48:38.147Z",
+      "checkedAt": "2026-08-11T06:49:53.688Z",
       "etag": "W/\"1c899c2bba51cd127228b719d439c2c11508bd7d4ab45e579327b791773783cb\"",
       "references": [
         {
@@ -1795,7 +1795,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:12.032Z",
-      "checkedAt": "2026-08-11T06:48:38.185Z",
+      "checkedAt": "2026-08-11T06:49:53.689Z",
       "etag": "W/\"acc9f45bbc733170ba6dbb57fe5366ea0cdc22c36d868ac6cd1084d5c77cc43b\"",
       "references": [
         {
@@ -1831,7 +1831,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:12.107Z",
-      "checkedAt": "2026-08-11T06:48:38.186Z",
+      "checkedAt": "2026-08-11T06:49:53.716Z",
       "etag": "W/\"02df2aa4a8c78a77b36743259f5cb20e005e93f5feb279aeba386c869a70ef7b\"",
       "references": [
         {
@@ -1874,7 +1874,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.109Z",
-      "checkedAt": "2026-08-11T06:48:38.211Z",
+      "checkedAt": "2026-08-11T06:49:53.726Z",
       "etag": "W/\"747feb6b0ebe6a14b8634d1b658f7365cfe8a5b7418f145f836cc7423361b54e\"",
       "references": [
         {
@@ -1910,7 +1910,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:12.156Z",
-      "checkedAt": "2026-08-11T06:48:38.223Z",
+      "checkedAt": "2026-08-11T06:49:53.755Z",
       "etag": "W/\"e4abc73213338f63e34824338f774a32e10a8f4497d6f6bdfa79f6f47aecd797\"",
       "references": [
         {
@@ -1946,7 +1946,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:12.252Z",
-      "checkedAt": "2026-08-11T06:48:38.227Z",
+      "checkedAt": "2026-08-11T06:49:53.760Z",
       "etag": "W/\"13a96e74f77a58eced85d7cc467f2891370ec97e3c091006267e53a411adfb13\"",
       "references": [
         {
@@ -1990,7 +1990,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.304Z",
-      "checkedAt": "2026-08-11T06:48:38.248Z",
+      "checkedAt": "2026-08-11T06:49:53.766Z",
       "etag": "W/\"3069eb4824d7d55bbd1bc1fecf2e6689cf9c41eaa3fcb7e39ee18561908310ee\"",
       "references": [
         {
@@ -2030,7 +2030,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.317Z",
-      "checkedAt": "2026-08-11T06:48:38.294Z",
+      "checkedAt": "2026-08-11T06:49:53.767Z",
       "etag": "W/\"c35ec212311bf45557b18d30e93f0b0c3d87240e104f043e4c9bd4700d3b03e1\"",
       "references": [
         {
@@ -2066,7 +2066,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.323Z",
-      "checkedAt": "2026-08-11T06:48:38.307Z",
+      "checkedAt": "2026-08-11T06:49:53.797Z",
       "etag": "W/\"1b205ad41c2dad980cddc2f63626edb9ca85c167017b8555591fe0f3b33b2b88\"",
       "references": [
         {
@@ -2109,7 +2109,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.450Z",
-      "checkedAt": "2026-08-11T06:48:38.312Z",
+      "checkedAt": "2026-08-11T06:49:53.807Z",
       "etag": "W/\"0393214729a81fea7b539121547d1709d85ad1944a363725c9e51939bc0b358d\"",
       "references": [
         {
@@ -2159,7 +2159,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.490Z",
-      "checkedAt": "2026-08-11T06:48:38.336Z",
+      "checkedAt": "2026-08-11T06:49:53.812Z",
       "etag": "W/\"7e8563cdcc55287deb34363021bcc1617b1f8fd7ac92893f8e8c1ab9e8bfe1e0\"",
       "references": [
         {
@@ -2200,7 +2200,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.492Z",
-      "checkedAt": "2026-08-11T06:48:38.340Z",
+      "checkedAt": "2026-08-11T06:49:53.829Z",
       "etag": "W/\"b6ebf1a949b5485c28dda3b494c9bb5db7e9fa5ead98d68b85f32d7a96b87de2\"",
       "references": [
         {
@@ -2246,7 +2246,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.494Z",
-      "checkedAt": "2026-08-11T06:48:38.349Z",
+      "checkedAt": "2026-08-11T06:49:53.838Z",
       "etag": "W/\"5dd13ce7f0d837ad4f4afb56909b79f524363f4a8a6a831bcec46dc33c2e0078\"",
       "references": [
         {
@@ -2294,7 +2294,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.634Z",
-      "checkedAt": "2026-08-11T06:48:38.376Z",
+      "checkedAt": "2026-08-11T06:49:53.851Z",
       "etag": "W/\"b68f81bc4b2c6a167f795798df219c00fff045d1777cd61d1dd81067aa086941\"",
       "references": [
         {
@@ -2341,7 +2341,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:12.642Z",
-      "checkedAt": "2026-08-11T06:48:38.386Z",
+      "checkedAt": "2026-08-11T06:49:53.884Z",
       "etag": "W/\"9b121571e4a9b43ea22603ea9025306f5d4299956e136f2bdf8fdaf84c0157f5\"",
       "references": [
         {
@@ -2389,7 +2389,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.651Z",
-      "checkedAt": "2026-08-11T06:48:38.402Z",
+      "checkedAt": "2026-08-11T06:49:53.888Z",
       "etag": "W/\"47a896bbed4747884ec3585db355342b7736a93df7f28a75691a0dfbfa7a1899\"",
       "references": [
         {
@@ -2429,7 +2429,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:12.793Z",
-      "checkedAt": "2026-08-11T06:48:38.406Z",
+      "checkedAt": "2026-08-11T06:49:53.892Z",
       "etag": "W/\"83e746bb5cd057f1708b597e02250e26da8a012230cde893a25de7afc7bd96ff\"",
       "references": [
         {
@@ -2465,7 +2465,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.796Z",
-      "checkedAt": "2026-08-11T06:48:38.443Z",
+      "checkedAt": "2026-08-11T06:49:53.902Z",
       "etag": "W/\"8c0ddd5af220bf120388b6c4f3815faecfa907c4245e8c58815a5be7fc865c24\"",
       "references": [
         {
@@ -2501,7 +2501,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:12.847Z",
-      "checkedAt": "2026-08-11T06:48:38.445Z",
+      "checkedAt": "2026-08-11T06:49:53.926Z",
       "etag": "W/\"90b9b56caf6fffc141f6b1004f134292a17aafb0d87c67dfdd7efb4d20a0934c\"",
       "references": [
         {
@@ -2537,7 +2537,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.923Z",
-      "checkedAt": "2026-08-11T06:48:38.451Z",
+      "checkedAt": "2026-08-11T06:49:53.935Z",
       "etag": "W/\"1585e9cfa56f28b65a43eea295bc0f1020e3972e26a15932a09d87009092f2f7\"",
       "references": [
         {
@@ -2580,7 +2580,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:12.967Z",
-      "checkedAt": "2026-08-11T06:48:38.459Z",
+      "checkedAt": "2026-08-11T06:49:53.941Z",
       "etag": "W/\"676882c42e61d609f5b6cdedc52ec7f3dcb8fccc45fbfd3f7b6b9f987f9b77ae\"",
       "references": [
         {
@@ -2621,7 +2621,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:13.080Z",
-      "checkedAt": "2026-08-11T06:48:38.479Z",
+      "checkedAt": "2026-08-11T06:49:53.959Z",
       "etag": "W/\"7dd9e9b0201784cf4780c3eb1c108b4930f5f632aae3cae7b60a4b26d2fa82ec\"",
       "references": [
         {
@@ -2661,7 +2661,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:13.116Z",
-      "checkedAt": "2026-08-11T06:48:38.486Z",
+      "checkedAt": "2026-08-11T06:49:53.978Z",
       "etag": "W/\"5e485166e3934e82373545e2766547d9d72b927eb558d21fe2b9aee76cfeccf9\"",
       "references": [
         {
@@ -2697,7 +2697,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.125Z",
-      "checkedAt": "2026-08-11T06:48:38.499Z",
+      "checkedAt": "2026-08-11T06:49:53.981Z",
       "etag": "W/\"a378a83f7d5e53516c95920f4b2df17e0fb4804c31a82be0d36655f8a7b51553\"",
       "references": [
         {
@@ -2739,7 +2739,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:13.188Z",
-      "checkedAt": "2026-08-11T06:48:38.503Z",
+      "checkedAt": "2026-08-11T06:49:53.998Z",
       "etag": "W/\"c129e69b29617a0b1b8b35b6852e7b2ab6579e90b9af6588416e257a8f393927\"",
       "references": [
         {
@@ -2759,7 +2759,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:13.277Z",
-      "checkedAt": "2026-08-11T06:48:38.535Z",
+      "checkedAt": "2026-08-11T06:49:54.004Z",
       "references": [
         {
           "recordType": "product",
@@ -2794,7 +2794,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.313Z",
-      "checkedAt": "2026-08-11T06:48:38.537Z",
+      "checkedAt": "2026-08-11T06:49:54.023Z",
       "etag": "W/\"0ff5c7ce0fba23fe6eb12faaa475cfde0d3e080c895a3e53f62df1dda2e56a22\"",
       "references": [
         {
@@ -2841,7 +2841,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.405Z",
-      "checkedAt": "2026-08-11T06:48:38.544Z",
+      "checkedAt": "2026-08-11T06:49:54.064Z",
       "etag": "W/\"cea1046ed636f4150e1b7f02781c509fd767bbe0587d1993fd918e00f521c03e\"",
       "references": [
         {
@@ -2890,7 +2890,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.419Z",
-      "checkedAt": "2026-08-11T06:48:38.554Z",
+      "checkedAt": "2026-08-11T06:49:54.065Z",
       "etag": "W/\"7f94667d89fc3f2cbd7220bbff7ebada4edc97e6c957045be7e14703982f6221\"",
       "references": [
         {
@@ -2938,7 +2938,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:13.488Z",
-      "checkedAt": "2026-08-11T06:48:38.579Z",
+      "checkedAt": "2026-08-11T06:49:54.076Z",
       "etag": "W/\"33682ce97255d9dbd4bb5aa3687c464a7580b4483a2b9f53e2e4aac289ca28c1\"",
       "references": [
         {
@@ -2980,7 +2980,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:13.496Z",
-      "checkedAt": "2026-08-11T06:48:38.583Z",
+      "checkedAt": "2026-08-11T06:49:54.080Z",
       "etag": "W/\"046b2da1b9d2f1ec01dceddda626bfecb1ca53e3ec06171c3d55d824e2ff1c68\"",
       "references": [
         {
@@ -3026,7 +3026,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:13.629Z",
-      "checkedAt": "2026-08-11T06:48:38.610Z",
+      "checkedAt": "2026-08-11T06:49:54.108Z",
       "etag": "W/\"bfa6119f2d1704bfb6bd7dfa3707d050ad50703e8bbbf3f5f940927c10d28f6b\"",
       "references": [
         {
@@ -3066,7 +3066,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.653Z",
-      "checkedAt": "2026-08-11T06:48:38.617Z",
+      "checkedAt": "2026-08-11T06:49:54.119Z",
       "etag": "W/\"5f995c5bc40aadfc3d3c29eaafad03904c7d3e78a846efb235780e8e587792e8\"",
       "references": [
         {
@@ -3086,7 +3086,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:13.661Z",
-      "checkedAt": "2026-08-11T06:48:38.620Z",
+      "checkedAt": "2026-08-11T06:49:54.124Z",
       "references": [
         {
           "recordType": "product",
@@ -3105,7 +3105,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:13.700Z",
-      "checkedAt": "2026-08-11T06:48:38.627Z",
+      "checkedAt": "2026-08-11T06:49:54.133Z",
       "references": [
         {
           "recordType": "product",
@@ -3148,7 +3148,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:13.781Z",
-      "checkedAt": "2026-08-11T06:48:38.651Z",
+      "checkedAt": "2026-08-11T06:49:54.175Z",
       "etag": "W/\"80be5a8d33de2a4af3edd2b41773daeaf08dda69d9b19f9d20739759d6e469ef\"",
       "references": [
         {
@@ -3197,7 +3197,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.820Z",
-      "checkedAt": "2026-08-11T06:48:38.654Z",
+      "checkedAt": "2026-08-11T06:49:54.182Z",
       "etag": "W/\"c1cab6537f58c5940d7ffc7366a1e547c161a66e3bf29c1f8ac0c93e01beb340\"",
       "references": [
         {
@@ -3246,7 +3246,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.823Z",
-      "checkedAt": "2026-08-11T06:48:38.694Z",
+      "checkedAt": "2026-08-11T06:49:54.193Z",
       "etag": "W/\"98f5703ba851ef2f878fe77b1d686679e6a7692045213a22298e9b8d49d2e275\"",
       "references": [
         {
@@ -3293,7 +3293,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.832Z",
-      "checkedAt": "2026-08-11T06:48:38.695Z",
+      "checkedAt": "2026-08-11T06:49:54.195Z",
       "etag": "W/\"014cba0f66783d97dd275dacefcceb87361717783ef20c17a89c160a7c1de0bc\"",
       "references": [
         {
@@ -3336,7 +3336,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:13.961Z",
-      "checkedAt": "2026-08-11T06:48:38.721Z",
+      "checkedAt": "2026-08-11T06:49:54.224Z",
       "etag": "W/\"c77431f5e157cdd48eba0cc56264d6d9d42a0bcae7c67decd69b0a720adb1320\"",
       "references": [
         {
@@ -3383,7 +3383,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.014Z",
-      "checkedAt": "2026-08-11T06:48:38.723Z",
+      "checkedAt": "2026-08-11T06:49:54.230Z",
       "etag": "W/\"1fd6601c1aaa5b1df1afffa72c404867dcfa0150d13b59d71c0c89952bd7e608\"",
       "references": [
         {
@@ -3423,7 +3423,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.030Z",
-      "checkedAt": "2026-08-11T06:48:38.729Z",
+      "checkedAt": "2026-08-11T06:49:54.236Z",
       "etag": "W/\"b6e7ca0e03f6b22a2cd556fda0823460d719223a3091111c107765d0ff7da553\"",
       "references": [
         {
@@ -3463,7 +3463,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.136Z",
-      "checkedAt": "2026-08-11T06:48:38.736Z",
+      "checkedAt": "2026-08-11T06:49:54.264Z",
       "etag": "W/\"36b8ddeacad34764e70ff928691770d48591c16f7e0e027c4d247c0210cfa7af\"",
       "references": [
         {
@@ -3483,7 +3483,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:14.181Z",
-      "checkedAt": "2026-08-11T06:48:38.762Z",
+      "checkedAt": "2026-08-11T06:49:54.278Z",
       "references": [
         {
           "recordType": "product",
@@ -3518,7 +3518,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:14.195Z",
-      "checkedAt": "2026-08-11T06:48:38.766Z",
+      "checkedAt": "2026-08-11T06:49:54.302Z",
       "etag": "W/\"3057cc80b25e09216ad19bbb7eadd61f517070fc82b03abcb28c9acfd21f14ea\"",
       "references": [
         {
@@ -3538,7 +3538,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:14.202Z",
-      "checkedAt": "2026-08-11T06:48:38.768Z",
+      "checkedAt": "2026-08-11T06:49:54.303Z",
       "references": [
         {
           "recordType": "product",
@@ -3593,7 +3593,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.294Z",
-      "checkedAt": "2026-08-11T06:48:38.773Z",
+      "checkedAt": "2026-08-11T06:49:54.319Z",
       "etag": "W/\"581d0e5b666f974721be2c1c8e496ab6e4d02c03e1b4562f4b7e6879349f598f\"",
       "references": [
         {
@@ -3629,7 +3629,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.312Z",
-      "checkedAt": "2026-08-11T06:48:38.800Z",
+      "checkedAt": "2026-08-11T06:49:54.338Z",
       "etag": "W/\"dacbafb13b36f8dbbdd56a23b6b80186490538ab3e35c0701cc0c903f09cb054\"",
       "references": [
         {
@@ -3678,7 +3678,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.338Z",
-      "checkedAt": "2026-08-11T06:48:38.801Z",
+      "checkedAt": "2026-08-11T06:49:54.340Z",
       "etag": "W/\"9cec3688e60ca8d4e91c21e7285b39809d07d7c4457c4609897e666fa3099e17\"",
       "references": [
         {
@@ -3714,7 +3714,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.394Z",
-      "checkedAt": "2026-08-11T06:48:38.805Z",
+      "checkedAt": "2026-08-11T06:49:54.345Z",
       "etag": "W/\"51635946de4e92c940563e5377709a7a17497fda393078f26a80958523170427\"",
       "references": [
         {
@@ -3755,7 +3755,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:14.520Z",
-      "checkedAt": "2026-08-11T06:48:38.813Z",
+      "checkedAt": "2026-08-11T06:49:54.361Z",
       "etag": "W/\"52b38b1fca631f4490e8250af3e1076e62c53dc0990afd97796fc0a27c95f8e0\"",
       "references": [
         {
@@ -3795,7 +3795,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:14.595Z",
-      "checkedAt": "2026-08-11T06:48:38.834Z",
+      "checkedAt": "2026-08-11T06:49:54.386Z",
       "etag": "W/\"65d9a1611439ce233df8e6cef7be883db8f6dbcb9b3dd63a7c1a872918dbc6f0\"",
       "references": [
         {
@@ -3835,7 +3835,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:14.620Z",
-      "checkedAt": "2026-08-11T06:48:38.843Z",
+      "checkedAt": "2026-08-11T06:49:54.401Z",
       "etag": "W/\"70b60d24de1fbe5f7d2ec018147b8ee402324c79554ae27049b4b04c1c57831d\"",
       "references": [
         {
@@ -3875,7 +3875,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:14.636Z",
-      "checkedAt": "2026-08-11T06:48:38.845Z",
+      "checkedAt": "2026-08-11T06:49:54.406Z",
       "etag": "W/\"11861dbd26b71871aed553fd72a0ce504ba292268b3b1009ca950ee7916adb1a\"",
       "references": [
         {
@@ -3915,7 +3915,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.689Z",
-      "checkedAt": "2026-08-11T06:48:38.851Z",
+      "checkedAt": "2026-08-11T06:49:54.410Z",
       "etag": "W/\"61facf4bbaaf54addcafefb697522d2b428dcc0b35a66deb676841df087e474c\"",
       "references": [
         {
@@ -3951,7 +3951,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.748Z",
-      "checkedAt": "2026-08-11T06:48:38.881Z",
+      "checkedAt": "2026-08-11T06:49:54.425Z",
       "etag": "W/\"14c4e7987a3d998fa52808261368641f7e8298507ebb9e2a9fd6c004d868a3b9\"",
       "references": [
         {
@@ -3987,7 +3987,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.795Z",
-      "checkedAt": "2026-08-11T06:48:38.888Z",
+      "checkedAt": "2026-08-11T06:49:54.444Z",
       "etag": "W/\"11d09becb2d6f892a3167a72ae8e820b07073b50e5c50d907ab786d2d17b5ab6\"",
       "references": [
         {
@@ -4023,7 +4023,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:14.907Z",
-      "checkedAt": "2026-08-11T06:48:38.889Z",
+      "checkedAt": "2026-08-11T06:49:54.446Z",
       "etag": "W/\"55562ab3835ac00a9e8959fa5d13bc410d203f044c7a086024f9434d22956f9b\"",
       "references": [
         {
@@ -4071,7 +4071,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.911Z",
-      "checkedAt": "2026-08-11T06:48:38.907Z",
+      "checkedAt": "2026-08-11T06:49:54.467Z",
       "etag": "W/\"d355110f12ec2c39f6d30127b7fffec0d95c5ab8b4939844beb84f6a1c100e88\"",
       "references": [
         {
@@ -4114,7 +4114,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:14.914Z",
-      "checkedAt": "2026-08-11T06:48:38.924Z",
+      "checkedAt": "2026-08-11T06:49:54.484Z",
       "etag": "W/\"20ce0dd4408a8b8c1b8c897f208c7237716afe14f9d0e0d424c0bf6562dd187d\"",
       "references": [
         {
@@ -4159,7 +4159,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:14.963Z",
-      "checkedAt": "2026-08-11T06:48:38.929Z",
+      "checkedAt": "2026-08-11T06:49:54.490Z",
       "etag": "W/\"037c4b00ed6915a2c96b87ca0e3fb1cbed876d7e12afd3c12a0c4db46016beaa\"",
       "references": [
         {
@@ -4205,7 +4205,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.075Z",
-      "checkedAt": "2026-08-11T06:48:38.943Z",
+      "checkedAt": "2026-08-11T06:49:54.508Z",
       "etag": "W/\"ca1aecd488d44171fe795825a419531a03c67212a01d99adc772cb526642dfc4\"",
       "references": [
         {
@@ -4252,7 +4252,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.079Z",
-      "checkedAt": "2026-08-11T06:48:38.947Z",
+      "checkedAt": "2026-08-11T06:49:54.518Z",
       "etag": "W/\"db868b2beaff80d4e004072e7a7f01532b5cb48822a218e5c0b6b5f24fe9a022\"",
       "references": [
         {
@@ -4307,7 +4307,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.135Z",
-      "checkedAt": "2026-08-11T06:48:38.961Z",
+      "checkedAt": "2026-08-11T06:49:54.529Z",
       "etag": "W/\"452862c90e76c92b315e1e680cace7b72559a50e61166aeb3a7b2b3f3dff5d30\"",
       "references": [
         {
@@ -4362,7 +4362,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.143Z",
-      "checkedAt": "2026-08-11T06:48:38.969Z",
+      "checkedAt": "2026-08-11T06:49:54.530Z",
       "etag": "W/\"73996abd2ef6c6686850cbeabd0e86fc6e8b816b345d1c5c48d53080a1425a8f\"",
       "references": [
         {
@@ -4398,7 +4398,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.238Z",
-      "checkedAt": "2026-08-11T06:48:38.978Z",
+      "checkedAt": "2026-08-11T06:49:54.556Z",
       "etag": "W/\"43ffffa43a2c310f1bdb03e0b63be7eaddf8f4c1f4d83241b1d5edf2eef97969\"",
       "references": [
         {
@@ -4434,7 +4434,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:15.249Z",
-      "checkedAt": "2026-08-11T06:48:38.982Z",
+      "checkedAt": "2026-08-11T06:49:54.558Z",
       "etag": "W/\"3e2ad8a5345b6fcbb77967ddcb5c716e4501323f8ea9b186dd6f70d813e121cc\"",
       "references": [
         {
@@ -4491,7 +4491,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.318Z",
-      "checkedAt": "2026-08-11T06:48:38.999Z",
+      "checkedAt": "2026-08-11T06:49:54.567Z",
       "etag": "W/\"ca9b848003f63519680558c2a5b20344a67bdfa772c3006cb19d75513fa57d96\"",
       "references": [
         {
@@ -4534,7 +4534,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.332Z",
-      "checkedAt": "2026-08-11T06:48:39.013Z",
+      "checkedAt": "2026-08-11T06:49:54.568Z",
       "etag": "W/\"c80b369a984bf8cfa7acf624d7744073da0a5003ca74d5468120dd92cb63a166\"",
       "references": [
         {
@@ -4570,7 +4570,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:15.426Z",
-      "checkedAt": "2026-08-11T06:48:39.022Z",
+      "checkedAt": "2026-08-11T06:49:54.597Z",
       "etag": "W/\"3403ede919b69a16b155e0624cb39190c86ffeb47b9977fd73bfab86ea770fa2\"",
       "references": [
         {
@@ -4606,7 +4606,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:15.502Z",
-      "checkedAt": "2026-08-11T06:48:39.042Z",
+      "checkedAt": "2026-08-11T06:49:54.606Z",
       "etag": "W/\"0aef9ba2f8347775ea89b6a60a2cfc553f19ab1d3ac17ba38ccc3c57c6d969cd\"",
       "references": [
         {
@@ -4651,7 +4651,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:15.537Z",
-      "checkedAt": "2026-08-11T06:48:39.054Z",
+      "checkedAt": "2026-08-11T06:49:54.607Z",
       "etag": "W/\"d91449ba26e494273c0ae4312b0cd5b124ef5682e34d72f06bb4378cce125e72\"",
       "references": [
         {
@@ -4693,7 +4693,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:15.605Z",
-      "checkedAt": "2026-08-11T06:48:39.059Z",
+      "checkedAt": "2026-08-11T06:49:54.608Z",
       "etag": "W/\"baea5ce6846998e24ede01fbce1371413f25aa7163d04c451a05e56333d371f5\"",
       "references": [
         {
@@ -4729,7 +4729,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:15.629Z",
-      "checkedAt": "2026-08-11T06:48:39.061Z",
+      "checkedAt": "2026-08-11T06:49:54.647Z",
       "etag": "W/\"86bdc33c012cb791cf9d0e9cc505dab71d8b3a5a491cb7a222a47ffab6602e0f\"",
       "references": [
         {
@@ -4771,7 +4771,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:15.663Z",
-      "checkedAt": "2026-08-11T06:48:39.076Z",
+      "checkedAt": "2026-08-11T06:49:54.648Z",
       "etag": "W/\"b9dedd8bd8657fc29739c543d608493c949904b1c1efc111f61021c77b51ead9\"",
       "references": [
         {
@@ -4819,7 +4819,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.710Z",
-      "checkedAt": "2026-08-11T06:48:39.093Z",
+      "checkedAt": "2026-08-11T06:49:54.652Z",
       "etag": "W/\"bc1eb31d37cdb934626f3c1ce558ea25f5993d2d3d9035f0dd8db5925e2eb1f5\"",
       "references": [
         {
@@ -4876,7 +4876,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:15.767Z",
-      "checkedAt": "2026-08-11T06:48:39.098Z",
+      "checkedAt": "2026-08-11T06:49:54.669Z",
       "etag": "W/\"864b632e59065aac28029a8f803081164a6757857ea00d7350e2a79e8e83dffa\"",
       "references": [
         {
@@ -4927,7 +4927,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:15.808Z",
-      "checkedAt": "2026-08-11T06:48:39.129Z",
+      "checkedAt": "2026-08-11T06:49:54.690Z",
       "etag": "W/\"0c6d810bedb564fda35ad790142f141a4bb7c6fb4d02931dc65318052bd0ab6b\"",
       "references": [
         {
@@ -4974,7 +4974,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:15.869Z",
-      "checkedAt": "2026-08-11T06:48:39.134Z",
+      "checkedAt": "2026-08-11T06:49:54.694Z",
       "etag": "W/\"df0d84df500c16bb3a01c8a6334312bc989d6736c23e05ea1ca3c6105e630f41\"",
       "references": [
         {
@@ -5031,7 +5031,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:15.883Z",
-      "checkedAt": "2026-08-11T06:48:39.138Z",
+      "checkedAt": "2026-08-11T06:49:54.694Z",
       "etag": "W/\"823007e1d67797644fc8203d9e089b4125e867b8a30c9a68f6d995fc3c4b8061\"",
       "references": [
         {
@@ -5088,7 +5088,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:15.970Z",
-      "checkedAt": "2026-08-11T06:48:39.150Z",
+      "checkedAt": "2026-08-11T06:49:54.708Z",
       "etag": "W/\"d2c3174907758284d3570761569ba4a454c1428fdded3ed043f8cf8957a70363\"",
       "references": [
         {
@@ -5151,7 +5151,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.025Z",
-      "checkedAt": "2026-08-11T06:48:39.164Z",
+      "checkedAt": "2026-08-11T06:49:54.728Z",
       "etag": "W/\"ff6130d2daa2abae3ebc20021f159335986ab3e6451fa7350555d3b987158e1f\"",
       "references": [
         {
@@ -5214,7 +5214,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.082Z",
-      "checkedAt": "2026-08-11T06:48:39.172Z",
+      "checkedAt": "2026-08-11T06:49:54.734Z",
       "etag": "W/\"d59340b05e09d31d1b31fdaa089611d578a9a6db2142ee179c0804bb131feb44\"",
       "references": [
         {
@@ -5269,7 +5269,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:16.139Z",
-      "checkedAt": "2026-08-11T06:48:39.172Z",
+      "checkedAt": "2026-08-11T06:49:54.749Z",
       "etag": "W/\"3a429c6de4fde99057cc85478091d0fa9dd9d6b0c4c11d5db8fffb16dac1b757\"",
       "references": [
         {
@@ -5312,7 +5312,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.155Z",
-      "checkedAt": "2026-08-11T06:48:39.188Z",
+      "checkedAt": "2026-08-11T06:49:54.760Z",
       "etag": "W/\"336b2feb49a82e1f044ebb554113e007f8021b5f6b630bdc732fe47a58e6717f\"",
       "references": [
         {
@@ -5357,7 +5357,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:16.217Z",
-      "checkedAt": "2026-08-11T06:48:39.210Z",
+      "checkedAt": "2026-08-11T06:49:54.782Z",
       "etag": "W/\"1987541bd313c52f5f1b3bf664278d714e0db7bcf4d4e864e68c0f0af000ffc6\"",
       "references": [
         {
@@ -5408,7 +5408,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.254Z",
-      "checkedAt": "2026-08-11T06:48:39.214Z",
+      "checkedAt": "2026-08-11T06:49:54.804Z",
       "etag": "W/\"fcad30935bb46bb610d84237370daf18769618e334ce5d441672320fb550f508\"",
       "references": [
         {
@@ -5456,7 +5456,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:16.289Z",
-      "checkedAt": "2026-08-11T06:48:39.226Z",
+      "checkedAt": "2026-08-11T06:49:54.807Z",
       "etag": "W/\"94f9bbe658e4b052a3baf08b719003255c4a5e969fc22bce0ccd7d29ea94818d\"",
       "references": [
         {
@@ -5507,7 +5507,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:16.357Z",
-      "checkedAt": "2026-08-11T06:48:39.227Z",
+      "checkedAt": "2026-08-11T06:49:54.822Z",
       "etag": "W/\"e0a59ec975c7d986b3fb04d3faf617fc1d89952bab888dbd2ccfe581ecf71aa2\"",
       "references": [
         {
@@ -5550,7 +5550,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.464Z",
-      "checkedAt": "2026-08-11T06:48:39.261Z",
+      "checkedAt": "2026-08-11T06:49:54.824Z",
       "etag": "W/\"80e4d2ff9632e5bec47221334b75f4f3cf05c5a216789943178a32e831b68c43\"",
       "references": [
         {
@@ -5589,7 +5589,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:16.491Z",
-      "checkedAt": "2026-08-11T06:48:39.264Z",
+      "checkedAt": "2026-08-11T06:49:54.844Z",
       "etag": "W/\"8c0bceab7814ea35e6f52551706ef23c13f44c3309ab9f66d79e88d3eb98f4e5\"",
       "references": [
         {
@@ -5625,7 +5625,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.538Z",
-      "checkedAt": "2026-08-11T06:48:39.265Z",
+      "checkedAt": "2026-08-11T06:49:54.849Z",
       "etag": "W/\"76cf7f9776c20e4ab96c5e971d8cfaaa16880b4073d0031e3c4db6d15a030c20\"",
       "references": [
         {
@@ -5664,7 +5664,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.550Z",
-      "checkedAt": "2026-08-11T06:48:39.283Z",
+      "checkedAt": "2026-08-11T06:49:54.866Z",
       "etag": "W/\"cfafa9c833ab24ae6b996311af72420cdd4336b900c26bc6b0d53a41697def3e\"",
       "references": [
         {
@@ -5710,7 +5710,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.640Z",
-      "checkedAt": "2026-08-11T06:48:39.300Z",
+      "checkedAt": "2026-08-11T06:49:54.867Z",
       "etag": "W/\"7cb503407e428d929bee7193efb21434eb8d52c2cb70d5663d313ac0639c8f3b\"",
       "references": [
         {
@@ -5754,7 +5754,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.730Z",
-      "checkedAt": "2026-08-11T06:48:39.310Z",
+      "checkedAt": "2026-08-11T06:49:54.885Z",
       "etag": "W/\"80eac6fe1648e3431ba32ff02603a409b27e08c89b7547605d2e099ff0e11956\"",
       "references": [
         {
@@ -5799,7 +5799,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.735Z",
-      "checkedAt": "2026-08-11T06:48:39.325Z",
+      "checkedAt": "2026-08-11T06:49:54.890Z",
       "etag": "W/\"034a7110b1e58203cd30b14109a354fc201832f623005a8fb520a82eb1d4897f\"",
       "references": [
         {
@@ -5819,7 +5819,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:16.785Z",
-      "checkedAt": "2026-08-11T06:48:39.331Z",
+      "checkedAt": "2026-08-11T06:49:54.927Z",
       "references": [
         {
           "recordType": "product",
@@ -5854,7 +5854,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.795Z",
-      "checkedAt": "2026-08-11T06:48:39.336Z",
+      "checkedAt": "2026-08-11T06:49:54.933Z",
       "etag": "W/\"1400def8fb3a1ac40f6ac05d605909074bece2769a64fda47acc0a6c72cf3461\"",
       "references": [
         {
@@ -5895,7 +5895,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:16.893Z",
-      "checkedAt": "2026-08-11T06:48:39.346Z",
+      "checkedAt": "2026-08-11T06:49:54.934Z",
       "etag": "W/\"0c1c8f70e2f80c633ee39b96405b79fd941dec46de77c0866d706b113a807790\"",
       "references": [
         {
@@ -5942,7 +5942,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.904Z",
-      "checkedAt": "2026-08-11T06:48:39.363Z",
+      "checkedAt": "2026-08-11T06:49:54.940Z",
       "etag": "W/\"b540c6b788d9820e1cabf88fe12b445ac1e021d04a55d56f7fee7e78adebcfc3\"",
       "references": [
         {
@@ -5985,7 +5985,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:16.911Z",
-      "checkedAt": "2026-08-11T06:48:39.366Z",
+      "checkedAt": "2026-08-11T06:49:54.976Z",
       "etag": "W/\"130a3ff0bc95ef930cdb29f1c48e9df2cfb620903074e15d75c688c3e07b07e9\"",
       "references": [
         {
@@ -6038,7 +6038,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:16.961Z",
-      "checkedAt": "2026-08-11T06:48:39.377Z",
+      "checkedAt": "2026-08-11T06:49:54.979Z",
       "etag": "W/\"cf66b79261c9ac4accdfa88f09865ae7b38dba20c69f4af28607eaf83f112939\"",
       "references": [
         {
@@ -6074,7 +6074,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.049Z",
-      "checkedAt": "2026-08-11T06:48:39.383Z",
+      "checkedAt": "2026-08-11T06:49:55.003Z",
       "etag": "W/\"2bbb4b0cf4f6757142b6ca5f9cd8dd81cab7d9e5082ca9338ed48c4cbd177afb\"",
       "references": [
         {
@@ -6122,7 +6122,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:17.078Z",
-      "checkedAt": "2026-08-11T06:48:39.398Z",
+      "checkedAt": "2026-08-11T06:49:55.015Z",
       "etag": "W/\"145086f2a2c45ec5337ef4d1f7ea552acf4f6095af49723637f7cf0fd39de7ae\"",
       "references": [
         {
@@ -6166,7 +6166,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:17.134Z",
-      "checkedAt": "2026-08-11T06:48:39.406Z",
+      "checkedAt": "2026-08-11T06:49:55.036Z",
       "etag": "W/\"2a057d58c23adafceb16ec235ba3d0cd4990fe2ef0eb8ed01a01e8e2a127780c\"",
       "references": [
         {
@@ -6202,7 +6202,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.188Z",
-      "checkedAt": "2026-08-11T06:48:39.418Z",
+      "checkedAt": "2026-08-11T06:49:55.045Z",
       "etag": "W/\"415af42258ed68893be6dfd6b165b5771c4f213f7fd19bc8ff6b2d350213af7d\"",
       "references": [
         {
@@ -6222,7 +6222,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:17.233Z",
-      "checkedAt": "2026-08-11T06:48:39.426Z",
+      "checkedAt": "2026-08-11T06:49:55.049Z",
       "references": [
         {
           "recordType": "product",
@@ -6262,7 +6262,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:17.263Z",
-      "checkedAt": "2026-08-11T06:48:39.436Z",
+      "checkedAt": "2026-08-11T06:49:55.080Z",
       "etag": "W/\"b0d09e820f9a34e5baf86438f8d067cc7d66703fbeb53fae1b65eecdd0ff92dc\"",
       "references": [
         {
@@ -6305,7 +6305,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:17.308Z",
-      "checkedAt": "2026-08-11T06:48:39.447Z",
+      "checkedAt": "2026-08-11T06:49:55.087Z",
       "etag": "W/\"5c32e2d1f00e6704e7906e6315e9ecbaa1b7c5d1dd0da39162d3ea9136c9fe5f\"",
       "references": [
         {
@@ -6351,7 +6351,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.378Z",
-      "checkedAt": "2026-08-11T06:48:39.456Z",
+      "checkedAt": "2026-08-11T06:49:55.096Z",
       "etag": "W/\"43d1a2b1f7568bf5f1cd48df966ad0d0b162795746991b64a8ebbedd49b1b1d8\"",
       "references": [
         {
@@ -6387,7 +6387,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.487Z",
-      "checkedAt": "2026-08-11T06:48:39.474Z",
+      "checkedAt": "2026-08-11T06:49:55.125Z",
       "etag": "W/\"3f092917899548ce2c97a93c6d600cfacdfc04b0dfb266c880da919322d4f792\"",
       "references": [
         {
@@ -6434,7 +6434,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.571Z",
-      "checkedAt": "2026-08-11T06:48:39.490Z",
+      "checkedAt": "2026-08-11T06:49:55.127Z",
       "etag": "W/\"eb2ddfbf5fc4baf5a43f39745465436a3202b08551eae28c56f8238422809938\"",
       "references": [
         {
@@ -6470,7 +6470,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.586Z",
-      "checkedAt": "2026-08-11T06:48:39.493Z",
+      "checkedAt": "2026-08-11T06:49:55.136Z",
       "etag": "W/\"29b7e095b24750d1ab9ddc217c2ce8db7df748824d6408e07ce0960e061e384c\"",
       "references": [
         {
@@ -6521,7 +6521,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.591Z",
-      "checkedAt": "2026-08-11T06:48:39.514Z",
+      "checkedAt": "2026-08-11T06:49:55.166Z",
       "etag": "W/\"b608de20a5dc95a337fc2bc444e1ab262b1647ab9a731a9b7704a8a24d891648\"",
       "references": [
         {
@@ -6566,7 +6566,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:17.673Z",
-      "checkedAt": "2026-08-11T06:48:39.523Z",
+      "checkedAt": "2026-08-11T06:49:55.172Z",
       "etag": "W/\"6e73305bac3f413f62fe5ed1040a99f77061d524f7a414452d83b0ba3c620432\"",
       "references": [
         {
@@ -6610,7 +6610,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:17.751Z",
-      "checkedAt": "2026-08-11T06:48:39.542Z",
+      "checkedAt": "2026-08-11T06:49:55.178Z",
       "etag": "W/\"be1588808bc2f67a02383501ec7986054c7dcdb570f611bcd5431caa41ead219\"",
       "references": [
         {
@@ -6650,7 +6650,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:17.761Z",
-      "checkedAt": "2026-08-11T06:48:39.554Z",
+      "checkedAt": "2026-08-11T06:49:55.212Z",
       "etag": "W/\"4dbd3b108d70662b1298f3a70462b346c4f165e5c5496d4fb2760a3745eb3a06\"",
       "references": [
         {
@@ -6686,7 +6686,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:17.802Z",
-      "checkedAt": "2026-08-11T06:48:39.556Z",
+      "checkedAt": "2026-08-11T06:49:55.212Z",
       "etag": "W/\"5884f0cea03dd9c37454c4e77225048e67ea2c2b1e75d3f59d041bac6e0dab1b\"",
       "references": [
         {
@@ -6724,7 +6724,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:17.826Z",
-      "checkedAt": "2026-08-11T06:48:39.578Z",
+      "checkedAt": "2026-08-11T06:49:55.216Z",
       "etag": "W/\"3997522d97f812f39088a9fd1de85d52d9bb7ccd3b270181997fa8b96af115f7\"",
       "references": [
         {
@@ -6763,7 +6763,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:17.930Z",
-      "checkedAt": "2026-08-11T06:48:39.593Z",
+      "checkedAt": "2026-08-11T06:49:55.243Z",
       "etag": "W/\"4b39f76e588abfae4b881a8ec01fefa19e3a10f6cc098ae698a8b4e2abac215a\"",
       "references": [
         {
@@ -6799,7 +6799,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:17.933Z",
-      "checkedAt": "2026-08-11T06:48:39.594Z",
+      "checkedAt": "2026-08-11T06:49:55.255Z",
       "etag": "W/\"5baaf979dc8af4d18ee252f839e12529e345b4e14e45d03eeb1e0e5c08f91659\"",
       "references": [
         {
@@ -6840,7 +6840,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:17.996Z",
-      "checkedAt": "2026-08-11T06:48:39.611Z",
+      "checkedAt": "2026-08-11T06:49:55.281Z",
       "etag": "W/\"8b2afe28bb7f6f9687354f6858f80d8e0612e83e8edd92a9b6d9066257a5e5d0\"",
       "references": [
         {
@@ -6880,7 +6880,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:18.050Z",
-      "checkedAt": "2026-08-11T06:48:39.618Z",
+      "checkedAt": "2026-08-11T06:49:55.286Z",
       "etag": "W/\"8fc34c6ccf8a8a91efdf87c6e1fa9606779913e991f231c11dd106e24d042dbe\"",
       "references": [
         {
@@ -6925,7 +6925,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.102Z",
-      "checkedAt": "2026-08-11T06:48:39.635Z",
+      "checkedAt": "2026-08-11T06:49:55.288Z",
       "etag": "W/\"8bf1db0a04fef4643489b87451c7c2dff3d4329cb74ffd50638fc1e16a8f9f1c\"",
       "references": [
         {
@@ -6966,7 +6966,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:18.103Z",
-      "checkedAt": "2026-08-11T06:48:39.651Z",
+      "checkedAt": "2026-08-11T06:49:55.296Z",
       "etag": "W/\"71b13e58354349355e5d688c20ee3bf29961fab77de4cb31437974aad9144129\"",
       "references": [
         {
@@ -7011,7 +7011,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:18.171Z",
-      "checkedAt": "2026-08-11T06:48:39.659Z",
+      "checkedAt": "2026-08-11T06:49:55.320Z",
       "etag": "W/\"9521dc2f76ca1e8d9c47ae99fea53e83e742da3ad3eba8591f8de96c0f83a366\"",
       "references": [
         {
@@ -7047,7 +7047,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.239Z",
-      "checkedAt": "2026-08-11T06:48:39.667Z",
+      "checkedAt": "2026-08-11T06:49:55.327Z",
       "etag": "W/\"dd9d77aa3aa6437c6666706824569f8da1637e9f18ff0e77005a2a517c3aa2eb\"",
       "references": [
         {
@@ -7083,7 +7083,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.273Z",
-      "checkedAt": "2026-08-11T06:48:39.672Z",
+      "checkedAt": "2026-08-11T06:49:55.335Z",
       "etag": "W/\"3d33ee5afe58a74e75dd3116c8b60e49aae63aadc6fd9cda5d46d520b33a37b2\"",
       "references": [
         {
@@ -7119,7 +7119,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.289Z",
-      "checkedAt": "2026-08-11T06:48:39.690Z",
+      "checkedAt": "2026-08-11T06:49:55.337Z",
       "etag": "W/\"4bb10babe87a86ddee76239d421bb7c19345ba97387938dc244c4e8719d8ba6c\"",
       "references": [
         {
@@ -7163,7 +7163,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:18.333Z",
-      "checkedAt": "2026-08-11T06:48:39.697Z",
+      "checkedAt": "2026-08-11T06:49:55.371Z",
       "etag": "W/\"5f0f82c2048eb35813f72ee3d2f6c7c98b1aededfc38619273c4a6d949c99724\"",
       "references": [
         {
@@ -7220,7 +7220,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:18.412Z",
-      "checkedAt": "2026-08-11T06:48:39.708Z",
+      "checkedAt": "2026-08-11T06:49:55.378Z",
       "etag": "W/\"6bfdc1f41f9d01857125adc40ef0a9b4cc09d9ded5a5dce576364478158156d9\"",
       "references": [
         {
@@ -7261,7 +7261,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:18.472Z",
-      "checkedAt": "2026-08-11T06:48:39.709Z",
+      "checkedAt": "2026-08-11T06:49:55.395Z",
       "etag": "W/\"03085f0d53fd0a45160a20adc390c854ac1417167e67177b68c95a36e94d123c\"",
       "references": [
         {
@@ -7281,7 +7281,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:18.484Z",
-      "checkedAt": "2026-08-11T06:48:39.726Z",
+      "checkedAt": "2026-08-11T06:49:55.403Z",
       "references": [
         {
           "recordType": "product",
@@ -7316,7 +7316,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.501Z",
-      "checkedAt": "2026-08-11T06:48:39.736Z",
+      "checkedAt": "2026-08-11T06:49:55.413Z",
       "etag": "W/\"1e6694be5662ab95bd089db7c3abfa8cf452a7a251ef4c2fba1c956c70c80b52\"",
       "references": [
         {
@@ -7352,7 +7352,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.593Z",
-      "checkedAt": "2026-08-11T06:48:39.746Z",
+      "checkedAt": "2026-08-11T06:49:55.416Z",
       "etag": "W/\"e1be0df07d7e319392b2dce817991e3177c0573239e3be6b4516175b490450e2\"",
       "references": [
         {
@@ -7395,7 +7395,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.599Z",
-      "checkedAt": "2026-08-11T06:48:39.755Z",
+      "checkedAt": "2026-08-11T06:49:55.433Z",
       "etag": "W/\"50f71bf11efcaf40fbd592978320ec0c2edba51a1d324d2337358973cc0a0ae7\"",
       "references": [
         {
@@ -7431,7 +7431,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.658Z",
-      "checkedAt": "2026-08-11T06:48:39.763Z",
+      "checkedAt": "2026-08-11T06:49:55.444Z",
       "etag": "W/\"b6e7064b6556f1016fa6de59847605f2f7498f12601ea8f2c4df80d5be4cd840\"",
       "references": [
         {
@@ -7467,7 +7467,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:18.752Z",
-      "checkedAt": "2026-08-11T06:48:39.771Z",
+      "checkedAt": "2026-08-11T06:49:55.455Z",
       "etag": "W/\"9d0e964ea2a2a43b82ac6e735a731dfe246c69f57388f9572cc6e5af275cdbfa\"",
       "references": [
         {
@@ -7511,7 +7511,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:18.759Z",
-      "checkedAt": "2026-08-11T06:48:39.784Z",
+      "checkedAt": "2026-08-11T06:49:55.471Z",
       "etag": "W/\"d56120988c307c80a49fdd5beb1c1cc6e68a54a928d477eba1dda964d6c9730c\"",
       "references": [
         {
@@ -7553,7 +7553,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:18.763Z",
-      "checkedAt": "2026-08-11T06:48:39.793Z",
+      "checkedAt": "2026-08-11T06:49:55.483Z",
       "etag": "W/\"e90718499bb934de853b80c1efb812158d82c023a8f07fb90d235e0d7fb2392b\"",
       "references": [
         {
@@ -7593,7 +7593,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:18.914Z",
-      "checkedAt": "2026-08-11T06:48:39.797Z",
+      "checkedAt": "2026-08-11T06:49:55.486Z",
       "etag": "W/\"086284233f05f29b46423379faaf96c378c5c25bcb19bbc34df4ee799d8ded00\"",
       "references": [
         {
@@ -7634,7 +7634,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:18.927Z",
-      "checkedAt": "2026-08-11T06:48:39.813Z",
+      "checkedAt": "2026-08-11T06:49:55.497Z",
       "etag": "W/\"a412349619d251b0a3ab9f8ea49f751c153c90c18ed280a91e291fc579b8ef8b\"",
       "references": [
         {
@@ -7670,7 +7670,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:18.932Z",
-      "checkedAt": "2026-08-11T06:48:39.822Z",
+      "checkedAt": "2026-08-11T06:49:55.511Z",
       "etag": "W/\"57fe1d1fc81759f68e302df3a36db3722e09f65d86fbbac1857a41466117d1f3\"",
       "references": [
         {
@@ -7706,7 +7706,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:18.936Z",
-      "checkedAt": "2026-08-11T06:48:39.832Z",
+      "checkedAt": "2026-08-11T06:49:55.525Z",
       "etag": "W/\"5d05c1314618e01e681d1c4017aa32e4e1f32543ce2881de87d90c78898cc421\"",
       "references": [
         {
@@ -7749,7 +7749,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:19.104Z",
-      "checkedAt": "2026-08-11T06:48:39.832Z",
+      "checkedAt": "2026-08-11T06:49:55.536Z",
       "etag": "W/\"76593ade9c58002c1f2fcad190b3fed2713b9add260af07db01843e1385189a6\"",
       "references": [
         {
@@ -7794,7 +7794,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:19.111Z",
-      "checkedAt": "2026-08-11T06:48:39.846Z",
+      "checkedAt": "2026-08-11T06:49:55.555Z",
       "etag": "W/\"231571dcb5be63fc530e32fcb0b86eab1dda54326ca89af427f9f7ac858d10a0\"",
       "references": [
         {
@@ -7838,7 +7838,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:19.118Z",
-      "checkedAt": "2026-08-11T06:48:39.867Z",
+      "checkedAt": "2026-08-11T06:49:55.563Z",
       "etag": "W/\"dca238c523a616718e70787016249d65bd05172d91647e4a3c8e820b1bb696b3\"",
       "references": [
         {
@@ -7893,7 +7893,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.124Z",
-      "checkedAt": "2026-08-11T06:48:39.873Z",
+      "checkedAt": "2026-08-11T06:49:55.567Z",
       "etag": "W/\"0599873bfe289f3ea739fe112d13506a400b59354e381b1e07df1e74f4a121f9\"",
       "references": [
         {
@@ -7940,7 +7940,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:19.271Z",
-      "checkedAt": "2026-08-11T06:48:39.883Z",
+      "checkedAt": "2026-08-11T06:49:55.575Z",
       "etag": "W/\"67b421c50ed36863927fd1804c225bb5a2202b5fc0a4da7635ebf1a5c794e2f5\"",
       "references": [
         {
@@ -7976,7 +7976,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:19.283Z",
-      "checkedAt": "2026-08-11T06:48:39.894Z",
+      "checkedAt": "2026-08-11T06:49:55.598Z",
       "etag": "W/\"9fce55a0f4abc54c3d0ef21ee33105f6468102ff6a55ee181fd56ba3f8e52cab\"",
       "references": [
         {
@@ -8012,7 +8012,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:19.298Z",
-      "checkedAt": "2026-08-11T06:48:39.909Z",
+      "checkedAt": "2026-08-11T06:49:55.610Z",
       "etag": "W/\"a66692a18828aceca494af7ddc4466c1b0ab969d4bfdeb0cc5c6656f333d8b30\"",
       "references": [
         {
@@ -8053,7 +8053,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:19.339Z",
-      "checkedAt": "2026-08-11T06:48:39.917Z",
+      "checkedAt": "2026-08-11T06:49:55.617Z",
       "etag": "W/\"cf329e85803514b3cac1849748f88feeed0892e0442012488a904bfdf3cb6534\"",
       "references": [
         {
@@ -8092,7 +8092,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.464Z",
-      "checkedAt": "2026-08-11T06:48:39.938Z",
+      "checkedAt": "2026-08-11T06:49:55.628Z",
       "etag": "W/\"949735ae825e9d1d47a28cdd308d3e63dd0c0509636ebfadff10f92394a3d193\"",
       "references": [
         {
@@ -8144,7 +8144,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:19.480Z",
-      "checkedAt": "2026-08-11T06:48:39.939Z",
+      "checkedAt": "2026-08-11T06:49:55.639Z",
       "etag": "W/\"ed46965e5898db7bee8ff6a7e2df671c2b68a0d54d17dbee8537a170876953a2\"",
       "references": [
         {
@@ -8184,7 +8184,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.484Z",
-      "checkedAt": "2026-08-11T06:48:39.950Z",
+      "checkedAt": "2026-08-11T06:49:55.649Z",
       "etag": "W/\"06d70d6344ff1f74c31e406225b2ed4079e482eae187fbd021a44ed796d9cb38\"",
       "references": [
         {
@@ -8232,7 +8232,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.539Z",
-      "checkedAt": "2026-08-11T06:48:39.951Z",
+      "checkedAt": "2026-08-11T06:49:55.664Z",
       "etag": "W/\"84f33bcdc5be88b4e1d51def35b4f3ff04854a02442abc973598c49f5c8c9897\"",
       "references": [
         {
@@ -8275,7 +8275,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:19.648Z",
-      "checkedAt": "2026-08-11T06:48:39.976Z",
+      "checkedAt": "2026-08-11T06:49:55.680Z",
       "etag": "W/\"563b2dd7521d0c1bdeb5dce9d40603193db83e130b2dfc74efb4a2727a5cc4e8\"",
       "references": [
         {
@@ -8322,7 +8322,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.677Z",
-      "checkedAt": "2026-08-11T06:48:39.981Z",
+      "checkedAt": "2026-08-11T06:49:55.682Z",
       "etag": "W/\"f592ce1cf92e142c7677f54ebe3559234656fc1ab71186a6a8abbacf69099109\"",
       "references": [
         {
@@ -8362,7 +8362,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.706Z",
-      "checkedAt": "2026-08-11T06:48:39.995Z",
+      "checkedAt": "2026-08-11T06:49:55.711Z",
       "etag": "W/\"50663a16d89a21b10f2a8b5e6a16c8c8a977aeea32c8257da40c495937d9e669\"",
       "references": [
         {
@@ -8405,7 +8405,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:19.738Z",
-      "checkedAt": "2026-08-11T06:48:40.010Z",
+      "checkedAt": "2026-08-11T06:49:55.721Z",
       "etag": "W/\"7d2bab1b2b1d77e466e9a8be130a82d1f24316f2b67e0cb0ce0e5eabb224a0a2\"",
       "references": [
         {
@@ -8447,7 +8447,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:19.824Z",
-      "checkedAt": "2026-08-11T06:48:40.024Z",
+      "checkedAt": "2026-08-11T06:49:55.722Z",
       "etag": "W/\"591d4a9b5714916dc601abcc84d28b3957424c7ee1bbc58d18d3b82d6bdc8b88\"",
       "references": [
         {
@@ -8497,7 +8497,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:19.865Z",
-      "checkedAt": "2026-08-11T06:48:40.024Z",
+      "checkedAt": "2026-08-11T06:49:55.728Z",
       "etag": "W/\"54ea1d0d60cd39dc7de033169e18251a97f838c9fa0d8f8f1db30e0fae1b9cdf\"",
       "references": [
         {
@@ -8533,7 +8533,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:19.900Z",
-      "checkedAt": "2026-08-11T06:48:40.032Z",
+      "checkedAt": "2026-08-11T06:49:55.755Z",
       "etag": "W/\"6b41e2785beae19e0136714fa237eb952b88130024dad20cf5bbcd7ef1df73c9\"",
       "references": [
         {
@@ -8569,7 +8569,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:19.958Z",
-      "checkedAt": "2026-08-11T06:48:40.050Z",
+      "checkedAt": "2026-08-11T06:49:55.763Z",
       "etag": "W/\"a82c787c6e980f9f1441545091b0aadc654f38c96ffce86fa9a2eae449708596\"",
       "references": [
         {
@@ -8621,7 +8621,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.017Z",
-      "checkedAt": "2026-08-11T06:48:40.062Z",
+      "checkedAt": "2026-08-11T06:49:55.768Z",
       "etag": "W/\"9590596bad7bc133ef5af18320577a7129ff059c59635e317f9919f2e7c02ff7\"",
       "references": [
         {
@@ -8672,7 +8672,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:20.093Z",
-      "checkedAt": "2026-08-11T06:48:40.063Z",
+      "checkedAt": "2026-08-11T06:49:55.799Z",
       "etag": "W/\"d42a6e118d6c95ed9f8734d9937fd67434576247600f70379b0ef710a2276ae1\"",
       "references": [
         {
@@ -8708,7 +8708,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.135Z",
-      "checkedAt": "2026-08-11T06:48:40.068Z",
+      "checkedAt": "2026-08-11T06:49:55.803Z",
       "etag": "W/\"cef39b3d60e3e5ad8ff106efb06fd535ca05dea61f251e1eeb8fdcc0d8e271fd\"",
       "references": [
         {
@@ -8753,7 +8753,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:20.159Z",
-      "checkedAt": "2026-08-11T06:48:40.093Z",
+      "checkedAt": "2026-08-11T06:49:55.806Z",
       "etag": "W/\"97d84f8b46485a163fcd127b7e18d288d1ab955ed2b6951d7de6df2f3e3a1bb4\"",
       "references": [
         {
@@ -8803,7 +8803,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.189Z",
-      "checkedAt": "2026-08-11T06:48:40.099Z",
+      "checkedAt": "2026-08-11T06:49:55.832Z",
       "etag": "W/\"e0fa6ecb8e7db660af51bc853d231a91381d5e5b7807868ec2e3a5041e713e62\"",
       "references": [
         {
@@ -8846,7 +8846,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.252Z",
-      "checkedAt": "2026-08-11T06:48:40.104Z",
+      "checkedAt": "2026-08-11T06:49:55.845Z",
       "etag": "W/\"c2be0bd0034788c4822578779a7e7ea44472657514ee673ab3adba6c79b64042\"",
       "references": [
         {
@@ -8892,7 +8892,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.287Z",
-      "checkedAt": "2026-08-11T06:48:40.110Z",
+      "checkedAt": "2026-08-11T06:49:55.845Z",
       "etag": "W/\"c3c499e5a72b0edad94f127942d6aeb9538008c602d6b2b570b6c403797245b8\"",
       "references": [
         {
@@ -8928,7 +8928,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.336Z",
-      "checkedAt": "2026-08-11T06:48:40.134Z",
+      "checkedAt": "2026-08-11T06:49:55.846Z",
       "etag": "W/\"e32f5c7e5b5e76ea5acb87cdfb3c3d720df7b17e3c3705d159d148fe19395bfd\"",
       "references": [
         {
@@ -8980,7 +8980,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.356Z",
-      "checkedAt": "2026-08-11T06:48:40.135Z",
+      "checkedAt": "2026-08-11T06:49:55.875Z",
       "etag": "W/\"29bff14f3fccd9bed7d5c336c9913f3ce056bf370e170d4be154e6148dd575a1\"",
       "references": [
         {
@@ -9023,7 +9023,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.427Z",
-      "checkedAt": "2026-08-11T06:48:40.145Z",
+      "checkedAt": "2026-08-11T06:49:55.885Z",
       "etag": "W/\"be1814f87e1ef35e2db917d3de6e7ceb6fd8ebf1ba907309e9701d5b0475cab0\"",
       "references": [
         {
@@ -9066,7 +9066,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:20.482Z",
-      "checkedAt": "2026-08-11T06:48:40.148Z",
+      "checkedAt": "2026-08-11T06:49:55.885Z",
       "etag": "W/\"eaebfe89317396ce134c6199598643b15b015922e15f303135ee9494426cc767\"",
       "references": [
         {
@@ -9102,7 +9102,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.493Z",
-      "checkedAt": "2026-08-11T06:48:40.173Z",
+      "checkedAt": "2026-08-11T06:49:55.887Z",
       "etag": "W/\"5bfd1a29ab511244c3b1a59b4089fd53b19b9d307d164d4e7e184ce831d9c81e\"",
       "references": [
         {
@@ -9138,7 +9138,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.528Z",
-      "checkedAt": "2026-08-11T06:48:40.174Z",
+      "checkedAt": "2026-08-11T06:49:55.925Z",
       "etag": "W/\"8176496f3d80e8b7509ce5a59dec07cbc04acc07b7a51902515b393efa241c63\"",
       "references": [
         {
@@ -9174,7 +9174,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.599Z",
-      "checkedAt": "2026-08-11T06:48:40.195Z",
+      "checkedAt": "2026-08-11T06:49:55.929Z",
       "etag": "W/\"ac8900d77eb7841caa83e0462579c06a410dd774251d55575f2d2653be7b9514\"",
       "references": [
         {
@@ -9215,7 +9215,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.667Z",
-      "checkedAt": "2026-08-11T06:48:40.212Z",
+      "checkedAt": "2026-08-11T06:49:55.942Z",
       "etag": "W/\"7d40b549152d262fa1df89c451c97b86e5e544b4ba32455b6a4e7fe7706ce08f\"",
       "references": [
         {
@@ -9251,7 +9251,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.703Z",
-      "checkedAt": "2026-08-11T06:48:40.213Z",
+      "checkedAt": "2026-08-11T06:49:55.963Z",
       "etag": "W/\"a559379db6e3c5608dac35bf4b78c07badd50f7480e671ee5f74d2e81f431632\"",
       "references": [
         {
@@ -9301,7 +9301,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:20.747Z",
-      "checkedAt": "2026-08-11T06:48:40.214Z",
+      "checkedAt": "2026-08-11T06:49:55.971Z",
       "etag": "W/\"6a5a6ee4c56c5953c9c82032ee00605a0f9cb77b1d7f6c5da79249319118b0ba\"",
       "references": [
         {
@@ -9337,7 +9337,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:20.837Z",
-      "checkedAt": "2026-08-11T06:48:40.241Z",
+      "checkedAt": "2026-08-11T06:49:55.985Z",
       "etag": "W/\"0dc9fddf310998d9fd48b2d81275968867fab98b5516b68f597baf1bfd3c023c\"",
       "references": [
         {
@@ -9381,7 +9381,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:20.847Z",
-      "checkedAt": "2026-08-11T06:48:40.249Z",
+      "checkedAt": "2026-08-11T06:49:55.995Z",
       "etag": "W/\"75e63792d7fe4dc87b15bd9b6e8a6628bd845923eb359af3200a60f539ed6005\"",
       "references": [
         {
@@ -9426,7 +9426,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:20.862Z",
-      "checkedAt": "2026-08-11T06:48:40.249Z",
+      "checkedAt": "2026-08-11T06:49:56.011Z",
       "etag": "W/\"0181e7b2e4aef7ebd99670ce22907208a141e36ab2bd44357b2e53458ce8ef88\"",
       "references": [
         {
@@ -9466,7 +9466,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.938Z",
-      "checkedAt": "2026-08-11T06:48:40.251Z",
+      "checkedAt": "2026-08-11T06:49:56.015Z",
       "etag": "W/\"967cfed1640b78f6cdb53eddb7b537a960d456c3821676803893efdfbeec08e5\"",
       "references": [
         {
@@ -9514,7 +9514,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:20.989Z",
-      "checkedAt": "2026-08-11T06:48:40.285Z",
+      "checkedAt": "2026-08-11T06:49:56.025Z",
       "etag": "W/\"c052619f5ee34d6e35cd3057e0fd74509dc18ed14885eccf79069623841d4701\"",
       "references": [
         {
@@ -9562,7 +9562,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.008Z",
-      "checkedAt": "2026-08-11T06:48:40.288Z",
+      "checkedAt": "2026-08-11T06:49:56.058Z",
       "etag": "W/\"0528a7f9900c20cb9e434744a31ee9d5b30058e1294b51275ffff329fb2c41fb\"",
       "references": [
         {
@@ -9612,7 +9612,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.069Z",
-      "checkedAt": "2026-08-11T06:48:40.291Z",
+      "checkedAt": "2026-08-11T06:49:56.062Z",
       "etag": "W/\"e5a4d02143bc63fc44dd6469b85009d53f7b8e1487d72761d785065ad153df34\"",
       "references": [
         {
@@ -9659,7 +9659,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.106Z",
-      "checkedAt": "2026-08-11T06:48:40.292Z",
+      "checkedAt": "2026-08-11T06:49:56.069Z",
       "etag": "W/\"a492833195544f2c110e7fbcb22815350b198124f416777f2c5715d9f7c3a82f\"",
       "references": [
         {
@@ -9701,7 +9701,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.177Z",
-      "checkedAt": "2026-08-11T06:48:40.323Z",
+      "checkedAt": "2026-08-11T06:49:56.080Z",
       "etag": "W/\"8ac2fcea333f846e050d23ae9beaefa41b8197bdb00aec6eb0374d8804a475d5\"",
       "references": [
         {
@@ -9747,7 +9747,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.203Z",
-      "checkedAt": "2026-08-11T06:48:40.325Z",
+      "checkedAt": "2026-08-11T06:49:56.105Z",
       "etag": "W/\"ebf2a22d80d37ae03e7ed49ae7f67e6645b9b2b7328c75d9fd893e0872a970ae\"",
       "references": [
         {
@@ -9783,7 +9783,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:21.228Z",
-      "checkedAt": "2026-08-11T06:48:40.327Z",
+      "checkedAt": "2026-08-11T06:49:56.105Z",
       "etag": "W/\"b4766d36990dededf8a1b6b967c2706b8baec1579f794a63e943b54521d96962\"",
       "references": [
         {
@@ -9819,7 +9819,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.280Z",
-      "checkedAt": "2026-08-11T06:48:40.331Z",
+      "checkedAt": "2026-08-11T06:49:56.107Z",
       "etag": "W/\"f59cdbd6c9b73f9148918a7408ecdd77fb661ff9e1f5645bba521961bf63b53e\"",
       "references": [
         {
@@ -9862,7 +9862,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:21.334Z",
-      "checkedAt": "2026-08-11T06:48:40.358Z",
+      "checkedAt": "2026-08-11T06:49:56.125Z",
       "etag": "W/\"97e824f86a66b58c0b974e47511a5bc16cdf8b3d2ab4725448fb411c5317b26a\"",
       "references": [
         {
@@ -9898,7 +9898,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:21.367Z",
-      "checkedAt": "2026-08-11T06:48:40.363Z",
+      "checkedAt": "2026-08-11T06:49:56.146Z",
       "etag": "W/\"8aaee110dbb39427dc279a48f848ba1acbb44f9ff5bea8e7b2e7656d6d9a64d9\"",
       "references": [
         {
@@ -9940,7 +9940,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:21.421Z",
-      "checkedAt": "2026-08-11T06:48:40.370Z",
+      "checkedAt": "2026-08-11T06:49:56.146Z",
       "etag": "W/\"33d0bc02e39866427258fdd45da517f5af91cc5e603e6a8b17c16966fa0bbc8f\"",
       "references": [
         {
@@ -9976,7 +9976,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.485Z",
-      "checkedAt": "2026-08-11T06:48:40.375Z",
+      "checkedAt": "2026-08-11T06:49:56.148Z",
       "etag": "W/\"3e96650ab222e209a19a0169738e854f45a15a4402804cb35882ec35c08cd5bb\"",
       "references": [
         {
@@ -10016,7 +10016,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.489Z",
-      "checkedAt": "2026-08-11T06:48:40.398Z",
+      "checkedAt": "2026-08-11T06:49:56.176Z",
       "etag": "W/\"bc0ca149f35448fcde484bcc225d699663bb1b0dcd4532ff6cfef138ed9f37c9\"",
       "references": [
         {
@@ -10052,7 +10052,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.518Z",
-      "checkedAt": "2026-08-11T06:48:40.400Z",
+      "checkedAt": "2026-08-11T06:49:56.182Z",
       "etag": "W/\"c08c9fedb549f133d0310dfbf40fce13ad24b6b208d3c47b5aedad15c4c29453\"",
       "references": [
         {
@@ -10098,7 +10098,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:21.650Z",
-      "checkedAt": "2026-08-11T06:48:40.412Z",
+      "checkedAt": "2026-08-11T06:49:56.189Z",
       "etag": "W/\"f992dfa966b8ca0cb26329152f26327a507381bfb394c0d243757b09dc3ca27f\"",
       "references": [
         {
@@ -10134,7 +10134,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:21.654Z",
-      "checkedAt": "2026-08-11T06:48:40.414Z",
+      "checkedAt": "2026-08-11T06:49:56.190Z",
       "etag": "W/\"03328f04fb0065ed8c1923fbe67aa2a4939eff2991dff415311d082901de1509\"",
       "references": [
         {
@@ -10178,7 +10178,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.685Z",
-      "checkedAt": "2026-08-11T06:48:40.436Z",
+      "checkedAt": "2026-08-11T06:49:56.217Z",
       "etag": "W/\"3d37e6922d8c14d9558c874d0201cfe6a207aa58d83fc2e4d68fef65c22064b8\"",
       "references": [
         {
@@ -10217,7 +10217,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.690Z",
-      "checkedAt": "2026-08-11T06:48:40.437Z",
+      "checkedAt": "2026-08-11T06:49:56.225Z",
       "etag": "W/\"63113bf33b3580ddc0eac48b62b2fd43345f9a1e3f824d55e3df22ae363b1bf8\"",
       "references": [
         {
@@ -10268,7 +10268,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.846Z",
-      "checkedAt": "2026-08-11T06:48:40.449Z",
+      "checkedAt": "2026-08-11T06:49:56.231Z",
       "etag": "W/\"2c9116c91bfde95380b66776c894af11ebb52f8348cd3b3b26ebdeb3f4cea10f\"",
       "references": [
         {
@@ -10304,7 +10304,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.858Z",
-      "checkedAt": "2026-08-11T06:48:40.455Z",
+      "checkedAt": "2026-08-11T06:49:56.231Z",
       "etag": "W/\"ac4f03ccbc290101dd59375415760c0fda1b08b88ce86abf4f5143c2b28a91fd\"",
       "references": [
         {
@@ -10346,7 +10346,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.875Z",
-      "checkedAt": "2026-08-11T06:48:40.471Z",
+      "checkedAt": "2026-08-11T06:49:56.255Z",
       "etag": "W/\"564f18bac468953becb1f13b498651febe971ee834bd54591e06e6e3ac017327\"",
       "references": [
         {
@@ -10390,7 +10390,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:21.971Z",
-      "checkedAt": "2026-08-11T06:48:40.477Z",
+      "checkedAt": "2026-08-11T06:49:56.266Z",
       "etag": "W/\"c061456f790487d88d866012a336e21014ee4fc60d5b142d629039d5dd642ace\"",
       "references": [
         {
@@ -10436,7 +10436,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.029Z",
-      "checkedAt": "2026-08-11T06:48:40.486Z",
+      "checkedAt": "2026-08-11T06:49:56.271Z",
       "etag": "W/\"5189f299b9234c40f449bd4582ad6af1e778e33f637255cf039069bd4909a11f\"",
       "references": [
         {
@@ -10478,7 +10478,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:22.046Z",
-      "checkedAt": "2026-08-11T06:48:40.497Z",
+      "checkedAt": "2026-08-11T06:49:56.281Z",
       "etag": "W/\"45d255e83c0385db8cde792662aeed7cbb5bf13af3f57c50a9c021e5fca762f6\"",
       "references": [
         {
@@ -10524,7 +10524,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.061Z",
-      "checkedAt": "2026-08-11T06:48:40.508Z",
+      "checkedAt": "2026-08-11T06:49:56.298Z",
       "etag": "W/\"339adfe472bfaa77a1b40ec39c00b54f22a3f708c3dfda83961a0dc9ec561a95\"",
       "references": [
         {
@@ -10560,7 +10560,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:22.151Z",
-      "checkedAt": "2026-08-11T06:48:40.517Z",
+      "checkedAt": "2026-08-11T06:49:56.310Z",
       "etag": "W/\"ec453e27b7f0d568b5c2dcd134b867c418686e8478500bb01b96ffd04cf64739\"",
       "references": [
         {
@@ -10608,7 +10608,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:22.206Z",
-      "checkedAt": "2026-08-11T06:48:40.534Z",
+      "checkedAt": "2026-08-11T06:49:56.312Z",
       "etag": "W/\"33178ff68c5d1b0a005180c193ead479806f3d06e77d36141b979ecc14001297\"",
       "references": [
         {
@@ -10648,7 +10648,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:22.223Z",
-      "checkedAt": "2026-08-11T06:48:40.546Z",
+      "checkedAt": "2026-08-11T06:49:56.321Z",
       "etag": "W/\"1c6e0d724fe939ee85df7f0cd1a77f2c0e4b5216fcc5bbaac1863e085f8b1318\"",
       "references": [
         {
@@ -10700,7 +10700,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.234Z",
-      "checkedAt": "2026-08-11T06:48:40.552Z",
+      "checkedAt": "2026-08-11T06:49:56.340Z",
       "etag": "W/\"7a912128b4b0906bd3e79f50589a7eca94489b47bca0d849fdfd1173f4e1514e\"",
       "references": [
         {
@@ -10755,7 +10755,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.332Z",
-      "checkedAt": "2026-08-11T06:48:40.557Z",
+      "checkedAt": "2026-08-11T06:49:56.354Z",
       "etag": "W/\"a75c0dd1714e563805173e4567107116839222e3329e6c2f09ce59423286b8c1\"",
       "references": [
         {
@@ -10797,7 +10797,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:22.365Z",
-      "checkedAt": "2026-08-11T06:48:40.572Z",
+      "checkedAt": "2026-08-11T06:49:56.360Z",
       "etag": "W/\"383d99fd918bbdba2f284b275be7f7b9b3e6ffa01bf540a7aa9626e351e05c4f\"",
       "references": [
         {
@@ -10845,7 +10845,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.383Z",
-      "checkedAt": "2026-08-11T06:48:40.583Z",
+      "checkedAt": "2026-08-11T06:49:56.380Z",
       "etag": "W/\"82c118a006790af3a59e128c05fe255f84c0239b94b75e6bf8f3cd521666aa34\"",
       "references": [
         {
@@ -10865,7 +10865,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:22.400Z",
-      "checkedAt": "2026-08-11T06:48:40.594Z",
+      "checkedAt": "2026-08-11T06:49:56.399Z",
       "references": [
         {
           "recordType": "product",
@@ -10884,7 +10884,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:22.497Z",
-      "checkedAt": "2026-08-11T06:48:40.595Z",
+      "checkedAt": "2026-08-11T06:49:56.405Z",
       "references": [
         {
           "recordType": "product",
@@ -10903,7 +10903,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:22.568Z",
-      "checkedAt": "2026-08-11T06:48:40.612Z",
+      "checkedAt": "2026-08-11T06:49:56.407Z",
       "references": [
         {
           "recordType": "product",
@@ -10946,7 +10946,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.588Z",
-      "checkedAt": "2026-08-11T06:48:40.620Z",
+      "checkedAt": "2026-08-11T06:49:56.420Z",
       "etag": "W/\"25f0d8e1c87664c3f433bff0f1cf06fba27492001a3760b246f76063a00d40be\"",
       "references": [
         {
@@ -10991,7 +10991,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.653Z",
-      "checkedAt": "2026-08-11T06:48:40.631Z",
+      "checkedAt": "2026-08-11T06:49:56.438Z",
       "etag": "W/\"ed4ac823d985cd295a39579057497295ed8d23f67e1e91d8ed0c5411555c4540\"",
       "references": [
         {
@@ -11048,7 +11048,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.671Z",
-      "checkedAt": "2026-08-11T06:48:40.633Z",
+      "checkedAt": "2026-08-11T06:49:56.454Z",
       "etag": "W/\"5c002cb99a76e3ce5b8cd54e17e0fd152d8002e3ad02d4c40186cea40c133b05\"",
       "references": [
         {
@@ -11095,7 +11095,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.702Z",
-      "checkedAt": "2026-08-11T06:48:40.656Z",
+      "checkedAt": "2026-08-11T06:49:56.460Z",
       "etag": "W/\"2e6b09bb3f65a72a79e6b1594d1b4d490b54ca591b39eb85528e25d221b406fd\"",
       "references": [
         {
@@ -11131,7 +11131,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:22.771Z",
-      "checkedAt": "2026-08-11T06:48:40.670Z",
+      "checkedAt": "2026-08-11T06:49:56.474Z",
       "etag": "W/\"a1fd14d5a968ef8c499d1fedfedcb9a8d9e610ff726d9b68a7f8719ab4ba4aa7\"",
       "references": [
         {
@@ -11173,7 +11173,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:22.836Z",
-      "checkedAt": "2026-08-11T06:48:40.671Z",
+      "checkedAt": "2026-08-11T06:49:56.481Z",
       "etag": "W/\"58af6f894c91cb31dca1a74494b0dd7ef7d0ce0cb825d5fbb030cab670511e54\"",
       "references": [
         {
@@ -11221,7 +11221,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.844Z",
-      "checkedAt": "2026-08-11T06:48:40.690Z",
+      "checkedAt": "2026-08-11T06:49:56.495Z",
       "etag": "W/\"e8f48ef323dc8483555baf484399e9cee6cedbea29af0ea76f5e81aff0e863f7\"",
       "references": [
         {
@@ -11278,7 +11278,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.878Z",
-      "checkedAt": "2026-08-11T06:48:40.692Z",
+      "checkedAt": "2026-08-11T06:49:56.504Z",
       "etag": "W/\"955720b5ffca2bebbcc709ccd0f76c96acf558f1bb70232c633f3d88b64bda91\"",
       "references": [
         {
@@ -11333,7 +11333,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:22.934Z",
-      "checkedAt": "2026-08-11T06:48:40.709Z",
+      "checkedAt": "2026-08-11T06:49:56.518Z",
       "etag": "W/\"9b2578a52f150625b90e81e8b4f7b2eca668da382d9c34ed62ae538aa75d199a\"",
       "references": [
         {
@@ -11390,7 +11390,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.001Z",
-      "checkedAt": "2026-08-11T06:48:40.710Z",
+      "checkedAt": "2026-08-11T06:49:56.521Z",
       "etag": "W/\"65935c15b354fbc644bc6c90b1f3ac177c76f4436b1d5f4052a5c45906a0a056\"",
       "references": [
         {
@@ -11426,7 +11426,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.024Z",
-      "checkedAt": "2026-08-11T06:48:40.732Z",
+      "checkedAt": "2026-08-11T06:49:56.543Z",
       "etag": "W/\"42b75a4b516a997f3434cc671218f9081f95e7505ecd202e7fa5a724f58a5e7c\"",
       "references": [
         {
@@ -11466,7 +11466,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.065Z",
-      "checkedAt": "2026-08-11T06:48:40.734Z",
+      "checkedAt": "2026-08-11T06:49:56.562Z",
       "etag": "W/\"7f69f0ffd252588a22357df7eb391c19bb2b23209b6d04dee0d9fbdb5a1ccf29\"",
       "references": [
         {
@@ -11507,7 +11507,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.099Z",
-      "checkedAt": "2026-08-11T06:48:40.748Z",
+      "checkedAt": "2026-08-11T06:49:56.562Z",
       "etag": "W/\"b317206dc7dda786b8c66863d1fbd3d35ff33ac4820198a14f0cba84ceec87a5\"",
       "references": [
         {
@@ -11554,7 +11554,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:23.178Z",
-      "checkedAt": "2026-08-11T06:48:40.752Z",
+      "checkedAt": "2026-08-11T06:49:56.564Z",
       "etag": "W/\"5cada85e1714ae0afb6c1f1f1e444b59e179d195cd04534d43c1f39316722fe2\"",
       "references": [
         {
@@ -11600,7 +11600,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.228Z",
-      "checkedAt": "2026-08-11T06:48:40.769Z",
+      "checkedAt": "2026-08-11T06:49:56.585Z",
       "etag": "W/\"b59fcfa0b371b12be4c99b026a043ae6d842eb297520ff4a54c0a8702e92b62e\"",
       "references": [
         {
@@ -11646,7 +11646,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.259Z",
-      "checkedAt": "2026-08-11T06:48:40.771Z",
+      "checkedAt": "2026-08-11T06:49:56.604Z",
       "etag": "W/\"b59fcfa0b371b12be4c99b026a043ae6d842eb297520ff4a54c0a8702e92b62e\"",
       "references": [
         {
@@ -11688,7 +11688,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:23.288Z",
-      "checkedAt": "2026-08-11T06:48:40.793Z",
+      "checkedAt": "2026-08-11T06:49:56.608Z",
       "etag": "W/\"b19c79fc898438f08a3a8366779ea9dae703a87ce78c37aafeeb85f08b223a8b\"",
       "references": [
         {
@@ -11731,7 +11731,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:23.352Z",
-      "checkedAt": "2026-08-11T06:48:40.796Z",
+      "checkedAt": "2026-08-11T06:49:56.608Z",
       "etag": "W/\"564088ef866356e1ad87f4b5e5c092364d4b35fbb956a2fa9e1cad5c3a07b9c3\"",
       "references": [
         {
@@ -11767,7 +11767,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:23.426Z",
-      "checkedAt": "2026-08-11T06:48:40.805Z",
+      "checkedAt": "2026-08-11T06:49:56.624Z",
       "etag": "W/\"78180cdf1aaf95a7771963b1f991fb1bf55f6d228e3eeb88193e8581efe737d9\"",
       "references": [
         {
@@ -11803,7 +11803,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.532Z",
-      "checkedAt": "2026-08-11T06:48:40.812Z",
+      "checkedAt": "2026-08-11T06:49:56.645Z",
       "etag": "W/\"d3cd0e3684605ff456446cb8d3a2b82e2eddad1fdbc3640a4731a51775f93268\"",
       "references": [
         {
@@ -11857,7 +11857,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:23.559Z",
-      "checkedAt": "2026-08-11T06:48:40.831Z",
+      "checkedAt": "2026-08-11T06:49:56.662Z",
       "etag": "W/\"4f74099710e85a68cb211b4d8ce127ca175c80bc3a19b6847b5fcea2dd96de4b\"",
       "references": [
         {
@@ -11901,7 +11901,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:23.660Z",
-      "checkedAt": "2026-08-11T06:48:40.839Z",
+      "checkedAt": "2026-08-11T06:49:56.674Z",
       "etag": "W/\"0a73ac8e98f91bd80f9cc5a83e7265e273349b4cc998060f92461d277e83a172\"",
       "references": [
         {
@@ -11944,7 +11944,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:23.668Z",
-      "checkedAt": "2026-08-11T06:48:40.841Z",
+      "checkedAt": "2026-08-11T06:49:56.680Z",
       "etag": "W/\"eae97fed2a9323f517f61367b93d55d0a73e8532488e1c12f64479e7d67701a8\"",
       "references": [
         {
@@ -11997,7 +11997,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:23.726Z",
-      "checkedAt": "2026-08-11T06:48:40.846Z",
+      "checkedAt": "2026-08-11T06:49:56.687Z",
       "etag": "W/\"a004de97f232d01799327fc366fc48b1313560840e1e1faa74f041cfcc16ff30\"",
       "references": [
         {
@@ -12017,7 +12017,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:23.771Z",
-      "checkedAt": "2026-08-11T06:48:40.867Z",
+      "checkedAt": "2026-08-11T06:49:56.701Z",
       "references": [
         {
           "recordType": "product",
@@ -12060,7 +12060,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.842Z",
-      "checkedAt": "2026-08-11T06:48:40.877Z",
+      "checkedAt": "2026-08-11T06:49:56.713Z",
       "etag": "W/\"74b3298a30c573d589b528b2321cdc2088c6b45f662e9c8ce4eec34317a67656\"",
       "references": [
         {
@@ -12113,7 +12113,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.846Z",
-      "checkedAt": "2026-08-11T06:48:40.887Z",
+      "checkedAt": "2026-08-11T06:49:56.720Z",
       "etag": "W/\"0e2f54881c10bb7aa6001ed44d588e262c8749c0401326f8abca7c228e0594d7\"",
       "references": [
         {
@@ -12162,7 +12162,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.881Z",
-      "checkedAt": "2026-08-11T06:48:40.904Z",
+      "checkedAt": "2026-08-11T06:49:56.742Z",
       "etag": "W/\"88c9fe39b6ebe5921eab11e60b8e1df02cda142fa9c3f07f9db84bc318962efe\"",
       "references": [
         {
@@ -12208,7 +12208,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:23.908Z",
-      "checkedAt": "2026-08-11T06:48:40.907Z",
+      "checkedAt": "2026-08-11T06:49:56.755Z",
       "etag": "W/\"c969a418e225a126c65fae9fac4702a5164402225da620d0231b7bd9193e27b2\"",
       "references": [
         {
@@ -12244,7 +12244,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.007Z",
-      "checkedAt": "2026-08-11T06:48:40.914Z",
+      "checkedAt": "2026-08-11T06:49:56.760Z",
       "etag": "W/\"e07e1aeef22aa76cc4caa4fada90e27c9cd504d814dfefc1c9436a31fa563709\"",
       "references": [
         {
@@ -12285,7 +12285,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.023Z",
-      "checkedAt": "2026-08-11T06:48:40.925Z",
+      "checkedAt": "2026-08-11T06:49:56.765Z",
       "etag": "W/\"ad1e8ae9a5e6872456c8e07ed908fdce84b6362d7a3a760399ae7b4633600c6d\"",
       "references": [
         {
@@ -12326,7 +12326,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:24.060Z",
-      "checkedAt": "2026-08-11T06:48:40.944Z",
+      "checkedAt": "2026-08-11T06:49:56.781Z",
       "etag": "W/\"a0b4cc1fc00030b2a5836ff523814ef74c7c145f9a56a6aa7d83fddf36eae227\"",
       "references": [
         {
@@ -12346,7 +12346,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:24.087Z",
-      "checkedAt": "2026-08-11T06:48:40.951Z",
+      "checkedAt": "2026-08-11T06:49:56.797Z",
       "references": [
         {
           "recordType": "tool",
@@ -12402,7 +12402,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.210Z",
-      "checkedAt": "2026-08-11T06:48:40.953Z",
+      "checkedAt": "2026-08-11T06:49:56.807Z",
       "etag": "W/\"196f4485037bbc56e935a056e2f47b3d4edbf76a8d0f9f54f85846840f2dbf5a\"",
       "references": [
         {
@@ -12443,7 +12443,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.218Z",
-      "checkedAt": "2026-08-11T06:48:40.963Z",
+      "checkedAt": "2026-08-11T06:49:56.807Z",
       "etag": "W/\"fb2bf284669ca24796db6059234b7054445cd6914774cd0f1550199944a610e0\"",
       "references": [
         {
@@ -12485,7 +12485,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.258Z",
-      "checkedAt": "2026-08-11T06:48:40.982Z",
+      "checkedAt": "2026-08-11T06:49:56.818Z",
       "etag": "W/\"347d1ea90d63f00999f4db22ec4cd13d9d6cd4380c59c37b4d4a2ee150375ee1\"",
       "references": [
         {
@@ -12528,7 +12528,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.288Z",
-      "checkedAt": "2026-08-11T06:48:40.988Z",
+      "checkedAt": "2026-08-11T06:49:56.839Z",
       "etag": "W/\"499db01ffcdc4bdef6b376338d2bdd476775d8922d3a2b6d06539c8387f1788d\"",
       "references": [
         {
@@ -12570,7 +12570,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.373Z",
-      "checkedAt": "2026-08-11T06:48:40.992Z",
+      "checkedAt": "2026-08-11T06:49:56.848Z",
       "etag": "W/\"15e2d51801bbcc060d05f26bde8fd96437c7ae62aeee1840e77a24fd0308bb57\"",
       "references": [
         {
@@ -12606,7 +12606,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.399Z",
-      "checkedAt": "2026-08-11T06:48:41.005Z",
+      "checkedAt": "2026-08-11T06:49:56.849Z",
       "etag": "W/\"07762238d3459d8c3285f9cd407053006a86936796faa68b5244f7d0305b7743\"",
       "references": [
         {
@@ -12644,7 +12644,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:24.421Z",
-      "checkedAt": "2026-08-11T06:48:41.017Z",
+      "checkedAt": "2026-08-11T06:49:56.856Z",
       "etag": "W/\"f747d39860de28d0320ef15523c529f8762c90f523c7d780e8a4c279b7bb34d4\"",
       "references": [
         {
@@ -12700,7 +12700,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:24.473Z",
-      "checkedAt": "2026-08-11T06:48:41.026Z",
+      "checkedAt": "2026-08-11T06:49:56.879Z",
       "etag": "W/\"9b7c5652fa47c6e2096132190e00f578342b20cb0da35df9acfdd9fabb9e2ea3\"",
       "references": [
         {
@@ -12756,7 +12756,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.565Z",
-      "checkedAt": "2026-08-11T06:48:41.028Z",
+      "checkedAt": "2026-08-11T06:49:56.887Z",
       "etag": "W/\"a2f25260134804dbdcea3d9aae2b7ff47d4e7fb9cd52d950d65cb62c677fa2b6\"",
       "references": [
         {
@@ -12809,7 +12809,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.608Z",
-      "checkedAt": "2026-08-11T06:48:41.043Z",
+      "checkedAt": "2026-08-11T06:49:56.899Z",
       "etag": "W/\"1ad8bfc4281b7b1dfc81d2d89756f7c16e6e05f473558273a6b5e4b8159cf646\"",
       "references": [
         {
@@ -12858,7 +12858,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.648Z",
-      "checkedAt": "2026-08-11T06:48:41.054Z",
+      "checkedAt": "2026-08-11T06:49:56.920Z",
       "etag": "W/\"78a6570221e2718513103b963b91accbc501e2c5561d7b76d0998ed432b9293a\"",
       "references": [
         {
@@ -12910,7 +12910,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.740Z",
-      "checkedAt": "2026-08-11T06:48:41.064Z",
+      "checkedAt": "2026-08-11T06:49:56.923Z",
       "etag": "W/\"92b2e72d979a343c2b8e59f94080690cbf2b5b721fb141b890589ef86a52f63f\"",
       "references": [
         {
@@ -12963,7 +12963,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.760Z",
-      "checkedAt": "2026-08-11T06:48:41.066Z",
+      "checkedAt": "2026-08-11T06:49:56.928Z",
       "etag": "W/\"6c8e50f4ff6f9f8efa1f260ec7ca430237109c98444fdd07ba5ce43ea17ccd75\"",
       "references": [
         {
@@ -13015,7 +13015,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.776Z",
-      "checkedAt": "2026-08-11T06:48:41.077Z",
+      "checkedAt": "2026-08-11T06:49:56.968Z",
       "etag": "W/\"f2707418b766621cf6b41b877457d3ec9bfe498f940d5d974428bf28bd07e424\"",
       "references": [
         {
@@ -13072,7 +13072,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.819Z",
-      "checkedAt": "2026-08-11T06:48:41.095Z",
+      "checkedAt": "2026-08-11T06:49:56.970Z",
       "etag": "W/\"34aa6cf16044d779d9ac28f7c19b92fc22fe00c79205d56dde50a060eae60385\"",
       "references": [
         {
@@ -13118,7 +13118,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.905Z",
-      "checkedAt": "2026-08-11T06:48:41.105Z",
+      "checkedAt": "2026-08-11T06:49:56.971Z",
       "etag": "W/\"c3c7a6c14bd0e6ffc563746ff8b2df5394e6617c479b4a57247cb3f44fa278ae\"",
       "references": [
         {
@@ -13154,7 +13154,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:24.944Z",
-      "checkedAt": "2026-08-11T06:48:41.106Z",
+      "checkedAt": "2026-08-11T06:49:56.988Z",
       "etag": "W/\"80046d222b4574866000c85528616faa85b1a6a821cac63465c6b18a2d47a36a\"",
       "references": [
         {
@@ -13199,7 +13199,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:24.953Z",
-      "checkedAt": "2026-08-11T06:48:41.117Z",
+      "checkedAt": "2026-08-11T06:49:57.007Z",
       "etag": "W/\"4445864ae2ac4f90faead1b0ee78c1fef24fcea2517c05dc7d20ed92b8e1a661\"",
       "references": [
         {
@@ -13243,7 +13243,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.115Z",
-      "checkedAt": "2026-08-11T06:48:41.130Z",
+      "checkedAt": "2026-08-11T06:49:57.011Z",
       "etag": "W/\"b38d7d228f57ee8e6d6d74185916b11f38eb91bc28f2c05fd0b6b696079be06b\"",
       "references": [
         {
@@ -13288,7 +13288,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.124Z",
-      "checkedAt": "2026-08-11T06:48:41.142Z",
+      "checkedAt": "2026-08-11T06:49:57.027Z",
       "etag": "W/\"2800b126c333467c0a1450654bcc8408b6a99ad1366f0c7a1445f8e78a1e91cc\"",
       "references": [
         {
@@ -13328,7 +13328,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.129Z",
-      "checkedAt": "2026-08-11T06:48:41.144Z",
+      "checkedAt": "2026-08-11T06:49:57.056Z",
       "etag": "W/\"7ce9f45e7986fe780eeef004dfc70a4cf2f2b338b0e5bd13239749c93a734c46\"",
       "references": [
         {
@@ -13373,7 +13373,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.151Z",
-      "checkedAt": "2026-08-11T06:48:41.158Z",
+      "checkedAt": "2026-08-11T06:49:57.058Z",
       "etag": "W/\"01d1feebe8415c4f8f9a782d62d014f54721b665050ac026001bb4e87f684ceb\"",
       "references": [
         {
@@ -13417,7 +13417,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:25.291Z",
-      "checkedAt": "2026-08-11T06:48:41.168Z",
+      "checkedAt": "2026-08-11T06:49:57.060Z",
       "etag": "W/\"daa2ca9ee799511ebacda2e38f8254dd3e097bfebff3c1243d74e5a56ca34ef9\"",
       "references": [
         {
@@ -13463,7 +13463,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:25.300Z",
-      "checkedAt": "2026-08-11T06:48:41.181Z",
+      "checkedAt": "2026-08-11T06:49:57.069Z",
       "etag": "W/\"3006eb7484222cbb60322406eebf54f7c96fd91c23371b075fd1d08524960bff\"",
       "references": [
         {
@@ -13499,7 +13499,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:25.376Z",
-      "checkedAt": "2026-08-11T06:48:41.185Z",
+      "checkedAt": "2026-08-11T06:49:57.096Z",
       "etag": "W/\"894798dbe1eee078f463d29721dc72e576209b30ebb4f37ad6dcf169ae512e78\"",
       "references": [
         {
@@ -13542,7 +13542,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.450Z",
-      "checkedAt": "2026-08-11T06:48:41.195Z",
+      "checkedAt": "2026-08-11T06:49:57.102Z",
       "etag": "W/\"e568531bce1c87feb36faf51b6e62ce0e5a3f6734d283a977f7128e07d5e6f96\"",
       "references": [
         {
@@ -13584,7 +13584,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.454Z",
-      "checkedAt": "2026-08-11T06:48:41.210Z",
+      "checkedAt": "2026-08-11T06:49:57.108Z",
       "etag": "W/\"6bba985d9b7da7a7e4289275fb28c542d742e3f827b8a956ae3e728c57d5d2a0\"",
       "references": [
         {
@@ -13620,7 +13620,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.493Z",
-      "checkedAt": "2026-08-11T06:48:41.220Z",
+      "checkedAt": "2026-08-11T06:49:57.127Z",
       "etag": "W/\"115f5e2eda0fdc16e816d22b9beaff491fd8fc75f8cada3c691f24afda614974\"",
       "references": [
         {
@@ -13660,7 +13660,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.551Z",
-      "checkedAt": "2026-08-11T06:48:41.223Z",
+      "checkedAt": "2026-08-11T06:49:57.145Z",
       "etag": "W/\"98e1968e86ba61dea60ff829e150c22a1ad8c3398336535b56327bf0510ab658\"",
       "references": [
         {
@@ -13708,7 +13708,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.635Z",
-      "checkedAt": "2026-08-11T06:48:41.232Z",
+      "checkedAt": "2026-08-11T06:49:57.151Z",
       "etag": "W/\"47275d9819e4fef61fee0726aeb77154aa2b60e382e4e17aa2a22aada76829fc\"",
       "references": [
         {
@@ -13750,7 +13750,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:25.751Z",
-      "checkedAt": "2026-08-11T06:48:41.249Z",
+      "checkedAt": "2026-08-11T06:49:57.166Z",
       "etag": "W/\"28426806e32e20e7a936a3d25a52ea6f961f667d4bdcd694c9229ca4b45559b2\"",
       "references": [
         {
@@ -13800,7 +13800,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:25.759Z",
-      "checkedAt": "2026-08-11T06:48:41.260Z",
+      "checkedAt": "2026-08-11T06:49:57.168Z",
       "etag": "W/\"c2f835a8963b9ba587158300b858f822f38c645aaffc421de4539c925542400a\"",
       "references": [
         {
@@ -13842,7 +13842,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:25.805Z",
-      "checkedAt": "2026-08-11T06:48:41.264Z",
+      "checkedAt": "2026-08-11T06:49:57.188Z",
       "etag": "W/\"95411971ddd7e0dd5b852d2a1eb83da991bfd7b78d523d56f337daf454adce84\"",
       "references": [
         {
@@ -13882,7 +13882,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.856Z",
-      "checkedAt": "2026-08-11T06:48:41.265Z",
+      "checkedAt": "2026-08-11T06:49:57.190Z",
       "etag": "W/\"9cb23a85af52fb67e9b5ead736559b8a5e99c79a443614b61accb06c061828e0\"",
       "references": [
         {
@@ -13928,7 +13928,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:25.920Z",
-      "checkedAt": "2026-08-11T06:48:41.290Z",
+      "checkedAt": "2026-08-11T06:49:57.207Z",
       "etag": "W/\"30b05426d3df91f729d3bed9429d7ca15644b1fd5cf0f30931e873fab1245917\"",
       "references": [
         {
@@ -13972,7 +13972,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:25.967Z",
-      "checkedAt": "2026-08-11T06:48:41.298Z",
+      "checkedAt": "2026-08-11T06:49:57.212Z",
       "etag": "W/\"365d59d2892a19164b1d391daf80658d794dcf279690cd0c6f294d4f9867d8b8\"",
       "references": [
         {
@@ -14029,7 +14029,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.002Z",
-      "checkedAt": "2026-08-11T06:48:41.302Z",
+      "checkedAt": "2026-08-11T06:49:57.229Z",
       "etag": "W/\"4b60a8710f3df2e480766c2c5a84f5e6f30cff969c9d0a3a77f0b7926505669a\"",
       "references": [
         {
@@ -14069,7 +14069,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.033Z",
-      "checkedAt": "2026-08-11T06:48:41.303Z",
+      "checkedAt": "2026-08-11T06:49:57.229Z",
       "etag": "W/\"17b7497325d6f5a7779cfffb7fc7e6ec583a3ec04e1ac7efd634c885b491ab68\"",
       "references": [
         {
@@ -14108,7 +14108,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.114Z",
-      "checkedAt": "2026-08-11T06:48:41.337Z",
+      "checkedAt": "2026-08-11T06:49:57.246Z",
       "etag": "W/\"109677dfc76b39a182e5f531b8a08f519655c282df1fc53a44cdadfa3fcd1fc1\"",
       "references": [
         {
@@ -14144,7 +14144,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.146Z",
-      "checkedAt": "2026-08-11T06:48:41.341Z",
+      "checkedAt": "2026-08-11T06:49:57.251Z",
       "etag": "W/\"c09948bd1c5fcbfa296db9bcdcdcc7ea8e58b5f398fb99d2229afb0f8bb59cb1\"",
       "references": [
         {
@@ -14201,7 +14201,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.179Z",
-      "checkedAt": "2026-08-11T06:48:41.342Z",
+      "checkedAt": "2026-08-11T06:49:57.267Z",
       "etag": "W/\"6e27427a6f303e55355ab254630ddd48ae44c0e88a2a1b7bdbf76f8f3a11b984\"",
       "references": [
         {
@@ -14253,7 +14253,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.201Z",
-      "checkedAt": "2026-08-11T06:48:41.362Z",
+      "checkedAt": "2026-08-11T06:49:57.270Z",
       "etag": "W/\"915ba17cfe7af9cb6773d3c114112090b796a819a8305bf49b4a19dc5a7078f8\"",
       "references": [
         {
@@ -14303,7 +14303,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.297Z",
-      "checkedAt": "2026-08-11T06:48:41.380Z",
+      "checkedAt": "2026-08-11T06:49:57.289Z",
       "etag": "W/\"e99d8ef99627449dabcc3d9d93591437712532e0c8f815bd61279e70293ce9b1\"",
       "references": [
         {
@@ -14343,7 +14343,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:26.342Z",
-      "checkedAt": "2026-08-11T06:48:41.383Z",
+      "checkedAt": "2026-08-11T06:49:57.297Z",
       "etag": "W/\"732f04c8463930df239f9f7d993cd0da7f588461aa71a5f0e747a8c99eedb9e8\"",
       "references": [
         {
@@ -14384,7 +14384,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.346Z",
-      "checkedAt": "2026-08-11T06:48:41.384Z",
+      "checkedAt": "2026-08-11T06:49:57.306Z",
       "etag": "W/\"70acd937986c4b5dc67f861d5cbeff5782314771a2d8754408b32b3382ec31f8\"",
       "references": [
         {
@@ -14428,7 +14428,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.369Z",
-      "checkedAt": "2026-08-11T06:48:41.402Z",
+      "checkedAt": "2026-08-11T06:49:57.316Z",
       "etag": "W/\"f8d93baac77bb5e85e14a0e0c94a7b296f3933b060a363a8c9229726f4174e36\"",
       "references": [
         {
@@ -14448,7 +14448,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:26.499Z",
-      "checkedAt": "2026-08-11T06:48:41.419Z",
+      "checkedAt": "2026-08-11T06:49:57.334Z",
       "references": [
         {
           "recordType": "product",
@@ -14492,7 +14492,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.524Z",
-      "checkedAt": "2026-08-11T06:48:41.423Z",
+      "checkedAt": "2026-08-11T06:49:57.337Z",
       "etag": "W/\"f8cd1dca179d857bc0a63784f86430b7e9c58cdaac9cb37b6a159777086e4a06\"",
       "references": [
         {
@@ -14533,7 +14533,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:26.536Z",
-      "checkedAt": "2026-08-11T06:48:41.439Z",
+      "checkedAt": "2026-08-11T06:49:57.349Z",
       "etag": "W/\"1982183f003d26eb15a98a3530e4965203fc032a604b17f6e59610e9df62f841\"",
       "references": [
         {
@@ -14574,7 +14574,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:26.582Z",
-      "checkedAt": "2026-08-11T06:48:41.455Z",
+      "checkedAt": "2026-08-11T06:49:57.354Z",
       "etag": "W/\"05a26900b23a2d085ebf74bf39255ae8bc7551e008be2cab206b304384e7d2aa\"",
       "references": [
         {
@@ -14617,7 +14617,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.664Z",
-      "checkedAt": "2026-08-11T06:48:41.460Z",
+      "checkedAt": "2026-08-11T06:49:57.380Z",
       "etag": "W/\"6a3750a5f06f1edb312bfe0e0bdaa4284dd76602de5e744e228d6bbf2881dd91\"",
       "references": [
         {
@@ -14657,7 +14657,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.689Z",
-      "checkedAt": "2026-08-11T06:48:41.460Z",
+      "checkedAt": "2026-08-11T06:49:57.381Z",
       "etag": "W/\"13951cc5ac073397b017709bd6374531ec66503869f5709cc5f7dfe3f2c9fcb5\"",
       "references": [
         {
@@ -14700,7 +14700,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.742Z",
-      "checkedAt": "2026-08-11T06:48:41.480Z",
+      "checkedAt": "2026-08-11T06:49:57.387Z",
       "etag": "W/\"4356e44a4203336c98836e7a8ad9b56ac301f00c4a086d410cc0942e5a16cf9f\"",
       "references": [
         {
@@ -14736,7 +14736,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.765Z",
-      "checkedAt": "2026-08-11T06:48:41.496Z",
+      "checkedAt": "2026-08-11T06:49:57.401Z",
       "etag": "W/\"b364f39213107b5c5766bcbc0155d47f4680b1a34fba3c57f0aece39774432a9\"",
       "references": [
         {
@@ -14783,7 +14783,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:26.831Z",
-      "checkedAt": "2026-08-11T06:48:41.498Z",
+      "checkedAt": "2026-08-11T06:49:57.419Z",
       "etag": "W/\"e39d6e1c7b4bf2b78a07b320190758ab1ced2c3817bbb65b9f3b0454c56b0d1c\"",
       "references": [
         {
@@ -14819,7 +14819,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:26.873Z",
-      "checkedAt": "2026-08-11T06:48:41.519Z",
+      "checkedAt": "2026-08-11T06:49:57.423Z",
       "etag": "W/\"816e51fad8d8aaff1ddaf7f20a27c5fade645d8328adfcba8aafeeced25cb072\"",
       "references": [
         {
@@ -14855,7 +14855,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.932Z",
-      "checkedAt": "2026-08-11T06:48:41.524Z",
+      "checkedAt": "2026-08-11T06:49:57.433Z",
       "etag": "W/\"2f9e69c6d58762f9b090277ca65a5d031e74303bb8395cc168b6d475fc217618\"",
       "references": [
         {
@@ -14912,7 +14912,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:26.998Z",
-      "checkedAt": "2026-08-11T06:48:41.531Z",
+      "checkedAt": "2026-08-11T06:49:57.444Z",
       "etag": "W/\"173e718611ceae89a9b11d4480b58f00836c226adbd3988fcd6c17626a470e68\"",
       "references": [
         {
@@ -14956,7 +14956,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:26.999Z",
-      "checkedAt": "2026-08-11T06:48:41.535Z",
+      "checkedAt": "2026-08-11T06:49:57.463Z",
       "etag": "W/\"2c0c003040b63bd459342637ef655c90b33f1abf3e37ef1dc910fffe0a0cb641\"",
       "references": [
         {
@@ -14995,7 +14995,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:27.023Z",
-      "checkedAt": "2026-08-11T06:48:41.556Z",
+      "checkedAt": "2026-08-11T06:49:57.463Z",
       "etag": "W/\"f9b6a66d8866aabc713c9d2301b3c14fccc974599bc819d7a083f2b8f91c8bf7\"",
       "references": [
         {
@@ -15038,7 +15038,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.108Z",
-      "checkedAt": "2026-08-11T06:48:41.566Z",
+      "checkedAt": "2026-08-11T06:49:57.473Z",
       "etag": "W/\"7229c53b7c3fbe1378f246d3d0683a134570906c26f1ca724e583e7c6484c34c\"",
       "references": [
         {
@@ -15085,7 +15085,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.151Z",
-      "checkedAt": "2026-08-11T06:48:41.568Z",
+      "checkedAt": "2026-08-11T06:49:57.490Z",
       "etag": "W/\"9d2862313bd08cc35da4ac4bacc924b09233a238ff3aa032b571d5583918f9f3\"",
       "references": [
         {
@@ -15129,7 +15129,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.233Z",
-      "checkedAt": "2026-08-11T06:48:41.579Z",
+      "checkedAt": "2026-08-11T06:49:57.504Z",
       "etag": "W/\"826f90937f992a2b036f2b1f1f4a0800d3f13594e9297a5909acc9ae5e928f5f\"",
       "references": [
         {
@@ -15180,7 +15180,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:36:27.283Z",
-      "checkedAt": "2026-08-11T06:48:41.608Z",
+      "checkedAt": "2026-08-11T06:49:57.519Z",
       "etag": "W/\"888b0d4b657c5de8a700f704eaaeccca514288d2d06c5e23219a858b4810a663\"",
       "references": [
         {
@@ -15236,7 +15236,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:27.323Z",
-      "checkedAt": "2026-08-11T06:48:41.613Z",
+      "checkedAt": "2026-08-11T06:49:57.530Z",
       "etag": "W/\"e535c9c9a04f218b801e87cf96cb9b30656a46da249c4360c75dbbb98fcbe4f8\"",
       "references": [
         {
@@ -15279,7 +15279,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.339Z",
-      "checkedAt": "2026-08-11T06:48:41.623Z",
+      "checkedAt": "2026-08-11T06:49:57.536Z",
       "etag": "W/\"e4368269fc629b8522514a647ff42f58e95b63d5ccb0b4a9096d562345ddafe2\"",
       "references": [
         {
@@ -15322,7 +15322,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.425Z",
-      "checkedAt": "2026-08-11T06:48:41.633Z",
+      "checkedAt": "2026-08-11T06:49:57.548Z",
       "etag": "W/\"43cb9a0f463518db993d909fcd070151d5c914dd1005c62720ac12e707f07f58\"",
       "references": [
         {
@@ -15368,7 +15368,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:27.460Z",
-      "checkedAt": "2026-08-11T06:48:41.647Z",
+      "checkedAt": "2026-08-11T06:49:57.569Z",
       "etag": "W/\"62748df8d588deb49bbb73bdb31e053c626f41d66db584d059cce4f293c8730f\"",
       "references": [
         {
@@ -15412,7 +15412,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:27.554Z",
-      "checkedAt": "2026-08-11T06:48:41.653Z",
+      "checkedAt": "2026-08-11T06:49:57.570Z",
       "etag": "W/\"16630a69faa57013860c1adea09d9684cf2a34ca92c892bbe6fbc6a6880c4d4a\"",
       "references": [
         {
@@ -15453,7 +15453,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:36:27.590Z",
-      "checkedAt": "2026-08-11T06:48:41.661Z",
+      "checkedAt": "2026-08-11T06:49:57.574Z",
       "etag": "W/\"2f8e0ede568a080a2dbfd693fa83731a20158141dd5479d08abc18b8aaae38da\"",
       "references": [
         {
@@ -15496,7 +15496,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.636Z",
-      "checkedAt": "2026-08-11T06:48:41.668Z",
+      "checkedAt": "2026-08-11T06:49:57.586Z",
       "etag": "W/\"1f53353b6ecc8616a7bc5de838ac32dec623288dde483ed1d2982f4fadf97c23\"",
       "references": [
         {
@@ -15532,7 +15532,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.690Z",
-      "checkedAt": "2026-08-11T06:48:41.686Z",
+      "checkedAt": "2026-08-11T06:49:57.611Z",
       "etag": "W/\"6fc0f9058ef221fa185a31fc6eb68bd032edbfee56a5f66e92332408ffdff6a4\"",
       "references": [
         {
@@ -15568,7 +15568,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:27.801Z",
-      "checkedAt": "2026-08-11T06:48:41.692Z",
+      "checkedAt": "2026-08-11T06:49:57.612Z",
       "etag": "W/\"d4cc1c334771356b59c5752dfebbb98ee1de9c3f1788dfeba4373abec1b1798f\"",
       "references": [
         {
@@ -15588,7 +15588,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:36:27.809Z",
-      "checkedAt": "2026-08-11T06:48:41.704Z",
+      "checkedAt": "2026-08-11T06:49:57.613Z",
       "references": [
         {
           "recordType": "product",
@@ -15623,7 +15623,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.894Z",
-      "checkedAt": "2026-08-11T06:48:41.705Z",
+      "checkedAt": "2026-08-11T06:49:57.626Z",
       "etag": "W/\"6637c3f5f991014697c73756ede24372dd5c1466ca2245452cb125c46069587a\"",
       "references": [
         {
@@ -15678,7 +15678,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:27.923Z",
-      "checkedAt": "2026-08-11T06:48:41.721Z",
+      "checkedAt": "2026-08-11T06:49:57.650Z",
       "etag": "W/\"6301366bda7c4ec50444667f3cba2b07016acdaec36ebef06296673d1369e929\"",
       "references": [
         {
@@ -15720,7 +15720,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:28.002Z",
-      "checkedAt": "2026-08-11T06:48:41.727Z",
+      "checkedAt": "2026-08-11T06:49:57.654Z",
       "etag": "W/\"fc5e0d34eaf18a8fdebd40ac07aafd3ae05807c84be6475f543999c3beadd23a\"",
       "references": [
         {
@@ -15761,7 +15761,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:36:28.040Z",
-      "checkedAt": "2026-08-11T06:48:41.746Z",
+      "checkedAt": "2026-08-11T06:49:57.656Z",
       "etag": "W/\"8ef9aee55d926069db40e66e5684fb7a41547a49fe42b46ae4b40eaa0145a1ad\"",
       "references": [
         {
@@ -15804,7 +15804,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:36:28.089Z",
-      "checkedAt": "2026-08-11T06:48:41.746Z",
+      "checkedAt": "2026-08-11T06:49:57.664Z",
       "etag": "W/\"b8c3cec66d02963cb90e751574bdf041085308d79da4d6a1666e04c1e30d5a00\"",
       "references": [
         {
@@ -15851,7 +15851,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:36:28.103Z",
-      "checkedAt": "2026-08-11T06:48:41.762Z",
+      "checkedAt": "2026-08-11T06:49:57.689Z",
       "etag": "W/\"5ed6b38693fb03ac33ad09b85ff72171638627b2f35828c6dbaaf3822e178e42\"",
       "references": [
         {
@@ -15900,7 +15900,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:07.036Z",
-      "checkedAt": "2026-08-11T06:48:41.784Z",
+      "checkedAt": "2026-08-11T06:49:57.697Z",
       "etag": "W/\"40ad5a9441301061d4543efaa82fa8dd8937d6b0d0990362784b8360a3630296\"",
       "references": [
         {
@@ -15944,7 +15944,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.086Z",
-      "checkedAt": "2026-08-11T06:48:41.787Z",
+      "checkedAt": "2026-08-11T06:49:57.698Z",
       "etag": "W/\"24cf8c63e844bbb5fb1e1a5d9f2c832fe4dd6f597800d7229d0d5025b49c4c0b\"",
       "references": [
         {
@@ -15994,7 +15994,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.118Z",
-      "checkedAt": "2026-08-11T06:48:41.791Z",
+      "checkedAt": "2026-08-11T06:49:57.702Z",
       "etag": "W/\"e6ea2274a12cb75e9443e02cffe292ef5222f0325e9e9e988c5bf846411d55c7\"",
       "references": [
         {
@@ -16045,7 +16045,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.211Z",
-      "checkedAt": "2026-08-11T06:48:41.803Z",
+      "checkedAt": "2026-08-11T06:49:57.738Z",
       "etag": "W/\"88457c472e0386f7eadb20786b9eaa75544260c8b919cf4a5d02f27c30fa4e07\"",
       "references": [
         {
@@ -16085,7 +16085,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.215Z",
-      "checkedAt": "2026-08-11T06:48:41.819Z",
+      "checkedAt": "2026-08-11T06:49:57.746Z",
       "etag": "W/\"f091353c836a3957f558f59b9dcf218f40d9d81a8e89aa46f6304cf53399c5bd\"",
       "references": [
         {
@@ -16131,7 +16131,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.245Z",
-      "checkedAt": "2026-08-11T06:48:41.822Z",
+      "checkedAt": "2026-08-11T06:49:57.761Z",
       "etag": "W/\"d21ae45840e14edfc0c60051a1b2d1564f553c6dd04881f88bba2f88e7bd17f1\"",
       "references": [
         {
@@ -16179,7 +16179,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.305Z",
-      "checkedAt": "2026-08-11T06:48:41.827Z",
+      "checkedAt": "2026-08-11T06:49:57.775Z",
       "etag": "W/\"aa0724a29f56021b8291a6d6815c7d39e266394fea8169d8537cc16cb2af9ad8\"",
       "references": [
         {
@@ -16199,7 +16199,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:22:07.392Z",
-      "checkedAt": "2026-08-11T06:48:41.843Z",
+      "checkedAt": "2026-08-11T06:49:57.788Z",
       "references": [
         {
           "recordType": "product",
@@ -16240,7 +16240,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:07.405Z",
-      "checkedAt": "2026-08-11T06:48:41.861Z",
+      "checkedAt": "2026-08-11T06:49:57.800Z",
       "etag": "W/\"baad9cbee14bd2e39f10451f254a4ff4f108cdc888efcae8198db71747293e66\"",
       "references": [
         {
@@ -16285,7 +16285,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.427Z",
-      "checkedAt": "2026-08-11T06:48:41.867Z",
+      "checkedAt": "2026-08-11T06:49:57.812Z",
       "etag": "W/\"d1361752fd3ab29755c3f1ec7320ade5480cfef9d95d625f83136f2d56218403\"",
       "references": [
         {
@@ -16338,7 +16338,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.469Z",
-      "checkedAt": "2026-08-11T06:48:41.882Z",
+      "checkedAt": "2026-08-11T06:49:57.813Z",
       "etag": "W/\"d3e52197d1b5d27e8a8a0574911a2925d82a1ec730dd679fdbf87b9f0af00563\"",
       "references": [
         {
@@ -16387,7 +16387,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.518Z",
-      "checkedAt": "2026-08-11T06:48:41.893Z",
+      "checkedAt": "2026-08-11T06:49:57.832Z",
       "etag": "W/\"99d5afdd2f4fc22dbd789f618c116c9bc7f82f0b64e0cae6d6cdf62fe45e02e7\"",
       "references": [
         {
@@ -16423,7 +16423,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:07.639Z",
-      "checkedAt": "2026-08-11T06:48:41.897Z",
+      "checkedAt": "2026-08-11T06:49:57.844Z",
       "etag": "W/\"604b4fbaf64973ecdb363d8cd9a7d79e202070ec62d2329071fbecbc05c36d05\"",
       "references": [
         {
@@ -16478,7 +16478,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.658Z",
-      "checkedAt": "2026-08-11T06:48:41.920Z",
+      "checkedAt": "2026-08-11T06:49:57.850Z",
       "etag": "W/\"7a02975d2ca2c51a8df5ebc6fd84f59822396133dc83d9f4a85088aa02d47544\"",
       "references": [
         {
@@ -16516,7 +16516,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.678Z",
-      "checkedAt": "2026-08-11T06:48:41.931Z",
+      "checkedAt": "2026-08-11T06:49:57.854Z",
       "etag": "W/\"026318a283314926a9c986c24bac4662b0869352e47f3ef538dbd1574b212249\"",
       "references": [
         {
@@ -16565,7 +16565,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:07.712Z",
-      "checkedAt": "2026-08-11T06:48:41.938Z",
+      "checkedAt": "2026-08-11T06:49:57.878Z",
       "etag": "W/\"d2bc9f111f434f29c11db17169a91825735fd040663ab1b0fe34952bbc4b7ee8\"",
       "references": [
         {
@@ -16610,7 +16610,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.837Z",
-      "checkedAt": "2026-08-11T06:48:41.946Z",
+      "checkedAt": "2026-08-11T06:49:57.882Z",
       "etag": "W/\"d540d63c96e28220247281688633c555aae6e7a2ef8f809322c47f52a2a91fe8\"",
       "references": [
         {
@@ -16665,7 +16665,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.839Z",
-      "checkedAt": "2026-08-11T06:48:41.958Z",
+      "checkedAt": "2026-08-11T06:49:57.890Z",
       "etag": "W/\"074252c2d4e9adb3cb9eebd38ff0e6a8ecf966ef1d2f2a10ca32d1e30498a6b0\"",
       "references": [
         {
@@ -16706,7 +16706,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:07.941Z",
-      "checkedAt": "2026-08-11T06:48:41.969Z",
+      "checkedAt": "2026-08-11T06:49:57.893Z",
       "etag": "W/\"47b8bf27663cf51d2e3095dcecc0ae775cb3b06c0709f9cf2f9f8ca94f3b8bf1\"",
       "references": [
         {
@@ -16749,7 +16749,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.007Z",
-      "checkedAt": "2026-08-11T06:48:41.976Z",
+      "checkedAt": "2026-08-11T06:49:57.922Z",
       "etag": "W/\"5a13afcc4f442163cf01d8ee7761c6958ce02e900a39b66dcbab30479381e470\"",
       "references": [
         {
@@ -16794,7 +16794,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:08.007Z",
-      "checkedAt": "2026-08-11T06:48:41.982Z",
+      "checkedAt": "2026-08-11T06:49:57.923Z",
       "etag": "W/\"9635395653877de1bc7807bf6d2c71f1ce0872d0d88ce89538f471a4e97edce2\"",
       "references": [
         {
@@ -16851,7 +16851,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.037Z",
-      "checkedAt": "2026-08-11T06:48:41.993Z",
+      "checkedAt": "2026-08-11T06:49:57.934Z",
       "etag": "W/\"a240b0403403a6d190d9f7c0c6632bf532fbed6e19f1d09bf35296e21c4f439c\"",
       "references": [
         {
@@ -16887,7 +16887,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.138Z",
-      "checkedAt": "2026-08-11T06:48:42.008Z",
+      "checkedAt": "2026-08-11T06:49:57.962Z",
       "etag": "W/\"3b11fe2b59f482e22d528f9676be6d2a2c1e6b764948bc6081b6db6d1d4577dc\"",
       "references": [
         {
@@ -16928,7 +16928,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.182Z",
-      "checkedAt": "2026-08-11T06:48:42.011Z",
+      "checkedAt": "2026-08-11T06:49:57.964Z",
       "etag": "W/\"5b18df637500e81c1e7fb2dec0dcad444fcf948adc8922106a0afc7a6892be1f\"",
       "references": [
         {
@@ -16964,7 +16964,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:08.192Z",
-      "checkedAt": "2026-08-11T06:48:42.023Z",
+      "checkedAt": "2026-08-11T06:49:57.975Z",
       "etag": "W/\"dbdbc7ffe890d6757cfb674bfeacab09112bdcb8a7b892397ef02b25dd9649e6\"",
       "references": [
         {
@@ -16984,7 +16984,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:22:08.238Z",
-      "checkedAt": "2026-08-11T06:48:42.033Z",
+      "checkedAt": "2026-08-11T06:49:57.977Z",
       "references": [
         {
           "recordType": "product",
@@ -17024,7 +17024,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:08.304Z",
-      "checkedAt": "2026-08-11T06:48:42.046Z",
+      "checkedAt": "2026-08-11T06:49:58.002Z",
       "etag": "W/\"853093f3547652a35ee32e9066ca272d77a820c46bba784d361d4411b69acf6b\"",
       "references": [
         {
@@ -17067,7 +17067,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:08.331Z",
-      "checkedAt": "2026-08-11T06:48:42.048Z",
+      "checkedAt": "2026-08-11T06:49:58.015Z",
       "etag": "W/\"4f72bf27e826560e3b7f2d321b049ae4b6f7f27f17d1a044518357dad03e7600\"",
       "references": [
         {
@@ -17124,7 +17124,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.359Z",
-      "checkedAt": "2026-08-11T06:48:42.061Z",
+      "checkedAt": "2026-08-11T06:49:58.018Z",
       "etag": "W/\"2df114592716123b02e24f92d0803246fd19399e615fef9fb8e06b223f4c3062\"",
       "references": [
         {
@@ -17144,7 +17144,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:22:08.359Z",
-      "checkedAt": "2026-08-11T06:48:42.072Z",
+      "checkedAt": "2026-08-11T06:49:58.038Z",
       "references": [
         {
           "recordType": "product",
@@ -17163,7 +17163,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:22:08.449Z",
-      "checkedAt": "2026-08-11T06:48:42.083Z",
+      "checkedAt": "2026-08-11T06:49:58.040Z",
       "references": [
         {
           "recordType": "product",
@@ -17198,7 +17198,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.478Z",
-      "checkedAt": "2026-08-11T06:48:42.088Z",
+      "checkedAt": "2026-08-11T06:49:58.058Z",
       "etag": "W/\"b0cfb96670ab899c609625ca4905e34d8f9de4bdf1c6f8067f85536e1f8edab5\"",
       "references": [
         {
@@ -17234,7 +17234,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:08.521Z",
-      "checkedAt": "2026-08-11T06:48:42.104Z",
+      "checkedAt": "2026-08-11T06:49:58.077Z",
       "etag": "W/\"91e51f540ed0290ee0ced7f6a65fddf246e82bb256208b010fd608b5af5c273a\"",
       "references": [
         {
@@ -17270,7 +17270,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:08.535Z",
-      "checkedAt": "2026-08-11T06:48:42.114Z",
+      "checkedAt": "2026-08-11T06:49:58.085Z",
       "etag": "W/\"e3a213483a6f7bb62e10ba34cda6e290785ec99307d2f876403ebb6f9d1bf538\"",
       "references": [
         {
@@ -17315,7 +17315,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.540Z",
-      "checkedAt": "2026-08-11T06:48:42.121Z",
+      "checkedAt": "2026-08-11T06:49:58.087Z",
       "etag": "W/\"3b3e13b3b4be05d05a8dec3ec0bbb37290ba32961770c4f01f57cbd4e8b96263\"",
       "references": [
         {
@@ -17351,7 +17351,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:08.655Z",
-      "checkedAt": "2026-08-11T06:48:42.122Z",
+      "checkedAt": "2026-08-11T06:49:58.108Z",
       "etag": "W/\"116ef1afbc7aa0090f395248f5439907fd433bc76ef4eddf1766f3d44bb9c70c\"",
       "references": [
         {
@@ -17387,7 +17387,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:08.693Z",
-      "checkedAt": "2026-08-11T06:48:42.144Z",
+      "checkedAt": "2026-08-11T06:49:58.119Z",
       "etag": "W/\"4bbee2d0564b0504530cd283caf6790769679ba44338cd3ca650ea24e831fdcd\"",
       "references": [
         {
@@ -17423,7 +17423,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:08.700Z",
-      "checkedAt": "2026-08-11T06:48:42.161Z",
+      "checkedAt": "2026-08-11T06:49:58.127Z",
       "etag": "W/\"ab086ea9e0f02a2c146bdffaf96c556775eaf1817075feb9c5db8bcb14bef1be\"",
       "references": [
         {
@@ -17466,7 +17466,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:08.752Z",
-      "checkedAt": "2026-08-11T06:48:42.163Z",
+      "checkedAt": "2026-08-11T06:49:58.129Z",
       "etag": "W/\"6f9b2924e4de27b25ed96565a86b7c4524279e14c24d6747506157c2bec44725\"",
       "references": [
         {
@@ -17502,7 +17502,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:08.823Z",
-      "checkedAt": "2026-08-11T06:48:42.164Z",
+      "checkedAt": "2026-08-11T06:49:58.160Z",
       "etag": "W/\"fb1281d5560ba1bd60cef9431c73f00cf6296101be6bceaa3ec97fbdf48b09c4\"",
       "references": [
         {
@@ -17546,7 +17546,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:08.854Z",
-      "checkedAt": "2026-08-11T06:48:42.181Z",
+      "checkedAt": "2026-08-11T06:49:58.166Z",
       "etag": "W/\"df1278fcfb76d068e5e747b2a70bd2eba532ec45ed794e99892f1d964536084e\"",
       "references": [
         {
@@ -17582,7 +17582,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:08.886Z",
-      "checkedAt": "2026-08-11T06:48:42.198Z",
+      "checkedAt": "2026-08-11T06:49:58.178Z",
       "etag": "W/\"6c0ce6c8330d54e3e13a301c367730ee02613a0415373734c5e1fa80aac8545a\"",
       "references": [
         {
@@ -17623,7 +17623,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:08.913Z",
-      "checkedAt": "2026-08-11T06:48:42.203Z",
+      "checkedAt": "2026-08-11T06:49:58.196Z",
       "etag": "W/\"bd15feea26a2ae991ab9ef46899c633fdf0a4721b90608acf01072fdff8d1d4d\"",
       "references": [
         {
@@ -17667,7 +17667,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.012Z",
-      "checkedAt": "2026-08-11T06:48:42.204Z",
+      "checkedAt": "2026-08-11T06:49:58.203Z",
       "etag": "W/\"2003fd5ffb87b28080d2dff69f2821712b9a6211b96837fa522e877c08836664\"",
       "references": [
         {
@@ -17687,7 +17687,7 @@
       "status": "unavailable",
       "reason": "not-found-or-private",
       "fetchedAt": "2026-08-11T06:22:09.032Z",
-      "checkedAt": "2026-08-11T06:48:42.221Z",
+      "checkedAt": "2026-08-11T06:49:58.206Z",
       "references": [
         {
           "recordType": "product",
@@ -17726,7 +17726,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.052Z",
-      "checkedAt": "2026-08-11T06:48:42.240Z",
+      "checkedAt": "2026-08-11T06:49:58.235Z",
       "etag": "W/\"75b9c81487e64ccbfd57ccf25fdfd59ac5424146368ff2851b8ad7cd6bb69318\"",
       "references": [
         {
@@ -17765,7 +17765,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.078Z",
-      "checkedAt": "2026-08-11T06:48:42.242Z",
+      "checkedAt": "2026-08-11T06:49:58.235Z",
       "etag": "W/\"c7590e031991c679ea98157e0752dba2ad413e243f33d1235c8c68fb839aabb5\"",
       "references": [
         {
@@ -17801,7 +17801,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.135Z",
-      "checkedAt": "2026-08-11T06:48:42.242Z",
+      "checkedAt": "2026-08-11T06:49:58.246Z",
       "etag": "W/\"85ea4bef7671aeff0b9aef24211989d1ae92fd271601c91a1834a697a62394bb\"",
       "references": [
         {
@@ -17839,7 +17839,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:09.219Z",
-      "checkedAt": "2026-08-11T06:48:42.260Z",
+      "checkedAt": "2026-08-11T06:49:58.250Z",
       "etag": "W/\"863a48a649f7985e14af7c5cf03db008caec8f8cf5bf75107dd7c0f1f87ef35c\"",
       "references": [
         {
@@ -17875,7 +17875,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.268Z",
-      "checkedAt": "2026-08-11T06:48:42.277Z",
+      "checkedAt": "2026-08-11T06:49:58.275Z",
       "etag": "W/\"1216048746abafeb17a1bd65d7357c14c8923149fcb5623a32658ee35a5cb55e\"",
       "references": [
         {
@@ -17911,7 +17911,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.287Z",
-      "checkedAt": "2026-08-11T06:48:42.279Z",
+      "checkedAt": "2026-08-11T06:49:58.278Z",
       "etag": "W/\"f926ca78c55f631df33705024d39e520ca688143b915889b681532133c110b9c\"",
       "references": [
         {
@@ -17947,7 +17947,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:09.301Z",
-      "checkedAt": "2026-08-11T06:48:42.282Z",
+      "checkedAt": "2026-08-11T06:49:58.288Z",
       "etag": "W/\"df8d016123652f54acceb1311383421c34bf278bf968398548be94c5d02aecda\"",
       "references": [
         {
@@ -17988,7 +17988,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.384Z",
-      "checkedAt": "2026-08-11T06:48:42.298Z",
+      "checkedAt": "2026-08-11T06:49:58.294Z",
       "etag": "W/\"1b83545783df1ec9150b4d623354023b539a13c12ceaa1fd92c3137f94dd6926\"",
       "references": [
         {
@@ -18024,7 +18024,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:09.438Z",
-      "checkedAt": "2026-08-11T06:48:42.313Z",
+      "checkedAt": "2026-08-11T06:49:58.317Z",
       "etag": "W/\"3ed81127170f5d04bab94605141b8ee893f4cd57770dfdb28c29167a49dbb723\"",
       "references": [
         {
@@ -18060,7 +18060,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:09.477Z",
-      "checkedAt": "2026-08-11T06:48:42.320Z",
+      "checkedAt": "2026-08-11T06:49:58.317Z",
       "etag": "W/\"c8046785cf7794766255eb21138689771876c5c22fdca6962111016cd98859f0\"",
       "references": [
         {
@@ -18096,7 +18096,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.486Z",
-      "checkedAt": "2026-08-11T06:48:42.321Z",
+      "checkedAt": "2026-08-11T06:49:58.334Z",
       "etag": "W/\"18d6be9ca1819d05dff2285f4772b4b2896386f180deb2dd9701a63743a17a63\"",
       "references": [
         {
@@ -18132,7 +18132,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.592Z",
-      "checkedAt": "2026-08-11T06:48:42.337Z",
+      "checkedAt": "2026-08-11T06:49:58.336Z",
       "etag": "W/\"8d1344178bc70596369204b9c82f1f5c0dae7e605032d126704908a7e6dcac55\"",
       "references": [
         {
@@ -18168,7 +18168,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.605Z",
-      "checkedAt": "2026-08-11T06:48:42.361Z",
+      "checkedAt": "2026-08-11T06:49:58.357Z",
       "etag": "W/\"27bf8758cb39f03a8478ba71383eba6b96bbf1f8943f27b104f3802247d01db2\"",
       "references": [
         {
@@ -18204,7 +18204,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.666Z",
-      "checkedAt": "2026-08-11T06:48:42.368Z",
+      "checkedAt": "2026-08-11T06:49:58.358Z",
       "etag": "W/\"b1c066bcf9e33a0c108bad682807ceb9edbbe6711684d8956fc4db154ee33201\"",
       "references": [
         {
@@ -18255,7 +18255,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.684Z",
-      "checkedAt": "2026-08-11T06:48:42.372Z",
+      "checkedAt": "2026-08-11T06:49:58.377Z",
       "etag": "W/\"c2ff4f7daf1d9ad5aef2480d44f88f076f00cd7c2d272a03cf307490d90d9e8f\"",
       "references": [
         {
@@ -18291,7 +18291,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.760Z",
-      "checkedAt": "2026-08-11T06:48:42.376Z",
+      "checkedAt": "2026-08-11T06:49:58.378Z",
       "etag": "W/\"475b0c913501bbd9eb8aa27eb1b0ad2c8796bd091dd020b5ed1da68976609f65\"",
       "references": [
         {
@@ -18327,7 +18327,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:09.820Z",
-      "checkedAt": "2026-08-11T06:48:42.405Z",
+      "checkedAt": "2026-08-11T06:49:58.399Z",
       "etag": "W/\"593958a24a56f94e1a80751647e63277387400c2c661a00306fae987083fd627\"",
       "references": [
         {
@@ -18384,7 +18384,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:09.842Z",
-      "checkedAt": "2026-08-11T06:48:42.407Z",
+      "checkedAt": "2026-08-11T06:49:58.400Z",
       "etag": "W/\"b8d6f6f241f84ef925a27e872e66c9f239b1c7086d65174b3692475950754d74\"",
       "references": [
         {
@@ -18427,7 +18427,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:09.886Z",
-      "checkedAt": "2026-08-11T06:48:42.411Z",
+      "checkedAt": "2026-08-11T06:49:58.422Z",
       "etag": "W/\"132c62e5d1544e38b458b017ee7d34b30f28505461af31cd064fe74cb4000458\"",
       "references": [
         {
@@ -18463,7 +18463,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:09.908Z",
-      "checkedAt": "2026-08-11T06:48:42.420Z",
+      "checkedAt": "2026-08-11T06:49:58.423Z",
       "etag": "W/\"6a21cb2c69ed936f2ed50b586547be5260a93185db64af69467f5038492bca4a\"",
       "references": [
         {
@@ -18499,7 +18499,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:10.007Z",
-      "checkedAt": "2026-08-11T06:48:42.442Z",
+      "checkedAt": "2026-08-11T06:49:58.439Z",
       "etag": "W/\"b42db62ea943e932a56ac29bbc33d8425bed1c205d8662f0c87bcaeac0d44b46\"",
       "references": [
         {
@@ -18535,7 +18535,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:10.047Z",
-      "checkedAt": "2026-08-11T06:48:42.447Z",
+      "checkedAt": "2026-08-11T06:49:58.440Z",
       "etag": "W/\"73f1b86425c2ee61e3d45727dab7d8f0082491a199aca230ad9d567d96c18614\"",
       "references": [
         {
@@ -18571,7 +18571,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.053Z",
-      "checkedAt": "2026-08-11T06:48:42.450Z",
+      "checkedAt": "2026-08-11T06:49:58.463Z",
       "etag": "W/\"39348d548ba032a35e13f5eb0bc826537eef0b9b70f64c5edc3134402cb094f7\"",
       "references": [
         {
@@ -18611,7 +18611,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:10.088Z",
-      "checkedAt": "2026-08-11T06:48:42.460Z",
+      "checkedAt": "2026-08-11T06:49:58.464Z",
       "etag": "W/\"5cac2531341c8972af2d9db8da0c306589a3c86261c50847214a871f52efe473\"",
       "references": [
         {
@@ -18653,7 +18653,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.192Z",
-      "checkedAt": "2026-08-11T06:48:42.479Z",
+      "checkedAt": "2026-08-11T06:49:58.480Z",
       "etag": "W/\"c86cef2f0153e67f62d9816f40118eecd1dbbd1047b3cb1da2e57b9e090f72af\"",
       "references": [
         {
@@ -18710,7 +18710,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:10.208Z",
-      "checkedAt": "2026-08-11T06:48:42.482Z",
+      "checkedAt": "2026-08-11T06:49:58.483Z",
       "etag": "W/\"eb1cbfdc439adea1aa3b717bd2c04c292b8f4db31e1605b85368955836f73880\"",
       "references": [
         {
@@ -18767,7 +18767,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.209Z",
-      "checkedAt": "2026-08-11T06:48:42.488Z",
+      "checkedAt": "2026-08-11T06:49:58.503Z",
       "etag": "W/\"8cfcb5c5f9341ba58b73fc4295b1e957db6d316e2766353c1638a6cc4bf2e1ae\"",
       "references": [
         {
@@ -18803,7 +18803,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.257Z",
-      "checkedAt": "2026-08-11T06:48:42.501Z",
+      "checkedAt": "2026-08-11T06:49:58.520Z",
       "etag": "W/\"12fef08a7e5acaebdbcff20ed2cd7dc8d585ff89a95bdc15cbdec43feee10174\"",
       "references": [
         {
@@ -18845,7 +18845,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.346Z",
-      "checkedAt": "2026-08-11T06:48:42.513Z",
+      "checkedAt": "2026-08-11T06:49:58.530Z",
       "etag": "W/\"7c0988030c9e342f2bcc78f40b84263f8b474fc0fe11d3ac1b2bbf42032029e6\"",
       "references": [
         {
@@ -18881,7 +18881,7 @@
       "status": "available",
       "activity": "active-year",
       "fetchedAt": "2026-08-11T06:22:10.377Z",
-      "checkedAt": "2026-08-11T06:48:42.523Z",
+      "checkedAt": "2026-08-11T06:49:58.540Z",
       "etag": "W/\"daeb44a4d3b746c0d0116b694dcda66fdf106221f3b6efd0f1a5887fb5a573c4\"",
       "references": [
         {
@@ -18917,7 +18917,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.409Z",
-      "checkedAt": "2026-08-11T06:48:42.524Z",
+      "checkedAt": "2026-08-11T06:49:58.545Z",
       "etag": "W/\"0fcd9d95ec847b4dafe34ba76e42223032c2d1381abc7c2c57b31ac5cd4c8ee7\"",
       "references": [
         {
@@ -18953,7 +18953,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.501Z",
-      "checkedAt": "2026-08-11T06:48:42.542Z",
+      "checkedAt": "2026-08-11T06:49:58.562Z",
       "etag": "W/\"80aa936ad33c322a6fa4dd7f73aebe7df4fbf7e16c5d524db4f43e5d281c1aad\"",
       "references": [
         {
@@ -18992,7 +18992,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.539Z",
-      "checkedAt": "2026-08-11T06:48:42.548Z",
+      "checkedAt": "2026-08-11T06:49:58.579Z",
       "etag": "W/\"f28a0df3b35fcbdb2a6dfec1b79325c5f5afbcc45b21b7824f00c6689ae26fd8\"",
       "references": [
         {
@@ -19028,7 +19028,7 @@
       "status": "available",
       "activity": "active-90",
       "fetchedAt": "2026-08-11T06:22:10.549Z",
-      "checkedAt": "2026-08-11T06:48:42.559Z",
+      "checkedAt": "2026-08-11T06:49:58.581Z",
       "etag": "W/\"0fd6d56ff8215e4cd68b8ccbb6dbb5bbe3ea01b3929ded5c4660ebc7c9bd1098\"",
       "references": [
         {
@@ -19067,7 +19067,7 @@
       "status": "available",
       "activity": "archived",
       "fetchedAt": "2026-08-11T06:22:10.599Z",
-      "checkedAt": "2026-08-11T06:48:42.563Z",
+      "checkedAt": "2026-08-11T06:49:58.589Z",
       "etag": "W/\"599b05a8d90f0f8ac794fbb0900e7dac3a1e20a3004c1f8ca3a8d4d7fb904d2f\"",
       "references": [
         {
@@ -19116,7 +19116,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.675Z",
-      "checkedAt": "2026-08-11T06:48:42.577Z",
+      "checkedAt": "2026-08-11T06:49:58.604Z",
       "etag": "W/\"7b031593f801fe978ef9a778071f115bd1c3b123257e46dad5adb0ab821fd1a8\"",
       "references": [
         {
@@ -19152,7 +19152,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.714Z",
-      "checkedAt": "2026-08-11T06:48:42.587Z",
+      "checkedAt": "2026-08-11T06:49:58.621Z",
       "etag": "W/\"de22536dcb41d64d243ba8eaf552cb29de17e2b6555ec0fec920e31ad8ec59b5\"",
       "references": [
         {
@@ -19188,7 +19188,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.779Z",
-      "checkedAt": "2026-08-11T06:48:42.596Z",
+      "checkedAt": "2026-08-11T06:49:58.623Z",
       "etag": "W/\"6ea13212566479aeafd3f846583a48d7e06518d335762d2fde3835132c2be0ea\"",
       "references": [
         {
@@ -19224,7 +19224,7 @@
       "status": "available",
       "activity": "inactive-year",
       "fetchedAt": "2026-08-11T06:22:10.828Z",
-      "checkedAt": "2026-08-11T06:48:42.598Z",
+      "checkedAt": "2026-08-11T06:49:58.633Z",
       "etag": "W/\"552ed6f8893d45919d03381c2dcb1a8beac72fa1380715cbd3301a074203baf6\"",
       "references": [
         {
@@ -19271,7 +19271,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.829Z",
-      "checkedAt": "2026-08-11T06:48:42.613Z",
+      "checkedAt": "2026-08-11T06:49:58.648Z",
       "etag": "W/\"4fe9e1d8699ec003a3f5f56cfd6559f2146784fdec6f9500616c06b4d1502f70\"",
       "references": [
         {
@@ -19318,7 +19318,7 @@
       "status": "available",
       "activity": "active-30",
       "fetchedAt": "2026-08-11T06:22:10.871Z",
-      "checkedAt": "2026-08-11T06:48:42.626Z",
+      "checkedAt": "2026-08-11T06:49:58.662Z",
       "etag": "W/\"0ed4259663950bb49d6facf9d71824ccfb5f5d55dc0df11ac77dce99c17cd7be\"",
       "references": [
         {
