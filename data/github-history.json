@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-11T03:03:33.107Z",
+    "generatedAt": "2026-08-11T04:35:23.021Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -70,8 +70,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 60697,
-        "forks": 5285
+        "stars": 60699,
+        "forks": 5287
       }
     ],
     "619dev/astrbot_plugin_paperphoneplus": [
@@ -240,7 +240,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47448,
+        "stars": 47450,
         "forks": 5651
       }
     ],
@@ -427,7 +427,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 56855,
+        "stars": 56856,
         "forks": 5627
       }
     ],
@@ -903,7 +903,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 17027,
+        "stars": 17028,
         "forks": 628
       }
     ],
@@ -1651,7 +1651,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 338,
+        "stars": 339,
         "forks": 47
       }
     ],
@@ -1872,7 +1872,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1659,
+        "stars": 1662,
         "forks": 180
       }
     ],
@@ -2179,7 +2179,7 @@
       {
         "date": "2026-08-11",
         "stars": 3966,
-        "forks": 536
+        "forks": 537
       }
     ],
     "hanshuaikang/nezha": [
@@ -2365,8 +2365,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1174,
-        "forks": 956
+        "stars": 1178,
+        "forks": 967
       }
     ],
     "huqingyang/luoo.qy": [
@@ -2909,7 +2909,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 18636,
+        "stars": 18637,
         "forks": 2301
       }
     ],
@@ -3113,7 +3113,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 8617,
+        "stars": 8618,
         "forks": 1357
       }
     ],
@@ -3487,7 +3487,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 45899,
+        "stars": 45903,
         "forks": 2889
       }
     ],
@@ -3709,7 +3709,7 @@
       {
         "date": "2026-08-11",
         "stars": 3428,
-        "forks": 691
+        "forks": 690
       }
     ],
     "liyupi/sql-mother": [
@@ -3725,7 +3725,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 4307,
+        "stars": 4308,
         "forks": 429
       }
     ],
@@ -3981,7 +3981,7 @@
       {
         "date": "2026-08-11",
         "stars": 6141,
-        "forks": 7662
+        "forks": 7663
       }
     ],
     "marseventh/sanyue-imghub": [
@@ -4031,7 +4031,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1130,
+        "stars": 1131,
         "forks": 42
       }
     ],
@@ -4184,8 +4184,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47567,
-        "forks": 4700
+        "stars": 47581,
+        "forks": 4699
       }
     ],
     "mornhussakuyo-hub/ezc": [
@@ -4303,8 +4303,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 8886,
-        "forks": 1668
+        "stars": 8889,
+        "forks": 1669
       }
     ],
     "netdata/netdata": [
@@ -4320,7 +4320,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 80112,
+        "stars": 80113,
         "forks": 6576
       }
     ],
@@ -4337,7 +4337,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 28322,
+        "stars": 28323,
         "forks": 4043
       }
     ],
@@ -4439,7 +4439,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 3341,
+        "stars": 3342,
         "forks": 416
       }
     ],
@@ -4456,7 +4456,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 3341,
+        "stars": 3342,
         "forks": 416
       }
     ],
@@ -4524,7 +4524,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1652,
+        "stars": 1653,
         "forks": 185
       }
     ],
@@ -4576,7 +4576,7 @@
       {
         "date": "2026-08-11",
         "stars": 14488,
-        "forks": 1438
+        "forks": 1437
       }
     ],
     "panjf2000/gnet": [
@@ -4609,7 +4609,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 58361,
+        "stars": 58362,
         "forks": 3919
       }
     ],
@@ -5272,8 +5272,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1727,
-        "forks": 284
+        "stars": 1728,
+        "forks": 285
       }
     ],
     "shuyu-labs/webcode": [
@@ -5323,7 +5323,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 2874,
+        "stars": 2875,
         "forks": 175
       }
     ],
@@ -5392,7 +5392,7 @@
       {
         "date": "2026-08-11",
         "stars": 825,
-        "forks": 98
+        "forks": 99
       }
     ],
     "snowleopard-io/cogitoagent": [
@@ -5534,7 +5534,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 5110,
+        "stars": 5111,
         "forks": 604
       }
     ],
@@ -5789,7 +5789,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 107805,
+        "stars": 107809,
         "forks": 13514
       }
     ],
@@ -6011,7 +6011,7 @@
       {
         "date": "2026-08-11",
         "stars": 14279,
-        "forks": 2447
+        "forks": 2446
       }
     ],
     "trzsz/trzsz": [
@@ -6079,7 +6079,7 @@
       {
         "date": "2026-08-11",
         "stars": 60561,
-        "forks": 12365
+        "forks": 12366
       }
     ],
     "typeorm/typeorm": [
@@ -6130,7 +6130,7 @@
       {
         "date": "2026-08-11",
         "stars": 38146,
-        "forks": 7730
+        "forks": 7729
       }
     ],
     "upscayl/upscayl": [
@@ -6146,7 +6146,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47953,
+        "stars": 47955,
         "forks": 2392
       }
     ],
@@ -6180,7 +6180,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 46943,
+        "stars": 46942,
         "forks": 8823
       }
     ],
@@ -6299,7 +6299,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 4633,
+        "stars": 4634,
         "forks": 184
       }
     ],
@@ -6350,7 +6350,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 13703,
+        "stars": 13704,
         "forks": 1183
       }
     ],
@@ -6384,8 +6384,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 15271,
-        "forks": 1826
+        "stars": 15273,
+        "forks": 1827
       }
     ],
     "watanabechika/earwormdiary": [
@@ -6588,7 +6588,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 318,
+        "stars": 319,
         "forks": 80
       }
     ],
@@ -6979,7 +6979,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 5104,
+        "stars": 5105,
         "forks": 723
       }
     ],
@@ -7217,8 +7217,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 25777,
-        "forks": 2629
+        "stars": 25778,
+        "forks": 2630
       }
     ],
     "zhaoxiaozhao07/dynamic-photo-video-display-wall": [
