@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-08-11T07:17:10.401Z",
+    "generatedAt": "2026-08-11T07:57:59.104Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -53,7 +53,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 314,
+        "stars": 316,
         "forks": 14
       }
     ],
@@ -70,8 +70,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 60702,
-        "forks": 5287
+        "stars": 60704,
+        "forks": 5288
       }
     ],
     "619dev/astrbot_plugin_paperphoneplus": [
@@ -427,7 +427,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 56857,
+        "stars": 56859,
         "forks": 5626
       }
     ],
@@ -699,7 +699,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 7451,
+        "stars": 7452,
         "forks": 357
       }
     ],
@@ -938,7 +938,7 @@
       {
         "date": "2026-08-11",
         "stars": 7006,
-        "forks": 5055
+        "forks": 5056
       }
     ],
     "changwu/cvparser": [
@@ -1583,7 +1583,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1071,
+        "stars": 1072,
         "forks": 133
       }
     ],
@@ -1652,7 +1652,7 @@
       {
         "date": "2026-08-11",
         "stars": 339,
-        "forks": 47
+        "forks": 48
       }
     ],
     "ethanyoq/invoice-downloader": [
@@ -1753,7 +1753,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 65884,
+        "stars": 65885,
         "forks": 9998
       }
     ],
@@ -1872,7 +1872,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1666,
+        "stars": 1667,
         "forks": 181
       }
     ],
@@ -2110,7 +2110,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 4067,
+        "stars": 4068,
         "forks": 270
       }
     ],
@@ -2195,7 +2195,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1867,
+        "stars": 1868,
         "forks": 175
       }
     ],
@@ -2365,8 +2365,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1189,
-        "forks": 987
+        "stars": 1190,
+        "forks": 991
       }
     ],
     "huqingyang/luoo.qy": [
@@ -2722,7 +2722,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1862,
+        "stars": 1863,
         "forks": 172
       }
     ],
@@ -2909,8 +2909,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 18638,
-        "forks": 2302
+        "stars": 18639,
+        "forks": 2303
       }
     ],
     "jianchang512/vocal-separate": [
@@ -3980,7 +3980,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 6146,
+        "stars": 6147,
         "forks": 7667
       }
     ],
@@ -4133,7 +4133,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 25,
+        "stars": 26,
         "forks": 5
       }
     ],
@@ -4184,8 +4184,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47600,
-        "forks": 4700
+        "stars": 47605,
+        "forks": 4701
       }
     ],
     "mornhussakuyo-hub/ezc": [
@@ -4303,7 +4303,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 8891,
+        "stars": 8893,
         "forks": 1672
       }
     ],
@@ -4320,8 +4320,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 80118,
-        "forks": 6576
+        "stars": 80119,
+        "forks": 6575
       }
     ],
     "nextauthjs/next-auth": [
@@ -4609,7 +4609,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 58371,
+        "stars": 58374,
         "forks": 3920
       }
     ],
@@ -4847,8 +4847,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 1259,
-        "forks": 39
+        "stars": 1258,
+        "forks": 38
       }
     ],
     "raullenchai/rapid-mlx": [
@@ -5323,7 +5323,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 2876,
+        "stars": 2877,
         "forks": 175
       }
     ],
@@ -5789,7 +5789,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 107812,
+        "stars": 107813,
         "forks": 13515
       }
     ],
@@ -5874,8 +5874,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 4399,
-        "forks": 316
+        "stars": 4401,
+        "forks": 317
       }
     ],
     "tans/photo-mint": [
@@ -6078,7 +6078,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 60568,
+        "stars": 60566,
         "forks": 12366
       }
     ],
@@ -6096,7 +6096,7 @@
       {
         "date": "2026-08-11",
         "stars": 36629,
-        "forks": 6660
+        "forks": 6661
       }
     ],
     "ufo5260987423/scheme-langserver": [
@@ -6146,7 +6146,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 47958,
+        "stars": 47960,
         "forks": 2393
       }
     ],
@@ -6384,7 +6384,7 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 15274,
+        "stars": 15275,
         "forks": 1827
       }
     ],
@@ -6503,8 +6503,8 @@
       },
       {
         "date": "2026-08-11",
-        "stars": 69,
-        "forks": 15
+        "stars": 70,
+        "forks": 16
       }
     ],
     "wtechtec/berth": [
