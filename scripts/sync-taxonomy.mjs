@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises'
 import { classifyProducts } from './lib/taxonomy-v1.mjs'
+import { applyReviewedSemanticRule } from './lib/taxonomy-review-rules.mjs'
 
 const productsPayload = JSON.parse(await readFile('data/products.json', 'utf8'))
 const taxonomy = JSON.parse(await readFile('data/taxonomy.json', 'utf8'))
@@ -27,7 +28,8 @@ for (const [primaryCategory, ids] of Object.entries(reviewedOverrides.categories
 }
 
 const baseRecords = classifyProducts(products, taxonomy.version)
-const records = baseRecords.map((item) => {
+const reviewedRuleRecords = baseRecords.map((item, index) => applyReviewedSemanticRule(products[index], item))
+const records = reviewedRuleRecords.map((item) => {
   const reviewedCategory = overrideMap.get(item.productId)
   if (!reviewedCategory) return item
   const changed = reviewedCategory !== item.primaryCategory
@@ -50,15 +52,17 @@ const methodCounts = Object.fromEntries([...records.reduce((map, item) => map.se
 const classified = records.filter((item) => item.primaryCategory !== 'other').length
 const lowConfidence = records.filter((item) => item.confidence < 0.65).length
 const averageConfidence = records.length ? records.reduce((sum, item) => sum + item.confidence, 0) / records.length : 0
-const reviewedProducts = records.filter((item) => item.classificationMethod === 'manual-review').length
-const reviewChangedProducts = records.filter((item) => item.classificationMethod === 'manual-review' && item.reviewPreviousPrimaryCategory !== item.primaryCategory).length
+const manualReviewProducts = records.filter((item) => item.classificationMethod === 'manual-review').length
+const reviewRuleProducts = records.filter((item) => item.classificationMethod === 'reviewed-rule').length
+const reviewedProducts = manualReviewProducts + reviewRuleProducts
+const reviewChangedProducts = records.filter((item) => ['manual-review', 'reviewed-rule'].includes(item.classificationMethod) && item.reviewPreviousPrimaryCategory !== item.primaryCategory).length
 const baseOtherProducts = baseRecords.filter((item) => item.primaryCategory === 'other').length
 
 const payload = {
   metadata: {
     dataset: 'product-taxonomy',
     taxonomyVersion: taxonomy.version,
-    classifier: 'deterministic-semantic-rules-v1.1+manual-review',
+    classifier: 'deterministic-semantic-rules-v1.1+review-layer',
     reviewOverrideVersion: reviewedOverrides.metadata?.version || null,
     sourceProductGeneratedAt: productsPayload.metadata?.generatedAt || null,
     generatedAt: new Date().toISOString(),
@@ -69,19 +73,21 @@ const payload = {
     lowConfidenceProducts: lowConfidence,
     averageConfidence: Number(averageConfidence.toFixed(4)),
     reviewedProducts,
+    manualReviewProducts,
+    reviewRuleProducts,
     reviewChangedProducts,
     baseOtherProducts,
     activeReviewOverrides: overrideMap.size,
     staleReviewOverrides: staleOverrides,
     primaryCategoryCounts: primaryCounts,
     classificationMethodCounts: methodCounts,
-    note: 'Source facts remain in products.json. Deterministic rules classify clear records; high-risk long-tail records are explicitly reviewed. Other is valid only after explicit manual review.'
+    note: 'Source facts remain in products.json. Deterministic rules classify clear records; high-risk long-tail records are explicitly reviewed through reusable review rules or stable manual overrides. Other is valid only after explicit review.'
   },
   records
 }
 
 await writeFile('data/product-taxonomy.json', `${JSON.stringify(payload, null, 2)}\n`)
 console.log(`Generated taxonomy for ${records.length} products: ${classified} classified, ${records.length - classified} other, avg confidence ${averageConfidence.toFixed(2)}.`)
-console.log(`Manual review: ${reviewedProducts} active overrides, ${reviewChangedProducts} changed primary category, ${staleOverrides} stale overrides.`)
+console.log(`Review layer: ${reviewedProducts} reviewed (${manualReviewProducts} manual overrides + ${reviewRuleProducts} reusable review rules), ${reviewChangedProducts} changed primary category, ${staleOverrides} stale overrides.`)
 console.log(`Primary categories: ${JSON.stringify(primaryCounts)}`)
 console.log(`Classification methods: ${JSON.stringify(methodCounts)}`)
