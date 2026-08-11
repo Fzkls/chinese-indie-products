@@ -5,9 +5,9 @@
 .separation-note{margin-bottom:20px}
 .separated-insights .github-grid{align-items:start}
 .separated-insights .github-ranking-panel{min-width:0}
-.separated-insights .activity-row{display:grid;grid-template-columns:minmax(110px,1.3fr) minmax(120px,2fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07)}
-.separated-insights .activity-row:last-child{border-bottom:0}
-.separated-insights .activity-row .bar-track{height:9px}
+.github-activity-grid .activity-row{display:grid;grid-template-columns:minmax(110px,1.3fr) minmax(120px,2fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+.github-activity-grid .activity-row:last-child{border-bottom:0}
+.github-activity-grid .activity-row .bar-track{height:9px}
 .bar-fill{display:block;min-width:2px}
 .visual-heading-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;max-width:520px}
 .visual-heading-actions>p{margin:0;color:var(--muted);text-align:right}
@@ -22,4 +22,4 @@
 .tool-chart-grid .wide{grid-column:1/-1}
 #tool-category-chart .bar-row{grid-template-columns:minmax(130px,1.4fr) minmax(140px,3fr) auto}
 @media (max-width:900px){.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-chart-grid{grid-template-columns:1fr}.visual-heading-actions{align-items:flex-start;justify-content:flex-start;max-width:none}.visual-heading-actions>p{text-align:left}}
-@media (max-width:600px){.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.separated-insights .activity-row{grid-template-columns:1fr auto}.separated-insights .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}}
+@media (max-width:600px){.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.github-activity-grid .activity-row{grid-template-columns:1fr auto}.github-activity-grid .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}}
