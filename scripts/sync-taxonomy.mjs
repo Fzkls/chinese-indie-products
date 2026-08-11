@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises'
-import { classifyProducts } from './lib/taxonomy.mjs'
+import { classifyProducts } from './lib/taxonomy-v1.mjs'
 
 const productsPayload = JSON.parse(await readFile('data/products.json', 'utf8'))
 const taxonomy = JSON.parse(await readFile('data/taxonomy.json', 'utf8'))
