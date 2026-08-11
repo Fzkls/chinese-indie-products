@@ -4,7 +4,7 @@ await rm('dist', { recursive: true, force: true })
 await mkdir('dist/data', { recursive: true })
 await mkdir('dist/src', { recursive: true })
 await cp('index.html', 'dist/index.html')
-for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'dataset-tabs.js', 'dataset-tabs.css']) {
+for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'dataset-tabs.js', 'dataset-tabs.css', 'dataset-tabs-refine.js', 'dataset-tabs-refine.css']) {
   await cp(`src/${filename}`, `dist/src/${filename}`)
 }
 for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json', 'taxonomy.json', 'product-taxonomy.json']) {
@@ -15,11 +15,17 @@ let index = await readFile('dist/index.html', 'utf8')
 if (!index.includes('src/dataset-tabs.css')) {
   index = index.replace('</head>', '    <link rel="stylesheet" href="src/dataset-tabs.css" />\n  </head>')
 }
+if (!index.includes('src/dataset-tabs-refine.css')) {
+  index = index.replace('</head>', '    <link rel="stylesheet" href="src/dataset-tabs-refine.css" />\n  </head>')
+}
 if (!index.includes('src/taxonomy-insights.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/taxonomy-insights.js"></script>\n  </body>')
 }
 if (!index.includes('src/dataset-tabs.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/dataset-tabs.js"></script>\n  </body>')
+}
+if (!index.includes('src/dataset-tabs-refine.js')) {
+  index = index.replace('</body>', '    <script type="module" src="src/dataset-tabs-refine.js"></script>\n  </body>')
 }
 await writeFile('dist/index.html', index)
 await writeFile('dist/.nojekyll', '')
@@ -38,4 +44,5 @@ for (const dataset of ['products.json', 'taxonomy.json', 'product-taxonomy.json'
 }
 if (!index.includes('src/taxonomy-insights.js')) throw new Error('dist/index.html must load taxonomy-insights.js')
 if (!index.includes('src/dataset-tabs.js') || !index.includes('src/dataset-tabs.css')) throw new Error('dist/index.html must load dataset tab assets')
+if (!index.includes('src/dataset-tabs-refine.js') || !index.includes('src/dataset-tabs-refine.css')) throw new Error('dist/index.html must load dataset tab refinement assets')
 console.log('Static site built in dist/.')
