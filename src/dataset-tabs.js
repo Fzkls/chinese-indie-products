@@ -1,6 +1,6 @@
 const DATASET_LABELS = { product: '项目', tool: '工具' }
-const VIEW_LABELS = { overview: '概览', list: '列表' }
 const STATUS_LABELS = { active: '已上线', developing: '开发中', closed: '已关闭', acquired: '已收购', unknown: '未知' }
+const PRICING_LABELS = { free: '免费', paid: '付费', 'open-source': '开源', unknown: '价格未知' }
 const AUDIENCE_LABELS = {
   developer: '开发者', creator: '创作者', designer: '设计师', marketer: '营销人员', student: '学生',
   team: '团队', enterprise: '企业', consumer: '普通用户', merchant: '商家', sysadmin: '系统管理员'
@@ -26,18 +26,21 @@ const RESERVED_GITHUB_OWNERS = new Set(['about', 'apps', 'blog', 'collections', 
 const $ = (selector, root = document) => root.querySelector(selector)
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)]
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
-const escapeHtml = (value = '') => String(value).replace(/[&<>'\"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '\"': '&quot;' })[char])
+const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char])
 
 const ui = {
   dataset: 'product',
-  view: 'overview',
+  mode: 'overview',
   products: [],
+  tools: [],
   semanticById: new Map(),
   taxonomy: {},
   github: {},
-  filtered: [],
+  filteredProducts: [],
   pageSize: 36,
   visible: 36,
+  primaryPreview: '',
+  toolPreviewCategory: '',
   filters: { search: '', primary: '', sub: '', audience: '', form: '', characteristic: '', status: '', year: '', city: '' }
 }
 
@@ -60,6 +63,11 @@ function normalizeGithubRepository(rawUrl) {
   } catch { return null }
 }
 
+function githubMeta(record) {
+  const key = normalizeGithubRepository(record.productUrl || record.toolUrl)
+  return key ? ui.github[key] : null
+}
+
 function installNavigation() {
   const links = $('.top-links')
   if (!links) return
@@ -69,30 +77,60 @@ function installNavigation() {
       <button type="button" role="tab" data-dataset="product">项目</button>
       <button type="button" role="tab" data-dataset="tool">工具</button>
     </div>
-    <span class="dataset-nav-divider" aria-hidden="true"></span>
-    <div class="dataset-secondary-tabs" role="tablist" aria-label="当前数据集视图">
-      <button type="button" role="tab" data-view="overview">概览</button>
-      <button type="button" role="tab" data-view="list">项目列表</button>
-    </div>
     <a class="dataset-method-link" href="#methodology">数据说明</a>`
   links.addEventListener('click', (event) => {
-    const datasetButton = event.target.closest('[data-dataset]')
-    const viewButton = event.target.closest('[data-view]')
-    if (datasetButton) setView(datasetButton.dataset.dataset, ui.view, true)
-    if (viewButton) setView(ui.dataset, viewButton.dataset.view, true)
+    const button = event.target.closest('[data-dataset]')
+    if (!button) return
+    setView(button.dataset.dataset, 'overview', true)
   })
 }
 
-function canonicalHash(dataset = ui.dataset, view = ui.view) {
-  if (dataset === 'product') return view === 'overview' ? '#projects' : '#projects-list'
-  return view === 'overview' ? '#toolkit' : '#toolkit-list'
+function installHeroActions() {
+  const actions = $('.hero-actions')
+  if (!actions) return
+  actions.innerHTML = `
+    <button class="button primary" type="button" id="browse-current-dataset">浏览全部项目</button>
+    <button class="button secondary" type="button" id="download-current-dataset">下载项目 JSON</button>`
+  $('#browse-current-dataset')?.addEventListener('click', () => {
+    if (ui.dataset === 'product') {
+      clearProjectFilters()
+      setView('product', 'directory', true)
+    } else {
+      resetToolDirectory()
+      setView('tool', 'directory', true)
+    }
+  })
+  $('#download-current-dataset')?.addEventListener('click', downloadCurrentDataset)
+}
+
+async function downloadCurrentDataset() {
+  const type = ui.dataset === 'tool' ? 'tools' : 'products'
+  try {
+    const response = await fetch(`data/${type}.json`)
+    if (!response.ok) throw new Error(`HTTP ${response.status}`)
+    const payload = await response.json()
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const anchor = document.createElement('a')
+    anchor.href = url
+    anchor.download = `indiebase-cn-${type}.json`
+    anchor.click()
+    URL.revokeObjectURL(url)
+  } catch (error) {
+    console.error('Download failed:', error)
+  }
+}
+
+function canonicalHash(dataset = ui.dataset, mode = ui.mode) {
+  if (dataset === 'product') return mode === 'directory' ? '#projects-list' : '#projects'
+  return mode === 'directory' ? '#toolkit-list' : '#toolkit'
 }
 
 function routeFromHash(hash = location.hash) {
-  if (['#tools', '#toolkit-list'].includes(hash)) return ['tool', 'list']
-  if (['#tool-dashboard', '#toolkit'].includes(hash)) return ['tool', 'overview']
-  if (['#explore', '#projects-list'].includes(hash)) return ['product', 'list']
+  if (['#explore', '#projects-list'].includes(hash)) return ['product', 'directory']
   if (['#semantic-map', '#product-dashboard', '#product-github', '#projects'].includes(hash)) return ['product', 'overview']
+  if (['#tools', '#toolkit-list'].includes(hash)) return ['tool', 'directory']
+  if (['#tool-dashboard', '#toolkit'].includes(hash)) return ['tool', 'overview']
   return null
 }
 
@@ -101,17 +139,18 @@ function setHidden(node, hidden) {
 }
 
 function applySectionVisibility() {
-  const isProductOverview = ui.dataset === 'product' && ui.view === 'overview'
-  const isProductList = ui.dataset === 'product' && ui.view === 'list'
-  const isToolOverview = ui.dataset === 'tool' && ui.view === 'overview'
-  const isToolList = ui.dataset === 'tool' && ui.view === 'list'
-  setHidden($('.metrics'), !isProductOverview)
-  setHidden($('#semantic-map'), !isProductOverview)
-  setHidden($('#product-dashboard'), !isProductOverview)
-  setHidden($('#product-github'), !isProductOverview)
-  setHidden($('#project-list'), !isProductList)
-  setHidden($('#tool-dashboard'), !isToolOverview)
-  setHidden($('#tools'), !isToolList)
+  const productOverview = ui.dataset === 'product' && ui.mode === 'overview'
+  const productDirectory = ui.dataset === 'product' && ui.mode === 'directory'
+  const toolOverview = ui.dataset === 'tool' && ui.mode === 'overview'
+  const toolDirectory = ui.dataset === 'tool' && ui.mode === 'directory'
+
+  setHidden($('.metrics'), !productOverview)
+  setHidden($('#semantic-map'), !productOverview)
+  setHidden($('#product-dashboard'), !productOverview)
+  setHidden($('#product-github'), !productOverview)
+  setHidden($('#project-list'), !productDirectory)
+  setHidden($('#tool-dashboard'), !toolOverview)
+  setHidden($('#tools'), !toolDirectory)
   setHidden($('#explore'), true)
 }
 
@@ -121,14 +160,17 @@ function syncNavigation() {
     button.classList.toggle('is-active', active)
     button.setAttribute('aria-selected', String(active))
   })
-  $$('[data-view]').forEach((button) => {
-    const active = button.dataset.view === ui.view
-    button.classList.toggle('is-active', active)
-    button.setAttribute('aria-selected', String(active))
-    button.textContent = button.dataset.view === 'overview' ? '概览' : `${DATASET_LABELS[ui.dataset]}列表`
-  })
   document.body.dataset.dataset = ui.dataset
-  document.body.dataset.datasetView = ui.view
+  document.body.dataset.datasetMode = ui.mode
+}
+
+function syncHero() {
+  const label = DATASET_LABELS[ui.dataset]
+  const browse = $('#browse-current-dataset')
+  const download = $('#download-current-dataset')
+  if (browse) browse.textContent = `浏览全部${label}`
+  if (download) download.textContent = `下载${label} JSON`
+
   const coreLabel = $('.visual-core span')
   const coreSmall = $('.visual-core small')
   if (coreLabel) coreLabel.textContent = ui.dataset === 'product' ? 'PROJECTS' : 'TOOLS'
@@ -139,50 +181,25 @@ function syncNavigation() {
 function syncHeroTotal() {
   const target = $('#hero-total')
   const source = ui.dataset === 'product' ? $('#metric-products') : $('#metric-tools')
-  if (target && source && source.textContent.trim() && source.textContent.trim() !== '—' && target.textContent !== source.textContent) target.textContent = source.textContent
+  if (target && source && source.textContent.trim() && source.textContent.trim() !== '—') target.textContent = source.textContent
 }
 
-function setView(dataset, view, updateHash = false) {
+function activeSection() {
+  if (ui.dataset === 'product') return ui.mode === 'directory' ? $('#project-list') : $('#top')
+  return ui.mode === 'directory' ? $('#tools') : $('#top')
+}
+
+function setView(dataset, mode = 'overview', updateHash = false, scroll = true) {
   ui.dataset = dataset === 'tool' ? 'tool' : 'product'
-  ui.view = view === 'list' ? 'list' : 'overview'
+  ui.mode = mode === 'directory' ? 'directory' : 'overview'
   syncNavigation()
+  syncHero()
   applySectionVisibility()
   if (updateHash) history.replaceState(null, '', canonicalHash())
-  window.scrollTo({ top: 0, behavior: 'smooth' })
-}
-
-function removeLegacySemanticNav() {
-  const link = $('.top-links a[href="#semantic-map"]')
-  if (link) link.remove()
-}
-
-function prepareSemanticOverview() {
-  const section = $('#semantic-map')
-  if (!section) return
-  section.classList.add('semantic-overview-only')
-  for (const selector of ['.taxonomy-filter-panel', '.taxonomy-active-filters', '.taxonomy-results-heading', '.taxonomy-product-grid', '.load-more-wrap']) {
-    const node = $(selector, section)
-    if (node) node.hidden = true
+  if (scroll) {
+    const target = activeSection()
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
-  const direction = $('#taxonomy-primary-chart')
-  if (direction) direction.closest('.taxonomy-panel')?.classList.add('taxonomy-click-through')
-  removeLegacySemanticNav()
-  applySectionVisibility()
-}
-
-function relabelSourceCategoryChart() {
-  const donut = $('#category-donut')
-  const panel = donut?.closest('.chart-panel')
-  const heading = panel?.querySelector('.panel-heading')
-  const title = heading?.querySelector('h3')
-  const desc = heading?.querySelector('p')
-  if (title && title.textContent !== '来源类型') title.textContent = '来源类型'
-  const copy = '上游清单的来源类别，仅用于来源分析；产品语义分类见上方'
-  if (desc && desc.textContent !== copy) desc.textContent = copy
-}
-
-function optionValues(values, labeler = (value) => value) {
-  return values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(labeler(value))}</option>`).join('')
 }
 
 function insertProjectList() {
@@ -190,13 +207,14 @@ function insertProjectList() {
   const legacy = $('#explore')
   if (!legacy) return
   const section = document.createElement('section')
-  section.className = 'project-list-v2'
+  section.className = 'project-list-v2 directory-section'
   section.id = 'project-list'
   section.hidden = true
   section.innerHTML = `
     <div class="wrap">
+      <div class="directory-back-row"><button class="directory-back" type="button" data-back-overview="product">← 返回项目概览</button></div>
       <div class="section-heading project-list-heading">
-        <div><p class="eyebrow">PROJECT DIRECTORY</p><h2>项目列表</h2></div>
+        <div><p class="eyebrow">PROJECT DIRECTORY</p><h2>项目目录</h2></div>
         <p id="project-list-summary">正在读取产品数据…</p>
       </div>
       <div class="project-list-note"><strong>统一筛选口径</strong><span>主分类、子方向、用户群体、产品形态与产品特征来自语义 taxonomy；状态、年份、城市来自原始来源数据。</span></div>
@@ -219,25 +237,31 @@ function insertProjectList() {
   legacy.insertAdjacentElement('beforebegin', section)
 }
 
+function installToolBackControl() {
+  const section = $('#tools .wrap')
+  if (!section || $('.directory-back-row', section)) return
+  const row = document.createElement('div')
+  row.className = 'directory-back-row'
+  row.innerHTML = '<button class="directory-back" type="button" data-back-overview="tool">← 返回工具概览</button>'
+  section.prepend(row)
+}
+
+function optionValues(values, labeler = (value) => value) {
+  return values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(labeler(value))}</option>`).join('')
+}
+
 function buildProjectFilters() {
   const primary = $('#project-v2-primary')
-  const audience = $('#project-v2-audience')
-  const form = $('#project-v2-form')
-  const characteristic = $('#project-v2-characteristic')
-  const status = $('#project-v2-status')
-  const year = $('#project-v2-year')
-  const city = $('#project-v2-city')
   if (!primary || primary.dataset.ready) return
-
-  primary.insertAdjacentHTML('beforeend', optionValues((ui.taxonomy.primaryCategories || []).filter((item) => item.id !== 'other').map((item) => item.id), primaryLabel))
-  audience.insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.audience || [], (value) => AUDIENCE_LABELS[value] || value))
-  form.insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.productForm || [], (value) => FORM_LABELS[value] || value))
-  characteristic.insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.characteristics || [], (value) => CHARACTERISTIC_LABELS[value] || value))
-  status.insertAdjacentHTML('beforeend', optionValues(['active', 'developing', 'closed', 'acquired', 'unknown'], (value) => STATUS_LABELS[value]))
+  $('#project-v2-primary').insertAdjacentHTML('beforeend', optionValues((ui.taxonomy.primaryCategories || []).filter((item) => item.id !== 'other').map((item) => item.id), primaryLabel))
+  $('#project-v2-audience').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.audience || [], (value) => AUDIENCE_LABELS[value] || value))
+  $('#project-v2-form').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.productForm || [], (value) => FORM_LABELS[value] || value))
+  $('#project-v2-characteristic').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.characteristics || [], (value) => CHARACTERISTIC_LABELS[value] || value))
+  $('#project-v2-status').insertAdjacentHTML('beforeend', optionValues(['active', 'developing', 'closed', 'acquired', 'unknown'], (value) => STATUS_LABELS[value]))
   const years = [...new Set(ui.products.map((item) => item.year).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
   const cities = [...new Set(ui.products.map((item) => item.city).filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), 'zh-CN'))
-  year.insertAdjacentHTML('beforeend', optionValues(years))
-  city.insertAdjacentHTML('beforeend', optionValues(cities))
+  $('#project-v2-year').insertAdjacentHTML('beforeend', optionValues(years))
+  $('#project-v2-city').insertAdjacentHTML('beforeend', optionValues(cities))
   primary.dataset.ready = 'true'
   rebuildSubOptions()
 }
@@ -280,19 +304,6 @@ function renderProjectActiveFilters() {
   const target = $('#project-v2-active')
   if (!target) return
   target.innerHTML = Object.entries(ui.filters).filter(([, value]) => value).map(([key, value]) => `<button type="button" data-clear-project="${key}"><span>${labels[key]}</span>${escapeHtml(display(key, value))}<b>×</b></button>`).join('')
-  $$('[data-clear-project]', target).forEach((button) => button.addEventListener('click', () => {
-    const key = button.dataset.clearProject
-    ui.filters[key] = ''
-    const control = $(`#project-v2-${key === 'search' ? 'search' : key}`)
-    if (control) control.value = ''
-    if (key === 'primary') rebuildSubOptions()
-    applyProjectFilters()
-  }))
-}
-
-function githubMeta(record) {
-  const key = normalizeGithubRepository(record.productUrl)
-  return key ? ui.github[key] : null
 }
 
 function renderProjectCards() {
@@ -300,9 +311,9 @@ function renderProjectCards() {
   const summary = $('#project-list-summary')
   const more = $('#project-v2-more')
   if (!grid || !summary || !more) return
-  const visible = ui.filtered.slice(0, ui.visible)
-  summary.textContent = `找到 ${formatNumber(ui.filtered.length)} 个项目 · 当前显示 ${formatNumber(visible.length)} 个`
-  more.hidden = visible.length >= ui.filtered.length
+  const visible = ui.filteredProducts.slice(0, ui.visible)
+  summary.textContent = `找到 ${formatNumber(ui.filteredProducts.length)} 个项目 · 当前显示 ${formatNumber(visible.length)} 个`
+  more.hidden = visible.length >= ui.filteredProducts.length
   grid.innerHTML = visible.map((record) => {
     const semantic = semanticFor(record)
     const tags = [
@@ -325,10 +336,25 @@ function renderProjectCards() {
 }
 
 function applyProjectFilters() {
-  ui.filtered = ui.products.filter(matchesProject)
+  ui.filteredProducts = ui.products.filter(matchesProject)
   ui.visible = ui.pageSize
   renderProjectActiveFilters()
   renderProjectCards()
+}
+
+function syncProjectControls() {
+  const ids = { search: 'project-v2-search', primary: 'project-v2-primary', sub: 'project-v2-sub', audience: 'project-v2-audience', form: 'project-v2-form', characteristic: 'project-v2-characteristic', status: 'project-v2-status', year: 'project-v2-year', city: 'project-v2-city' }
+  rebuildSubOptions()
+  for (const [key, id] of Object.entries(ids)) {
+    const node = $(`#${id}`)
+    if (node) node.value = ui.filters[key] || ''
+  }
+}
+
+function clearProjectFilters() {
+  for (const key of Object.keys(ui.filters)) ui.filters[key] = ''
+  syncProjectControls()
+  applyProjectFilters()
 }
 
 function bindProjectFilters() {
@@ -347,26 +373,212 @@ function bindProjectFilters() {
     })
     node.dataset.bound = 'true'
   }
-  $('#project-v2-reset')?.addEventListener('click', () => {
-    for (const key of Object.keys(ui.filters)) ui.filters[key] = ''
-    for (const id of Object.keys(bindings)) { const node = $(`#${id}`); if (node) node.value = '' }
-    rebuildSubOptions()
+  $('#project-v2-reset')?.addEventListener('click', clearProjectFilters)
+  $('#project-v2-more')?.addEventListener('click', () => { ui.visible += ui.pageSize; renderProjectCards() })
+  $('#project-v2-active')?.addEventListener('click', (event) => {
+    const chip = event.target.closest('[data-clear-project]')
+    if (!chip) return
+    ui.filters[chip.dataset.clearProject] = ''
+    syncProjectControls()
     applyProjectFilters()
   })
-  $('#project-v2-more')?.addEventListener('click', () => { ui.visible += ui.pageSize; renderProjectCards() })
+}
+
+function openProjectDirectory({ primary = '', search = '' } = {}) {
+  for (const key of Object.keys(ui.filters)) ui.filters[key] = ''
+  ui.filters.primary = primary
+  ui.filters.search = search
+  syncProjectControls()
+  applyProjectFilters()
+  setView('product', 'directory', true)
+}
+
+function resetToolDirectory() {
+  $('#reset-tool-filters')?.click()
+}
+
+function openToolDirectory({ category = '', search = '' } = {}) {
+  resetToolDirectory()
+  const categorySelect = $('#tool-category-filter')
+  const searchInput = $('#tool-search')
+  if (categorySelect && category) {
+    categorySelect.value = category
+    categorySelect.dispatchEvent(new Event('change', { bubbles: true }))
+  }
+  if (searchInput && search) {
+    searchInput.value = search
+    searchInput.dispatchEvent(new Event('input', { bubbles: true }))
+  }
+  setView('tool', 'directory', true)
+}
+
+function productDirectionRecords(primary) {
+  return ui.products.filter((record) => semanticFor(record).primaryCategory === primary)
+}
+
+function productPreviewSort(a, b) {
+  const repoA = githubMeta(a)
+  const repoB = githubMeta(b)
+  const starsA = repoA?.status === 'available' ? Number(repoA.stars) || 0 : 0
+  const starsB = repoB?.status === 'available' ? Number(repoB.stars) || 0 : 0
+  if (starsA !== starsB) return starsB - starsA
+  const activeA = ['active', 'developing'].includes(a.status) ? 1 : 0
+  const activeB = ['active', 'developing'].includes(b.status) ? 1 : 0
+  if (activeA !== activeB) return activeB - activeA
+  return String(a.productName).localeCompare(String(b.productName), 'zh-CN')
+}
+
+function ensureProductDirectionExplorer() {
+  const section = $('#semantic-map')
+  const grid = $('.taxonomy-grid', section || document)
+  if (!section || !grid) return
+  section.classList.add('semantic-overview-only')
+  for (const selector of ['.taxonomy-filter-panel', '.taxonomy-active-filters', '.taxonomy-results-heading', '.taxonomy-product-grid', ':scope > .load-more-wrap']) {
+    const node = $(selector, section)
+    if (node) node.hidden = true
+  }
+  const legacyPrimary = $('#taxonomy-primary-chart')?.closest('.taxonomy-panel')
+  if (legacyPrimary) legacyPrimary.hidden = true
+  if ($('#product-direction-explorer')) return
+
+  const explorer = document.createElement('article')
+  explorer.id = 'product-direction-explorer'
+  explorer.className = 'chart-panel direction-explorer'
+  explorer.innerHTML = `
+    <div class="panel-heading direction-heading">
+      <div><h3>产品方向</h3><p>选择一个方向，右侧直接查看具体项目；只有需要完整检索时才进入项目目录</p></div>
+    </div>
+    <div class="direction-master-detail">
+      <div class="direction-master" id="product-direction-list"></div>
+      <aside class="direction-detail" id="product-direction-preview"></aside>
+    </div>`
+  grid.insertAdjacentElement('beforebegin', explorer)
+  explorer.addEventListener('click', (event) => {
+    const direction = event.target.closest('[data-product-direction]')
+    const viewAll = event.target.closest('[data-view-all-direction]')
+    if (direction) {
+      ui.primaryPreview = direction.dataset.productDirection
+      renderProductDirectionExplorer()
+    }
+    if (viewAll) openProjectDirectory({ primary: viewAll.dataset.viewAllDirection })
+  })
+  renderProductDirectionExplorer()
+}
+
+function renderProductDirectionExplorer() {
+  const list = $('#product-direction-list')
+  const preview = $('#product-direction-preview')
+  if (!list || !preview || !ui.products.length || !ui.taxonomy.primaryCategories) return
+
+  const groups = (ui.taxonomy.primaryCategories || [])
+    .filter((item) => item.id !== 'other')
+    .map((item) => [item.id, productDirectionRecords(item.id).length])
+    .filter(([, count]) => count)
+    .sort((a, b) => b[1] - a[1])
+
+  if (!groups.length) return
+  if (!groups.some(([id]) => id === ui.primaryPreview)) ui.primaryPreview = groups[0][0]
+  const max = Math.max(...groups.map(([, count]) => count), 1)
+
+  list.innerHTML = groups.map(([id, count]) => `
+    <button type="button" class="direction-row${id === ui.primaryPreview ? ' is-active' : ''}" data-product-direction="${escapeHtml(id)}" aria-pressed="${id === ui.primaryPreview}">
+      <span class="direction-row-label">${escapeHtml(primaryLabel(id))}</span>
+      <span class="direction-row-track"><span style="width:${count / max * 100}%"></span></span>
+      <strong>${formatNumber(count)}</strong>
+    </button>`).join('')
+
+  const records = productDirectionRecords(ui.primaryPreview).sort(productPreviewSort)
+  const visible = records.slice(0, 6)
+  preview.innerHTML = `
+    <div class="direction-detail-head">
+      <div><span>当前方向</span><h4>${escapeHtml(primaryLabel(ui.primaryPreview))}</h4></div>
+      <strong>${formatNumber(records.length)} 个项目</strong>
+    </div>
+    <div class="direction-preview-list">
+      ${visible.map((record) => {
+        const repository = githubMeta(record)
+        return `<a class="direction-preview-card" href="${escapeHtml(record.productUrl || '#')}" ${record.productUrl ? 'target="_blank" rel="noreferrer"' : 'aria-disabled="true"'}>
+          <span class="direction-preview-main"><strong>${escapeHtml(record.productName)}</strong><small>${escapeHtml(record.description || '暂无产品介绍')}</small></span>
+          <span class="direction-preview-meta">${escapeHtml(record.developerName || '未知开发者')}${repository?.status === 'available' ? ` · ★ ${formatNumber(repository.stars)}` : ''}</span>
+        </a>`
+      }).join('')}
+    </div>
+    <button class="direction-view-all" type="button" data-view-all-direction="${escapeHtml(ui.primaryPreview)}">查看全部 ${formatNumber(records.length)} 个项目 →</button>`
+}
+
+function toolCategoryRecords(category) {
+  return ui.tools.filter((tool) => (tool.category || '未分类') === category)
+}
+
+function ensureToolCategoryExplorer() {
+  const chart = $('#tool-category-chart')
+  const legacyPanel = chart?.closest('.chart-panel')
+  if (!chart || !legacyPanel || $('#tool-category-explorer')) return
+  legacyPanel.hidden = true
+  const explorer = document.createElement('article')
+  explorer.id = 'tool-category-explorer'
+  explorer.className = 'chart-panel direction-explorer tool-direction-explorer'
+  explorer.innerHTML = `
+    <div class="panel-heading direction-heading">
+      <div><h3>工具分类</h3><p>选择分类，直接查看对应工具；完整筛选放到工具目录</p></div>
+    </div>
+    <div class="direction-master-detail">
+      <div class="direction-master" id="tool-direction-list"></div>
+      <aside class="direction-detail" id="tool-direction-preview"></aside>
+    </div>`
+  legacyPanel.insertAdjacentElement('beforebegin', explorer)
+  explorer.addEventListener('click', (event) => {
+    const direction = event.target.closest('[data-tool-direction]')
+    const viewAll = event.target.closest('[data-view-all-tool-category]')
+    if (direction) {
+      ui.toolPreviewCategory = direction.dataset.toolDirection
+      renderToolCategoryExplorer()
+    }
+    if (viewAll) openToolDirectory({ category: viewAll.dataset.viewAllToolCategory })
+  })
+  renderToolCategoryExplorer()
+}
+
+function renderToolCategoryExplorer() {
+  const list = $('#tool-direction-list')
+  const preview = $('#tool-direction-preview')
+  if (!list || !preview || !ui.tools.length) return
+  const counts = new Map()
+  for (const tool of ui.tools) counts.set(tool.category || '未分类', (counts.get(tool.category || '未分类') || 0) + 1)
+  const groups = [...counts.entries()].sort((a, b) => b[1] - a[1])
+  if (!groups.length) return
+  if (!groups.some(([category]) => category === ui.toolPreviewCategory)) ui.toolPreviewCategory = groups[0][0]
+  const max = Math.max(...groups.map(([, count]) => count), 1)
+  list.innerHTML = groups.map(([category, count]) => `
+    <button type="button" class="direction-row${category === ui.toolPreviewCategory ? ' is-active' : ''}" data-tool-direction="${escapeHtml(category)}" aria-pressed="${category === ui.toolPreviewCategory}">
+      <span class="direction-row-label">${escapeHtml(category)}</span>
+      <span class="direction-row-track"><span style="width:${count / max * 100}%"></span></span>
+      <strong>${formatNumber(count)}</strong>
+    </button>`).join('')
+
+  const records = toolCategoryRecords(ui.toolPreviewCategory)
+  const visible = records.slice(0, 6)
+  preview.innerHTML = `
+    <div class="direction-detail-head">
+      <div><span>当前分类</span><h4>${escapeHtml(ui.toolPreviewCategory)}</h4></div>
+      <strong>${formatNumber(records.length)} 个工具</strong>
+    </div>
+    <div class="direction-preview-list">
+      ${visible.map((tool) => `<a class="direction-preview-card" href="${escapeHtml(tool.toolUrl || '#')}" ${tool.toolUrl ? 'target="_blank" rel="noreferrer"' : 'aria-disabled="true"'}>
+        <span class="direction-preview-main"><strong>${escapeHtml(tool.toolName)}</strong><small>${escapeHtml(tool.description || '暂无工具介绍')}</small></span>
+        <span class="direction-preview-meta">${escapeHtml(PRICING_LABELS[tool.pricing] || PRICING_LABELS.unknown)}</span>
+      </a>`).join('')}
+    </div>
+    <button class="direction-view-all" type="button" data-view-all-tool-category="${escapeHtml(ui.toolPreviewCategory)}">查看全部 ${formatNumber(records.length)} 个工具 →</button>`
 }
 
 function translateLegacySemanticLabels() {
   const section = $('#semantic-map')
   if (!section) return
-  const selectMaps = {
-    'taxonomy-audience': AUDIENCE_LABELS,
-    'taxonomy-form': FORM_LABELS,
-    'taxonomy-characteristic': CHARACTERISTIC_LABELS
-  }
+  const selectMaps = { 'taxonomy-audience': AUDIENCE_LABELS, 'taxonomy-form': FORM_LABELS, 'taxonomy-characteristic': CHARACTERISTIC_LABELS }
   for (const [id, map] of Object.entries(selectMaps)) {
     $$(`#${id} option`).forEach((option) => {
-      if (option.value && map[option.value] && option.textContent !== map[option.value]) option.textContent = map[option.value]
+      if (option.value && map[option.value]) option.textContent = map[option.value]
     })
   }
   $$('.taxonomy-bar-row[data-taxonomy-filter]', section).forEach((row) => {
@@ -374,47 +586,78 @@ function translateLegacySemanticLabels() {
     const value = row.dataset.taxonomyValue
     if (!value || !['audience', 'form', 'characteristic'].includes(key)) return
     const label = $('.taxonomy-bar-label', row)
-    const mapped = tagLabel(value)
-    if (label && label.textContent !== mapped) label.textContent = mapped
+    if (label) label.textContent = tagLabel(value)
   })
   $$('.taxonomy-capability strong, .taxonomy-tags span', section).forEach((node) => {
-    const mapped = tagLabel(node.textContent.trim())
-    if (mapped !== node.textContent.trim()) node.textContent = mapped
+    node.textContent = tagLabel(node.textContent.trim())
   })
 }
 
-function handleOverviewClick(event) {
-  const row = event.target.closest('#semantic-map [data-taxonomy-filter], #semantic-map [data-status-category]')
-  if (!row) return
-  const filter = row.dataset.taxonomyFilter
-  const value = row.dataset.taxonomyValue || row.dataset.statusCategory
-  if (!value) return
-  const keyMap = { primary: 'primary', sub: 'sub', audience: 'audience', form: 'form', characteristic: 'characteristic' }
-  const key = row.dataset.statusCategory ? 'primary' : keyMap[filter]
-  if (!key) return
-  ui.filters[key] = value
-  if (key === 'primary') rebuildSubOptions()
-  const control = $(`#project-v2-${key}`)
-  if (control) control.value = value
-  applyProjectFilters()
-  setView('product', 'list', true)
+function makeOverviewChartsReadOnly() {
+  const yearCopy = $('#year-chart')?.closest('.chart-panel')?.querySelector('.panel-heading p')
+  if (yearCopy) yearCopy.textContent = '悬停查看不同年份的收录详情'
+  const sourcePanel = $('#category-donut')?.closest('.chart-panel')
+  const sourceTitle = sourcePanel?.querySelector('h3')
+  const sourceCopy = sourcePanel?.querySelector('.panel-heading p')
+  if (sourceTitle) sourceTitle.textContent = '来源类型'
+  if (sourceCopy) sourceCopy.textContent = '上游清单的来源类别，仅用于来源结构参考'
 }
 
-async function loadProjectData() {
-  const [productsResponse, taxonomyResponse, semanticResponse, githubResponse] = await Promise.all([
-    fetch('data/products.json'), fetch('data/taxonomy.json'), fetch('data/product-taxonomy.json'), fetch('data/github-repositories.json')
+function bindInteractionGuards() {
+  const isLegacyOverviewFilter = (target) => target.closest('#product-dashboard [data-year], #product-dashboard [data-category], #product-dashboard [data-city], #product-dashboard [data-status], #semantic-map [data-taxonomy-filter], #semantic-map [data-status-category]')
+  document.addEventListener('click', (event) => {
+    if (!isLegacyOverviewFilter(event.target)) return
+    event.stopImmediatePropagation()
+    event.preventDefault()
+  }, true)
+  document.addEventListener('keydown', (event) => {
+    if (!['Enter', ' '].includes(event.key) || !isLegacyOverviewFilter(event.target)) return
+    event.stopImmediatePropagation()
+    event.preventDefault()
+  }, true)
+
+  document.addEventListener('click', (event) => {
+    const productRank = event.target.closest('#product-github-top [data-record-name]')
+    const toolRank = event.target.closest('#tool-github-top [data-record-name]')
+    if (!productRank && !toolRank) return
+    event.stopImmediatePropagation()
+    event.preventDefault()
+    if (productRank) openProjectDirectory({ search: productRank.dataset.recordName })
+    if (toolRank) openToolDirectory({ search: toolRank.dataset.recordName })
+  }, true)
+}
+
+function bindGlobalControls() {
+  document.addEventListener('click', (event) => {
+    const back = event.target.closest('[data-back-overview]')
+    if (back) setView(back.dataset.backOverview, 'overview', true)
+  })
+  window.addEventListener('hashchange', () => {
+    if (['#methodology', '#top'].includes(location.hash)) return
+    const route = routeFromHash()
+    if (route) setView(route[0], route[1], false)
+  })
+}
+
+async function loadData() {
+  const [productsResponse, toolsResponse, taxonomyResponse, semanticResponse, githubResponse] = await Promise.all([
+    fetch('data/products.json'), fetch('data/tools.json'), fetch('data/taxonomy.json'), fetch('data/product-taxonomy.json'), fetch('data/github-repositories.json')
   ])
-  if (!productsResponse.ok || !taxonomyResponse.ok || !semanticResponse.ok) throw new Error('项目列表数据加载失败')
-  const [products, taxonomy, semantic, github] = await Promise.all([
-    productsResponse.json(), taxonomyResponse.json(), semanticResponse.json(), githubResponse.ok ? githubResponse.json() : Promise.resolve({})
+  if (!productsResponse.ok || !toolsResponse.ok || !taxonomyResponse.ok || !semanticResponse.ok) throw new Error('交互数据加载失败')
+  const [products, tools, taxonomy, semantic, github] = await Promise.all([
+    productsResponse.json(), toolsResponse.json(), taxonomyResponse.json(), semanticResponse.json(), githubResponse.ok ? githubResponse.json() : Promise.resolve({})
   ])
   ui.products = products.records || []
+  ui.tools = tools.records || []
   ui.taxonomy = taxonomy
   ui.semanticById = new Map((semantic.records || []).map((item) => [item.productId, item]))
   ui.github = github.repositories || {}
+  ui.filteredProducts = ui.products
   buildProjectFilters()
   bindProjectFilters()
   applyProjectFilters()
+  ensureProductDirectionExplorer()
+  ensureToolCategoryExplorer()
 }
 
 function observeDynamicUi() {
@@ -424,44 +667,51 @@ function observeDynamicUi() {
     scheduled = true
     queueMicrotask(() => {
       scheduled = false
-      prepareSemanticOverview()
+      installToolBackControl()
+      ensureProductDirectionExplorer()
+      ensureToolCategoryExplorer()
       translateLegacySemanticLabels()
-      relabelSourceCategoryChart()
-      syncHeroTotal()
+      makeOverviewChartsReadOnly()
+      syncHero()
+      applySectionVisibility()
     })
   })
   observer.observe(document.body, { childList: true, subtree: true, characterData: true })
 }
 
-function bindHashRouting() {
-  window.addEventListener('hashchange', () => {
-    if (location.hash === '#methodology' || location.hash === '#top') return
-    const route = routeFromHash()
-    if (route) setView(route[0], route[1], false)
-  })
-}
-
 async function init() {
   document.body.classList.add('dataset-tabs-active')
   installNavigation()
+  installHeroActions()
   insertProjectList()
-  prepareSemanticOverview()
-  relabelSourceCategoryChart()
-  observeDynamicUi()
-  bindHashRouting()
-  document.addEventListener('click', handleOverviewClick)
+  installToolBackControl()
+  bindInteractionGuards()
+  bindGlobalControls()
+
   const route = routeFromHash()
-  if (route) [ui.dataset, ui.view] = route
+  if (route) [ui.dataset, ui.mode] = route
   syncNavigation()
+  syncHero()
   applySectionVisibility()
-  try { await loadProjectData() } catch (error) {
+
+  try {
+    await loadData()
+  } catch (error) {
     console.error(error)
     const grid = $('#project-v2-grid')
-    if (grid) grid.innerHTML = `<div class="project-list-empty"><strong>项目列表加载失败</strong><p>${escapeHtml(error.message)}</p></div>`
+    if (grid) grid.innerHTML = `<div class="project-list-empty"><strong>项目目录加载失败</strong><p>${escapeHtml(error.message)}</p></div>`
   }
-  prepareSemanticOverview()
+
+  ensureProductDirectionExplorer()
+  ensureToolCategoryExplorer()
   translateLegacySemanticLabels()
+  makeOverviewChartsReadOnly()
+  observeDynamicUi()
   applySectionVisibility()
+
+  if (ui.mode === 'directory') {
+    requestAnimationFrame(() => activeSection()?.scrollIntoView({ behavior: 'auto', block: 'start' }))
+  }
 }
 
 init()
