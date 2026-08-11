@@ -20,6 +20,8 @@ jobs:
           node-version: 22
       - name: Sync upstream records
         run: npm run sync:data
+      - name: Build semantic taxonomy
+        run: npm run sync:taxonomy
       - name: Enrich direct GitHub repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -32,19 +34,21 @@ jobs:
         with:
           branch: automation/upstream-data-sync
           delete-branch: true
-          commit-message: 'data: sync independent developer products and GitHub metadata'
-          title: 'data: sync independent developer products and GitHub metadata'
+          commit-message: 'data: sync independent developer products, taxonomy and GitHub metadata'
+          title: 'data: sync independent developer products, taxonomy and GitHub metadata'
           body: |
-            Automated refresh of the product, tool and GitHub enrichment datasets.
+            Automated refresh of the product, taxonomy, tool and GitHub enrichment datasets.
 
             - Rebuilt `data/products.json` and `data/tools.json`
             - Rebuilt `data/quality-report.json`
+            - Rebuilt `data/product-taxonomy.json` from taxonomy v1
             - Refreshed `data/github-repositories.json`
             - Appended compact weekly snapshots to `data/github-history.json`
-            - Ran parser tests, data validation and static build
+            - Ran parser/taxonomy tests, data validation and static build
           add-paths: |
             data/products.json
             data/tools.json
             data/quality-report.json
+            data/product-taxonomy.json
             data/github-repositories.json
             data/github-history.json

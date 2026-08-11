@@ -1,0 +1,46 @@
+{
+  "version": "1.0",
+  "primaryCategories": [
+    {"id":"developer-tools","label":"开发工具","description":"编程、开发流程、API、DevOps、数据库、测试与工程效率"},
+    {"id":"ai-productivity","label":"AI 与效率","description":"通用 AI 助手、写作、翻译、搜索、自动化与个人效率"},
+    {"id":"business-marketing","label":"商业与营销","description":"销售、CRM、客户支持、营销、SEO、运营与办公协作"},
+    {"id":"design-creative","label":"设计与创意","description":"设计、图像、视频创作、原型、素材与创意工作流"},
+    {"id":"content-knowledge","label":"内容与知识","description":"笔记、知识库、阅读、博客、写作、文档与信息管理"},
+    {"id":"data-analytics","label":"数据与分析","description":"BI、数据分析、可视化、指标、采集与数据处理"},
+    {"id":"education","label":"教育与学习","description":"课程、学习、考试、语言、题库与训练工具"},
+    {"id":"finance","label":"金融与财务","description":"记账、预算、投资、交易、支付与财务管理"},
+    {"id":"ecommerce","label":"电商与交易","description":"商店、商品、订单、支付、交易平台与商家工具"},
+    {"id":"social-community","label":"社交与社区","description":"社交、聊天、社区、论坛、兴趣连接与用户互动"},
+    {"id":"lifestyle-health","label":"生活与健康","description":"健康、运动、习惯、旅行、饮食、家庭与日常生活"},
+    {"id":"media-entertainment","label":"媒体与娱乐","description":"音乐、音频、播客、影视、播放器与娱乐内容"},
+    {"id":"infrastructure-security","label":"基础设施与安全","description":"服务器、网络、云、监控、安全、隐私与运维基础设施"},
+    {"id":"utilities","label":"工具与实用","description":"文件、系统、下载、转换、计时、计算、截图等通用实用工具"},
+    {"id":"games","label":"游戏","description":"独立游戏与游戏相关产品"},
+    {"id":"other","label":"其他 / 待分类","description":"当前语义证据不足，保留为待后续细分的产品"}
+  ],
+  "subCategories": {
+    "developer-tools": ["AI 编程","DevOps","API 工具","数据库工具","测试与调试","IDE 与编辑器","终端与 SSH","部署","开发者效率","代码与版本管理"],
+    "ai-productivity": ["AI 助手","写作","翻译","搜索","会议","自动化","个人效率","Prompt 工具"],
+    "business-marketing": ["CRM","营销","SEO","销售","客户支持","反馈","项目协作","办公效率","招聘"],
+    "design-creative": ["图像创作","视频创作","设计工具","原型","素材管理","摄影"],
+    "content-knowledge": ["笔记","知识库","阅读","博客","文档","书签","RSS","内容创作"],
+    "data-analytics": ["数据分析","BI 与仪表盘","数据可视化","数据采集","ETL 与处理","监控指标"],
+    "education": ["语言学习","考试题库","课程","记忆训练","儿童教育","技能学习"],
+    "finance": ["记账与预算","投资","交易","支付","发票与财务","加密资产"],
+    "ecommerce": ["在线商店","商品与订单","商家工具","二手交易","支付结算"],
+    "social-community": ["社区","聊天","论坛","社交网络","约会","用户互动"],
+    "lifestyle-health": ["健康","健身","习惯","旅行","饮食","家庭","天气","日程生活"],
+    "media-entertainment": ["音乐","播客","视频","影视","播放器","媒体服务"],
+    "infrastructure-security": ["云与服务器","网络","安全","认证与权限","监控","代理与 VPN","存储与备份"],
+    "utilities": ["文件工具","系统工具","转换工具","计时与计算","截图与二维码","设备工具"],
+    "games": ["游戏"],
+    "other": ["其他"]
+  },
+  "tags": {
+    "audience": ["developer","creator","designer","marketer","student","team","enterprise","consumer","merchant","sysadmin"],
+    "platform": ["web","ios","android","macos","windows","linux","browser","wechat","vscode"],
+    "productForm": ["saas","desktop-app","mobile-app","browser-extension","cli","api","sdk","plugin","self-hosted","bot","web-app"],
+    "characteristics": ["open-source","self-hosted","local-first","privacy-focused","offline","no-code","ai-native"],
+    "capabilities": ["ai","agent","automation","collaboration","analytics","search","workflow","ssh","sftp","docker","kubernetes","translation","ocr","writing","image-generation","video","note-taking","monitoring","database","api","testing","deployment","music","audio","podcast","sharing","media-server","crm","seo","feedback","payments","finance","education","security","vpn","proxy","backup","sync","markdown","rss","bookmark","email","calendar","task-management","prompt-management","chat-management","code-generation"]
+  }
+}
