@@ -1,0 +1,42 @@
+.taxonomy-section { padding-top: 28px; padding-bottom: 72px; }
+.taxonomy-heading { margin-bottom: 20px; }
+.taxonomy-kpis { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:18px 0 20px; }
+.taxonomy-kpis article { background:var(--panel,#13201c); border:1px solid rgba(255,255,255,.1); border-radius:16px; padding:16px 18px; }
+.taxonomy-kpis span,.taxonomy-kpis small { display:block; color:var(--muted,#8fa29a); }
+.taxonomy-kpis strong { display:block; margin:5px 0; font-size:28px; }
+.taxonomy-filter-panel { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)) auto; gap:10px; align-items:end; padding:14px; border:1px solid rgba(255,255,255,.09); border-radius:16px; background:rgba(255,255,255,.025); }
+.taxonomy-filter-panel label span { display:block; margin:0 0 6px; color:var(--muted,#8fa29a); font-size:12px; }
+.taxonomy-filter-panel select { width:100%; min-height:42px; border-radius:10px; }
+.taxonomy-active-filters { min-height:36px; display:flex; flex-wrap:wrap; gap:8px; padding:10px 0; }
+.taxonomy-active-filters button { border:1px solid rgba(185,242,74,.25); background:rgba(185,242,74,.08); color:inherit; border-radius:999px; padding:6px 10px; cursor:pointer; }
+.taxonomy-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+.taxonomy-panel.wide { grid-column:1 / -1; }
+.taxonomy-bars { display:grid; gap:8px; }
+.taxonomy-bar-row { width:100%; display:grid; grid-template-columns:minmax(110px,200px) minmax(100px,1fr) 86px; gap:10px; align-items:center; border:0; background:transparent; color:inherit; text-align:left; padding:7px 0; cursor:pointer; }
+.taxonomy-bar-row:hover,.taxonomy-bar-row.is-active { color:#b9f24a; }
+.taxonomy-bar-label { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.taxonomy-bar-track { height:9px; background:rgba(255,255,255,.08); border-radius:999px; overflow:hidden; }
+.taxonomy-bar-fill { display:block; height:100%; background:linear-gradient(90deg,#59dcc4,#b9f24a); border-radius:inherit; }
+.taxonomy-bar-row strong { text-align:right; font-variant-numeric:tabular-nums; }
+.taxonomy-bar-row small { color:var(--muted,#8fa29a); font-weight:400; }
+.taxonomy-tag-cloud { display:flex; flex-wrap:wrap; gap:9px; }
+.taxonomy-capability { display:flex; gap:7px; align-items:center; padding:7px 10px; border:1px solid rgba(255,255,255,.1); border-radius:999px; background:rgba(255,255,255,.035); }
+.taxonomy-capability small { color:var(--muted,#8fa29a); }
+.taxonomy-results-heading { display:flex; justify-content:space-between; gap:16px; align-items:end; margin:28px 0 14px; }
+.taxonomy-results-heading h3,.taxonomy-results-heading p { margin:0; }
+.taxonomy-results-heading span { color:var(--muted,#8fa29a); font-size:12px; }
+.taxonomy-product-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.taxonomy-product-card { min-width:0; border:1px solid rgba(255,255,255,.09); background:rgba(255,255,255,.025); border-radius:16px; padding:16px; }
+.taxonomy-product-top,.taxonomy-product-meta { display:flex; justify-content:space-between; gap:8px; align-items:center; }
+.taxonomy-category-pill { color:#b9f24a; font-size:12px; font-weight:700; }
+.taxonomy-confidence { font-size:12px; color:#59dcc4; }
+.taxonomy-confidence.low,.taxonomy-product-meta strong { color:#ffb35c; }
+.taxonomy-product-card h4 { margin:10px 0 7px; font-size:18px; }
+.taxonomy-product-card h4 a { color:inherit; text-decoration:none; }
+.taxonomy-product-card p { min-height:3.2em; color:var(--muted,#8fa29a); font-size:13px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.taxonomy-tags { display:flex; flex-wrap:wrap; gap:6px; margin:12px 0; }
+.taxonomy-tags span { border-radius:999px; padding:4px 7px; background:rgba(89,220,196,.08); border:1px solid rgba(89,220,196,.15); font-size:11px; }
+.taxonomy-product-meta { padding-top:10px; border-top:1px solid rgba(255,255,255,.07); color:var(--muted,#8fa29a); font-size:11px; }
+.taxonomy-error { margin:24px 0; padding:24px; border:1px solid rgba(255,179,92,.3); border-radius:16px; }
+@media (max-width:980px) { .taxonomy-kpis { grid-template-columns:repeat(2,1fr); } .taxonomy-filter-panel { grid-template-columns:repeat(2,1fr); } .taxonomy-product-grid { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:640px) { .taxonomy-kpis,.taxonomy-filter-panel,.taxonomy-grid,.taxonomy-product-grid { grid-template-columns:1fr; } .taxonomy-panel.wide { grid-column:auto; } .taxonomy-bar-row { grid-template-columns:110px 1fr 70px; } .taxonomy-results-heading { align-items:flex-start; flex-direction:column; } }
