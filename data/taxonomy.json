@@ -14,8 +14,9 @@
     {"id":"lifestyle-health","label":"生活与健康","description":"健康、运动、习惯、旅行、饮食、家庭与日常生活"},
     {"id":"media-entertainment","label":"媒体与娱乐","description":"音乐、音频、播客、影视、播放器与娱乐内容"},
     {"id":"infrastructure-security","label":"基础设施与安全","description":"服务器、网络、云、监控、安全、隐私与运维基础设施"},
+    {"id":"utilities","label":"工具与实用","description":"文件、系统、下载、转换、计时、计算、截图等通用实用工具"},
     {"id":"games","label":"游戏","description":"独立游戏与游戏相关产品"},
-    {"id":"other","label":"其他","description":"暂未稳定归入现有语义分类的产品"}
+    {"id":"other","label":"其他 / 待分类","description":"当前语义证据不足，保留为待后续细分的产品"}
   ],
   "subCategories": {
     "developer-tools": ["AI 编程","DevOps","API 工具","数据库工具","测试与调试","IDE 与编辑器","终端与 SSH","部署","开发者效率","代码与版本管理"],
@@ -31,6 +32,7 @@
     "lifestyle-health": ["健康","健身","习惯","旅行","饮食","家庭","天气","日程生活"],
     "media-entertainment": ["音乐","播客","视频","影视","播放器","媒体服务"],
     "infrastructure-security": ["云与服务器","网络","安全","认证与权限","监控","代理与 VPN","存储与备份"],
+    "utilities": ["文件工具","系统工具","转换工具","计时与计算","截图与二维码","设备工具"],
     "games": ["游戏"],
     "other": ["其他"]
   },
