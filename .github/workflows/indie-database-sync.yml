@@ -18,15 +18,11 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-      - name: Sync upstream records
-        run: npm run sync:data
-      - name: Build semantic taxonomy
-        run: npm run sync:taxonomy
-      - name: Enrich direct GitHub repositories
+      - name: Refresh data pipeline
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_SYNC_CONCURRENCY: 4
-        run: npm run sync:github
+        run: npm run refresh:data
       - name: Verify generated database
         run: npm run verify
       - name: Create data update pull request
@@ -49,6 +45,8 @@ jobs:
             data/products.json
             data/tools.json
             data/quality-report.json
+            data/weekly-changes.json
             data/product-taxonomy.json
+            data/taxonomy-overrides.json
             data/github-repositories.json
             data/github-history.json

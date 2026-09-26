@@ -1016,5 +1016,53 @@
       "toolName": "toprank"
     }
   ],
-  "separationRule": "Products and tools are separate datasets. Cross-dataset overlaps are reported but never merged."
+  "separationRule": "Products and tools are separate datasets. Cross-dataset overlaps are reported but never merged.",
+  "sourceHealth": [
+    {
+      "repository": "1c7/chinese-independent-developer",
+      "sourceFile": "README.md",
+      "url": "https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/README.md",
+      "status": "ok",
+      "required": true
+    },
+    {
+      "repository": "1c7/chinese-independent-developer",
+      "sourceFile": ".github/pages/README-Programmer-Edition.md",
+      "url": "https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Programmer-Edition.md",
+      "status": "ok",
+      "required": true
+    },
+    {
+      "repository": "1c7/chinese-independent-developer",
+      "sourceFile": ".github/pages/README-Game.md",
+      "url": "https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Game.md",
+      "status": "ok",
+      "required": true
+    },
+    {
+      "repository": "1c7/chinese-independent-developer",
+      "sourceFile": ".github/pages/README-Archive.md",
+      "url": "https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Archive.md",
+      "status": "ok",
+      "required": false
+    },
+    {
+      "repository": "XiaomingX/1000-chinese-independent-developer-plus",
+      "sourceFile": "README.md",
+      "url": "https://raw.githubusercontent.com/XiaomingX/1000-chinese-independent-developer-plus/main/README.md",
+      "status": "ok",
+      "required": true
+    },
+    {
+      "repository": "yaolifeng0629/Awesome-independent-tools",
+      "sourceFile": "README.md",
+      "url": "https://raw.githubusercontent.com/yaolifeng0629/Awesome-independent-tools/main/README.md",
+      "status": "ok",
+      "required": true
+    }
+  ],
+  "safety": {
+    "maxDatasetShrinkRatio": 0.15,
+    "overrideEnv": "ALLOW_DATASET_SHRINK=1"
+  }
 }

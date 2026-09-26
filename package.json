@@ -1,6 +1,6 @@
 {
   "name": "chinese-indie-developer-database",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,9 +10,12 @@
     "build": "node scripts/build.mjs",
     "check:data": "node scripts/check-data.mjs",
     "check:taxonomy": "node scripts/check-taxonomy.mjs",
-    "check:js": "node --check src/app.js && node --check src/separated-insights.js && node --check src/taxonomy-insights.js && node --check src/overview-interactions.js && node --check src/dataset-tabs.js",
+    "check:js": "node --check src/app.js && node --check src/separated-insights.js && node --check src/taxonomy-insights.js && node --check src/overview-interactions.js && node --check src/dataset-tabs.js && node --check src/pulse.js && node --check src/trend-utils.js",
     "test": "node --test tests/*.test.mjs",
-    "verify": "npm run test && npm run check:js && npm run sync:taxonomy && npm run check:data && npm run check:taxonomy && npm run build"
+    "verify": "npm run test && npm run check:js && npm run sync:taxonomy && npm run check:data && npm run check:taxonomy && npm run build",
+    "taxonomy:doctor": "node scripts/taxonomy-maintenance.mjs",
+    "taxonomy:prune": "node scripts/taxonomy-maintenance.mjs --prune",
+    "refresh:data": "npm run sync:data && npm run taxonomy:prune && npm run sync:taxonomy && npm run sync:github"
   },
   "engines": {
     "node": ">=20"
