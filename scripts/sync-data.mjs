@@ -18,20 +18,20 @@ const PRODUCT_REMOTE_SOURCES = [
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-Programmer-Edition.md', category: 'developer-tool', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-Programmer-Edition.md'
+    ref: 'master', sourceFile: '.github/pages/README-Programmer-Edition.md', category: 'developer-tool', parser: 'markdown',
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Programmer-Edition.md'
   },
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-Game.md', category: 'game', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-Game.md'
+    ref: 'master', sourceFile: '.github/pages/README-Game.md', category: 'game', parser: 'markdown',
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Game.md'
   },
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-2018-2020.md', category: 'archive', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-2018-2020.md'
+    ref: 'master', sourceFile: '.github/pages/README-2018-2020.md', category: 'archive', parser: 'markdown',
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-2018-2020.md'
   },
   {
     repository: 'XiaomingX/1000-chinese-independent-developer-plus',
