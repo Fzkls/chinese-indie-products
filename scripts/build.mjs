@@ -4,10 +4,10 @@ await rm('dist', { recursive: true, force: true })
 await mkdir('dist/data', { recursive: true })
 await mkdir('dist/src', { recursive: true })
 await cp('index.html', 'dist/index.html')
-for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'overview-interactions.js', 'overview-interactions.css', 'dataset-tabs.js', 'dataset-tabs.css']) {
+for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'overview-interactions.js', 'overview-interactions.css', 'dataset-tabs.js', 'dataset-tabs.css', 'pulse.js', 'pulse.css', 'trend-utils.js']) {
   await cp(`src/${filename}`, `dist/src/${filename}`)
 }
-for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json', 'taxonomy.json', 'product-taxonomy.json']) {
+for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json', 'weekly-changes.json', 'taxonomy.json', 'product-taxonomy.json']) {
   await cp(`data/${filename}`, `dist/data/${filename}`)
 }
 
@@ -27,6 +27,7 @@ if (!index.includes('src/overview-interactions.js')) {
 if (!index.includes('src/dataset-tabs.js')) {
   index = index.replace('</body>', '    <script type="module" src="src/dataset-tabs.js"></script>\n  </body>')
 }
+if (!index.includes('src/pulse.js') || !index.includes('src/pulse.css')) throw new Error('dist/index.html must load weekly pulse assets')
 if (!index.includes('data-download-products-compat')) {
   index = index.replace('</body>', '    <button id="download-products" type="button" hidden aria-hidden="true" tabindex="-1" data-download-products-compat></button>\n  </body>')
 }
