@@ -194,7 +194,8 @@ export function parseMarkdown(text, options = {}) {
     const [, , productNameRaw, productUrlRaw, descriptionRaw] = productMatch
     const productName = stripMarkdown(productNameRaw)
     const productUrl = normalizeUrl(productUrlRaw)
-    if (productUrl && options.repositoryUrl && productUrl.startsWith(`${options.repositoryUrl}/blob/`) && /\.md(?:$|[?#])/i.test(productUrl)) {
+    const relativeMarkdownLink = !/^https?:\/\//i.test(productUrlRaw.trim()) && /\.md(?:$|[?#])/i.test(productUrlRaw.trim())
+    if (relativeMarkdownLink || (productUrl && options.repositoryUrl && productUrl.startsWith(`${options.repositoryUrl}/blob/`) && /\.md(?:$|[?#])/i.test(productUrl))) {
       warnings.push({ code: 'internal-source-document', repository: options.repository, sourceFile, sourceLine: index + 1, rawText: rawLine })
       continue
     }
