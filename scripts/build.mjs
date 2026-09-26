@@ -38,6 +38,10 @@ const app = await readFile('dist/src/app.js', 'utf8')
 for (const dataset of ['products.json', 'tools.json', 'github-repositories.json', 'github-history.json']) {
   if (!app.includes(`data/${dataset}`)) throw new Error(`app.js must reference data/${dataset}`)
 }
+const pulse = await readFile('dist/src/pulse.js', 'utf8')
+for (const dataset of ['weekly-changes.json', 'github-repositories.json', 'github-history.json']) {
+  if (!pulse.includes(`data/${dataset}`)) throw new Error(`pulse.js must reference data/${dataset}`)
+}
 const taxonomyApp = await readFile('dist/src/taxonomy-insights.js', 'utf8')
 for (const dataset of ['taxonomy.json', 'product-taxonomy.json']) {
   if (!taxonomyApp.includes(`data/${dataset}`)) throw new Error(`taxonomy-insights.js must reference data/${dataset}`)
