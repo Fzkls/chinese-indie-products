@@ -38,7 +38,7 @@ IndieBase CN 不是简单复制一份项目名单，而是把分散在不同仓�
    - `README.md`
    - `.github/pages/README-Programmer-Edition.md`
    - `.github/pages/README-Game.md`
-   - `pages/README-2018-2020.md`（上游已移除；保留最后一次成功同步的结构化历史快照）
+   - `.github/pages/README-Archive.md`（2018–2024 历史项目归档；若未来再次移除，会保留最后一次成功结构化快照）
 2. [`XiaomingX/1000-chinese-independent-developer-plus`](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)
    - `README.md` 中的精品项目表格
 
@@ -108,8 +108,10 @@ sources[1] -> XiaomingX/1000-chinese-independent-developer-plus
 ### 独立产品区
 
 - 搜索产品、开发者、描述、城市和来源仓库
-- 按产品类型、运行状态、年份和城市组合筛选
+- 按产品类型、运行状态、GitHub 活跃度、年份和城市组合筛选
 - 展示年度趋势、产品类型、城市分布和运行状态
+- 展示相对上一份成功快照的新增、移除和信息变化
+- 基于 GitHub 周快照展示 Star 增长与项目生命周期
 - 展开查看每条记录的准确来源
 - 下载独立产品 JSON
 
@@ -159,9 +161,9 @@ sources[1] -> XiaomingX/1000-chinese-independent-developer-plus
 - 手动运行 `workflow_dispatch`
 - **每周一 10:17（北京时间）自动同步**
 
-每周任务会下载全部上游数据源，分别解析产品和工具，在各自数据集内部去重，生成数据文件和质量报告，运行测试与校验，将新数据快照提交到 `main`，然后发布到 `gh-pages`。
+每周任务通过统一的 `npm run refresh:data` 管线下载上游数据、清理失效 taxonomy override、重建分类、刷新 GitHub 元数据，再运行测试与构建。成功后会将新快照提交到 `main` 并发布到 `gh-pages`。
 
-对于上游已删除的 2018–2020 静态归档，工作流会保留仓库中最后一次成功同步的结构化快照，避免历史数据静默丢失；其他远程数据源读取失败仍会让同步失败。
+同步管线会对临时网络/5xx/429 错误自动重试；必需数据源失败会直接阻止发布。历史归档允许在上游文件消失时保留最后一次成功结构化快照。若产品或工具记录数相对上一份成功快照异常下降超过 15%，同步也会停止，避免上游目录变化造成静默丢数。质量报告同时记录每个来源的健康状态。
 
 ## 本地运行
 
@@ -187,9 +189,12 @@ python3 -m http.server 4173 -d dist
 
 | 命令 | 作用 |
 | --- | --- |
-| `npm run sync:data` | 同步三个上游仓库并生成两套数据集 |
+| `npm run sync:data` | 同步三个上游仓库并生成两套数据集与周变化快照 |
 | `npm run sync:data -- --fixtures` | 使用本地 fixture 生成离线预览数据 |
-| `npm test` | 运行解析、去重、数据分离和来源保留测试 |
+| `npm run refresh:data` | 统一执行数据同步、taxonomy 清理/重建与 GitHub 刷新 |
+| `npm run taxonomy:doctor` | 检查 stale taxonomy override |
+| `npm run taxonomy:prune` | 清理当前产品集中已不存在的 taxonomy override |
+| `npm test` | 运行解析、去重、趋势与数据分离测试 |
 | `npm run check:data` | 检查字段、ID、URL、来源和数据集边界 |
 | `npm run build` | 构建纯静态站点到 `dist/` |
 | `npm run verify` | 依次执行测试、数据检查和构建 |
@@ -237,7 +242,11 @@ interface ToolRecord {
 
 ### `data/quality-report.json`
 
-包含产品和工具的记录数量、分类与状态统计、缺失字段、解析警告、数据集内部重复记录、产品与工具之间的 URL 重叠，以及数据集分离规则。
+包含产品和工具的记录数量、分类与状态统计、缺失字段、解析警告、来源健康状态、数据集内部重复记录、产品与工具之间的 URL 重叠，以及数据集分离规则。
+
+### `data/weekly-changes.json`
+
+记录当前快照相对上一份成功快照的新增、移除和字段变化；首页“本周变化与项目趋势”直接消费该文件。
 
 ## 项目结构
 
