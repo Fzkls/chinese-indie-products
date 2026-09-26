@@ -4,6 +4,7 @@ import { canonicalizeUrl } from './lib/parser.mjs'
 const productsPayload = JSON.parse(await readFile('data/products.json', 'utf8'))
 const toolsPayload = JSON.parse(await readFile('data/tools.json', 'utf8'))
 const quality = JSON.parse(await readFile('data/quality-report.json', 'utf8'))
+const weeklyChanges = JSON.parse(await readFile('data/weekly-changes.json', 'utf8'))
 const errors = []
 
 function validateSources(record, label) {
@@ -55,6 +56,16 @@ const toolCount = validateDataset(toolsPayload, {
 if (quality.products?.recordCount !== productsPayload.records.length) errors.push('quality products recordCount mismatch')
 if (quality.tools?.recordCount !== toolsPayload.records.length) errors.push('quality tools recordCount mismatch')
 if (quality.separationRule !== 'Products and tools are separate datasets. Cross-dataset overlaps are reported but never merged.') errors.push('missing dataset separation rule')
+if (!Array.isArray(quality.sourceHealth) || quality.sourceHealth.length === 0) {
+  errors.push('missing source health report')
+} else {
+  for (const source of quality.sourceHealth) {
+    if (source.status === 'failed') errors.push('required source failed: ' + source.repository + '/' + source.sourceFile)
+  }
+}
+if (weeklyChanges.products?.currentCount !== productsPayload.records.length) errors.push('weekly changes products currentCount mismatch')
+if (weeklyChanges.tools?.currentCount !== toolsPayload.records.length) errors.push('weekly changes tools currentCount mismatch')
+if (!['since-previous-snapshot', 'initial-snapshot'].includes(weeklyChanges.mode)) errors.push('weekly changes mode invalid')
 
 if (errors.length) {
   console.error(errors.join('\n'))
