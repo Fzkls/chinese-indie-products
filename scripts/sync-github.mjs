@@ -169,7 +169,14 @@ function updateHistory(previousHistory, repositories, date) {
   for (const repository of repositories) {
     if (repository.status !== 'available') continue
     const snapshots = [...(history[repository.key] || [])]
-    const snapshot = { date, stars: repository.stars, forks: repository.forks }
+    const snapshot = {
+      date,
+      stars: repository.stars,
+      forks: repository.forks,
+      pushedAt: repository.pushedAt || null,
+      archived: Boolean(repository.archived),
+      activity: repository.activity || classifyRepositoryActivity(repository)
+    }
     const sameDateIndex = snapshots.findIndex((item) => item.date === date)
     if (sameDateIndex >= 0) snapshots[sameDateIndex] = snapshot
     else snapshots.push(snapshot)
