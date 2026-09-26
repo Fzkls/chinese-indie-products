@@ -681,7 +681,7 @@ async function init() {
     renderTools()
     renderGithubInsights()
 
-    const mode = productState.metadata.snapshotMode === 'full-upstream' ? '完整上游快照' : '示例快照'
+    const mode = String(productState.metadata.snapshotMode || '').startsWith('full-upstream') ? '完整上游快照' : '示例快照'
     const githubCount = githubState.metadata.availableRepositories || availableRepositories([...productState.all, ...toolState.all]).length
     el('snapshot-note').textContent = `${mode} · ${formatNumber(productState.all.length)} 条产品 · ${formatNumber(toolState.all.length)} 个工具 · ${formatNumber(githubCount)} 个 GitHub 仓库`
     el('generated-at').textContent = `产品数据生成时间：${new Date(productState.metadata.generatedAt).toLocaleString('zh-CN')}`
