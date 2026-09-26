@@ -30,8 +30,8 @@ const PRODUCT_REMOTE_SOURCES = [
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-2018-2020.md', category: 'archive', parser: 'markdown', optional: true,
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-2018-2020.md'
+    ref: 'master', sourceFile: '.github/pages/README-Archive.md', category: 'archive', parser: 'markdown', preserveOnMissing: true,
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Archive.md'
   },
   {
     repository: 'XiaomingX/1000-chinese-independent-developer-plus',
@@ -62,45 +62,87 @@ const TOOL_LOCAL_SOURCES = [
   { ...TOOL_REMOTE_SOURCES[0], path: 'fixtures/awesome-tools-sample.md' }
 ]
 
-async function fetchText(url) {
-  const response = await fetch(url, {
-    headers: { 'user-agent': 'indiebase-cn/0.2' },
-    signal: AbortSignal.timeout(30_000)
-  })
-  if (!response.ok) throw new Error(`Fetch failed: ${response.status} ${url}`)
-  return response.text()
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
+
+async function fetchText(url, attempts = 3) {
+  let lastError
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetch(url, {
+        headers: { 'user-agent': 'indiebase-cn/0.4' },
+        signal: AbortSignal.timeout(30_000)
+      })
+      if (response.ok) return response.text()
+      const error = new Error('Fetch failed: ' + response.status + ' ' + url)
+      error.status = response.status
+      if (response.status === 404 || (response.status < 500 && response.status !== 429)) throw error
+      lastError = error
+    } catch (error) {
+      lastError = error
+      if (error.status === 404 || (error.status && error.status < 500 && error.status !== 429)) throw error
+    }
+    if (attempt < attempts) await sleep(500 * 2 ** (attempt - 1))
+  }
+  throw lastError
 }
 
 async function readSources(remoteSources, localSources, useFixtures) {
   if (useFixtures) {
-    return Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
+    const sources = await Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
+    return {
+      sources,
+      health: sources.map((source) => ({
+        repository: source.repository, sourceFile: source.sourceFile, url: source.url, status: 'fixture-preview', required: !source.preserveOnMissing
+      }))
+    }
   }
-  try {
-    const sources = await Promise.all(remoteSources.map(async (source) => {
-      try {
-        return { ...source, text: await fetchText(source.url) }
-      } catch (error) {
-        if (source.optional && error.message.includes('Fetch failed: 404')) {
-          console.warn(`Optional upstream source is no longer available; skipping ${source.repository}/${source.sourceFile}.`)
-          return null
-        }
-        throw error
+
+  const results = await Promise.all(remoteSources.map(async (source) => {
+    try {
+      return {
+        source: { ...source, text: await fetchText(source.url) },
+        health: { repository: source.repository, sourceFile: source.sourceFile, url: source.url, status: 'ok', required: !source.preserveOnMissing }
       }
-    }))
-    return sources.filter(Boolean)
-  } catch (error) {
-    if (process.env.CI) throw error
-    console.warn(`Remote sync unavailable (${error.message}); using checked-in fixtures.`)
-    return Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
+    } catch (error) {
+      if (source.preserveOnMissing && error.status === 404) {
+        return {
+          source: null,
+          health: { repository: source.repository, sourceFile: source.sourceFile, url: source.url, status: 'missing-preservable', required: false, error: error.message }
+        }
+      }
+      return {
+        source: null,
+        error,
+        health: { repository: source.repository, sourceFile: source.sourceFile, url: source.url, status: 'failed', required: true, error: error.message }
+      }
+    }
+  }))
+
+  const failures = results.filter((result) => result.error)
+  if (failures.length) {
+    const message = failures.map((result) => result.health.repository + '/' + result.health.sourceFile + ': ' + result.error.message).join('\n')
+    if (process.env.CI) throw new Error('Required upstream source failures:\n' + message)
+    console.warn('Remote sync unavailable; using checked-in fixtures.\n' + message)
+    const sources = await Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
+    return {
+      sources,
+      health: sources.map((source) => ({
+        repository: source.repository, sourceFile: source.sourceFile, url: source.url, status: 'fixture-fallback', required: !source.preserveOnMissing
+      }))
+    }
+  }
+
+  return {
+    sources: results.map((result) => result.source).filter(Boolean),
+    health: results.map((result) => result.health)
   }
 }
 
-async function readPreservedLegacyArchive() {
-  const payload = JSON.parse(await readFile('data/products.json', 'utf8'))
+async function readPreservedArchive(payload) {
+  const archiveFiles = new Set(['pages/README-2018-2020.md', '.github/pages/README-Archive.md'])
   const records = (payload.records || []).flatMap((record) => {
     const sources = (record.sources || []).filter((source) =>
-      source.repository === '1c7/chinese-independent-developer' &&
-      source.sourceFile === 'pages/README-2018-2020.md'
+      source.repository === '1c7/chinese-independent-developer' && archiveFiles.has(source.sourceFile)
     )
     if (!sources.length) return []
     const source = sources[0]
@@ -118,10 +160,74 @@ async function readPreservedLegacyArchive() {
     }]
   })
   if (!records.length) {
-    throw new Error('Legacy archive disappeared upstream and no preserved records exist in data/products.json')
+    throw new Error('Archive source disappeared upstream and no preserved archive records exist in data/products.json')
   }
-  console.warn(`Preserving ${records.length} records from the removed 2018-2020 upstream archive snapshot.`)
+  console.warn('Preserving ' + records.length + ' records from the last successful archive snapshot.')
   return { records, warnings: [] }
+}
+
+async function readJson(path, fallback) {
+  try {
+    return JSON.parse(await readFile(path, 'utf8'))
+  } catch (error) {
+    if (error.code === 'ENOENT') return fallback
+    throw error
+  }
+}
+
+function assertNoUnexpectedShrink(dataset, previousPayload, nextRecords, fixtureMode) {
+  if (fixtureMode || process.env.ALLOW_DATASET_SHRINK === '1') return
+  const previousCount = previousPayload.records?.length || 0
+  if (previousCount < 100) return
+  const shrinkRatio = (previousCount - nextRecords.length) / previousCount
+  const limit = Number(process.env.MAX_DATASET_SHRINK_RATIO || 0.15)
+  if (shrinkRatio > limit) {
+    throw new Error(
+      dataset + ' shrank unexpectedly from ' + previousCount + ' to ' + nextRecords.length +
+      ' (' + (shrinkRatio * 100).toFixed(1) + '%). Set ALLOW_DATASET_SHRINK=1 only after manual review.'
+    )
+  }
+}
+
+function recordFingerprint(record, dataset) {
+  const fields = dataset === 'products'
+    ? ['productName', 'productUrl', 'description', 'developerName', 'city', 'date', 'status', 'category']
+    : ['toolName', 'toolUrl', 'description', 'category', 'pricing']
+  return JSON.stringify(Object.fromEntries(fields.map((field) => [field, record[field] ?? null])))
+}
+
+function compactChangeRecord(record, dataset) {
+  return dataset === 'products'
+    ? {
+        id: record.id, name: record.productName, url: record.productUrl || null, description: record.description || null,
+        developerName: record.developerName || null, category: record.category, status: record.status, date: record.date || null
+      }
+    : {
+        id: record.id, name: record.toolName, url: record.toolUrl || null, description: record.description || null,
+        category: record.category, pricing: record.pricing || 'unknown'
+      }
+}
+
+function buildDatasetChanges(previousPayload, nextRecords, dataset) {
+  const previousRecords = previousPayload.records || []
+  const previousById = new Map(previousRecords.map((record) => [record.id, record]))
+  const nextById = new Map(nextRecords.map((record) => [record.id, record]))
+  const added = nextRecords.filter((record) => !previousById.has(record.id))
+  const removed = previousRecords.filter((record) => !nextById.has(record.id))
+  const changed = nextRecords.filter((record) => {
+    const previous = previousById.get(record.id)
+    return previous && recordFingerprint(previous, dataset) !== recordFingerprint(record, dataset)
+  })
+  return {
+    previousCount: previousRecords.length,
+    currentCount: nextRecords.length,
+    addedCount: added.length,
+    removedCount: removed.length,
+    changedCount: changed.length,
+    added: added.slice(0, 100).map((record) => compactChangeRecord(record, dataset)),
+    removed: removed.slice(0, 100).map((record) => compactChangeRecord(record, dataset)),
+    changed: changed.slice(0, 100).map((record) => compactChangeRecord(record, dataset))
+  }
 }
 
 function parseSource(source) {
@@ -149,49 +255,81 @@ function buildMetadata(dataset, sources, fixtureMode) {
 }
 
 const useFixtures = process.argv.includes('--fixtures')
-const [productSources, toolSources] = await Promise.all([
+const [previousProducts, previousTools] = await Promise.all([
+  readJson('data/products.json', { metadata: {}, records: [] }),
+  readJson('data/tools.json', { metadata: {}, records: [] })
+])
+const [productResult, toolResult] = await Promise.all([
   readSources(PRODUCT_REMOTE_SOURCES, PRODUCT_LOCAL_SOURCES, useFixtures),
   readSources(TOOL_REMOTE_SOURCES, TOOL_LOCAL_SOURCES, useFixtures)
 ])
+const productSources = productResult.sources
+const toolSources = toolResult.sources
 const fixtureMode = [...productSources, ...toolSources].some((source) => source.path)
-const legacyArchiveMissing = !useFixtures && !productSources.some((source) => source.sourceFile === 'pages/README-2018-2020.md')
-const preservedLegacyArchive = legacyArchiveMissing ? await readPreservedLegacyArchive() : null
+const archiveSource = PRODUCT_REMOTE_SOURCES.find((source) => source.preserveOnMissing)
+const archiveMissing = !useFixtures && !productSources.some((source) => source.sourceFile === archiveSource.sourceFile)
+const preservedArchive = archiveMissing ? await readPreservedArchive(previousProducts) : null
 
-const productParsed = [...productSources.map(parseSource), ...(preservedLegacyArchive ? [preservedLegacyArchive] : [])]
+const productParsed = [...productSources.map(parseSource), ...(preservedArchive ? [preservedArchive] : [])]
 const toolParsed = toolSources.map(parseSource)
 const products = mergeAndDedupe(productParsed, { dataset: 'products' })
 const tools = mergeAndDedupe(toolParsed, { dataset: 'tools' })
-const productMetadataSources = preservedLegacyArchive
-  ? [...productSources, { ...PRODUCT_REMOTE_SOURCES[3], parser: 'preserved-json-snapshot', preserved: true }]
+
+assertNoUnexpectedShrink('products', previousProducts, products.records, fixtureMode)
+assertNoUnexpectedShrink('tools', previousTools, tools.records, fixtureMode)
+
+const productMetadataSources = preservedArchive
+  ? [...productSources, { ...archiveSource, parser: 'preserved-json-snapshot', preserved: true }]
   : productSources
 const productMetadata = buildMetadata('products', productMetadataSources, fixtureMode)
-if (preservedLegacyArchive) {
-  productMetadata.snapshotMode = 'full-upstream-with-preserved-legacy-archive'
-  productMetadata.preservedLegacyArchiveRecords = preservedLegacyArchive.records.length
+if (preservedArchive) {
+  productMetadata.snapshotMode = 'full-upstream-with-preserved-archive'
+  productMetadata.preservedArchiveRecords = preservedArchive.records.length
 }
 const toolMetadata = buildMetadata('tools', toolSources, fixtureMode)
 const productQuality = buildQualityReport(products.records, products.warnings, productMetadata)
 const toolQuality = buildQualityReport(tools.records, tools.warnings, toolMetadata)
 const generatedAt = new Date().toISOString()
 const crossDatasetOverlaps = findCrossDatasetOverlaps(products.records, tools.records)
+const sourceHealth = [...productResult.health, ...toolResult.health].map((item) => {
+  if (preservedArchive && item.sourceFile === archiveSource.sourceFile && item.status === 'missing-preservable') {
+    return { ...item, status: 'preserved-snapshot' }
+  }
+  return item
+})
+const weeklyChanges = {
+  generatedAt,
+  baselineGeneratedAt: previousProducts.metadata?.generatedAt || null,
+  mode: previousProducts.records?.length ? 'since-previous-snapshot' : 'initial-snapshot',
+  products: buildDatasetChanges(previousProducts, products.records, 'products'),
+  tools: buildDatasetChanges(previousTools, tools.records, 'tools')
+}
 
 await mkdir('data', { recursive: true })
-await writeFile('data/products.json', `${JSON.stringify({
+await writeFile('data/products.json', JSON.stringify({
   metadata: { ...productMetadata, generatedAt },
   records: products.records
-}, null, 2)}\n`)
-await writeFile('data/tools.json', `${JSON.stringify({
+}, null, 2) + '\n')
+await writeFile('data/tools.json', JSON.stringify({
   metadata: { ...toolMetadata, generatedAt },
   records: tools.records
-}, null, 2)}\n`)
-await writeFile('data/quality-report.json', `${JSON.stringify({
+}, null, 2) + '\n')
+await writeFile('data/weekly-changes.json', JSON.stringify(weeklyChanges, null, 2) + '\n')
+await writeFile('data/quality-report.json', JSON.stringify({
   generatedAt,
   products: productQuality,
   tools: toolQuality,
+  sourceHealth,
+  safety: {
+    maxDatasetShrinkRatio: Number(process.env.MAX_DATASET_SHRINK_RATIO || 0.15),
+    overrideEnv: 'ALLOW_DATASET_SHRINK=1'
+  },
   crossDatasetOverlapCount: crossDatasetOverlaps.length,
   crossDatasetOverlaps,
   separationRule: 'Products and tools are separate datasets. Cross-dataset overlaps are reported but never merged.'
-}, null, 2)}\n`)
+}, null, 2) + '\n')
 
-console.log(`Generated ${products.records.length} product records and ${tools.records.length} tool records (${productMetadata.snapshotMode}).`)
-console.log(`Warnings: products=${products.warnings.length}, tools=${tools.warnings.length}; cross-dataset overlaps=${crossDatasetOverlaps.length}.`)
+console.log('Generated ' + products.records.length + ' product records and ' + tools.records.length + ' tool records (' + productMetadata.snapshotMode + ').')
+console.log('Weekly changes: products +' + weeklyChanges.products.addedCount + '/-' + weeklyChanges.products.removedCount + ', tools +' + weeklyChanges.tools.addedCount + '/-' + weeklyChanges.tools.removedCount + '.')
+console.log('Source health: ' + sourceHealth.map((item) => item.sourceFile + '=' + item.status).join(', '))
+console.log('Warnings: products=' + products.warnings.length + ', tools=' + tools.warnings.length + '; cross-dataset overlaps=' + crossDatasetOverlaps.length + '.')
