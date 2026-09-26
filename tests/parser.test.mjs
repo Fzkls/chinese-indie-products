@@ -75,7 +75,7 @@ test('reports but does not merge product/tool URL overlaps', () => {
 test('ignores internal markdown navigation links in source repositories', () => {
   const input = `### 2026 年 9 月 1 日添加
 #### 维护者 - [Github](https://github.com/1c7)
-* [2018 2024 年项目列表](https://github.com/1c7/chinese-independent-developer/blob/master/pages/README-2018-2020.md)：因 GitHub 渲染限制单独存档
+* [2018 2024 年项目列表](.github/pages/README-2018-2020.md)：因 GitHub 渲染限制单独存档
 * :white_check_mark: [真实产品](https://example.com)：真实产品描述
 `
   const parsed = parseMarkdown(input, {
