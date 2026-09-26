@@ -36,9 +36,9 @@ IndieBase CN 不是简单复制一份项目名单，而是把分散在不同仓�
 
 1. [`1c7/chinese-independent-developer`](https://github.com/1c7/chinese-independent-developer)
    - `README.md`
-   - `pages/README-Programmer-Edition.md`
-   - `pages/README-Game.md`
-   - `pages/README-2018-2020.md`
+   - `.github/pages/README-Programmer-Edition.md`
+   - `.github/pages/README-Game.md`
+   - `pages/README-2018-2020.md`（上游已移除；保留最后一次成功同步的结构化历史快照）
 2. [`XiaomingX/1000-chinese-independent-developer-plus`](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)
    - `README.md` 中的精品项目表格
 
@@ -160,6 +160,8 @@ sources[1] -> XiaomingX/1000-chinese-independent-developer-plus
 - **每周一 10:17（北京时间）自动同步**
 
 每周任务会下载全部上游数据源，分别解析产品和工具，在各自数据集内部去重，生成数据文件和质量报告，运行测试与校验，将新数据快照提交到 `main`，然后发布到 `gh-pages`。
+
+对于上游已删除的 2018–2020 静态归档，工作流会保留仓库中最后一次成功同步的结构化快照，避免历史数据静默丢失；其他远程数据源读取失败仍会让同步失败。
 
 ## 本地运行
 
