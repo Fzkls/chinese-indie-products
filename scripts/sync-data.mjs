@@ -95,6 +95,35 @@ async function readSources(remoteSources, localSources, useFixtures) {
   }
 }
 
+async function readPreservedLegacyArchive() {
+  const payload = JSON.parse(await readFile('data/products.json', 'utf8'))
+  const records = (payload.records || []).flatMap((record) => {
+    const sources = (record.sources || []).filter((source) =>
+      source.repository === '1c7/chinese-independent-developer' &&
+      source.sourceFile === 'pages/README-2018-2020.md'
+    )
+    if (!sources.length) return []
+    const source = sources[0]
+    return [{
+      ...record,
+      category: 'archive',
+      sources,
+      sourceRepository: source.repository,
+      sourceFile: source.sourceFile,
+      sourceSection: source.sourceSection,
+      sourceLine: source.sourceLine,
+      rawText: source.rawText,
+      sourceRepositories: [...new Set(sources.map((item) => item.repository))],
+      sourceCount: sources.length
+    }]
+  })
+  if (!records.length) {
+    throw new Error('Legacy archive disappeared upstream and no preserved records exist in data/products.json')
+  }
+  console.warn(`Preserving ${records.length} records from the removed 2018-2020 upstream archive snapshot.`)
+  return { records, warnings: [] }
+}
+
 function parseSource(source) {
   if (source.parser === 'project-table') return parseProjectTable(source.text, source)
   if (source.parser === 'tool-directory') return parseToolDirectory(source.text, source)
@@ -125,12 +154,21 @@ const [productSources, toolSources] = await Promise.all([
   readSources(TOOL_REMOTE_SOURCES, TOOL_LOCAL_SOURCES, useFixtures)
 ])
 const fixtureMode = [...productSources, ...toolSources].some((source) => source.path)
+const legacyArchiveMissing = !useFixtures && !productSources.some((source) => source.sourceFile === 'pages/README-2018-2020.md')
+const preservedLegacyArchive = legacyArchiveMissing ? await readPreservedLegacyArchive() : null
 
-const productParsed = productSources.map(parseSource)
+const productParsed = [...productSources.map(parseSource), ...(preservedLegacyArchive ? [preservedLegacyArchive] : [])]
 const toolParsed = toolSources.map(parseSource)
 const products = mergeAndDedupe(productParsed, { dataset: 'products' })
 const tools = mergeAndDedupe(toolParsed, { dataset: 'tools' })
-const productMetadata = buildMetadata('products', productSources, fixtureMode)
+const productMetadataSources = preservedLegacyArchive
+  ? [...productSources, { ...PRODUCT_REMOTE_SOURCES[3], parser: 'preserved-json-snapshot', preserved: true }]
+  : productSources
+const productMetadata = buildMetadata('products', productMetadataSources, fixtureMode)
+if (preservedLegacyArchive) {
+  productMetadata.snapshotMode = 'full-upstream-with-preserved-legacy-archive'
+  productMetadata.preservedLegacyArchiveRecords = preservedLegacyArchive.records.length
+}
 const toolMetadata = buildMetadata('tools', toolSources, fixtureMode)
 const productQuality = buildQualityReport(products.records, products.warnings, productMetadata)
 const toolQuality = buildQualityReport(tools.records, tools.warnings, toolMetadata)
