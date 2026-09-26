@@ -18,19 +18,19 @@ const PRODUCT_REMOTE_SOURCES = [
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-Programmer-Edition.md', category: 'developer-tool', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-Programmer-Edition.md'
+    ref: 'master', sourceFile: '.github/pages/README-Programmer-Edition.md', category: 'developer-tool', parser: 'markdown',
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Programmer-Edition.md'
   },
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-Game.md', category: 'game', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-Game.md'
+    ref: 'master', sourceFile: '.github/pages/README-Game.md', category: 'game', parser: 'markdown',
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-Game.md'
   },
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: 'pages/README-2018-2020.md', category: 'archive', parser: 'markdown',
+    ref: 'master', sourceFile: 'pages/README-2018-2020.md', category: 'archive', parser: 'markdown', optional: true,
     url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-2018-2020.md'
   },
   {
@@ -76,12 +76,52 @@ async function readSources(remoteSources, localSources, useFixtures) {
     return Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
   }
   try {
-    return await Promise.all(remoteSources.map(async (source) => ({ ...source, text: await fetchText(source.url) })))
+    const sources = await Promise.all(remoteSources.map(async (source) => {
+      try {
+        return { ...source, text: await fetchText(source.url) }
+      } catch (error) {
+        if (source.optional && error.message.includes('Fetch failed: 404')) {
+          console.warn(`Optional upstream source is no longer available; skipping ${source.repository}/${source.sourceFile}.`)
+          return null
+        }
+        throw error
+      }
+    }))
+    return sources.filter(Boolean)
   } catch (error) {
     if (process.env.CI) throw error
     console.warn(`Remote sync unavailable (${error.message}); using checked-in fixtures.`)
     return Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
   }
+}
+
+async function readPreservedLegacyArchive() {
+  const payload = JSON.parse(await readFile('data/products.json', 'utf8'))
+  const records = (payload.records || []).flatMap((record) => {
+    const sources = (record.sources || []).filter((source) =>
+      source.repository === '1c7/chinese-independent-developer' &&
+      source.sourceFile === 'pages/README-2018-2020.md'
+    )
+    if (!sources.length) return []
+    const source = sources[0]
+    return [{
+      ...record,
+      category: 'archive',
+      sources,
+      sourceRepository: source.repository,
+      sourceFile: source.sourceFile,
+      sourceSection: source.sourceSection,
+      sourceLine: source.sourceLine,
+      rawText: source.rawText,
+      sourceRepositories: [...new Set(sources.map((item) => item.repository))],
+      sourceCount: sources.length
+    }]
+  })
+  if (!records.length) {
+    throw new Error('Legacy archive disappeared upstream and no preserved records exist in data/products.json')
+  }
+  console.warn(`Preserving ${records.length} records from the removed 2018-2020 upstream archive snapshot.`)
+  return { records, warnings: [] }
 }
 
 function parseSource(source) {
@@ -114,12 +154,21 @@ const [productSources, toolSources] = await Promise.all([
   readSources(TOOL_REMOTE_SOURCES, TOOL_LOCAL_SOURCES, useFixtures)
 ])
 const fixtureMode = [...productSources, ...toolSources].some((source) => source.path)
+const legacyArchiveMissing = !useFixtures && !productSources.some((source) => source.sourceFile === 'pages/README-2018-2020.md')
+const preservedLegacyArchive = legacyArchiveMissing ? await readPreservedLegacyArchive() : null
 
-const productParsed = productSources.map(parseSource)
+const productParsed = [...productSources.map(parseSource), ...(preservedLegacyArchive ? [preservedLegacyArchive] : [])]
 const toolParsed = toolSources.map(parseSource)
 const products = mergeAndDedupe(productParsed, { dataset: 'products' })
 const tools = mergeAndDedupe(toolParsed, { dataset: 'tools' })
-const productMetadata = buildMetadata('products', productSources, fixtureMode)
+const productMetadataSources = preservedLegacyArchive
+  ? [...productSources, { ...PRODUCT_REMOTE_SOURCES[3], parser: 'preserved-json-snapshot', preserved: true }]
+  : productSources
+const productMetadata = buildMetadata('products', productMetadataSources, fixtureMode)
+if (preservedLegacyArchive) {
+  productMetadata.snapshotMode = 'full-upstream-with-preserved-legacy-archive'
+  productMetadata.preservedLegacyArchiveRecords = preservedLegacyArchive.records.length
+}
 const toolMetadata = buildMetadata('tools', toolSources, fixtureMode)
 const productQuality = buildQualityReport(products.records, products.warnings, productMetadata)
 const toolQuality = buildQualityReport(tools.records, tools.warnings, toolMetadata)

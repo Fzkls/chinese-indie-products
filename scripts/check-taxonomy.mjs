@@ -25,7 +25,7 @@ for (const item of classified.records || []) {
   if (!item.tags || typeof item.tags !== 'object') errors.push(`tags missing for ${item.productId}`)
   if (typeof item.confidence !== 'number' || item.confidence < 0 || item.confidence > 1) errors.push(`invalid confidence for ${item.productId}`)
   if (item.primaryCategory === 'other' && (item.classificationMethod !== 'manual-review' || item.reviewStatus !== 'reviewed')) {
-    errors.push(`Other requires explicit manual review: ${item.productId}`)
+    errors.push(`Other requires explicit manual review: ${item.productId} | ${products.records.find((product) => product.id === item.productId)?.productName || 'unknown'} | ${products.records.find((product) => product.id === item.productId)?.description || ''}`)
   }
 }
 
