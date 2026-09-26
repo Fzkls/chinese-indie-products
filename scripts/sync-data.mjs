@@ -30,8 +30,8 @@ const PRODUCT_REMOTE_SOURCES = [
   {
     repository: '1c7/chinese-independent-developer',
     repositoryUrl: 'https://github.com/1c7/chinese-independent-developer',
-    ref: 'master', sourceFile: '.github/pages/README-2018-2020.md', category: 'archive', parser: 'markdown',
-    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/.github/pages/README-2018-2020.md'
+    ref: 'master', sourceFile: 'pages/README-2018-2020.md', category: 'archive', parser: 'markdown', optional: true,
+    url: 'https://raw.githubusercontent.com/1c7/chinese-independent-developer/master/pages/README-2018-2020.md'
   },
   {
     repository: 'XiaomingX/1000-chinese-independent-developer-plus',
@@ -76,7 +76,18 @@ async function readSources(remoteSources, localSources, useFixtures) {
     return Promise.all(localSources.map(async (source) => ({ ...source, text: await readFile(source.path, 'utf8') })))
   }
   try {
-    return await Promise.all(remoteSources.map(async (source) => ({ ...source, text: await fetchText(source.url) })))
+    const sources = await Promise.all(remoteSources.map(async (source) => {
+      try {
+        return { ...source, text: await fetchText(source.url) }
+      } catch (error) {
+        if (source.optional && error.message.includes('Fetch failed: 404')) {
+          console.warn(`Optional upstream source is no longer available; skipping ${source.repository}/${source.sourceFile}.`)
+          return null
+        }
+        throw error
+      }
+    }))
+    return sources.filter(Boolean)
   } catch (error) {
     if (process.env.CI) throw error
     console.warn(`Remote sync unavailable (${error.message}); using checked-in fixtures.`)
