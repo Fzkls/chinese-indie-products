@@ -1,3 +1,5 @@
+import { repositoryTrend } from './trend-utils.js'
+
 const CATEGORY_LABELS = { product: '通用产品', 'developer-tool': '程序员工具', game: '游戏', archive: '历史归档' }
 const CATEGORY_COLORS = { product: '#b9f24a', 'developer-tool': '#59dcc4', game: '#ffb35c', archive: '#82978f' }
 const STATUS_LABELS = { active: '已上线', developing: '开发中', closed: '已关闭', acquired: '已收购', unknown: '状态未知' }
@@ -8,13 +10,14 @@ const ACTIVITY_LABELS = {
   'active-year': '一年内更新',
   'inactive-year': '超过一年未更新',
   archived: '已归档',
+  unavailable: '无可用仓库',
   unknown: '更新时间未知'
 }
 const PRODUCT_PAGE_SIZE = 18
 const TOOL_PAGE_SIZE = 24
 const RESERVED_GITHUB_OWNERS = new Set(['about', 'apps', 'blog', 'collections', 'enterprise', 'events', 'explore', 'features', 'issues', 'marketplace', 'orgs', 'pricing', 'pulls', 'search', 'settings', 'sponsors', 'topics', 'trending'])
 
-const productState = { all: [], filtered: [], visibleCount: PRODUCT_PAGE_SIZE, metadata: {}, query: '', category: '', status: '', year: '', city: '' }
+const productState = { all: [], filtered: [], visibleCount: PRODUCT_PAGE_SIZE, metadata: {}, query: '', category: '', status: '', activity: '', year: '', city: '' }
 const toolState = { all: [], filtered: [], visibleCount: TOOL_PAGE_SIZE, metadata: {}, query: '', category: '' }
 const githubState = { repositories: {}, metadata: {}, history: {}, scope: 'all', activity: '' }
 const el = (id) => document.getElementById(id)
@@ -85,6 +88,8 @@ function fillSelect(select, entries, labeler = (value) => value) {
 function buildProductFilters() {
   fillSelect(el('category-filter'), uniqueSorted(productState.all.map((item) => item.category)), (value) => CATEGORY_LABELS[value] || value)
   fillSelect(el('status-filter'), uniqueSorted(productState.all.map((item) => item.status)), (value) => STATUS_LABELS[value] || value)
+  const activities = uniqueSorted(productState.all.map((item) => classifyActivity(repositoryForRecord(item))))
+  fillSelect(el('activity-filter'), activities, (value) => ACTIVITY_LABELS[value] || value)
   fillSelect(el('year-filter'), uniqueSorted(productState.all.map((item) => item.year), (a, b) => b - a))
   fillSelect(el('city-filter'), uniqueSorted(productState.all.map((item) => item.city)))
 }
@@ -286,6 +291,7 @@ function productMatches(record) {
   return (!productState.query || haystack.includes(productState.query.toLowerCase()))
     && (!productState.category || record.category === productState.category)
     && (!productState.status || record.status === productState.status)
+    && (!productState.activity || classifyActivity(repository) === productState.activity)
     && (!productState.year || String(record.year) === productState.year)
     && (!productState.city || record.city === productState.city)
 }
@@ -315,8 +321,11 @@ function githubBadgesHtml(record) {
   const repository = repositoryForRecord(record)
   if (!repository || repository.status !== 'available') return ''
   const activity = classifyActivity(repository)
+  const key = repository.key || normalizeGitHubRepository(repository.url)
+  const trend = repositoryTrend(githubState.history[key] || [])
   return `<div class="github-meta" aria-label="GitHub 仓库信息">
     <span class="github-chip">★ ${formatCompact(repository.stars)}</span>
+    ${trend?.starDelta > 0 ? `<span class="github-chip">+${formatCompact(trend.starDelta)}★ / ${trend.days}d</span>` : ''}
     ${repository.language ? `<span class="github-chip">${escapeHtml(repository.language)}</span>` : ''}
     <span class="github-chip activity-${activity}">${escapeHtml(ACTIVITY_LABELS[activity] || '状态未知')}</span>
   </div>`
@@ -327,6 +336,7 @@ function renderActiveProductFilters() {
     ['关键词', productState.query],
     ['类型', productState.category ? CATEGORY_LABELS[productState.category] : ''],
     ['状态', productState.status ? STATUS_LABELS[productState.status] : ''],
+    ['活跃度', productState.activity ? ACTIVITY_LABELS[productState.activity] : ''],
     ['年份', productState.year],
     ['城市', productState.city]
   ].filter(([, value]) => value)
@@ -570,6 +580,7 @@ function bindEvents() {
     search: ['query', 'input'],
     'category-filter': ['category', 'change'],
     'status-filter': ['status', 'change'],
+    'activity-filter': ['activity', 'change'],
     'year-filter': ['year', 'change'],
     'city-filter': ['city', 'change']
   }
@@ -580,8 +591,8 @@ function bindEvents() {
     })
   }
   el('reset-filters').addEventListener('click', () => {
-    productState.query = productState.category = productState.status = productState.year = productState.city = ''
-    for (const id of ['search', 'category-filter', 'status-filter', 'year-filter', 'city-filter']) el(id).value = ''
+    productState.query = productState.category = productState.status = productState.activity = productState.year = productState.city = ''
+    for (const id of ['search', 'category-filter', 'status-filter', 'activity-filter', 'year-filter', 'city-filter']) el(id).value = ''
     applyProductFilters()
   })
   el('load-more').addEventListener('click', () => {
@@ -670,7 +681,7 @@ async function init() {
     renderTools()
     renderGithubInsights()
 
-    const mode = productState.metadata.snapshotMode === 'full-upstream' ? '完整上游快照' : '示例快照'
+    const mode = String(productState.metadata.snapshotMode || '').startsWith('full-upstream') ? '完整上游快照' : '示例快照'
     const githubCount = githubState.metadata.availableRepositories || availableRepositories([...productState.all, ...toolState.all]).length
     el('snapshot-note').textContent = `${mode} · ${formatNumber(productState.all.length)} 条产品 · ${formatNumber(toolState.all.length)} 个工具 · ${formatNumber(githubCount)} 个 GitHub 仓库`
     el('generated-at').textContent = `产品数据生成时间：${new Date(productState.metadata.generatedAt).toLocaleString('zh-CN')}`

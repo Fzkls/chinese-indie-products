@@ -7,6 +7,7 @@
     <title>IndieBase CN — 中国独立开发者产品可视化数据库</title>
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="stylesheet" href="src/separated-insights.css" />
+    <link rel="stylesheet" href="src/pulse.css" />
       <link rel="stylesheet" href="src/dataset-tabs.css" />
       <link rel="stylesheet" href="src/overview-interactions.css" />
   </head>
@@ -49,6 +50,24 @@
         <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确地区</small></article>
         <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>已上线或开发中</small></article>
         <article class="metric"><span>产品 GitHub 仓库</span><strong id="metric-github">—</strong><small>只统计独立产品关联仓库</small></article>
+      </section>
+
+      <section class="wrap pulse-section" id="weekly-pulse" aria-labelledby="weekly-pulse-title">
+        <div class="section-heading pulse-heading">
+          <div><p class="eyebrow">WEEKLY PULSE</p><h2 id="weekly-pulse-title">本周变化与项目趋势</h2></div>
+          <p class="pulse-heading-copy">对比上一份成功数据快照，查看新增项目、GitHub 增长和当前维护活跃度。</p>
+        </div>
+        <div class="pulse-summary">
+          <article class="pulse-metric"><span>新增产品</span><strong id="weekly-added-count">—</strong><small>相对上一份快照</small></article>
+          <article class="pulse-metric"><span>移除产品</span><strong id="weekly-removed-count">—</strong><small>来源中已不再出现</small></article>
+          <article class="pulse-metric"><span>信息变化</span><strong id="weekly-changed-count">—</strong><small>名称、状态、描述等变化</small></article>
+        </div>
+        <p class="pulse-baseline" id="weekly-baseline">正在读取变化基线…</p>
+        <div class="pulse-grid">
+          <article class="pulse-panel"><h3>本期新增</h3><p>点击可直接定位到产品列表。</p><div class="pulse-list" id="weekly-new-products"></div></article>
+          <article class="pulse-panel"><h3>GitHub 增长</h3><p>按最近两次周快照的 Star 增量排序。</p><div class="pulse-list" id="weekly-github-growth"></div></article>
+          <article class="pulse-panel"><h3>项目生命周期</h3><p>按产品关联仓库最近更新时间划分。</p><div class="pulse-lifecycle" id="weekly-lifecycle"></div></article>
+        </div>
       </section>
 
       <section class="wrap dashboard" id="product-dashboard" aria-labelledby="dashboard-title">
@@ -103,6 +122,7 @@
           <label class="search-field"><span>搜索</span><input id="search" type="search" placeholder="产品、开发者、描述、城市、来源…" autocomplete="off" /></label>
           <label><span>类型</span><select id="category-filter"><option value="">全部类型</option></select></label>
           <label><span>状态</span><select id="status-filter"><option value="">全部状态</option></select></label>
+          <label><span>GitHub 活跃度</span><select id="activity-filter"><option value="">全部活跃度</option></select></label>
           <label><span>年份</span><select id="year-filter"><option value="">全部年份</option></select></label>
           <label><span>城市</span><select id="city-filter"><option value="">全部城市</option></select></label>
           <button class="reset-button" id="reset-filters" type="button">清空筛选</button>
@@ -209,6 +229,7 @@
 
     <script type="module" src="src/app.js"></script>
     <script type="module" src="src/separated-insights.js"></script>
+    <script type="module" src="src/pulse.js"></script>
       <script type="module" src="src/taxonomy-insights.js"></script>
       <script type="module" src="src/overview-interactions.js"></script>
       <script type="module" src="src/dataset-tabs.js"></script>

@@ -4,41 +4,41 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-09-26T08:01:47.702Z",
-    "generatedAt": "2026-09-26T08:02:15.043Z",
-    "totalProducts": 2787,
-    "classifiedProducts": 2787,
+    "sourceProductGeneratedAt": "2026-09-26T13:16:39.280Z",
+    "generatedAt": "2026-09-26T13:17:07.494Z",
+    "totalProducts": 3008,
+    "classifiedProducts": 3008,
     "otherProducts": 0,
     "coverage": 1,
     "lowConfidenceProducts": 3,
-    "averageConfidence": 0.8754,
-    "reviewedProducts": 1029,
-    "manualReviewProducts": 1029,
+    "averageConfidence": 0.8753,
+    "reviewedProducts": 1127,
+    "manualReviewProducts": 1127,
     "reviewRuleProducts": 0,
-    "reviewChangedProducts": 811,
-    "baseOtherProducts": 445,
-    "activeReviewOverrides": 1029,
-    "staleReviewOverrides": 102,
+    "reviewChangedProducts": 892,
+    "baseOtherProducts": 507,
+    "activeReviewOverrides": 1127,
+    "staleReviewOverrides": 0,
     "primaryCategoryCounts": {
-      "utilities": 486,
-      "ai-productivity": 427,
-      "developer-tools": 376,
-      "design-creative": 336,
-      "content-knowledge": 211,
-      "media-entertainment": 200,
-      "games": 188,
-      "lifestyle-health": 124,
-      "business-marketing": 113,
-      "education": 83,
-      "infrastructure-security": 74,
-      "social-community": 62,
-      "finance": 55,
-      "data-analytics": 32,
+      "utilities": 546,
+      "ai-productivity": 458,
+      "developer-tools": 392,
+      "design-creative": 356,
+      "content-knowledge": 234,
+      "media-entertainment": 211,
+      "games": 193,
+      "lifestyle-health": 145,
+      "business-marketing": 120,
+      "education": 90,
+      "infrastructure-security": 80,
+      "social-community": 66,
+      "finance": 63,
+      "data-analytics": 34,
       "ecommerce": 20
     },
     "classificationMethodCounts": {
-      "rules": 1752,
-      "manual-review": 1029,
+      "rules": 1875,
+      "manual-review": 1127,
       "semantic-fallback": 5,
       "source-fallback": 1
     },
@@ -68,6 +68,30 @@
       "signals": [
         "category:社交社区",
         "sub:社区",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "7f74686f2b6bfc",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.69,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
         "characteristics:ai-native",
         "capabilities:ai"
       ]
@@ -64664,6 +64688,447 @@
       ]
     },
     {
+      "productId": "70ec30fcd92dac",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "旅行"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:旅行",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "d1a752ce105179",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "aedbabcfc963dd",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "记账与预算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "finance"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:记账与预算",
+        "platform:wechat",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "74d402cb8c3b6a",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "education"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:教育能力标签",
+        "audience:student",
+        "platform:web",
+        "capabilities:education"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "education",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "4aad949b5955b0",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "productForm:plugin",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "2e9567be71dc48",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作",
+        "摄影"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "sub:摄影",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "d2fd57981a0f84",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "博客"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sharing"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:博客",
+        "platform:web",
+        "capabilities:sharing"
+      ]
+    },
+    {
+      "productId": "67c015744daa3d",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "dce041ece6cb36",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "天气"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:天气",
+        "platform:wechat"
+      ]
+    },
+    {
+      "productId": "d9223aba8132f4",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "7fd15be9adcb9c",
+      "primaryCategory": "business-marketing",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:business-marketing",
+        "category:生活健康",
+        "sub:旅行",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "lifestyle-health",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "ca59fecbb0c9ba",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "sub:AI 助手",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:open-source",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "c0d09fd0a767a9",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [
+        "安全"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "security"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:infrastructure-security",
+        "category:基础设施能力标签",
+        "sub:安全",
+        "capabilities:security"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "infrastructure-security",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "136ad342bd4bbc",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "sub:转换工具",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "ae36889b33e6f2",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:文件工具"
+      ]
+    },
+    {
+      "productId": "8c3c9424594f36",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "characteristics:open-source"
+      ]
+    },
+    {
       "productId": "bffe681fd2f2e7",
       "primaryCategory": "games",
       "subCategories": [
@@ -64683,6 +65148,48 @@
         "category:游戏",
         "category:来源游戏分类",
         "sub:游戏"
+      ]
+    },
+    {
+      "productId": "807f5e5b170f96",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "翻译"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "browser-extension",
+          "plugin"
+        ],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "translation"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:翻译",
+        "platform:browser",
+        "platform:web",
+        "productForm:browser-extension",
+        "productForm:plugin",
+        "characteristics:ai-native",
+        "characteristics:open-source"
       ]
     },
     {
@@ -64716,6 +65223,88 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "a736aa79035529",
+      "primaryCategory": "business-marketing",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "web-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:business-marketing",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web",
+        "productForm:web-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "d0c757fc9ebe53",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "6b95cc291b2797",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:音乐",
+        "audience:consumer",
+        "capabilities:music"
+      ]
+    },
+    {
       "productId": "0af26b1cf38a65",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -64740,6 +65329,30 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "1a6dcf214c42ee",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "desktop-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "audience:developer",
+        "productForm:desktop-app"
+      ]
+    },
+    {
       "productId": "acd2b6bb02bbda",
       "primaryCategory": "games",
       "subCategories": [
@@ -64760,6 +65373,105 @@
         "category:来源游戏分类",
         "sub:游戏"
       ]
+    },
+    {
+      "productId": "5ff4f6871357e7",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sharing"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:系统工具",
+        "platform:wechat",
+        "capabilities:sharing"
+      ]
+    },
+    {
+      "productId": "4675462de96fb1",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "7c85a725beeaca",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "audience:developer"
+      ]
+    },
+    {
+      "productId": "4dd7f06bba5ad6",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
     },
     {
       "productId": "74786a789cae65",
@@ -64788,6 +65500,288 @@
         "productForm:sdk",
         "characteristics:open-source"
       ]
+    },
+    {
+      "productId": "a88307df814ce0",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "deployment"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:web",
+        "capabilities:deployment"
+      ]
+    },
+    {
+      "productId": "341e9b792d0c3c",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "44bc4e26917cf8",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "no-code",
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer",
+        "characteristics:no-code",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "f80188f63475dc",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer",
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer",
+        "audience:consumer"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "08dd36b2082f63",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:音乐",
+        "audience:consumer",
+        "platform:web",
+        "characteristics:open-source",
+        "capabilities:music"
+      ]
+    },
+    {
+      "productId": "369b350f3059b9",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:转换工具",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "0a905554ee4ab7",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:browser-extension"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "b49458deef2bc3",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "translation"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:效率能力标签",
+        "sub:翻译",
+        "capabilities:translation"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "7535d5f6c72e89",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "api"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "productForm:api",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "758842e328e61e",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:效率场景",
+        "sub:个人效率",
+        "platform:macos"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "rules"
     },
     {
       "productId": "56cfdc548aa51a",
@@ -64826,6 +65820,38 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "527037c05fbd7b",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "plugin",
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:plugin",
+        "productForm:browser-extension"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
       "productId": "30fb030d0a212a",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -64848,6 +65874,34 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "4457cf04018d79",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
     },
     {
       "productId": "34a6f78414a3fd",
@@ -64945,6 +65999,169 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "1d57bf2c06bab7",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "笔记"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "note-taking",
+          "security"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:笔记",
+        "capabilities:note-taking",
+        "capabilities:security"
+      ]
+    },
+    {
+      "productId": "28a4ad968c37c9",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "team"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "collaboration"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏",
+        "audience:team",
+        "capabilities:collaboration"
+      ]
+    },
+    {
+      "productId": "339c68e0d234f1",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "dbd2ae45ef5a28",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "b9c85eab0d23ff",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "team"
+        ],
+        "platform": [],
+        "productForm": [
+          "bot"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "collaboration"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏",
+        "audience:team",
+        "productForm:bot",
+        "capabilities:collaboration"
+      ]
+    },
+    {
+      "productId": "0abc0c498a639f",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.82,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:音乐",
+        "audience:consumer",
+        "capabilities:music"
+      ]
+    },
+    {
       "productId": "b3a1b5297c7426",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -64970,6 +66187,363 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "a64f0e289ace7f",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具"
+      ]
+    },
+    {
+      "productId": "f62ef2e16ad525",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具"
+      ]
+    },
+    {
+      "productId": "b14e5b2aeca255",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "sub:AI 编程",
+        "platform:macos",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "7c5bf1ebf4a13e",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "platform:wechat",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "67dc8a65233840",
+      "primaryCategory": "finance",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "a426548ae901fb",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "audience:developer"
+      ]
+    },
+    {
+      "productId": "124c007c2d45b8",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "458c8eb91fbf21",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "写作"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "team"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "collaboration",
+          "writing",
+          "note-taking"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:写作",
+        "audience:creator",
+        "audience:team",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:collaboration"
+      ]
+    },
+    {
+      "productId": "900ad7df8acc9c",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "播客"
+      ],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "podcast"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:播客",
+        "audience:creator",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:podcast"
+      ]
+    },
+    {
+      "productId": "0dcb04163f86b5",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension",
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:browser-extension",
+        "productForm:plugin"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "f5dd0ecc6ece38",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "translation"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:效率能力标签",
+        "sub:AI 助手",
+        "sub:翻译",
+        "platform:browser",
+        "productForm:plugin",
+        "capabilities:translation"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "40d0e95c7ff202",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sharing"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "capabilities:sharing"
+      ]
+    },
+    {
+      "productId": "0c661c92ed379f",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "知识库"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:知识库",
+        "audience:consumer",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
     },
     {
       "productId": "55f533ae9a4bb3",
@@ -65015,6 +66589,475 @@
       "reviewPreviousMethod": "semantic-fallback"
     },
     {
+      "productId": "cd2e5c64349c96",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "sub:AI 助手",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "c1176223a6fb05",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "f753f91d71b4b5",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:media-entertainment",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:wechat",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "88bc997149c1ce",
+      "primaryCategory": "business-marketing",
+      "subCategories": [
+        "营销"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:商业运营",
+        "sub:营销",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "f98267dce3a2fa",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer",
+          "sysadmin"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "automation",
+          "ssh",
+          "docker",
+          "monitoring",
+          "api",
+          "deployment"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:infrastructure-security",
+        "category:工程能力",
+        "sub:DevOps",
+        "sub:API 工具",
+        "sub:终端与 SSH",
+        "audience:developer",
+        "audience:sysadmin",
+        "platform:web",
+        "productForm:api"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "66f144279f7cf7",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "f8d96c6ef17223",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "DevOps",
+        "终端与 SSH"
+      ],
+      "tags": {
+        "audience": [
+          "sysadmin"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app",
+          "plugin"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "agent",
+          "analytics",
+          "docker",
+          "monitoring"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:DevOps",
+        "sub:终端与 SSH",
+        "audience:sysadmin",
+        "platform:ios",
+        "productForm:mobile-app",
+        "productForm:plugin",
+        "characteristics:ai-native",
+        "capabilities:agent",
+        "capabilities:analytics"
+      ]
+    },
+    {
+      "productId": "da43bf1a704741",
+      "primaryCategory": "business-marketing",
+      "subCategories": [
+        "项目协作"
+      ],
+      "tags": {
+        "audience": [
+          "team"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "collaboration"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:商业运营",
+        "sub:项目协作",
+        "audience:team",
+        "capabilities:collaboration"
+      ]
+    },
+    {
+      "productId": "67d051f92fae66",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "cb93be5b733480",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "557bc15f4c952d",
+      "primaryCategory": "business-marketing",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:business-marketing",
+        "category:生活健康",
+        "sub:旅行",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "lifestyle-health",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "4604a74b47bfd6",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:android",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "54f030f975089e",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "69b0e710146a0b",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:文件工具"
+      ]
+    },
+    {
+      "productId": "7eaaaa15cd919a",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "platform:windows",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
       "productId": "d7a33cedc0059a",
       "primaryCategory": "games",
       "subCategories": [
@@ -65040,6 +67083,58 @@
         "sub:游戏",
         "characteristics:ai-native",
         "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "91ed1280230f93",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "d6bc579700861d",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "笔记"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "note-taking"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:笔记",
+        "platform:windows",
+        "capabilities:note-taking"
       ]
     },
     {
@@ -65112,6 +67207,80 @@
       ]
     },
     {
+      "productId": "1345313687b7e3",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "2b9382b9e9ed47",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:macos"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "546c4c77269611",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作"
+      ]
+    },
+    {
       "productId": "c5f9346b5b8ec4",
       "primaryCategory": "developer-tools",
       "subCategories": [
@@ -65177,6 +67346,283 @@
       ]
     },
     {
+      "productId": "0490d2ee4286d0",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:consumer",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "d034ff66c36a59",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "translation",
+          "ocr"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:效率能力标签",
+        "sub:翻译",
+        "platform:ios",
+        "productForm:mobile-app",
+        "capabilities:translation",
+        "capabilities:ocr"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "40ecc615461d96",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios",
+          "macos"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "platform:ios",
+        "platform:macos",
+        "productForm:mobile-app",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "2f4d14f47b3653",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "计时与计算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "task-management"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:计时与计算",
+        "platform:ios",
+        "productForm:mobile-app",
+        "capabilities:task-management"
+      ]
+    },
+    {
+      "productId": "432e5ed9ed6641",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "platform:macos"
+      ]
+    },
+    {
+      "productId": "2b152ded0c1154",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "截图与二维码"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows",
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:截图与二维码",
+        "platform:windows",
+        "platform:wechat",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "100b02167f0cb9",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app",
+          "bot"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "automation"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:效率场景",
+        "sub:自动化",
+        "platform:ios",
+        "productForm:mobile-app",
+        "productForm:bot",
+        "characteristics:open-source",
+        "capabilities:automation"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "90d7e9c9a562c4",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "2864d869f405ed",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏"
+      ]
+    },
+    {
       "productId": "a367d1f66da4f3",
       "primaryCategory": "ai-productivity",
       "subCategories": [
@@ -65239,17 +67685,42 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
-      "productId": "3ead88121b9d7d",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "图像创作",
-        "设计工具"
-      ],
+      "productId": "eec939b7656858",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
       "tags": {
         "audience": [],
         "platform": [
-          "web"
+          "wechat"
         ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:wechat"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "3ead88121b9d7d",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
         "productForm": [],
         "characteristics": [
           "open-source"
@@ -65262,16 +67733,42 @@
       "signals": [
         "review:manual",
         "review:primary:design-creative",
-        "category:设计创意",
-        "sub:图像创作",
-        "sub:设计工具",
-        "platform:web",
+        "category:来源程序员清单兜底",
+        "audience:creator",
         "characteristics:open-source"
       ],
       "reviewStatus": "reviewed",
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "design-creative",
-      "reviewPreviousMethod": "rules"
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "a46c482ca89bbd",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
     },
     {
       "productId": "8b4e4264823519",
@@ -65379,6 +67876,108 @@
       ]
     },
     {
+      "productId": "810b38cdab6f33",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "DevOps"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:DevOps",
+        "audience:developer",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "026f0cd03d241d",
+      "primaryCategory": "education",
+      "subCategories": [
+        "语言学习"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:教育学习",
+        "sub:语言学习"
+      ]
+    },
+    {
+      "productId": "505ffde6b0107e",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "886ed2f80294f7",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
       "productId": "5f85f50009fe29",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65439,6 +68038,54 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "7ea596d839c279",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "sub:系统工具",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "84fac1243edfa7",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:macos",
+        "characteristics:open-source"
+      ]
+    },
+    {
       "productId": "b08f835bb062ef",
       "primaryCategory": "content-knowledge",
       "subCategories": [],
@@ -65464,6 +68111,37 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "utilities",
       "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "bf78536799c7d3",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "笔记",
+        "文档"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "note-taking",
+          "markdown"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:笔记",
+        "sub:文档",
+        "characteristics:open-source",
+        "capabilities:note-taking",
+        "capabilities:markdown"
+      ]
     },
     {
       "productId": "989271a43eb87a",
@@ -65521,6 +68199,116 @@
       ]
     },
     {
+      "productId": "c98229c9e6da11",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "2aa1edc446b407",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "29f456e344d248",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "audience:developer"
+      ]
+    },
+    {
+      "productId": "977f87e3f0928a",
+      "primaryCategory": "finance",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "note-taking",
+          "finance"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:finance",
+        "category:内容知识",
+        "sub:笔记",
+        "platform:web",
+        "capabilities:note-taking",
+        "capabilities:finance"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "content-knowledge",
+      "reviewPreviousMethod": "rules"
+    },
+    {
       "productId": "9f668aa186324f",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65552,6 +68340,55 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "design-creative",
       "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "abae34fc09fe87",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "845d33bd23f019",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
     },
     {
       "productId": "8736cf453aecad",
@@ -65598,6 +68435,39 @@
       ]
     },
     {
+      "productId": "1eb3e4338320c4",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "sub:AI 助手",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
       "productId": "44420769f13a64",
       "primaryCategory": "infrastructure-security",
       "subCategories": [
@@ -65638,6 +68508,127 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "a983b465541ff6",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "b0cee646337521",
+      "primaryCategory": "finance",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:finance",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "ae5c384089a6a0",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "7e786f43e1b71d",
+      "primaryCategory": "social-community",
+      "subCategories": [
+        "社区"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:社交社区",
+        "sub:社区"
+      ]
+    },
+    {
+      "productId": "7373d0bb2d0cb6",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "c46644bd79cd59",
       "primaryCategory": "utilities",
       "subCategories": [],
@@ -65665,6 +68656,31 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "cbc12b4270a6e0",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "10764c59149e7a",
       "primaryCategory": "games",
       "subCategories": [
@@ -65684,6 +68700,457 @@
         "category:来源游戏分类",
         "sub:游戏"
       ]
+    },
+    {
+      "productId": "bb5eae84c05076",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "天气"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:天气"
+      ]
+    },
+    {
+      "productId": "8d896c7ce330f2",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "5bd38682129846",
+      "primaryCategory": "social-community",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:social-community",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "e9ded3b19b97b3",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏"
+      ]
+    },
+    {
+      "productId": "106d642ff48e3f",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "c0a0939b1ab806",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "task-management"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "capabilities:task-management"
+      ]
+    },
+    {
+      "productId": "e30dcb9e64a3e7",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:consumer"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "021ca079d9afa1",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "sub:文件工具",
+        "productForm:plugin"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "14c81ba3e5deed",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:creator"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "21c2be1f627a22",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "b741a6f9ef47a1",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:电商交易",
+        "sub:在线商店"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ecommerce",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "1a1d6cc5fdd064",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "4e6c758e4e32cd",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "api"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "platform:web",
+        "productForm:api",
+        "capabilities:api"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "f4f9d2b1562cb6",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "翻译"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "translation"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "category:知识工作",
+        "sub:翻译",
+        "characteristics:open-source",
+        "capabilities:translation"
+      ]
+    },
+    {
+      "productId": "f54ecabd2dfdf6",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "note-taking",
+          "sync"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "platform:web",
+        "productForm:plugin",
+        "capabilities:note-taking",
+        "capabilities:sync"
+      ]
+    },
+    {
+      "productId": "ec011a1e2fcadf",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "9074f91a9f3b4a",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:通用工具"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "rules"
     },
     {
       "productId": "422227b7a56861",
@@ -65723,6 +69190,45 @@
       ]
     },
     {
+      "productId": "31d13bf9b563c5",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "search"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source",
+        "capabilities:search"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "rules"
+    },
+    {
       "productId": "3e02990aa4f04e",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65754,6 +69260,100 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "e4000f33300167",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "9f7eeaf6998d83",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "no-code"
+        ],
+        "capabilities": [
+          "deployment"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:developer-tools",
+        "category:能力标签",
+        "sub:部署",
+        "audience:developer",
+        "characteristics:no-code",
+        "capabilities:deployment"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "4c45f75e540333",
+      "primaryCategory": "social-community",
+      "subCategories": [
+        "社区"
+      ],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "wechat",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "education",
+          "task-management"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:社交社区",
+        "sub:社区",
+        "audience:student",
+        "platform:wechat",
+        "platform:web",
+        "capabilities:education",
+        "capabilities:task-management"
+      ]
+    },
+    {
       "productId": "29f4079e36fccd",
       "primaryCategory": "games",
       "subCategories": [
@@ -65779,6 +69379,46 @@
         "platform:wechat",
         "characteristics:open-source"
       ]
+    },
+    {
+      "productId": "1cfe3d03cc23c7",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "browser-extension",
+          "plugin"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:通用工具兜底",
+        "platform:browser",
+        "platform:web",
+        "productForm:browser-extension",
+        "productForm:plugin",
+        "characteristics:open-source",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
     },
     {
       "productId": "e54f75f7ebaca4",
@@ -65814,6 +69454,69 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "1f35e2ddc551c6",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "writing",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:效率能力标签",
+        "sub:写作",
+        "sub:Prompt 工具",
+        "audience:creator",
+        "capabilities:writing",
+        "capabilities:prompt-management"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "25eaeaf33e2e6e",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读",
+        "RSS"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "rss"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "sub:RSS",
+        "platform:web",
+        "capabilities:rss"
+      ]
+    },
+    {
       "productId": "5f5ea48faf5642",
       "primaryCategory": "lifestyle-health",
       "subCategories": [
@@ -65844,6 +69547,58 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "a14f8d6a1eb180",
+      "primaryCategory": "business-marketing",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:business-marketing",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "bdb685360f105f",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [
+        "存储与备份"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:基础设施",
+        "sub:存储与备份",
+        "characteristics:open-source"
+      ]
+    },
+    {
       "productId": "e0229fbe29464d",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65869,6 +69624,33 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "d90cecbc6d319c",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "code-generation"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "sub:AI 编程",
+        "audience:developer",
+        "capabilities:code-generation"
+      ]
     },
     {
       "productId": "3a6e05ce88a995",
@@ -65907,6 +69689,126 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "730efe9297d0d4",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:转换工具",
+        "platform:macos",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "5fbbb65c26e38f",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "视频",
+        "影视"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "category:媒体",
+        "sub:视频",
+        "sub:影视",
+        "characteristics:open-source",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "bf047925859b96",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "b85fd3c976d595",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具",
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "sub:系统工具",
+        "platform:wechat"
+      ]
+    },
+    {
       "productId": "7c2dc46c41623f",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65934,6 +69836,63 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "b28b202afc06cc",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:browser",
+        "productForm:browser-extension"
+      ]
+    },
+    {
+      "productId": "a7efed09ecb17d",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios",
+          "macos"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "platform:macos",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "b221a8b7c3ba15",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -65957,6 +69916,83 @@
         "audience:consumer",
         "productForm:cli"
       ]
+    },
+    {
+      "productId": "315c60782888fd",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer",
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux",
+          "web"
+        ],
+        "productForm": [
+          "desktop-app",
+          "api"
+        ],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "api",
+          "markdown"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "productForm:desktop-app",
+        "productForm:api"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "c34322ddbf3850",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
     },
     {
       "productId": "ce8933feff4d52",
@@ -66025,6 +70061,146 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "8a5e759e233f61",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "dc6b8f4a249218",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "投资"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:投资",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "b2353cfa4baf11",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "笔记",
+        "文档"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "local-first"
+        ],
+        "capabilities": [
+          "note-taking",
+          "markdown"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:笔记",
+        "sub:文档",
+        "audience:consumer",
+        "characteristics:local-first",
+        "capabilities:note-taking",
+        "capabilities:markdown"
+      ]
+    },
+    {
+      "productId": "c71ce5623d5dda",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer",
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "audience:developer",
+        "audience:consumer",
+        "productForm:plugin"
+      ]
+    },
+    {
+      "productId": "c56fd6c54b3e49",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读",
+        "RSS"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "rss"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "sub:RSS",
+        "audience:consumer",
+        "platform:web",
+        "capabilities:rss"
+      ]
     },
     {
       "productId": "0b09c168091d5c",
@@ -66114,6 +70290,56 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "c0e6e3e67e8b6a",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "e57376078036b7",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "4894f87e05ea9c",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -66141,6 +70367,65 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "5b0a4e908b30aa",
+      "primaryCategory": "business-marketing",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:business-marketing",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "ac48c3a9455db1",
+      "primaryCategory": "data-analytics",
+      "subCategories": [
+        "数据分析"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "analytics",
+          "search"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:数据分析",
+        "sub:数据分析",
+        "platform:wechat",
+        "platform:web",
+        "capabilities:analytics",
+        "capabilities:search"
+      ]
+    },
+    {
       "productId": "37ad39ebcfe3f1",
       "primaryCategory": "games",
       "subCategories": [],
@@ -66166,6 +70451,238 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "c8c06b4c2b3169",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "自动化"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "automation",
+          "workflow"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:自动化",
+        "capabilities:automation",
+        "capabilities:workflow"
+      ]
+    },
+    {
+      "productId": "c34ff4c2abab43",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "8b119eab40e9ec",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:系统工具",
+        "platform:windows"
+      ]
+    },
+    {
+      "productId": "444b3eb9c3b89e",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "security"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "capabilities:security"
+      ]
+    },
+    {
+      "productId": "6e5de7099564d3",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "enterprise"
+        ],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sync"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "audience:enterprise",
+        "platform:browser",
+        "capabilities:sync"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "19ed82f6bccba2",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:ios",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "fabba1d97ddecc",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:ios",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "3482dc5399935d",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:media-entertainment",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "71e126453b51f1",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "文档"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sync",
+          "markdown"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:文档",
+        "capabilities:sync",
+        "capabilities:markdown"
+      ]
     },
     {
       "productId": "975d233f7b84a5",
@@ -66230,6 +70747,111 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "575893bd9aa8ef",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "web-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "search"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具",
+        "platform:browser",
+        "platform:web",
+        "productForm:web-app",
+        "capabilities:search"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "af53d7169b26ef",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "security"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "platform:wechat",
+        "capabilities:security"
+      ]
+    },
+    {
+      "productId": "7be2ffb055de9f",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具"
+      ]
+    },
+    {
+      "productId": "8fa767c518d99a",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "书签"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "bookmark"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:书签",
+        "capabilities:bookmark"
+      ]
+    },
+    {
       "productId": "937656a0223a47",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -66263,6 +70885,380 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "2b338dec7d14fa",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [
+        "存储与备份"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:基础设施",
+        "sub:存储与备份",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "cd1301d3665ed5",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "64fb343e0f1383",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "9e7f477145faf9",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:音乐",
+        "audience:creator",
+        "audience:consumer",
+        "capabilities:music"
+      ]
+    },
+    {
+      "productId": "28898a78b51e96",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "11c9b74a0e81bf",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app",
+          "api"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "api"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "platform:ios",
+        "productForm:mobile-app",
+        "productForm:api",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "7f453da3f0de49",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "audience:consumer"
+      ]
+    },
+    {
+      "productId": "24f80f44728493",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "e69e3df77254fe",
+      "primaryCategory": "business-marketing",
+      "subCategories": [
+        "反馈"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "sharing",
+          "feedback"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:商业运营",
+        "sub:反馈",
+        "audience:creator",
+        "audience:consumer",
+        "capabilities:sharing",
+        "capabilities:feedback"
+      ]
+    },
+    {
+      "productId": "b4bc9e4ef26f19",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "文档"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "markdown"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:文档",
+        "productForm:plugin",
+        "capabilities:markdown"
+      ]
+    },
+    {
+      "productId": "4405a719edf24b",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "sub:转换工具",
+        "platform:web",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "d6ce1b2850d309",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "22e10c037a8a62",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "618d2954dba8fc",
       "primaryCategory": "games",
       "subCategories": [
@@ -66285,6 +71281,90 @@
         "category:来源游戏分类",
         "sub:游戏",
         "platform:wechat"
+      ]
+    },
+    {
+      "productId": "d1a53011d220e2",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "platform:ios",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "4c01ce020df244",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "天气"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:天气",
+        "platform:ios",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "85234df6aa79f5",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "旅行"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:旅行",
+        "audience:consumer",
+        "platform:ios",
+        "productForm:mobile-app"
       ]
     },
     {
@@ -66313,6 +71393,191 @@
       ]
     },
     {
+      "productId": "2f493754eead48",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "计时与计算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:计时与计算",
+        "platform:ios",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "5655d2c8c0f79d",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:macos"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "7bd37d908cf32d",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:ios",
+        "productForm:mobile-app"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "2e1e451ffed6d6",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos",
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "sub:系统工具",
+        "platform:macos",
+        "platform:browser"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "918e55139ce2a9",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "sub:文件工具",
+        "platform:browser",
+        "productForm:browser-extension"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "aa1b96fabe5b93",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "platform:ios",
+        "productForm:mobile-app",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
       "productId": "cd36b523dc806c",
       "primaryCategory": "games",
       "subCategories": [
@@ -66335,6 +71600,179 @@
         "category:来源游戏分类",
         "sub:游戏",
         "platform:wechat"
+      ]
+    },
+    {
+      "productId": "5ba024a5042bad",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:系统工具",
+        "platform:macos",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "0211de99ac7fe0",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "search",
+          "music"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:音乐",
+        "audience:consumer",
+        "capabilities:search",
+        "capabilities:music"
+      ]
+    },
+    {
+      "productId": "9eface555a0535",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "搜索",
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "search"
+        ]
+      },
+      "confidence": 0.93,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "category:知识工作",
+        "sub:搜索",
+        "sub:个人效率",
+        "productForm:plugin",
+        "capabilities:search"
+      ]
+    },
+    {
+      "productId": "c5d9251f8db54e",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "记账与预算",
+        "投资"
+      ],
+      "tags": {
+        "audience": [
+          "team"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "collaboration",
+          "finance"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:记账与预算",
+        "sub:投资",
+        "audience:team",
+        "capabilities:collaboration",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "9e9c17f51de8aa",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "education"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:education",
+        "category:教育能力标签",
+        "audience:student",
+        "capabilities:education"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "education",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "f4f19d7e0b5170",
+      "primaryCategory": "data-analytics",
+      "subCategories": [
+        "BI 与仪表盘"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "analytics"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:数据分析",
+        "sub:BI 与仪表盘",
+        "platform:browser",
+        "capabilities:analytics"
       ]
     },
     {
@@ -66366,6 +71804,110 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "09674189e8db62",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:系统工具",
+        "platform:android",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "eb9afba521a919",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "投资",
+        "发票与财务"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:投资",
+        "sub:发票与财务",
+        "audience:consumer",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "e7a839a2244413",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "calendar"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "platform:wechat",
+        "capabilities:calendar"
+      ]
+    },
+    {
+      "productId": "55d96e99e78707",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "characteristics:open-source"
+      ]
     },
     {
       "productId": "61af44d7d98074",
@@ -66425,6 +71967,161 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "380408bae11d4a",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "终端与 SSH"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "sysadmin"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "ssh"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:终端与 SSH",
+        "audience:developer",
+        "audience:sysadmin",
+        "capabilities:ssh"
+      ]
+    },
+    {
+      "productId": "aed0bb28b4bd9a",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "education"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:个人效率",
+        "audience:student",
+        "platform:web",
+        "capabilities:education"
+      ]
+    },
+    {
+      "productId": "1c3c396ca77a80",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "63fee16479e413",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "播客"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "podcast"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:播客",
+        "platform:ios",
+        "productForm:mobile-app",
+        "capabilities:podcast"
+      ]
+    },
+    {
+      "productId": "6ca0e5b2f35c65",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读",
+        "RSS"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "rss"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "sub:RSS",
+        "audience:consumer",
+        "platform:ios",
+        "productForm:mobile-app",
+        "capabilities:rss"
+      ]
+    },
+    {
       "productId": "741a541796f8b0",
       "primaryCategory": "developer-tools",
       "subCategories": [],
@@ -66449,6 +72146,123 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "b50170bb34602d",
+      "primaryCategory": "social-community",
+      "subCategories": [
+        "社区"
+      ],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:社交社区",
+        "sub:社区",
+        "audience:creator"
+      ]
+    },
+    {
+      "productId": "aacd0f5182c9dc",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "note-taking",
+          "markdown"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:开发工具",
+        "audience:developer",
+        "productForm:plugin",
+        "characteristics:open-source",
+        "capabilities:note-taking",
+        "capabilities:markdown"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "f9b146a0b43266",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:wechat",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "0821d874a70c1b",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "记账与预算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:记账与预算",
+        "capabilities:finance"
+      ]
+    },
+    {
       "productId": "f49c7d43d27a9f",
       "primaryCategory": "games",
       "subCategories": [
@@ -66469,6 +72283,65 @@
         "category:来源游戏分类",
         "sub:游戏"
       ]
+    },
+    {
+      "productId": "3b25c03be0d153",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "privacy-focused"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:infrastructure-security",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:privacy-focused"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "6ccd9fcc729c33",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "writing"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:效率能力标签",
+        "sub:写作",
+        "audience:creator",
+        "capabilities:writing"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
     },
     {
       "productId": "d365bb6399b5d9",
@@ -66591,6 +72464,100 @@
       "reviewPreviousMethod": "source-fallback"
     },
     {
+      "productId": "330842ad2df232",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "翻译"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "translation",
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:效率能力标签",
+        "sub:翻译",
+        "platform:web",
+        "capabilities:translation",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "53814845e85fcf",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:infrastructure-security",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:macos",
+        "platform:linux",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "34297e8f14f9d9",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "博客",
+        "RSS"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "rss"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:博客",
+        "sub:RSS",
+        "capabilities:rss"
+      ]
+    },
+    {
       "productId": "89b60bc44899f2",
       "primaryCategory": "content-knowledge",
       "subCategories": [],
@@ -66635,6 +72602,155 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "2443933afa113e",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "f46fb4bd4be081",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "8af9d1585d24f5",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识"
+      ]
+    },
+    {
+      "productId": "6dc24bd548a1ae",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "bbcbde6439176e",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "search"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:browser-extension",
+        "capabilities:search"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "3e393c8f9e62e4",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "视频"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "sub:视频",
+        "platform:web"
+      ]
+    },
+    {
       "productId": "e284d8ebb4f4d7",
       "primaryCategory": "utilities",
       "subCategories": [],
@@ -66666,6 +72782,31 @@
       "reviewPreviousMethod": "rules"
     },
     {
+      "productId": "118ae125fb1701",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:lifestyle-health",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "192b14da55f749",
       "primaryCategory": "utilities",
       "subCategories": [],
@@ -66691,6 +72832,238 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "developer-tools",
       "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "fa0e7954dca39b",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:utilities",
+        "category:通用工具兜底",
+        "sub:文件工具",
+        "platform:web",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "ba6b18c069cea0",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读",
+        "RSS"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "rss"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "sub:RSS",
+        "platform:web",
+        "capabilities:rss"
+      ]
+    },
+    {
+      "productId": "5f180eb0d75c79",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:browser-extension",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "24b6072a7276f1",
+      "primaryCategory": "infrastructure-security",
+      "subCategories": [
+        "安全"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "browser-extension"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "security"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:infrastructure-security",
+        "category:基础设施能力标签",
+        "sub:安全",
+        "platform:browser",
+        "productForm:browser-extension",
+        "characteristics:open-source",
+        "capabilities:security"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "infrastructure-security",
+      "reviewPreviousMethod": "semantic-fallback"
+    },
+    {
+      "productId": "285c58d97f2cc6",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具"
+      ]
+    },
+    {
+      "productId": "c48de1136f4d74",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:未命中现有领域语义",
+        "sub:其他"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "77e66151074c67",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:ai-productivity",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:consumer"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "ffeca16033e470",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:通用工具",
+        "capabilities:video"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "utilities",
+      "reviewPreviousMethod": "rules"
     },
     {
       "productId": "e397290935d65a",
@@ -81409,148 +87782,6 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "0c661c92ed379f",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [
-        "知识库"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:内容知识",
-        "sub:知识库",
-        "audience:consumer",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "7c85a725beeaca",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "audience:developer"
-      ]
-    },
-    {
-      "productId": "f98267dce3a2fa",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer",
-          "enterprise",
-          "sysadmin"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [
-          "saas"
-        ],
-        "characteristics": [],
-        "capabilities": [
-          "automation",
-          "docker"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "category:工程能力",
-        "sub:DevOps",
-        "audience:developer",
-        "audience:enterprise",
-        "platform:web",
-        "productForm:saas",
-        "capabilities:automation",
-        "capabilities:docker"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "developer-tools",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "a736aa79035529",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "1a6dcf214c42ee",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [],
-        "productForm": [
-          "desktop-app"
-        ],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "audience:developer",
-        "productForm:desktop-app"
-      ]
     },
     {
       "productId": "5ffabe5a940aa3",

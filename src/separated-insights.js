@@ -7,6 +7,7 @@ const ACTIVITY_LABELS = {
   'active-year': '一年内更新',
   'inactive-year': '超过一年未更新',
   archived: '已归档',
+  unavailable: '无可用仓库',
   unknown: '更新时间未知'
 }
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
@@ -225,6 +226,7 @@ function currentProductFilters() {
     query: document.getElementById('search')?.value.trim().toLowerCase() || '',
     category: document.getElementById('category-filter')?.value || '',
     status: document.getElementById('status-filter')?.value || '',
+    activity: document.getElementById('activity-filter')?.value || '',
     year: document.getElementById('year-filter')?.value || '',
     city: document.getElementById('city-filter')?.value || ''
   }
@@ -239,6 +241,7 @@ function productMatchesCurrentFilters(record, filters) {
   return (!filters.query || haystack.includes(filters.query))
     && (!filters.category || record.category === filters.category)
     && (!filters.status || record.status === filters.status)
+    && (!filters.activity || classifyActivity(repository) === filters.activity)
     && (!filters.year || String(record.year) === filters.year)
     && (!filters.city || record.city === filters.city)
 }
@@ -264,7 +267,7 @@ function scheduleProductInsightsRender() {
 }
 
 function bindProductInsightFilters() {
-  for (const id of ['search', 'category-filter', 'status-filter', 'year-filter', 'city-filter']) {
+  for (const id of ['search', 'category-filter', 'status-filter', 'activity-filter', 'year-filter', 'city-filter']) {
     const node = document.getElementById(id)
     if (!node) continue
     node.addEventListener(id === 'search' ? 'input' : 'change', scheduleProductInsightsRender)
