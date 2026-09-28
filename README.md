@@ -2,293 +2,306 @@
 
 # IndieBase CN
 
-### 中国独立开发者产品可视化数据库
+**中国独立开发者产品观察站**
 
-将多个社区维护的 Markdown 清单转换为**可搜索、可筛选、可视化、可追溯**的结构化数据集。
+把散落在社区里的独立产品、开发工具和 GitHub 项目整理成一个可以搜索、筛选、看趋势、追踪变化的网站。
 
-[在线访问](https://fzkls.github.io/chinese-indie-products/) · [数据质量报告](data/quality-report.json) · [提交问题](https://github.com/Fzkls/chinese-indie-products/issues)
-
-[![Pages](https://img.shields.io/badge/GitHub%20Pages-在线访问-2ea44f?logo=github)](https://fzkls.github.io/chinese-indie-products/)
 [![Verify and publish site](https://github.com/Fzkls/chinese-indie-products/actions/workflows/site.yml/badge.svg)](https://github.com/Fzkls/chinese-indie-products/actions/workflows/site.yml)
-[![Weekly Sync](https://img.shields.io/badge/Data%20Sync-每周一-blue)](.github/workflows/site.yml)
-[![Node.js](https://img.shields.io/badge/Node.js-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-在线访问-2ea44f?logo=github)](https://fzkls.github.io/chinese-indie-products/)
+[![Weekly Sync](https://img.shields.io/badge/数据更新-每周自动同步-blue)](.github/workflows/site.yml)
 
 </div>
 
 ---
 
-## 项目定位
+## 🌐 在线访问
 
-IndieBase CN 不是简单复制一份项目名单，而是把分散在不同仓库、不同格式中的独立开发数据整理成统一、可验证的数据产品。
+### **👉 [https://fzkls.github.io/chinese-indie-products/](https://fzkls.github.io/chinese-indie-products/)**
 
-当前站点包含两套**严格分离**的数据集：
+如果你只是想看看有哪些独立产品、最近新增了什么、哪些 GitHub 项目还在持续维护，直接打开上面的链接即可，不需要安装任何东西。
 
-| 数据集 | 内容 | 输出文件 | 是否参与产品图表 |
-| --- | --- | --- | --- |
-| 独立产品 | 中国独立开发者及其产品、游戏、程序员工具和精选项目 | `data/products.json` | 是 |
-| 工具资源 | 独立开发、AI 出海和产品建设相关工具目录 | `data/tools.json` | 否 |
+![IndieBase CN 项目预览](docs/readme-preview.svg)
 
-产品与工具不会混在同一个列表中，也不会跨数据集互相去重。即使两边出现相同 URL，也只会在质量报告中标记为重叠，不会合并记录。
+## 这个项目是做什么的？
 
-## 数据来源
+网上已经有不少“中国独立开发者 / 独立产品”的社区清单，但大多数都是 Markdown 长列表。
+
+IndieBase CN 做的事情很简单：
+
+> **把这些分散的清单持续同步下来，整理成结构化数据，再做成一个更容易浏览和观察变化的网站。**
+
+它不是一个新的投稿社区，也不是自己重新维护一份产品名单，而是在现有公开数据源之上增加：
+
+| 能力 | 你能看到什么 |
+| --- | --- |
+| 产品搜索 | 按产品名、开发者、描述、城市等搜索 |
+| 多条件筛选 | 产品类型、运行状态、年份、城市、GitHub 活跃度 |
+| 本周变化 | 相比上一份成功快照新增、移除、变化了什么 |
+| GitHub 趋势 | Star / Fork 变化、最近 Push、项目是否还活跃 |
+| 项目生命周期 | 持续活跃、近期活跃、一年内维护、长期未更新、已归档 |
+| 产品分类 | 自动整理到 AI、开发工具、内容、设计、教育、游戏等领域 |
+| 来源追溯 | 每条数据都能看到来自哪个仓库、哪个文件、哪一行 |
+
+## 页面里有什么？
 
 ### 独立产品
 
-1. [`1c7/chinese-independent-developer`](https://github.com/1c7/chinese-independent-developer)
-   - `README.md`
-   - `.github/pages/README-Programmer-Edition.md`
-   - `.github/pages/README-Game.md`
-   - `.github/pages/README-Archive.md`（2018–2024 历史项目归档；若未来再次移除，会保留最后一次成功结构化快照）
-2. [`XiaomingX/1000-chinese-independent-developer-plus`](https://github.com/XiaomingX/1000-chinese-independent-developer-plus)
-   - `README.md` 中的精品项目表格
+这是主数据集，可以直接浏览和搜索独立开发者做过的产品。
 
-### 工具资源
+每条记录会尽量保留：
 
-1. [`yaolifeng0629/Awesome-independent-tools`](https://github.com/yaolifeng0629/Awesome-independent-tools)
-   - `README.md` 中的分类工具目录
+- 产品名称和介绍
+- 开发者
+- 产品地址
+- 时间和城市
+- 当前状态
+- 产品分类
+- GitHub 仓库信息
+- 原始数据来源
 
-> 本项目只负责结构化、去重、可视化和来源追溯。原始内容的维护权与署名归对应上游仓库及贡献者所有。
+### 本周变化
 
-## 来源追溯
+网站会保存上一份成功同步的数据，并和当前数据做对比。
 
-每条记录都包含 `sources[]`。来源不会在去重时被覆盖或丢失。
-
-```json
-{
-  "sources": [
-    {
-      "repository": "1c7/chinese-independent-developer",
-      "repositoryUrl": "https://github.com/1c7/chinese-independent-developer",
-      "sourceFile": "README.md",
-      "sourceSection": "2026 年 8 月添加",
-      "sourceLine": 123,
-      "sourceUrl": "https://github.com/1c7/chinese-independent-developer/blob/master/README.md#L123",
-      "rawText": "原始 Markdown 行"
-    }
-  ]
-}
-```
-
-同一产品被两个仓库同时收录时，结果会保留两条来源：
+所以你可以直接看到：
 
 ```text
-sources[0] -> 1c7/chinese-independent-developer
-sources[1] -> XiaomingX/1000-chinese-independent-developer-plus
+本周新增
+本周移除
+已有产品信息变化
 ```
 
-网站卡片中可以直接展开来源，并跳转到对应仓库、文件和行号。
+这里的“新增”指：
 
-## 去重规则
+> **当前快照里存在，但上一份成功快照里不存在。**
 
-### 产品数据集
+它不一定等于“这个产品本周刚发布”。
 
-优先使用规范化 URL 去重：
+例如上游重新恢复了一批历史数据时，也会被识别成一次快照新增。
 
-- 忽略 `http` / `https` 差异
-- 忽略 `www.`
-- 移除尾部 `/`
-- 移除 URL hash
-- 移除常见 `utm_*`、`ref` 和 `source` 跟踪参数
-- GitHub 路径按不区分大小写处理
+### GitHub 趋势
 
-没有有效 URL 时，使用：
+如果产品本身直接关联公开 GitHub 仓库，系统会额外记录：
 
 ```text
-规范化产品名称 + 规范化开发者名称
+Stars
+Forks
+最近 Push 时间
+是否 Archived
+主要语言
+License
 ```
 
-重复记录合并时会保留全部 `sources[]`，并优先选择更完整的描述和字段。状态优先级为：已上线、开发中、已收购、已关闭、未知。
-
-### 工具数据集
-
-优先使用规范化工具 URL；没有 URL 时使用规范化工具名称。同一工具在不同分类中重复出现时，会合并来源并保留分类集合。工具不会与产品数据集合并。
-
-## 在线能力
-
-### 独立产品区
-
-- 搜索产品、开发者、描述、城市和来源仓库
-- 按产品类型、运行状态、GitHub 活跃度、年份和城市组合筛选
-- 展示年度趋势、产品类型、城市分布和运行状态
-- 展示相对上一份成功快照的新增、移除和信息变化
-- 基于 GitHub 周快照展示 Star 增长与项目生命周期
-- 展开查看每条记录的准确来源
-- 下载独立产品 JSON
-
-### 工具资源区
-
-- 与独立产品分开展示
-- 搜索工具名称、分类、描述和来源
-- 按工具分类筛选
-- 展开查看来源文件和行号
-- 下载工具资源 JSON
-
-## 数据处理流程
+每周还会保存一份轻量历史快照，因此可以逐渐观察：
 
 ```text
-上游仓库
-   │
-   ├── 独立开发者 Markdown 清单 ── parseMarkdown()
-   ├── Plus 精品项目表格 ───────── parseProjectTable()
-   └── Awesome 工具目录 ────────── parseToolDirectory()
-                                      │
-                                      ▼
-                         字段规范化与 URL 标准化
-                                      │
-                     ┌────────────────┴────────────────┐
-                     ▼                                 ▼
-                products 数据集                    tools 数据集
-                     │                                 │
-              产品内部去重                       工具内部去重
-                     │                                 │
-                     └────────── 保留 sources[] ───────┘
-                                      │
-                                      ▼
-                       校验、质量报告、静态站构建
-                                      │
-                                      ▼
-                             GitHub Pages 发布
+最近一周 Star 增长
+Fork 增长
+项目是否还在持续维护
+项目是否长期没有更新
 ```
 
-## 自动同步与发布
+GitHub 历史数据从 IndieBase CN 开始观察项目之后才会积累，**不会反推或伪造过去的 Star 历史**。
 
-工作流位于 [`.github/workflows/site.yml`](.github/workflows/site.yml)。
+## 数据从哪里来？
 
-触发方式：
+目前主要同步这些公开项目：
 
-- 向 `main` 推送代码
-- Pull Request
-- 手动运行 `workflow_dispatch`
-- **每周一 10:17（北京时间）自动同步**
+| 数据源 | 用途 |
+| --- | --- |
+| [1c7/chinese-independent-developer](https://github.com/1c7/chinese-independent-developer) | 独立开发者产品主数据 |
+| `.github/pages/README-Programmer-Edition.md` | 程序员 / 开发者工具 |
+| `.github/pages/README-Game.md` | 游戏产品 |
+| `.github/pages/README-Archive.md` | 2018–2024 历史归档 |
+| [XiaomingX/1000-chinese-independent-developer-plus](https://github.com/XiaomingX/1000-chinese-independent-developer-plus) | 补充独立产品 |
+| [yaolifeng0629/Awesome-independent-tools](https://github.com/yaolifeng0629/Awesome-independent-tools) | 独立开发相关工具资源 |
 
-每周任务通过统一的 `npm run refresh:data` 管线下载上游数据、清理失效 taxonomy override、重建分类、刷新 GitHub 元数据，再运行测试与构建。成功后会将新快照提交到 `main` 并发布到 `gh-pages`。
+原始内容的维护权和署名仍属于对应上游仓库及贡献者。
 
-同步管线会对临时网络/5xx/429 错误自动重试；必需数据源失败会直接阻止发布。历史归档允许在上游文件消失时保留最后一次成功结构化快照。若产品或工具记录数相对上一份成功快照异常下降超过 15%，同步也会停止，避免上游目录变化造成静默丢数。质量报告同时记录每个来源的健康状态。
+## 自动更新是怎么跑的？
+
+项目使用 GitHub Actions 自动维护数据。
+
+```text
+公开上游仓库
+      ↓
+同步原始数据
+      ↓
+解析 + 去重
+      ↓
+检查来源是否正常
+      ↓
+清理失效分类记录
+      ↓
+重新分类
+      ↓
+刷新 GitHub 信息和周快照
+      ↓
+测试 + 数据质量检查
+      ↓
+生成静态网站
+      ↓
+自动提交最新数据
+      ↓
+发布 GitHub Pages
+```
+
+默认每周会自动执行一次，同时支持手动运行。
+
+核心入口统一为：
+
+```bash
+npm run refresh:data
+```
+
+## 为什么有时候 GitHub Actions 会主动失败？
+
+这是故意设计的。
+
+这个项目宁愿暂时不发布新数据，也不希望在上游格式变化时静默产生错误结果。
+
+目前有几类重要保护：
+
+| 情况 | 处理方式 |
+| --- | --- |
+| 必需上游地址失效 | 停止发布 |
+| 临时网络错误 / 5xx / 429 | 自动重试 |
+| 产品或工具数量突然下降超过 15% | 停止发布，等待人工确认 |
+| 新产品无法可靠分类 | 停止发布，先补规则或人工确认 |
+| Taxonomy override 已失效 | 自动清理 |
+| GitHub 单个仓库失效 | 标记 unavailable，不把它当成 0 Star |
+
+比如新出现一个系统暂时无法判断分类的产品时，CI 会直接指出具体产品，而不是偷偷扔进“其他”继续发布。
+
+这也是最近把自动同步可靠性重新整理一遍的原因。
+
+## 数据质量
+
+生成后的质量信息在：
+
+**[data/quality-report.json](data/quality-report.json)**
+
+这里会记录：
+
+- 产品 / 工具数量
+- 缺失字段
+- 重复记录
+- 数据源健康状态
+- 产品与工具之间的 URL 重叠
+- 解析 warning
+- 数据安全门禁信息
+
+产品和工具始终是两个独立数据集，不会因为 URL 相同就跨数据集合并。
+
+## 主要数据文件
+
+| 文件 | 内容 |
+| --- | --- |
+| `data/products.json` | 独立产品结构化数据 |
+| `data/tools.json` | 独立开发工具数据 |
+| `data/product-taxonomy.json` | 产品语义分类结果 |
+| `data/taxonomy-overrides.json` | 明确人工确认过的分类 |
+| `data/github-repositories.json` | 当前 GitHub 仓库信息 |
+| `data/github-history.json` | 每周 GitHub Star / Fork 历史快照 |
+| `data/weekly-changes.json` | 当前数据相对上一份成功快照的变化 |
+| `data/quality-report.json` | 数据质量与来源健康报告 |
 
 ## 本地运行
 
-要求 Node.js 20 或更高版本。
+要求 Node.js 20+。
+
+只想在本地看看页面，可以直接使用仓库里的示例数据：
 
 ```bash
-# 使用仓库内示例数据，适合离线开发
 npm run sync:data -- --fixtures
-
-# 同步全部真实上游数据
-npm run sync:data
-
-# 测试、数据校验和构建
 npm run verify
 
-# 本地预览构建产物
 python3 -m http.server 4173 -d dist
 ```
 
-打开 `http://localhost:4173`。
+然后打开：
 
-## npm 命令
+```text
+http://localhost:4173
+```
+
+如果要同步真实上游并刷新 GitHub 数据：
+
+```bash
+export GITHUB_TOKEN=你的 GitHub Token
+npm run refresh:data
+npm run verify
+```
+
+常用命令：
 
 | 命令 | 作用 |
 | --- | --- |
-| `npm run sync:data` | 同步三个上游仓库并生成两套数据集与周变化快照 |
-| `npm run sync:data -- --fixtures` | 使用本地 fixture 生成离线预览数据 |
-| `npm run refresh:data` | 统一执行数据同步、taxonomy 清理/重建与 GitHub 刷新 |
-| `npm run taxonomy:doctor` | 检查 stale taxonomy override |
-| `npm run taxonomy:prune` | 清理当前产品集中已不存在的 taxonomy override |
-| `npm test` | 运行解析、去重、趋势与数据分离测试 |
-| `npm run check:data` | 检查字段、ID、URL、来源和数据集边界 |
-| `npm run build` | 构建纯静态站点到 `dist/` |
-| `npm run verify` | 依次执行测试、数据检查和构建 |
-
-## 输出文件
-
-### `data/products.json`
-
-```ts
-interface ProductRecord {
-  id: string
-  recordType: 'product'
-  productName: string
-  productUrl: string | null
-  developerName: string
-  category: 'product' | 'developer-tool' | 'game' | 'archive'
-  sourceCategory: string | null
-  status: 'active' | 'developing' | 'closed' | 'acquired' | 'unknown'
-  date: string | null
-  city: string | null
-  description: string
-  sourceRepositories: string[]
-  sourceCount: number
-  sources: SourceReference[]
-}
-```
-
-### `data/tools.json`
-
-```ts
-interface ToolRecord {
-  id: string
-  recordType: 'tool'
-  toolName: string
-  toolUrl: string
-  category: string
-  categories?: string[]
-  pricing: 'free' | 'paid' | 'open-source' | 'unknown'
-  description: string
-  sourceRepositories: string[]
-  sourceCount: number
-  sources: SourceReference[]
-}
-```
-
-### `data/quality-report.json`
-
-包含产品和工具的记录数量、分类与状态统计、缺失字段、解析警告、来源健康状态、数据集内部重复记录、产品与工具之间的 URL 重叠，以及数据集分离规则。
-
-### `data/weekly-changes.json`
-
-记录当前快照相对上一份成功快照的新增、移除和字段变化；首页“本周变化与项目趋势”直接消费该文件。
+| `npm run sync:data` | 同步产品 / 工具，并计算本周变化 |
+| `npm run sync:taxonomy` | 重新生成产品分类 |
+| `npm run sync:github` | 更新 GitHub 仓库数据和历史快照 |
+| `npm run refresh:data` | 一次完成完整数据刷新 |
+| `npm run taxonomy:doctor` | 检查失效的人工分类记录 |
+| `npm run taxonomy:prune` | 清理失效人工分类记录 |
+| `npm test` | 跑自动测试 |
+| `npm run verify` | 完整校验并构建网站 |
 
 ## 项目结构
 
 ```text
 .
-├── .github/workflows/site.yml
-├── data/
-│   ├── products.json
-│   ├── tools.json
-│   └── quality-report.json
-├── fixtures/
+├── .github/workflows/        # 自动同步和发布
+├── data/                     # 生成后的结构化数据
+├── fixtures/                 # 本地测试 / 示例数据
 ├── scripts/
-│   ├── lib/parser.mjs
-│   ├── sync-data.mjs
-│   ├── check-data.mjs
-│   └── build.mjs
-├── src/
-│   ├── app.js
-│   └── styles.css
-├── tests/
+│   ├── lib/                  # 解析、分类等核心逻辑
+│   ├── sync-data.mjs         # 上游数据同步
+│   ├── sync-taxonomy.mjs     # 分类生成
+│   ├── sync-github.mjs       # GitHub 数据同步
+│   └── build.mjs             # 静态站构建
+├── src/                      # 页面脚本和样式
+├── tests/                    # 自动测试
 ├── index.html
-└── package.json
+└── README.md
 ```
 
 ## 数据边界
 
-这些数据来自社区主动提交和人工维护的公开清单，不代表中国独立开发者总体规模。项目状态、链接和开发者信息可能随时间变化；Plus 仓库中的商业分析属于其维护者的编辑内容；工具目录中可能包含海外产品、开源项目、付费服务和通用开发资源。
+这些数据来自社区公开维护的清单，因此：
 
-使用数据进行分析时，应同时展示快照时间和来源信息。
+> **它可以用来观察独立开发产品、项目类型和公开 GitHub 活跃度，但不能代表“中国独立开发者总体规模”。**
+
+产品是否仍在运营、开发者所在地、描述文字等信息，也可能因为上游没有及时更新而滞后。
+
+所以做分析时，建议同时看：
+
+```text
+数据生成时间
+原始来源
+GitHub 最近更新时间
+```
 
 ## 贡献
 
-欢迎提交 Issue 或 Pull Request，尤其包括新数据源解析器、去重规则改进、错误合并修复、遗漏来源修复、质量规则、可视化和测试样例。
+如果发现数据解析错误、重复项目、分类不准确或上游路径发生变化，可以直接提交 Issue / Pull Request。
 
-新增数据源必须明确仓库、文件、解析方式、授权边界和来源字段，不能只导入内容而不保留出处。
+新增数据源时，最好同时说明：
 
-## 授权与署名
+```text
+来源仓库
+具体文件
+解析规则
+数据授权 / 署名要求
+```
 
-本仓库目前未声明独立的软件许可证。上游内容的再发布、衍生使用和商业使用，应分别遵守对应上游仓库的许可证、贡献约定和署名要求。
+这样后续自动同步才能长期稳定运行。
 
-数据来源：
+---
 
-- `1c7/chinese-independent-developer`
-- `XiaomingX/1000-chinese-independent-developer-plus`
-- `yaolifeng0629/Awesome-independent-tools`
+<div align="center">
+
+**IndieBase CN · 持续观察中国独立开发者正在创造什么**
+
+### [打开网站 →](https://fzkls.github.io/chinese-indie-products/)
+
+</div>
