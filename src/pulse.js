@@ -23,10 +23,10 @@ function renderNewProducts(changes) {
   if (!container) return
   container.innerHTML = items.length
     ? items.slice(0, 5).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
-        <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.developerName || item.description || '新增产品')}</small></span>
-        <span class="pulse-row-meta">新增</span>
+        <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.developerName || item.description || '新收录项目')}</small></span>
+        <span class="pulse-row-meta">新收录</span>
       </button>`).join('')
-    : '<div class="pulse-empty">与上一份成功快照相比，本期暂无新增产品。</div>'
+    : '<div class="pulse-empty">与上一份成功快照相比，本期暂无新收录项目。</div>'
   for (const button of container.querySelectorAll('[data-product-name]')) {
     button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
   }
