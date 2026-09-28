@@ -1,6 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { classifyProduct } from '../scripts/lib/taxonomy-v1.mjs'
+import { autoReviewOther } from '../scripts/lib/taxonomy-review-rules.mjs'
 
 const record = (id, productName, description, category = 'product', productUrl = 'https://example.test', profileLinks = []) => ({
   id, productName, description, category, productUrl, profileLinks
@@ -103,4 +104,22 @@ test('classifies cold-knowledge publishing sites as content knowledge', () => {
   ))
   assert.equal(result.primaryCategory, 'content-knowledge')
   assert.notEqual(result.classificationMethod, 'other')
+})
+
+
+test('auto-reviews unresolved Other without blocking the pipeline', () => {
+  const source = record('ambiguous', '未命名实验', '一个暂时无法从公开描述判断具体领域的小项目')
+  const base = classifyProduct(source)
+  assert.equal(base.primaryCategory, 'other')
+  const reviewed = autoReviewOther(source, base)
+  assert.equal(reviewed.primaryCategory, 'other')
+  assert.equal(reviewed.classificationMethod, 'auto-review')
+  assert.equal(reviewed.reviewStatus, 'auto-reviewed')
+})
+
+test('auto-review leaves already classified products unchanged', () => {
+  const source = record('clear', 'RSS Reader', '一个 RSS 阅读器和稍后读工具')
+  const base = classifyProduct(source)
+  assert.equal(base.primaryCategory, 'content-knowledge')
+  assert.deepEqual(autoReviewOther(source, base), base)
 })
