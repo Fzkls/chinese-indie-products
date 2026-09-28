@@ -27,3 +27,18 @@ export function applyReviewedSemanticRule(record, classification) {
     signals: [`review:semantic-rule`, `review:primary:${matched.category}`, ...(classification.signals || [])].slice(0, 10)
   }
 }
+
+
+export function autoReviewOther(record, classification) {
+  if (classification.primaryCategory !== 'other') return classification
+  return {
+    ...classification,
+    confidence: Math.max(classification.confidence || 0, 0.5),
+    classificationMethod: 'auto-review',
+    reviewStatus: 'auto-reviewed',
+    reviewReason: '现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。',
+    reviewPreviousPrimaryCategory: classification.primaryCategory,
+    reviewPreviousMethod: classification.classificationMethod,
+    signals: ['review:auto-other', ...(classification.signals || [])].slice(0, 10)
+  }
+}
