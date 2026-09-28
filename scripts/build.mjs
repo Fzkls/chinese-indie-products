@@ -51,6 +51,8 @@ for (const dataset of ['products.json', 'product-taxonomy.json']) {
   if (!overviewInteractions.includes(`data/${dataset}`)) throw new Error(`overview-interactions.js must reference data/${dataset}`)
 }
 const datasetTabs = await readFile('dist/src/dataset-tabs.js', 'utf8')
+const singleSelectorCollectionMisuse = /(^|[^$])\$\([^\n;]*\)\.forEach/gm.test(datasetTabs)
+if (singleSelectorCollectionMisuse) throw new Error('dataset-tabs.js must not call .forEach() on single-element $() selector')
 for (const dataset of ['products.json', 'tools.json', 'taxonomy.json', 'product-taxonomy.json']) {
   if (!datasetTabs.includes(`data/${dataset}`)) throw new Error(`dataset-tabs.js must reference data/${dataset}`)
 }

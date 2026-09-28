@@ -599,7 +599,7 @@ function bindProjectFilters() {
     ui.sort = event.target.value
     applyProjectFilters()
   })
-  $('.project-presets [data-project-preset]').forEach((button) => {
+  $$('.project-presets [data-project-preset]').forEach((button) => {
     button.addEventListener('click', () => {
       const preset = button.dataset.projectPreset
       ui.filters.preset = ui.filters.preset === preset ? '' : preset
