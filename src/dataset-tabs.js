@@ -48,6 +48,7 @@ const ui = {
   github: {},
   productMetadata: {},
   weeklyNewNames: new Set(),
+  weeklyAdded: [],
   filteredProducts: [],
   pageSize: 36,
   visible: 36,
@@ -109,6 +110,10 @@ function installNavigation() {
     const button = event.target.closest('[data-dataset]')
     if (!button) return
     setView(button.dataset.dataset, button.dataset.mode || 'overview', true)
+  })
+  $('.brand')?.addEventListener('click', (event) => {
+    event.preventDefault()
+    setView('product', 'overview', true)
   })
 }
 
@@ -459,6 +464,23 @@ function syncPresetButtons() {
   $('[data-project-preset]').forEach((button) => {
     button.classList.toggle('is-active', button.dataset.projectPreset === ui.filters.preset)
   })
+}
+
+function renderDirectoryWeekly() {
+  const container = $('[data-weekly-new-sidebar]')
+  const count = $('#directory-weekly-count')
+  const items = ui.weeklyAdded || []
+  if (count) count.textContent = formatNumber(items.length)
+  if (!container) return
+  container.innerHTML = items.length
+    ? items.slice(0, 6).map((item) => `<button class="directory-weekly-row" type="button" data-directory-weekly="${escapeHtml(item.name || '')}">
+        <strong>${escapeHtml(item.name || '未命名项目')}</strong>
+        <span>${escapeHtml(item.developerName || item.description || '新收录项目')}</span>
+      </button>`).join('')
+    : '<div class="directory-weekly-empty">本周暂无新收录项目</div>'
+  for (const button of container.querySelectorAll('[data-directory-weekly]')) {
+    button.addEventListener('click', () => openProjectDirectory({ search: button.dataset.directoryWeekly }))
+  }
 }
 
 
@@ -875,13 +897,15 @@ async function loadData() {
   ui.taxonomy = taxonomy
   ui.semanticById = new Map((semantic.records || []).map((item) => [item.productId, item]))
   ui.github = github.repositories || {}
-  ui.weeklyNewNames = new Set((weekly.products?.added || []).map((item) => item.name).filter(Boolean))
+  ui.weeklyAdded = weekly.products?.added || []
+  ui.weeklyNewNames = new Set(ui.weeklyAdded.map((item) => item.name).filter(Boolean))
   ui.filteredProducts = ui.products
   syncHero()
   syncOverviewSummary()
   buildProjectFilters()
   bindProjectFilters()
   applyProjectFilters()
+  renderDirectoryWeekly()
   ensureProductDirectionExplorer()
   ensureToolCategoryExplorer()
   organizeOverview()
