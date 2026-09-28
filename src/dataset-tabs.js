@@ -46,12 +46,15 @@ const ui = {
   semanticById: new Map(),
   taxonomy: {},
   github: {},
+  productMetadata: {},
+  weeklyNewNames: new Set(),
   filteredProducts: [],
   pageSize: 36,
   visible: 36,
+  sort: 'smart',
   primaryPreview: '',
   toolPreviewCategory: '',
-  filters: { search: '', primary: '', sub: '', audience: '', form: '', characteristic: '', status: '', activity: '', year: '', city: '' }
+  filters: { search: '', preset: '', primary: '', sub: '', audience: '', form: '', characteristic: '', status: '', activity: '', year: '', city: '' }
 }
 
 function primaryLabel(id) {
@@ -98,18 +101,77 @@ function installNavigation() {
   if (!links) return
   links.classList.add('dataset-navigation')
   links.innerHTML = `
-    <div class="dataset-primary-tabs" role="tablist" aria-label="数据集">
-      <button type="button" role="tab" data-dataset="product">项目</button>
-      <button type="button" role="tab" data-dataset="tool">工具</button>
-    </div>
-    <a class="dataset-method-link" href="#methodology">数据说明</a>`
+    <button type="button" class="site-nav-item" data-dataset="product" data-mode="directory">🚀 独立产品</button>
+    <button type="button" class="site-nav-item" data-dataset="tool" data-mode="directory">🛠 工具资源</button>
+    <button type="button" class="site-nav-item" data-dataset="product" data-mode="overview">▣ 生态洞察</button>
+    <a class="site-nav-item dataset-method-link" href="#methodology">▤ 关于</a>`
   links.addEventListener('click', (event) => {
     const button = event.target.closest('[data-dataset]')
     if (!button) return
-    setView(button.dataset.dataset, 'overview', true)
+    setView(button.dataset.dataset, button.dataset.mode || 'overview', true)
   })
 }
 
+function installOverviewShell() {
+  const metrics = $('.metrics')
+  if (!metrics) return
+  metrics.classList.add('ecosystem-metrics')
+  metrics.innerHTML = `
+    <article class="metric ecosystem-metric"><span>收录产品总数</span><strong id="metric-products">—</strong><small>去重后的独立产品</small></article>
+    <article class="metric ecosystem-metric"><span>收录工具总数</span><strong id="overview-metric-tools">—</strong><small>开发工具与资源库</small></article>
+    <article class="metric ecosystem-metric"><span>开发者总数</span><strong id="metric-developers">—</strong><small>按公开名称去重</small></article>
+    <article class="metric ecosystem-metric"><span>开源项目数</span><strong id="overview-metric-open-source">—</strong><small>具有明确开源标记</small></article>
+    <article class="metric ecosystem-metric"><span>标记运行比例</span><strong id="overview-metric-active-rate">—</strong><small>已上线或开发中</small></article>`
+
+  if (!$('#ecosystem-overview-head')) {
+    const head = document.createElement('section')
+    head.id = 'ecosystem-overview-head'
+    head.className = 'wrap ecosystem-overview-head'
+    head.innerHTML = `
+      <div>
+        <p class="eyebrow">ECOSYSTEM WEEKLY</p>
+        <h1>中国独立产品生态洞察</h1>
+      </div>
+      <div class="overview-snapshot">
+        <span>数据快照</span>
+        <strong id="overview-snapshot-date">读取中…</strong>
+      </div>`
+    metrics.insertAdjacentElement('beforebegin', head)
+  }
+}
+
+function syncOverviewSummary() {
+  const products = ui.products
+  const semantic = products.map((item) => semanticFor(item))
+  const openSource = semantic.filter((item) => (item.tags?.characteristics || []).includes('open-source')).length
+  const active = products.filter((item) => ['active', 'developing'].includes(item.status)).length
+  const activeRate = products.length ? Math.round(active / products.length * 100) : 0
+  const values = {
+    'metric-products': products.length,
+    'overview-metric-tools': ui.tools.length,
+    'metric-developers': new Set(products.map((item) => item.developerName).filter(Boolean)).size,
+    'overview-metric-open-source': openSource
+  }
+  for (const [id, value] of Object.entries(values)) {
+    const node = $('#' + id)
+    if (node) node.textContent = formatNumber(value)
+  }
+  if ($('#overview-metric-active-rate')) $('#overview-metric-active-rate').textContent = `${activeRate}%`
+  const generatedAt = ui.productMetadata.generatedAt
+  if ($('#overview-snapshot-date')) {
+    $('#overview-snapshot-date').textContent = generatedAt
+      ? new Date(generatedAt).toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' })
+      : '未记录'
+  }
+}
+
+function organizeOverview() {
+  const semantic = $('#semantic-map')
+  const github = $('#product-github')
+  if (semantic && github && semantic.nextElementSibling !== null && github.nextElementSibling !== semantic) {
+    github.insertAdjacentElement('afterend', semantic)
+  }
+}
 function installHeroActions() {
   const actions = $('.hero-actions')
   if (!actions) return
@@ -169,8 +231,9 @@ function applySectionVisibility() {
   const toolOverview = ui.dataset === 'tool' && ui.mode === 'overview'
   const toolDirectory = ui.dataset === 'tool' && ui.mode === 'directory'
 
+  setHidden($('#ecosystem-overview-head'), !productOverview)
   setHidden($('.metrics'), !productOverview)
-  setHidden($('#weekly-pulse'), !productOverview)
+  setHidden($('#weekly-pulse'), true)
   setHidden($('#semantic-map'), !productOverview)
   setHidden($('#product-dashboard'), !productOverview)
   setHidden($('#product-github'), !productOverview)
@@ -182,14 +245,13 @@ function applySectionVisibility() {
 
 function syncNavigation() {
   $$('[data-dataset]').forEach((button) => {
-    const active = button.dataset.dataset === ui.dataset
+    const active = button.dataset.dataset === ui.dataset && (button.dataset.mode || 'overview') === ui.mode
     button.classList.toggle('is-active', active)
     button.setAttribute('aria-selected', String(active))
   })
   document.body.dataset.dataset = ui.dataset
   document.body.dataset.datasetMode = ui.mode
 }
-
 function syncHero() {
   const label = DATASET_LABELS[ui.dataset]
   const browse = $('#browse-current-dataset')
@@ -214,8 +276,8 @@ function syncHeroTotal() {
 }
 
 function activeSection() {
-  if (ui.dataset === 'product') return ui.mode === 'directory' ? $('#project-list') : $('#top')
-  return ui.mode === 'directory' ? $('#tools') : $('#top')
+  if (ui.dataset === 'product') return ui.mode === 'directory' ? $('#project-list') : ($('#ecosystem-overview-head') || $('#top'))
+  return ui.mode === 'directory' ? $('#tools') : ($('#tool-dashboard') || $('#top'))
 }
 
 function setView(dataset, mode = 'overview', updateHash = false, scroll = true) {
@@ -240,33 +302,79 @@ function insertProjectList() {
   section.id = 'project-list'
   section.hidden = true
   section.innerHTML = `
-    <div class="wrap">
-      <div class="directory-back-row"><button class="directory-back" type="button" data-back-overview="product">← 返回项目概览</button></div>
-      <div class="section-heading project-list-heading">
-        <div><p class="eyebrow">PROJECT DIRECTORY</p><h2>项目目录</h2></div>
-        <p id="project-list-summary">正在读取产品数据…</p>
+    <div class="wrap directory-wrap">
+      <div class="directory-search-row">
+        <label class="directory-search">
+          <span aria-hidden="true">⌕</span>
+          <input id="project-v2-search" type="search" placeholder="搜索产品、开发者、技术栈、城市…" autocomplete="off">
+        </label>
+        <label class="directory-sort">
+          <span>排序</span>
+          <select id="project-v2-sort">
+            <option value="smart">综合推荐</option>
+            <option value="recent">最近收录</option>
+            <option value="stars">GitHub Star</option>
+            <option value="active">最近活跃</option>
+          </select>
+        </label>
       </div>
-      <div class="project-list-note"><strong>统一筛选口径</strong><span>主分类、子方向、用户群体、产品形态与产品特征来自语义 taxonomy；状态、年份、城市来自原始来源数据；GitHub 活跃度来自最近一次公开仓库快照。</span></div>
-      <div class="project-list-filters">
-        <label class="project-search"><span>搜索项目</span><input id="project-v2-search" type="search" placeholder="产品、开发者、描述、城市…" autocomplete="off"></label>
-        <label><span>主分类</span><select id="project-v2-primary"><option value="">全部主分类</option></select></label>
-        <label><span>子方向</span><select id="project-v2-sub"><option value="">全部子方向</option></select></label>
-        <label><span>用户群体</span><select id="project-v2-audience"><option value="">全部用户群体</option></select></label>
-        <label><span>产品形态</span><select id="project-v2-form"><option value="">全部产品形态</option></select></label>
-        <label><span>产品特征</span><select id="project-v2-characteristic"><option value="">全部产品特征</option></select></label>
-        <label><span>状态</span><select id="project-v2-status"><option value="">全部状态</option></select></label>
-        <label><span>GitHub 活跃度</span><select id="project-v2-activity"><option value="">全部活跃度</option></select></label>
-        <label><span>年份</span><select id="project-v2-year"><option value="">全部年份</option></select></label>
-        <label><span>城市</span><select id="project-v2-city"><option value="">全部城市</option></select></label>
-        <button type="button" class="reset-button project-list-reset" id="project-v2-reset">清空筛选</button>
+
+      <div class="project-presets" aria-label="快捷筛选">
+        <span>快捷筛选</span>
+        <button type="button" data-project-preset="weekly">🔥 本周新收录</button>
+        <button type="button" data-project-preset="open-source">◉ 开源项目</button>
+        <button type="button" data-project-preset="active">⚡ 近期活跃</button>
+        <button type="button" data-project-preset="shenzhen">⌖ 深圳项目</button>
       </div>
-      <div class="project-list-active" id="project-v2-active"></div>
-      <div class="project-list-grid" id="project-v2-grid"></div>
-      <div class="load-more-wrap"><button class="button secondary" type="button" id="project-v2-more">加载更多项目</button></div>
+
+      <div class="directory-layout">
+        <div class="directory-main">
+          <div class="directory-heading">
+            <div><p class="eyebrow">PRODUCT DIRECTORY</p><h2>独立产品</h2></div>
+            <p id="project-list-summary">正在读取产品数据…</p>
+          </div>
+          <div class="project-list-active" id="project-v2-active"></div>
+          <div class="project-list-grid" id="project-v2-grid"></div>
+          <div class="load-more-wrap"><button class="button secondary" type="button" id="project-v2-more">加载更多项目</button></div>
+        </div>
+
+        <aside class="directory-sidebar" aria-label="项目筛选器">
+          <div class="directory-sidebar-head"><strong>筛选器</strong><button type="button" id="project-v2-reset">清空</button></div>
+
+          <section class="sidebar-filter-group">
+            <h3>产品方向</h3>
+            <label><span>主分类</span><select id="project-v2-primary"><option value="">全部主分类</option></select></label>
+            <label><span>子方向</span><select id="project-v2-sub"><option value="">全部子方向</option></select></label>
+          </section>
+
+          <section class="sidebar-filter-group">
+            <h3>产品属性</h3>
+            <label><span>用户群体</span><select id="project-v2-audience"><option value="">全部用户群体</option></select></label>
+            <label><span>产品形态</span><select id="project-v2-form"><option value="">全部产品形态</option></select></label>
+            <label><span>产品特征</span><select id="project-v2-characteristic"><option value="">全部产品特征</option></select></label>
+          </section>
+
+          <section class="sidebar-filter-group">
+            <h3>状态与活跃度</h3>
+            <label><span>运行状态</span><select id="project-v2-status"><option value="">全部状态</option></select></label>
+            <label><span>GitHub 活跃度</span><select id="project-v2-activity"><option value="">全部活跃度</option></select></label>
+          </section>
+
+          <section class="sidebar-filter-group">
+            <h3>时间与地区</h3>
+            <label><span>年份</span><select id="project-v2-year"><option value="">全部年份</option></select></label>
+            <label><span>城市</span><select id="project-v2-city"><option value="">全部城市</option></select></label>
+          </section>
+
+          <section class="directory-weekly">
+            <div class="directory-weekly-head"><strong>本周新收录</strong><span id="directory-weekly-count">—</span></div>
+            <div class="directory-weekly-list" data-weekly-new-sidebar></div>
+          </section>
+        </aside>
+      </div>
     </div>`
   legacy.insertAdjacentElement('beforebegin', section)
 }
-
 function installToolBackControl() {
   const section = $('#tools .wrap')
   if (!section || $('.directory-back-row', section)) return
@@ -315,12 +423,52 @@ function semanticFor(record) {
   return ui.semanticById.get(record.id) || { primaryCategory: 'other', subCategories: [], tags: {}, confidence: 0 }
 }
 
+const PRESET_LABELS = {
+  weekly: '本周新收录',
+  'open-source': '开源项目',
+  active: '近期活跃',
+  shenzhen: '深圳项目'
+}
+
+function matchesPreset(record, preset) {
+  if (!preset) return true
+  const semantic = semanticFor(record)
+  if (preset === 'weekly') return ui.weeklyNewNames.has(record.productName)
+  if (preset === 'open-source') return (semantic.tags?.characteristics || []).includes('open-source')
+  if (preset === 'active') return ['active-30', 'active-90'].includes(projectActivity(record))
+  if (preset === 'shenzhen') return String(record.city || '').includes('深圳')
+  return true
+}
+
+function projectDateValue(record) {
+  const parsed = Date.parse(record.date || '')
+  if (Number.isFinite(parsed)) return parsed
+  return Number(record.year) ? new Date(Number(record.year), 0, 1).getTime() : 0
+}
+
+function sortProjectRecords(records) {
+  const activityRank = { 'active-30': 0, 'active-90': 1, 'active-year': 2, 'inactive-year': 3, archived: 4, unavailable: 5, none: 6, unknown: 7 }
+  const copy = [...records]
+  if (ui.sort === 'recent') return copy.sort((a, b) => projectDateValue(b) - projectDateValue(a) || String(a.productName).localeCompare(String(b.productName), 'zh-CN'))
+  if (ui.sort === 'stars') return copy.sort((a, b) => (Number(githubMeta(b)?.stars) || 0) - (Number(githubMeta(a)?.stars) || 0) || projectDateValue(b) - projectDateValue(a))
+  if (ui.sort === 'active') return copy.sort((a, b) => (activityRank[projectActivity(a)] ?? 99) - (activityRank[projectActivity(b)] ?? 99) || projectDateValue(b) - projectDateValue(a))
+  return copy.sort(productPreviewSort)
+}
+
+function syncPresetButtons() {
+  $('[data-project-preset]').forEach((button) => {
+    button.classList.toggle('is-active', button.dataset.projectPreset === ui.filters.preset)
+  })
+}
+
+
 function matchesProject(record) {
   const semantic = semanticFor(record)
   const f = ui.filters
   const haystack = [record.productName, record.developerName, record.description, record.city, record.sourceCategory].filter(Boolean).join(' ').toLowerCase()
   const query = f.search.trim().toLowerCase()
   return (!query || haystack.includes(query))
+    && matchesPreset(record, f.preset)
     && (!f.primary || semantic.primaryCategory === f.primary)
     && (!f.sub || (semantic.subCategories || []).includes(f.sub))
     && (!f.audience || (semantic.tags?.audience || []).includes(f.audience))
@@ -333,8 +481,8 @@ function matchesProject(record) {
 }
 
 function renderProjectActiveFilters() {
-  const labels = { search: '搜索', primary: '主分类', sub: '子方向', audience: '用户群体', form: '产品形态', characteristic: '产品特征', status: '状态', activity: 'GitHub 活跃度', year: '年份', city: '城市' }
-  const display = (key, value) => key === 'primary' ? primaryLabel(value) : key === 'status' ? STATUS_LABELS[value] : key === 'activity' ? ACTIVITY_LABELS[value] : tagLabel(value)
+  const labels = { search: '搜索', preset: '快捷筛选', primary: '主分类', sub: '子方向', audience: '用户群体', form: '产品形态', characteristic: '产品特征', status: '状态', activity: 'GitHub 活跃度', year: '年份', city: '城市' }
+  const display = (key, value) => key === 'preset' ? PRESET_LABELS[value] : key === 'primary' ? primaryLabel(value) : key === 'status' ? STATUS_LABELS[value] : key === 'activity' ? ACTIVITY_LABELS[value] : tagLabel(value)
   const target = $('#project-v2-active')
   if (!target) return
   target.innerHTML = Object.entries(ui.filters).filter(([, value]) => value).map(([key, value]) => `<button type="button" data-clear-project="${key}"><span>${labels[key]}</span>${escapeHtml(display(key, value))}<b>×</b></button>`).join('')
@@ -384,8 +532,9 @@ function renderProjectCards() {
 }
 
 function applyProjectFilters() {
-  ui.filteredProducts = ui.products.filter(matchesProject)
+  ui.filteredProducts = sortProjectRecords(ui.products.filter(matchesProject))
   ui.visible = ui.pageSize
+  syncPresetButtons()
   renderProjectActiveFilters()
   renderProjectCards()
 }
@@ -422,6 +571,17 @@ function bindProjectFilters() {
     node.dataset.bound = 'true'
   }
   $('#project-v2-reset')?.addEventListener('click', clearProjectFilters)
+  $('#project-v2-sort')?.addEventListener('change', (event) => {
+    ui.sort = event.target.value
+    applyProjectFilters()
+  })
+  $('.project-presets [data-project-preset]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const preset = button.dataset.projectPreset
+      ui.filters.preset = ui.filters.preset === preset ? '' : preset
+      applyProjectFilters()
+    })
+  })
   $('#project-v2-more')?.addEventListener('click', () => { ui.visible += ui.pageSize; renderProjectCards() })
   $('#project-v2-active')?.addEventListener('click', (event) => {
     const chip = event.target.closest('[data-clear-project]')
@@ -692,27 +852,40 @@ function bindGlobalControls() {
 }
 
 async function loadData() {
-  const [productsResponse, toolsResponse, taxonomyResponse, semanticResponse, githubResponse] = await Promise.all([
-    fetch('data/products.json'), fetch('data/tools.json'), fetch('data/taxonomy.json'), fetch('data/product-taxonomy.json'), fetch('data/github-repositories.json')
+  const [productsResponse, toolsResponse, taxonomyResponse, semanticResponse, githubResponse, weeklyResponse] = await Promise.all([
+    fetch('data/products.json'),
+    fetch('data/tools.json'),
+    fetch('data/taxonomy.json'),
+    fetch('data/product-taxonomy.json'),
+    fetch('data/github-repositories.json'),
+    fetch('data/weekly-changes.json')
   ])
   if (!productsResponse.ok || !toolsResponse.ok || !taxonomyResponse.ok || !semanticResponse.ok) throw new Error('交互数据加载失败')
-  const [products, tools, taxonomy, semantic, github] = await Promise.all([
-    productsResponse.json(), toolsResponse.json(), taxonomyResponse.json(), semanticResponse.json(), githubResponse.ok ? githubResponse.json() : Promise.resolve({})
+  const [products, tools, taxonomy, semantic, github, weekly] = await Promise.all([
+    productsResponse.json(),
+    toolsResponse.json(),
+    taxonomyResponse.json(),
+    semanticResponse.json(),
+    githubResponse.ok ? githubResponse.json() : Promise.resolve({}),
+    weeklyResponse.ok ? weeklyResponse.json() : Promise.resolve({})
   ])
   ui.products = products.records || []
   ui.tools = tools.records || []
+  ui.productMetadata = products.metadata || {}
   ui.taxonomy = taxonomy
   ui.semanticById = new Map((semantic.records || []).map((item) => [item.productId, item]))
   ui.github = github.repositories || {}
+  ui.weeklyNewNames = new Set((weekly.products?.added || []).map((item) => item.name).filter(Boolean))
   ui.filteredProducts = ui.products
   syncHero()
+  syncOverviewSummary()
   buildProjectFilters()
   bindProjectFilters()
   applyProjectFilters()
   ensureProductDirectionExplorer()
   ensureToolCategoryExplorer()
+  organizeOverview()
 }
-
 function observeDynamicUi() {
   const observer = new MutationObserver(() => {
     observer.disconnect()
@@ -721,6 +894,7 @@ function observeDynamicUi() {
     ensureToolCategoryExplorer()
     translateLegacySemanticLabels()
     makeOverviewChartsReadOnly()
+    organizeOverview()
     applySectionVisibility()
     if (!$('#product-direction-explorer') || !$('#tool-category-explorer')) {
       observer.observe(document.body, { childList: true, subtree: true })
@@ -734,6 +908,7 @@ function observeDynamicUi() {
 async function init() {
   document.body.classList.add('dataset-tabs-active')
   installNavigation()
+  installOverviewShell()
   installHeroActions()
   insertProjectList()
   installToolBackControl()
@@ -758,6 +933,7 @@ async function init() {
   ensureToolCategoryExplorer()
   translateLegacySemanticLabels()
   makeOverviewChartsReadOnly()
+  organizeOverview()
   observeDynamicUi()
   applySectionVisibility()
 
