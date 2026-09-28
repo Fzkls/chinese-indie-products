@@ -93,3 +93,14 @@ test('programmer-list source is used only as a final low-confidence fallback', (
   assert.equal(result.classificationMethod, 'source-fallback')
   assert.ok(result.confidence < 0.65)
 })
+
+
+test('classifies cold-knowledge publishing sites as content knowledge', () => {
+  const result = classifyProduct(record(
+    'cold-knowledge',
+    '春林冷知',
+    '冷静地知道一点没用的东西。每日更新冷知识、冷笑话和废话文学，让你在繁忙的生活中静下心，刷一些带一丝幽默、又有些莫名其妙的知识'
+  ))
+  assert.equal(result.primaryCategory, 'content-knowledge')
+  assert.notEqual(result.classificationMethod, 'other')
+})
