@@ -47,9 +47,9 @@ function semanticMarkup() {
     <div class="taxonomy-kpis">
       <article><span>主分类覆盖</span><strong id="taxonomy-coverage">—</strong><small>全部产品都有 Primary Category</small></article>
       <article><span>主分类</span><strong id="taxonomy-category-count">—</strong><small id="taxonomy-version">taxonomy</small></article>
-      <article><span>平均置信度</span><strong id="taxonomy-confidence">—</strong><small>规则 + 人工复核综合</small></article>
-      <article><span>人工复核</span><strong id="taxonomy-reviewed">—</strong><small>高风险长尾逐条确认</small></article>
-      <article><span>Other</span><strong id="taxonomy-other">—</strong><small>仅允许真实跨分类产品</small></article>
+      <article><span>平均置信度</span><strong id="taxonomy-confidence">—</strong><small>规则 + 复核层综合</small></article>
+      <article><span>复核记录</span><strong id="taxonomy-reviewed">—</strong><small>通用复核规则、自动复核与人工固定</small></article>
+      <article><span>Other</span><strong id="taxonomy-other">—</strong><small>自动复核后仍无法可靠归入现有方向</small></article>
     </div>
 
     <article class="chart-panel taxonomy-coverage-panel">
