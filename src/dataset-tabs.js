@@ -283,7 +283,7 @@ function optionValues(values, labeler = (value) => value) {
 function buildProjectFilters() {
   const primary = $('#project-v2-primary')
   if (!primary || primary.dataset.ready) return
-  $('#project-v2-primary').insertAdjacentHTML('beforeend', optionValues((ui.taxonomy.primaryCategories || []).filter((item) => item.id !== 'other').map((item) => item.id), primaryLabel))
+  $('#project-v2-primary').insertAdjacentHTML('beforeend', optionValues((ui.taxonomy.primaryCategories || []).map((item) => item.id), primaryLabel))
   $('#project-v2-audience').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.audience || [], (value) => AUDIENCE_LABELS[value] || value))
   $('#project-v2-form').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.productForm || [], (value) => FORM_LABELS[value] || value))
   $('#project-v2-characteristic').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.characteristics || [], (value) => CHARACTERISTIC_LABELS[value] || value))
