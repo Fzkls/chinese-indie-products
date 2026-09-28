@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07110f"/>
+      <stop offset="1" stop-color="#0c1d18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9f24a"/>
+      <stop offset="1" stop-color="#59dcc4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity=".34"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1340" cy="120" r="240" fill="#b9f24a" opacity=".035"/>
+  <circle cx="1450" cy="40" r="150" fill="#59dcc4" opacity=".04"/>
+
+  <g font-family="Inter, Noto Sans SC, system-ui, sans-serif">
+    <g transform="translate(90 72)">
+      <rect x="0" y="0" width="42" height="42" rx="11" fill="#b9f24a"/>
+      <text x="21" y="29" text-anchor="middle" font-size="22" font-weight="800" fill="#102014">独</text>
+      <text x="58" y="29" font-size="25" font-weight="800" fill="#f4faf7">IndieBase CN</text>
+      <text x="0" y="78" font-size="15" font-weight="700" fill="#59dcc4" letter-spacing="2">OPEN DATA · INDEPENDENT PRODUCTS</text>
+      <text x="0" y="143" font-size="52" font-weight="800" fill="#f4faf7">看见中国独立开发者</text>
+      <text x="0" y="204" font-size="52" font-weight="800" fill="#f4faf7">正在创造什么</text>
+      <text x="0" y="252" font-size="20" fill="#9fb7ae">把分散的社区清单整理成可搜索、可筛选、可追踪变化的数据站。</text>
+      <rect x="0" y="287" width="210" height="52" rx="14" fill="#b9f24a"/>
+      <text x="105" y="320" text-anchor="middle" font-size="16" font-weight="800" fill="#102014">浏览独立产品 →</text>
+      <rect x="226" y="287" width="180" height="52" rx="14" fill="#10251f" stroke="#315046"/>
+      <text x="316" y="320" text-anchor="middle" font-size="16" font-weight="700" fill="#e6f2ed">查看工具资源</text>
+    </g>
+
+    <g transform="translate(1040 92)" filter="url(#shadow)">
+      <rect width="450" height="300" rx="28" fill="#0d211b" stroke="#28463b"/>
+      <circle cx="225" cy="132" r="92" fill="none" stroke="#b9f24a" stroke-width="1.5" opacity=".36"/>
+      <circle cx="225" cy="132" r="62" fill="none" stroke="#59dcc4" stroke-width="1.5" opacity=".32"/>
+      <circle cx="225" cy="132" r="16" fill="#b9f24a"/>
+      <text x="225" y="218" text-anchor="middle" font-size="13" fill="#7f9a90">PRODUCTS</text>
+      <text x="225" y="255" text-anchor="middle" font-size="38" font-weight="800" fill="#f4faf7">3000+</text>
+      <text x="225" y="280" text-anchor="middle" font-size="11" fill="#6f8b80">DEDUPED RECORDS</text>
+    </g>
+
+    <g transform="translate(90 445)">
+      <text x="0" y="0" font-size="15" font-weight="800" fill="#59dcc4" letter-spacing="2">WEEKLY PULSE</text>
+      <text x="0" y="43" font-size="30" font-weight="800" fill="#f4faf7">本周变化与项目趋势</text>
+
+      <g transform="translate(0 75)">
+        <rect width="310" height="110" rx="18" fill="#0d211b" stroke="#26453a"/>
+        <text x="24" y="32" font-size="13" fill="#8ea79e">新增产品</text>
+        <text x="24" y="78" font-size="40" font-weight="800" fill="#b9f24a">+5</text>
+        <text x="112" y="75" font-size="12" fill="#6f8b80">相对上一份成功快照</text>
+      </g>
+      <g transform="translate(326 75)">
+        <rect width="310" height="110" rx="18" fill="#0d211b" stroke="#26453a"/>
+        <text x="24" y="32" font-size="13" fill="#8ea79e">GitHub 趋势</text>
+        <text x="24" y="77" font-size="27" font-weight="800" fill="#f4faf7">Star 增长榜</text>
+        <text x="24" y="98" font-size="11" fill="#6f8b80">按最近两次周快照计算</text>
+      </g>
+      <g transform="translate(652 75)">
+        <rect width="310" height="110" rx="18" fill="#0d211b" stroke="#26453a"/>
+        <text x="24" y="32" font-size="13" fill="#8ea79e">项目生命周期</text>
+        <text x="24" y="77" font-size="27" font-weight="800" fill="#f4faf7">活跃 / 沉寂 / 归档</text>
+        <text x="24" y="98" font-size="11" fill="#6f8b80">基于 GitHub 最近更新时间</text>
+      </g>
+      <g transform="translate(978 75)">
+        <rect width="432" height="110" rx="18" fill="#0d211b" stroke="#26453a"/>
+        <text x="24" y="32" font-size="13" fill="#8ea79e">自动更新</text>
+        <text x="24" y="76" font-size="27" font-weight="800" fill="#f4faf7">每周同步 + 质量门禁</text>
+        <text x="24" y="98" font-size="11" fill="#6f8b80">异常掉数 / 未确认分类会阻止发布</text>
+      </g>
+    </g>
+
+    <g transform="translate(90 690)">
+      <rect width="1410" height="145" rx="22" fill="#0a1915" stroke="#203d33"/>
+      <text x="28" y="37" font-size="14" font-weight="800" fill="#59dcc4">PRODUCT EXPLORER</text>
+
+      <g transform="translate(28 56)">
+        <rect width="420" height="66" rx="12" fill="#10241e"/>
+        <circle cx="25" cy="33" r="8" fill="#b9f24a"/>
+        <text x="45" y="28" font-size="14" font-weight="700" fill="#f4faf7">独立产品</text>
+        <text x="45" y="48" font-size="11" fill="#799087">按类型、状态、年份、城市、活跃度筛选</text>
+      </g>
+      <g transform="translate(470 56)">
+        <rect width="420" height="66" rx="12" fill="#10241e"/>
+        <circle cx="25" cy="33" r="8" fill="#59dcc4"/>
+        <text x="45" y="28" font-size="14" font-weight="700" fill="#f4faf7">GitHub 热度</text>
+        <text x="45" y="48" font-size="11" fill="#799087">Star / Fork / 最近 Push / 仓库状态</text>
+      </g>
+      <g transform="translate(912 56)">
+        <rect width="470" height="66" rx="12" fill="#10241e"/>
+        <circle cx="25" cy="33" r="8" fill="#ffb35c"/>
+        <text x="45" y="28" font-size="14" font-weight="700" fill="#f4faf7">来源可追溯</text>
+        <text x="45" y="48" font-size="11" fill="#799087">每条记录都保留来源仓库、文件和原始行信息</text>
+      </g>
+    </g>
+
+    <text x="1494" y="870" text-anchor="end" font-size="11" fill="#557069">README PROJECT PREVIEW</text>
+  </g>
+</svg>
