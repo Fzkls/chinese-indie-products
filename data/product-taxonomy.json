@@ -4,14 +4,14 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-09-28T13:55:49.806Z",
-    "generatedAt": "2026-09-28T13:56:22.996Z",
-    "totalProducts": 3013,
-    "classifiedProducts": 3013,
+    "sourceProductGeneratedAt": "2026-09-28T14:33:23.137Z",
+    "generatedAt": "2026-09-28T14:33:57.540Z",
+    "totalProducts": 3014,
+    "classifiedProducts": 3014,
     "otherProducts": 0,
     "coverage": 1,
     "lowConfidenceProducts": 3,
-    "averageConfidence": 0.8752,
+    "averageConfidence": 0.8753,
     "reviewedProducts": 1127,
     "manualReviewProducts": 1127,
     "reviewRuleProducts": 0,
@@ -23,7 +23,7 @@
     "primaryCategoryCounts": {
       "utilities": 548,
       "ai-productivity": 459,
-      "developer-tools": 394,
+      "developer-tools": 395,
       "design-creative": 356,
       "content-knowledge": 235,
       "media-entertainment": 211,
@@ -38,7 +38,7 @@
       "ecommerce": 20
     },
     "classificationMethodCounts": {
-      "rules": 1880,
+      "rules": 1881,
       "manual-review": 1127,
       "semantic-fallback": 5,
       "source-fallback": 1
@@ -46,6 +46,45 @@
     "note": "Source facts remain in products.json. Deterministic rules classify clear records; reusable review rules and stable overrides handle known edge cases. Remaining unresolved records are auto-reviewed into Other so a single ambiguous product does not stop the scheduled data pipeline."
   },
   "records": [
+    {
+      "productId": "901b099f45bfce",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "cli"
+        ],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:developer",
+        "productForm:cli",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
     {
       "productId": "aa6b6f4d028ded",
       "primaryCategory": "content-knowledge",

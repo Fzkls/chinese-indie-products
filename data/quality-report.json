@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-28T13:55:49.806Z",
+  "generatedAt": "2026-09-28T14:33:23.137Z",
   "products": {
-    "generatedAt": "2026-09-28T13:55:49.803Z",
+    "generatedAt": "2026-09-28T14:33:23.133Z",
     "dataset": "products",
-    "recordCount": 3013,
+    "recordCount": 3014,
     "sourceRepositoryCount": 2,
     "missing": {
       "name": 0,
@@ -11,12 +11,12 @@
       "description": 0,
       "sources": 0,
       "date": 1,
-      "city": 1829,
+      "city": 1830,
       "githubUrl": 689
     },
     "categoryCounts": {
+      "developer-tool": 344,
       "product": 1802,
-      "developer-tool": 343,
       "game": 137,
       "archive": 731
     },
@@ -354,14 +354,14 @@
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 783,
+        "sourceLine": 788,
         "rawText": "* :white_check_mark: [Awesome-Iwb](https://github.com/Awesome-Iwb/Awesome-Iwb/)：一体机和电子白板实用软件合集"
       },
       {
         "code": "missing-developer",
         "repository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 928,
+        "sourceLine": 933,
         "rawText": "* :white_check_mark: [专注私有部署的智能简历解析系统](https://github.com/changwu/cvparser)：基于自然语言处理和机器学习的高精准度简历解析系统，生产环境中海量简历解析检验，稳健性和智能性得到一致肯定。一次购买、永久许可。市面上唯一可以私有云部署（本地部署）一键安装试用的智能简历解析系统，数据安全完全掌握在自己手里。"
       },
       {
@@ -371,7 +371,7 @@
         "duplicateId": "3a42a96d79dd2a",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 64
+        "sourceLine": 69
       },
       {
         "code": "duplicate-record",
@@ -380,7 +380,7 @@
         "duplicateId": "9cf546712bffcd",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 397
+        "sourceLine": 402
       },
       {
         "code": "duplicate-record",
@@ -389,7 +389,7 @@
         "duplicateId": "4c1dd22197d27e",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 400
+        "sourceLine": 405
       },
       {
         "code": "duplicate-record",
@@ -398,7 +398,7 @@
         "duplicateId": "bd3c6e842d3406",
         "duplicateRepository": "1c7/chinese-independent-developer",
         "sourceFile": ".github/pages/README-Programmer-Edition.md",
-        "sourceLine": 594
+        "sourceLine": 599
       },
       {
         "code": "missing-developer",
@@ -970,17 +970,17 @@
       }
     ],
     "dedupeStrategy": "canonical URL, falling back to normalized product name + developer; merge sources only within products",
-    "developerCount": 1798,
+    "developerCount": 1799,
     "cityCount": 83,
     "statusCounts": {
-      "active": 2566,
+      "active": 2567,
       "developing": 36,
       "closed": 410,
       "unknown": 1
     }
   },
   "tools": {
-    "generatedAt": "2026-09-28T13:55:49.806Z",
+    "generatedAt": "2026-09-28T14:33:23.137Z",
     "dataset": "tools",
     "recordCount": 284,
     "sourceRepositoryCount": 1,

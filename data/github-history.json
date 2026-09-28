@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-28T13:56:21.892Z",
+    "generatedAt": "2026-09-28T14:33:56.460Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -133,7 +133,7 @@
         "date": "2026-09-28",
         "stars": 61564,
         "forks": 5415,
-        "pushedAt": "2026-09-27T15:55:15Z",
+        "pushedAt": "2026-09-28T14:22:52Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -758,7 +758,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 18733,
+        "stars": 18734,
         "forks": 1526,
         "pushedAt": "2026-09-25T18:09:04Z",
         "archived": false,
@@ -824,9 +824,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 57498,
+        "stars": 57497,
         "forks": 5753,
-        "pushedAt": "2026-09-28T13:47:16Z",
+        "pushedAt": "2026-09-28T14:14:20Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -1748,7 +1748,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 17403,
+        "stars": 17404,
         "forks": 668,
         "pushedAt": "2026-09-28T01:23:18Z",
         "archived": false,
@@ -1815,7 +1815,7 @@
       {
         "date": "2026-09-28",
         "stars": 7174,
-        "forks": 5302,
+        "forks": 5303,
         "pushedAt": "2026-09-27T04:13:04Z",
         "archived": false,
         "activity": "active-30"
@@ -3068,7 +3068,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 1484,
+        "stars": 1485,
         "forks": 188,
         "pushedAt": "2026-09-28T13:35:04Z",
         "archived": false,
@@ -3200,7 +3200,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 1164,
+        "stars": 1165,
         "forks": 143,
         "pushedAt": "2026-09-28T13:36:59Z",
         "archived": false,
@@ -4586,7 +4586,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 2297,
+        "stars": 2298,
         "forks": 2148,
         "pushedAt": "2026-09-28T07:56:34Z",
         "archived": false,
@@ -5642,7 +5642,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 19169,
+        "stars": 19168,
         "forks": 2369,
         "pushedAt": "2026-09-27T08:39:03Z",
         "archived": false,
@@ -6764,8 +6764,8 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 46523,
-        "forks": 2931,
+        "stars": 46524,
+        "forks": 2932,
         "pushedAt": "2026-09-28T02:02:19Z",
         "archived": false,
         "activity": "active-30"
@@ -7789,7 +7789,7 @@
         "date": "2026-09-28",
         "stars": 146,
         "forks": 15,
-        "pushedAt": "2026-09-28T13:49:45Z",
+        "pushedAt": "2026-09-28T14:00:46Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -8117,9 +8117,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 49691,
-        "forks": 4946,
-        "pushedAt": "2026-09-28T13:21:35Z",
+        "stars": 49698,
+        "forks": 4947,
+        "pushedAt": "2026-09-28T14:22:18Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -8612,7 +8612,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 3874,
+        "stars": 3873,
         "forks": 496,
         "pushedAt": "2026-09-25T07:19:16Z",
         "archived": false,
@@ -8645,7 +8645,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 3874,
+        "stars": 3873,
         "forks": 496,
         "pushedAt": "2026-09-25T07:19:16Z",
         "archived": false,
@@ -8810,7 +8810,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 1585,
+        "stars": 1586,
         "forks": 142,
         "pushedAt": "2026-06-18T17:22:25Z",
         "archived": false,
@@ -8942,9 +8942,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 60468,
-        "forks": 4150,
-        "pushedAt": "2026-09-28T13:40:14Z",
+        "stars": 60467,
+        "forks": 4151,
+        "pushedAt": "2026-09-28T14:31:10Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -8977,7 +8977,7 @@
         "date": "2026-09-28",
         "stars": 1854,
         "forks": 488,
-        "pushedAt": "2026-09-28T13:53:42Z",
+        "pushedAt": "2026-09-28T14:30:49Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -9173,7 +9173,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 6763,
+        "stars": 6762,
         "forks": 920,
         "pushedAt": "2026-09-20T02:55:08Z",
         "archived": false,
@@ -9371,7 +9371,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 11248,
+        "stars": 11249,
         "forks": 3476,
         "pushedAt": "2026-09-18T04:59:48Z",
         "archived": false,
@@ -9404,7 +9404,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 1294,
+        "stars": 1293,
         "forks": 40,
         "pushedAt": "2025-03-01T12:36:35Z",
         "archived": false,
@@ -9439,7 +9439,7 @@
         "date": "2026-09-28",
         "stars": 3857,
         "forks": 424,
-        "pushedAt": "2026-09-28T13:27:47Z",
+        "pushedAt": "2026-09-28T14:32:55Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -9635,9 +9635,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 17973,
+        "stars": 17974,
         "forks": 1613,
-        "pushedAt": "2026-09-28T11:46:56Z",
+        "pushedAt": "2026-09-28T14:29:45Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -10229,7 +10229,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 2290,
+        "stars": 2291,
         "forks": 327,
         "pushedAt": "2026-09-22T07:51:51Z",
         "archived": false,
@@ -11226,9 +11226,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 110853,
+        "stars": 110855,
         "forks": 15254,
-        "pushedAt": "2026-09-28T13:53:32Z",
+        "pushedAt": "2026-09-28T14:31:01Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -11787,7 +11787,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 61772,
+        "stars": 61773,
         "forks": 12722,
         "pushedAt": "2026-09-25T02:21:20Z",
         "archived": false,
@@ -11887,7 +11887,7 @@
       {
         "date": "2026-09-28",
         "stars": 39061,
-        "forks": 8134,
+        "forks": 8135,
         "pushedAt": "2026-09-28T05:54:18Z",
         "archived": false,
         "activity": "active-30"
@@ -12216,7 +12216,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 4868,
+        "stars": 4869,
         "forks": 202,
         "pushedAt": "2026-09-21T13:15:39Z",
         "archived": false,
@@ -12315,7 +12315,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 14018,
+        "stars": 14019,
         "forks": 1217,
         "pushedAt": "2026-09-28T11:50:15Z",
         "archived": false,
@@ -13520,7 +13520,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 5501,
+        "stars": 5500,
         "forks": 772,
         "pushedAt": "2026-09-28T08:10:33Z",
         "archived": false,
@@ -13586,7 +13586,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 553,
+        "stars": 554,
         "forks": 78,
         "pushedAt": "2026-09-28T03:37:30Z",
         "archived": false,
@@ -13619,7 +13619,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 1608,
+        "stars": 1609,
         "forks": 151,
         "pushedAt": "2026-09-06T16:31:15Z",
         "archived": false,
@@ -13885,7 +13885,7 @@
         "date": "2026-09-28",
         "stars": 150,
         "forks": 14,
-        "pushedAt": "2026-09-28T13:53:57Z",
+        "pushedAt": "2026-09-28T13:57:49Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -13982,7 +13982,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 25831,
+        "stars": 25832,
         "forks": 2628,
         "pushedAt": "2026-05-11T03:54:12Z",
         "archived": false,
@@ -14180,7 +14180,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 648,
+        "stars": 649,
         "forks": 35,
         "pushedAt": "2026-08-30T09:35:34Z",
         "archived": false,
@@ -14403,7 +14403,7 @@
         "date": "2026-09-28",
         "stars": 5,
         "forks": 0,
-        "pushedAt": "2026-09-28T12:12:39Z",
+        "pushedAt": "2026-09-28T14:30:48Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -14791,7 +14791,7 @@
         "date": "2026-09-28",
         "stars": 8,
         "forks": 2,
-        "pushedAt": "2026-09-28T00:06:32Z",
+        "pushedAt": "2026-09-28T14:26:15Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -14807,9 +14807,9 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 172,
+        "stars": 173,
         "forks": 41,
-        "pushedAt": "2026-09-28T10:58:41Z",
+        "pushedAt": "2026-09-28T14:31:58Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -15203,7 +15203,7 @@
       },
       {
         "date": "2026-09-28",
-        "stars": 615,
+        "stars": 614,
         "forks": 64,
         "pushedAt": "2026-09-12T03:11:30Z",
         "archived": false,
@@ -15225,7 +15225,17 @@
         "date": "2026-09-28",
         "stars": 19,
         "forks": 0,
-        "pushedAt": "2026-09-28T13:55:11Z",
+        "pushedAt": "2026-09-28T14:30:16Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "sdyuyouth/agenthop": [
+      {
+        "date": "2026-09-28",
+        "stars": 0,
+        "forks": 1,
+        "pushedAt": "2026-09-28T07:30:47Z",
         "archived": false,
         "activity": "active-30"
       }
