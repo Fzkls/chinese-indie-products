@@ -18,20 +18,33 @@ function navigateToProduct(name) {
 }
 
 function renderNewProducts(changes) {
-  const container = document.getElementById('weekly-new-products')
   const items = changes?.products?.added || []
-  if (!container) return
-  container.innerHTML = items.length
-    ? items.slice(0, 5).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
-        <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.developerName || item.description || '新收录项目')}</small></span>
-        <span class="pulse-row-meta">新收录</span>
-      </button>`).join('')
-    : '<div class="pulse-empty">与上一份成功快照相比，本期暂无新收录项目。</div>'
-  for (const button of container.querySelectorAll('[data-product-name]')) {
-    button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
+  const main = document.getElementById('weekly-new-products')
+  if (main) {
+    main.innerHTML = items.length
+      ? items.slice(0, 5).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
+          <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.developerName || item.description || '新收录项目')}</small></span>
+          <span class="pulse-row-meta">新收录</span>
+        </button>`).join('')
+      : '<div class="pulse-empty">与上一份成功快照相比，本期暂无新收录项目。</div>'
+    for (const button of main.querySelectorAll('[data-product-name]')) {
+      button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
+    }
+  }
+
+  setText('directory-weekly-count', formatNumber(items.length))
+  for (const sidebar of document.querySelectorAll('[data-weekly-new-sidebar]')) {
+    sidebar.innerHTML = items.length
+      ? items.slice(0, 6).map((item) => `<button class="directory-weekly-row" type="button" data-product-name="${escapeHtml(item.name)}">
+          <strong>${escapeHtml(item.name)}</strong>
+          <span>${escapeHtml(item.developerName || '新收录项目')}</span>
+        </button>`).join('')
+      : '<div class="directory-weekly-empty">本周暂无新收录项目</div>'
+    for (const button of sidebar.querySelectorAll('[data-product-name]')) {
+      button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
+    }
   }
 }
-
 function renderChangedProducts(changes) {
   const container = document.getElementById('weekly-changed-products')
   const items = changes?.products?.changed || []
