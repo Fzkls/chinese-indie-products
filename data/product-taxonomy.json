@@ -4,14 +4,14 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-09-26T13:16:39.280Z",
-    "generatedAt": "2026-09-26T13:17:07.494Z",
-    "totalProducts": 3008,
-    "classifiedProducts": 3008,
+    "sourceProductGeneratedAt": "2026-09-28T08:49:03.857Z",
+    "generatedAt": "2026-09-28T08:49:38.216Z",
+    "totalProducts": 3013,
+    "classifiedProducts": 3013,
     "otherProducts": 0,
     "coverage": 1,
     "lowConfidenceProducts": 3,
-    "averageConfidence": 0.8753,
+    "averageConfidence": 0.8752,
     "reviewedProducts": 1127,
     "manualReviewProducts": 1127,
     "reviewRuleProducts": 0,
@@ -20,24 +20,24 @@
     "activeReviewOverrides": 1127,
     "staleReviewOverrides": 0,
     "primaryCategoryCounts": {
-      "utilities": 546,
-      "ai-productivity": 458,
-      "developer-tools": 392,
+      "utilities": 548,
+      "ai-productivity": 459,
+      "developer-tools": 394,
       "design-creative": 356,
-      "content-knowledge": 234,
+      "content-knowledge": 235,
       "media-entertainment": 211,
       "games": 193,
       "lifestyle-health": 145,
       "business-marketing": 120,
       "education": 90,
       "infrastructure-security": 80,
-      "social-community": 66,
+      "social-community": 65,
       "finance": 63,
       "data-analytics": 34,
       "ecommerce": 20
     },
     "classificationMethodCounts": {
-      "rules": 1875,
+      "rules": 1880,
       "manual-review": 1127,
       "semantic-fallback": 5,
       "source-fallback": 1
@@ -45,6 +45,144 @@
     "note": "Source facts remain in products.json. Deterministic rules classify clear records; high-risk long-tail records are explicitly reviewed through reusable review rules or stable manual overrides. Other is valid only after explicit review."
   },
   "records": [
+    {
+      "productId": "aa6b6f4d028ded",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "audience:consumer"
+      ]
+    },
+    {
+      "productId": "248cb89211cfb7",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:developer",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
+    {
+      "productId": "07381c73ed4aee",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "终端与 SSH"
+      ],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "bot"
+        ],
+        "characteristics": [
+          "offline",
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "education"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:终端与 SSH",
+        "audience:student",
+        "platform:web",
+        "productForm:bot",
+        "characteristics:offline",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:education"
+      ]
+    },
+    {
+      "productId": "59708edb308594",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "自动化"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "plugin",
+          "bot"
+        ],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "deployment"
+        ]
+      },
+      "confidence": 0.72,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "sub:自动化",
+        "platform:web",
+        "productForm:plugin",
+        "productForm:bot",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
     {
       "productId": "5e3364ab43ca58",
       "primaryCategory": "social-community",
@@ -70,6 +208,49 @@
         "sub:社区",
         "characteristics:ai-native",
         "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "b61a2e5a6a6434",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "计时与计算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:计时与计算"
+      ]
+    },
+    {
+      "productId": "6163e0d5aae4c3",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:web"
       ]
     },
     {
@@ -5981,38 +6162,6 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "59708edb308594",
-      "primaryCategory": "social-community",
-      "subCategories": [
-        "聊天"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [
-          "self-hosted",
-          "bot"
-        ],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": [
-          "deployment"
-        ]
-      },
-      "confidence": 0.81,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:社交社区",
-        "sub:聊天",
-        "productForm:self-hosted",
-        "productForm:bot",
-        "characteristics:open-source",
-        "capabilities:deployment"
-      ]
     },
     {
       "productId": "486efa4fdc3096",
@@ -64243,6 +64392,65 @@
       "reviewPreviousMethod": "other"
     },
     {
+      "productId": "89aaa6ecd4b9c7",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "search"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:browser",
+        "capabilities:search"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "832a19f05e97be",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
       "productId": "d87cbb53a443fe",
       "primaryCategory": "lifestyle-health",
       "subCategories": [],
@@ -64266,6 +64474,71 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "4189cda9eeb01a",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer",
+        "platform:web",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "8990b8e89923c4",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "搜索"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "search",
+          "sync"
+        ]
+      },
+      "confidence": 0.82,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:搜索",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:search"
+      ]
     },
     {
       "productId": "1242ff908e9876",
@@ -64530,130 +64803,6 @@
         "category:内容知识",
         "sub:文档",
         "capabilities:markdown"
-      ]
-    },
-    {
-      "productId": "89aaa6ecd4b9c7",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "search"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:browser",
-        "capabilities:search"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "832a19f05e97be",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "audience:developer"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "4189cda9eeb01a",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "audience:developer",
-        "platform:web",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "other"
-    },
-    {
-      "productId": "8990b8e89923c4",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [
-        "搜索"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "search",
-          "sync"
-        ]
-      },
-      "confidence": 0.82,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "category:知识工作",
-        "sub:搜索",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:search"
       ]
     },
     {
