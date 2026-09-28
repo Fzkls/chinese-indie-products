@@ -1,5 +1,15 @@
 const DATASET_LABELS = { product: '项目', tool: '工具' }
 const STATUS_LABELS = { active: '已上线', developing: '开发中', closed: '已关闭', acquired: '已收购', unknown: '未知' }
+const ACTIVITY_LABELS = {
+  'active-30': '30 天内更新',
+  'active-90': '31–90 天内更新',
+  'active-year': '一年内更新',
+  'inactive-year': '超过一年未更新',
+  archived: '已归档',
+  unavailable: '仓库不可用',
+  none: '无 GitHub 仓库',
+  unknown: '更新时间未知'
+}
 const PRICING_LABELS = { free: '免费', paid: '付费', 'open-source': '开源', unknown: '价格未知' }
 const AUDIENCE_LABELS = {
   developer: '开发者', creator: '创作者', designer: '设计师', marketer: '营销人员', student: '学生',
@@ -41,7 +51,7 @@ const ui = {
   visible: 36,
   primaryPreview: '',
   toolPreviewCategory: '',
-  filters: { search: '', primary: '', sub: '', audience: '', form: '', characteristic: '', status: '', year: '', city: '' }
+  filters: { search: '', primary: '', sub: '', audience: '', form: '', characteristic: '', status: '', activity: '', year: '', city: '' }
 }
 
 function primaryLabel(id) {
@@ -66,6 +76,21 @@ function normalizeGithubRepository(rawUrl) {
 function githubMeta(record) {
   const key = normalizeGithubRepository(record.productUrl || record.toolUrl)
   return key ? ui.github[key] : null
+}
+
+function projectActivity(record) {
+  const repository = githubMeta(record)
+  if (!repository) return 'none'
+  if (repository.status !== 'available') return 'unavailable'
+  if (repository.archived) return 'archived'
+  if (repository.activity) return repository.activity
+  const pushedAt = new Date(repository.pushedAt)
+  if (Number.isNaN(pushedAt.getTime())) return 'unknown'
+  const days = Math.max(0, (Date.now() - pushedAt.getTime()) / 86_400_000)
+  if (days <= 30) return 'active-30'
+  if (days <= 90) return 'active-90'
+  if (days <= 365) return 'active-year'
+  return 'inactive-year'
 }
 
 function installNavigation() {
@@ -145,6 +170,7 @@ function applySectionVisibility() {
   const toolDirectory = ui.dataset === 'tool' && ui.mode === 'directory'
 
   setHidden($('.metrics'), !productOverview)
+  setHidden($('#weekly-pulse'), !productOverview)
   setHidden($('#semantic-map'), !productOverview)
   setHidden($('#product-dashboard'), !productOverview)
   setHidden($('#product-github'), !productOverview)
@@ -220,7 +246,7 @@ function insertProjectList() {
         <div><p class="eyebrow">PROJECT DIRECTORY</p><h2>项目目录</h2></div>
         <p id="project-list-summary">正在读取产品数据…</p>
       </div>
-      <div class="project-list-note"><strong>统一筛选口径</strong><span>主分类、子方向、用户群体、产品形态与产品特征来自语义 taxonomy；状态、年份、城市来自原始来源数据。</span></div>
+      <div class="project-list-note"><strong>统一筛选口径</strong><span>主分类、子方向、用户群体、产品形态与产品特征来自语义 taxonomy；状态、年份、城市来自原始来源数据；GitHub 活跃度来自最近一次公开仓库快照。</span></div>
       <div class="project-list-filters">
         <label class="project-search"><span>搜索项目</span><input id="project-v2-search" type="search" placeholder="产品、开发者、描述、城市…" autocomplete="off"></label>
         <label><span>主分类</span><select id="project-v2-primary"><option value="">全部主分类</option></select></label>
@@ -229,6 +255,7 @@ function insertProjectList() {
         <label><span>产品形态</span><select id="project-v2-form"><option value="">全部产品形态</option></select></label>
         <label><span>产品特征</span><select id="project-v2-characteristic"><option value="">全部产品特征</option></select></label>
         <label><span>状态</span><select id="project-v2-status"><option value="">全部状态</option></select></label>
+        <label><span>GitHub 活跃度</span><select id="project-v2-activity"><option value="">全部活跃度</option></select></label>
         <label><span>年份</span><select id="project-v2-year"><option value="">全部年份</option></select></label>
         <label><span>城市</span><select id="project-v2-city"><option value="">全部城市</option></select></label>
         <button type="button" class="reset-button project-list-reset" id="project-v2-reset">清空筛选</button>
@@ -261,6 +288,9 @@ function buildProjectFilters() {
   $('#project-v2-form').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.productForm || [], (value) => FORM_LABELS[value] || value))
   $('#project-v2-characteristic').insertAdjacentHTML('beforeend', optionValues(ui.taxonomy.tags?.characteristics || [], (value) => CHARACTERISTIC_LABELS[value] || value))
   $('#project-v2-status').insertAdjacentHTML('beforeend', optionValues(['active', 'developing', 'closed', 'acquired', 'unknown'], (value) => STATUS_LABELS[value]))
+  const activityOrder = ['active-30', 'active-90', 'active-year', 'inactive-year', 'archived', 'unavailable', 'none', 'unknown']
+  const activities = new Set(ui.products.map(projectActivity))
+  $('#project-v2-activity').insertAdjacentHTML('beforeend', optionValues(activityOrder.filter((value) => activities.has(value)), (value) => ACTIVITY_LABELS[value] || value))
   const years = [...new Set(ui.products.map((item) => item.year).filter(Boolean))].sort((a, b) => Number(b) - Number(a))
   const cities = [...new Set(ui.products.map((item) => item.city).filter(Boolean))].sort((a, b) => String(a).localeCompare(String(b), 'zh-CN'))
   $('#project-v2-year').insertAdjacentHTML('beforeend', optionValues(years))
@@ -297,13 +327,14 @@ function matchesProject(record) {
     && (!f.form || (semantic.tags?.productForm || []).includes(f.form))
     && (!f.characteristic || (semantic.tags?.characteristics || []).includes(f.characteristic))
     && (!f.status || (record.status || 'unknown') === f.status)
+    && (!f.activity || projectActivity(record) === f.activity)
     && (!f.year || String(record.year || '') === f.year)
     && (!f.city || record.city === f.city)
 }
 
 function renderProjectActiveFilters() {
-  const labels = { search: '搜索', primary: '主分类', sub: '子方向', audience: '用户群体', form: '产品形态', characteristic: '产品特征', status: '状态', year: '年份', city: '城市' }
-  const display = (key, value) => key === 'primary' ? primaryLabel(value) : key === 'status' ? STATUS_LABELS[value] : tagLabel(value)
+  const labels = { search: '搜索', primary: '主分类', sub: '子方向', audience: '用户群体', form: '产品形态', characteristic: '产品特征', status: '状态', activity: 'GitHub 活跃度', year: '年份', city: '城市' }
+  const display = (key, value) => key === 'primary' ? primaryLabel(value) : key === 'status' ? STATUS_LABELS[value] : key === 'activity' ? ACTIVITY_LABELS[value] : tagLabel(value)
   const target = $('#project-v2-active')
   if (!target) return
   target.innerHTML = Object.entries(ui.filters).filter(([, value]) => value).map(([key, value]) => `<button type="button" data-clear-project="${key}"><span>${labels[key]}</span>${escapeHtml(display(key, value))}<b>×</b></button>`).join('')
@@ -346,7 +377,7 @@ function applyProjectFilters() {
 }
 
 function syncProjectControls() {
-  const ids = { search: 'project-v2-search', primary: 'project-v2-primary', sub: 'project-v2-sub', audience: 'project-v2-audience', form: 'project-v2-form', characteristic: 'project-v2-characteristic', status: 'project-v2-status', year: 'project-v2-year', city: 'project-v2-city' }
+  const ids = { search: 'project-v2-search', primary: 'project-v2-primary', sub: 'project-v2-sub', audience: 'project-v2-audience', form: 'project-v2-form', characteristic: 'project-v2-characteristic', status: 'project-v2-status', activity: 'project-v2-activity', year: 'project-v2-year', city: 'project-v2-city' }
   rebuildSubOptions()
   for (const [key, id] of Object.entries(ids)) {
     const node = $(`#${id}`)
@@ -363,7 +394,7 @@ function clearProjectFilters() {
 function bindProjectFilters() {
   const bindings = {
     'project-v2-search': 'search', 'project-v2-primary': 'primary', 'project-v2-sub': 'sub', 'project-v2-audience': 'audience',
-    'project-v2-form': 'form', 'project-v2-characteristic': 'characteristic', 'project-v2-status': 'status', 'project-v2-year': 'year', 'project-v2-city': 'city'
+    'project-v2-form': 'form', 'project-v2-characteristic': 'characteristic', 'project-v2-status': 'status', 'project-v2-activity': 'activity', 'project-v2-year': 'year', 'project-v2-city': 'city'
   }
   for (const [id, key] of Object.entries(bindings)) {
     const node = $(`#${id}`)
@@ -387,10 +418,11 @@ function bindProjectFilters() {
   })
 }
 
-function openProjectDirectory({ primary = '', search = '' } = {}) {
+function openProjectDirectory({ primary = '', search = '', activity = '' } = {}) {
   for (const key of Object.keys(ui.filters)) ui.filters[key] = ''
   ui.filters.primary = primary
   ui.filters.search = search
+  ui.filters.activity = activity
   syncProjectControls()
   applyProjectFilters()
   setView('product', 'directory', true)
@@ -631,6 +663,9 @@ function bindInteractionGuards() {
 }
 
 function bindGlobalControls() {
+  window.addEventListener('indiebase:open-project-directory', (event) => {
+    openProjectDirectory(event.detail || {})
+  })
   document.addEventListener('click', (event) => {
     const back = event.target.closest('[data-back-overview]')
     if (back) setView(back.dataset.backOverview, 'overview', true)
