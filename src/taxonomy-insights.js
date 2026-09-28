@@ -42,10 +42,10 @@ function semanticMarkup() {
   <section class="wrap taxonomy-section" id="semantic-map" aria-labelledby="taxonomy-title">
     <div class="section-heading taxonomy-heading">
       <div><p class="eyebrow">PRODUCT SEMANTIC MAP</p><h2 id="taxonomy-title">产品语义地图</h2></div>
-      <p>主分类覆盖全部产品；子方向、用户群体、产品形态与能力标签只在有明确语义证据时记录。这里展示推断覆盖率，避免把“未识别”误当成“不存在”。</p>
+      <p>主分类尽量覆盖全部产品；无法可靠判断的边界项会自动复核后保留为 Other。子方向、用户群体、产品形态与能力标签只在有明确语义证据时记录。</p>
     </div>
     <div class="taxonomy-kpis">
-      <article><span>主分类覆盖</span><strong id="taxonomy-coverage">—</strong><small>全部产品都有 Primary Category</small></article>
+      <article><span>具体方向覆盖</span><strong id="taxonomy-coverage">—</strong><small>已归入明确产品方向，不含 Other</small></article>
       <article><span>主分类</span><strong id="taxonomy-category-count">—</strong><small id="taxonomy-version">taxonomy</small></article>
       <article><span>平均置信度</span><strong id="taxonomy-confidence">—</strong><small>规则 + 复核层综合</small></article>
       <article><span>复核记录</span><strong id="taxonomy-reviewed">—</strong><small>通用复核规则、自动复核与人工固定</small></article>
