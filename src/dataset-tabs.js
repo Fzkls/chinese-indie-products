@@ -461,7 +461,7 @@ function sortProjectRecords(records) {
 }
 
 function syncPresetButtons() {
-  $('[data-project-preset]').forEach((button) => {
+  $$('[data-project-preset]').forEach((button) => {
     button.classList.toggle('is-active', button.dataset.projectPreset === ui.filters.preset)
   })
 }
