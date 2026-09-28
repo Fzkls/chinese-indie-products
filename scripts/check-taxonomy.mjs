@@ -24,8 +24,12 @@ for (const item of classified.records || []) {
   if (!Array.isArray(item.subCategories)) errors.push(`subCategories must be an array for ${item.productId}`)
   if (!item.tags || typeof item.tags !== 'object') errors.push(`tags missing for ${item.productId}`)
   if (typeof item.confidence !== 'number' || item.confidence < 0 || item.confidence > 1) errors.push(`invalid confidence for ${item.productId}`)
-  if (item.primaryCategory === 'other' && (item.classificationMethod !== 'manual-review' || item.reviewStatus !== 'reviewed')) {
-    errors.push(`Other requires explicit manual review: ${item.productId} | ${products.records.find((product) => product.id === item.productId)?.productName || 'unknown'} | ${products.records.find((product) => product.id === item.productId)?.description || ''}`)
+  if (item.primaryCategory === 'other') {
+    const manuallyReviewed = item.classificationMethod === 'manual-review' && item.reviewStatus === 'reviewed'
+    const autoReviewed = item.classificationMethod === 'auto-review' && item.reviewStatus === 'auto-reviewed'
+    if (!manuallyReviewed && !autoReviewed) {
+      errors.push(`Other requires review metadata: ${item.productId} | ${products.records.find((product) => product.id === item.productId)?.productName || 'unknown'} | ${products.records.find((product) => product.id === item.productId)?.description || ''}`)
+    }
   }
 }
 
@@ -61,6 +65,8 @@ const lowConfidence = classified.metadata?.lowConfidenceProducts ?? 0
 if (coverage < 0.6) warnings.push(`semantic coverage is only ${(coverage * 100).toFixed(1)}%; expand taxonomy rules before treating it as comprehensive`)
 if (lowConfidence > (classified.records?.length || 0) * 0.4) warnings.push(`low-confidence classifications are high: ${lowConfidence}`)
 if (staleOverrides) warnings.push(`${staleOverrides} reviewed overrides no longer exist in the current products dataset`)
+const autoReviewedOther = (classified.records || []).filter((item) => item.primaryCategory === 'other' && item.classificationMethod === 'auto-review').length
+if (autoReviewedOther) warnings.push(`${autoReviewedOther} products remain in auto-reviewed Other; scheduled publishing continues and rules can be refined later`)
 
 if (warnings.length) console.warn(warnings.map((item) => `Taxonomy warning: ${item}`).join('\n'))
 if (errors.length) {
