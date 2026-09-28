@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-28T09:25:03.789Z",
+  "generatedAt": "2026-09-28T09:28:15.359Z",
   "products": {
-    "generatedAt": "2026-09-28T09:25:03.787Z",
+    "generatedAt": "2026-09-28T09:28:15.356Z",
     "dataset": "products",
     "recordCount": 3013,
     "sourceRepositoryCount": 2,
@@ -980,7 +980,7 @@
     }
   },
   "tools": {
-    "generatedAt": "2026-09-28T09:25:03.789Z",
+    "generatedAt": "2026-09-28T09:28:15.358Z",
     "dataset": "tools",
     "recordCount": 284,
     "sourceRepositoryCount": 1,
