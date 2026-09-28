@@ -121,7 +121,10 @@ function updateHeadlineMetrics(products, tools) {
     'metric-tools': tools.length,
     'metric-github': githubProjects
   }
-  for (const [id, value] of Object.entries(values)) el(id).textContent = formatNumber(value)
+  for (const [id, value] of Object.entries(values)) {
+    const node = el(id)
+    if (node) node.textContent = formatNumber(value)
+  }
 }
 
 function tooltipSummary(label, records) {
