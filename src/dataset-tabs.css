@@ -97,6 +97,15 @@
 .project-v2-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
 .project-v2-tags span{padding:4px 7px;border:1px solid rgba(89,220,196,.15);border-radius:999px;background:rgba(89,220,196,.07);color:#bcd7d0;font-size:11px}
 .project-v2-meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:auto;padding-top:13px;border-top:1px solid rgba(255,255,255,.07);color:var(--muted);font-size:11px}
+.project-v2-sources{margin-top:10px;color:var(--muted);font-size:11px}
+.project-v2-sources summary{cursor:pointer;list-style:none;color:#b8cbc4;font-weight:700}
+.project-v2-sources summary::-webkit-details-marker{display:none}
+.project-v2-sources summary:before{content:"＋";display:inline-block;margin-right:5px;color:var(--accent)}
+.project-v2-sources[open] summary:before{content:"−"}
+.project-v2-sources>div{display:grid;gap:6px;margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.06)}
+.project-v2-sources a,.project-v2-sources>div>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted)}
+.project-v2-sources a:hover{color:var(--cyan)}
+.project-v2-source-empty{display:block;margin-top:10px;color:#6f837b;font-size:11px}
 .project-list-empty{grid-column:1/-1;padding:52px 20px;border:1px dashed var(--line);border-radius:15px;text-align:center;color:var(--muted)}
 .project-list-empty strong{display:block;margin-bottom:6px;color:var(--text)}
 .project-list-empty p{margin:0}
