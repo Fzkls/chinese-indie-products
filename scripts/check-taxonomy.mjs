@@ -66,7 +66,11 @@ if (coverage < 0.6) warnings.push(`semantic coverage is only ${(coverage * 100).
 if (lowConfidence > (classified.records?.length || 0) * 0.4) warnings.push(`low-confidence classifications are high: ${lowConfidence}`)
 if (staleOverrides) warnings.push(`${staleOverrides} reviewed overrides no longer exist in the current products dataset`)
 const autoReviewedOther = (classified.records || []).filter((item) => item.primaryCategory === 'other' && item.classificationMethod === 'auto-review').length
+const autoReviewLimit = Math.max(10, Math.ceil((classified.records?.length || 0) * 0.01))
 if (autoReviewedOther) warnings.push(`${autoReviewedOther} products remain in auto-reviewed Other; scheduled publishing continues and rules can be refined later`)
+if (autoReviewedOther > autoReviewLimit) {
+  errors.push(`auto-reviewed Other count is unexpectedly high: ${autoReviewedOther} > ${autoReviewLimit}; this may indicate a taxonomy regression`)
+}
 
 if (warnings.length) console.warn(warnings.map((item) => `Taxonomy warning: ${item}`).join('\n'))
 if (errors.length) {
