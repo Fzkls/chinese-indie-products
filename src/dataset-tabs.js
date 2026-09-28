@@ -340,6 +340,19 @@ function renderProjectActiveFilters() {
   target.innerHTML = Object.entries(ui.filters).filter(([, value]) => value).map(([key, value]) => `<button type="button" data-clear-project="${key}"><span>${labels[key]}</span>${escapeHtml(display(key, value))}<b>×</b></button>`).join('')
 }
 
+function projectSourcesHtml(record) {
+  const sources = record.sources || []
+  if (!sources.length) return '<span class="project-v2-source-empty">来源未记录</span>'
+  const rows = sources.map((source) => {
+    const line = source.sourceLine ? ':' + source.sourceLine : ''
+    const label = [source.repository, source.sourceFile ? source.sourceFile + line : ''].filter(Boolean).join(' · ')
+    return source.sourceUrl
+      ? `<a href="${escapeHtml(source.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(label || '查看原始来源')} ↗</a>`
+      : `<span>${escapeHtml(label || '来源信息不完整')}</span>`
+  }).join('')
+  return `<details class="project-v2-sources"><summary>来源 ${sources.length} 处</summary><div>${rows}</div></details>`
+}
+
 function renderProjectCards() {
   const grid = $('#project-v2-grid')
   const summary = $('#project-list-summary')
@@ -365,6 +378,7 @@ function renderProjectCards() {
       <p>${escapeHtml(record.description || '暂无产品介绍')}</p>
       <div class="project-v2-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
       <div class="project-v2-meta"><span>${escapeHtml(record.developerName || '未知开发者')}</span><span>${escapeHtml(location)}</span>${repository?.status === 'available' ? `<span>★ ${formatNumber(repository.stars)}</span>` : ''}</div>
+      ${projectSourcesHtml(record)}
     </article>`
   }).join('') || '<div class="project-list-empty"><strong>没有匹配项目</strong><p>减少筛选条件或换一个关键词。</p></div>'
 }
