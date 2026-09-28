@@ -19,7 +19,7 @@ const PRIMARY_RULES = [
   ]],
   ['business-marketing', [[/(crm|客户关系|营销|marketing|推广|seo\b|销售|sales|客服|客户支持|工单|反馈|feedback|投票|招聘|recruit|人力资源|hr\b|newsletter|邮件营销|增长工具|项目管理|团队协作|协同办公|办公协作|企业管理|企业服务|erp\b|oa\b|进销存|排班|工时|表单|问卷|survey|预约管理|门店管理|商户管理)/i, 6, '商业运营']]],
   ['design-creative', [[/(设计工具|design tool|figma|原型|prototype|ui\s*设计|ux\s*设计|配色|字体工具|图标工具|绘图|画图|图片生成|图像生成|image generation|海报|信息图|infographic|素材生成|素材管理|摄影|photo editor|图片编辑|修图|抠图|背景移除|去背景|视频剪辑|video editor|视频生成|video generation|logo|logo 设计|3d 建模|3d modeling)/i, 6, '设计创意']]],
-  ['content-knowledge', [[/(笔记|note[- ]?taking|知识库|knowledge base|wiki\b|markdown|文档管理|文档编辑|博客|blog|阅读器|reader|稍后读|read later|rss\b|书签|bookmark|收藏管理|写作工具|内容创作|电子书|ebook|epub|脑图|mind map|思维导图|文本编辑|信息管理|知识管理|新闻聚合|news reader|词典|dictionary)/i, 6, '内容知识']]],
+  ['content-knowledge', [[/(笔记|note[- ]?taking|知识库|knowledge base|wiki\b|markdown|文档管理|文档编辑|博客|blog|阅读器|reader|稍后读|read later|rss\b|书签|bookmark|收藏管理|写作工具|内容创作|电子书|ebook|epub|脑图|mind map|思维导图|文本编辑|信息管理|知识管理|新闻聚合|news reader|词典|dictionary|冷知识|科普内容|百科内容)/i, 6, '内容知识']]],
   ['data-analytics', [[/(数据分析|data analytics|analytics platform|business intelligence|\bbi\b|dashboard|仪表盘|数据可视化|data visualization|埋点|数据采集|crawler|爬虫|etl\b|data pipeline|统计分析|分析平台|数据处理|数据清洗|data processing|charting|图表工具|指标平台)/i, 6, '数据分析']]],
   ['education', [[/(教育|education|教师|老师|课堂|classroom|课程|course|题库|考试|exam|quiz|刷题|背单词|单词学习|vocabulary|语言学习|flashcard|学习工具|学习平台|学生工具|儿童教育|少儿学习|专注力训练|记忆训练|技能学习|training|教程|tutorial)/i, 6, '教育学习']]],
   ['finance', [[/(记账|账单管理|预算|budget|财务|finance|发票|invoice|投资|invest|股票|stock|证券|基金|trading|交易策略|加密货币|crypto|bitcoin|支付工具|支付|收款|汇率|currency|理财|税务|tax\b)/i, 6, '金融财务']]],
