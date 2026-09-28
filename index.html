@@ -48,7 +48,7 @@
         <article class="metric"><span>独立产品</span><strong id="metric-products">—</strong><small>跨产品来源去重</small></article>
         <article class="metric"><span>独立开发者</span><strong id="metric-developers">—</strong><small>按公开名称统计</small></article>
         <article class="metric"><span>覆盖城市</span><strong id="metric-cities">—</strong><small>仅统计明确地区</small></article>
-        <article class="metric"><span>仍在运行</span><strong id="metric-active">—</strong><small>已上线或开发中</small></article>
+        <article class="metric"><span>标记为运行</span><strong id="metric-active">—</strong><small>来源标记为已上线或开发中</small></article>
         <article class="metric"><span>产品 GitHub 仓库</span><strong id="metric-github">—</strong><small>只统计独立产品关联仓库</small></article>
       </section>
 
@@ -64,7 +64,7 @@
         </div>
         <p class="pulse-baseline" id="weekly-baseline">正在读取变化基线…</p>
         <div class="pulse-grid">
-          <article class="pulse-panel"><h3>本期新增</h3><p>点击可直接定位到产品列表。</p><div class="pulse-list" id="weekly-new-products"></div></article>
+          <article class="pulse-panel"><h3>本期新增与变化</h3><p>点击项目可直接进入项目目录。</p><div class="pulse-list" id="weekly-new-products"></div><div class="pulse-subsection"><span>已有项目信息变化</span><div class="pulse-list" id="weekly-changed-products"></div></div></article>
           <article class="pulse-panel"><h3>GitHub 增长</h3><p>按最近两次周快照的 Star 增量排序。</p><div class="pulse-list" id="weekly-github-growth"></div></article>
           <article class="pulse-panel"><h3>项目生命周期</h3><p>按产品关联仓库最近更新时间划分。</p><div class="pulse-lifecycle" id="weekly-lifecycle"></div></article>
         </div>
@@ -81,8 +81,8 @@
             <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>产品类型</h3><p>悬停查看详情，点击图例联动筛选独立产品</p></div></div>
-            <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="产品类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
+            <div class="panel-heading"><div><h3>来源类型</h3><p>按上游清单中的通用产品 / 程序员工具 / 游戏 / 历史归档统计，不等同于语义产品方向</p></div></div>
+            <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="来源类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
           </article>
           <article class="chart-panel">
             <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8，仅作用于产品数据</p></div></div>
