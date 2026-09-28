@@ -9,14 +9,12 @@ function setText(id, value) {
   if (node) node.textContent = value
 }
 
+function openProjectDirectory(detail = {}) {
+  window.dispatchEvent(new CustomEvent('indiebase:open-project-directory', { detail }))
+}
+
 function navigateToProduct(name) {
-  document.querySelector('[data-dataset-tab="product"]')?.click()
-  const input = document.getElementById('search')
-  if (input) {
-    input.value = name
-    input.dispatchEvent(new Event('input', { bubbles: true }))
-  }
-  document.getElementById('explore')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  openProjectDirectory({ search: name })
 }
 
 function renderNewProducts(changes) {
@@ -24,11 +22,26 @@ function renderNewProducts(changes) {
   const items = changes?.products?.added || []
   if (!container) return
   container.innerHTML = items.length
-    ? items.slice(0, 8).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
+    ? items.slice(0, 5).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
         <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.developerName || item.description || '新增产品')}</small></span>
         <span class="pulse-row-meta">新增</span>
       </button>`).join('')
     : '<div class="pulse-empty">与上一份成功快照相比，本期暂无新增产品。</div>'
+  for (const button of container.querySelectorAll('[data-product-name]')) {
+    button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
+  }
+}
+
+function renderChangedProducts(changes) {
+  const container = document.getElementById('weekly-changed-products')
+  const items = changes?.products?.changed || []
+  if (!container) return
+  container.innerHTML = items.length
+    ? items.slice(0, 4).map((item) => `<button class="pulse-row" type="button" data-product-name="${escapeHtml(item.name)}">
+        <span class="pulse-row-main"><strong>${escapeHtml(item.name)}</strong><small>${escapeHtml(item.description || item.developerName || '产品信息发生变化')}</small></span>
+        <span class="pulse-row-meta">变化</span>
+      </button>`).join('')
+    : '<div class="pulse-empty compact">本期暂无已有产品的信息变化。</div>'
   for (const button of container.querySelectorAll('[data-product-name]')) {
     button.addEventListener('click', () => navigateToProduct(button.dataset.productName))
   }
@@ -81,8 +94,11 @@ function renderLifecycle(repositories) {
     .map((key) => {
       const count = counts.get(key)
       const percent = items.length ? Math.round(count / items.length * 100) : 0
-      return `<div class="pulse-lifecycle-item"><span>${escapeHtml(LIFECYCLE_LABELS[key] || key)}</span><strong>${formatNumber(count)}</strong><small>${percent}%</small></div>`
+      return `<button class="pulse-lifecycle-item" type="button" data-activity="${escapeHtml(key)}"><span>${escapeHtml(LIFECYCLE_LABELS[key] || key)}</span><strong>${formatNumber(count)}</strong><small>${percent}%</small></button>`
     }).join('') || '<div class="pulse-empty">暂无产品仓库生命周期数据。</div>'
+  for (const button of container.querySelectorAll('[data-activity]')) {
+    button.addEventListener('click', () => openProjectDirectory({ activity: button.dataset.activity }))
+  }
 }
 
 async function initPulse() {
@@ -110,6 +126,7 @@ async function initPulse() {
       : '当前为初始快照，后续每周会显示真实变化')
 
     renderNewProducts(changes)
+    renderChangedProducts(changes)
     renderGrowth(repositoriesPayload.repositories || {}, historyPayload.repositories || {})
     renderLifecycle(repositoriesPayload.repositories || {})
   } catch (error) {
