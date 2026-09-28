@@ -1,14 +1,25 @@
 {
-  "generatedAt": "2026-09-28T13:55:49.806Z",
-  "baselineGeneratedAt": "2026-09-28T13:23:51.303Z",
+  "generatedAt": "2026-09-28T14:33:23.137Z",
+  "baselineGeneratedAt": "2026-09-28T13:55:49.806Z",
   "mode": "since-previous-snapshot",
   "products": {
     "previousCount": 3013,
-    "currentCount": 3013,
-    "addedCount": 0,
+    "currentCount": 3014,
+    "addedCount": 1,
     "removedCount": 0,
     "changedCount": 0,
-    "added": [],
+    "added": [
+      {
+        "id": "901b099f45bfce",
+        "name": "AgentHop",
+        "url": "https://github.com/sdyuyouth/agenthop",
+        "description": "让两个 AI Agent 直接对话的开源工具，一个配对码连上两台没有公网地址的电脑，端到端加密、中继只转发密文，作为 MCP 接进 Claude Code、Codex、Cursor、Gemini CLI 等",
+        "developerName": "Yuesen",
+        "category": "developer-tool",
+        "status": "active",
+        "date": "2026-09-28"
+      }
+    ],
     "removed": [],
     "changed": []
   },
