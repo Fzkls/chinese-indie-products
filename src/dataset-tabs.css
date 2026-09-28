@@ -142,12 +142,10 @@
 .dataset-tabs-active .hero{
   min-height:64px;
   overflow:visible;
-  position:sticky;
-  top:0;
-  z-index:900;
+  position:relative;
+  z-index:auto;
   border-bottom:1px solid var(--line);
-  background:rgba(7,17,15,.96);
-  backdrop-filter:blur(18px)
+  background:rgba(7,17,15,.96)
 }
 .dataset-tabs-active .hero:before,
 .dataset-tabs-active .hero-grid{display:none!important}
@@ -224,7 +222,7 @@
 .dataset-tabs-active #product-github .chart-panel{min-height:360px;padding:18px;border-radius:14px;background:var(--panel)}
 .dataset-tabs-active #semantic-map{padding-top:26px}
 .dataset-tabs-active #semantic-map .taxonomy-heading h2{font-size:24px}
-.dataset-tabs-active #weekly-pulse{display:none!important}
+.dataset-tabs-active #weekly-pulse{padding:28px 0 34px}
 
 /* Product directory */
 .project-list-v2{
@@ -296,9 +294,8 @@
 .project-v2-sources>div{gap:4px;margin-top:6px;padding-top:6px}
 
 .directory-sidebar{
-  position:sticky;top:78px;max-height:calc(100vh - 92px);overflow:auto;
-  border:1px solid var(--line);border-radius:14px;background:var(--bg-soft);
-  scrollbar-width:thin
+  position:static;max-height:none;overflow:visible;
+  border:1px solid var(--line);border-radius:14px;background:var(--bg-soft)
 }
 .directory-sidebar-head{
   position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;
@@ -366,3 +363,6 @@
   .directory-sidebar-head,.directory-weekly{grid-column:auto}
   .sidebar-filter-group{border-right:0}
 }
+
+/* Keep view switching deterministic even when a component has its own display rule. */
+.dataset-tabs-active [hidden]{display:none!important}
