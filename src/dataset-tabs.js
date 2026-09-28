@@ -102,10 +102,10 @@ function installNavigation() {
   if (!links) return
   links.classList.add('dataset-navigation')
   links.innerHTML = `
+    <button type="button" class="site-nav-item" data-dataset="product" data-mode="overview">▣ 生态洞察</button>
     <button type="button" class="site-nav-item" data-dataset="product" data-mode="directory">🚀 独立产品</button>
     <button type="button" class="site-nav-item" data-dataset="tool" data-mode="directory">🛠 工具资源</button>
-    <button type="button" class="site-nav-item" data-dataset="product" data-mode="overview">▣ 生态洞察</button>
-    <a class="site-nav-item dataset-method-link" href="#methodology">▤ 关于</a>`
+    <a class="site-nav-item dataset-method-link" href="#methodology">▤ 数据说明</a>`
   links.addEventListener('click', (event) => {
     const button = event.target.closest('[data-dataset]')
     if (!button) return
@@ -171,11 +171,13 @@ function syncOverviewSummary() {
 }
 
 function organizeOverview() {
-  const semantic = $('#semantic-map')
+  const dashboard = $('#product-dashboard')
+  const weekly = $('#weekly-pulse')
   const github = $('#product-github')
-  if (semantic && github && semantic.nextElementSibling !== null && github.nextElementSibling !== semantic) {
-    github.insertAdjacentElement('afterend', semantic)
-  }
+  const semantic = $('#semantic-map')
+  if (dashboard && weekly && dashboard.nextElementSibling !== weekly) dashboard.insertAdjacentElement('afterend', weekly)
+  if (weekly && github && weekly.nextElementSibling !== github) weekly.insertAdjacentElement('afterend', github)
+  if (github && semantic && github.nextElementSibling !== semantic) github.insertAdjacentElement('afterend', semantic)
 }
 function installHeroActions() {
   const actions = $('.hero-actions')
@@ -238,7 +240,7 @@ function applySectionVisibility() {
 
   setHidden($('#ecosystem-overview-head'), !productOverview)
   setHidden($('.metrics'), !productOverview)
-  setHidden($('#weekly-pulse'), true)
+  setHidden($('#weekly-pulse'), !productOverview)
   setHidden($('#semantic-map'), !productOverview)
   setHidden($('#product-dashboard'), !productOverview)
   setHidden($('#product-github'), !productOverview)
@@ -316,7 +318,7 @@ function insertProjectList() {
         <label class="directory-sort">
           <span>排序</span>
           <select id="project-v2-sort">
-            <option value="smart">综合推荐</option>
+            <option value="smart">综合排序</option>
             <option value="recent">最近收录</option>
             <option value="stars">GitHub Star</option>
             <option value="active">最近活跃</option>
@@ -826,7 +828,7 @@ function translateLegacySemanticLabels() {
 
 function makeOverviewChartsReadOnly() {
   const yearCopy = $('#year-chart')?.closest('.chart-panel')?.querySelector('.panel-heading p')
-  if (yearCopy) yearCopy.textContent = '悬停查看不同年份的收录详情'
+  if (yearCopy) yearCopy.textContent = '悬停查看详情；点击年份下钻相关项目'
   const sourcePanel = $('#category-donut')?.closest('.chart-panel')
   const sourceTitle = sourcePanel?.querySelector('h3')
   const sourceCopy = sourcePanel?.querySelector('.panel-heading p')
@@ -835,18 +837,6 @@ function makeOverviewChartsReadOnly() {
 }
 
 function bindInteractionGuards() {
-  const isLegacyOverviewFilter = (target) => target.closest('#product-dashboard [data-year], #product-dashboard [data-category], #product-dashboard [data-city], #product-dashboard [data-status], #semantic-map [data-taxonomy-filter], #semantic-map [data-status-category]')
-  document.addEventListener('click', (event) => {
-    if (!isLegacyOverviewFilter(event.target)) return
-    event.stopImmediatePropagation()
-    event.preventDefault()
-  }, true)
-  document.addEventListener('keydown', (event) => {
-    if (!['Enter', ' '].includes(event.key) || !isLegacyOverviewFilter(event.target)) return
-    event.stopImmediatePropagation()
-    event.preventDefault()
-  }, true)
-
   document.addEventListener('click', (event) => {
     const productRank = event.target.closest('#product-github-top [data-record-name]')
     const toolRank = event.target.closest('#tool-github-top [data-record-name]')
@@ -857,7 +847,6 @@ function bindInteractionGuards() {
     if (toolRank) openToolDirectory({ search: toolRank.dataset.recordName })
   }, true)
 }
-
 function bindGlobalControls() {
   window.addEventListener('indiebase:open-project-directory', (event) => {
     openProjectDirectory(event.detail || {})
