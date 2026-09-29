@@ -52,8 +52,10 @@ const taxonomyInsightsSource = await readFile('dist/src/taxonomy-insights.js', '
 if (separatedInsights.includes('datasetView') || separatedInsights.includes('installDatasetTabs')) throw new Error('separated-insights.js must not own global page routing')
 if (separatedInsightsCss.includes('data-dataset-view')) throw new Error('separated-insights.css must not hide sections based on legacy dataset view state')
 if (taxonomyInsightsSource.includes("document.querySelector('.top-links')")) throw new Error('taxonomy-insights.js must not mutate global navigation')
+if (!separatedInsights.includes('const insightState =')) throw new Error('separated-insights.js must declare its runtime state before use')
 
 const overviewInteractions = await readFile('dist/src/overview-interactions.js', 'utf8')
+if (overviewInteractions.includes('Element.prototype.scrollIntoView =')) throw new Error('overview interactions must not override native Element.prototype.scrollIntoView')
 for (const dataset of ['products.json', 'product-taxonomy.json']) {
   if (!overviewInteractions.includes(`data/${dataset}`)) throw new Error(`overview-interactions.js must reference data/${dataset}`)
 }
@@ -72,5 +74,8 @@ const datasetTabsCss = await readFile('dist/src/dataset-tabs.css', 'utf8')
 if (/\.dataset-tabs-active \.hero\s*\{[^}]*position:\s*sticky/s.test(datasetTabsCss)) throw new Error('top navigation must not be sticky')
 if (/\.dataset-tabs-active #weekly-pulse\s*\{[^}]*display:\s*none\s*!important/s.test(datasetTabsCss)) throw new Error('weekly analysis pulse must remain visible in ecosystem overview')
 if (!datasetTabsCss.includes('.dataset-tabs-active [hidden]{display:none!important}')) throw new Error('view switching hidden-state guard missing')
+if (datasetTabsCss.includes('#product-dashboard .chart-panel.wide{grid-column:auto}')) throw new Error('wide ecosystem charts must not be collapsed back to half width')
+if (datasetTabs.includes('data-project-preset="shenzhen"')) throw new Error('project directory must not hard-code a single-city quick filter')
 if (!index.includes('data-download-products-compat')) throw new Error('download compatibility anchor missing')
+if (!index.includes('id="city-coverage-note"')) throw new Error('city coverage note missing from ecosystem dashboard')
 console.log('Static site built in dist/.')
