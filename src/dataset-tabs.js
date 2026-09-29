@@ -833,7 +833,13 @@ function makeOverviewChartsReadOnly() {
   const sourceTitle = sourcePanel?.querySelector('h3')
   const sourceCopy = sourcePanel?.querySelector('.panel-heading p')
   if (sourceTitle) sourceTitle.textContent = '来源类型'
-  if (sourceCopy) sourceCopy.textContent = '上游清单的来源类别，仅用于来源结构参考'
+  if (sourceCopy) sourceCopy.textContent = '上游清单的来源类别，仅用于结构参考，不参与联动筛选'
+  $('#category-legend [data-category]').forEach((button) => {
+    button.classList.add('is-reference-only')
+    button.classList.remove('is-active')
+    button.setAttribute('aria-disabled', 'true')
+    button.tabIndex = -1
+  })
 }
 
 function bindInteractionGuards() {
