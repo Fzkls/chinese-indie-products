@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-09-28T14:33:56.460Z",
+    "generatedAt": "2026-09-29T06:29:19.797Z",
     "cadence": "weekly",
     "retentionWeeks": 104,
     "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
@@ -37,6 +37,14 @@
         "pushedAt": "2026-09-28T08:13:36Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 116,
+        "forks": 19,
+        "pushedAt": "2026-09-28T08:13:36Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "0x676e67/vproxy": [
@@ -65,6 +73,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 421,
+        "forks": 72,
+        "pushedAt": "2026-09-12T12:13:34Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 421,
         "forks": 72,
         "pushedAt": "2026-09-12T12:13:34Z",
@@ -103,6 +119,14 @@
         "pushedAt": "2026-09-25T09:16:35Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 542,
+        "forks": 29,
+        "pushedAt": "2026-09-25T09:16:35Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "1c7/chinese-independent-developer": [
@@ -136,6 +160,14 @@
         "pushedAt": "2026-09-28T14:22:52Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 61575,
+        "forks": 5417,
+        "pushedAt": "2026-09-29T01:08:19Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "619dev/astrbot_plugin_paperphoneplus": [
@@ -164,6 +196,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 2,
+        "pushedAt": "2026-04-13T09:31:58Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 2,
         "pushedAt": "2026-04-13T09:31:58Z",
@@ -202,6 +242,14 @@
         "pushedAt": "2026-07-26T01:32:05Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-07-26T01:32:05Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "619dev/global-disaster-monitor": [
@@ -230,6 +278,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-01-16T19:15:46Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 0,
         "pushedAt": "2026-01-16T19:15:46Z",
@@ -268,6 +324,14 @@
         "pushedAt": "2025-07-15T23:32:05Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2025-07-15T23:32:05Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "619dev/minghe": [
@@ -301,6 +365,14 @@
         "pushedAt": "2026-08-24T03:22:54Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 64,
+        "forks": 6,
+        "pushedAt": "2026-09-28T19:59:14Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "619dev/tafeng": [
@@ -329,6 +401,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 78,
+        "forks": 18,
+        "pushedAt": "2026-07-09T02:22:56Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 78,
         "forks": 18,
         "pushedAt": "2026-07-09T02:22:56Z",
@@ -367,6 +447,14 @@
         "pushedAt": "2025-11-06T21:40:15Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 19,
+        "forks": 3,
+        "pushedAt": "2025-11-06T21:40:15Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "619dev/wenmo-android": [
@@ -395,6 +483,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 21,
+        "forks": 6,
+        "pushedAt": "2026-07-14T21:11:39Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 21,
         "forks": 6,
         "pushedAt": "2026-07-14T21:11:39Z",
@@ -433,6 +529,14 @@
         "pushedAt": "2019-08-07T03:33:32Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2019-08-07T03:33:32Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "acmesh-official/acme.sh": [
@@ -463,6 +567,14 @@
         "date": "2026-09-28",
         "stars": 47746,
         "forks": 5676,
+        "pushedAt": "2026-09-27T17:32:45Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 47753,
+        "forks": 5677,
         "pushedAt": "2026-09-27T17:32:45Z",
         "archived": false,
         "activity": "active-30"
@@ -499,6 +611,14 @@
         "pushedAt": "2023-04-02T06:24:38Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3194,
+        "forks": 1070,
+        "pushedAt": "2023-04-02T06:24:38Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "adra2n/otpbox": [
@@ -527,6 +647,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-07-23T12:56:04Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 4,
         "forks": 0,
         "pushedAt": "2026-07-23T12:56:04Z",
@@ -565,6 +693,14 @@
         "pushedAt": "2026-09-22T09:56:55Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 51,
+        "forks": 7,
+        "pushedAt": "2026-09-22T09:56:55Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "agentsmesh/agentsmesh": [
@@ -593,6 +729,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2356,
+        "forks": 245,
+        "pushedAt": "2026-09-23T13:36:59Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2356,
         "forks": 245,
         "pushedAt": "2026-09-23T13:36:59Z",
@@ -631,6 +775,14 @@
         "pushedAt": "2026-07-06T01:35:29Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-06T01:35:29Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "albert-weasker/niubi_guard": [
@@ -659,6 +811,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1308,
+        "forks": 156,
+        "pushedAt": "2026-08-27T11:54:15Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1308,
         "forks": 156,
         "pushedAt": "2026-08-27T11:54:15Z",
@@ -697,6 +857,14 @@
         "pushedAt": "2019-11-21T13:53:05Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 12,
+        "forks": 0,
+        "pushedAt": "2019-11-21T13:53:05Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "alexjason/zilch-editor": [
@@ -725,6 +893,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 37,
+        "forks": 9,
+        "pushedAt": "2021-08-01T15:18:13Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 37,
         "forks": 9,
         "pushedAt": "2021-08-01T15:18:13Z",
@@ -763,6 +939,14 @@
         "pushedAt": "2026-09-25T18:09:04Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 18736,
+        "forks": 1526,
+        "pushedAt": "2026-09-25T18:09:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "antfu-collective/vitesse-webext": [
@@ -791,6 +975,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3379,
+        "forks": 251,
+        "pushedAt": "2026-03-03T12:41:03Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3379,
         "forks": 251,
         "pushedAt": "2026-03-03T12:41:03Z",
@@ -829,6 +1021,14 @@
         "pushedAt": "2026-09-28T14:14:20Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 57503,
+        "forks": 5758,
+        "pushedAt": "2026-09-29T05:26:30Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "aprdeci/bili-music": [
@@ -857,6 +1057,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 373,
+        "forks": 22,
+        "pushedAt": "2026-09-28T10:25:03Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 373,
         "forks": 22,
         "pushedAt": "2026-09-28T10:25:03Z",
@@ -895,6 +1103,14 @@
         "pushedAt": "2026-09-28T13:06:49Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 328,
+        "forks": 59,
+        "pushedAt": "2026-09-29T01:05:01Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "aquanlerou/wehalo": [
@@ -923,6 +1139,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2095,
+        "forks": 368,
+        "pushedAt": "2023-08-16T01:54:58Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2095,
         "forks": 368,
         "pushedAt": "2023-08-16T01:54:58Z",
@@ -961,6 +1185,14 @@
         "pushedAt": "2026-09-19T17:51:22Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 141,
+        "forks": 15,
+        "pushedAt": "2026-09-19T17:51:22Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ask-tao/image-splitter": [
@@ -989,6 +1221,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 129,
+        "forks": 34,
+        "pushedAt": "2025-08-25T03:46:56Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 129,
         "forks": 34,
         "pushedAt": "2025-08-25T03:46:56Z",
@@ -1027,6 +1267,14 @@
         "pushedAt": "2024-03-01T03:24:55Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2024-03-01T03:24:55Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "awesome-iwb/awesome-iwb": [
@@ -1055,6 +1303,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 549,
+        "forks": 37,
+        "pushedAt": "2026-06-07T03:13:07Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 549,
         "forks": 37,
         "pushedAt": "2026-06-07T03:13:07Z",
@@ -1093,6 +1349,14 @@
         "pushedAt": "2026-08-13T00:29:50Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7455,
+        "forks": 392,
+        "pushedAt": "2026-08-13T00:29:50Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "b-yp/onin": [
@@ -1121,6 +1385,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 39,
+        "forks": 5,
+        "pushedAt": "2026-09-11T08:40:36Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 39,
         "forks": 5,
         "pushedAt": "2026-09-11T08:40:36Z",
@@ -1159,6 +1431,14 @@
         "pushedAt": "2026-09-26T16:31:46Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8,
+        "forks": 0,
+        "pushedAt": "2026-09-26T16:31:46Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "barvian/number-flow": [
@@ -1192,6 +1472,14 @@
         "pushedAt": "2026-09-20T13:51:56Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7717,
+        "forks": 158,
+        "pushedAt": "2026-09-20T13:51:56Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "beavailable/apt.sh": [
@@ -1220,6 +1508,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 7,
+        "forks": 1,
+        "pushedAt": "2025-12-07T00:08:54Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 7,
         "forks": 1,
         "pushedAt": "2025-12-07T00:08:54Z",
@@ -1258,6 +1554,14 @@
         "pushedAt": "2026-05-21T07:51:19Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 52,
+        "forks": 4,
+        "pushedAt": "2026-05-21T07:51:19Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "besscroft/picimpact": [
@@ -1286,6 +1590,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1304,
+        "forks": 213,
+        "pushedAt": "2026-09-23T02:50:58Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1304,
         "forks": 213,
         "pushedAt": "2026-09-23T02:50:58Z",
@@ -1324,6 +1636,14 @@
         "pushedAt": "2025-03-19T14:29:48Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 20,
+        "forks": 2,
+        "pushedAt": "2025-03-19T14:29:48Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "bistutu/fluentread": [
@@ -1357,6 +1677,14 @@
         "pushedAt": "2026-09-28T09:15:29Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8214,
+        "forks": 421,
+        "pushedAt": "2026-09-29T00:38:56Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "blocklang/blocklang-installer": [
@@ -1385,6 +1713,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 19,
+        "forks": 2,
+        "pushedAt": "2023-12-15T11:36:05Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 19,
         "forks": 2,
         "pushedAt": "2023-12-15T11:36:05Z",
@@ -1423,6 +1759,14 @@
         "pushedAt": "2026-09-14T13:15:20Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 210,
+        "forks": 15,
+        "pushedAt": "2026-09-14T13:15:20Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "brancogao/redirect-checker": [
@@ -1451,6 +1795,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 1,
+        "pushedAt": "2026-02-17T23:58:00Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 1,
         "pushedAt": "2026-02-17T23:58:00Z",
@@ -1489,6 +1841,14 @@
         "pushedAt": "2026-02-18T16:53:51Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 15,
+        "forks": 5,
+        "pushedAt": "2026-02-18T16:53:51Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "buuing/lucky-canvas": [
@@ -1517,6 +1877,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8772,
+        "forks": 1030,
+        "pushedAt": "2026-07-30T07:38:48Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8772,
         "forks": 1030,
         "pushedAt": "2026-07-30T07:38:48Z",
@@ -1555,6 +1923,14 @@
         "pushedAt": "2026-07-15T15:11:26Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-07-15T15:11:26Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "caomeiyouren/afdian-linker": [
@@ -1588,6 +1964,14 @@
         "pushedAt": "2026-09-21T07:02:49Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6,
+        "forks": 2,
+        "pushedAt": "2026-09-28T22:57:48Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "caomeiyouren/caomei-auth": [
@@ -1616,6 +2000,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 218,
+        "forks": 17,
+        "pushedAt": "2026-09-21T07:15:48Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 218,
         "forks": 17,
         "pushedAt": "2026-09-21T07:15:48Z",
@@ -1654,6 +2046,14 @@
         "pushedAt": "2026-09-26T12:45:05Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 12,
+        "forks": 0,
+        "pushedAt": "2026-09-26T12:45:05Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "caomeiyouren/rss-impact-server": [
@@ -1685,6 +2085,14 @@
         "stars": 196,
         "forks": 10,
         "pushedAt": "2026-09-21T06:58:23Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 196,
+        "forks": 10,
+        "pushedAt": "2026-09-28T22:58:57Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -1720,6 +2128,14 @@
         "pushedAt": "2026-09-27T21:13:33Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 9258,
+        "forks": 824,
+        "pushedAt": "2026-09-27T21:13:33Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "caronc/apprise": [
@@ -1749,6 +2165,14 @@
       {
         "date": "2026-09-28",
         "stars": 17404,
+        "forks": 668,
+        "pushedAt": "2026-09-28T01:23:18Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 17460,
         "forks": 668,
         "pushedAt": "2026-09-28T01:23:18Z",
         "archived": false,
@@ -1786,6 +2210,14 @@
         "pushedAt": "2025-10-25T05:17:21Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 12770,
+        "forks": 463,
+        "pushedAt": "2025-10-25T05:17:21Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "ccbikai/sink": [
@@ -1819,6 +2251,14 @@
         "pushedAt": "2026-09-27T04:13:04Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7180,
+        "forks": 5309,
+        "pushedAt": "2026-09-27T04:13:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "changwu/cvparser": [
@@ -1847,6 +2287,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 16,
+        "forks": 1,
+        "pushedAt": "2023-04-11T15:36:44Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 16,
         "forks": 1,
         "pushedAt": "2023-04-11T15:36:44Z",
@@ -1885,6 +2333,14 @@
         "pushedAt": "2026-09-23T12:59:20Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2013,
+        "forks": 275,
+        "pushedAt": "2026-09-29T06:27:54Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "charsdavy/imagehosting": [
@@ -1913,6 +2369,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 18,
+        "forks": 4,
+        "pushedAt": "2017-01-02T15:22:33Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 18,
         "forks": 4,
         "pushedAt": "2017-01-02T15:22:33Z",
@@ -1951,6 +2415,14 @@
         "pushedAt": "2026-09-22T14:34:05Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 1,
+        "pushedAt": "2026-09-22T14:34:05Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "chibat/chrome-extension-typescript-starter": [
@@ -1979,6 +2451,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2820,
+        "forks": 462,
+        "pushedAt": "2026-09-14T09:45:44Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2820,
         "forks": 462,
         "pushedAt": "2026-09-14T09:45:44Z",
@@ -2017,6 +2497,14 @@
         "pushedAt": "2026-08-21T03:51:38Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 39,
+        "forks": 3,
+        "pushedAt": "2026-08-21T03:51:38Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ckfanzhe/minecraft-easyserver": [
@@ -2045,6 +2533,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 14,
+        "forks": 4,
+        "pushedAt": "2025-09-08T00:39:20Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 14,
         "forks": 4,
         "pushedAt": "2025-09-08T00:39:20Z",
@@ -2083,6 +2579,14 @@
         "pushedAt": "2026-09-23T23:51:27Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5487,
+        "forks": 207,
+        "pushedAt": "2026-09-23T23:51:27Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "codercup/unibest": [
@@ -2116,6 +2620,14 @@
         "pushedAt": "2026-03-28T01:33:24Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2865,
+        "forks": 291,
+        "pushedAt": "2026-03-28T01:33:24Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "cqzhangxin/ai-reconciliation": [
@@ -2144,6 +2656,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 11,
+        "forks": 4,
+        "pushedAt": "2026-07-15T07:58:46Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 11,
         "forks": 4,
         "pushedAt": "2026-07-15T07:58:46Z",
@@ -2182,6 +2702,14 @@
         "pushedAt": "2026-07-25T12:44:33Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 20,
+        "forks": 4,
+        "pushedAt": "2026-07-25T12:44:33Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "crewbeelab/waggle": [
@@ -2210,6 +2738,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 1,
+        "pushedAt": "2026-07-25T19:10:13Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 1,
         "pushedAt": "2026-07-25T19:10:13Z",
@@ -2248,6 +2784,14 @@
         "pushedAt": "2026-09-24T18:27:11Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4176,
+        "forks": 246,
+        "pushedAt": "2026-09-24T18:27:11Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "cs-tao/whu-library-seat": [
@@ -2276,6 +2820,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 809,
+        "forks": 27,
+        "pushedAt": "2023-10-01T06:51:04Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 809,
         "forks": 27,
         "pushedAt": "2023-10-01T06:51:04Z",
@@ -2314,6 +2866,14 @@
         "pushedAt": "2024-02-27T11:28:19Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6139,
+        "forks": 580,
+        "pushedAt": "2024-02-27T11:28:19Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "cuartpyaw/lazytabs": [
@@ -2342,6 +2902,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-09-27T05:47:55Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-09-27T05:47:55Z",
@@ -2380,6 +2948,14 @@
         "pushedAt": "2025-07-01T18:22:54Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 305,
+        "forks": 44,
+        "pushedAt": "2025-07-01T18:22:54Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "d2learn/xlings": [
@@ -2413,6 +2989,14 @@
         "pushedAt": "2026-09-28T04:31:16Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 611,
+        "forks": 51,
+        "pushedAt": "2026-09-28T20:31:52Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "daily-ac/omnireach": [
@@ -2441,6 +3025,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 20,
+        "forks": 0,
+        "pushedAt": "2026-09-03T09:30:48Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 20,
         "forks": 0,
         "pushedAt": "2026-09-03T09:30:48Z",
@@ -2479,6 +3071,14 @@
         "pushedAt": "2026-09-28T06:01:26Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 84,
+        "forks": 6,
+        "pushedAt": "2026-09-29T06:10:29Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "daya0576/beaverhabits": [
@@ -2507,6 +3107,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1844,
+        "forks": 78,
+        "pushedAt": "2026-09-17T03:16:51Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1844,
         "forks": 78,
         "pushedAt": "2026-09-17T03:16:51Z",
@@ -2545,6 +3153,14 @@
         "pushedAt": "2020-09-14T02:02:30Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1465,
+        "forks": 181,
+        "pushedAt": "2020-09-14T02:02:30Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "derek-x-wang/attack-on-titans": [
@@ -2573,6 +3189,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 50,
+        "forks": 3,
+        "pushedAt": "2018-04-03T06:41:07Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 50,
         "forks": 3,
         "pushedAt": "2018-04-03T06:41:07Z",
@@ -2611,6 +3235,14 @@
         "pushedAt": "2022-11-12T02:53:32Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 148,
+        "forks": 16,
+        "pushedAt": "2022-11-12T02:53:32Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "dong2019/thesis_paper": [
@@ -2639,6 +3271,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-04-04T14:45:32Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 0,
         "pushedAt": "2026-04-04T14:45:32Z",
@@ -2677,6 +3317,14 @@
         "pushedAt": "2026-09-22T08:57:28Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 289,
+        "forks": 22,
+        "pushedAt": "2026-09-22T08:57:28Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "dreamer365/topspeed-image-compressor": [
@@ -2705,6 +3353,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 238,
+        "forks": 6,
+        "pushedAt": "2025-07-05T00:11:23Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 238,
         "forks": 6,
         "pushedAt": "2025-07-05T00:11:23Z",
@@ -2743,6 +3399,14 @@
         "pushedAt": "2026-09-11T07:54:53Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1681,
+        "forks": 228,
+        "pushedAt": "2026-09-11T07:54:53Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "duchengyao/gpu-based-image-stitching": [
@@ -2771,6 +3435,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 100,
+        "forks": 17,
+        "pushedAt": "2024-03-05T09:24:52Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 100,
         "forks": 17,
         "pushedAt": "2024-03-05T09:24:52Z",
@@ -2809,6 +3481,14 @@
         "pushedAt": "2026-02-25T05:42:37Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 1,
+        "pushedAt": "2026-02-25T05:42:37Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "duckduckstudio/github-labels-manager": [
@@ -2837,6 +3517,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-01-31T15:44:46Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 4,
         "forks": 0,
         "pushedAt": "2026-01-31T15:44:46Z",
@@ -2875,6 +3563,14 @@
         "pushedAt": "2025-08-06T09:20:20Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2025-08-06T09:20:20Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "duckduckstudio/power_by_akasha_terminal": [
@@ -2903,6 +3599,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2024-04-28T04:48:11Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 5,
         "forks": 0,
         "pushedAt": "2024-04-28T04:48:11Z",
@@ -2941,6 +3645,14 @@
         "pushedAt": "2026-09-28T07:59:30Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 12,
+        "forks": 0,
+        "pushedAt": "2026-09-28T17:05:29Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "duzexu/desktop-pet": [
@@ -2974,6 +3686,14 @@
         "pushedAt": "2026-07-17T13:10:10Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 27,
+        "forks": 8,
+        "pushedAt": "2026-07-17T13:10:10Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "dwwkf520/remotion-vedio-edit": [
@@ -3002,6 +3722,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-07-21T08:26:34Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-07-21T08:26:34Z",
@@ -3040,6 +3768,14 @@
         "pushedAt": "2025-03-13T06:56:27Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 78,
+        "forks": 20,
+        "pushedAt": "2025-03-13T06:56:27Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "eatmoreduck/boss-zhipin-scraper": [
@@ -3073,6 +3809,14 @@
         "pushedAt": "2026-09-28T13:35:04Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1488,
+        "forks": 189,
+        "pushedAt": "2026-09-28T13:35:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "eryajf/kite-desktop": [
@@ -3101,6 +3845,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 327,
+        "forks": 34,
+        "pushedAt": "2026-05-31T04:03:14Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 327,
         "forks": 34,
         "pushedAt": "2026-05-31T04:03:14Z",
@@ -3139,6 +3891,14 @@
         "pushedAt": "2026-09-07T01:57:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 147,
+        "forks": 21,
+        "pushedAt": "2026-09-07T01:57:32Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ethanyoq/agenthive": [
@@ -3169,6 +3929,14 @@
         "date": "2026-09-28",
         "stars": 6,
         "forks": 2,
+        "pushedAt": "2026-07-18T09:41:05Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 3,
         "pushedAt": "2026-07-18T09:41:05Z",
         "archived": false,
         "activity": "active-90"
@@ -3205,6 +3973,14 @@
         "pushedAt": "2026-09-28T13:36:59Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1188,
+        "forks": 145,
+        "pushedAt": "2026-09-29T04:26:54Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ethanyoq/invoice-downloader": [
@@ -3238,6 +4014,14 @@
         "pushedAt": "2026-09-25T10:06:22Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 468,
+        "forks": 48,
+        "pushedAt": "2026-09-25T10:06:22Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ethanyoq/whisper-input": [
@@ -3266,6 +4050,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 52,
+        "forks": 8,
+        "pushedAt": "2026-09-25T09:23:46Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 52,
         "forks": 8,
         "pushedAt": "2026-09-25T09:23:46Z",
@@ -3304,6 +4096,14 @@
         "pushedAt": "2026-09-28T04:04:30Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14,
+        "forks": 1,
+        "pushedAt": "2026-09-29T06:11:06Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "everydoc/jrebel-license-server": [
@@ -3332,6 +4132,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 76,
+        "forks": 47,
+        "pushedAt": "2025-09-10T14:09:09Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 76,
         "forks": 47,
         "pushedAt": "2025-09-10T14:09:09Z",
@@ -3370,6 +4178,14 @@
         "pushedAt": "2026-09-26T02:04:47Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5173,
+        "forks": 139,
+        "pushedAt": "2026-09-28T20:47:41Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "facebook/docusaurus": [
@@ -3403,6 +4219,14 @@
         "pushedAt": "2026-09-25T20:35:07Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 66360,
+        "forks": 10048,
+        "pushedAt": "2026-09-25T20:35:07Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "fangnan700/ai-aides": [
@@ -3431,6 +4255,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 21,
+        "forks": 3,
+        "pushedAt": "2023-04-01T15:35:43Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 21,
         "forks": 3,
         "pushedAt": "2023-04-01T15:35:43Z",
@@ -3469,6 +4301,14 @@
         "pushedAt": "2023-06-15T03:47:04Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 0,
+        "pushedAt": "2023-06-15T03:47:04Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "flyun/chatair": [
@@ -3497,6 +4337,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 823,
+        "forks": 66,
+        "pushedAt": "2025-10-13T15:20:17Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 823,
         "forks": 66,
         "pushedAt": "2025-10-13T15:20:17Z",
@@ -3535,6 +4383,14 @@
         "pushedAt": "2026-06-14T08:34:15Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 3,
+        "pushedAt": "2026-06-14T08:34:15Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "gaodeng/biu-for-readhub": [
@@ -3563,6 +4419,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 77,
+        "forks": 5,
+        "pushedAt": "2018-11-08T18:26:32Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 77,
         "forks": 5,
         "pushedAt": "2018-11-08T18:26:32Z",
@@ -3601,6 +4465,14 @@
         "pushedAt": "2024-09-21T02:37:56Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1332,
+        "forks": 81,
+        "pushedAt": "2024-09-21T02:37:56Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "gcwing/bitfun": [
@@ -3630,6 +4502,14 @@
       {
         "date": "2026-09-28",
         "stars": 2344,
+        "forks": 248,
+        "pushedAt": "2026-09-28T12:02:53Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2347,
         "forks": 248,
         "pushedAt": "2026-09-28T12:02:53Z",
         "archived": false,
@@ -3667,6 +4547,14 @@
         "pushedAt": "2026-06-12T06:05:23Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3721,
+        "forks": 266,
+        "pushedAt": "2026-06-12T06:05:23Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "geektcp/namjagbarwa-wow": [
@@ -3695,6 +4583,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 851,
+        "forks": 235,
+        "pushedAt": "2026-01-30T10:36:20Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 851,
         "forks": 235,
         "pushedAt": "2026-01-30T10:36:20Z",
@@ -3733,6 +4629,14 @@
         "pushedAt": "2026-09-28T04:25:38Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 566,
+        "forks": 28,
+        "pushedAt": "2026-09-28T04:25:38Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "gingiris/gingiris-aso-growth": [
@@ -3761,6 +4665,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 11,
+        "forks": 1,
+        "pushedAt": "2026-05-07T03:02:03Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 11,
         "forks": 1,
         "pushedAt": "2026-05-07T03:02:03Z",
@@ -3799,6 +4711,14 @@
         "pushedAt": "2026-05-07T03:02:01Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 98,
+        "forks": 13,
+        "pushedAt": "2026-05-07T03:02:01Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "gingiris/gingiris-launch": [
@@ -3827,6 +4747,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 208,
+        "forks": 29,
+        "pushedAt": "2026-05-07T03:01:55Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 208,
         "forks": 29,
         "pushedAt": "2026-05-07T03:01:55Z",
@@ -3865,6 +4793,14 @@
         "pushedAt": "2026-05-07T03:01:58Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 256,
+        "forks": 41,
+        "pushedAt": "2026-05-07T03:01:58Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "gingiris/growth-tools": [
@@ -3893,6 +4829,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 181,
+        "forks": 7,
+        "pushedAt": "2026-05-28T02:11:17Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 181,
         "forks": 7,
         "pushedAt": "2026-05-28T02:11:17Z",
@@ -3931,6 +4875,14 @@
         "pushedAt": "2026-03-28T16:15:52Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2325,
+        "forks": 91,
+        "pushedAt": "2026-03-28T16:15:52Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "gngpp/opengpt": [
@@ -3959,6 +4911,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1676,
+        "forks": 282,
+        "pushedAt": "2025-06-01T08:28:37Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1676,
         "forks": 282,
         "pushedAt": "2025-06-01T08:28:37Z",
@@ -3997,6 +4957,14 @@
         "pushedAt": "2025-10-14T05:03:46Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 747,
+        "forks": 84,
+        "pushedAt": "2025-10-14T05:03:46Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "godfengliang/billcraft": [
@@ -4025,6 +4993,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-05-16T14:12:21Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 0,
         "pushedAt": "2026-05-16T14:12:21Z",
@@ -4063,6 +5039,14 @@
         "pushedAt": "2026-08-18T15:19:36Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 37,
+        "forks": 19,
+        "pushedAt": "2026-08-18T15:19:36Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "groupultra/telegram-search": [
@@ -4096,6 +5080,14 @@
         "pushedAt": "2026-09-28T13:38:03Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4108,
+        "forks": 273,
+        "pushedAt": "2026-09-28T13:38:03Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "gwills163/howuseaiinappenginnering": [
@@ -4124,6 +5116,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 11,
+        "forks": 4,
+        "pushedAt": "2023-12-17T02:35:55Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 11,
         "forks": 4,
         "pushedAt": "2023-12-17T02:35:55Z",
@@ -4162,6 +5162,14 @@
         "pushedAt": "2026-02-10T14:56:09Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 625,
+        "forks": 31,
+        "pushedAt": "2026-02-10T14:56:09Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "hacklcx/hfish": [
@@ -4191,6 +5199,14 @@
       {
         "date": "2026-09-28",
         "stars": 4555,
+        "forks": 677,
+        "pushedAt": "2026-03-13T02:45:42Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4556,
         "forks": 677,
         "pushedAt": "2026-03-13T02:45:42Z",
         "archived": false,
@@ -4228,6 +5244,14 @@
         "pushedAt": "2026-02-05T15:34:45Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4032,
+        "forks": 544,
+        "pushedAt": "2026-02-05T15:34:45Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "hanshuaikang/nezha": [
@@ -4256,6 +5280,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1901,
+        "forks": 181,
+        "pushedAt": "2026-09-17T15:32:45Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1901,
         "forks": 181,
         "pushedAt": "2026-09-17T15:32:45Z",
@@ -4294,6 +5326,14 @@
         "pushedAt": "2026-09-14T02:07:19Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2216,
+        "forks": 207,
+        "pushedAt": "2026-09-14T02:07:19Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "hipepper/egressguard": [
@@ -4322,6 +5362,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8,
+        "forks": 0,
+        "pushedAt": "2026-09-11T01:18:45Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8,
         "forks": 0,
         "pushedAt": "2026-09-11T01:18:45Z",
@@ -4360,6 +5408,14 @@
         "pushedAt": "2026-04-13T07:14:10Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2213,
+        "forks": 620,
+        "pushedAt": "2026-04-13T07:14:10Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "hongshuo-wang/tomljump": [
@@ -4388,6 +5444,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-09-20T02:57:31Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-09-20T02:57:31Z",
@@ -4426,6 +5490,14 @@
         "pushedAt": "2023-04-03T02:41:31Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 88,
+        "forks": 17,
+        "pushedAt": "2023-04-03T02:41:31Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "hoochanlon/free-ntfs-for-mac": [
@@ -4456,6 +5528,14 @@
         "date": "2026-09-28",
         "stars": 2444,
         "forks": 167,
+        "pushedAt": "2026-07-31T06:28:23Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2444,
+        "forks": 168,
         "pushedAt": "2026-07-31T06:28:23Z",
         "archived": false,
         "activity": "active-90"
@@ -4492,6 +5572,14 @@
         "pushedAt": "2026-07-15T04:18:46Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 200,
+        "forks": 42,
+        "pushedAt": "2026-07-15T04:18:46Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "hui-zz/runany": [
@@ -4520,6 +5608,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1073,
+        "forks": 101,
+        "pushedAt": "2023-10-05T15:30:30Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1073,
         "forks": 101,
         "pushedAt": "2023-10-05T15:30:30Z",
@@ -4558,6 +5654,14 @@
         "pushedAt": "2022-06-17T02:14:14Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 117,
+        "forks": 37,
+        "pushedAt": "2022-06-17T02:14:14Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "huilang-me/cf-server-monitor": [
@@ -4591,6 +5695,14 @@
         "pushedAt": "2026-09-28T07:56:34Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2308,
+        "forks": 2166,
+        "pushedAt": "2026-09-28T16:58:40Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "huqingyang/luoo.qy": [
@@ -4619,6 +5731,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 537,
+        "forks": 69,
+        "pushedAt": "2024-08-11T17:45:17Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 537,
         "forks": 69,
         "pushedAt": "2024-08-11T17:45:17Z",
@@ -4657,6 +5777,14 @@
         "pushedAt": "2024-08-11T17:47:32Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 118,
+        "forks": 13,
+        "pushedAt": "2024-08-11T17:47:32Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "hushenghao/androideastereggs": [
@@ -4690,6 +5818,14 @@
         "pushedAt": "2026-09-28T08:39:30Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1292,
+        "forks": 88,
+        "pushedAt": "2026-09-29T03:19:21Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "hyperlane-dev/hyperlane": [
@@ -4718,6 +5854,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 124,
+        "forks": 8,
+        "pushedAt": "2026-09-27T23:36:58Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 124,
         "forks": 8,
         "pushedAt": "2026-09-27T23:36:58Z",
@@ -4756,6 +5900,14 @@
         "pushedAt": "2026-08-29T14:49:55Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 528,
+        "forks": 23,
+        "pushedAt": "2026-08-29T14:49:55Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "iamcorey/kooky": [
@@ -4784,6 +5936,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 653,
+        "forks": 39,
+        "pushedAt": "2026-09-23T01:20:55Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 653,
         "forks": 39,
         "pushedAt": "2026-09-23T01:20:55Z",
@@ -4822,6 +5982,14 @@
         "pushedAt": "2026-09-27T08:13:15Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1073,
+        "forks": 47,
+        "pushedAt": "2026-09-27T08:13:15Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "imeiju/imeiju_mac": [
@@ -4850,6 +6018,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 219,
+        "forks": 37,
+        "pushedAt": "2022-05-16T18:29:59Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 219,
         "forks": 37,
         "pushedAt": "2022-05-16T18:29:59Z",
@@ -4888,6 +6064,14 @@
         "pushedAt": "2017-12-27T10:30:59Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 23,
+        "forks": 13,
+        "pushedAt": "2017-12-27T10:30:59Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "imlinhanchao/growth-diary": [
@@ -4916,6 +6100,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 5,
+        "forks": 2,
+        "pushedAt": "2026-04-27T05:38:02Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 5,
         "forks": 2,
         "pushedAt": "2026-04-27T05:38:02Z",
@@ -4954,6 +6146,14 @@
         "pushedAt": "2020-03-06T16:24:28Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 22,
+        "forks": 1,
+        "pushedAt": "2020-03-06T16:24:28Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "imlinhanchao/ngx_proxy_wiki": [
@@ -4982,6 +6182,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 51,
+        "forks": 16,
+        "pushedAt": "2023-02-01T14:58:39Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 51,
         "forks": 16,
         "pushedAt": "2023-02-01T14:58:39Z",
@@ -5020,6 +6228,14 @@
         "pushedAt": "2022-07-06T09:58:56Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 23,
+        "forks": 1,
+        "pushedAt": "2022-07-06T09:58:56Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "imlinhanchao/sticky_notes": [
@@ -5048,6 +6264,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 62,
+        "forks": 9,
+        "pushedAt": "2025-09-06T10:18:01Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 62,
         "forks": 9,
         "pushedAt": "2025-09-06T10:18:01Z",
@@ -5086,6 +6310,14 @@
         "pushedAt": "2025-11-04T11:22:21Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1180,
+        "forks": 117,
+        "pushedAt": "2025-11-04T11:22:21Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "inngest/inngest": [
@@ -5119,6 +6351,14 @@
         "pushedAt": "2026-09-28T13:36:57Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5897,
+        "forks": 368,
+        "pushedAt": "2026-09-29T04:18:56Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "inspurer/workattendancesystem": [
@@ -5147,6 +6387,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 665,
+        "forks": 217,
+        "pushedAt": "2025-08-20T11:21:36Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 665,
         "forks": 217,
         "pushedAt": "2025-08-20T11:21:36Z",
@@ -5185,6 +6433,14 @@
         "pushedAt": "2026-06-18T02:20:16Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1183,
+        "forks": 297,
+        "pushedAt": "2026-06-18T02:20:16Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "jackeyhate9/adeve": [
@@ -5213,6 +6469,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-07-24T14:34:55Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 0,
         "pushedAt": "2026-07-24T14:34:55Z",
@@ -5251,6 +6515,14 @@
         "pushedAt": "2026-07-24T14:35:56Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-24T14:35:56Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "jahnli/awesome-flutter-plugins": [
@@ -5279,6 +6551,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1867,
+        "forks": 171,
+        "pushedAt": "2026-07-24T06:50:58Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1867,
         "forks": 171,
         "pushedAt": "2026-07-24T06:50:58Z",
@@ -5317,6 +6597,14 @@
         "pushedAt": "2026-05-03T17:00:42Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 672,
+        "forks": 61,
+        "pushedAt": "2026-05-03T17:00:42Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "jark006/jarkviewer": [
@@ -5350,6 +6638,14 @@
         "pushedAt": "2026-06-30T18:46:05Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1288,
+        "forks": 50,
+        "pushedAt": "2026-06-30T18:46:05Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "jark006/weather_widget": [
@@ -5378,6 +6674,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 43,
+        "forks": 3,
+        "pushedAt": "2026-07-09T17:20:04Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 43,
         "forks": 3,
         "pushedAt": "2026-07-09T17:20:04Z",
@@ -5416,6 +6720,14 @@
         "pushedAt": "2026-08-06T09:28:47Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8,
+        "forks": 2,
+        "pushedAt": "2026-08-06T09:28:47Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "jaychouchannel/plotcraft": [
@@ -5444,6 +6756,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 14,
+        "forks": 1,
+        "pushedAt": "2026-08-17T00:33:37Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 14,
         "forks": 1,
         "pushedAt": "2026-08-17T00:33:37Z",
@@ -5482,6 +6802,14 @@
         "pushedAt": "2026-07-28T05:36:30Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-07-28T05:36:30Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "jaychouchannel/tourism_management_system": [
@@ -5510,6 +6838,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 32,
+        "forks": 2,
+        "pushedAt": "2026-08-18T01:24:00Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 32,
         "forks": 2,
         "pushedAt": "2026-08-18T01:24:00Z",
@@ -5548,6 +6884,14 @@
         "pushedAt": "2024-03-24T09:15:57Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 42,
+        "forks": 8,
+        "pushedAt": "2024-03-24T09:15:57Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "jezemy/videosubscanplayer": [
@@ -5576,6 +6920,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 27,
+        "forks": 6,
+        "pushedAt": "2021-02-20T12:24:38Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 27,
         "forks": 6,
         "pushedAt": "2021-02-20T12:24:38Z",
@@ -5614,6 +6966,14 @@
         "pushedAt": "2025-08-29T01:53:41Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8967,
+        "forks": 986,
+        "pushedAt": "2025-08-29T01:53:41Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "jianchang512/pyvideotrans": [
@@ -5647,6 +7007,14 @@
         "pushedAt": "2026-09-27T08:39:03Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 19170,
+        "forks": 2371,
+        "pushedAt": "2026-09-29T00:44:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "jianchang512/vocal-separate": [
@@ -5675,6 +7043,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1991,
+        "forks": 224,
+        "pushedAt": "2024-11-26T06:47:03Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1991,
         "forks": 224,
         "pushedAt": "2024-11-26T06:47:03Z",
@@ -5713,6 +7089,14 @@
         "pushedAt": "2023-01-05T10:41:35Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5,
+        "forks": 1,
+        "pushedAt": "2023-01-05T10:41:35Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "jiangbolee/weatherwx": [
@@ -5741,6 +7125,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 77,
+        "forks": 21,
+        "pushedAt": "2018-07-22T12:37:27Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 77,
         "forks": 21,
         "pushedAt": "2018-07-22T12:37:27Z",
@@ -5779,6 +7171,14 @@
         "pushedAt": "2026-04-19T11:18:49Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3751,
+        "forks": 531,
+        "pushedAt": "2026-04-19T11:18:49Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "jingkecn/interactive-math-pad-android": [
@@ -5807,6 +7207,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 18,
+        "forks": 3,
+        "pushedAt": "2020-12-19T15:12:49Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 18,
         "forks": 3,
         "pushedAt": "2020-12-19T15:12:49Z",
@@ -5845,6 +7253,14 @@
         "pushedAt": "2020-07-08T01:58:26Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 15,
+        "forks": 0,
+        "pushedAt": "2020-07-08T01:58:26Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "jingmatrix/chromext": [
@@ -5873,6 +7289,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1142,
+        "forks": 95,
+        "pushedAt": "2026-08-20T09:19:13Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1142,
         "forks": 95,
         "pushedAt": "2026-08-20T09:19:13Z",
@@ -5911,6 +7335,14 @@
         "pushedAt": "2026-07-09T16:42:42Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8,
+        "forks": 0,
+        "pushedAt": "2026-07-09T16:42:42Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "jonghakseo/chrome-extension-boilerplate-react-vite": [
@@ -5944,6 +7376,14 @@
         "pushedAt": "2025-10-27T06:42:26Z",
         "archived": true,
         "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4906,
+        "forks": 664,
+        "pushedAt": "2025-10-27T06:42:26Z",
+        "archived": true,
+        "activity": "archived"
       }
     ],
     "jray0108/shuying": [
@@ -5972,6 +7412,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 10,
+        "forks": 1,
+        "pushedAt": "2022-01-09T15:58:09Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 10,
         "forks": 1,
         "pushedAt": "2022-01-09T15:58:09Z",
@@ -6010,6 +7458,14 @@
         "pushedAt": "2022-12-14T20:28:40Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 9,
+        "forks": 2,
+        "pushedAt": "2022-12-14T20:28:40Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "justlovemaki/aiclient-2-api": [
@@ -6040,6 +7496,14 @@
         "date": "2026-09-28",
         "stars": 8824,
         "forks": 1389,
+        "pushedAt": "2026-09-24T09:18:41Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8835,
+        "forks": 1391,
         "pushedAt": "2026-09-24T09:18:41Z",
         "archived": false,
         "activity": "active-30"
@@ -6076,6 +7540,14 @@
         "pushedAt": "2026-08-21T12:36:46Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3348,
+        "forks": 499,
+        "pushedAt": "2026-08-21T12:36:46Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "kanglin/rabbitim": [
@@ -6104,6 +7576,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 551,
+        "forks": 259,
+        "pushedAt": "2026-07-17T04:03:14Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 551,
         "forks": 259,
         "pushedAt": "2026-07-17T04:03:14Z",
@@ -6142,6 +7622,14 @@
         "pushedAt": "2026-09-24T08:52:37Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 340,
+        "forks": 83,
+        "pushedAt": "2026-09-24T08:52:37Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kasuganosoras/pigeon": [
@@ -6170,6 +7658,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 441,
+        "forks": 74,
+        "pushedAt": "2026-03-12T18:18:04Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 441,
         "forks": 74,
         "pushedAt": "2026-03-12T18:18:04Z",
@@ -6208,6 +7704,14 @@
         "pushedAt": "2026-09-01T06:30:49Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 302,
+        "forks": 15,
+        "pushedAt": "2026-09-01T06:30:49Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kevingong2013/apkgo": [
@@ -6241,6 +7745,14 @@
         "pushedAt": "2026-09-24T06:25:12Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 169,
+        "forks": 28,
+        "pushedAt": "2026-09-29T06:13:44Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kezhenxu94/house-renting": [
@@ -6269,6 +7781,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 788,
+        "forks": 141,
+        "pushedAt": "2022-01-13T00:46:14Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 788,
         "forks": 141,
         "pushedAt": "2022-01-13T00:46:14Z",
@@ -6307,6 +7827,14 @@
         "pushedAt": "2026-05-27T01:20:06Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 42,
+        "forks": 3,
+        "pushedAt": "2026-05-27T01:20:06Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "kid-joker/proxy-web-storage": [
@@ -6335,6 +7863,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 386,
+        "forks": 13,
+        "pushedAt": "2026-06-23T14:46:56Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 386,
         "forks": 13,
         "pushedAt": "2026-06-23T14:46:56Z",
@@ -6373,6 +7909,14 @@
         "pushedAt": "2026-09-20T04:18:24Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 188,
+        "forks": 18,
+        "pushedAt": "2026-09-20T04:18:24Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kry4r/nuka-physics": [
@@ -6406,6 +7950,14 @@
         "pushedAt": "2026-09-28T08:53:44Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-09-29T03:18:11Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kuingsmile/pichoro": [
@@ -6434,6 +7986,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1020,
+        "forks": 58,
+        "pushedAt": "2026-01-05T14:53:49Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1020,
         "forks": 58,
         "pushedAt": "2026-01-05T14:53:49Z",
@@ -6472,6 +8032,14 @@
         "pushedAt": "2026-09-28T05:45:31Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3772,
+        "forks": 159,
+        "pushedAt": "2026-09-29T05:42:38Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "kwf2030/hiprice-chatbot": [
@@ -6500,6 +8068,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 88,
+        "forks": 10,
+        "pushedAt": "2018-12-19T02:48:36Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 88,
         "forks": 10,
         "pushedAt": "2018-12-19T02:48:36Z",
@@ -6538,6 +8114,14 @@
         "pushedAt": "2026-09-23T19:55:52Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 33,
+        "forks": 3,
+        "pushedAt": "2026-09-23T19:55:52Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "laosanyuan/daolang": [
@@ -6566,6 +8150,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 16,
+        "forks": 3,
+        "pushedAt": "2026-04-17T09:53:39Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 16,
         "forks": 3,
         "pushedAt": "2026-04-17T09:53:39Z",
@@ -6604,6 +8196,14 @@
         "pushedAt": "2024-11-25T04:42:44Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 38,
+        "forks": 7,
+        "pushedAt": "2024-11-25T04:42:44Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "laosanyuan/huohuan": [
@@ -6632,6 +8232,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 300,
+        "forks": 45,
+        "pushedAt": "2023-10-04T05:36:11Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 300,
         "forks": 45,
         "pushedAt": "2023-10-04T05:36:11Z",
@@ -6670,6 +8278,14 @@
         "pushedAt": "2025-02-07T08:38:43Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2025-02-07T08:38:43Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "lencx/chatgpt": [
@@ -6703,6 +8319,14 @@
         "pushedAt": "2024-08-29T17:58:11Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 54576,
+        "forks": 6158,
+        "pushedAt": "2024-08-29T17:58:11Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "leodenglovescode/pm2-webmanager": [
@@ -6731,6 +8355,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 1,
+        "pushedAt": "2026-02-22T12:58:39Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 1,
         "pushedAt": "2026-02-22T12:58:39Z",
@@ -6769,6 +8401,14 @@
         "pushedAt": "2026-09-28T02:02:19Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 46532,
+        "forks": 2934,
+        "pushedAt": "2026-09-28T02:02:19Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "li150/mapping_scanning": [
@@ -6797,6 +8437,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2024-08-13T03:50:26Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2024-08-13T03:50:26Z",
@@ -6835,6 +8483,14 @@
         "pushedAt": "2026-03-14T04:16:24Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8,
+        "forks": 2,
+        "pushedAt": "2026-03-14T04:16:24Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "lian-yang/trans": [
@@ -6863,6 +8519,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-04-01T13:35:37Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 0,
         "pushedAt": "2026-04-01T13:35:37Z",
@@ -6901,6 +8565,14 @@
         "pushedAt": "2025-06-20T02:37:07Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 992,
+        "forks": 243,
+        "pushedAt": "2025-06-20T02:37:07Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "lihaoyun6/quickrecorder": [
@@ -6929,6 +8601,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8677,
+        "forks": 521,
+        "pushedAt": "2025-06-11T07:47:27Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8677,
         "forks": 521,
         "pushedAt": "2025-06-11T07:47:27Z",
@@ -6967,6 +8647,14 @@
         "pushedAt": "2026-09-28T03:29:50Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2067,
+        "forks": 159,
+        "pushedAt": "2026-09-28T03:29:50Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "liudf0716/apfree_wifidog": [
@@ -6995,6 +8683,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 10,
+        "forks": 7,
+        "pushedAt": "2023-01-26T02:38:00Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 10,
         "forks": 7,
         "pushedAt": "2023-01-26T02:38:00Z",
@@ -7033,6 +8729,14 @@
         "pushedAt": "2026-09-08T11:37:47Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 834,
+        "forks": 123,
+        "pushedAt": "2026-09-08T11:37:47Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "liujingxing/rxhttp": [
@@ -7061,6 +8765,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3816,
+        "forks": 461,
+        "pushedAt": "2026-09-23T09:03:13Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3816,
         "forks": 461,
         "pushedAt": "2026-09-23T09:03:13Z",
@@ -7099,6 +8811,14 @@
         "pushedAt": "2022-08-13T14:39:17Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 353,
+        "forks": 38,
+        "pushedAt": "2022-08-13T14:39:17Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "liyupi/ceshiya": [
@@ -7127,6 +8847,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 418,
+        "forks": 59,
+        "pushedAt": "2023-08-24T11:23:13Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 418,
         "forks": 59,
         "pushedAt": "2023-08-24T11:23:13Z",
@@ -7165,6 +8893,14 @@
         "pushedAt": "2023-05-21T12:03:57Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1500,
+        "forks": 554,
+        "pushedAt": "2023-05-21T12:03:57Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "liyupi/sql-generator": [
@@ -7193,6 +8929,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3417,
+        "forks": 686,
+        "pushedAt": "2024-01-17T04:01:34Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3417,
         "forks": 686,
         "pushedAt": "2024-01-17T04:01:34Z",
@@ -7231,6 +8975,14 @@
         "pushedAt": "2025-07-01T16:08:50Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4418,
+        "forks": 432,
+        "pushedAt": "2025-07-01T16:08:50Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "liyupi/yu-auto-reply": [
@@ -7259,6 +9011,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 892,
+        "forks": 361,
+        "pushedAt": "2023-03-27T02:34:09Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 892,
         "forks": 361,
         "pushedAt": "2023-03-27T02:34:09Z",
@@ -7297,6 +9057,14 @@
         "pushedAt": "2024-03-23T15:05:47Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2123,
+        "forks": 713,
+        "pushedAt": "2024-03-23T15:05:47Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "loxi-opensource/luna-swapping": [
@@ -7325,6 +9093,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 364,
+        "forks": 74,
+        "pushedAt": "2025-01-01T19:00:00Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 364,
         "forks": 74,
         "pushedAt": "2025-01-01T19:00:00Z",
@@ -7363,6 +9139,14 @@
         "pushedAt": "2026-07-22T03:07:42Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 52,
+        "forks": 16,
+        "pushedAt": "2026-07-22T03:07:42Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "luoxuhai/nightvision": [
@@ -7391,6 +9175,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 317,
+        "forks": 35,
+        "pushedAt": "2023-08-13T00:34:29Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 317,
         "forks": 35,
         "pushedAt": "2023-08-13T00:34:29Z",
@@ -7429,6 +9221,14 @@
         "pushedAt": "2026-03-31T09:59:49Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 1,
+        "pushedAt": "2026-03-31T09:59:49Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "lvdunn/wechatassistant": [
@@ -7457,6 +9257,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 47,
+        "forks": 12,
+        "pushedAt": "2019-11-21T06:49:59Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 47,
         "forks": 12,
         "pushedAt": "2019-11-21T06:49:59Z",
@@ -7495,6 +9303,14 @@
         "pushedAt": "2018-07-19T11:20:36Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 158,
+        "forks": 24,
+        "pushedAt": "2018-07-19T11:20:36Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "magiclu550/edclass4j": [
@@ -7523,6 +9339,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 23,
+        "forks": 5,
+        "pushedAt": "2022-12-14T20:41:35Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 23,
         "forks": 5,
         "pushedAt": "2022-12-14T20:41:35Z",
@@ -7561,6 +9385,14 @@
         "pushedAt": "2019-09-12T15:15:02Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2019-09-12T15:15:02Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "magiclu550/wenyan-lang_jvm": [
@@ -7589,6 +9421,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 34,
+        "forks": 4,
+        "pushedAt": "2024-10-17T16:24:01Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 34,
         "forks": 4,
         "pushedAt": "2024-10-17T16:24:01Z",
@@ -7627,6 +9467,14 @@
         "pushedAt": "2026-06-30T02:47:06Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 1,
+        "pushedAt": "2026-06-30T02:47:06Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "marchbeta2087/binary_collatz": [
@@ -7655,6 +9503,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-07-15T10:48:58Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 0,
         "pushedAt": "2026-07-15T10:48:58Z",
@@ -7693,6 +9549,14 @@
         "pushedAt": "2026-09-22T23:15:31Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 39,
+        "forks": 10,
+        "pushedAt": "2026-09-22T23:15:31Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "marseventh/cloudflare-imgbed": [
@@ -7726,6 +9590,14 @@
         "pushedAt": "2026-09-28T02:02:38Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6578,
+        "forks": 8402,
+        "pushedAt": "2026-09-28T02:02:38Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "marseventh/sanyue-imghub": [
@@ -7754,6 +9626,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 217,
+        "forks": 138,
+        "pushedAt": "2026-09-28T02:02:46Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 217,
         "forks": 138,
         "pushedAt": "2026-09-28T02:02:46Z",
@@ -7792,6 +9672,14 @@
         "pushedAt": "2026-09-28T14:00:46Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 146,
+        "forks": 15,
+        "pushedAt": "2026-09-29T06:04:07Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mcthesw/game-save-manager": [
@@ -7825,6 +9713,14 @@
         "pushedAt": "2026-09-28T13:17:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1141,
+        "forks": 42,
+        "pushedAt": "2026-09-29T00:25:59Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "meekdai/gmeek": [
@@ -7853,6 +9749,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2374,
+        "forks": 377,
+        "pushedAt": "2026-02-05T05:27:15Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2374,
         "forks": 377,
         "pushedAt": "2026-02-05T05:27:15Z",
@@ -7891,6 +9795,14 @@
         "pushedAt": "2026-09-14T15:25:13Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 133,
+        "forks": 7,
+        "pushedAt": "2026-09-14T15:25:13Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mengxianliang/xluikit": [
@@ -7919,6 +9831,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1359,
+        "forks": 307,
+        "pushedAt": "2024-01-16T03:28:21Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1359,
         "forks": 307,
         "pushedAt": "2024-01-16T03:28:21Z",
@@ -7957,6 +9877,14 @@
         "pushedAt": "2026-09-19T07:43:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4425,
+        "forks": 319,
+        "pushedAt": "2026-09-29T03:48:10Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "milipolo/arsolarplayswift": [
@@ -7985,6 +9913,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 77,
+        "forks": 19,
+        "pushedAt": "2018-03-25T02:46:53Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 77,
         "forks": 19,
         "pushedAt": "2018-03-25T02:46:53Z",
@@ -8023,6 +9959,14 @@
         "pushedAt": "2026-09-21T09:55:44Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 41,
+        "forks": 13,
+        "pushedAt": "2026-09-21T09:55:44Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mky508/querygpt": [
@@ -8051,6 +9995,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 39,
+        "forks": 0,
+        "pushedAt": "2026-07-30T03:41:48Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 39,
         "forks": 0,
         "pushedAt": "2026-07-30T03:41:48Z",
@@ -8089,6 +10041,14 @@
         "pushedAt": "2023-03-12T12:35:40Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6,
+        "forks": 0,
+        "pushedAt": "2023-03-12T12:35:40Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "moeru-ai/airi": [
@@ -8122,6 +10082,14 @@
         "pushedAt": "2026-09-28T14:22:18Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 49765,
+        "forks": 4958,
+        "pushedAt": "2026-09-29T05:49:40Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mornhussakuyo-hub/ezc": [
@@ -8150,6 +10118,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 1,
+        "pushedAt": "2026-07-17T11:04:27Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 1,
         "pushedAt": "2026-07-17T11:04:27Z",
@@ -8188,6 +10164,14 @@
         "pushedAt": "2026-09-25T15:37:17Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14,
+        "forks": 3,
+        "pushedAt": "2026-09-25T15:37:17Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mrxujiang/h5-dooring": [
@@ -8221,6 +10205,14 @@
         "pushedAt": "2026-07-20T15:40:49Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 10000,
+        "forks": 1824,
+        "pushedAt": "2026-07-20T15:40:49Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "msgbyte/tailchat": [
@@ -8249,6 +10241,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3633,
+        "forks": 396,
+        "pushedAt": "2026-09-27T13:37:25Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3633,
         "forks": 396,
         "pushedAt": "2026-09-27T13:37:25Z",
@@ -8287,6 +10287,14 @@
         "pushedAt": "2026-03-24T13:37:03Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14,
+        "forks": 5,
+        "pushedAt": "2026-03-24T13:37:03Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "mzlogin/guanggoo-android": [
@@ -8315,6 +10323,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 96,
+        "forks": 22,
+        "pushedAt": "2022-02-12T09:17:08Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 96,
         "forks": 22,
         "pushedAt": "2022-02-12T09:17:08Z",
@@ -8353,6 +10369,14 @@
         "pushedAt": "2026-09-27T09:13:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 10082,
+        "forks": 1845,
+        "pushedAt": "2026-09-27T09:13:32Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "netdata/netdata": [
@@ -8386,6 +10410,14 @@
         "pushedAt": "2026-09-28T10:41:29Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 80713,
+        "forks": 6640,
+        "pushedAt": "2026-09-29T02:24:14Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "nextauthjs/next-auth": [
@@ -8414,6 +10446,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 28374,
+        "forks": 4039,
+        "pushedAt": "2026-07-22T19:42:19Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 28374,
         "forks": 4039,
         "pushedAt": "2026-07-22T19:42:19Z",
@@ -8452,6 +10492,14 @@
         "pushedAt": "2026-09-28T06:57:17Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3882,
+        "forks": 293,
+        "pushedAt": "2026-09-28T22:54:44Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "niyongsheng/moler": [
@@ -8480,6 +10528,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 12,
+        "forks": 1,
+        "pushedAt": "2026-07-24T04:08:18Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 12,
         "forks": 1,
         "pushedAt": "2026-07-24T04:08:18Z",
@@ -8518,6 +10574,14 @@
         "pushedAt": "2026-07-29T08:09:45Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 52,
+        "forks": 7,
+        "pushedAt": "2026-07-29T08:09:45Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "nodemailer/nodemailer": [
@@ -8551,6 +10615,14 @@
         "pushedAt": "2026-09-28T09:48:40Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 17682,
+        "forks": 1433,
+        "pushedAt": "2026-09-28T09:48:40Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "nojsja/shadowsocks-electron": [
@@ -8579,6 +10651,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 350,
+        "forks": 63,
+        "pushedAt": "2023-06-13T13:57:35Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 350,
         "forks": 63,
         "pushedAt": "2023-06-13T13:57:35Z",
@@ -8617,6 +10697,14 @@
         "pushedAt": "2026-09-25T07:19:16Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3877,
+        "forks": 496,
+        "pushedAt": "2026-09-25T07:19:16Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "nowork-studio/toprank": [
@@ -8650,6 +10738,14 @@
         "pushedAt": "2026-09-25T07:19:16Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3877,
+        "forks": 496,
+        "pushedAt": "2026-09-25T07:19:16Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "noyark-system/noyark_oaml_java": [
@@ -8678,6 +10774,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 1,
+        "pushedAt": "2019-05-02T10:35:12Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 1,
         "pushedAt": "2019-05-02T10:35:12Z",
@@ -8716,6 +10820,14 @@
         "pushedAt": "2022-02-12T07:28:10Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 394,
+        "forks": 76,
+        "pushedAt": "2022-02-12T07:28:10Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "opendatalab/labelllm": [
@@ -8749,6 +10861,14 @@
         "pushedAt": "2026-07-02T04:54:17Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1283,
+        "forks": 130,
+        "pushedAt": "2026-07-02T04:54:17Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "opendatalab/labelu": [
@@ -8777,6 +10897,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1680,
+        "forks": 184,
+        "pushedAt": "2026-07-28T12:11:08Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1680,
         "forks": 184,
         "pushedAt": "2026-07-28T12:11:08Z",
@@ -8815,6 +10943,14 @@
         "pushedAt": "2026-06-18T17:22:25Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1587,
+        "forks": 142,
+        "pushedAt": "2026-06-18T17:22:25Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "opsre/liteops": [
@@ -8843,6 +10979,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 511,
+        "forks": 46,
+        "pushedAt": "2026-06-26T13:32:53Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 511,
         "forks": 46,
         "pushedAt": "2026-06-26T13:32:53Z",
@@ -8881,6 +11025,14 @@
         "pushedAt": "2026-09-19T13:32:18Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14512,
+        "forks": 1439,
+        "pushedAt": "2026-09-19T13:32:18Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "panjf2000/gnet": [
@@ -8910,6 +11062,14 @@
       {
         "date": "2026-09-28",
         "stars": 11252,
+        "forks": 1120,
+        "pushedAt": "2026-07-09T13:43:46Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 11253,
         "forks": 1120,
         "pushedAt": "2026-07-09T13:43:46Z",
         "archived": false,
@@ -8947,6 +11107,14 @@
         "pushedAt": "2026-09-28T14:31:10Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 60487,
+        "forks": 4153,
+        "pushedAt": "2026-09-28T20:50:45Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "phishdestroy/destroylist": [
@@ -8980,6 +11148,14 @@
         "pushedAt": "2026-09-28T14:30:49Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1854,
+        "forks": 488,
+        "pushedAt": "2026-09-29T06:11:50Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "pilotdeckagentlabs/pilotdeck": [
@@ -9008,6 +11184,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-25T12:44:35Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-07-25T12:44:35Z",
@@ -9046,6 +11230,14 @@
         "pushedAt": "2026-09-13T06:04:43Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 50,
+        "forks": 4,
+        "pushedAt": "2026-09-28T23:46:05Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "pjq/rpi": [
@@ -9074,6 +11266,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 57,
+        "forks": 8,
+        "pushedAt": "2024-08-26T15:58:34Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 57,
         "forks": 8,
         "pushedAt": "2024-08-26T15:58:34Z",
@@ -9112,6 +11312,14 @@
         "pushedAt": "2024-07-16T14:03:29Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1250,
+        "forks": 82,
+        "pushedAt": "2024-07-16T14:03:29Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "popcornboom/ezholodotnet": [
@@ -9140,6 +11348,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 77,
+        "forks": 2,
+        "pushedAt": "2026-06-06T12:43:06Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 77,
         "forks": 2,
         "pushedAt": "2026-06-06T12:43:06Z",
@@ -9178,6 +11394,14 @@
         "pushedAt": "2026-09-20T02:55:08Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6762,
+        "forks": 920,
+        "pushedAt": "2026-09-29T04:48:19Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "qc2168/mib": [
@@ -9206,6 +11430,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 226,
+        "forks": 10,
+        "pushedAt": "2024-10-22T09:58:45Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 226,
         "forks": 10,
         "pushedAt": "2024-10-22T09:58:45Z",
@@ -9244,6 +11476,14 @@
         "pushedAt": "2020-04-08T02:19:27Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 239,
+        "forks": 26,
+        "pushedAt": "2020-04-08T02:19:27Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "qeesung/image2ascii": [
@@ -9272,6 +11512,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 979,
+        "forks": 87,
+        "pushedAt": "2022-08-29T04:21:10Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 979,
         "forks": 87,
         "pushedAt": "2022-08-29T04:21:10Z",
@@ -9310,6 +11558,14 @@
         "pushedAt": "2026-07-23T01:59:11Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 64,
+        "forks": 4,
+        "pushedAt": "2026-07-23T01:59:11Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "qiweiii/github-custom-notifier": [
@@ -9338,6 +11594,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 20,
+        "forks": 1,
+        "pushedAt": "2026-07-20T08:27:41Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 20,
         "forks": 1,
         "pushedAt": "2026-07-20T08:27:41Z",
@@ -9376,6 +11640,14 @@
         "pushedAt": "2026-09-18T04:59:48Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 11248,
+        "forks": 3477,
+        "pushedAt": "2026-09-18T04:59:48Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "qwqcode/subrenamer": [
@@ -9404,6 +11676,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1293,
+        "forks": 40,
+        "pushedAt": "2025-03-01T12:36:35Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1293,
         "forks": 40,
         "pushedAt": "2025-03-01T12:36:35Z",
@@ -9442,6 +11722,14 @@
         "pushedAt": "2026-09-28T14:32:55Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3860,
+        "forks": 424,
+        "pushedAt": "2026-09-29T06:28:22Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "redamancy231-create/ai-collaboration-framework": [
@@ -9470,6 +11758,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 7,
+        "forks": 3,
+        "pushedAt": "2026-08-14T13:31:06Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 7,
         "forks": 3,
         "pushedAt": "2026-08-14T13:31:06Z",
@@ -9508,6 +11804,14 @@
         "pushedAt": "2026-08-14T13:31:02Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-08-14T13:31:02Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "redamancy231-create/docx-pipeline": [
@@ -9536,6 +11840,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8,
+        "forks": 0,
+        "pushedAt": "2026-07-24T16:49:32Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8,
         "forks": 0,
         "pushedAt": "2026-07-24T16:49:32Z",
@@ -9574,6 +11886,14 @@
         "pushedAt": "2026-08-15T15:11:41Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4,
+        "forks": 1,
+        "pushedAt": "2026-08-15T15:11:41Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "redamancy231-create/independent-review-toolkit": [
@@ -9602,6 +11922,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-24T16:45:20Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-07-24T16:45:20Z",
@@ -9640,6 +11968,14 @@
         "pushedAt": "2026-09-28T14:29:45Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 17974,
+        "forks": 1615,
+        "pushedAt": "2026-09-28T20:17:08Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ruanrongman/intelliconnect": [
@@ -9671,6 +12007,14 @@
         "stars": 147,
         "forks": 36,
         "pushedAt": "2026-09-22T03:05:35Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 147,
+        "forks": 36,
+        "pushedAt": "2026-09-29T01:45:38Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -9706,6 +12050,14 @@
         "pushedAt": "2026-09-24T09:42:16Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 22,
+        "forks": 4,
+        "pushedAt": "2026-09-24T09:42:16Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "sallyn0225/elevenlabs-stt": [
@@ -9734,6 +12086,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 3,
+        "pushedAt": "2026-07-29T02:40:07Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 3,
         "pushedAt": "2026-07-29T02:40:07Z",
@@ -9772,6 +12132,14 @@
         "pushedAt": "2026-09-26T13:21:53Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 176,
+        "forks": 9,
+        "pushedAt": "2026-09-26T13:21:53Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "sanjinhub/hexo-theme-geek": [
@@ -9800,6 +12168,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 397,
+        "forks": 66,
+        "pushedAt": "2021-06-05T03:43:35Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 397,
         "forks": 66,
         "pushedAt": "2021-06-05T03:43:35Z",
@@ -9838,6 +12214,14 @@
         "pushedAt": "2026-09-03T14:58:04Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 906,
+        "forks": 43,
+        "pushedAt": "2026-09-03T14:58:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "shadcn-ui/taxonomy": [
@@ -9871,6 +12255,14 @@
         "pushedAt": "2026-04-20T12:01:38Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 19292,
+        "forks": 2744,
+        "pushedAt": "2026-04-20T12:01:38Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "shanleiguang/vbooks": [
@@ -9899,6 +12291,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 61,
+        "forks": 9,
+        "pushedAt": "2025-08-21T14:50:00Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 61,
         "forks": 9,
         "pushedAt": "2025-08-21T14:50:00Z",
@@ -9937,6 +12337,14 @@
         "pushedAt": "2026-05-26T12:50:17Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 57,
+        "forks": 43,
+        "pushedAt": "2026-05-26T12:50:17Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "sheepzh/make-zero": [
@@ -9965,6 +12373,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 22,
+        "forks": 4,
+        "pushedAt": "2022-07-23T06:15:45Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 22,
         "forks": 4,
         "pushedAt": "2022-07-23T06:15:45Z",
@@ -10003,6 +12419,14 @@
         "pushedAt": "2026-09-27T00:01:35Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 998,
+        "forks": 82,
+        "pushedAt": "2026-09-27T00:01:35Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "shensky711/pretty-zhihu": [
@@ -10031,6 +12455,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 107,
+        "forks": 20,
+        "pushedAt": "2018-05-03T02:55:59Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 107,
         "forks": 20,
         "pushedAt": "2018-05-03T02:55:59Z",
@@ -10069,6 +12501,14 @@
         "pushedAt": "2018-05-03T03:04:29Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 13,
+        "forks": 1,
+        "pushedAt": "2018-05-03T03:04:29Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "shensven/morphling": [
@@ -10097,6 +12537,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 10,
+        "forks": 1,
+        "pushedAt": "2023-04-28T19:47:44Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 10,
         "forks": 1,
         "pushedAt": "2023-04-28T19:47:44Z",
@@ -10135,6 +12583,14 @@
         "pushedAt": "2024-12-31T06:26:00Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 344,
+        "forks": 21,
+        "pushedAt": "2024-12-31T06:26:00Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "shiyucheng2018/polily": [
@@ -10163,6 +12619,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 15,
+        "forks": 1,
+        "pushedAt": "2026-06-22T18:56:53Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 15,
         "forks": 1,
         "pushedAt": "2026-06-22T18:56:53Z",
@@ -10201,6 +12665,14 @@
         "pushedAt": "2026-09-20T14:50:41Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1327,
+        "forks": 215,
+        "pushedAt": "2026-09-20T14:50:41Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "shuyu-labs/bigbanana-ai-director": [
@@ -10234,6 +12706,14 @@
         "pushedAt": "2026-09-22T07:51:51Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2295,
+        "forks": 327,
+        "pushedAt": "2026-09-22T07:51:51Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "shuyu-labs/webcode": [
@@ -10262,6 +12742,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 286,
+        "forks": 41,
+        "pushedAt": "2026-06-20T15:24:38Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 286,
         "forks": 41,
         "pushedAt": "2026-06-20T15:24:38Z",
@@ -10300,6 +12788,14 @@
         "pushedAt": "2026-09-25T10:24:05Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-09-25T10:24:05Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "simon-he95/markstream-vue": [
@@ -10333,6 +12829,14 @@
         "pushedAt": "2026-09-22T07:43:23Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3022,
+        "forks": 185,
+        "pushedAt": "2026-09-22T07:43:23Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "simpleapples/fansky": [
@@ -10361,6 +12865,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 74,
+        "forks": 23,
+        "pushedAt": "2022-11-06T14:46:39Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 74,
         "forks": 23,
         "pushedAt": "2022-11-06T14:46:39Z",
@@ -10399,6 +12911,14 @@
         "pushedAt": "2018-03-17T14:33:46Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4,
+        "forks": 1,
+        "pushedAt": "2018-03-17T14:33:46Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "simpleapples/url2qrcode": [
@@ -10427,6 +12947,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 10,
+        "forks": 4,
+        "pushedAt": "2018-10-23T08:09:02Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 10,
         "forks": 4,
         "pushedAt": "2018-10-23T08:09:02Z",
@@ -10465,6 +12993,14 @@
         "pushedAt": "2026-09-28T11:18:26Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1313,
+        "forks": 176,
+        "pushedAt": "2026-09-29T06:15:46Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "snowleopard-io/cogitoagent": [
@@ -10493,6 +13029,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 33,
+        "forks": 1,
+        "pushedAt": "2026-09-13T06:07:55Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 33,
         "forks": 1,
         "pushedAt": "2026-09-13T06:07:55Z",
@@ -10531,6 +13075,14 @@
         "pushedAt": "2026-08-17T11:28:01Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 56,
+        "forks": 2,
+        "pushedAt": "2026-08-17T11:28:01Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "solobat/steward": [
@@ -10559,6 +13111,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 675,
+        "forks": 40,
+        "pushedAt": "2026-09-01T17:44:04Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 675,
         "forks": 40,
         "pushedAt": "2026-09-01T17:44:04Z",
@@ -10597,6 +13157,14 @@
         "pushedAt": "2020-06-24T08:30:45Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 127,
+        "forks": 12,
+        "pushedAt": "2020-06-24T08:30:45Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "someu/aigotools": [
@@ -10625,6 +13193,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 658,
+        "forks": 119,
+        "pushedAt": "2025-08-01T03:45:07Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 658,
         "forks": 119,
         "pushedAt": "2025-08-01T03:45:07Z",
@@ -10670,6 +13246,14 @@
         "pushedAt": "2026-09-28T07:38:38Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2287,
+        "forks": 48,
+        "pushedAt": "2026-09-29T01:17:55Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "spacetimee/ona-pix": [
@@ -10698,6 +13282,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 162,
+        "forks": 6,
+        "pushedAt": "2026-01-02T05:06:20Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 162,
         "forks": 6,
         "pushedAt": "2026-01-02T05:06:20Z",
@@ -10736,6 +13328,14 @@
         "pushedAt": "2026-05-26T11:18:11Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5159,
+        "forks": 604,
+        "pushedAt": "2026-05-26T11:18:11Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "spacetimee/sheas-cealer-droid": [
@@ -10764,6 +13364,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 523,
+        "forks": 43,
+        "pushedAt": "2025-07-01T03:15:10Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 523,
         "forks": 43,
         "pushedAt": "2025-07-01T03:15:10Z",
@@ -10802,6 +13410,14 @@
         "pushedAt": "2022-05-11T07:46:45Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 21,
+        "forks": 1,
+        "pushedAt": "2022-05-11T07:46:45Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "ssshooter/mind-elixir-core": [
@@ -10835,6 +13451,14 @@
         "pushedAt": "2026-09-16T01:11:22Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3170,
+        "forks": 418,
+        "pushedAt": "2026-09-16T01:11:22Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "stardust1900/ashes_note": [
@@ -10863,6 +13487,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 1,
+        "pushedAt": "2026-09-24T09:25:16Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 1,
         "pushedAt": "2026-09-24T09:25:16Z",
@@ -10901,6 +13533,14 @@
         "pushedAt": "2023-07-20T00:30:49Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 345,
+        "forks": 50,
+        "pushedAt": "2023-07-20T00:30:49Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "steve-xmh/stevescratchc": [
@@ -10929,6 +13569,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 15,
+        "forks": 3,
+        "pushedAt": "2019-07-14T00:17:38Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 15,
         "forks": 3,
         "pushedAt": "2019-07-14T00:17:38Z",
@@ -10967,6 +13615,14 @@
         "pushedAt": "2026-08-04T11:17:55Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-08-04T11:17:55Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "study8677/readme.skill": [
@@ -10995,6 +13651,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 172,
+        "forks": 10,
+        "pushedAt": "2026-06-10T03:13:42Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 172,
         "forks": 10,
         "pushedAt": "2026-06-10T03:13:42Z",
@@ -11033,6 +13697,14 @@
         "pushedAt": "2026-07-17T09:44:31Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 13,
+        "forks": 0,
+        "pushedAt": "2026-07-17T09:44:31Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "sunmh207/site-guard": [
@@ -11061,6 +13733,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-08-17T08:35:47Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 4,
         "forks": 0,
         "pushedAt": "2026-08-17T08:35:47Z",
@@ -11099,6 +13779,14 @@
         "pushedAt": "2024-07-05T10:29:50Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 53,
+        "forks": 4,
+        "pushedAt": "2024-07-05T10:29:50Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "sunrisepeak/dsvisual": [
@@ -11127,6 +13815,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 17,
+        "forks": 1,
+        "pushedAt": "2024-01-10T14:01:47Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 17,
         "forks": 1,
         "pushedAt": "2024-01-10T14:01:47Z",
@@ -11165,6 +13861,14 @@
         "pushedAt": "2024-03-25T10:42:26Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 84,
+        "forks": 4,
+        "pushedAt": "2024-03-25T10:42:26Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "sunxfancy/ssui": [
@@ -11193,6 +13897,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 35,
+        "forks": 5,
+        "pushedAt": "2026-09-19T23:53:08Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 35,
         "forks": 5,
         "pushedAt": "2026-09-19T23:53:08Z",
@@ -11231,6 +13943,14 @@
         "pushedAt": "2026-09-28T14:31:01Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 110873,
+        "forks": 15341,
+        "pushedAt": "2026-09-29T06:27:08Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "super-inspire/super-inspire-end": [
@@ -11264,6 +13984,14 @@
         "pushedAt": "2024-03-12T06:42:40Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4171,
+        "forks": 290,
+        "pushedAt": "2024-03-12T06:42:40Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "supermonster003/ant-forest": [
@@ -11292,6 +14020,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2850,
+        "forks": 565,
+        "pushedAt": "2023-01-21T14:47:20Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2850,
         "forks": 565,
         "pushedAt": "2023-01-21T14:47:20Z",
@@ -11330,6 +14066,14 @@
         "pushedAt": "2026-07-16T16:02:07Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-16T16:02:07Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "tangly1024/notionnext": [
@@ -11361,6 +14105,14 @@
         "stars": 11850,
         "forks": 14726,
         "pushedAt": "2026-09-28T09:03:39Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 11848,
+        "forks": 14728,
+        "pushedAt": "2026-09-29T06:05:06Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -11396,6 +14148,14 @@
         "pushedAt": "2025-12-02T14:31:12Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4629,
+        "forks": 342,
+        "pushedAt": "2025-12-02T14:31:12Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "tans/photo-mint": [
@@ -11424,6 +14184,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 29,
+        "forks": 1,
+        "pushedAt": "2024-02-25T13:31:42Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 29,
         "forks": 1,
         "pushedAt": "2024-02-25T13:31:42Z",
@@ -11462,6 +14230,14 @@
         "pushedAt": "2023-01-03T13:53:18Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 41,
+        "forks": 3,
+        "pushedAt": "2023-01-03T13:53:18Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "thanatosxingyu/terminal-bio": [
@@ -11490,6 +14266,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-20T08:04:45Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-07-20T08:04:45Z",
@@ -11528,6 +14312,14 @@
         "pushedAt": "2023-01-06T08:17:27Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 9,
+        "forks": 3,
+        "pushedAt": "2023-01-06T08:17:27Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "timi-liuliang/echo": [
@@ -11556,6 +14348,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 989,
+        "forks": 122,
+        "pushedAt": "2026-09-16T16:36:28Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 989,
         "forks": 122,
         "pushedAt": "2026-09-16T16:36:28Z",
@@ -11594,6 +14394,14 @@
         "pushedAt": "2026-09-28T02:13:12Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 13,
+        "forks": 0,
+        "pushedAt": "2026-09-29T01:03:37Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "timwood0x10/omniscope-rs": [
@@ -11622,6 +14430,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 6,
+        "forks": 0,
+        "pushedAt": "2026-07-17T09:55:12Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 6,
         "forks": 0,
         "pushedAt": "2026-07-17T09:55:12Z",
@@ -11660,6 +14476,14 @@
         "pushedAt": "2024-06-09T03:27:58Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14280,
+        "forks": 2440,
+        "pushedAt": "2024-06-09T03:27:58Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "trzsz/trzsz": [
@@ -11688,6 +14512,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1452,
+        "forks": 63,
+        "pushedAt": "2026-08-28T16:20:26Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1452,
         "forks": 63,
         "pushedAt": "2026-08-28T16:20:26Z",
@@ -11726,6 +14558,14 @@
         "pushedAt": "2026-02-03T09:12:38Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 33,
+        "forks": 6,
+        "pushedAt": "2026-02-03T09:12:38Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "tw93/miaoyan": [
@@ -11754,6 +14594,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8655,
+        "forks": 513,
+        "pushedAt": "2026-09-28T07:10:03Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8655,
         "forks": 513,
         "pushedAt": "2026-09-28T07:10:03Z",
@@ -11792,6 +14640,14 @@
         "pushedAt": "2026-09-25T02:21:20Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 61784,
+        "forks": 12724,
+        "pushedAt": "2026-09-25T02:21:20Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "typeorm/typeorm": [
@@ -11825,6 +14681,14 @@
         "pushedAt": "2026-09-21T08:49:54Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 36658,
+        "forks": 6675,
+        "pushedAt": "2026-09-21T08:49:54Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ufo5260987423/scheme-langserver": [
@@ -11853,6 +14717,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 294,
+        "forks": 20,
+        "pushedAt": "2026-09-25T14:25:05Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 294,
         "forks": 20,
         "pushedAt": "2026-09-25T14:25:05Z",
@@ -11891,6 +14763,14 @@
         "pushedAt": "2026-09-28T05:54:18Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 39072,
+        "forks": 8141,
+        "pushedAt": "2026-09-28T05:54:18Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "upscayl/upscayl": [
@@ -11924,6 +14804,14 @@
         "pushedAt": "2026-09-15T00:34:26Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 49989,
+        "forks": 2531,
+        "pushedAt": "2026-09-28T23:25:25Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "usual2970/certimate": [
@@ -11952,6 +14840,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 17,
+        "forks": 0,
+        "pushedAt": "2025-06-22T02:34:20Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 17,
         "forks": 0,
         "pushedAt": "2025-06-22T02:34:20Z",
@@ -11990,6 +14886,14 @@
         "pushedAt": "2026-08-31T03:24:40Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 46932,
+        "forks": 8804,
+        "pushedAt": "2026-08-31T03:24:40Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "varletjs/varlet": [
@@ -12019,6 +14923,14 @@
       {
         "date": "2026-09-28",
         "stars": 5332,
+        "forks": 619,
+        "pushedAt": "2026-09-21T08:30:26Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5333,
         "forks": 619,
         "pushedAt": "2026-09-21T08:30:26Z",
         "archived": false,
@@ -12056,6 +14968,14 @@
         "pushedAt": "2026-08-13T14:30:30Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 97,
+        "forks": 21,
+        "pushedAt": "2026-08-13T14:30:30Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ventupx/upx-cli": [
@@ -12084,6 +15004,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-01-29T03:32:40Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-01-29T03:32:40Z",
@@ -12122,6 +15050,14 @@
         "pushedAt": "2026-09-12T08:32:45Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3990,
+        "forks": 159,
+        "pushedAt": "2026-09-12T08:32:45Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "via007/bilibili-rag": [
@@ -12150,6 +15086,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1334,
+        "forks": 98,
+        "pushedAt": "2026-09-27T10:31:01Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1334,
         "forks": 98,
         "pushedAt": "2026-09-27T10:31:01Z",
@@ -12188,6 +15132,14 @@
         "pushedAt": "2026-08-28T07:52:50Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 141,
+        "forks": 16,
+        "pushedAt": "2026-08-28T07:52:50Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "vladelaina/catime": [
@@ -12221,6 +15173,14 @@
         "pushedAt": "2026-09-21T13:15:39Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4870,
+        "forks": 201,
+        "pushedAt": "2026-09-21T13:15:39Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "vorojar/md-preview": [
@@ -12249,6 +15209,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 271,
+        "forks": 32,
+        "pushedAt": "2026-09-19T09:00:46Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 271,
         "forks": 32,
         "pushedAt": "2026-09-19T09:00:46Z",
@@ -12287,6 +15255,14 @@
         "pushedAt": "2026-09-25T06:14:43Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 22573,
+        "forks": 2057,
+        "pushedAt": "2026-09-25T06:14:43Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "wanghongenpin/proxypin": [
@@ -12320,6 +15296,14 @@
         "pushedAt": "2026-09-28T11:50:15Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14023,
+        "forks": 1218,
+        "pushedAt": "2026-09-29T06:23:52Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "wanglian/workbase-server": [
@@ -12348,6 +15332,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 282,
+        "forks": 28,
+        "pushedAt": "2022-12-06T14:33:56Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 282,
         "forks": 28,
         "pushedAt": "2022-12-06T14:33:56Z",
@@ -12386,6 +15378,14 @@
         "pushedAt": "2026-09-22T11:19:05Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 16020,
+        "forks": 1931,
+        "pushedAt": "2026-09-22T11:19:05Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "watanabechika/earwormdiary": [
@@ -12414,6 +15414,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 10,
+        "forks": 0,
+        "pushedAt": "2026-07-22T06:00:07Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 10,
         "forks": 0,
         "pushedAt": "2026-07-22T06:00:07Z",
@@ -12452,6 +15460,14 @@
         "pushedAt": "2026-08-29T16:11:48Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 225,
+        "forks": 37,
+        "pushedAt": "2026-08-29T16:11:48Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "weijunext/smart-excel-ai": [
@@ -12480,6 +15496,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1657,
+        "forks": 252,
+        "pushedAt": "2025-07-05T15:22:08Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1657,
         "forks": 252,
         "pushedAt": "2025-07-05T15:22:08Z",
@@ -12535,6 +15559,14 @@
         "pushedAt": "2021-11-03T18:33:28Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 373,
+        "forks": 29,
+        "pushedAt": "2021-11-03T18:33:28Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "work7z/laftools": [
@@ -12563,6 +15595,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 367,
+        "forks": 20,
+        "pushedAt": "2025-02-03T07:06:58Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 367,
         "forks": 20,
         "pushedAt": "2025-02-03T07:06:58Z",
@@ -12601,6 +15641,14 @@
         "pushedAt": "2026-09-26T02:50:13Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 111,
+        "forks": 32,
+        "pushedAt": "2026-09-29T03:33:46Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "wtechtec/berth": [
@@ -12629,6 +15677,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2026-08-20T06:26:24Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 0,
         "pushedAt": "2026-08-20T06:26:24Z",
@@ -12667,6 +15723,14 @@
         "pushedAt": "2025-11-24T15:24:06Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 17,
+        "forks": 1,
+        "pushedAt": "2025-11-24T15:24:06Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "wujunwei928/edge-tts-go": [
@@ -12695,6 +15759,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 84,
+        "forks": 10,
+        "pushedAt": "2026-06-13T04:29:28Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 84,
         "forks": 10,
         "pushedAt": "2026-06-13T04:29:28Z",
@@ -12733,6 +15805,14 @@
         "pushedAt": "2026-08-21T01:23:32Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1052,
+        "forks": 279,
+        "pushedAt": "2026-08-21T01:23:32Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "wzj177/ecommerce-image-suite": [
@@ -12766,6 +15846,14 @@
         "pushedAt": "2026-08-27T06:33:46Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 429,
+        "forks": 91,
+        "pushedAt": "2026-08-27T06:33:46Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "wzj177/gbvr-iot": [
@@ -12794,6 +15882,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 33,
+        "forks": 15,
+        "pushedAt": "2026-07-20T09:12:34Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 33,
         "forks": 15,
         "pushedAt": "2026-07-20T09:12:34Z",
@@ -12832,6 +15928,14 @@
         "pushedAt": "2026-06-06T15:56:03Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 12,
+        "forks": 2,
+        "pushedAt": "2026-06-06T15:56:03Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "xianfeng92/love-ethereum": [
@@ -12860,6 +15964,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 529,
+        "forks": 106,
+        "pushedAt": "2020-07-23T13:39:39Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 529,
         "forks": 106,
         "pushedAt": "2020-07-23T13:39:39Z",
@@ -12898,6 +16010,14 @@
         "pushedAt": "2026-07-02T09:03:20Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2899,
+        "forks": 157,
+        "pushedAt": "2026-07-02T09:03:20Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "xiaopujun/light-chaser": [
@@ -12926,6 +16046,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 873,
+        "forks": 127,
+        "pushedAt": "2026-04-25T03:51:15Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 873,
         "forks": 127,
         "pushedAt": "2026-04-25T03:51:15Z",
@@ -12964,6 +16092,14 @@
         "pushedAt": "2025-12-26T16:10:06Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 189,
+        "forks": 41,
+        "pushedAt": "2025-12-26T16:10:06Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "xingxingc/stray_avatar": [
@@ -12992,6 +16128,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 158,
+        "forks": 19,
+        "pushedAt": "2026-04-03T02:35:10Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 158,
         "forks": 19,
         "pushedAt": "2026-04-03T02:35:10Z",
@@ -13030,6 +16174,14 @@
         "pushedAt": "2025-05-31T14:04:45Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 336,
+        "forks": 51,
+        "pushedAt": "2025-05-31T14:04:45Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "xnat9/tiny": [
@@ -13058,6 +16210,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 28,
+        "forks": 3,
+        "pushedAt": "2024-02-29T02:41:57Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 28,
         "forks": 3,
         "pushedAt": "2024-02-29T02:41:57Z",
@@ -13096,6 +16256,14 @@
         "pushedAt": "2021-03-20T06:04:21Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 987,
+        "forks": 195,
+        "pushedAt": "2021-03-20T06:04:21Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "xnx3/translate": [
@@ -13124,6 +16292,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3086,
+        "forks": 481,
+        "pushedAt": "2026-09-18T08:34:16Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3086,
         "forks": 481,
         "pushedAt": "2026-09-18T08:34:16Z",
@@ -13162,6 +16338,14 @@
         "pushedAt": "2026-09-02T07:26:35Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 350,
+        "forks": 109,
+        "pushedAt": "2026-09-02T07:26:35Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "xsong1205/nocturn": [
@@ -13190,6 +16374,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 6,
+        "forks": 1,
+        "pushedAt": "2026-09-18T11:21:58Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 6,
         "forks": 1,
         "pushedAt": "2026-09-18T11:21:58Z",
@@ -13228,6 +16420,14 @@
         "pushedAt": "2026-08-08T16:38:45Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 92,
+        "forks": 7,
+        "pushedAt": "2026-08-08T16:38:45Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "xtthaop/zxnote-web": [
@@ -13256,6 +16456,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 5,
+        "forks": 1,
+        "pushedAt": "2026-01-25T02:42:06Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 5,
         "forks": 1,
         "pushedAt": "2026-01-25T02:42:06Z",
@@ -13294,6 +16502,14 @@
         "pushedAt": "2024-11-23T13:13:13Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 35,
+        "forks": 9,
+        "pushedAt": "2024-11-23T13:13:13Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "xxdz-official/bilijiyin": [
@@ -13322,6 +16538,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2026-03-12T09:28:02Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 5,
         "forks": 0,
         "pushedAt": "2026-03-12T09:28:02Z",
@@ -13360,6 +16584,14 @@
         "pushedAt": "2025-10-24T10:50:44Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2025-10-24T10:50:44Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "xxdz-official/shangbackground": [
@@ -13388,6 +16620,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 15,
+        "forks": 4,
+        "pushedAt": "2026-07-29T15:05:09Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 15,
         "forks": 4,
         "pushedAt": "2026-07-29T15:05:09Z",
@@ -13426,6 +16666,14 @@
         "pushedAt": "2026-09-08T09:36:19Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 14,
+        "forks": 0,
+        "pushedAt": "2026-09-08T09:36:19Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "yeayee/trace": [
@@ -13454,6 +16702,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 9,
+        "forks": 0,
+        "pushedAt": "2024-06-17T07:23:20Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 9,
         "forks": 0,
         "pushedAt": "2024-06-17T07:23:20Z",
@@ -13492,6 +16748,14 @@
         "pushedAt": "2022-07-27T03:00:34Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 2,
+        "pushedAt": "2022-07-27T03:00:34Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "yils-lin/short-video-factory": [
@@ -13525,6 +16789,14 @@
         "pushedAt": "2026-09-28T08:10:33Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5501,
+        "forks": 773,
+        "pushedAt": "2026-09-29T02:37:33Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "youwen21/flybird-m3u8downloader": [
@@ -13553,6 +16825,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 7,
+        "forks": 0,
+        "pushedAt": "2024-08-20T02:55:14Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 7,
         "forks": 0,
         "pushedAt": "2024-08-20T02:55:14Z",
@@ -13591,6 +16871,14 @@
         "pushedAt": "2026-09-28T03:37:30Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 555,
+        "forks": 79,
+        "pushedAt": "2026-09-29T02:35:20Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "yu-core/swashbucklerdiary": [
@@ -13624,6 +16912,14 @@
         "pushedAt": "2026-09-06T16:31:15Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1610,
+        "forks": 151,
+        "pushedAt": "2026-09-06T16:31:15Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "yuhai0/shex": [
@@ -13652,6 +16948,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 22,
+        "forks": 0,
+        "pushedAt": "2026-04-30T06:01:14Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 22,
         "forks": 0,
         "pushedAt": "2026-04-30T06:01:14Z",
@@ -13690,6 +16994,14 @@
         "pushedAt": "2025-11-01T03:59:38Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 0,
+        "pushedAt": "2025-11-01T03:59:38Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "yv1ing/mollyblog": [
@@ -13718,6 +17030,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2025-11-01T03:56:47Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2025-11-01T03:56:47Z",
@@ -13756,6 +17076,14 @@
         "pushedAt": "2018-03-23T08:43:50Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 184,
+        "forks": 22,
+        "pushedAt": "2018-03-23T08:43:50Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "yzqzy/wechat-assistant": [
@@ -13784,6 +17112,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 743,
+        "forks": 82,
+        "pushedAt": "2026-01-20T22:52:59Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 743,
         "forks": 82,
         "pushedAt": "2026-01-20T22:52:59Z",
@@ -13822,6 +17158,14 @@
         "pushedAt": "2024-10-23T07:09:29Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 338,
+        "forks": 29,
+        "pushedAt": "2024-10-23T07:09:29Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "zengliangyi/chatcrystal": [
@@ -13850,6 +17194,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 58,
+        "forks": 5,
+        "pushedAt": "2026-09-28T01:27:18Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 58,
         "forks": 5,
         "pushedAt": "2026-09-28T01:27:18Z",
@@ -13888,6 +17240,14 @@
         "pushedAt": "2026-09-28T13:57:49Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 150,
+        "forks": 14,
+        "pushedAt": "2026-09-29T06:24:59Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zhangdi168/vitepresssimple": [
@@ -13916,6 +17276,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 232,
+        "forks": 15,
+        "pushedAt": "2025-06-23T10:38:02Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 232,
         "forks": 15,
         "pushedAt": "2025-06-23T10:38:02Z",
@@ -13954,6 +17322,14 @@
         "pushedAt": "2021-11-06T12:09:28Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2318,
+        "forks": 224,
+        "pushedAt": "2021-11-06T12:09:28Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "zhaoolee/chromeappheroes": [
@@ -13987,6 +17363,14 @@
         "pushedAt": "2026-05-11T03:54:12Z",
         "archived": false,
         "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 25833,
+        "forks": 2628,
+        "pushedAt": "2026-05-11T03:54:12Z",
+        "archived": false,
+        "activity": "active-year"
       }
     ],
     "zhaoxiaozhao07/dynamic-photo-video-display-wall": [
@@ -14015,6 +17399,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 2,
+        "pushedAt": "2025-02-10T01:51:53Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 2,
         "pushedAt": "2025-02-10T01:51:53Z",
@@ -14053,6 +17445,14 @@
         "pushedAt": "2025-02-28T02:17:35Z",
         "archived": false,
         "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 7,
+        "forks": 0,
+        "pushedAt": "2025-02-28T02:17:35Z",
+        "archived": false,
+        "activity": "inactive-year"
       }
     ],
     "zhennann/cabloy": [
@@ -14084,6 +17484,14 @@
         "stars": 975,
         "forks": 133,
         "pushedAt": "2026-09-28T09:53:42Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 976,
+        "forks": 133,
+        "pushedAt": "2026-09-29T02:36:31Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -14119,6 +17527,14 @@
         "pushedAt": "2026-09-23T02:25:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1468,
+        "forks": 288,
+        "pushedAt": "2026-09-23T02:25:32Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zhu327/ifwechat": [
@@ -14147,6 +17563,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 89,
+        "forks": 9,
+        "pushedAt": "2017-04-28T10:17:43Z",
+        "archived": true,
+        "activity": "archived"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 89,
         "forks": 9,
         "pushedAt": "2017-04-28T10:17:43Z",
@@ -14185,6 +17609,14 @@
         "pushedAt": "2026-08-30T09:35:34Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 649,
+        "forks": 36,
+        "pushedAt": "2026-08-30T09:35:34Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zinglix/shellow": [
@@ -14213,6 +17645,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 6,
+        "forks": 1,
+        "pushedAt": "2026-07-12T18:08:52Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 6,
         "forks": 1,
         "pushedAt": "2026-07-12T18:08:52Z",
@@ -14251,6 +17691,14 @@
         "pushedAt": "2026-08-05T15:36:59Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 15,
+        "forks": 1,
+        "pushedAt": "2026-08-05T15:36:59Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "zoumorn/tkreborn": [
@@ -14279,6 +17727,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 74,
+        "forks": 11,
+        "pushedAt": "2021-09-09T08:03:53Z",
+        "archived": false,
+        "activity": "inactive-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 74,
         "forks": 11,
         "pushedAt": "2021-09-09T08:03:53Z",
@@ -14317,6 +17773,14 @@
         "pushedAt": "2026-09-28T05:45:15Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 3,
+        "forks": 1,
+        "pushedAt": "2026-09-28T05:45:15Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zzliu93-debug/focusd": [
@@ -14350,6 +17814,14 @@
         "pushedAt": "2026-09-27T09:31:08Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 214,
+        "forks": 11,
+        "pushedAt": "2026-09-27T09:31:08Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "mebtte/cicada": [
@@ -14373,6 +17845,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1116,
+        "forks": 79,
+        "pushedAt": "2026-09-08T14:33:45Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1116,
         "forks": 79,
         "pushedAt": "2026-09-08T14:33:45Z",
@@ -14406,6 +17886,14 @@
         "pushedAt": "2026-09-28T14:30:48Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2026-09-29T06:29:04Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "hzy7003-bit/privacyhub-android-preview": [
@@ -14424,6 +17912,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-09-28T07:27:13Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-09-28T07:27:13Z",
@@ -14452,6 +17948,14 @@
         "pushedAt": "2026-08-07T05:51:19Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 4,
+        "forks": 1,
+        "pushedAt": "2026-08-07T05:51:19Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "1c7/max-usage": [
@@ -14465,6 +17969,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-09-23T03:18:16Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 0,
         "pushedAt": "2026-09-23T03:18:16Z",
@@ -14488,6 +18000,14 @@
         "pushedAt": "2026-09-12T11:41:26Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 18,
+        "forks": 0,
+        "pushedAt": "2026-09-12T11:41:26Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "aks-666888/local-work-console": [
@@ -14501,6 +18021,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-09-17T15:15:17Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-09-17T15:15:17Z",
@@ -14524,6 +18052,14 @@
         "pushedAt": "2026-09-23T03:23:25Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 99,
+        "forks": 16,
+        "pushedAt": "2026-09-23T03:23:25Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "brycetlm/codex-asset-forge": [
@@ -14537,6 +18073,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-08-09T14:22:59Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-08-09T14:22:59Z",
@@ -14560,6 +18104,14 @@
         "pushedAt": "2026-08-28T11:25:29Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 6,
+        "forks": 0,
+        "pushedAt": "2026-08-28T11:25:29Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "claubloom/kindly-web": [
@@ -14573,6 +18125,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 25,
+        "forks": 1,
+        "pushedAt": "2026-08-12T15:48:19Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 25,
         "forks": 1,
         "pushedAt": "2026-08-12T15:48:19Z",
@@ -14596,6 +18156,14 @@
         "pushedAt": "2026-09-28T08:33:57Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 269,
+        "forks": 64,
+        "pushedAt": "2026-09-28T08:33:57Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ctkqiang/authgate": [
@@ -14609,6 +18177,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-06-22T03:50:32Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-06-22T03:50:32Z",
@@ -14632,6 +18208,14 @@
         "pushedAt": "2026-07-03T04:57:35Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-03T04:57:35Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ctkqiang/awsgatekeeper": [
@@ -14645,6 +18229,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-06-12T06:45:58Z",
+        "archived": false,
+        "activity": "active-year"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-06-12T06:45:58Z",
@@ -14668,6 +18260,14 @@
         "pushedAt": "2026-07-22T03:11:49Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-07-22T03:11:49Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ctkqiang/exploitdb": [
@@ -14686,6 +18286,14 @@
         "pushedAt": "2026-07-28T01:28:33Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 18,
+        "forks": 2,
+        "pushedAt": "2026-09-28T20:32:13Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "ctkqiang/lingflow": [
@@ -14699,6 +18307,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 3,
+        "forks": 1,
+        "pushedAt": "2026-07-12T10:46:58Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 3,
         "forks": 1,
         "pushedAt": "2026-07-12T10:46:58Z",
@@ -14722,6 +18338,14 @@
         "pushedAt": "2026-08-14T02:06:26Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 108,
+        "forks": 19,
+        "pushedAt": "2026-08-14T02:06:26Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ctkqiang/nezha_cyber": [
@@ -14735,6 +18359,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 24,
+        "forks": 0,
+        "pushedAt": "2026-08-11T06:39:12Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 24,
         "forks": 0,
         "pushedAt": "2026-08-11T06:39:12Z",
@@ -14758,6 +18390,14 @@
         "pushedAt": "2026-07-07T12:56:38Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-07-07T12:56:38Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "ctkqiang/nezhaguard": [
@@ -14771,6 +18411,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 4,
+        "forks": 1,
+        "pushedAt": "2026-08-10T07:28:21Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 4,
         "forks": 1,
         "pushedAt": "2026-08-10T07:28:21Z",
@@ -14794,6 +18442,14 @@
         "pushedAt": "2026-09-28T14:26:15Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 8,
+        "forks": 2,
+        "pushedAt": "2026-09-29T05:17:42Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "himovo/movo": [
@@ -14810,6 +18466,14 @@
         "stars": 173,
         "forks": 41,
         "pushedAt": "2026-09-28T14:31:58Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 185,
+        "forks": 44,
+        "pushedAt": "2026-09-29T05:16:13Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -14830,6 +18494,14 @@
         "pushedAt": "2026-09-27T10:06:11Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1373,
+        "forks": 87,
+        "pushedAt": "2026-09-27T10:06:11Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "jaden-2026/ai-base-saas": [
@@ -14843,6 +18515,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-08-14T01:08:00Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-08-14T01:08:00Z",
@@ -14866,6 +18546,14 @@
         "pushedAt": "2026-09-28T09:21:21Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 32,
+        "forks": 5,
+        "pushedAt": "2026-09-29T03:51:55Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "jnmetacode/engram": [
@@ -14879,6 +18567,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 2,
+        "forks": 1,
+        "pushedAt": "2026-09-10T00:30:48Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 2,
         "forks": 1,
         "pushedAt": "2026-09-10T00:30:48Z",
@@ -14902,6 +18598,14 @@
         "pushedAt": "2026-09-10T00:30:51Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
+        "forks": 2,
+        "pushedAt": "2026-09-10T00:30:51Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "jnmetacode/tracelet": [
@@ -14915,6 +18619,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 4,
+        "forks": 1,
+        "pushedAt": "2026-09-21T09:03:17Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 4,
         "forks": 1,
         "pushedAt": "2026-09-21T09:03:17Z",
@@ -14938,6 +18650,14 @@
         "pushedAt": "2026-09-26T23:45:58Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-09-26T23:45:58Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "leexunhuan743/syncclipboardcfserver": [
@@ -14951,6 +18671,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 8,
+        "forks": 2,
+        "pushedAt": "2026-09-27T06:01:49Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 8,
         "forks": 2,
         "pushedAt": "2026-09-27T06:01:49Z",
@@ -14974,6 +18702,14 @@
         "pushedAt": "2026-08-27T07:11:39Z",
         "archived": false,
         "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-08-27T07:11:39Z",
+        "archived": false,
+        "activity": "active-90"
       }
     ],
     "moresyl/dsh-studio": [
@@ -14990,6 +18726,14 @@
         "stars": 28,
         "forks": 7,
         "pushedAt": "2026-09-26T22:50:04Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 29,
+        "forks": 7,
+        "pushedAt": "2026-09-29T06:12:06Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -15010,6 +18754,14 @@
         "pushedAt": "2026-09-26T12:34:05Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 17,
+        "forks": 2,
+        "pushedAt": "2026-09-29T06:07:46Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "muzimu217/deliverkit": [
@@ -15023,6 +18775,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 1,
+        "forks": 0,
+        "pushedAt": "2026-09-28T12:01:50Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 1,
         "forks": 0,
         "pushedAt": "2026-09-28T12:01:50Z",
@@ -15046,6 +18806,14 @@
         "pushedAt": "2026-09-28T04:42:13Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 347,
+        "forks": 6,
+        "pushedAt": "2026-09-28T04:42:13Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "sandbaseai/cli": [
@@ -15059,6 +18827,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 188,
+        "forks": 17,
+        "pushedAt": "2026-08-28T12:39:42Z",
+        "archived": false,
+        "activity": "active-90"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 188,
         "forks": 17,
         "pushedAt": "2026-08-28T12:39:42Z",
@@ -15082,6 +18858,14 @@
         "pushedAt": "2026-09-28T09:20:36Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 117,
+        "forks": 24,
+        "pushedAt": "2026-09-29T06:28:43Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "the-beating-light-of-the-nail/dsh-meme-hub-site": [
@@ -15095,6 +18879,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-09-17T06:54:22Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 0,
         "forks": 0,
         "pushedAt": "2026-09-17T06:54:22Z",
@@ -15118,6 +18910,14 @@
         "pushedAt": "2026-09-19T05:21:32Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-09-19T05:21:32Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "wpydcr/nanoavatar": [
@@ -15131,6 +18931,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 18,
+        "forks": 0,
+        "pushedAt": "2026-09-16T06:21:33Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 18,
         "forks": 0,
         "pushedAt": "2026-09-16T06:21:33Z",
@@ -15154,6 +18962,14 @@
         "pushedAt": "2026-09-22T13:57:57Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2026-09-22T13:57:57Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zhiqingchen/runwhale": [
@@ -15167,6 +18983,14 @@
       },
       {
         "date": "2026-09-28",
+        "stars": 9,
+        "forks": 2,
+        "pushedAt": "2026-09-25T08:26:30Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
         "stars": 9,
         "forks": 2,
         "pushedAt": "2026-09-25T08:26:30Z",
@@ -15190,6 +19014,14 @@
         "pushedAt": "2026-09-03T08:11:11Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 5,
+        "forks": 3,
+        "pushedAt": "2026-09-03T08:11:11Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "zibo-chen/subnetdesk": [
@@ -15208,6 +19040,14 @@
         "pushedAt": "2026-09-12T03:11:30Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 616,
+        "forks": 64,
+        "pushedAt": "2026-09-12T03:11:30Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "finderchangchang/brewreel": [
@@ -15215,6 +19055,14 @@
         "date": "2026-09-28",
         "stars": 90,
         "forks": 14,
+        "pushedAt": "2026-09-27T11:01:47Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 104,
+        "forks": 17,
         "pushedAt": "2026-09-27T11:01:47Z",
         "archived": false,
         "activity": "active-30"
@@ -15228,12 +19076,28 @@
         "pushedAt": "2026-09-28T14:30:16Z",
         "archived": false,
         "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 19,
+        "forks": 0,
+        "pushedAt": "2026-09-29T05:52:44Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ],
     "sdyuyouth/agenthop": [
       {
         "date": "2026-09-28",
         "stars": 0,
+        "forks": 1,
+        "pushedAt": "2026-09-28T07:30:47Z",
+        "archived": false,
+        "activity": "active-30"
+      },
+      {
+        "date": "2026-09-29",
+        "stars": 1,
         "forks": 1,
         "pushedAt": "2026-09-28T07:30:47Z",
         "archived": false,

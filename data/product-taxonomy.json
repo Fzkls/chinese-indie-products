@@ -4,10 +4,10 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-09-28T14:33:23.137Z",
-    "generatedAt": "2026-09-28T14:33:57.540Z",
-    "totalProducts": 3014,
-    "classifiedProducts": 3014,
+    "sourceProductGeneratedAt": "2026-09-29T06:28:48.789Z",
+    "generatedAt": "2026-09-29T06:29:20.815Z",
+    "totalProducts": 3015,
+    "classifiedProducts": 3015,
     "otherProducts": 0,
     "coverage": 1,
     "lowConfidenceProducts": 3,
@@ -23,7 +23,7 @@
     "primaryCategoryCounts": {
       "utilities": 548,
       "ai-productivity": 459,
-      "developer-tools": 395,
+      "developer-tools": 396,
       "design-creative": 356,
       "content-knowledge": 235,
       "media-entertainment": 211,
@@ -38,7 +38,7 @@
       "ecommerce": 20
     },
     "classificationMethodCounts": {
-      "rules": 1881,
+      "rules": 1882,
       "manual-review": 1127,
       "semantic-fallback": 5,
       "source-fallback": 1
@@ -46,6 +46,39 @@
     "note": "Source facts remain in products.json. Deterministic rules classify clear records; reusable review rules and stable overrides handle known edge cases. Remaining unresolved records are auto-reviewed into Other so a single ambiguous product does not stop the scheduled data pipeline."
   },
   "records": [
+    {
+      "productId": "5b1397dc774c5c",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "platform:macos",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
     {
       "productId": "901b099f45bfce",
       "primaryCategory": "developer-tools",
