@@ -10,6 +10,7 @@ const ACTIVITY_LABELS = {
   unavailable: '无可用仓库',
   unknown: '更新时间未知'
 }
+const insightState = { products: [], tools: [], repositories: {}, githubMetadata: {} }
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
 const formatCompact = (value) => new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) || 0)
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
