@@ -17,77 +17,6 @@ const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
   return char === '"' ? '&quot;' : entities[char]
 })
 
-const nativeScrollIntoView = Element.prototype.scrollIntoView
-let suppressChartAutoScroll = false
-const insightState = { products: [], tools: [], repositories: {}, githubMetadata: {} }
-const PRODUCT_HASHES = new Set(['#semantic-map', '#product-dashboard', '#product-github', '#explore'])
-const TOOL_HASHES = new Set(['#tool-dashboard', '#tools'])
-
-function viewForHash(hash) {
-  if (TOOL_HASHES.has(hash)) return 'tool'
-  if (PRODUCT_HASHES.has(hash)) return 'product'
-  return null
-}
-
-function setDatasetView(view, { syncHash = false } = {}) {
-  const nextView = view === 'tool' ? 'tool' : 'product'
-  document.body.dataset.datasetView = nextView
-  for (const button of document.querySelectorAll('[data-dataset-tab]')) {
-    const active = button.dataset.datasetTab === nextView
-    button.classList.toggle('is-active', active)
-    button.setAttribute('aria-selected', String(active))
-    button.tabIndex = active ? 0 : -1
-  }
-  if (syncHash) {
-    const hash = nextView === 'tool' ? '#tool-dashboard' : '#product-dashboard'
-    history.replaceState(null, '', hash)
-  }
-}
-
-function installDatasetTabs() {
-  const links = document.querySelector('.top-links')
-  if (!links || links.querySelector('.dataset-tabs')) return
-  links.innerHTML = `
-    <div class="dataset-tabs" role="tablist" aria-label="数据集切换">
-      <button class="dataset-tab" type="button" role="tab" data-dataset-tab="product" aria-selected="false">项目</button>
-      <button class="dataset-tab" type="button" role="tab" data-dataset-tab="tool" aria-selected="false">工具</button>
-    </div>
-    <a class="dataset-methodology-link" href="#methodology">数据说明</a>`
-
-  for (const button of links.querySelectorAll('[data-dataset-tab]')) {
-    button.addEventListener('click', () => setDatasetView(button.dataset.datasetTab, { syncHash: true }))
-  }
-
-  document.addEventListener('click', (event) => {
-    const anchor = event.target.closest('a[href^="#"]')
-    const view = anchor ? viewForHash(anchor.hash) : null
-    if (view) setDatasetView(view)
-  }, true)
-
-  window.addEventListener('hashchange', () => {
-    const view = viewForHash(window.location.hash)
-    if (view) setDatasetView(view)
-  })
-
-  setDatasetView(viewForHash(window.location.hash) || 'product')
-}
-
-function markChartInteraction(event) {
-  if (!event.target.closest('#product-dashboard, #product-github, #tool-dashboard')) return
-  suppressChartAutoScroll = true
-  queueMicrotask(() => { suppressChartAutoScroll = false })
-}
-
-Element.prototype.scrollIntoView = function (...args) {
-  if (suppressChartAutoScroll && (this.id === 'explore' || this.id === 'tools')) return
-  return nativeScrollIntoView.apply(this, args)
-}
-
-document.addEventListener('click', markChartInteraction, true)
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter' || event.key === ' ') markChartInteraction(event)
-}, true)
-
 function normalizeGitHubRepository(rawUrl) {
   if (!rawUrl) return null
   try {
@@ -300,10 +229,6 @@ async function initSeparatedInsights() {
     const tools = insightState.tools
     const toolRepositories = repositoryItems(tools, insightState.repositories, 'tool')
 
-    installResetControl('product-dashboard', 'product')
-    installResetControl('product-github', 'product')
-    installResetControl('tool-dashboard', 'tool')
-
     bindProductInsightFilters()
     renderProductInsights()
     setText('tool-github-count', toolRepositories.length)
@@ -323,5 +248,4 @@ async function initSeparatedInsights() {
   }
 }
 
-installDatasetTabs()
 initSeparatedInsights()

@@ -28,15 +28,6 @@ function ensureStylesheet() {
   document.head.append(link)
 }
 
-function insertNavigation() {
-  const links = document.querySelector('.top-links')
-  if (!links || links.querySelector('a[href="#semantic-map"]')) return
-  const anchor = document.createElement('a')
-  anchor.href = '#semantic-map'
-  anchor.textContent = '语义地图'
-  links.prepend(anchor)
-}
-
 function semanticMarkup() {
   return `
   <section class="wrap taxonomy-section" id="semantic-map" aria-labelledby="taxonomy-title">
@@ -237,7 +228,6 @@ function bindEvents() {
 
 async function initTaxonomy() {
   ensureStylesheet()
-  insertNavigation()
   insertSection()
   const [productsResponse, taxonomyResponse, classificationsResponse] = await Promise.all([
     fetch('data/products.json'), fetch('data/taxonomy.json'), fetch('data/product-taxonomy.json')
