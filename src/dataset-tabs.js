@@ -557,6 +557,8 @@ function renderProjectCards() {
 function applyProjectFilters() {
   ui.filteredProducts = sortProjectRecords(ui.products.filter(matchesProject))
   ui.visible = ui.pageSize
+  const advanced = $('.sidebar-advanced')
+  if (advanced) advanced.open = ['audience', 'form', 'characteristic', 'year', 'city'].some((key) => Boolean(ui.filters[key]))
   syncPresetButtons()
   renderProjectActiveFilters()
   renderProjectCards()
