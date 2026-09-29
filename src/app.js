@@ -138,7 +138,7 @@ function tooltipSummary(label, records) {
     <div class="tooltip-grid">
       <span>记录</span><strong>${formatNumber(records.length)}</strong>
       <span>开发者</span><strong>${formatNumber(developers)}</strong>
-      <span>仍在运行</span><strong>${records.length ? Math.round(active / records.length * 100) : 0}%</strong>
+      <span>来源标记运行</span><strong>${records.length ? Math.round(active / records.length * 100) : 0}%</strong>
       <span>GitHub 仓库</span><strong>${formatNumber(repositories.length)}</strong>
       <span>Star 中位数</span><strong>${starMedian === null ? '—' : formatNumber(starMedian)}</strong>
     </div>
@@ -257,11 +257,15 @@ function renderCategoryChart(records) {
 }
 
 function renderCityChart(records) {
-  const groups = [...countBy(records.filter((item) => item.city), 'city').entries()].sort((a, b) => b[1] - a[1]).slice(0, 8)
+  const cityRecords = records.filter((item) => item.city)
+  const groups = [...countBy(cityRecords, 'city').entries()].sort((a, b) => b[1] - a[1]).slice(0, 8)
   const max = Math.max(...groups.map(([, count]) => count), 1)
   el('city-chart').innerHTML = groups.length
     ? groups.map(([city, count]) => `<button type="button" class="bar-row${productState.city === city ? ' is-active' : ''}" data-city="${escapeHtml(city)}"><span>${escapeHtml(city)}</span><span class="bar-track"><span class="bar-fill" style="width:${count / max * 100}%"></span></span><strong>${count}</strong></button>`).join('')
     : '<p class="empty-state">当前筛选没有城市数据</p>'
+  const coverage = records.length ? Math.round(cityRecords.length / records.length * 100) : 0
+  const coverageNote = el('city-coverage-note')
+  if (coverageNote) coverageNote.textContent = `城市字段覆盖 ${formatNumber(cityRecords.length)} / ${formatNumber(records.length)}（${coverage}%）· 仅反映有明确城市信息的样本`
   for (const node of el('city-chart').querySelectorAll('[data-city]')) {
     const city = node.dataset.city
     bindDashboardItem(node, 'city', city, records.filter((item) => item.city === city), city)

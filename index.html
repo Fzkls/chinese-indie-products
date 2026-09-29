@@ -75,19 +75,20 @@
         </div>
         <div class="chart-grid">
           <article class="chart-panel wide">
-            <div class="panel-heading"><div><h3>收录趋势</h3><p>悬停查看详情，点击年份联动筛选独立产品</p></div><span class="chart-total" id="trend-total">— 条</span></div>
-            <div class="chart" id="year-chart" aria-label="年度收录趋势图"></div>
+            <div class="panel-heading"><div><h3>项目年份分布</h3><p>按来源记录的年份统计，不代表本站历史收录量；点击年份查看相关项目</p></div><span class="chart-total" id="trend-total">— 条</span></div>
+            <div class="chart" id="year-chart" aria-label="项目年份分布图"></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>来源类型</h3><p>按上游清单中的通用产品 / 程序员工具 / 游戏 / 历史归档统计，不等同于语义产品方向</p></div></div>
+            <div class="panel-heading"><div><h3>数据来源结构</h3><p>按上游清单来源分类，仅用于理解数据构成，不代表产品赛道分布</p></div></div>
             <div class="donut-layout"><div class="donut" id="category-donut" role="img" aria-label="来源类型占比"><div class="donut-center"><strong id="donut-total">—</strong><span>条产品</span></div></div><div class="legend" id="category-legend"></div></div>
           </article>
           <article class="chart-panel">
-            <div class="panel-heading"><div><h3>城市分布</h3><p>公开填写城市中的 Top 8，仅作用于产品数据</p></div></div>
+            <div class="panel-heading"><div><h3>城市分布</h3><p>只统计来源中明确填写城市的记录，不代表总体地域分布</p></div></div>
             <div class="bar-list" id="city-chart"></div>
+            <p class="chart-data-note" id="city-coverage-note">正在计算城市字段覆盖率…</p>
           </article>
-          <article class="chart-panel">
-            <div class="panel-heading"><div><h3>运行状态</h3><p>基于产品来源清单中的状态标记</p></div></div>
+          <article class="chart-panel wide status-panel">
+            <div class="panel-heading"><div><h3>运行状态</h3><p>基于上游清单状态标记，不代表产品当前实时可访问性</p></div></div>
             <div class="status-grid" id="status-chart"></div>
           </article>
         </div>
