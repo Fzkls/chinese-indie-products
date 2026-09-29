@@ -569,6 +569,8 @@ function syncProjectControls() {
     const node = $(`#${id}`)
     if (node) node.value = ui.filters[key] || ''
   }
+  const advanced = $('.sidebar-advanced')
+  if (advanced) advanced.open = ['audience', 'form', 'characteristic', 'year', 'city'].some((key) => Boolean(ui.filters[key]))
 }
 
 function clearProjectFilters() {
