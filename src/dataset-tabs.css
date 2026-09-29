@@ -180,7 +180,7 @@
 
 .dataset-tabs-active .ecosystem-metrics{
   display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;
-  padding:0 0 18px;border:0
+  margin-top:0;padding:0 0 18px;border:0;overflow:visible;background:transparent;box-shadow:none
 }
 .dataset-tabs-active .ecosystem-metric{
   min-width:0;padding:17px 18px;border:1px solid var(--line);border-radius:14px;
@@ -366,3 +366,7 @@
 
 /* Keep view switching deterministic even when a component has its own display rule. */
 .dataset-tabs-active [hidden]{display:none!important}
+
+.dataset-tabs-active #product-dashboard .visual-reset,
+.dataset-tabs-active #product-github .visual-reset{display:none!important}
+.dataset-tabs-active #category-legend .legend-item.is-reference-only{cursor:default;pointer-events:none;opacity:1}
