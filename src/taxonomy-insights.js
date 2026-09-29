@@ -32,8 +32,8 @@ function semanticMarkup() {
   return `
   <section class="wrap taxonomy-section" id="semantic-map" aria-labelledby="taxonomy-title">
     <div class="section-heading taxonomy-heading">
-      <div><p class="eyebrow">PRODUCT SEMANTIC MAP</p><h2 id="taxonomy-title">产品语义地图</h2></div>
-      <p>主分类尽量覆盖全部产品；无法可靠判断的边界项会自动复核后保留为 Other。子方向、用户群体、产品形态与能力标签只在有明确语义证据时记录。</p>
+      <div><p class="eyebrow">PRODUCT DIRECTIONS</p><h2 id="taxonomy-title">大家正在做什么</h2></div>
+      <p>先看产品主要方向，再下钻到子方向、产品形态和目标用户；只有有明确语义证据的字段才参与分析，边界项会保留为 Other。</p>
     </div>
     <div class="taxonomy-kpis">
       <article><span>具体方向覆盖</span><strong id="taxonomy-coverage">—</strong><small>已归入明确产品方向，不含 Other</small></article>
