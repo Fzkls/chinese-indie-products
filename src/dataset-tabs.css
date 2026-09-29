@@ -205,7 +205,7 @@
 .dataset-tabs-active #product-dashboard .chart-panel{
   min-height:300px;padding:18px;border-radius:14px;background:var(--panel)
 }
-.dataset-tabs-active #product-dashboard .chart-panel.wide{grid-column:auto}
+.dataset-tabs-active #product-dashboard .chart-panel.wide{grid-column:1/-1}
 .dataset-tabs-active #product-dashboard .panel-heading{margin-bottom:12px}
 .dataset-tabs-active #product-dashboard .panel-heading h3{font-size:16px}
 .dataset-tabs-active #product-dashboard .panel-heading p{font-size:10px}
@@ -213,6 +213,8 @@
 .dataset-tabs-active #product-dashboard .donut-layout{min-height:220px}
 .dataset-tabs-active #product-dashboard .bar-list,
 .dataset-tabs-active #product-dashboard .status-grid{min-height:220px}
+.dataset-tabs-active #product-dashboard .status-panel .status-grid{grid-template-columns:repeat(5,minmax(0,1fr));min-height:auto}
+.chart-data-note{margin:14px 0 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.07);color:var(--muted);font-size:11px;line-height:1.5}
 
 .dataset-tabs-active #product-github{padding:26px 0 34px;background:transparent}
 .dataset-tabs-active #product-github .section-heading{margin-bottom:14px}
@@ -282,15 +284,15 @@
 }
 .project-v2-card:hover{transform:translateY(-1px);background:#10231d}
 .project-v2-card h3{margin:10px 0 5px;font-size:16px}
-.project-v2-card>p{min-height:2.8em;margin-bottom:9px;font-size:11px;-webkit-line-clamp:2}
-.project-v2-card-top{font-size:10px}
-.project-category{font-size:10px}
-.project-status{font-size:9px}
+.project-v2-card>p{min-height:3em;margin-bottom:10px;font-size:13px;line-height:1.5;-webkit-line-clamp:3}
+.project-v2-card-top{font-size:11px}
+.project-category{font-size:11px}
+.project-status{font-size:10px}
 .project-v2-tags{gap:4px;margin-bottom:10px}
-.project-v2-tags span{padding:3px 6px;font-size:9px}
-.project-v2-meta{gap:5px 9px;padding-top:9px;font-size:9px}
-.project-v2-sources{margin-top:7px;font-size:9px}
-.project-v2-sources summary{font-size:9px}
+.project-v2-tags span{padding:4px 7px;font-size:10px}
+.project-v2-meta{gap:6px 10px;padding-top:10px;font-size:11px}
+.project-v2-sources{margin-top:8px;font-size:10px}
+.project-v2-sources summary{font-size:10px}
 .project-v2-sources>div{gap:4px;margin-top:6px;padding-top:6px}
 
 .directory-sidebar{
@@ -313,6 +315,12 @@
   border-radius:9px;background:#081410;color:var(--text);font-size:11px;outline:none
 }
 .sidebar-filter-group select:focus{border-color:var(--accent)}
+.sidebar-advanced{border-bottom:1px solid var(--line)}
+.sidebar-advanced>summary{display:flex;align-items:center;justify-content:space-between;min-height:42px;padding:0 14px;color:#c6d8d1;font-size:11px;font-weight:750;cursor:pointer;list-style:none}
+.sidebar-advanced>summary::-webkit-details-marker{display:none}
+.sidebar-advanced>summary:after{content:"＋";color:var(--accent);font-size:15px;font-weight:500}
+.sidebar-advanced[open]>summary:after{content:"−"}
+.sidebar-advanced .sidebar-filter-group:last-child{border-bottom:0}
 
 .directory-weekly{padding:13px 14px 15px}
 .directory-weekly-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
@@ -331,6 +339,9 @@
 .directory-weekly-row span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--muted);font-size:9px}
 .directory-weekly-empty{padding:9px;color:var(--muted);font-size:10px}
 
+@media(max-width:1280px){
+  .project-list-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
 @media(max-width:1180px){
   .dataset-tabs-active .ecosystem-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
   .directory-layout{grid-template-columns:minmax(0,1fr) 260px}
@@ -342,7 +353,7 @@
   .dataset-tabs-active #product-dashboard .chart-grid{grid-template-columns:1fr}
   .directory-layout{grid-template-columns:1fr}
   .directory-sidebar{position:static;max-height:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
-  .directory-sidebar-head,.directory-weekly{grid-column:1/-1}
+  .directory-sidebar-head,.directory-weekly,.sidebar-advanced{grid-column:1/-1}
   .sidebar-filter-group{border-right:1px solid var(--line)}
 }
 @media(max-width:680px){
@@ -360,8 +371,9 @@
   .directory-heading>p{text-align:left}
   .project-list-grid{grid-template-columns:1fr}
   .directory-sidebar{grid-template-columns:1fr}
-  .directory-sidebar-head,.directory-weekly{grid-column:auto}
+  .directory-sidebar-head,.directory-weekly,.sidebar-advanced{grid-column:auto}
   .sidebar-filter-group{border-right:0}
+  .dataset-tabs-active #product-dashboard .status-panel .status-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 /* Keep view switching deterministic even when a component has its own display rule. */
