@@ -46,6 +46,13 @@ const taxonomyApp = await readFile('dist/src/taxonomy-insights.js', 'utf8')
 for (const dataset of ['taxonomy.json', 'product-taxonomy.json']) {
   if (!taxonomyApp.includes(`data/${dataset}`)) throw new Error(`taxonomy-insights.js must reference data/${dataset}`)
 }
+const separatedInsights = await readFile('dist/src/separated-insights.js', 'utf8')
+const separatedInsightsCss = await readFile('dist/src/separated-insights.css', 'utf8')
+const taxonomyInsightsSource = await readFile('dist/src/taxonomy-insights.js', 'utf8')
+if (separatedInsights.includes('datasetView') || separatedInsights.includes('installDatasetTabs')) throw new Error('separated-insights.js must not own global page routing')
+if (separatedInsightsCss.includes('data-dataset-view')) throw new Error('separated-insights.css must not hide sections based on legacy dataset view state')
+if (taxonomyInsightsSource.includes("document.querySelector('.top-links')")) throw new Error('taxonomy-insights.js must not mutate global navigation')
+
 const overviewInteractions = await readFile('dist/src/overview-interactions.js', 'utf8')
 for (const dataset of ['products.json', 'product-taxonomy.json']) {
   if (!overviewInteractions.includes(`data/${dataset}`)) throw new Error(`overview-interactions.js must reference data/${dataset}`)
