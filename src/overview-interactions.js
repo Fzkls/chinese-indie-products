@@ -20,12 +20,6 @@ const dataState = {
   ready: null
 }
 
-const originalScrollIntoView = Element.prototype.scrollIntoView
-Element.prototype.scrollIntoView = function (...args) {
-  if (['top', 'project-list', 'tools', 'explore'].includes(this.id)) return
-  return originalScrollIntoView.apply(this, args)
-}
-
 function normalizeGithubRepository(rawUrl) {
   if (!rawUrl) return null
   try {
@@ -282,6 +276,13 @@ function openDirectory(selection) {
 
 function bindOverviewLinking() {
   document.addEventListener('click', (event) => {
+    const sourceCategory = event.target.closest('#product-dashboard [data-category]')
+    if (sourceCategory) {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      return
+    }
+
     const direction = event.target.closest('[data-product-direction]')
     if (direction) {
       const panel = $('#overview-linked-projects')
@@ -299,6 +300,11 @@ function bindOverviewLinking() {
 
   document.addEventListener('keydown', (event) => {
     if (!['Enter', ' '].includes(event.key)) return
+    if (event.target.closest('#product-dashboard [data-category]')) {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      return
+    }
     const selection = resolveSelection(event.target)
     if (!selection) return
     event.preventDefault()
@@ -320,7 +326,7 @@ function updateInteractionCopy() {
     ['#taxonomy-form-chart', '点击产品形态，原地查看相关项目'],
     ['#taxonomy-audience-chart', '点击用户群体，原地查看相关项目'],
     ['#taxonomy-status-matrix', '点击主分类，原地查看对应项目'],
-    ['#year-chart', '悬停查看详情；点击年份，原地查看相关项目'],
+    ['#year-chart', '按来源记录年份统计；点击年份原地查看相关项目'],
     ['#city-chart', '点击城市，原地查看相关项目'],
     ['#status-chart', '点击状态，原地查看相关项目']
   ]

@@ -126,7 +126,7 @@ function installOverviewShell() {
     <article class="metric ecosystem-metric"><span>收录工具总数</span><strong id="overview-metric-tools">—</strong><small>开发工具与资源库</small></article>
     <article class="metric ecosystem-metric"><span>开发者总数</span><strong id="metric-developers">—</strong><small>按公开名称去重</small></article>
     <article class="metric ecosystem-metric"><span>开源项目数</span><strong id="overview-metric-open-source">—</strong><small>具有明确开源标记</small></article>
-    <article class="metric ecosystem-metric"><span>标记运行比例</span><strong id="overview-metric-active-rate">—</strong><small>已上线或开发中</small></article>`
+    <article class="metric ecosystem-metric"><span>来源标记为运行</span><strong id="overview-metric-active-rate">—</strong><small>上游状态，不代表实时可访问率</small></article>`
 
   if (!$('#ecosystem-overview-head')) {
     const head = document.createElement('section')
@@ -331,7 +331,6 @@ function insertProjectList() {
         <button type="button" data-project-preset="weekly">🔥 本周新收录</button>
         <button type="button" data-project-preset="open-source">◉ 开源项目</button>
         <button type="button" data-project-preset="active">⚡ 近期活跃</button>
-        <button type="button" data-project-preset="shenzhen">⌖ 深圳项目</button>
       </div>
 
       <div class="directory-layout">
@@ -355,23 +354,25 @@ function insertProjectList() {
           </section>
 
           <section class="sidebar-filter-group">
-            <h3>产品属性</h3>
-            <label><span>用户群体</span><select id="project-v2-audience"><option value="">全部用户群体</option></select></label>
-            <label><span>产品形态</span><select id="project-v2-form"><option value="">全部产品形态</option></select></label>
-            <label><span>产品特征</span><select id="project-v2-characteristic"><option value="">全部产品特征</option></select></label>
-          </section>
-
-          <section class="sidebar-filter-group">
             <h3>状态与活跃度</h3>
             <label><span>运行状态</span><select id="project-v2-status"><option value="">全部状态</option></select></label>
             <label><span>GitHub 活跃度</span><select id="project-v2-activity"><option value="">全部活跃度</option></select></label>
           </section>
 
-          <section class="sidebar-filter-group">
-            <h3>时间与地区</h3>
-            <label><span>年份</span><select id="project-v2-year"><option value="">全部年份</option></select></label>
-            <label><span>城市</span><select id="project-v2-city"><option value="">全部城市</option></select></label>
-          </section>
+          <details class="sidebar-advanced">
+            <summary>更多筛选</summary>
+            <section class="sidebar-filter-group">
+              <h3>产品属性</h3>
+              <label><span>用户群体</span><select id="project-v2-audience"><option value="">全部用户群体</option></select></label>
+              <label><span>产品形态</span><select id="project-v2-form"><option value="">全部产品形态</option></select></label>
+              <label><span>产品特征</span><select id="project-v2-characteristic"><option value="">全部产品特征</option></select></label>
+            </section>
+            <section class="sidebar-filter-group">
+              <h3>时间与地区</h3>
+              <label><span>年份</span><select id="project-v2-year"><option value="">全部年份</option></select></label>
+              <label><span>城市</span><select id="project-v2-city"><option value="">全部城市</option></select></label>
+            </section>
+          </details>
 
           <section class="directory-weekly">
             <div class="directory-weekly-head"><strong>本周新收录</strong><span id="directory-weekly-count">—</span></div>
@@ -433,8 +434,7 @@ function semanticFor(record) {
 const PRESET_LABELS = {
   weekly: '本周新收录',
   'open-source': '开源项目',
-  active: '近期活跃',
-  shenzhen: '深圳项目'
+  active: '近期活跃'
 }
 
 function matchesPreset(record, preset) {
@@ -443,7 +443,6 @@ function matchesPreset(record, preset) {
   if (preset === 'weekly') return ui.weeklyNewNames.has(record.productName)
   if (preset === 'open-source') return (semantic.tags?.characteristics || []).includes('open-source')
   if (preset === 'active') return ['active-30', 'active-90'].includes(projectActivity(record))
-  if (preset === 'shenzhen') return String(record.city || '').includes('深圳')
   return true
 }
 
@@ -558,6 +557,8 @@ function renderProjectCards() {
 function applyProjectFilters() {
   ui.filteredProducts = sortProjectRecords(ui.products.filter(matchesProject))
   ui.visible = ui.pageSize
+  const advanced = $('.sidebar-advanced')
+  if (advanced) advanced.open = ['audience', 'form', 'characteristic', 'year', 'city'].some((key) => Boolean(ui.filters[key]))
   syncPresetButtons()
   renderProjectActiveFilters()
   renderProjectCards()
@@ -570,6 +571,8 @@ function syncProjectControls() {
     const node = $(`#${id}`)
     if (node) node.value = ui.filters[key] || ''
   }
+  const advanced = $('.sidebar-advanced')
+  if (advanced) advanced.open = ['audience', 'form', 'characteristic', 'year', 'city'].some((key) => Boolean(ui.filters[key]))
 }
 
 function clearProjectFilters() {
@@ -828,12 +831,12 @@ function translateLegacySemanticLabels() {
 
 function makeOverviewChartsReadOnly() {
   const yearCopy = $('#year-chart')?.closest('.chart-panel')?.querySelector('.panel-heading p')
-  if (yearCopy) yearCopy.textContent = '悬停查看详情；点击年份下钻相关项目'
+  if (yearCopy) yearCopy.textContent = '按来源记录年份统计；点击年份原地查看相关项目'
   const sourcePanel = $('#category-donut')?.closest('.chart-panel')
   const sourceTitle = sourcePanel?.querySelector('h3')
   const sourceCopy = sourcePanel?.querySelector('.panel-heading p')
-  if (sourceTitle) sourceTitle.textContent = '来源类型'
-  if (sourceCopy) sourceCopy.textContent = '上游清单的来源类别，仅用于来源结构参考'
+  if (sourceTitle) sourceTitle.textContent = '数据来源结构'
+  if (sourceCopy) sourceCopy.textContent = '上游清单来源分类，仅用于理解数据构成，不代表产品赛道分布'
 }
 
 function bindInteractionGuards() {
