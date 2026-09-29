@@ -276,6 +276,13 @@ function openDirectory(selection) {
 
 function bindOverviewLinking() {
   document.addEventListener('click', (event) => {
+    const sourceCategory = event.target.closest('#product-dashboard [data-category]')
+    if (sourceCategory) {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      return
+    }
+
     const direction = event.target.closest('[data-product-direction]')
     if (direction) {
       const panel = $('#overview-linked-projects')
@@ -293,6 +300,11 @@ function bindOverviewLinking() {
 
   document.addEventListener('keydown', (event) => {
     if (!['Enter', ' '].includes(event.key)) return
+    if (event.target.closest('#product-dashboard [data-category]')) {
+      event.preventDefault()
+      event.stopImmediatePropagation()
+      return
+    }
     const selection = resolveSelection(event.target)
     if (!selection) return
     event.preventDefault()
