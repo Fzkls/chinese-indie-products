@@ -76,6 +76,12 @@ if (/\.dataset-tabs-active #weekly-pulse\s*\{[^}]*display:\s*none\s*!important/s
 if (!datasetTabsCss.includes('.dataset-tabs-active [hidden]{display:none!important}')) throw new Error('view switching hidden-state guard missing')
 if (datasetTabsCss.includes('#product-dashboard .chart-panel.wide{grid-column:auto}')) throw new Error('wide ecosystem charts must not be collapsed back to half width')
 if (datasetTabs.includes('data-project-preset="shenzhen"')) throw new Error('project directory must not hard-code a single-city quick filter')
+for (const id of ['overview-metric-weekly-added', 'overview-metric-active-repos']) {
+  if (!datasetTabs.includes(`id="${id}"`)) throw new Error(`ecosystem overview metric missing: ${id}`)
+}
+if (!datasetTabs.includes("metrics.insertAdjacentElement('afterend', weekly)")) throw new Error('weekly pulse must follow ecosystem headline metrics')
+if (!datasetTabs.includes("weekly.insertAdjacentElement('afterend', semantic)")) throw new Error('product directions must follow weekly pulse')
+if (!datasetTabs.includes("semantic.insertAdjacentElement('afterend', dashboard)")) throw new Error('data context dashboard must follow product directions')
 if (!index.includes('data-download-products-compat')) throw new Error('download compatibility anchor missing')
 if (!index.includes('id="city-coverage-note"')) throw new Error('city coverage note missing from ecosystem dashboard')
 console.log('Static site built in dist/.')

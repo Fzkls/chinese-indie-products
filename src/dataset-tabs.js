@@ -123,9 +123,9 @@ function installOverviewShell() {
   metrics.classList.add('ecosystem-metrics')
   metrics.innerHTML = `
     <article class="metric ecosystem-metric"><span>收录产品总数</span><strong id="metric-products">—</strong><small>去重后的独立产品</small></article>
-    <article class="metric ecosystem-metric"><span>收录工具总数</span><strong id="overview-metric-tools">—</strong><small>开发工具与资源库</small></article>
+    <article class="metric ecosystem-metric"><span>本周新收录</span><strong id="overview-metric-weekly-added">—</strong><small>相对上一份成功快照</small></article>
     <article class="metric ecosystem-metric"><span>开发者总数</span><strong id="metric-developers">—</strong><small>按公开名称去重</small></article>
-    <article class="metric ecosystem-metric"><span>开源项目数</span><strong id="overview-metric-open-source">—</strong><small>具有明确开源标记</small></article>
+    <article class="metric ecosystem-metric"><span>30 天活跃仓库</span><strong id="overview-metric-active-repos">—</strong><small>公开仓库最近 30 天有更新</small></article>
     <article class="metric ecosystem-metric"><span>来源标记为运行</span><strong id="overview-metric-active-rate">—</strong><small>上游状态，不代表实时可访问率</small></article>`
 
   if (!$('#ecosystem-overview-head')) {
@@ -147,15 +147,19 @@ function installOverviewShell() {
 
 function syncOverviewSummary() {
   const products = ui.products
-  const semantic = products.map((item) => semanticFor(item))
-  const openSource = semantic.filter((item) => (item.tags?.characteristics || []).includes('open-source')).length
   const active = products.filter((item) => ['active', 'developing'].includes(item.status)).length
   const activeRate = products.length ? Math.round(active / products.length * 100) : 0
+  const activeRepositories = new Set(
+    products
+      .filter((record) => projectActivity(record) === 'active-30')
+      .map((record) => normalizeGithubRepository(record.productUrl))
+      .filter(Boolean)
+  )
   const values = {
     'metric-products': products.length,
-    'overview-metric-tools': ui.tools.length,
+    'overview-metric-weekly-added': ui.weeklyAdded.length,
     'metric-developers': new Set(products.map((item) => item.developerName).filter(Boolean)).size,
-    'overview-metric-open-source': openSource
+    'overview-metric-active-repos': activeRepositories.size
   }
   for (const [id, value] of Object.entries(values)) {
     const node = $('#' + id)
@@ -171,13 +175,15 @@ function syncOverviewSummary() {
 }
 
 function organizeOverview() {
+  const metrics = $('.metrics')
   const dashboard = $('#product-dashboard')
   const weekly = $('#weekly-pulse')
   const github = $('#product-github')
   const semantic = $('#semantic-map')
-  if (dashboard && weekly && dashboard.nextElementSibling !== weekly) dashboard.insertAdjacentElement('afterend', weekly)
-  if (weekly && github && weekly.nextElementSibling !== github) weekly.insertAdjacentElement('afterend', github)
-  if (github && semantic && github.nextElementSibling !== semantic) github.insertAdjacentElement('afterend', semantic)
+  if (metrics && weekly && metrics.nextElementSibling !== weekly) metrics.insertAdjacentElement('afterend', weekly)
+  if (weekly && semantic && weekly.nextElementSibling !== semantic) weekly.insertAdjacentElement('afterend', semantic)
+  if (semantic && dashboard && semantic.nextElementSibling !== dashboard) semantic.insertAdjacentElement('afterend', dashboard)
+  if (dashboard && github && dashboard.nextElementSibling !== github) dashboard.insertAdjacentElement('afterend', github)
 }
 function installHeroActions() {
   const actions = $('.hero-actions')
