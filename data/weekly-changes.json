@@ -1,25 +1,14 @@
 {
-  "generatedAt": "2026-09-29T06:28:48.789Z",
-  "baselineGeneratedAt": "2026-09-28T14:33:23.137Z",
+  "generatedAt": "2026-09-29T08:57:15.332Z",
+  "baselineGeneratedAt": "2026-09-29T06:28:48.789Z",
   "mode": "since-previous-snapshot",
   "products": {
-    "previousCount": 3014,
+    "previousCount": 3015,
     "currentCount": 3015,
-    "addedCount": 1,
+    "addedCount": 0,
     "removedCount": 0,
     "changedCount": 0,
-    "added": [
-      {
-        "id": "5b1397dc774c5c",
-        "name": "回声 echo agent",
-        "url": "https://echoagent.dev/zh/",
-        "description": "Mac 上的语音 AI Agent，任何应用里按 Fn+Space 说一句话，交给本机的 Claude Code 或 Codex 在后台执行，语音在本机识别",
-        "developerName": "Evan",
-        "category": "developer-tool",
-        "status": "active",
-        "date": "2026-09-29"
-      }
-    ],
+    "added": [],
     "removed": [],
     "changed": []
   },
