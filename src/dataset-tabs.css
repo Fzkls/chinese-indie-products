@@ -180,7 +180,8 @@
 
 .dataset-tabs-active .ecosystem-metrics{
   display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;
-  padding:0 0 18px;border:0
+  margin-top:0;padding:0 0 24px;border:0;border-radius:0;
+  overflow:visible;background:transparent;box-shadow:none;z-index:auto
 }
 .dataset-tabs-active .ecosystem-metric{
   min-width:0;padding:17px 18px;border:1px solid var(--line);border-radius:14px;
@@ -364,6 +365,7 @@
   .dataset-method-link{display:inline-flex}
   .ecosystem-overview-head{align-items:flex-start;flex-direction:column;padding-top:20px}
   .dataset-tabs-active .ecosystem-metrics{grid-template-columns:1fr 1fr}
+  .dataset-tabs-active .ecosystem-metric:last-child{grid-column:1/-1}
   .directory-wrap{width:min(calc(100% - 20px),1380px)}
   .directory-search-row{grid-template-columns:1fr}
   .directory-sort{grid-template-columns:auto 1fr}
