@@ -25,3 +25,13 @@ test('ecosystem dashboard keeps data-quality context visible', async () => {
   assert.match(html, /项目年份分布/)
   assert.match(html, /不代表产品当前实时可访问性/)
 })
+
+
+test('ecosystem weekly metrics do not inherit the legacy hero overlap', async () => {
+  const css = await readFile('src/dataset-tabs.css', 'utf8')
+  const block = css.match(/\.dataset-tabs-active \.ecosystem-metrics\{[\s\S]*?\}/)?.[0] || ''
+  assert.match(block, /margin-top:0/)
+  assert.match(block, /overflow:visible/)
+  assert.match(block, /background:transparent/)
+  assert.match(block, /box-shadow:none/)
+})
