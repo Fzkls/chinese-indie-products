@@ -1,16 +1,1269 @@
 {
-  "generatedAt": "2026-09-29T09:18:28.414Z",
-  "baselineGeneratedAt": "2026-09-29T08:57:15.332Z",
+  "generatedAt": "2026-09-30T08:25:55.466Z",
+  "baselineGeneratedAt": "2026-09-29T09:18:28.414Z",
   "mode": "since-previous-snapshot",
   "products": {
     "previousCount": 3015,
-    "currentCount": 3015,
-    "addedCount": 0,
-    "removedCount": 0,
-    "changedCount": 0,
-    "added": [],
-    "removed": [],
-    "changed": []
+    "currentCount": 3038,
+    "addedCount": 24,
+    "removedCount": 1,
+    "changedCount": 168,
+    "added": [
+      {
+        "id": "ef07250af86836",
+        "name": "FPS Tester",
+        "url": "https://fpstester.org/",
+        "description": "浏览器 FPS、帧时间与显示测试工具集（免费），可测试实时 FPS、Frame Time、1% Low、FPS Stability、FPS Drop 和刷新率，并提供 FPS Comparison、Screen Tearing、Motion Blur、Monitor Test、Mouse Polling Rate、Reaction Time 等相关测试工具，用于检查浏览器动画性能、显示效果和游戏输入表现",
+        "developerName": "pandaupup",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-30"
+      },
+      {
+        "id": "396bae06b1ad94",
+        "name": "Jev AI",
+        "url": "https://ai-jev.pro/",
+        "description": "把文本和 JSON 转成带概率的是非、选择与评分判定，用于工单分类、内容审核、意图路由、线索打分等场景；站内 Playground 可直接试跑，也提供 API 与 CSV/TXT/JSONL 批量处理，注册送 5 个额度",
+        "developerName": "jj2772486-svg",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-30"
+      },
+      {
+        "id": "69d2abc31ff294",
+        "name": "MidiTake",
+        "url": "https://miditake.com/?utm_source=github&utm_medium=referral&utm_campaign=backlink",
+        "description": "Convert MP3, WAV or video to MIDI in your browser",
+        "developerName": "muke1838-cloud",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-30"
+      },
+      {
+        "id": "d5522d38b2ad1b",
+        "name": "Online Tone Generator",
+        "url": "https://online-tone-generator.org/",
+        "description": "音调与频率生成工具（免费），在浏览器中生成指定频率的音频信号，支持正弦波、方波、三角波、锯齿波、频率调节、左右声道控制和 WAV 导出，并提供 Frequency Sweep、Multiple Tone、Speaker Test、Subwoofer Test 等音频测试工具，音频处理在浏览器本地完成，无需上传文件或安装软件",
+        "developerName": "pandaupup",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-30"
+      },
+      {
+        "id": "f63fd9895542c7",
+        "name": "VideoCreate",
+        "url": "https://videocreate.org/",
+        "description": "视频反推提示词（Video to Prompt）工具，上传 60 秒内的 MP4/MOV 参考视频，按时间码切分镜头，逐镜头拆出主体、运镜、动作、光线、风格、声音六项，生成适配 Seedance、Kling 3.0、Wan 2.6、Grok Imagine 的提示词；Google 登录后每天免费分析 5 个视频 - 实测提示词与成片",
+        "developerName": "blowxian",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-30"
+      },
+      {
+        "id": "c4884c83497d57",
+        "name": "哪天加油",
+        "url": "https://picui.ogmua.cn/s1/2026/09/29/6abb810780125.webp",
+        "description": "查找附近加油站优惠、收藏常用油站并接收优惠提醒 — 微信小程序",
+        "developerName": "Zhang-MQ",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "2c086bffdc57a0",
+        "name": "抛硬币",
+        "url": "https://wheelpage.com/zh/coin-flip/",
+        "description": "模拟正反面抛硬币，适合二选一和快速随机决定，并记录近期结果和累计次数",
+        "developerName": "萝卜",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "1c909ef8971c5b",
+        "name": "拼豆岛",
+        "url": "https://pindoudao.xyz/",
+        "description": "拼豆图纸创作工具，把照片或 AI 灵感转换成可编辑、可打印的 MARD / Hama 拼豆图纸，自动统计色号和豆子用量（免费）",
+        "developerName": "Zhang-MQ",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "e7f21e23c8695a",
+        "name": "石头剪刀布",
+        "url": "https://wheelpage.com/zh/rock-paper-scissors/",
+        "description": "打开即可玩的石头剪刀布，支持快速对局和三局两胜",
+        "developerName": "萝卜",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "df71cc4e99cafc",
+        "name": "知识公社",
+        "url": "https://taimabenji.github.io/knowledge-commons/",
+        "description": "完全离线的免费学习平台，竞赛真题、公考题库、毛选全文、世界技能大赛一站学，断网可用，浏览器打开即学",
+        "developerName": "TaiMaBenJi",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "d4018b2bcd277f",
+        "name": "Claude Imagine",
+        "url": "https://claudeimagine.com",
+        "description": "AI 图片和视频生成工具，网页上直接用，也能作为 MCP 连接器接入 Claude（claude.ai、Claude Desktop、Claude Code）在对话里出图出视频，支持 Nano Banana 2、GPT Image 2.5、Seedream 4.5、Flux 2 Pro 和 Veo 3.1 Fast，注册送免费额度；独立产品，与 Anthropic 无关",
+        "developerName": "lumian2015",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "b768612152e109",
+        "name": "Cleanup Pictures",
+        "url": "https://www.cleanuppictures.pro/",
+        "description": "上传照片并涂选区域，用 AI 移除不需要的物体、人物或文字",
+        "developerName": "mo-wei-lai",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "d687fac61d4135",
+        "name": "Código Morse",
+        "url": "https://www.codigomorse.com/",
+        "description": "葡语（巴西）摩斯密码网站，文字与摩斯码双向翻译，支持电报音三档速度播放和 WAV 音频下载，附完整字母表点击试听与七天学习计划，免费无需注册",
+        "developerName": "mikewaynecn-cell",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "a9a93171d0c82c",
+        "name": "DIY Calculator",
+        "url": "https://diycalculator.org/",
+        "description": "家装和园艺材料计算器，算碎石、覆盖物、表土、混凝土、瓷砖、铺路石要买多少，边输入边出立方码、吨数、袋数和费用，带示意图，免费无需注册",
+        "developerName": "honghui",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "0574ac3b757050",
+        "name": "Dola AI",
+        "url": "https://www.dolai.video/",
+        "description": "用文字提示或照片生成视频，也可在站内编辑和生成图片",
+        "developerName": "mo-wei-lai",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "dfdfffa76cc4fd",
+        "name": "Free Bubble Letters",
+        "url": "https://freebubbleletters.org/",
+        "description": "泡泡字生成器，输入文字生成可打印的空心大字，一个字母占满一页，适合涂色和布置教室，免费无需注册",
+        "developerName": "honghui",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "258520958dd2cd",
+        "name": "Free Graph Paper",
+        "url": "https://freegraphpaper.org/",
+        "description": "可打印坐标纸生成器，30 多种纸型（坐标纸、点阵纸、五线谱、康奈尔笔记），自定义格子大小后下载矢量 PDF",
+        "developerName": "honghui",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "e35e7039859fa9",
+        "name": "Morse Code",
+        "url": "https://www.morsecodes.org/",
+        "description": "英语摩斯密码翻译与学习网站，输入即时双向互译，附可打印对照表、字母逐个讲解和 SOS 求救信号介绍，符合国际电联 ITU 标准，免费无需注册",
+        "developerName": "mikewaynecn-cell",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "0982362b8fd13b",
+        "name": "Name Tracing",
+        "url": "https://nametracing.org/",
+        "description": "名字描红练习纸生成器，粘贴全班名单一次生成每人一页，支持印刷体和草书，浏览器本地生成 PDF，名字不上传",
+        "developerName": "honghui",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "9661c2eaff3288",
+        "name": "Photo Tea",
+        "url": "https://www.phototea.art/",
+        "description": "通过文字提示编辑照片或生成新图片",
+        "developerName": "mo-wei-lai",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "12c8ea5d5d0ded",
+        "name": "Visual Timer",
+        "url": "https://visualtimer.org/",
+        "description": "可视化倒计时工具，红色圆盘随时间缩小，投屏给孩子和课堂一眼就知道还剩多久；附带弹跳小球 课堂噪音计 和 圣诞倒计时，免费无需注册",
+        "developerName": "honghui",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "41f28a5838b1ea",
+        "name": "Hotel Lobby",
+        "url": "https://hotellobby.video",
+        "description": "一句话生成酒店大堂短片场景的 AI 视频工具，输出以短视频画幅为主，省去剪辑时间",
+        "developerName": "weidacn",
+        "category": "product",
+        "status": "active",
+        "date": "2026-07-21"
+      },
+      {
+        "id": "f62379c70e6f25",
+        "name": "Space Bunny",
+        "url": "https://spacebunny.pro",
+        "description": "用一句话生成短片场景的 AI 视频工具，在多次生成之间保持同一场景的一致性",
+        "developerName": "weidacn",
+        "category": "product",
+        "status": "active",
+        "date": "2026-07-21"
+      },
+      {
+        "id": "69308ab2db0cc7",
+        "name": "大字白板",
+        "url": "https://bigfont.dnskill.cn/",
+        "description": "跟听障老人交流的小程序，将输入文字放大展示方便老人阅读，支持横竖屏、语音输入和交流历史记录，内容不离开本地",
+        "developerName": "chl",
+        "category": "product",
+        "status": "active",
+        "date": "2026-07-17"
+      }
+    ],
+    "removed": [
+      {
+        "id": "349199ef76ac6e",
+        "name": "大字白板",
+        "url": "https://big-font-hero.pages.dev/",
+        "description": "跟听障老人交流的小程序，将输入文字放大展示方便老人阅读，支持横竖屏、语音输入和交流历史记录，内容不离开本地",
+        "developerName": "chl",
+        "category": "product",
+        "status": "active",
+        "date": "2026-07-17"
+      }
+    ],
+    "changed": [
+      {
+        "id": "e0438b7b3e097f",
+        "name": "随机转盘",
+        "url": "https://wheelpage.com/zh/",
+        "description": "自定义多个选项的随机选择工具，适合抽签、随机选择和解决日常选择困难",
+        "developerName": "萝卜",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "e09dad39ee9138",
+        "name": "Flow AI Video",
+        "url": "https://www.flowaivideo.org/",
+        "description": "在线 AI 视频生成工具，支持文字、图片和参考图生成视频，可选择画面比例、分辨率与视频时长",
+        "developerName": "mo-wei-lai",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "6deec8f48b8fe3",
+        "name": "Upscayl AI",
+        "url": "https://www.upscayl.app/",
+        "description": "在线 AI 图片放大与增强工具，支持图片去模糊、老照片修复和背景移除，无需安装桌面软件",
+        "developerName": "mo-wei-lai",
+        "category": "product",
+        "status": "active",
+        "date": "2026-09-29"
+      },
+      {
+        "id": "89aaa6ecd4b9c7",
+        "name": "独立观察",
+        "url": "https://lei1024.github.io/chinese-independent-developer-report/",
+        "description": "把本列表整理成可搜索、可追踪更新的浏览器看板",
+        "developerName": "疯狂的小波",
+        "category": "product",
+        "status": "active",
+        "date": "2024-07-30"
+      },
+      {
+        "id": "832a19f05e97be",
+        "name": "独立星球",
+        "url": "https://du.liuwa.xyz/",
+        "description": "中国独立开发者作品集，按项目浏览与发现",
+        "developerName": "疯狂的小波",
+        "category": "product",
+        "status": "active",
+        "date": "2024-07-30"
+      },
+      {
+        "id": "4189cda9eeb01a",
+        "name": "中国独立开发者项目列表（网页版）",
+        "url": "https://developer.hubing.online/home",
+        "description": "基于本列表数据制作的网页版，开源",
+        "developerName": "疯狂的小波",
+        "category": "product",
+        "status": "active",
+        "date": "2024-07-30"
+      },
+      {
+        "id": "8990b8e89923c4",
+        "name": "AI 独立制造所",
+        "url": "https://indiemaker.cn/",
+        "description": "本列表的可搜索、可筛选、每日自动同步的可视化版本",
+        "developerName": "疯狂的小波",
+        "category": "product",
+        "status": "active",
+        "date": "2024-07-30"
+      },
+      {
+        "id": "36b12fd43626f6",
+        "name": "PackPack",
+        "url": "https://packpack.ai",
+        "description": "AI 驱动的书签管理工具，专为新闻和社交媒体等网络资源定制保存功能。它利用AI清理并保存内容。使用PackPack，彻底改变你的书签管理方式，更智能地管理你的收藏。",
+        "developerName": "Owen Chen",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-29"
+      },
+      {
+        "id": "656760eca92c2b",
+        "name": "Animate Old Photos",
+        "url": "https://animateoldphotos.org/",
+        "description": "利用 AI 让那些定格在老照片中的回忆再次“动起来”，让记忆变得更加生动，回到了过去的美好时光。",
+        "developerName": "Sean",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-26"
+      },
+      {
+        "id": "e2e9e327cd04fa",
+        "name": "MyTracks",
+        "url": "https://apps.apple.com/cn/app/id1464666446",
+        "description": "MyTracks 我的足迹: GPS 记录仪，支持户外地图导航和轨迹记录、徒步登山滑雪路径回溯",
+        "developerName": "7SaiWen",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-26"
+      },
+      {
+        "id": "3be66a1bd79971",
+        "name": "Network Sniffer",
+        "url": "https://apps.apple.com/cn/app/id6450956188",
+        "description": "Network Sniffer 网络抓包工具 HTTP(S)/Socket 抓包,重放重写,网络调试,脚本",
+        "developerName": "7SaiWen",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-24"
+      },
+      {
+        "id": "0af85c86dd49da",
+        "name": "Notion Mate",
+        "url": "https://www.notionmate.top/",
+        "description": "为 Notion 提供 30 多种自定义功能，如大纲（TOC）、小文本、全宽、图像查看器、滚动到顶部、主题等 - Chrome，Edge",
+        "developerName": "Joans",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-24"
+      },
+      {
+        "id": "d202b95c4103e7",
+        "name": "诶嘿(EI)",
+        "url": "https://ei.xcl.ink/",
+        "description": "加密智慧聊天 APP,包含 AI 对话功能、在线、离线语音转文本，跨平台社交 APP - Android，iOS",
+        "developerName": "小草林",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-23"
+      },
+      {
+        "id": "35c2fce34fcac8",
+        "name": "电商优惠券查找脚本",
+        "url": "https://greasyfork.org/zh-CN/scripts/489212",
+        "description": "淘宝、天猫、聚划算、京东商品优惠券查询领取",
+        "developerName": "onesthink",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-20"
+      },
+      {
+        "id": "272de441ceff14",
+        "name": "Airtable iOS Shortcuts Library",
+        "url": "https://shortcuts.sequentialroutine.com",
+        "description": "为 iOS 设备 Airtable 用户设计的快捷指令库，旨在通过一系列快捷指令来简化 Airtable 的使用流程。减少用户手动操作 Airtable 应用，用户可通过设置快捷指令直接创建新记录或执行其他重复性任务",
+        "developerName": "sjdeak",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-20"
+      },
+      {
+        "id": "5c8f5a2552828c",
+        "name": "共鸣 Chat",
+        "url": "https://apps.apple.com/cn/app/id6476399027",
+        "description": "基于 ChatGPT 的 iOS App，你可以用语音或文字跟 GPT 聊天，支持 GPT-3.5，GPT-4，GPT-4o 模型。Token 保持跟官方API 1:1 比例消耗。下载送 2000 Token，每日签到 500 Token，也可以做任务获取 Token，就算不购买 Token 也可以一直白嫖。支持多语音模型，有 GPT 模型和 miniMAX 模型",
+        "developerName": "fengfeng",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-18"
+      },
+      {
+        "id": "62357b1559d40d",
+        "name": "OncePower",
+        "url": "https://github.com/ilgnefz/once_power",
+        "description": "文件和文件夹批量重命名工具，额外添加了批量删除空文件夹和批量移动文件的功能，用户无需学正则表达式既可进行高级匹配。",
+        "developerName": "ilgnefz",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-18"
+      },
+      {
+        "id": "8c71d48dd44613",
+        "name": "值得一读技术博客",
+        "url": "https://daily-blog.chlinlearn.top",
+        "description": "每日分享高质量技术博客，为您精选值得一读的技术博客、技术文档、产品创意。",
+        "developerName": "chlinlearn",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-17"
+      },
+      {
+        "id": "bcbc170a9f3737",
+        "name": "RIZZ AI",
+        "url": "https://rizzai.ai/",
+        "description": "AI 约会助手",
+        "developerName": "xiaoxusdz",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-15"
+      },
+      {
+        "id": "208576c81bc863",
+        "name": "X Detector",
+        "url": "https://xdetector.ai/",
+        "description": "检测文字是否由 AI 编写，AI ​​内容检测器",
+        "developerName": "xiaoxusdz",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-15"
+      },
+      {
+        "id": "d34d4f39ad3ce0",
+        "name": "壁纸千寻",
+        "url": "https://apps.apple.com/app/id6504430291",
+        "description": "免费下载手机壁纸，每日自动更新",
+        "developerName": "Shawn",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-14"
+      },
+      {
+        "id": "e93f95ea3791da",
+        "name": "小报童专栏导航",
+        "url": "https://xiaobaot.cn/",
+        "description": "为你筛选值得订阅的小报童优质专栏",
+        "developerName": "约翰",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-13"
+      },
+      {
+        "id": "b7029b5b62c751",
+        "name": "韶光日记",
+        "url": "https://gxspp.site/",
+        "description": "记录故事的时间轴日记",
+        "developerName": "xiaosong gao",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-11"
+      },
+      {
+        "id": "6b32d122eff9ae",
+        "name": "EcoPaste",
+        "url": "https://github.com/ayangweb/EcoPaste",
+        "description": "多平台剪切板管理工具（开源）",
+        "developerName": "ayangweb",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-10"
+      },
+      {
+        "id": "30dddaa6f3b8f4",
+        "name": "FurryAI",
+        "url": "https://www.furryaiart.com",
+        "description": "生成毛茸茸艺术品的 AI 创作平台，根据文本描述生成毛茸茸的艺术品。",
+        "developerName": "Q-Sansan",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-09"
+      },
+      {
+        "id": "eeb25662ee7ee5",
+        "name": "Work Panel",
+        "url": "https://chromewebstore.google.com/detail/work-panel/blomlkfbgepjlmmggfkegbgielelocef?hl=zh-CN&utm_source=ext_sidebar",
+        "description": "可视化时间流逝工作面板，致力于每日高效工作四小时，工作生活平衡，拒绝996文化",
+        "developerName": "风决子",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-07-08"
+      },
+      {
+        "id": "b3e5185901a0d6",
+        "name": "即时热点",
+        "url": "http://nowhots.com",
+        "description": "热门信息聚合站，帮助您轻松了解正在发生的事",
+        "developerName": "Funny",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-06"
+      },
+      {
+        "id": "5c2ba3c5483670",
+        "name": "AI WITH.ME",
+        "url": "https://aiwith.me",
+        "description": "AI 导航站，现在是免费提交，自动化截图，站点信息 AI 汇总生成，Google 登录，仅收录 AI 产品",
+        "developerName": "AwesomeYang",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-06"
+      },
+      {
+        "id": "27c8f149d9063b",
+        "name": "AI Filter",
+        "url": "https://aifilter.net",
+        "description": "用 AI 滤镜将你的照片变换为动漫、粘土、3D、像素、表情符号、视频游戏、贴纸等多种滤镜风格",
+        "developerName": "Ethan Sunray",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-03"
+      },
+      {
+        "id": "d04130cfe84cb1",
+        "name": "Midjourney 样式代码库",
+        "url": "https://srefhunter.top/",
+        "description": "SrefHunter 汇集各种社交媒体平台的 Midjourney 样式代码",
+        "developerName": "xvoy",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-02"
+      },
+      {
+        "id": "e4102eded41eb8",
+        "name": "Replay Text Actions",
+        "url": "https://chromewebstore.google.com/detail/replay-text-actions/ohkipcncfnmjoeneihmglaadloddopkg?authuser=0&hl=zh-CN",
+        "description": "能缓存输入文案、操作流程自动化的 Chrome 插件",
+        "developerName": "wtechtec",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-07-02"
+      },
+      {
+        "id": "cb1d0e799688fa",
+        "name": "mpmd",
+        "url": "https://mpmd.pages.dev",
+        "description": "利用 Markdown 编辑微信公众号文章的浏览器插件，轻松创作引人入胜的微信公众号图文内容。该插件集成了功能强大的 Markdown 编辑器和主流图片托管平台，并支持使用官方微信公众号图片托管服务，让您免费存储图片，助您高效创作图文内容",
+        "developerName": "Honwhy Wang",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-30"
+      },
+      {
+        "id": "458bc7f1343bf1",
+        "name": "三点划线",
+        "url": "https://chromewebstore.google.com/detail/%E4%B8%89%E7%82%B9%E5%88%92%E7%BA%BF/enindkdbeijhhoeedocjehpflljhhoho",
+        "description": "(Chrome 插件) 边阅读边划线、记录想法，不间断地捕捉灵感",
+        "developerName": "biboom",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-28"
+      },
+      {
+        "id": "31ef5d719fcbec",
+        "name": "微软 TTS (Text-to-Speech) 文字转语音下载器",
+        "url": "https://www.microsoft-tts-downloader.com",
+        "description": "一键播放或下载 微软 TTS 文字转语音 合成的音频。支持所有官方提供的语音和声音选项。支持SSML语法。每月享免费用量。量大者可升级Pro Plan，固定便宜费用无限使用。摒弃按量收费。支持支付宝",
+        "developerName": "Andres Rivas",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-27"
+      },
+      {
+        "id": "b277d7517ce816",
+        "name": "AITOOLIST",
+        "url": "https://aitoolist.com/",
+        "description": "AI 信息聚合平台，在一个网站获取所有 AI 信息",
+        "developerName": "Johnny Yang",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-24"
+      },
+      {
+        "id": "d7f43fc40e75e0",
+        "name": "m3u8下载器",
+        "url": "https://github.com/youwen21/flybird-m3u8downloader",
+        "description": "下载 m3u8 视频、直播、批量检测 IPTV m3u8 有效性，release有安装包。 支持 Windows, macOS 系统。",
+        "developerName": "未知开发者",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-23"
+      },
+      {
+        "id": "1cc7e327795531",
+        "name": "Group Tab Tree",
+        "url": "https://marketplace.visualstudio.com/items?itemName=Herzshen.mgtab",
+        "description": "VSCode插件，帮助用户轻松找到自己打开的Tab标签。",
+        "developerName": "wtechtec",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-22"
+      },
+      {
+        "id": "673fef8eafb293",
+        "name": "saysnap",
+        "url": "https://chromewebstore.google.com/detail/saysnap/nodnlkmbcbkndbpgaopecgjpffhijkda?authuser=0&hl=zh-CN",
+        "description": "Chrome 插件，帮助用户在网上冲浪时轻松发现并保存有趣的观点和句子到卡片中。",
+        "developerName": "wtechtec",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-22"
+      },
+      {
+        "id": "d707831d53a137",
+        "name": "PixarAI",
+        "url": "https://www.pixarai.com/",
+        "description": "为您最喜欢的角色或宠物 生成令人惊叹的迪士尼皮克斯风格的海报。",
+        "developerName": "Q-Sansan",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-21"
+      },
+      {
+        "id": "bff11729a64646",
+        "name": "AigoTools",
+        "url": "https://www.aigotools.com",
+        "description": "导航站，用 AI 自动收录网站信息",
+        "developerName": "someu",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-20"
+      },
+      {
+        "id": "5cb8f8a1d500b9",
+        "name": "billd-desk",
+        "url": "https://desk.hsslive.cn",
+        "description": "仿 todesk 的远程桌面",
+        "developerName": "hsslive",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-20"
+      },
+      {
+        "id": "40d8962d9c71af",
+        "name": "billd-live",
+        "url": "https://live.hsslive.cn",
+        "description": "仿 B 站的个人直播间",
+        "developerName": "hsslive",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-20"
+      },
+      {
+        "id": "4d99c7933d3e15",
+        "name": "Case Convert Online",
+        "url": "https://convertcase.indiehacker.online/",
+        "description": "英文大小写转换工具",
+        "developerName": "August",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-06-20"
+      },
+      {
+        "id": "91f97540e5bfe3",
+        "name": "Dubbo-Desktop-Manager",
+        "url": "https://github.com/qiaolin-li/dubbo-desktop-manager",
+        "description": "Dubbo 的桌面管理软件",
+        "developerName": "qiaolin",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-20"
+      },
+      {
+        "id": "e763a4e3adb71c",
+        "name": "小红书去水印图片视频下载",
+        "url": "https://www.xhs-download.online/",
+        "description": "小红书去水印图片视频下载工具网站",
+        "developerName": "诸葛子房",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-19"
+      },
+      {
+        "id": "b0da7d5f365b58",
+        "name": "MermaidHelp",
+        "url": "https://mermaid.shizhuoran.top/",
+        "description": "Mermaid + AI绘制流程图，免翻墙，免费，目前用的 KIMI",
+        "developerName": "没想好",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-19"
+      },
+      {
+        "id": "c75d6ffb87f8d7",
+        "name": "aifly.tools",
+        "url": "https://aifly.tools/",
+        "description": "最好的 AI 工具站 - 收集最全最新的 AI 工具站",
+        "developerName": "Civilpy",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-18"
+      },
+      {
+        "id": "ccfcfda064822f",
+        "name": "Trace",
+        "url": "https://github.com/yeayee/Trace",
+        "description": "封装 QQ + 微信聊天记录分析的 Windows 桌面应用，封装 QQ + 微信聊天记录分析、B站、小红书竞调数据分析、Selenium+谷歌浏览器（准指纹浏览器，不限登录账号数量）",
+        "developerName": "Civilpy",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-06-18"
+      },
+      {
+        "id": "ef3ce8c8620fb7",
+        "name": "快图批量图片设计工具",
+        "url": "https://www.kuaitu.cc/",
+        "description": "可通过表格 + 设计模板来批量生成图片",
+        "developerName": "秦少卫",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-17"
+      },
+      {
+        "id": "aa58e706e54b31",
+        "name": "html2image",
+        "url": "https://html2image.online/",
+        "description": "通过提供的在线代码编辑器，轻松将 HTML 和 CSS 代码转换为及时预览图像，并可以下载存储为 SVG、PNG 和 JPEG 格式的图像文件",
+        "developerName": "Godow",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-06-14"
+      },
+      {
+        "id": "2c7766b3173023",
+        "name": "IDjpg 图片风格化",
+        "url": "https://idjpg.com",
+        "description": "将人像图片转换成任意风格，同时保持人物一致性",
+        "developerName": "jpgHi / IDjpg",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-14"
+      },
+      {
+        "id": "3144ab374607cc",
+        "name": "jpgHi 图片魔法放大",
+        "url": "https://jpghi.com",
+        "description": "无损放大加增强图片，恢复图像极致细节和纹理",
+        "developerName": "jpgHi / IDjpg",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-14"
+      },
+      {
+        "id": "4df95c99d88c11",
+        "name": "全王探测-直播源搜索神器",
+        "url": "https://qwtc.cc/",
+        "description": "网站的核心是针对特定的区域范围进行 IP 探测，用于挖掘互联网中各种各样的价值 IP，相当于增强版 fofa。内置多种黑科技功能：直播源搜索，直播源解析，直播源探测，直播源追踪，也支持非直播源的其他类型的IP查找，比如，漏洞捕获、优选IP、CDN溯源等等",
+        "developerName": "G",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-07"
+      },
+      {
+        "id": "d035f82813eb7e",
+        "name": "HelthPal",
+        "url": "https://chromewebstore.google.com/detail/helthpal/jnkkhbadiacplpihlilbgnjikcecjeno?hl=zh-CN&authuser=0",
+        "description": "自定义健康提醒以及多色便签条提醒功能的 Chrome 插件",
+        "developerName": "wtechec",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-07"
+      },
+      {
+        "id": "8dc769e6d4e5fe",
+        "name": "猫九壁纸精选",
+        "url": "http://xiaocp.oss-cn-shenzhen.aliyuncs.com/images/applet/wx_cat9.jpeg",
+        "description": "精选高清手机壁纸、美女壁纸、情侣壁纸、锁屏壁纸、头像、表情包、风景壁纸、情侣头像。(微信小程序)",
+        "developerName": "猫九壁纸",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-06"
+      },
+      {
+        "id": "1d17eeef6f8b7e",
+        "name": "微信助手",
+        "url": "https://github.com/yzqzy/wechat-assistant",
+        "description": "支持群发消息、定时任务、消息防撤回、聊天记录备份等功能",
+        "developerName": "yzqzy",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-06-03"
+      },
+      {
+        "id": "da9b101331cf7c",
+        "name": "原色",
+        "url": "https://r0jo31c9rsb.feishu.cn/docx/YcSzdcXkGoymXbxsJIAcWB7ZnwU",
+        "description": "简洁的颜色查询工具，基于中国传统色",
+        "developerName": "禄眠",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-06-03"
+      },
+      {
+        "id": "217a07ee0e6427",
+        "name": "封面图",
+        "url": "https://spacexcode.com/coverview",
+        "description": "封面图在线制作工具",
+        "developerName": "fantingsheng",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-28"
+      },
+      {
+        "id": "e38fc9a36de0d8",
+        "name": "好说",
+        "url": "https://haoshuo.cc/",
+        "description": "二次元数字人 AI 口语陪练，支持英语、日语、韩语、法语(APP)",
+        "developerName": "刚师傅",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-24"
+      },
+      {
+        "id": "19f9f2b9838d97",
+        "name": "便签喵",
+        "url": "https://www.zhimiaox.cn/images/bqm.jpg",
+        "description": "联动桌面设备的便签待办小工具(微信小程序)",
+        "developerName": "倒霉狐狸",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-23"
+      },
+      {
+        "id": "4c82c7a99ca7a3",
+        "name": "倒数鸭",
+        "url": "https://apps.apple.com/cn/app/%E5%80%92%E6%95%B0%E9%B8%AD/id6457201223",
+        "description": "倒数正数纪念日 StandBy 待机显示小组件",
+        "developerName": "Yefei",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-22"
+      },
+      {
+        "id": "0dae8ff82770e8",
+        "name": "千盒工具",
+        "url": "https://1000tool.com/",
+        "description": "简洁好用，优质在线工具大全，包含图片/音视频/文本/办公/开发等类目。",
+        "developerName": "诸葛喵",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-22"
+      },
+      {
+        "id": "6757c8ae903cb5",
+        "name": "小红书视频封面下载谷歌浏览器插件",
+        "url": "https://chromewebstore.google.com/detail/%E5%B0%8F%E7%BA%A2%E4%B9%A6%E8%A7%86%E9%A2%91%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E5%85%8D%E8%B4%B9%E8%A7%86%E9%A2%91%E5%9B%BE%E7%89%87%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/lfkdbogbagdclonopjbdbclpagbkdfal?hl=zh-CN&authuser=0",
+        "description": "小红书视频封面下载 - 使用教程",
+        "developerName": "诸葛子房",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-21"
+      },
+      {
+        "id": "96032627ff0b48",
+        "name": "小宇宙播客下载谷歌浏览器插件",
+        "url": "https://chromewebstore.google.com/detail/%E5%B0%8F%E5%AE%87%E5%AE%99%E6%92%AD%E5%AE%A2%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7%E2%80%94%E2%80%94%E5%85%8D%E8%B4%B9%E6%92%AD%E5%AE%A2%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/fmhjloodnnppohffjjpjghekafcjdgml?hl=zh-CN&authuser=0",
+        "description": "小宇宙播客下载 - 使用教程",
+        "developerName": "诸葛子房",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-21"
+      },
+      {
+        "id": "93fbd9fc1335a8",
+        "name": "AutoFit 浏览器插件",
+        "url": "https://chromewebstore.google.com/detail/autofit/ablniobpojpaihhohacpjhgcbnkhmfeo?hl=zh-CN&utm_source=ext_sidebar",
+        "description": "使网页根据浏览器窗口缩放",
+        "developerName": "Larry Zhu",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-21"
+      },
+      {
+        "id": "e1e7259cb3fb53",
+        "name": "AIMangaTranslator",
+        "url": "https://aimangatranslator.com/",
+        "description": "用 AI 翻译漫画",
+        "developerName": "sagasu",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-20"
+      },
+      {
+        "id": "24e7c0bbdd7c52",
+        "name": "bilibili 视频下载谷歌浏览器插件",
+        "url": "https://chromewebstore.google.com/detail/bilibili%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E2%80%94%E2%80%94%E6%9C%80%E6%96%B0%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD%E6%96%B9%E6%B3%95%E5%92%8C%E5%B7%A5%E5%85%B7/bjoodghhkboffngfjancdaplbjjibjnp?hl=zh-CN&authuser=0",
+        "description": "bilibili 视频和封面下载",
+        "developerName": "诸葛子房",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-17"
+      },
+      {
+        "id": "926e070b11ce06",
+        "name": "Bunpou",
+        "url": "https://luhaifeng666.github.io/bunpou/",
+        "description": "日语语法整理，收录 N5-N1 阶段的语法，目前在持续更新。",
+        "developerName": "luhaifeng666",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-17"
+      },
+      {
+        "id": "eaa430b2a11171",
+        "name": "Dataflare",
+        "url": "https://dataflare.app",
+        "description": "简单、易于使用的数据库管理工具，支持 PostgreSQL MySQL SQLite SQL Server libSQL Cloudflare D1 等数十种数据库。",
+        "developerName": "Dataflare",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-17"
+      },
+      {
+        "id": "8f5e5b37d59360",
+        "name": "Kana playground",
+        "url": "https://luhaifeng666.github.io/kana-playground/",
+        "description": "用于练习假名的网站，适合日语学习新手。",
+        "developerName": "luhaifeng666",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-17"
+      },
+      {
+        "id": "9b70a3148c90c5",
+        "name": "Miko AI 翻译",
+        "url": "https://chatmiko.com",
+        "description": "AI翻译工具，每次支持 10 万字，30 种语言，次数不限且完全免费",
+        "developerName": "Aissen",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-15"
+      },
+      {
+        "id": "4915c91f2e793d",
+        "name": "sg-exam",
+        "url": "https://yunmianshi.com.cn/#/home",
+        "description": "教学管理平台（便捷、高效)，涵盖在线考试、日常练习、互动学习等核心功能。",
+        "developerName": "wells2333",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-15"
+      },
+      {
+        "id": "a2ee3736d0318b",
+        "name": "OMP",
+        "url": "https://nini22p.github.io/omp/",
+        "description": "网页端 OneDrive 媒体播放器",
+        "developerName": "nini22P",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-14"
+      },
+      {
+        "id": "9cfc31a4f27aea",
+        "name": "厨房定时器",
+        "url": "https://timing.cpdd.cool/",
+        "description": "针对移动端，滑动操作。",
+        "developerName": "gofxas",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-13"
+      },
+      {
+        "id": "b91195161b62d8",
+        "name": "中国色",
+        "url": "https://chinese-colors.com",
+        "description": "中国传统色，后续会添加故宫色等功能",
+        "developerName": "azhubaby",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-13"
+      },
+      {
+        "id": "4d5fc60b299864",
+        "name": "APK DOWNLOAD",
+        "url": "https://apk.bot/",
+        "description": "安卓 apk 下载站 (免费)，无广告绿色版，完美替代 Google Play Store",
+        "developerName": "fengmao",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-13"
+      },
+      {
+        "id": "e38018b586806b",
+        "name": "Rap Generator",
+        "url": "https://rapgenerator.net/",
+        "description": "生成说唱歌词和歌曲的免费 AI 工具，用户可以输入提示词，选择情绪，生成符合描述的个性化的歌词，并可以根据歌词选择免费创建两首定制的说唱歌曲。可以免费下载和收听人工智能生成的说唱歌曲。希望让每一个 Rap 音乐爱好者能轻松地创作自己喜欢的音乐",
+        "developerName": "bairdhh",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-11"
+      },
+      {
+        "id": "e075c6ae42a4c1",
+        "name": "Brick Center",
+        "url": "https://www.brickcenter.net/",
+        "description": "如果您是一位乐高爱好者，热衷与创造各种乐高形象，BrickCenter 可以将您的创意，自动生成乐高设计图。AI 乐高生成器可以将你的文字转换成定制的乐高套装。轻松地从照片创建你自己的小人偶，如果您觉得乐高头像很酷，也可以将您的自拍图片，生成乐高头像。还可以来网站浏览由爱好者精心制作的独一无二的乐高作品",
+        "developerName": "Q-Sansan",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-09"
+      },
+      {
+        "id": "48f67c41b5e5ac",
+        "name": "梦幻工坊",
+        "url": "https://apps.apple.com/cn/app/id6483932773",
+        "description": "AI 绘画，基于MJ/SD/DallE，免翻墙，免费",
+        "developerName": "fengfeng",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-06"
+      },
+      {
+        "id": "647e3e19a3f2ea",
+        "name": "微寻",
+        "url": "https://weixunlogin.com",
+        "description": "为个人网站提供微信扫码登录能力",
+        "developerName": "星辰",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-06"
+      },
+      {
+        "id": "7fa53354ced11a",
+        "name": "ImageTools",
+        "url": "https://ai-image.tools",
+        "description": "去除肖像背景、去除常见物体背景以及替换背景等功能的免费 AI 工具",
+        "developerName": "handsometong",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-06"
+      },
+      {
+        "id": "7b6997dda4de49",
+        "name": "言叶",
+        "url": "https://meiyan.tech/app/home?app=note&lang=zh_CN",
+        "description": "Android 笔记软件、Markdown 笔记、快速笔记，支持云同步，笔记以 md 或者其他格式文件的形式进行存储，支持多层级目录和标签两种笔记管理方式，可以用来和其他平台的笔记软件通过数据同步搭配使用。",
+        "developerName": "wish",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-05"
+      },
+      {
+        "id": "d7add027c635d5",
+        "name": "英语汪",
+        "url": "https://meiyan.tech/app/home?app=english&lang=en",
+        "description": "英语单词查询、句子翻译和复习工具，个人英语单词本。应用基于热力图设计，支持 Android 和 iOS 版本，支持沉浸式翻译和文字扫描。",
+        "developerName": "wish",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-05"
+      },
+      {
+        "id": "296b9e6151a8f3",
+        "name": "Any Secret",
+        "url": "https://apps.apple.com/cn/app/any-secret/id6448714682",
+        "description": "适用于 iOS 平台的密码管理软件，支持云同步、独立密码。",
+        "developerName": "wish",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-05-05"
+      },
+      {
+        "id": "04aa18722c1e6b",
+        "name": "iMessage AI 助手",
+        "url": "https://stockai.trade/chat",
+        "description": "无需安装 App，无需翻墙，用苹果设备的 iMessage 直接与原生 ChatGPT 对话",
+        "developerName": "yvonuk",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-05-01"
+      },
+      {
+        "id": "c0973bd57378ea",
+        "name": "IP Address Lookup",
+        "url": "https://ipaddress.fun/",
+        "description": "IP 地址查询工具（免费快捷），展示全面的 IP 信息（地理位置、连接信息、安全信息、货币、时区、经纬度等）",
+        "developerName": "Aissen",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-30"
+      },
+      {
+        "id": "4154cf253c7b7c",
+        "name": "tieba-toolbox",
+        "url": "https://tbt.dilettante258.cyou/",
+        "description": "贴吧工具箱 (Node.js 全栈实现)，可查发言和数据可视化，二开 API 接口已开源，高性能的爬虫替代",
+        "developerName": "Dilettante258",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-30"
+      },
+      {
+        "id": "0032c0f979d3b7",
+        "name": "几枝",
+        "url": "https://jz.imxie.club/",
+        "description": "小众诗词应用",
+        "developerName": "谢广志",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-28"
+      },
+      {
+        "id": "348620a077eb8a",
+        "name": "微思文稿",
+        "url": "https://vslide.cn/dataviz/",
+        "description": "零代码快速制作交互式数据可视化图表",
+        "developerName": "Shalom",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-28"
+      },
+      {
+        "id": "fef1e4174e688c",
+        "name": "小作卡片",
+        "url": "https://kosaku.imxie.club/",
+        "description": "专为生成优雅的卡片而设计的 App",
+        "developerName": "谢广志",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-28"
+      },
+      {
+        "id": "3d01be542f4a88",
+        "name": "AI Image Description Generator",
+        "url": "https://imagedescriptiongenerator.xyz/",
+        "description": "精准提取图片中的主要元素，解读图片创作目的；可用于科研、艺术创作中图文互搜领域",
+        "developerName": "ShurshanX",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-28"
+      },
+      {
+        "id": "be2443271bdf00",
+        "name": "typing-word",
+        "url": "https://typing-word.ttentau.top/",
+        "description": "在电脑上背单词、学英语、练习文章的网站",
+        "developerName": "zyronon",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-26"
+      },
+      {
+        "id": "85bbcd3bdb4c83",
+        "name": "图生代码",
+        "url": "https://www.octopus31.com/code/generate",
+        "description": "高技术力：根据截图一键生成前端代码，大幅缩减 UI 开发周期，具有极强的工程应用价值。",
+        "developerName": "octopus331",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-25"
+      },
+      {
+        "id": "e6427f10e9a257",
+        "name": "兔兔答题",
+        "url": "https://www.tutudati.com",
+        "description": "考试答题系统，可用于微信考试、付费考试、社会调查问卷、明星知识问答、员工培训考核、模拟自测、企业面试、试题库等多种场景。支持一键导入、智能判卷、试后分析、不限终端等功能。",
+        "developerName": "7small7",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-25"
+      },
+      {
+        "id": "246ffe3adda42a",
+        "name": "FunClip",
+        "url": "https://modelscope.cn/studios/iic/funasr_app_clipvideo/summary",
+        "description": "最强剪辑：集成阿里 FunASR 模型，通过修改文本即可剪辑视频，极具商业与效率价值。",
+        "developerName": "R1ckShi",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-25"
+      },
+      {
+        "id": "84574c40e46ef7",
+        "name": "OVO Tab",
+        "url": "https://www.waylon.online/ovotab/newtab.html",
+        "description": "管理您的新标签页，支持免费的 ChatGPT、管理书签、海量壁纸、PDF 转换、数据云同步等多种功能",
+        "developerName": "waylonzheng",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-25"
+      },
+      {
+        "id": "688f310d8ac63c",
+        "name": "SubRenamer",
+        "url": "https://github.com/qwqcode/SubRenamer",
+        "description": "字幕文件批量改名工具",
+        "developerName": "qwqcode",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-25"
+      },
+      {
+        "id": "b2b306283645fc",
+        "name": "谷歌浏览器 OCR 插件",
+        "url": "https://chromewebstore.google.com/detail/ocr/cglnhoallkkhcelfbcdaglcioccollfb?hl=zh-CN&authuser=0",
+        "description": "截图识别图片为文字的 OCR 插件",
+        "developerName": "诸葛子房",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-24"
+      },
+      {
+        "id": "9b5342fb542cf4",
+        "name": "实时金价",
+        "url": "https://goldprice.fun",
+        "description": "简洁直观的黄金价格查询网站",
+        "developerName": "Aissen",
+        "category": "archive",
+        "status": "closed",
+        "date": "2024-04-24"
+      },
+      {
+        "id": "5b60f5a7f4b8de",
+        "name": "侠客日记",
+        "url": "https://github.com/Yu-Core/SwashbucklerDiary",
+        "description": "本地日记 App（开源、跨平台）",
+        "developerName": "Yu-Core",
+        "category": "archive",
+        "status": "active",
+        "date": "2024-04-24"
+      }
+    ]
   },
   "tools": {
     "previousCount": 284,
