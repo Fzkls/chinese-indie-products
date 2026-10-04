@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "generatedAt": "2026-10-04T08:14:15.794Z",
+    "cadence": "daily",
+    "retention": "permanent",
+    "sharding": "year",
+    "note": "GitHub snapshots are retained permanently in yearly shards; missing dates are not interpolated."
+  },
+  "years": [
+    2026
+  ]
+}

@@ -113,6 +113,39 @@
               <div class="github-activity-grid" id="product-github-activity"></div>
             </article>
           </div>
+          <section class="github-trend-section" id="product-github-trends" aria-labelledby="product-github-trend-title">
+            <div class="github-trend-heading">
+              <div>
+                <p class="eyebrow">GITHUB TREND</p>
+                <h3 id="product-github-trend-title">GitHub 增长趋势</h3>
+                <p>基于本站持续保存的 GitHub 快照，观察 Star、Fork 与代码更新变化。</p>
+              </div>
+              <div class="github-trend-tabs" role="tablist" aria-label="GitHub 趋势时间范围">
+                <button class="github-trend-tab active" type="button" role="tab" aria-selected="true" data-github-trend-range="7d">近 7 日</button>
+                <button class="github-trend-tab" type="button" role="tab" aria-selected="false" data-github-trend-range="month">本月</button>
+              </div>
+            </div>
+            <div class="github-trend-metrics">
+              <article class="github-trend-metric"><span>Star 净增</span><strong id="product-trend-stars">—</strong><small>可比较仓库累计</small></article>
+              <article class="github-trend-metric"><span>Fork 净增</span><strong id="product-trend-forks">—</strong><small>可比较仓库累计</small></article>
+              <article class="github-trend-metric"><span>增长仓库</span><strong id="product-trend-growing">—</strong><small>Star 净增长大于 0</small></article>
+              <article class="github-trend-metric"><span>有代码更新</span><strong id="product-trend-updated">—</strong><small>周期内发生 push</small></article>
+            </div>
+            <div class="github-trend-grid">
+              <article class="chart-panel github-trend-chart-panel">
+                <div class="panel-heading">
+                  <div><h3>Star 增量趋势</h3><p id="product-trend-chart-note">正在读取历史快照…</p></div>
+                  <span class="chart-total" id="product-trend-range-label">—</span>
+                </div>
+                <div class="github-trend-chart" id="product-github-trend-chart" aria-label="GitHub Star 增量趋势图"></div>
+              </article>
+              <article class="chart-panel github-growth-panel">
+                <div class="panel-heading"><div><h3>增长最快项目</h3><p>按当前时间范围内的 Star 净增排序</p></div></div>
+                <div class="github-growth-list" id="product-github-growth-ranking"></div>
+              </article>
+            </div>
+            <p class="github-trend-footnote" id="product-github-trend-footnote">历史缺失日期不会插值；上线后将按日形成连续快照。</p>
+          </section>
         </div>
       </section>
 
