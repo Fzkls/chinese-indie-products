@@ -1,4 +1,5 @@
 import './taxonomy-insights.js'
+import { aggregateSnapshotIntervals, snapshotWindowTrend } from './trend-utils.js'
 
 const RESERVED_GITHUB_OWNERS = new Set(['about', 'apps', 'blog', 'collections', 'enterprise', 'events', 'explore', 'features', 'issues', 'marketplace', 'orgs', 'pricing', 'pulls', 'search', 'settings', 'sponsors', 'topics', 'trending'])
 const ACTIVITY_LABELS = {
@@ -10,7 +11,7 @@ const ACTIVITY_LABELS = {
   unavailable: '无可用仓库',
   unknown: '更新时间未知'
 }
-const insightState = { products: [], tools: [], repositories: {}, githubMetadata: {} }
+const insightState = { products: [], tools: [], repositories: {}, githubHistory: {}, githubMetadata: {}, trendRange: '7d' }
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
 const formatCompact = (value) => new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) || 0)
 const escapeHtml = (value = '') => String(value).replace(/[&<>'"]/g, (char) => {
@@ -133,6 +134,171 @@ function renderActivity(id, items) {
     </div>`).join('') || '<div class="empty-state"><strong>当前筛选暂无仓库活跃度数据</strong></div>'
 }
 
+function chinaDateLabel(date = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Shanghai',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit'
+  }).formatToParts(date)
+  const values = Object.fromEntries(parts.map((part) => [part.type, part.value]))
+  return `${values.year}-${values.month}-${values.day}`
+}
+
+function shiftDateLabel(dateLabel, days) {
+  const date = new Date(dateLabel + 'T00:00:00Z')
+  date.setUTCDate(date.getUTCDate() + days)
+  return date.toISOString().slice(0, 10)
+}
+
+function trendRangeBounds(range) {
+  const endDate = chinaDateLabel()
+  return {
+    startDate: range === 'month' ? endDate.slice(0, 8) + '01' : shiftDateLabel(endDate, -6),
+    endDate
+  }
+}
+
+function shortDate(dateLabel) {
+  const [, month, day] = dateLabel.split('-')
+  return `${Number(month)}/${Number(day)}`
+}
+
+function formatSigned(value) {
+  const number = Number(value) || 0
+  return `${number > 0 ? '+' : ''}${formatCompact(number)}`
+}
+
+function productTrendRows(items, startDate, endDate) {
+  return items
+    .map((item) => {
+      const trend = snapshotWindowTrend(insightState.githubHistory[item.key] || [], startDate, endDate)
+      if (!trend) return null
+      return { ...item, trend }
+    })
+    .filter(Boolean)
+}
+
+function renderTrendChart(series) {
+  const container = document.getElementById('product-github-trend-chart')
+  if (!container) return
+  if (!series.length) {
+    container.innerHTML = '<div class="github-trend-empty">当前时间范围内还没有足够的连续快照形成趋势。</div>'
+    return
+  }
+
+  const width = 760
+  const height = 250
+  const pad = { top: 22, right: 22, bottom: 42, left: 46 }
+  const plotWidth = width - pad.left - pad.right
+  const plotHeight = height - pad.top - pad.bottom
+  const values = series.map((item) => item.starDelta)
+  let min = Math.min(0, ...values)
+  let max = Math.max(0, ...values)
+  if (min === max) max = min + 1
+  const span = max - min
+  const x = (index) => pad.left + (series.length === 1 ? plotWidth / 2 : index / (series.length - 1) * plotWidth)
+  const y = (value) => pad.top + (max - value) / span * plotHeight
+  const zeroY = y(0)
+  const points = series.map((item, index) => `${x(index)},${y(item.starDelta)}`).join(' ')
+  const areaPoints = series.length > 1
+    ? `${pad.left},${zeroY} ${points} ${pad.left + plotWidth},${zeroY}`
+    : ''
+  const labelEvery = Math.max(1, Math.ceil(series.length / 7))
+
+  const horizontalGuides = [0, .25, .5, .75, 1].map((ratio) => {
+    const guideY = pad.top + ratio * plotHeight
+    const guideValue = max - ratio * span
+    return `<line class="trend-grid-line" x1="${pad.left}" y1="${guideY}" x2="${pad.left + plotWidth}" y2="${guideY}"></line>
+      <text class="trend-value-label" x="${pad.left - 8}" y="${guideY + 3}" text-anchor="end">${escapeHtml(formatCompact(Math.round(guideValue)))}</text>`
+  }).join('')
+
+  const dateLabels = series.map((item, index) => {
+    if (index % labelEvery !== 0 && index !== series.length - 1) return ''
+    return `<text class="trend-axis-label" x="${x(index)}" y="${height - 13}" text-anchor="middle">${escapeHtml(shortDate(item.date))}</text>`
+  }).join('')
+
+  const circles = series.map((item, index) => `<circle class="trend-point" cx="${x(index)}" cy="${y(item.starDelta)}" r="4">
+      <title>${escapeHtml(item.date)} · Star ${escapeHtml(formatSigned(item.starDelta))}${item.intervalDays > 1 ? ` · ${item.intervalDays} 天区间累计` : ''}</title>
+    </circle>`).join('')
+
+  container.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="GitHub Star 增量趋势">
+    ${horizontalGuides}
+    <line class="trend-zero-line" x1="${pad.left}" y1="${zeroY}" x2="${pad.left + plotWidth}" y2="${zeroY}"></line>
+    ${areaPoints ? `<polygon class="trend-area" points="${areaPoints}"></polygon>` : ''}
+    ${series.length > 1 ? `<polyline class="trend-line" points="${points}"></polyline>` : ''}
+    ${circles}
+    ${dateLabels}
+  </svg>`
+}
+
+function renderGrowthRanking(rows) {
+  const container = document.getElementById('product-github-growth-ranking')
+  if (!container) return
+  const ranked = [...rows]
+    .filter((item) => item.trend.starDelta > 0 || item.trend.forkDelta > 0)
+    .sort((a, b) => b.trend.starDelta - a.trend.starDelta || b.trend.forkDelta - a.trend.forkDelta)
+    .slice(0, 10)
+
+  container.innerHTML = ranked.length
+    ? ranked.map((item, index) => {
+        const name = item.record.productName
+        return `<button class="github-growth-row" type="button" data-record-name="${escapeHtml(name)}" title="${escapeHtml(item.repository.fullName)}">
+          <span class="github-growth-rank">${String(index + 1).padStart(2, '0')}</span>
+          <span class="github-growth-main"><strong class="github-growth-name">${escapeHtml(name)}</strong><small class="github-growth-repo">${escapeHtml(item.repository.fullName)}</small></span>
+          <span class="github-growth-value"><strong>${escapeHtml(formatSigned(item.trend.starDelta))} ★</strong><small>${escapeHtml(formatSigned(item.trend.forkDelta))} Fork</small></span>
+        </button>`
+      }).join('')
+    : '<div class="github-trend-empty">当前时间范围内暂无正向 GitHub 增长。</div>'
+  bindRecordNavigation(container, 'product')
+}
+
+function renderProductTrend(items) {
+  const { startDate, endDate } = trendRangeBounds(insightState.trendRange)
+  const rows = productTrendRows(items, startDate, endDate)
+  const starDelta = rows.reduce((sum, item) => sum + item.trend.starDelta, 0)
+  const forkDelta = rows.reduce((sum, item) => sum + item.trend.forkDelta, 0)
+  const growing = rows.filter((item) => item.trend.starDelta > 0).length
+  const updated = items.filter((item) => {
+    const pushedDate = item.repository.pushedAt?.slice(0, 10)
+    return pushedDate && pushedDate >= startDate && pushedDate <= endDate
+  }).length
+  const series = aggregateSnapshotIntervals(
+    items.map((item) => insightState.githubHistory[item.key] || []),
+    startDate,
+    endDate
+  )
+
+  setText('product-trend-stars', formatSigned(starDelta))
+  setText('product-trend-forks', formatSigned(forkDelta))
+  setText('product-trend-growing', formatNumber(growing))
+  setText('product-trend-updated', formatNumber(updated))
+  setText('product-trend-range-label', `${shortDate(startDate)} – ${shortDate(endDate)}`)
+  setText('product-trend-chart-note', `可比较 ${formatNumber(rows.length)} 个仓库 · ${formatNumber(series.length)} 个快照增量点`)
+
+  const longestGap = Math.max(1, ...series.map((item) => item.intervalDays || 1))
+  setText('product-github-trend-footnote', longestGap > 1
+    ? `历史数据存在最长 ${longestGap} 天的采样间隔，该点按区间累计展示，不会拆分或插值；每日任务上线后将形成连续快照。`
+    : '历史缺失日期不会插值；当前快照已按日连续采集。')
+
+  renderTrendChart(series)
+  renderGrowthRanking(rows)
+}
+
+function bindProductTrendTabs() {
+  for (const button of document.querySelectorAll('[data-github-trend-range]')) {
+    button.addEventListener('click', () => {
+      insightState.trendRange = button.dataset.githubTrendRange
+      for (const item of document.querySelectorAll('[data-github-trend-range]')) {
+        const active = item.dataset.githubTrendRange === insightState.trendRange
+        item.classList.toggle('active', active)
+        item.setAttribute('aria-selected', String(active))
+      }
+      renderProductInsights()
+    })
+  }
+}
+
 function renderToolCategories(tools) {
   const counts = new Map()
   for (const tool of tools) counts.set(tool.category || '未分类', (counts.get(tool.category || '未分类') || 0) + 1)
@@ -190,6 +356,7 @@ function renderProductInsights() {
     : `全部 ${formatNumber(insightState.products.length)} 条产品中，可明确关联 ${formatNumber(repositories.length)} 个公开 GitHub 仓库；本区域会随产品筛选联动。`)
   renderRankList('product-github-top', repositories, 'product')
   renderActivity('product-github-activity', repositories)
+  renderProductTrend(repositories)
 }
 
 function scheduleProductInsightsRender() {
@@ -211,26 +378,30 @@ function bindProductInsightFilters() {
 
 async function initSeparatedInsights() {
   try {
-    const [productsResponse, toolsResponse, githubResponse] = await Promise.all([
+    const [productsResponse, toolsResponse, githubResponse, historyResponse] = await Promise.all([
       fetch('data/products.json'),
       fetch('data/tools.json'),
-      fetch('data/github-repositories.json')
+      fetch('data/github-repositories.json'),
+      fetch('data/github-history.json')
     ])
-    if (!productsResponse.ok || !toolsResponse.ok || !githubResponse.ok) throw new Error('数据文件加载失败')
-    const [productsPayload, toolsPayload, githubPayload] = await Promise.all([
+    if (!productsResponse.ok || !toolsResponse.ok || !githubResponse.ok || !historyResponse.ok) throw new Error('数据文件加载失败')
+    const [productsPayload, toolsPayload, githubPayload, historyPayload] = await Promise.all([
       productsResponse.json(),
       toolsResponse.json(),
-      githubResponse.json()
+      githubResponse.json(),
+      historyResponse.json()
     ])
     insightState.products = productsPayload.records || []
     insightState.tools = toolsPayload.records || []
     insightState.repositories = githubPayload.repositories || {}
+    insightState.githubHistory = historyPayload.repositories || {}
     insightState.githubMetadata = githubPayload.metadata || {}
 
     const tools = insightState.tools
     const toolRepositories = repositoryItems(tools, insightState.repositories, 'tool')
 
     bindProductInsightFilters()
+    bindProductTrendTabs()
     renderProductInsights()
     setText('tool-github-count', toolRepositories.length)
     setText('tool-category-count', new Set(tools.map((item) => item.category).filter(Boolean)).size)
