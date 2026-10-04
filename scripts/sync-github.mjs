@@ -182,14 +182,14 @@ function updateHistory(previousHistory, repositories, date) {
     else snapshots.push(snapshot)
     history[repository.key] = snapshots
       .sort((a, b) => a.date.localeCompare(b.date))
-      .slice(-104)
+      .slice(-400)
   }
   return {
     metadata: {
       generatedAt: new Date().toISOString(),
-      cadence: 'weekly',
-      retentionWeeks: 104,
-      note: 'Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled.'
+      cadence: 'daily',
+      retentionDays: 400,
+      note: 'Daily snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled and missing dates are not interpolated.'
     },
     repositories: history
   }
