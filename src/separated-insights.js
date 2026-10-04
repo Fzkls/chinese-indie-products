@@ -1,5 +1,5 @@
 import './taxonomy-insights.js'
-import { aggregateSnapshotIntervals, snapshotWindowTrend } from './trend-utils.js'
+import { aggregateSnapshotIntervals, loadGithubHistory, snapshotWindowTrend } from './trend-utils.js'
 
 const RESERVED_GITHUB_OWNERS = new Set(['about', 'apps', 'blog', 'collections', 'enterprise', 'events', 'explore', 'features', 'issues', 'marketplace', 'orgs', 'pricing', 'pulls', 'search', 'settings', 'sponsors', 'topics', 'trending'])
 const ACTIVITY_LABELS = {
@@ -378,18 +378,17 @@ function bindProductInsightFilters() {
 
 async function initSeparatedInsights() {
   try {
-    const [productsResponse, toolsResponse, githubResponse, historyResponse] = await Promise.all([
+    const [productsResponse, toolsResponse, githubResponse, historyPayload] = await Promise.all([
       fetch('data/products.json'),
       fetch('data/tools.json'),
       fetch('data/github-repositories.json'),
-      fetch('data/github-history.json')
+      loadGithubHistory()
     ])
-    if (!productsResponse.ok || !toolsResponse.ok || !githubResponse.ok || !historyResponse.ok) throw new Error('数据文件加载失败')
-    const [productsPayload, toolsPayload, githubPayload, historyPayload] = await Promise.all([
+    if (!productsResponse.ok || !toolsResponse.ok || !githubResponse.ok) throw new Error('数据文件加载失败')
+    const [productsPayload, toolsPayload, githubPayload] = await Promise.all([
       productsResponse.json(),
       toolsResponse.json(),
-      githubResponse.json(),
-      historyResponse.json()
+      githubResponse.json()
     ])
     insightState.products = productsPayload.records || []
     insightState.tools = toolsPayload.records || []
