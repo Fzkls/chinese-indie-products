@@ -1,4 +1,4 @@
-import { LIFECYCLE_LABELS, lifecycleKey, repositoryTrend } from './trend-utils.js'
+import { LIFECYCLE_LABELS, lifecycleKey, loadGithubHistory, repositoryTrend } from './trend-utils.js'
 
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(Number(value) || 0)
 const formatCompact = (value) => new Intl.NumberFormat('zh-CN', { notation: 'compact', maximumFractionDigits: 1 }).format(Number(value) || 0)
@@ -118,16 +118,15 @@ async function initPulse() {
   const section = document.getElementById('weekly-pulse')
   if (!section) return
   try {
-    const [changesResponse, repositoriesResponse, historyResponse] = await Promise.all([
+    const [changesResponse, repositoriesResponse, historyPayload] = await Promise.all([
       fetch('data/weekly-changes.json'),
       fetch('data/github-repositories.json'),
-      fetch('data/github-history.json')
+      loadGithubHistory()
     ])
-    if (!changesResponse.ok || !repositoriesResponse.ok || !historyResponse.ok) throw new Error('趋势数据文件加载失败')
-    const [changes, repositoriesPayload, historyPayload] = await Promise.all([
+    if (!changesResponse.ok || !repositoriesResponse.ok) throw new Error('趋势数据文件加载失败')
+    const [changes, repositoriesPayload] = await Promise.all([
       changesResponse.json(),
-      repositoriesResponse.json(),
-      historyResponse.json()
+      repositoriesResponse.json()
     ])
 
     const productChanges = changes.products || {}
