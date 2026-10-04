@@ -37,6 +37,72 @@ export function lifecycleKey(repository) {
   return 'inactive-year'
 }
 
+
+function orderedSnapshots(snapshots = []) {
+  return [...snapshots]
+    .filter((item) => item?.date)
+    .sort((a, b) => a.date.localeCompare(b.date))
+}
+
+function dateDistanceDays(from, to) {
+  const start = new Date(from + 'T00:00:00Z')
+  const end = new Date(to + 'T00:00:00Z')
+  return Math.max(1, Math.round((end - start) / 86_400_000))
+}
+
+export function snapshotWindowTrend(snapshots = [], startDate, endDate) {
+  const ordered = orderedSnapshots(snapshots).filter((item) => !endDate || item.date <= endDate)
+  if (!ordered.length || !startDate) return null
+
+  const latest = [...ordered].reverse().find((item) => item.date >= startDate)
+  if (!latest) return null
+
+  const baseline = [...ordered].reverse().find((item) => item.date <= startDate)
+    || ordered.find((item) => item.date >= startDate)
+  if (!baseline || baseline.date === latest.date) return null
+
+  const baselineStars = Number(baseline.stars) || 0
+  const latestStars = Number(latest.stars) || 0
+  const starDelta = latestStars - baselineStars
+  const forkDelta = (Number(latest.forks) || 0) - (Number(baseline.forks) || 0)
+
+  return {
+    baseline,
+    latest,
+    days: dateDistanceDays(baseline.date, latest.date),
+    starDelta,
+    forkDelta,
+    starGrowthPercent: baselineStars > 0 ? starDelta / baselineStars * 100 : null,
+    partialBaseline: baseline.date > startDate
+  }
+}
+
+export function aggregateSnapshotIntervals(snapshotGroups = [], startDate, endDate) {
+  const buckets = new Map()
+  for (const snapshots of snapshotGroups) {
+    const ordered = orderedSnapshots(snapshots)
+    for (let index = 1; index < ordered.length; index += 1) {
+      const previous = ordered[index - 1]
+      const current = ordered[index]
+      if (startDate && current.date < startDate) continue
+      if (endDate && current.date > endDate) continue
+      const bucket = buckets.get(current.date) || {
+        date: current.date,
+        starDelta: 0,
+        forkDelta: 0,
+        intervalDays: 1,
+        repositories: 0
+      }
+      bucket.starDelta += (Number(current.stars) || 0) - (Number(previous.stars) || 0)
+      bucket.forkDelta += (Number(current.forks) || 0) - (Number(previous.forks) || 0)
+      bucket.intervalDays = Math.max(bucket.intervalDays, dateDistanceDays(previous.date, current.date))
+      bucket.repositories += 1
+      buckets.set(current.date, bucket)
+    }
+  }
+  return [...buckets.values()].sort((a, b) => a.date.localeCompare(b.date))
+}
+
 export const LIFECYCLE_LABELS = {
   'active-30': '持续活跃',
   'active-90': '近期活跃',
