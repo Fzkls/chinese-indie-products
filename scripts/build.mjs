@@ -7,9 +7,10 @@ await cp('index.html', 'dist/index.html')
 for (const filename of ['app.js', 'styles.css', 'separated-insights.js', 'separated-insights.css', 'taxonomy-insights.js', 'taxonomy-insights.css', 'overview-interactions.js', 'overview-interactions.css', 'dataset-tabs.js', 'dataset-tabs.css', 'pulse.js', 'pulse.css', 'trend-utils.js']) {
   await cp(`src/${filename}`, `dist/src/${filename}`)
 }
-for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'github-history.json', 'weekly-changes.json', 'taxonomy.json', 'product-taxonomy.json']) {
+for (const filename of ['products.json', 'tools.json', 'quality-report.json', 'github-repositories.json', 'weekly-changes.json', 'taxonomy.json', 'product-taxonomy.json']) {
   await cp(`data/${filename}`, `dist/data/${filename}`)
 }
+await cp('data/github-history', 'dist/data/github-history', { recursive: true })
 
 let index = await readFile('dist/index.html', 'utf8')
 if (!index.includes('src/dataset-tabs.css')) {
@@ -35,17 +36,20 @@ await writeFile('dist/index.html', index)
 await writeFile('dist/.nojekyll', '')
 
 const app = await readFile('dist/src/app.js', 'utf8')
-for (const dataset of ['products.json', 'tools.json', 'github-repositories.json', 'github-history.json']) {
+for (const dataset of ['products.json', 'tools.json', 'github-repositories.json']) {
   if (!app.includes(`data/${dataset}`)) throw new Error(`app.js must reference data/${dataset}`)
 }
 const pulse = await readFile('dist/src/pulse.js', 'utf8')
-for (const dataset of ['weekly-changes.json', 'github-repositories.json', 'github-history.json']) {
+for (const dataset of ['weekly-changes.json', 'github-repositories.json']) {
   if (!pulse.includes(`data/${dataset}`)) throw new Error(`pulse.js must reference data/${dataset}`)
 }
 const taxonomyApp = await readFile('dist/src/taxonomy-insights.js', 'utf8')
 for (const dataset of ['taxonomy.json', 'product-taxonomy.json']) {
   if (!taxonomyApp.includes(`data/${dataset}`)) throw new Error(`taxonomy-insights.js must reference data/${dataset}`)
 }
+const trendUtils = await readFile('dist/src/trend-utils.js', 'utf8')
+if (!trendUtils.includes('data/github-history/index.json')) throw new Error('trend-utils.js must load the GitHub history shard index')
+if (!trendUtils.includes('data/github-history/')) throw new Error('trend-utils.js must load yearly GitHub history shards')
 const separatedInsights = await readFile('dist/src/separated-insights.js', 'utf8')
 const separatedInsightsCss = await readFile('dist/src/separated-insights.css', 'utf8')
 const taxonomyInsightsSource = await readFile('dist/src/taxonomy-insights.js', 'utf8')

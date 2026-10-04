@@ -1,4 +1,4 @@
-import { repositoryTrend } from './trend-utils.js'
+import { loadGithubHistory, repositoryTrend } from './trend-utils.js'
 
 const CATEGORY_LABELS = { product: '通用产品', 'developer-tool': '程序员工具', game: '游戏', archive: '历史归档' }
 const CATEGORY_COLORS = { product: '#b9f24a', 'developer-tool': '#59dcc4', game: '#ffb35c', archive: '#82978f' }
@@ -664,7 +664,7 @@ async function init() {
       fetch('data/products.json'),
       fetch('data/tools.json'),
       optionalJson('data/github-repositories.json', { repositories: {}, metadata: {} }),
-      optionalJson('data/github-history.json', { repositories: {}, metadata: {} })
+      loadGithubHistory()
     ])
     if (!productsResponse.ok) throw new Error(`products.json HTTP ${productsResponse.status}`)
     if (!toolsResponse.ok) throw new Error(`tools.json HTTP ${toolsResponse.status}`)

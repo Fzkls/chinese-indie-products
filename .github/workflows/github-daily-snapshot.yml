@@ -1,28 +1,22 @@
-name: Verify and publish site
+name: Refresh daily GitHub snapshot
 
 on:
-  pull_request:
-  push:
-    branches: [main]
-    paths-ignore:
-      - 'data/github-repositories.json'
-      - 'data/github-history/**'
   workflow_dispatch:
   schedule:
-    # Every Monday at 10:17 Asia/Shanghai (02:17 UTC).
-    - cron: '17 2 * * 1'
+    # Every day at 09:17 Asia/Shanghai (01:17 UTC).
+    - cron: '17 1 * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  group: "site-${{ github.ref }}"
+  group: "github-daily-snapshot"
   cancel-in-progress: true
 
 jobs:
-  verify-and-publish:
+  snapshot:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -32,32 +26,25 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 22
-      - name: Refresh data pipeline
+      - name: Refresh GitHub snapshot
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_SYNC_CONCURRENCY: 4
-        run: npm run refresh:data
-      - name: Test, validate and build
-        run: npm run verify
-      - name: Commit refreshed data snapshot
-        if: github.event_name != 'pull_request' && github.actor != 'github-actions[bot]'
+        run: npm run sync:github
+      - name: Test and build
+        run: npm run test && npm run check:js && npm run check:data && npm run build
+      - name: Commit daily GitHub snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/products.json data/tools.json data/quality-report.json data/github-repositories.json data/github-history data/weekly-changes.json data/product-taxonomy.json data/taxonomy-overrides.json
+          git add data/github-repositories.json data/github-history
           if git diff --cached --quiet; then
-            echo "No data changes to commit."
+            echo "No GitHub snapshot changes to commit."
             exit 0
           fi
-          git commit -m "data: refresh source, taxonomy and GitHub snapshots"
+          git commit -m "data: refresh daily GitHub snapshot"
           git push origin HEAD:main
-      - name: Upload build for inspection
-        uses: actions/upload-artifact@v4
-        with:
-          name: indiebase-cn-dist
-          path: dist
       - name: Publish gh-pages branch
-        if: github.event_name != 'pull_request'
         run: |
           SITE_DIR="$(mktemp -d)"
           cp -R dist/. "${SITE_DIR}/"
@@ -72,5 +59,5 @@ jobs:
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           cp -R "${SITE_DIR}/." .
           git add --all
-          git commit -m "deploy: publish ${GITHUB_SHA}" || true
+          git commit -m "deploy: publish daily GitHub snapshot" || true
           git push --force origin gh-pages

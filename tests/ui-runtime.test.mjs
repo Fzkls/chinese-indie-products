@@ -35,3 +35,16 @@ test('ecosystem weekly metrics do not inherit the legacy hero overlap', async ()
   assert.match(block, /background:transparent/)
   assert.match(block, /box-shadow:none/)
 })
+
+
+test('product GitHub section exposes 7-day and monthly trend controls', async () => {
+  const [html, source] = await Promise.all([
+    readFile('index.html', 'utf8'),
+    readFile('src/separated-insights.js', 'utf8')
+  ])
+  assert.match(html, /id="product-github-trends"/)
+  assert.match(html, /data-github-trend-range="7d"/)
+  assert.match(html, /data-github-trend-range="month"/)
+  assert.match(source, /loadGithubHistory/)
+  assert.match(source, /renderProductTrend/)
+})

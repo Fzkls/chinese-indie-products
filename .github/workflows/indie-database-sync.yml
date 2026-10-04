@@ -39,7 +39,7 @@ jobs:
             - Rebuilt `data/quality-report.json`
             - Rebuilt `data/product-taxonomy.json` from taxonomy v1
             - Refreshed `data/github-repositories.json`
-            - Appended compact weekly snapshots to `data/github-history.json`
+            - Refreshed yearly GitHub snapshot shards in `data/github-history/`
             - Ran parser/taxonomy tests, data validation and static build
           add-paths: |
             data/products.json
@@ -49,4 +49,4 @@ jobs:
             data/product-taxonomy.json
             data/taxonomy-overrides.json
             data/github-repositories.json
-            data/github-history.json
+            data/github-history/**

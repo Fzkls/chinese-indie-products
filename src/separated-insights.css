@@ -13,6 +13,45 @@
 .visual-heading-actions>p{margin:0;color:var(--muted);text-align:right}
 .visual-reset{min-height:36px;padding:0 13px;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.035);color:var(--muted);font-size:12px;cursor:pointer;white-space:nowrap;transition:border-color .18s ease,background .18s ease,color .18s ease}
 .visual-reset:hover{border-color:rgba(185,242,74,.4);background:var(--accent-soft);color:var(--text)}
+.github-trend-section{margin-top:22px;padding-top:26px;border-top:1px solid rgba(255,255,255,.08)}
+.github-trend-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:18px}
+.github-trend-heading h3{margin:4px 0 8px;font-size:clamp(1.35rem,2.2vw,1.8rem)}
+.github-trend-heading>div>p:last-child{margin:0;color:var(--muted);max-width:680px}
+.github-trend-tabs{display:inline-flex;gap:4px;padding:4px;border:1px solid rgba(255,255,255,.09);border-radius:12px;background:rgba(255,255,255,.025)}
+.github-trend-tab{min-height:36px;padding:0 14px;border:0;border-radius:8px;background:transparent;color:var(--muted);font:inherit;font-size:13px;cursor:pointer;transition:background .18s ease,color .18s ease}
+.github-trend-tab:hover{color:var(--text)}
+.github-trend-tab.active{background:rgba(185,242,74,.11);color:var(--text);box-shadow:inset 0 0 0 1px rgba(185,242,74,.18)}
+.github-trend-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.github-trend-metric{padding:17px 18px;border:1px solid rgba(255,255,255,.08);border-radius:15px;background:rgba(255,255,255,.022)}
+.github-trend-metric span,.github-trend-metric small{display:block;color:var(--muted)}
+.github-trend-metric span{font-size:12px}
+.github-trend-metric strong{display:block;margin:7px 0 4px;font-size:clamp(1.45rem,2.5vw,2rem);letter-spacing:-.03em}
+.github-trend-metric small{font-size:11px}
+.github-trend-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.85fr);gap:18px;align-items:stretch}
+.github-trend-chart-panel,.github-growth-panel{min-width:0}
+.github-trend-chart{min-height:250px;display:flex;align-items:center;justify-content:center}
+.github-trend-chart svg{display:block;width:100%;height:auto;overflow:visible}
+.github-trend-chart .trend-grid-line{stroke:rgba(255,255,255,.08);stroke-width:1}
+.github-trend-chart .trend-zero-line{stroke:rgba(255,255,255,.18);stroke-width:1}
+.github-trend-chart .trend-line{fill:none;stroke:var(--accent);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.github-trend-chart .trend-area{fill:rgba(185,242,74,.055)}
+.github-trend-chart .trend-point{fill:var(--panel);stroke:var(--accent);stroke-width:2}
+.github-trend-chart .trend-axis-label{fill:var(--muted);font-size:10px}
+.github-trend-chart .trend-value-label{fill:var(--muted);font-size:10px}
+.github-trend-empty{width:100%;padding:54px 20px;text-align:center;color:var(--muted);border:1px dashed rgba(255,255,255,.09);border-radius:12px}
+.github-growth-list{display:grid}
+.github-growth-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:11px;align-items:center;width:100%;padding:12px 0;border:0;border-bottom:1px solid rgba(255,255,255,.07);background:transparent;color:inherit;text-align:left;cursor:pointer}
+.github-growth-row:last-child{border-bottom:0}
+.github-growth-row:hover .github-growth-name{color:var(--accent)}
+.github-growth-rank{width:24px;color:var(--muted);font-size:11px;font-variant-numeric:tabular-nums}
+.github-growth-main{min-width:0}
+.github-growth-name,.github-growth-repo{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.github-growth-name{font-size:13px;transition:color .18s ease}
+.github-growth-repo{margin-top:3px;color:var(--muted);font-size:10px}
+.github-growth-value{text-align:right}
+.github-growth-value strong{display:block;font-size:13px}
+.github-growth-value small{display:block;margin-top:3px;color:var(--muted);font-size:10px}
+.github-trend-footnote{margin:12px 2px 0;color:var(--muted);font-size:11px;line-height:1.7}
 .tool-dashboard{padding:76px 0}
 .tool-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:24px 0 28px}
 .tool-metric{padding:20px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(255,255,255,.025)}
@@ -21,5 +60,5 @@
 .tool-chart-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px}
 .tool-chart-grid .wide{grid-column:1/-1}
 #tool-category-chart .bar-row{grid-template-columns:minmax(130px,1.4fr) minmax(140px,3fr) auto}
-@media (max-width:900px){.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-chart-grid{grid-template-columns:1fr}.visual-heading-actions{align-items:flex-start;justify-content:flex-start;max-width:none}.visual-heading-actions>p{text-align:left}}
-@media (max-width:600px){.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.github-activity-grid .activity-row{grid-template-columns:1fr auto}.github-activity-grid .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}}
+@media (max-width:900px){.github-trend-grid{grid-template-columns:1fr}.github-trend-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.github-trend-heading{align-items:flex-start}.github-trend-tabs{flex:0 0 auto}.tool-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.tool-chart-grid{grid-template-columns:1fr}.visual-heading-actions{align-items:flex-start;justify-content:flex-start;max-width:none}.visual-heading-actions>p{text-align:left}}
+@media (max-width:600px){.github-trend-heading{display:grid}.github-trend-tabs{width:100%}.github-trend-tab{flex:1}.github-trend-metrics{grid-template-columns:1fr 1fr}.github-trend-metric{padding:14px}.github-trend-chart{min-height:210px}.separated-insights,.tool-dashboard{padding:52px 0}.tool-metrics{grid-template-columns:1fr}.github-activity-grid .activity-row{grid-template-columns:1fr auto}.github-activity-grid .activity-row .bar-track{grid-column:1/-1}.tool-chart-grid .wide{grid-column:auto}.visual-heading-actions{width:100%}}

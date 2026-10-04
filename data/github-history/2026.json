@@ -1,9 +1,10 @@
 {
   "metadata": {
     "generatedAt": "2026-09-30T08:26:31.873Z",
-    "cadence": "weekly",
-    "retentionWeeks": 104,
-    "note": "Snapshots begin when IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled."
+    "cadence": "daily",
+    "retention": "permanent",
+    "year": 2026,
+    "note": "Daily snapshots retained permanently in the 2026 yearly shard; missing dates are not interpolated."
   },
   "repositories": {
     "0x676e67/reqwest-impersonate": [
