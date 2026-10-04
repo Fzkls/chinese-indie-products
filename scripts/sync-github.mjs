@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url'
 
 const API_VERSION = '2022-11-28'
@@ -198,15 +198,21 @@ export async function syncGitHubRepositories({
   productsPath = 'data/products.json',
   toolsPath = 'data/tools.json',
   outputPath = 'data/github-repositories.json',
-  historyPath = 'data/github-history.json',
+  historyDir = 'data/github-history',
   token = process.env.GITHUB_TOKEN,
   concurrency = Number(process.env.GITHUB_SYNC_CONCURRENCY || DEFAULT_CONCURRENCY)
 } = {}) {
-  const [productsPayload, toolsPayload, previousPayload, previousHistory] = await Promise.all([
+  const generatedAt = new Date().toISOString()
+  const date = generatedAt.slice(0, 10)
+  const year = date.slice(0, 4)
+  const historyIndexPath = `${historyDir}/index.json`
+  const historyShardPath = `${historyDir}/${year}.json`
+  const [productsPayload, toolsPayload, previousPayload, historyIndex, previousHistory] = await Promise.all([
     readJson(productsPath, { records: [] }),
     readJson(toolsPath, { records: [] }),
     readJson(outputPath, { repositories: {} }),
-    readJson(historyPath, { repositories: {} })
+    readJson(historyIndexPath, { metadata: {}, years: [] }),
+    readJson(historyShardPath, { metadata: { year }, repositories: {} })
   ])
 
   const candidates = collectRepositoryCandidates(productsPayload, toolsPayload)
@@ -224,7 +230,6 @@ export async function syncGitHubRepositories({
   const availableCount = synchronized.filter((repository) => repository.status === 'available').length
   const unavailableCount = synchronized.filter((repository) => repository.status === 'unavailable').length
   const errorCount = synchronized.filter((repository) => repository.status === 'error').length
-  const generatedAt = new Date().toISOString()
   const output = {
     metadata: {
       generatedAt,
@@ -240,11 +245,27 @@ export async function syncGitHubRepositories({
     repositories: repositoryMap
   }
 
-  const date = generatedAt.slice(0, 10)
   const history = updateHistory(previousHistory, synchronized, date)
+  history.metadata.year = Number(year)
+  const years = [...new Set([...(historyIndex.years || []).map(String), year])]
+    .sort()
+    .map(Number)
+  const nextHistoryIndex = {
+    metadata: {
+      generatedAt,
+      cadence: 'daily',
+      retention: 'permanent',
+      sharding: 'year',
+      note: 'GitHub snapshots are retained permanently in yearly shards; missing dates are not interpolated.'
+    },
+    years
+  }
+
+  await mkdir(historyDir, { recursive: true })
   await Promise.all([
     writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`),
-    writeFile(historyPath, `${JSON.stringify(history, null, 2)}\n`)
+    writeFile(historyShardPath, `${JSON.stringify(history, null, 2)}\n`),
+    writeFile(historyIndexPath, `${JSON.stringify(nextHistoryIndex, null, 2)}\n`)
   ])
 
   console.log(`GitHub enrichment: ${availableCount}/${candidates.length} available, ${unavailableCount} unavailable, ${errorCount} errors.`)
