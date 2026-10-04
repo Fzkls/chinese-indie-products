@@ -1,3 +1,31 @@
+
+
+function mergeHistoryRepositories(target, repositories = {}) {
+  for (const [key, snapshots] of Object.entries(repositories)) {
+    const merged = [...(target[key] || []), ...(snapshots || [])]
+    const byDate = new Map(merged.filter((item) => item?.date).map((item) => [item.date, item]))
+    target[key] = [...byDate.values()].sort((a, b) => a.date.localeCompare(b.date))
+  }
+  return target
+}
+
+export async function loadGithubHistory({ maxYears = 2 } = {}) {
+  try {
+    const indexResponse = await fetch('data/github-history/index.json')
+    if (!indexResponse.ok) return { metadata: {}, repositories: {}, years: [] }
+    const index = await indexResponse.json()
+    const availableYears = [...new Set((index.years || []).map(Number).filter(Number.isFinite))].sort((a, b) => b - a)
+    const years = availableYears.slice(0, Math.max(1, maxYears)).sort((a, b) => a - b)
+    const shardResponses = await Promise.all(years.map((year) => fetch(`data/github-history/${year}.json`)))
+    const shards = await Promise.all(shardResponses.map(async (response) => response.ok ? response.json() : { repositories: {} }))
+    const repositories = {}
+    for (const shard of shards) mergeHistoryRepositories(repositories, shard.repositories || {})
+    return { metadata: index.metadata || {}, repositories, years }
+  } catch {
+    return { metadata: {}, repositories: {}, years: [] }
+  }
+}
+
 export function repositoryTrend(snapshots = []) {
   const ordered = [...snapshots]
     .filter((item) => item?.date)
