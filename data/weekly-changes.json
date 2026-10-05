@@ -1,288 +1,147 @@
 {
-  "generatedAt": "2026-10-04T08:14:14.980Z",
-  "baselineGeneratedAt": "2026-09-30T08:25:55.466Z",
+  "generatedAt": "2026-10-05T09:05:01.694Z",
+  "baselineGeneratedAt": "2026-10-04T08:14:14.980Z",
   "mode": "since-previous-snapshot",
   "products": {
-    "previousCount": 3038,
-    "currentCount": 3064,
-    "addedCount": 26,
+    "previousCount": 3064,
+    "currentCount": 3077,
+    "addedCount": 13,
     "removedCount": 0,
-    "changedCount": 1,
+    "changedCount": 0,
     "added": [
       {
-        "id": "b5eb9654ad1478",
-        "name": "「自听」MyListen",
-        "url": "https://apps.apple.com/cn/app/id6790382144",
-        "description": "把 AI 长文和读书笔记在 iPhone/iPad 本地变成音频节目，支持锁屏播放与断点续听；可试用，完整功能需 App 内解锁，无订阅、无广告",
-        "developerName": "Ryan Zhu",
+        "id": "f711afb8a7effd",
+        "name": "摊账",
+        "url": "https://tanzhang-market-kit.hypebeast2k17.chatgpt.site/",
+        "description": "面向市集摊主的免费单场经营结余试算网页，扣除售出货品成本、损耗和活动费用后计算结余；无需注册，金额按人民币展示，提供中英文界面",
+        "developerName": "Harry Jia",
+        "category": "product",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "a0421d3367664a",
+        "name": "问迹 wenjiAI",
+        "url": "https://wenjiai.cn",
+        "description": "AI 原生创投情报站，按问题找赛道，给出赛道分析、赛道榜单和商业速览，并追踪热点事件与论文，帮创业者和投资人找准方向",
+        "developerName": "Ethan Lian",
+        "category": "product",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "1ccca0ccbeeadd",
+        "name": "AI Code Usage Tray",
+        "url": "https://github.com/saime428/ai-code-usage-tray",
+        "description": "Windows 托盘用量监视器，一处看 Claude Code、Codex、Grok CLI、Antigravity、OpenCode 的 token 用量和金额，Claude、Codex、Grok 的官方额度在贴边悬浮条上常驻显示，另有跨工具的按天、项目、模型用量报表；只读本机会话记录，不上传用量数据，MIT 开源，提供 Windows 安装包 - 中文说明",
+        "developerName": "saime428",
+        "category": "developer-tool",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "f395d12e86fdf7",
+        "name": "Gas Station Dance",
+        "url": "https://gasstationdance.pro",
+        "description": "上传一到三张照片生成加油站日落前的潮流短视频，跳舞、自拍、下车三段镜头逐个换上你和朋友的脸，场景与运镜固定不变，输出 10 秒 9:16 无声 MP4；按积分计费",
+        "developerName": "weidacn",
+        "category": "product",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "117ac182cd8d5d",
+        "name": "InkDoo",
+        "url": "https://inkdoo.app/zh",
+        "description": "贴一篇文章或链接，AI 自动挑出该配图的段落，用同一个手绘小角色画出整套配图，支持上传自己的 IP 形象；注册送免费额度，按张一次性付费",
+        "developerName": "xianyu110",
+        "category": "product",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "6ea50523dacc6f",
+        "name": "Raindance AI",
+        "url": "https://raindance-ai.pro/",
+        "description": "上传两人各一张照片生成日落码头与海滩的多机位潮流短视频，整段镜头的两位表演者换成你们，保留原始运镜与配音，输出 28 秒 MP4；按积分计费",
+        "developerName": "weidacn",
+        "category": "product",
+        "status": "active",
+        "date": "2026-10-05"
+      },
+      {
+        "id": "44d273c285b6b8",
+        "name": "《三变·六反》知识图谱",
+        "url": "https://0603wangxiao.github.io/36wx/kg/",
+        "description": "网页版知识图谱，把一套自创分析框架画成可缩放的节点图，三章、六反、卦象与偈文依序展开，点开每个节点能看到释义和出处；整个图谱是单个 HTML 文件，无任何外部依赖",
+        "developerName": "王潇",
         "category": "product",
         "status": "active",
         "date": "2026-10-04"
       },
       {
-        "id": "cc095e6ea51a8f",
-        "name": "今日宜",
-        "url": "https://github.com/ljinkai/weekly/issues/386",
-        "description": "微信小程序，测星座、双人趣味匹配、周公解梦与周易摇卦体验；目前已开放功能免费，仅供民俗文化与休闲娱乐参考",
-        "developerName": "今日宜运营团队",
+        "id": "37eb3b9fe12ff1",
+        "name": "求原图",
+        "url": "https://ynvan.com",
+        "description": "抖音、小红书、快手、B站、YouTube 等 30 多个平台的无水印视频和原图提取，实况图能打包成 iPhone 实况或安卓动态照片，视频可截一段转 GIF 或实况；免费不用登录，MIT 开源 - GitHub",
+        "developerName": "hiyufan",
         "category": "product",
         "status": "active",
         "date": "2026-10-04"
       },
       {
-        "id": "6af4e2ddf7fb50",
-        "name": "轻译 · LightTranslate",
-        "url": "https://github.com/shanghaiyangming/lighttranslate",
-        "description": "Windows 划词翻译与英语查词工具，按 Ctrl+Alt+Q 在鼠标旁查看中文译文；MIT 开源，提供安装包，使用自己的 DeepSeek API Key，API 按量计费",
-        "developerName": "Young",
+        "id": "1bcb9c9fceace0",
+        "name": "三变·六反 · 投资策略图谱",
+        "url": "https://0603wangxiao.github.io/36wx/invest/",
+        "description": "投资研究知识图谱，把同一套分析框架用在投资上的展开，讲的是概念关系与操作次序，不含任何具体标的或买卖建议",
+        "developerName": "王潇",
         "category": "product",
         "status": "active",
-        "date": "2026-10-03"
+        "date": "2026-10-04"
       },
       {
-        "id": "b4216f2dea62c1",
-        "name": "小遥Claw/XiaoyaoClaw",
-        "url": "https://www.xiaoyaosai.com/",
-        "description": "AI 私人助理，让每个人的数字生活，都有一座自己说了算的小遥；AI 替你干活、替你记住，把所有小遥产品连成一张网",
-        "developerName": "dtsola",
+        "id": "39b15abba31b0c",
+        "name": "生命之祭 · 地缘风险沙盘",
+        "url": "https://0603wangxiao.github.io/geosandbox/",
+        "description": "战争伤亡数据网站，每个数字都标出信源和统计口径，并写明这是「经核实的最低确证数」；已核实事实与推演情景分成两栏，推演一律加标签",
+        "developerName": "王潇",
         "category": "product",
         "status": "active",
-        "date": "2026-10-03"
+        "date": "2026-10-04"
       },
       {
-        "id": "f159bcec8c1687",
-        "name": "中转塔台 Relay Tower",
-        "url": "https://github.com/oisano11/relay-tower",
-        "description": "上游半夜涨价、主调账号出故障时不用盯后台，自动提醒、自动切换，手机 Telegram 一键切线；MIT 开源，Docker 一键部署",
-        "developerName": "oisano11",
+        "id": "1f3b5a6869939d",
+        "name": "夜观天象 Astrolabe",
+        "url": "https://github.com/jaychouchannel/Astrolabe",
+        "description": "OKX 行情与账户监控面板，实时展示币价、K 线、资金费率和自己持仓的未实现盈亏，行情剧烈波动、资金费率越阈或账户开平仓、权益变动时通过 Telegram 推送提醒；只观测不下单，无任何交易权限，不配 API Key 也能看公开行情 — 需自建 Python 服务，MIT 开源",
+        "developerName": "jaychouchannel",
         "category": "developer-tool",
         "status": "active",
-        "date": "2026-10-03"
+        "date": "2026-10-04"
       },
       {
-        "id": "9509f7f203223e",
-        "name": "Kiss Generator",
-        "url": "https://kissgenerator.app",
-        "description": "AI 接吻图片生成工具，上传两张照片合成一张亲吻合照，支持真人照片和动漫角色，登录即送 10 次免费生成",
-        "developerName": "Answer",
+        "id": "3e9b79054e0b94",
+        "name": "Decisions API",
+        "url": "https://decisionapi.net/",
+        "description": "决策模型对比与调用平台，在同一个在线 Playground 里比较 Jev、Laya、Kev、Solar、Span 等多种模型，用「状态 + 问题」的结构一次提出最多 8 个类型化问题，返回带概率的选择、评分与是非判断；Playground 不限量免费，接入后端用统一 REST API 与积分计费",
+        "developerName": "James Parker",
         "category": "product",
         "status": "active",
-        "date": "2026-10-03"
+        "date": "2026-10-04"
       },
       {
-        "id": "ab6c04b9ba243b",
-        "name": "LinkDigest",
-        "url": "https://linkdigest.dev/zh",
-        "description": "给 AI Agent 用的小红书 / 抖音链接读取器，一次调用把链接变成文字：小红书图文笔记逐图 OCR、视频带时间戳逐字稿和画面文字，可选爆款拆解（引用逐字核对原文）；远程 MCP 一行接入 Claude Code / Cursor / Cherry Studio，也有 REST API；注册送 10 积分，之后按量付费（支持支付宝）；不支持 B站 - 开源客户端与接入说明",
-        "developerName": "Jack",
+        "id": "f3a6f7f76eb48e",
+        "name": "Flint Skills Manager",
+        "url": "https://flint.lichuanyang.top",
+        "description": "本地优先的 AI Skills 资产管理器，把分散在 Claude Code 等工具里的 skill 收进可版本化的本地资产库，统一去重、打标签、按预设部署到各个 agent，换工具资产也带得走；npx flint-skills-hub 即用，支持 macOS / Windows / Linux，MIT 开源",
+        "developerName": "SandGrid",
         "category": "developer-tool",
         "status": "active",
-        "date": "2026-10-03"
-      },
-      {
-        "id": "a60f25209990ff",
-        "name": "videotopdf.app",
-        "url": "https://videotopdf.app",
-        "description": "将任意视频转换为带时间戳的高清 PDF、结构化笔记与逐字稿",
-        "developerName": "robin",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-03"
-      },
-      {
-        "id": "83bb28feb29126",
-        "name": "电商卖家 AI 任务模板生成器",
-        "url": "https://liunenglabs.xyz/guides/seller-ai-workbench/",
-        "description": "免费的商品文案、客服回复和翻译核对提示词生成器；填写已知资料即可复制结构化任务说明，免注册，输入在浏览器本地处理，不调用 AI，也不上传输入",
-        "developerName": "LiuNengAI",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "dddd344eaf64ae",
-        "name": "Captions Generator",
-        "url": "https://captionsgenerator.app/",
-        "description": "AI 字幕生成工具，上传视频自动出字幕，能直接改字、选字幕样式、翻译成 100 多种语言或做中英双语，导出带字幕的 MP4 或 SRT/VTT 文件；有免费版和 Pro 订阅",
-        "developerName": "iaminyu",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "1b496531019359",
-        "name": "Fomrix",
-        "url": "https://fomrix.com/",
-        "description": "AI 3D 模型生成与查看工具，把参考图片或文字描述转换成可预览、下载的 GLB 模型；另有 STL、GLB、OBJ 查看、GLB 转 STL 和 STL 网格检查工具。生成需要账号和积分，浏览器查看与转换工具可免费使用",
-        "developerName": "Wang Hushuai",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "1fd9542bb9d96d",
-        "name": "Hotel Lobby AI",
-        "url": "https://hotel-lobby-ai.org/",
-        "description": "上传两张人物照片生成橙色电话亭里的双人说唱视频，自动配人声与伴奏，可选时长、480P/720P 画质与竖屏或横屏，不用写提示词也不用剪时间轴；Google 登录后送 20 积分，够生成一条 4 秒 480P 视频，之后按积分生成",
-        "developerName": "littlePig-zzf",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "e8c2d1487f625b",
-        "name": "Tesla Wrap Generator",
-        "url": "https://teslawrapgenerator.com/",
-        "description": "一句话或一张照片生成特斯拉车衣，自动套用你那台车型年份的官方模板，3D 预览没问题就下载，导入车机 Paint Shop 直接上身",
-        "developerName": "dollarsmaker",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "bb70642b83b829",
-        "name": "Visemory",
-        "url": "https://visemory.com/zh-CN",
-        "description": "本地素材库搜索工具（macOS 桌面应用），把电脑里的视频、音频和图片建成可搜索的素材库，一个搜索框同时查找台词、画面文字、画面内容、文件名、备注和标签，支持字幕、语义、画面与跨语言搜索，命中结果定位到精确时间码，可预览上下文、收进片段篮并导出带来源信息的素材包",
-        "developerName": "ethansunray",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-02"
-      },
-      {
-        "id": "8164022cdd3612",
-        "name": "灵感蜂巢 PromptHive",
-        "url": "https://www.prompt-hive.net/?utm_source=github&utm_medium=referral",
-        "description": "中文 AI 提示词库，500+ 结构化模板带变量槽位，按小红书、抖音、B 站、知乎、公众号等平台和创作环节分类，填好变量一键复制，免费可用",
-        "developerName": "jw0507",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "7a98c3e450d77a",
-        "name": "AI Rap Video",
-        "url": "https://ai-rap.video/",
-        "description": "上传一张照片、选择一个场景并填上说唱主题，就能生成一段带原创说唱人声和伴奏的短视频",
-        "developerName": "weidacn",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "7c6baf110a5eff",
-        "name": "AIInviteCode",
-        "url": "https://aiinvitecode.com/",
-        "description": "AI 工具邀请码与推荐码目录，实时更新，代码经过验证",
-        "developerName": "Linky-AIinlink",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "64bd5d207cf775",
-        "name": "FileOnTap",
-        "url": "https://fileontap.com/heic-to-png/",
-        "description": "HEIC 转 PNG 工具（免费），文件全程在浏览器本地转换、不上传服务器，无需注册、无水印；也支持 HEIC 转 JPG、图片压缩、图片转 PDF",
-        "developerName": "Shao Zheng",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "50b3c2c15cd196",
-        "name": "llms.txt Generator",
-        "url": "https://llmstxtgenerator.dev",
-        "description": "llms.txt 生成器与校验器（免费），填几项站点信息即可生成符合 llmstxt.org 规范的 Markdown 文件，支持从 sitemap.xml 一键导入全部 URL 并自动生成标题；也能粘贴已有文件校验 H1、链接格式与 URL 有效性，并给出 0-100 的 AI 就绪度评分，无需注册",
-        "developerName": "lukuime",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "53b11d57f46857",
-        "name": "MSL Desktop",
-        "url": "https://msl-desktop.pages.dev/",
-        "description": "面向医学联络官的 Windows 本地工作台，集中管理专家交流、项目、任务、等待事项和日历，AI 整理建议由用户核对后确认",
-        "developerName": "holobunganan-sketch",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "861dc3a96871f9",
-        "name": "MVFlow",
-        "url": "https://mvflow.ai/",
-        "description": "AI 音乐视频制作工具，上传歌曲即可生成可编辑分镜，逐镜头调整提示词和场景版本，再与原始音频合成音乐视频；也支持照片配人声生成唱歌口型视频",
-        "developerName": "Sebastian Wu",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "5c2f858cfdfb70",
-        "name": "SeshBuddy",
-        "url": "https://seshbuddy.huangy.top/",
-        "description": "面向 AI 编码工具（Claude Code、Codex、Gemini、Antigravity、WorkBuddy、DSH 等）的桌面会话浏览器与工作台，提供多 CLI 会话统一管理、Tantivy 毫秒级本地全文检索、Monaco 代码并排 Diff 审查与 API 流量穿透检视；基于 Tauri 2 + Rust 构建，100% 本地离线无遥测，开源免费（支持 macOS / Windows） - 客户端下载",
-        "developerName": "huangy7",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "2c31630cc119df",
-        "name": "Speech Wingman",
-        "url": "https://github.com/AmethystineAlpaca/speech-wingman",
-        "description": "离线 Mac 语音提醒助手，本机识别中英混说并逐条检查自定义规则，悬浮按钮控制监听；沙盒无网络权限，不自动保存录音，Apple Silicon 源码预览需自行构建 - 构建与使用说明",
-        "developerName": "AmethystineAlpaca",
-        "category": "developer-tool",
-        "status": "developing",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "a5f0977ab0e5af",
-        "name": "What Makes You Fall",
-        "url": "https://whatmakesyoufall.pro",
-        "description": "轻量的恋爱人格测试，回答几道题就能看到自己最容易在什么样的人身上心动，结果页面直接给出性格倾向",
-        "developerName": "weidacn",
-        "category": "product",
-        "status": "active",
-        "date": "2026-10-01"
-      },
-      {
-        "id": "9d412ff5cd3a75",
-        "name": "移民数据",
-        "url": "https://yiminshuju.com/?utm_source=github&utm_medium=referral",
-        "description": "美国绿卡排期每月 8-10 号官方公告全量 15 类别逐格对比（逐格标注较上月前进/倒退），加拿大 EE 447 轮抽签记录，美国审理时间与 23 国政策库，另附 6 国积分自测器；免费、无广告、不做中介 - 开源 JSON 数据",
-        "developerName": "xjokerabab",
-        "category": "product",
-        "status": "active",
-        "date": "2026-09-30"
-      },
-      {
-        "id": "bd47961e87251d",
-        "name": "onomeo",
-        "url": "https://onomeo.com/zh",
-        "description": "兼容 OpenAI 的 AI 接口聚合站，一把密钥调用 DeepSeek、GLM、Gemini、Qwen 等 35 个免费模型，免费模型不扣额度（未付费账号每 5 小时 20 次），网页里也能直接对话和画图；Claude、GPT 等大模型需付费；目前是公测阶段，不保证所有功能都能正常使用，正在大量收集反馈，欢迎提",
-        "developerName": "Owaid0723666",
-        "category": "developer-tool",
-        "status": "active",
-        "date": "2026-09-30"
+        "date": "2026-10-04"
       }
     ],
     "removed": [],
-    "changed": [
-      {
-        "id": "41d0aeb8d0e718",
-        "name": "cocodot LLM 降智检测",
-        "url": "https://probe.cocodot.co/?utm_source=github&utm_medium=readme&utm_campaign=1c7",
-        "description": "LLM API「降智/偷换模型」检测（免费）：填入任意 OpenAI 兼容端点的 baseurl 和临时 API Key，跑 6 项探针（模型声明、动态题、能力完整性等）生成分项报告；Key 仅用于当次检测、不落库不留存，检测方法开源；同一团队还做 OpenAI 兼容的 API 中转 cocodot（支付宝充值）",
-        "developerName": "cocodot2026",
-        "category": "product",
-        "status": "active",
-        "date": "2026-07-24"
-      }
-    ]
+    "changed": []
   },
   "tools": {
     "previousCount": 284,
