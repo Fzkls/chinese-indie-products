@@ -4,50 +4,248 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-10-04T08:14:14.980Z",
-    "generatedAt": "2026-10-04T08:14:46.805Z",
-    "totalProducts": 3064,
-    "classifiedProducts": 3054,
-    "otherProducts": 10,
-    "coverage": 0.9967,
-    "lowConfidenceProducts": 13,
-    "averageConfidence": 0.873,
-    "reviewedProducts": 1136,
+    "sourceProductGeneratedAt": "2026-10-05T09:05:01.694Z",
+    "generatedAt": "2026-10-05T09:05:37.194Z",
+    "totalProducts": 3077,
+    "classifiedProducts": 3064,
+    "otherProducts": 13,
+    "coverage": 0.9958,
+    "lowConfidenceProducts": 17,
+    "averageConfidence": 0.8724,
+    "reviewedProducts": 1139,
     "manualReviewProducts": 1126,
     "reviewRuleProducts": 0,
-    "autoReviewProducts": 10,
+    "autoReviewProducts": 13,
     "reviewChangedProducts": 891,
-    "baseOtherProducts": 516,
+    "baseOtherProducts": 519,
     "activeReviewOverrides": 1126,
     "staleReviewOverrides": 0,
     "primaryCategoryCounts": {
-      "utilities": 556,
-      "ai-productivity": 474,
-      "developer-tools": 401,
+      "utilities": 557,
+      "ai-productivity": 476,
+      "developer-tools": 405,
       "design-creative": 356,
       "content-knowledge": 238,
-      "media-entertainment": 215,
+      "media-entertainment": 216,
       "games": 193,
       "lifestyle-health": 145,
       "business-marketing": 120,
       "education": 93,
       "infrastructure-security": 80,
+      "finance": 65,
       "social-community": 65,
-      "finance": 63,
       "data-analytics": 34,
       "ecommerce": 21,
-      "other": 10
+      "other": 13
     },
     "classificationMethodCounts": {
-      "rules": 1920,
+      "rules": 1929,
       "manual-review": 1126,
-      "auto-review": 10,
-      "semantic-fallback": 7,
+      "auto-review": 13,
+      "semantic-fallback": 8,
       "source-fallback": 1
     },
     "note": "Source facts remain in products.json. Deterministic rules classify clear records; reusable review rules and stable overrides handle known edge cases. Remaining unresolved records are auto-reviewed into Other so a single ambiguous product does not stop the scheduled data pipeline."
   },
   "records": [
+    {
+      "productId": "f711afb8a7effd",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "a0421d3367664a",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "投资"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "finance"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:投资",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "1ccca0ccbeeadd",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "windows"
+        ],
+        "productForm": [
+          "cli"
+        ],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:developer",
+        "platform:windows",
+        "productForm:cli",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "f395d12e86fdf7",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "capabilities:video"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "117ac182cd8d5d",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "6ea50523dacc6f",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "44d273c285b6b8",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.62,
+      "classificationMethod": "semantic-fallback",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具兜底",
+        "platform:web"
+      ]
+    },
     {
       "productId": "b5eb9654ad1478",
       "primaryCategory": "content-knowledge",
@@ -115,6 +313,208 @@
       "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "37eb3b9fe12ff1",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "视频"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios",
+          "android"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "category:媒体",
+        "sub:视频",
+        "platform:ios",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:open-source",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "1bcb9c9fceace0",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "投资"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:投资",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "39b15abba31b0c",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "1f3b5a6869939d",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "monitoring",
+          "api"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "audience:developer",
+        "productForm:api",
+        "characteristics:open-source",
+        "capabilities:monitoring",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "3e9b79054e0b94",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "api"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "platform:web",
+        "productForm:api",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "f3a6f7f76eb48e",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程",
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "local-first",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "deployment"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "sub:部署",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source",
+        "characteristics:local-first",
+        "capabilities:ai"
+      ]
     },
     {
       "productId": "6af4e2ddf7fb50",
