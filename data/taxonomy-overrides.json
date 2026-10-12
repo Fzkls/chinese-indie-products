@@ -2,9 +2,9 @@
   "metadata": {
     "version": 1,
     "taxonomyVersion": "1.1",
-    "reviewedAt": "2026-09-30",
-    "sourceProductGeneratedAt": "2026-09-30T08:25:55.466Z",
-    "reviewedCount": 1126,
+    "reviewedAt": "2026-10-12",
+    "sourceProductGeneratedAt": "2026-10-12T09:13:14.418Z",
+    "reviewedCount": 1125,
     "policy": "Manual review overrides are reserved for records that were Other/fallback, low-confidence rule matches, or source/category conflict candidates. Other is only valid after explicit review."
   },
   "categories": {
@@ -71,7 +71,6 @@
       "04884f35449904",
       "04eca4ac7da10b",
       "08f45b1a01a19f",
-      "0c2d2b789665eb",
       "0dfe22175b015b",
       "106597036dde29",
       "12823fca93c4d5",

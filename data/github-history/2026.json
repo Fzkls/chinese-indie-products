@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generatedAt": "2026-10-12T07:20:27.536Z",
+    "generatedAt": "2026-10-12T09:13:53.004Z",
     "cadence": "daily",
     "retention": "permanent",
     "note": "Daily snapshots are retained permanently from the date IndieBase CN starts observing a repository; historical GitHub Star data is not backfilled and missing dates are not interpolated.",
@@ -363,7 +363,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 555,
+        "stars": 556,
         "forks": 30,
         "pushedAt": "2026-10-10T13:32:09Z",
         "archived": false,
@@ -484,7 +484,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 61762,
+        "stars": 61768,
         "forks": 5444,
         "pushedAt": "2026-10-12T05:14:30Z",
         "archived": false,
@@ -1696,7 +1696,7 @@
         "date": "2026-10-12",
         "stars": 47811,
         "forks": 5685,
-        "pushedAt": "2026-10-09T15:41:25Z",
+        "pushedAt": "2026-10-12T09:03:52Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -3025,9 +3025,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 57645,
+        "stars": 57648,
         "forks": 5780,
-        "pushedAt": "2026-10-12T07:17:27Z",
+        "pushedAt": "2026-10-12T09:10:20Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -3146,7 +3146,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 383,
+        "stars": 384,
         "forks": 24,
         "pushedAt": "2026-10-10T01:20:37Z",
         "archived": false,
@@ -3269,7 +3269,7 @@
         "date": "2026-10-12",
         "stars": 338,
         "forks": 62,
-        "pushedAt": "2026-10-11T15:07:58Z",
+        "pushedAt": "2026-10-12T07:25:49Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -3994,7 +3994,7 @@
       {
         "date": "2026-10-12",
         "stars": 7503,
-        "forks": 400,
+        "forks": 401,
         "pushedAt": "2026-08-13T00:29:50Z",
         "archived": false,
         "activity": "active-90"
@@ -4961,8 +4961,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 8414,
-        "forks": 441,
+        "stars": 8421,
+        "forks": 442,
         "pushedAt": "2026-10-12T04:55:21Z",
         "archived": false,
         "activity": "active-30"
@@ -6292,7 +6292,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 9261,
+        "stars": 9262,
         "forks": 826,
         "pushedAt": "2026-10-06T06:36:16Z",
         "archived": false,
@@ -6413,7 +6413,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 17572,
+        "stars": 17571,
         "forks": 679,
         "pushedAt": "2026-10-11T21:14:36Z",
         "archived": false,
@@ -6534,7 +6534,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 12792,
+        "stars": 12795,
         "forks": 467,
         "pushedAt": "2025-10-25T05:17:21Z",
         "archived": false,
@@ -6655,7 +6655,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 7206,
+        "stars": 7207,
         "forks": 5330,
         "pushedAt": "2026-09-27T04:13:04Z",
         "archived": false,
@@ -8835,7 +8835,7 @@
         "date": "2026-10-12",
         "stars": 615,
         "forks": 51,
-        "pushedAt": "2026-10-12T07:04:13Z",
+        "pushedAt": "2026-10-12T07:20:48Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -9801,7 +9801,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 294,
+        "stars": 295,
         "forks": 22,
         "pushedAt": "2026-10-09T16:39:22Z",
         "archived": false,
@@ -11253,7 +11253,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 1549,
+        "stars": 1551,
         "forks": 200,
         "pushedAt": "2026-10-11T05:46:12Z",
         "archived": false,
@@ -11737,7 +11737,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 1415,
+        "stars": 1417,
         "forks": 166,
         "pushedAt": "2026-10-12T04:03:38Z",
         "archived": false,
@@ -11858,7 +11858,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 503,
+        "stars": 505,
         "forks": 54,
         "pushedAt": "2026-09-25T10:06:22Z",
         "archived": false,
@@ -13310,9 +13310,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 2418,
+        "stars": 2419,
         "forks": 253,
-        "pushedAt": "2026-10-12T07:16:46Z",
+        "pushedAt": "2026-10-12T08:42:53Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -13675,7 +13675,7 @@
         "date": "2026-10-12",
         "stars": 572,
         "forks": 30,
-        "pushedAt": "2026-10-11T16:53:54Z",
+        "pushedAt": "2026-10-12T08:58:30Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -16819,8 +16819,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 2465,
-        "forks": 2370,
+        "stars": 2467,
+        "forks": 2373,
         "pushedAt": "2026-10-11T15:58:54Z",
         "archived": false,
         "activity": "active-30"
@@ -17547,7 +17547,7 @@
         "date": "2026-10-12",
         "stars": 653,
         "forks": 40,
-        "pushedAt": "2026-10-12T06:26:36Z",
+        "pushedAt": "2026-10-12T08:29:35Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -18876,7 +18876,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 665,
+        "stars": 666,
         "forks": 217,
         "pushedAt": "2025-08-20T11:21:36Z",
         "archived": false,
@@ -20691,7 +20691,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 19330,
+        "stars": 19333,
         "forks": 2392,
         "pushedAt": "2026-10-07T09:10:09Z",
         "archived": false,
@@ -21538,7 +21538,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 1146,
+        "stars": 1147,
         "forks": 97,
         "pushedAt": "2026-08-20T09:19:13Z",
         "archived": false,
@@ -22266,7 +22266,7 @@
         "date": "2026-10-12",
         "stars": 3352,
         "forks": 502,
-        "pushedAt": "2026-10-10T09:52:04Z",
+        "pushedAt": "2026-10-12T07:22:03Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -22508,7 +22508,7 @@
         "date": "2026-10-12",
         "stars": 339,
         "forks": 83,
-        "pushedAt": "2026-10-12T06:58:40Z",
+        "pushedAt": "2026-10-12T08:57:43Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -23718,7 +23718,7 @@
         "date": "2026-10-12",
         "stars": 3768,
         "forks": 159,
-        "pushedAt": "2026-10-12T06:17:31Z",
+        "pushedAt": "2026-10-12T09:05:34Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -24563,8 +24563,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 54598,
-        "forks": 6149,
+        "stars": 54596,
+        "forks": 6148,
         "pushedAt": "2024-08-29T17:58:11Z",
         "archived": false,
         "activity": "inactive-year"
@@ -25533,7 +25533,7 @@
         "date": "2026-10-12",
         "stars": 2071,
         "forks": 161,
-        "pushedAt": "2026-10-05T03:22:08Z",
+        "pushedAt": "2026-10-12T08:49:26Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -26499,7 +26499,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 4436,
+        "stars": 4437,
         "forks": 434,
         "pushedAt": "2025-07-01T16:08:50Z",
         "archived": false,
@@ -28314,8 +28314,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 6680,
-        "forks": 8525,
+        "stars": 6681,
+        "forks": 8526,
         "pushedAt": "2026-10-09T06:58:11Z",
         "archived": false,
         "activity": "active-30"
@@ -29405,7 +29405,7 @@
         "date": "2026-10-12",
         "stars": 44,
         "forks": 14,
-        "pushedAt": "2026-10-12T06:34:21Z",
+        "pushedAt": "2026-10-12T09:02:48Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -29766,9 +29766,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 50302,
-        "forks": 5039,
-        "pushedAt": "2026-10-12T06:44:33Z",
+        "stars": 50307,
+        "forks": 5040,
+        "pushedAt": "2026-10-12T07:20:52Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -30613,8 +30613,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 10254,
-        "forks": 1893,
+        "stars": 10256,
+        "forks": 1895,
         "pushedAt": "2026-10-10T19:53:09Z",
         "archived": false,
         "activity": "active-30"
@@ -30734,8 +30734,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 80889,
-        "forks": 6664,
+        "stars": 80891,
+        "forks": 6663,
         "pushedAt": "2026-10-12T06:59:41Z",
         "archived": false,
         "activity": "active-30"
@@ -30976,7 +30976,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 3905,
+        "stars": 3908,
         "forks": 297,
         "pushedAt": "2026-10-12T05:42:06Z",
         "archived": false,
@@ -31339,7 +31339,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 17680,
+        "stars": 17681,
         "forks": 1433,
         "pushedAt": "2026-10-10T07:03:36Z",
         "archived": false,
@@ -32791,9 +32791,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 60935,
-        "forks": 4200,
-        "pushedAt": "2026-10-11T20:51:36Z",
+        "stars": 60941,
+        "forks": 4201,
+        "pushedAt": "2026-10-12T08:26:10Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -34348,7 +34348,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 11272,
+        "stars": 11273,
         "forks": 3475,
         "pushedAt": "2026-09-18T04:59:48Z",
         "archived": false,
@@ -34590,9 +34590,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 3968,
+        "stars": 3969,
         "forks": 432,
-        "pushedAt": "2026-10-12T06:29:27Z",
+        "pushedAt": "2026-10-12T09:07:24Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -35316,7 +35316,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 18115,
+        "stars": 18119,
         "forks": 1631,
         "pushedAt": "2026-10-12T05:59:25Z",
         "archived": false,
@@ -35560,7 +35560,7 @@
         "date": "2026-10-12",
         "stars": 24,
         "forks": 4,
-        "pushedAt": "2026-10-12T06:19:23Z",
+        "pushedAt": "2026-10-12T08:08:10Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -37012,9 +37012,9 @@
         "date": "2026-10-12",
         "stars": 9,
         "forks": 1,
-        "pushedAt": "2023-04-28T19:47:44Z",
+        "pushedAt": "2026-10-12T09:12:16Z",
         "archived": false,
-        "activity": "inactive-year"
+        "activity": "active-30"
       }
     ],
     "shihuili1218/klein": [
@@ -37494,7 +37494,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 2310,
+        "stars": 2312,
         "forks": 332,
         "pushedAt": "2026-10-06T09:52:08Z",
         "archived": false,
@@ -37859,7 +37859,7 @@
         "date": "2026-10-12",
         "stars": 3022,
         "forks": 188,
-        "pushedAt": "2026-10-12T05:04:42Z",
+        "pushedAt": "2026-10-12T08:45:16Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -38341,8 +38341,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 1216,
-        "forks": 178,
+        "stars": 1215,
+        "forks": 180,
         "pushedAt": "2026-10-12T05:46:02Z",
         "archived": false,
         "activity": "active-30"
@@ -39316,7 +39316,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 5173,
+        "stars": 5175,
         "forks": 603,
         "pushedAt": "2026-05-26T11:18:11Z",
         "archived": false,
@@ -41131,9 +41131,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 111385,
-        "forks": 16571,
-        "pushedAt": "2026-10-12T06:51:56Z",
+        "stars": 111389,
+        "forks": 16573,
+        "pushedAt": "2026-10-12T09:12:00Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -41373,7 +41373,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 2849,
+        "stars": 2848,
         "forks": 565,
         "pushedAt": "2023-01-21T14:47:20Z",
         "archived": false,
@@ -41616,7 +41616,7 @@
       {
         "date": "2026-10-12",
         "stars": 11858,
-        "forks": 14720,
+        "forks": 14719,
         "pushedAt": "2026-10-11T05:51:22Z",
         "archived": false,
         "activity": "active-30"
@@ -41736,7 +41736,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 4694,
+        "stars": 4700,
         "forks": 347,
         "pushedAt": "2025-12-02T14:31:12Z",
         "archived": false,
@@ -43188,8 +43188,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 62014,
-        "forks": 12768,
+        "stars": 62015,
+        "forks": 12769,
         "pushedAt": "2026-10-11T00:10:54Z",
         "archived": false,
         "activity": "active-30"
@@ -43551,7 +43551,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 39315,
+        "stars": 39316,
         "forks": 8271,
         "pushedAt": "2026-10-11T22:53:50Z",
         "archived": false,
@@ -43672,7 +43672,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 50471,
+        "stars": 50473,
         "forks": 2587,
         "pushedAt": "2026-10-05T19:13:12Z",
         "archived": false,
@@ -45366,7 +45366,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 16085,
+        "stars": 16086,
         "forks": 1951,
         "pushedAt": "2026-10-09T12:00:54Z",
         "archived": false,
@@ -47925,7 +47925,7 @@
       {
         "date": "2026-10-12",
         "stars": 989,
-        "forks": 196,
+        "forks": 195,
         "pushedAt": "2021-03-20T06:04:21Z",
         "archived": false,
         "activity": "inactive-year"
@@ -48045,7 +48045,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 3093,
+        "stars": 3094,
         "forks": 481,
         "pushedAt": "2026-10-09T06:29:05Z",
         "archived": false,
@@ -49136,7 +49136,7 @@
         "date": "2026-10-12",
         "stars": 16,
         "forks": 0,
-        "pushedAt": "2026-10-10T09:00:19Z",
+        "pushedAt": "2026-10-12T08:54:49Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -49497,8 +49497,8 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 5595,
-        "forks": 776,
+        "stars": 5594,
+        "forks": 777,
         "pushedAt": "2026-09-29T02:37:33Z",
         "archived": false,
         "activity": "active-30"
@@ -49739,7 +49739,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 824,
+        "stars": 826,
         "forks": 121,
         "pushedAt": "2026-10-11T16:32:49Z",
         "archived": false,
@@ -50830,7 +50830,7 @@
         "date": "2026-10-12",
         "stars": 151,
         "forks": 14,
-        "pushedAt": "2026-10-12T00:39:08Z",
+        "pushedAt": "2026-10-12T09:12:04Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -51191,7 +51191,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 25853,
+        "stars": 25855,
         "forks": 2627,
         "pushedAt": "2026-10-06T03:55:27Z",
         "archived": false,
@@ -53400,7 +53400,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 144,
+        "stars": 145,
         "forks": 20,
         "pushedAt": "2026-09-23T03:23:25Z",
         "archived": false,
@@ -55098,7 +55098,7 @@
         "date": "2026-10-12",
         "stars": 257,
         "forks": 63,
-        "pushedAt": "2026-10-10T09:21:10Z",
+        "pushedAt": "2026-10-12T09:11:28Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -55202,9 +55202,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 1437,
+        "stars": 1438,
         "forks": 93,
-        "pushedAt": "2026-10-12T06:41:17Z",
+        "pushedAt": "2026-10-12T07:57:54Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -56614,9 +56614,9 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 164,
+        "stars": 165,
         "forks": 37,
-        "pushedAt": "2026-10-01T20:47:45Z",
+        "pushedAt": "2026-10-12T09:01:19Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -57356,7 +57356,7 @@
       },
       {
         "date": "2026-10-12",
-        "stars": 670,
+        "stars": 671,
         "forks": 72,
         "pushedAt": "2026-10-08T15:31:40Z",
         "archived": false,
@@ -57456,7 +57456,7 @@
         "date": "2026-10-12",
         "stars": 166,
         "forks": 20,
-        "pushedAt": "2026-10-11T13:49:54Z",
+        "pushedAt": "2026-10-12T08:15:06Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -57554,7 +57554,7 @@
         "date": "2026-10-12",
         "stars": 33,
         "forks": 4,
-        "pushedAt": "2026-10-12T07:11:29Z",
+        "pushedAt": "2026-10-12T07:33:08Z",
         "archived": false,
         "activity": "active-30"
       }
@@ -58109,6 +58109,176 @@
         "pushedAt": "2026-06-28T09:51:09Z",
         "archived": false,
         "activity": "active-year"
+      }
+    ],
+    "coffeecoproject/layermap": [
+      {
+        "date": "2026-10-12",
+        "stars": 6,
+        "forks": 1,
+        "pushedAt": "2026-10-11T14:31:20Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "endnone/clickpulse": [
+      {
+        "date": "2026-10-12",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-10-10T13:52:47Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "gptzzz/openai-compatible-checker": [
+      {
+        "date": "2026-10-12",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-09-29T03:27:05Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "hongshuo-wang/agent-usage-desktop": [
+      {
+        "date": "2026-10-12",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2026-10-06T15:31:21Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "huangy7/outline-skill": [
+      {
+        "date": "2026-10-12",
+        "stars": 5,
+        "forks": 0,
+        "pushedAt": "2026-10-10T09:48:37Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "jamailar/beav": [
+      {
+        "date": "2026-10-12",
+        "stars": 1913,
+        "forks": 243,
+        "pushedAt": "2026-10-09T00:27:37Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "ls-open/md-to-word": [
+      {
+        "date": "2026-10-12",
+        "stars": 13,
+        "forks": 0,
+        "pushedAt": "2026-10-12T04:01:00Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "marchbeta2087/mengxi-llm-chat": [
+      {
+        "date": "2026-10-12",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-10-07T15:16:45Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "marchbeta2087/uncontrolled-ai-incremental": [
+      {
+        "date": "2026-10-12",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-10-12T09:08:38Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "masakaai/jet-browser": [
+      {
+        "date": "2026-10-12",
+        "stars": 2,
+        "forks": 1,
+        "pushedAt": "2026-10-12T02:03:34Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "qybaihe/mu": [
+      {
+        "date": "2026-10-12",
+        "stars": 497,
+        "forks": 51,
+        "pushedAt": "2026-10-10T02:45:00Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "shaguocgl/buff-term": [
+      {
+        "date": "2026-10-12",
+        "stars": 16,
+        "forks": 0,
+        "pushedAt": "2026-10-12T08:13:18Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "ylv01/prompt-harbor": [
+      {
+        "date": "2026-10-12",
+        "stars": 4,
+        "forks": 0,
+        "pushedAt": "2026-10-08T09:12:39Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "zhongquinnking/caishi": [
+      {
+        "date": "2026-10-12",
+        "stars": 1,
+        "forks": 1,
+        "pushedAt": "2026-10-10T09:44:12Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "zhongquinnking/shiji": [
+      {
+        "date": "2026-10-12",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-10-10T09:44:55Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "zhongquinnking/yesong": [
+      {
+        "date": "2026-10-12",
+        "stars": 0,
+        "forks": 0,
+        "pushedAt": "2026-10-10T09:44:34Z",
+        "archived": false,
+        "activity": "active-30"
+      }
+    ],
+    "zhongquinnking/yuchi": [
+      {
+        "date": "2026-10-12",
+        "stars": 2,
+        "forks": 0,
+        "pushedAt": "2026-10-10T09:41:57Z",
+        "archived": false,
+        "activity": "active-30"
       }
     ]
   }
