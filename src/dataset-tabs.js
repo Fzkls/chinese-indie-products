@@ -46,6 +46,7 @@ const ui = {
   semanticById: new Map(),
   taxonomy: {},
   github: {},
+  githubMetadata: {},
   productMetadata: {},
   weeklyNewNames: new Set(),
   weeklyAdded: [],
@@ -82,19 +83,57 @@ function githubMeta(record) {
   return key ? ui.github[key] : null
 }
 
+function repositoryPushTime(repository) {
+  if (repository?.status !== 'available' || !repository.pushedAt) return 0
+  const timestamp = Date.parse(repository.pushedAt)
+  return Number.isFinite(timestamp) ? timestamp : 0
+}
+
 function projectActivity(record) {
   const repository = githubMeta(record)
   if (!repository) return 'none'
   if (repository.status !== 'available') return 'unavailable'
   if (repository.archived) return 'archived'
-  if (repository.activity) return repository.activity
-  const pushedAt = new Date(repository.pushedAt)
-  if (Number.isNaN(pushedAt.getTime())) return 'unknown'
-  const days = Math.max(0, (Date.now() - pushedAt.getTime()) / 86_400_000)
+  const pushedAt = repositoryPushTime(repository)
+  if (!pushedAt) return 'unknown'
+  const days = Math.max(0, (Date.now() - pushedAt) / 86_400_000)
   if (days <= 30) return 'active-30'
   if (days <= 90) return 'active-90'
   if (days <= 365) return 'active-year'
   return 'inactive-year'
+}
+
+function relativePushTime(timestamp, now = Date.now()) {
+  if (!timestamp) return '时间未知'
+  const days = Math.floor(Math.max(0, now - timestamp) / 86_400_000)
+  if (days === 0) return '今天'
+  if (days === 1) return '昨天'
+  if (days < 30) return `${days} 天前`
+  if (days < 365) return `${Math.floor(days / 30)} 个月前`
+  return `${Math.floor(days / 365)} 年前`
+}
+
+function projectGithubMetricsHtml(repository) {
+  if (!repository) return ''
+  if (repository.status !== 'available') {
+    return '<div class="project-v2-github is-unavailable"><span>GitHub 仓库</span><span>数据暂不可用</span></div>'
+  }
+  const timestamp = repositoryPushTime(repository)
+  const date = timestamp
+    ? new Date(timestamp).toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' })
+    : '暂无记录'
+  const activity = repository.archived ? '已归档' : relativePushTime(timestamp)
+  return `<div class="project-v2-github" aria-label="GitHub 仓库数据">
+    <div class="project-v2-github-stat">
+      <span class="project-v2-github-label">GitHub Stars</span>
+      <strong class="project-v2-stars"><span aria-hidden="true">★</span> ${formatNumber(repository.stars)}</strong>
+    </div>
+    <div class="project-v2-github-stat">
+      <span class="project-v2-github-label">最近代码推送</span>
+      <strong class="project-v2-pushed">${timestamp ? `<time datetime="${new Date(timestamp).toISOString()}">${escapeHtml(date)}</time>` : date}</strong>
+      <small>${escapeHtml(activity)}</small>
+    </div>
+  </div>`
 }
 
 function installNavigation() {
@@ -463,7 +502,7 @@ function sortProjectRecords(records) {
   const copy = [...records]
   if (ui.sort === 'recent') return copy.sort((a, b) => projectDateValue(b) - projectDateValue(a) || String(a.productName).localeCompare(String(b.productName), 'zh-CN'))
   if (ui.sort === 'stars') return copy.sort((a, b) => (Number(githubMeta(b)?.stars) || 0) - (Number(githubMeta(a)?.stars) || 0) || projectDateValue(b) - projectDateValue(a))
-  if (ui.sort === 'active') return copy.sort((a, b) => (activityRank[projectActivity(a)] ?? 99) - (activityRank[projectActivity(b)] ?? 99) || projectDateValue(b) - projectDateValue(a))
+  if (ui.sort === 'active') return copy.sort((a, b) => repositoryPushTime(githubMeta(b)) - repositoryPushTime(githubMeta(a)) || (activityRank[projectActivity(a)] ?? 99) - (activityRank[projectActivity(b)] ?? 99) || projectDateValue(b) - projectDateValue(a))
   return copy.sort(productPreviewSort)
 }
 
@@ -536,7 +575,11 @@ function renderProjectCards() {
   const more = $('#project-v2-more')
   if (!grid || !summary || !more) return
   const visible = ui.filteredProducts.slice(0, ui.visible)
-  summary.textContent = `找到 ${formatNumber(ui.filteredProducts.length)} 个项目 · 当前显示 ${formatNumber(visible.length)} 个`
+  const githubSnapshot = Date.parse(ui.githubMetadata.generatedAt || '')
+  const snapshotLabel = Number.isFinite(githubSnapshot)
+    ? new Date(githubSnapshot).toLocaleDateString('zh-CN', { year: 'numeric', month: '2-digit', day: '2-digit' })
+    : '时间未知'
+  summary.textContent = `找到 ${formatNumber(ui.filteredProducts.length)} 个项目 · 显示 ${formatNumber(visible.length)} 个 · GitHub 快照 ${snapshotLabel}（非实时）`
   more.hidden = visible.length >= ui.filteredProducts.length
   grid.innerHTML = visible.map((record) => {
     const semantic = semanticFor(record)
@@ -554,7 +597,8 @@ function renderProjectCards() {
       <h3><a href="${escapeHtml(record.productUrl || '#')}" ${record.productUrl ? 'target="_blank" rel="noreferrer"' : 'aria-disabled="true"'}>${escapeHtml(record.productName)}</a></h3>
       <p>${escapeHtml(record.description || '暂无产品介绍')}</p>
       <div class="project-v2-tags">${tags.map((tag) => `<span>${escapeHtml(tag)}</span>`).join('')}</div>
-      <div class="project-v2-meta"><span>${escapeHtml(record.developerName || '未知开发者')}</span><span>${escapeHtml(location)}</span>${repository?.status === 'available' ? `<span>★ ${formatNumber(repository.stars)}</span>` : ''}</div>
+      ${projectGithubMetricsHtml(repository)}
+      <div class="project-v2-meta"><span>${escapeHtml(record.developerName || '未知开发者')}</span><span>${escapeHtml(location)}</span></div>
       ${projectSourcesHtml(record)}
     </article>`
   }).join('') || '<div class="project-list-empty"><strong>没有匹配项目</strong><p>减少筛选条件或换一个关键词。</p></div>'
@@ -895,6 +939,7 @@ async function loadData() {
   ui.taxonomy = taxonomy
   ui.semanticById = new Map((semantic.records || []).map((item) => [item.productId, item]))
   ui.github = github.repositories || {}
+  ui.githubMetadata = github.metadata || {}
   ui.weeklyAdded = weekly.products?.added || []
   ui.weeklyNewNames = new Set(ui.weeklyAdded.map((item) => item.name).filter(Boolean))
   ui.filteredProducts = ui.products
