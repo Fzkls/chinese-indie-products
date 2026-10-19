@@ -4,50 +4,2800 @@
     "taxonomyVersion": "1.1",
     "classifier": "deterministic-semantic-rules-v1.1+review-layer",
     "reviewOverrideVersion": 1,
-    "sourceProductGeneratedAt": "2026-10-14T06:36:51.830Z",
-    "generatedAt": "2026-10-14T06:37:23.725Z",
-    "totalProducts": 3153,
-    "classifiedProducts": 3133,
-    "otherProducts": 20,
-    "coverage": 0.9937,
-    "lowConfidenceProducts": 25,
-    "averageConfidence": 0.8694,
-    "reviewedProducts": 1126,
-    "manualReviewProducts": 1106,
+    "sourceProductGeneratedAt": "2026-10-19T07:46:39.839Z",
+    "generatedAt": "2026-10-19T07:47:20.067Z",
+    "totalProducts": 3163,
+    "classifiedProducts": 3138,
+    "otherProducts": 25,
+    "coverage": 0.9921,
+    "lowConfidenceProducts": 31,
+    "averageConfidence": 0.8669,
+    "reviewedProducts": 1094,
+    "manualReviewProducts": 1069,
     "reviewRuleProducts": 0,
-    "autoReviewProducts": 20,
-    "reviewChangedProducts": 873,
-    "baseOtherProducts": 517,
-    "activeReviewOverrides": 1106,
+    "autoReviewProducts": 25,
+    "reviewChangedProducts": 848,
+    "baseOtherProducts": 510,
+    "activeReviewOverrides": 1069,
     "staleReviewOverrides": 0,
     "primaryCategoryCounts": {
-      "utilities": 567,
-      "ai-productivity": 502,
-      "developer-tools": 423,
-      "design-creative": 360,
-      "content-knowledge": 235,
-      "media-entertainment": 226,
-      "games": 199,
-      "lifestyle-health": 147,
-      "business-marketing": 119,
+      "utilities": 560,
+      "ai-productivity": 517,
+      "developer-tools": 435,
+      "design-creative": 355,
+      "content-knowledge": 237,
+      "media-entertainment": 224,
+      "games": 204,
+      "lifestyle-health": 145,
+      "business-marketing": 113,
       "education": 95,
-      "infrastructure-security": 76,
+      "infrastructure-security": 71,
       "finance": 66,
-      "social-community": 64,
+      "social-community": 62,
       "data-analytics": 33,
-      "ecommerce": 21,
-      "other": 20
+      "other": 25,
+      "ecommerce": 21
     },
     "classificationMethodCounts": {
-      "rules": 2014,
-      "manual-review": 1106,
-      "auto-review": 20,
-      "semantic-fallback": 12,
+      "rules": 2052,
+      "manual-review": 1069,
+      "auto-review": 25,
+      "semantic-fallback": 16,
       "source-fallback": 1
     },
     "note": "Source facts remain in products.json. Deterministic rules classify clear records; reusable review rules and stable overrides handle known edge cases. Remaining unresolved records are auto-reviewed into Other so a single ambiguous product does not stop the scheduled data pipeline."
   },
   "records": [
+    {
+      "productId": "5daf2dd1e8d43e",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:Prompt 工具",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "ab574aab3f964a",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.67,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "platform:web",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "c59e561ceef579",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "DevOps",
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "sysadmin",
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "docker",
+          "deployment",
+          "podcast",
+          "sharing",
+          "sync"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:DevOps",
+        "sub:部署",
+        "audience:sysadmin",
+        "audience:consumer",
+        "platform:web",
+        "characteristics:open-source",
+        "capabilities:docker",
+        "capabilities:deployment"
+      ]
+    },
+    {
+      "productId": "64da3842b5a994",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "DevOps",
+        "API 工具",
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "sysadmin"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "api",
+          "self-hosted"
+        ],
+        "characteristics": [
+          "self-hosted",
+          "open-source"
+        ],
+        "capabilities": [
+          "docker",
+          "api",
+          "deployment"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:DevOps",
+        "sub:API 工具",
+        "sub:部署",
+        "audience:developer",
+        "audience:sysadmin",
+        "platform:web",
+        "productForm:api",
+        "productForm:self-hosted"
+      ]
+    },
+    {
+      "productId": "f89f403426f685",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具",
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "designer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "search",
+          "api",
+          "deployment"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "sub:部署",
+        "audience:developer",
+        "audience:designer",
+        "platform:web",
+        "productForm:api",
+        "characteristics:open-source",
+        "capabilities:search"
+      ]
+    },
+    {
+      "productId": "ac4f3d50f66ecd",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "android",
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "sync"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "audience:designer",
+        "platform:android",
+        "platform:macos",
+        "productForm:mobile-app",
+        "characteristics:open-source",
+        "capabilities:sync"
+      ]
+    },
+    {
+      "productId": "a5389117aad3e1",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "web-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "sub:转换工具",
+        "platform:browser",
+        "platform:web",
+        "productForm:web-app",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "4e58889751a3c8",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "writing",
+          "video",
+          "api"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "category:工程能力",
+        "sub:API 工具",
+        "audience:developer",
+        "audience:creator",
+        "productForm:api",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:writing"
+      ]
+    },
+    {
+      "productId": "c738163c359404",
+      "primaryCategory": "education",
+      "subCategories": [
+        "课程"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:教育学习",
+        "sub:课程",
+        "platform:web",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "6c69bbedb8e1bd",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "sub:AI 编程",
+        "productForm:plugin",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "ed5ffe938ec1b6",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "api"
+        ]
+      },
+      "confidence": 0.82,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "audience:developer",
+        "productForm:api",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "156a6b9b52f197",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "privacy-focused"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "characteristics:privacy-focused"
+      ]
+    },
+    {
+      "productId": "926951465b6b7b",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "agent"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:consumer",
+        "platform:browser",
+        "platform:web",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:agent"
+      ]
+    },
+    {
+      "productId": "89a007611234b3",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "截图与二维码"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.91,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:截图与二维码",
+        "audience:consumer"
+      ]
+    },
+    {
+      "productId": "f1d76f39936189",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "计时与计算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:计时与计算"
+      ]
+    },
+    {
+      "productId": "e1739bee465d90",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作",
+        "设计工具"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "plugin"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "sub:设计工具",
+        "audience:designer",
+        "platform:browser",
+        "platform:web",
+        "productForm:plugin",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "9ca764a90d79b6",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "platform:browser"
+      ]
+    },
+    {
+      "productId": "2256eedee77740",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "旅行",
+        "天气"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:旅行",
+        "sub:天气",
+        "audience:consumer"
+      ]
+    },
+    {
+      "productId": "92c8ec639620e5",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具",
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "sub:转换工具",
+        "platform:browser",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "459ed30f012460",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:web"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "177616abf1bf4b",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "audience:consumer",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "32aa982cd6f490",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "sub:系统工具",
+        "platform:macos",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "dfcdb2f2f44712",
+      "primaryCategory": "education",
+      "subCategories": [
+        "语言学习"
+      ],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "education"
+        ]
+      },
+      "confidence": 0.68,
+      "classificationMethod": "semantic-fallback",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:教育能力标签",
+        "sub:语言学习",
+        "audience:student",
+        "platform:web",
+        "capabilities:education"
+      ]
+    },
+    {
+      "productId": "f5eac47431b803",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "自动化",
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "cli"
+        ],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "task-management"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:效率场景",
+        "sub:自动化",
+        "sub:个人效率",
+        "audience:developer",
+        "platform:web",
+        "productForm:cli",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "09c47e7e76358a",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [
+          "cli"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "agent",
+          "sharing"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "audience:developer",
+        "platform:macos",
+        "productForm:cli",
+        "characteristics:ai-native",
+        "capabilities:agent",
+        "capabilities:sharing"
+      ]
+    },
+    {
+      "productId": "7d2099e9fba778",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具",
+        "计时与计算"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "ios",
+          "web"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.91,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:系统工具",
+        "sub:计时与计算",
+        "platform:ios",
+        "platform:web",
+        "productForm:mobile-app"
+      ]
+    },
+    {
+      "productId": "4b7a9640ded233",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:转换工具",
+        "platform:browser"
+      ]
+    },
+    {
+      "productId": "6ca2afc131743f",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [
+          "cli"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "vpn"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "platform:web",
+        "productForm:cli",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:vpn"
+      ]
+    },
+    {
+      "productId": "4606619bbc7061",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "sub:系统工具",
+        "platform:macos",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "be29c73ec382be",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "platform:browser"
+      ]
+    },
+    {
+      "productId": "16787c072acb5b",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "写作"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "writing",
+          "markdown"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:写作",
+        "audience:creator",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source",
+        "characteristics:ai-native"
+      ]
+    },
+    {
+      "productId": "868011940d3489",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.67,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "01ecc6fa868894",
+      "primaryCategory": "finance",
+      "subCategories": [
+        "记账与预算"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "student",
+          "consumer"
+        ],
+        "platform": [
+          "ios"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [],
+        "capabilities": [
+          "finance",
+          "education"
+        ]
+      },
+      "confidence": 0.73,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:金融财务",
+        "sub:记账与预算",
+        "audience:creator",
+        "audience:student",
+        "platform:ios",
+        "productForm:mobile-app",
+        "capabilities:finance",
+        "capabilities:education"
+      ]
+    },
+    {
+      "productId": "fc37649b52c2a1",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "搜索"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "search"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:搜索",
+        "audience:consumer",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:search"
+      ]
+    },
+    {
+      "productId": "600b3ee1dda9a8",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "audience:creator",
+        "platform:browser",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "fc38a3c07649cb",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "note-taking",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:Prompt 工具",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "e32764d3b3f033",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "capabilities:video"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "950a5c024e6e13",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "image-generation",
+          "video",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:Prompt 工具",
+        "audience:creator",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:image-generation"
+      ]
+    },
+    {
+      "productId": "1972d4967c085e",
+      "primaryCategory": "lifestyle-health",
+      "subCategories": [
+        "家庭"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:生活健康",
+        "sub:家庭",
+        "audience:consumer",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "0d35d2a069fb03",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "dd7498961bc9ab",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.66,
+      "classificationMethod": "semantic-fallback",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率能力标签",
+        "sub:Prompt 工具",
+        "capabilities:video",
+        "capabilities:prompt-management"
+      ]
+    },
+    {
+      "productId": "f8ffb5b2c717d6",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "ea8fe0cce4f059",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "sub:游戏",
+        "platform:browser",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "b1a952b5f8309f",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程",
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "consumer"
+        ],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "monitoring",
+          "api"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "sub:API 工具",
+        "audience:developer",
+        "audience:consumer",
+        "platform:macos",
+        "productForm:api",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "9715ba38ce99d7",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "audience:developer",
+        "platform:macos"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "9121b52f30837e",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "写作"
+      ],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [
+          "ios",
+          "android",
+          "wechat",
+          "web"
+        ],
+        "productForm": [
+          "mobile-app"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "writing"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:写作",
+        "audience:creator",
+        "platform:ios",
+        "platform:android",
+        "productForm:mobile-app",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "2ca6314060eefb",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "video"
+        ]
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "capabilities:video"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "864f7e22dc102e",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "文档"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "markdown"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:文档",
+        "audience:developer",
+        "platform:macos",
+        "characteristics:open-source",
+        "capabilities:markdown"
+      ]
+    },
+    {
+      "productId": "c19ec2580d673f",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [
+        "音乐",
+        "视频"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "music"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐",
+        "category:媒体",
+        "sub:音乐",
+        "sub:视频",
+        "audience:consumer",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "be6d2a88db4d29",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "cc1cbfd2e3ac8d",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "文档"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "markdown"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:文档",
+        "capabilities:markdown"
+      ]
+    },
+    {
+      "productId": "dd3698715cfc34",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "5c8cebe5f60235",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读",
+        "文档"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "sub:文档",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "1822fa3993118b",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video"
+        ]
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "audience:creator",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "d0f3d3235b6dcc",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "自动化"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows",
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "automation"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:效率场景",
+        "sub:自动化",
+        "platform:windows",
+        "platform:browser",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:automation"
+      ]
+    },
+    {
+      "productId": "aac66017350f65",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程",
+        "数据库工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "wechat",
+          "web"
+        ],
+        "productForm": [
+          "saas"
+        ],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "payments"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:数据库工具",
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "sub:数据库工具",
+        "platform:wechat",
+        "platform:web",
+        "productForm:saas",
+        "characteristics:ai-native",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "dfcaca0e609a62",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:Prompt 工具",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "0f456f5fca8ae4",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体娱乐"
+      ]
+    },
+    {
+      "productId": "2b31a36fa048ea",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "文件工具",
+        "转换工具"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux",
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:文件工具",
+        "sub:转换工具",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "88cfb5badd2dda",
+      "primaryCategory": "education",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:教育学习"
+      ]
+    },
+    {
+      "productId": "de701701747bbf",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作",
+        "设计工具"
+      ],
+      "tags": {
+        "audience": [
+          "creator",
+          "designer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "image-generation",
+          "video"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "sub:设计工具",
+        "audience:creator",
+        "audience:designer",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:image-generation"
+      ]
+    },
+    {
+      "productId": "713cbf178ce415",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "截图与二维码"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "ocr"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "sub:截图与二维码",
+        "platform:browser",
+        "capabilities:ocr"
+      ]
+    },
+    {
+      "productId": "09aa66fa2b1d17",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "图像创作",
+        "视频创作",
+        "素材管理"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "audio"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:图像创作",
+        "sub:视频创作",
+        "sub:素材管理",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "11be84c0e0a915",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "video"
+        ]
+      },
+      "confidence": 0.93,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "sub:AI 编程",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
+    {
+      "productId": "aebc69054fc69f",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "Prompt 工具"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "video",
+          "prompt-management"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:Prompt 工具",
+        "audience:consumer",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:video"
+      ]
+    },
+    {
+      "productId": "ba69e51541fcda",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "文档"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "markdown"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:文档",
+        "platform:browser",
+        "platform:wechat",
+        "capabilities:markdown"
+      ]
+    },
+    {
+      "productId": "791814331728ef",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "platform:browser",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "81234daa8ebedd",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读"
+      ]
+    },
+    {
+      "productId": "519f28c8a62ce9",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "finance"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "capabilities:finance"
+      ]
+    },
+    {
+      "productId": "a95df3c18b7fbe",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [
+          "plugin",
+          "browser-extension"
+        ],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.62,
+      "classificationMethod": "semantic-fallback",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具兜底",
+        "platform:browser",
+        "productForm:plugin",
+        "productForm:browser-extension"
+      ]
+    },
+    {
+      "productId": "3e0b44573be28d",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.8,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具",
+        "category:通用工具",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "c394a290eb85ab",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "搜索",
+        "自动化"
+      ],
+      "tags": {
+        "audience": [
+          "marketer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "search"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:搜索",
+        "sub:自动化",
+        "audience:marketer",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
+    {
+      "productId": "b33735f5301d41",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程",
+        "部署"
+      ],
+      "tags": {
+        "audience": [
+          "marketer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "agent",
+          "deployment"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "sub:部署",
+        "audience:marketer",
+        "characteristics:ai-native",
+        "capabilities:agent",
+        "capabilities:deployment"
+      ]
+    },
+    {
+      "productId": "3f2ef7416a37b5",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "monitoring"
+        ]
+      },
+      "confidence": 0.93,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:designer",
+        "platform:macos",
+        "platform:web",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:monitoring"
+      ]
+    },
+    {
+      "productId": "0d281fe28a1883",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "搜索"
+      ],
+      "tags": {
+        "audience": [
+          "designer"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [
+          "desktop-app"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "search"
+        ]
+      },
+      "confidence": 0.89,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:搜索",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "productForm:desktop-app",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:search"
+      ]
+    },
+    {
+      "productId": "ede991184b83c8",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "翻译",
+        "搜索"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "local-first",
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "search",
+          "translation",
+          "ocr",
+          "note-taking",
+          "api",
+          "markdown"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:翻译",
+        "sub:搜索",
+        "audience:developer",
+        "platform:macos",
+        "productForm:api",
+        "characteristics:local-first",
+        "characteristics:ai-native"
+      ]
+    },
+    {
+      "productId": "44869aa90386aa",
+      "primaryCategory": "other",
+      "subCategories": [
+        "其他"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.5,
+      "classificationMethod": "auto-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他",
+        "platform:macos"
+      ],
+      "reviewStatus": "auto-reviewed",
+      "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "7f10a834327efd",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "自动化"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "designer",
+          "team",
+          "enterprise"
+        ],
+        "platform": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "agent",
+          "collaboration"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "sub:自动化",
+        "audience:developer",
+        "audience:designer",
+        "platform:macos",
+        "platform:windows",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:agent"
+      ]
+    },
+    {
+      "productId": "ed53b1bceb2c1c",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "AI 编程"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI 编程",
+        "category:来源程序员清单",
+        "sub:AI 编程",
+        "audience:developer",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "9473dc321dc3bb",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "会议"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.71,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:效率场景",
+        "sub:会议",
+        "platform:browser"
+      ]
+    },
+    {
+      "productId": "5768eb0482be13",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "api"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "audience:developer",
+        "productForm:api",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "3c0dec41a15357",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "open-source",
+          "offline"
+        ],
+        "capabilities": [
+          "api"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "audience:developer",
+        "productForm:api",
+        "characteristics:open-source",
+        "characteristics:offline",
+        "capabilities:api"
+      ]
+    },
+    {
+      "productId": "a43d689e03fe30",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "阅读"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "writing"
+        ]
+      },
+      "confidence": 0.84,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:内容知识",
+        "sub:阅读",
+        "platform:macos",
+        "capabilities:writing"
+      ]
+    },
+    {
+      "productId": "e05ad9aebfa677",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "搜索"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "browser",
+          "web"
+        ],
+        "productForm": [
+          "plugin",
+          "browser-extension"
+        ],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "search"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:搜索",
+        "platform:browser",
+        "platform:web",
+        "productForm:plugin",
+        "productForm:browser-extension",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:search"
+      ]
+    },
+    {
+      "productId": "5fbe8bd6eb7865",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手",
+        "个人效率"
+      ],
+      "tags": {
+        "audience": [
+          "student"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai",
+          "education",
+          "task-management"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:效率场景",
+        "category:知识工作",
+        "sub:AI 助手",
+        "sub:个人效率",
+        "audience:student",
+        "platform:web",
+        "characteristics:ai-native",
+        "capabilities:ai",
+        "capabilities:education"
+      ]
+    },
     {
       "productId": "e061894d6bdd22",
       "primaryCategory": "media-entertainment",
@@ -113,6 +2863,34 @@
       "reviewPreviousMethod": "other"
     },
     {
+      "productId": "5718860f32a769",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "platform:windows",
+        "characteristics:open-source"
+      ]
+    },
+    {
       "productId": "7cd8454aec4785",
       "primaryCategory": "ai-productivity",
       "subCategories": [
@@ -137,6 +2915,47 @@
         "sub:AI 助手",
         "characteristics:ai-native",
         "capabilities:ai"
+      ]
+    },
+    {
+      "productId": "95a8e790febe0f",
+      "primaryCategory": "ai-productivity",
+      "subCategories": [
+        "AI 助手"
+      ],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "windows"
+        ],
+        "productForm": [
+          "api"
+        ],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "api"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:AI",
+        "category:知识工作",
+        "sub:AI 助手",
+        "audience:developer",
+        "platform:windows",
+        "productForm:api",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:api"
       ]
     },
     {
@@ -193,6 +3012,63 @@
       ]
     },
     {
+      "productId": "593b900ed40272",
+      "primaryCategory": "business-marketing",
+      "subCategories": [
+        "反馈"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "feedback"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:商业运营",
+        "sub:反馈",
+        "platform:macos",
+        "capabilities:feedback"
+      ]
+    },
+    {
+      "productId": "f253fa614b6e34",
+      "primaryCategory": "utilities",
+      "subCategories": [
+        "系统工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "macos"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "search",
+          "ocr"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:实用工具",
+        "category:通用工具",
+        "sub:系统工具",
+        "platform:macos",
+        "capabilities:search",
+        "capabilities:ocr"
+      ]
+    },
+    {
       "productId": "3a33f0c08710ed",
       "primaryCategory": "ai-productivity",
       "subCategories": [
@@ -231,6 +3107,31 @@
         "productForm:plugin",
         "characteristics:open-source",
         "characteristics:ai-native"
+      ]
+    },
+    {
+      "productId": "672821f838843c",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "characteristics:open-source"
       ]
     },
     {
@@ -550,6 +3451,35 @@
       "reviewReason": "现有规则没有足够证据归入具体主分类；自动保留为 Other，并进入后续规则优化范围，不阻断数据发布。",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "other"
+    },
+    {
+      "productId": "38c93ceba3d8b5",
+      "primaryCategory": "media-entertainment",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "windows",
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "audio"
+        ]
+      },
+      "confidence": 0.68,
+      "classificationMethod": "semantic-fallback",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:媒体能力标签",
+        "platform:windows",
+        "platform:wechat",
+        "characteristics:open-source",
+        "capabilities:audio"
+      ]
     },
     {
       "productId": "0714454adaf259",
@@ -60254,7 +63184,6 @@
         "productForm": [],
         "characteristics": [],
         "capabilities": [
-          "deployment",
           "payments",
           "email"
         ]
@@ -60267,8 +63196,8 @@
         "review:primary:developer-tools",
         "category:内容知识",
         "sub:博客",
-        "capabilities:deployment",
-        "capabilities:payments"
+        "capabilities:payments",
+        "capabilities:email"
       ],
       "reviewStatus": "reviewed",
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
@@ -60635,2797 +63564,6 @@
       ]
     },
     {
-      "productId": "7f28c76b077959",
-      "primaryCategory": "design-creative",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "e32ac78d60e957",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "设计工具"
-      ],
-      "tags": {
-        "audience": [
-          "developer",
-          "creator"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:设计创意",
-        "sub:设计工具",
-        "audience:developer",
-        "audience:creator"
-      ]
-    },
-    {
-      "productId": "6737915cd809c9",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "文件工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "video"
-        ]
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "category:通用工具",
-        "sub:文件工具",
-        "capabilities:video"
-      ]
-    },
-    {
-      "productId": "e7d8cd8534f07e",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [
-        "笔记"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "note-taking",
-          "sharing"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:内容知识",
-        "sub:笔记",
-        "capabilities:note-taking",
-        "capabilities:sharing"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "content-knowledge",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "43e0181af48ed8",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "automation"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:效率场景",
-        "sub:自动化",
-        "capabilities:automation"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "33a0c3bbf41e05",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "creator"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "audience:creator"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "e6f68d8870038b",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "计时与计算"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "finance"
-        ]
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "category:通用工具",
-        "sub:计时与计算",
-        "audience:creator",
-        "audience:consumer",
-        "capabilities:finance"
-      ]
-    },
-    {
-      "productId": "af1cb65dda0b12",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "sharing"
-        ]
-      },
-      "confidence": 0.78,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:开发工具",
-        "audience:developer",
-        "platform:web",
-        "capabilities:sharing"
-      ]
-    },
-    {
-      "productId": "4c033943597735",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [
-        "笔记",
-        "博客"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": [
-          "note-taking",
-          "sharing"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:内容知识",
-        "sub:笔记",
-        "sub:博客",
-        "audience:consumer",
-        "characteristics:open-source",
-        "capabilities:note-taking",
-        "capabilities:sharing"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "content-knowledge",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "aee8988bb1eea9",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "macos"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "platform:macos"
-      ]
-    },
-    {
-      "productId": "ee406277e51e34",
-      "primaryCategory": "lifestyle-health",
-      "subCategories": [
-        "旅行"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:生活健康",
-        "sub:旅行",
-        "audience:consumer",
-        "platform:web"
-      ]
-    },
-    {
-      "productId": "6de755278dabe0",
-      "primaryCategory": "games",
-      "subCategories": [
-        "游戏"
-      ],
-      "tags": {
-        "audience": [
-          "team"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": [
-          "collaboration"
-        ]
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:游戏",
-        "sub:游戏",
-        "audience:team",
-        "platform:web",
-        "characteristics:open-source",
-        "capabilities:collaboration"
-      ]
-    },
-    {
-      "productId": "6e8ab4be235916",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [
-        "AI 助手"
-      ],
-      "tags": {
-        "audience": [
-          "marketer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "video",
-          "education"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "category:知识工作",
-        "sub:AI 助手",
-        "audience:marketer",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:video"
-      ]
-    },
-    {
-      "productId": "bc5cf64d20625c",
-      "primaryCategory": "media-entertainment",
-      "subCategories": [
-        "音乐"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "search",
-          "note-taking",
-          "music"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:媒体娱乐",
-        "sub:音乐",
-        "audience:consumer",
-        "capabilities:search",
-        "capabilities:note-taking"
-      ]
-    },
-    {
-      "productId": "55582042fca58d",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [
-          "macos"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:developer-tools",
-        "category:效率场景",
-        "sub:个人效率",
-        "audience:developer",
-        "platform:macos"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "4f6276afda951d",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [
-        "文档",
-        "内容创作"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "student"
-        ],
-        "platform": [
-          "browser",
-          "web"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.73,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:内容知识",
-        "sub:文档",
-        "sub:内容创作",
-        "audience:creator",
-        "audience:student",
-        "platform:browser",
-        "platform:web",
-        "productForm:browser-extension",
-        "productForm:plugin"
-      ]
-    },
-    {
-      "productId": "54d579a009115f",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer",
-          "student"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native",
-          "open-source"
-        ],
-        "capabilities": [
-          "ai",
-          "education"
-        ]
-      },
-      "confidence": 0.78,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:开发工具",
-        "category:来源程序员清单",
-        "audience:developer",
-        "audience:student",
-        "characteristics:ai-native",
-        "characteristics:open-source",
-        "capabilities:ai",
-        "capabilities:education"
-      ]
-    },
-    {
-      "productId": "b5ee1151209c8f",
-      "primaryCategory": "lifestyle-health",
-      "subCategories": [
-        "饮食"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "consumer"
-        ],
-        "platform": [
-          "wechat"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:生活健康",
-        "sub:饮食",
-        "audience:creator",
-        "audience:consumer",
-        "platform:wechat"
-      ]
-    },
-    {
-      "productId": "3c69224ad8b8bc",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer",
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:生活健康",
-        "sub:旅行",
-        "audience:developer",
-        "audience:consumer",
-        "platform:web",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "lifestyle-health",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "b907833d6073a6",
-      "primaryCategory": "developer-tools",
-      "subCategories": [
-        "API 工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native",
-          "open-source"
-        ],
-        "capabilities": [
-          "ai",
-          "rss"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:工程能力",
-        "category:来源程序员清单",
-        "sub:API 工具",
-        "platform:web",
-        "characteristics:ai-native",
-        "characteristics:open-source",
-        "capabilities:ai",
-        "capabilities:rss"
-      ]
-    },
-    {
-      "productId": "0bf4e6b2231fcb",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [
-        "自动化",
-        "个人效率"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "automation"
-        ]
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "category:效率场景",
-        "sub:自动化",
-        "sub:个人效率",
-        "audience:consumer",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:automation"
-      ]
-    },
-    {
-      "productId": "04b9f14250b121",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "platform:web",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "b469024d5fabc2",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [
-        "安全"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "privacy-focused"
-        ],
-        "capabilities": [
-          "security",
-          "email"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "category:基础设施能力标签",
-        "sub:安全",
-        "characteristics:privacy-focused",
-        "capabilities:security",
-        "capabilities:email"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "infrastructure-security",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "38f9a1f2cf9576",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "category:通用工具兜底",
-        "platform:browser",
-        "productForm:browser-extension",
-        "productForm:plugin",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "2233fc0a97037a",
-      "primaryCategory": "lifestyle-health",
-      "subCategories": [
-        "天气"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "android"
-        ],
-        "productForm": [
-          "mobile-app"
-        ],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:生活健康",
-        "sub:天气",
-        "platform:android",
-        "productForm:mobile-app",
-        "characteristics:open-source"
-      ]
-    },
-    {
-      "productId": "4fa0d952ef7fac",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "文件工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "video"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "category:通用工具兜底",
-        "sub:文件工具",
-        "capabilities:video"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "65c574e18d4427",
-      "primaryCategory": "developer-tools",
-      "subCategories": [
-        "API 工具"
-      ],
-      "tags": {
-        "audience": [
-          "developer",
-          "enterprise"
-        ],
-        "platform": [],
-        "productForm": [
-          "api"
-        ],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "api"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:工程能力",
-        "sub:API 工具",
-        "audience:developer",
-        "audience:enterprise",
-        "productForm:api",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:api"
-      ]
-    },
-    {
-      "productId": "355cdda16ca8d9",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "windows"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:windows",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "057901b2376b67",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "图像创作"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "image-generation",
-          "video"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "category:设计创意",
-        "sub:图像创作",
-        "audience:creator",
-        "audience:consumer",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:image-generation"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "design-creative",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "80375d7cf5b9d1",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "windows"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:windows",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "08f45b1a01a19f",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "sharing"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:通用工具兜底",
-        "capabilities:sharing"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "7d8bcce5353359",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "8f194b2df12a70",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "系统工具"
-      ],
-      "tags": {
-        "audience": [
-          "designer",
-          "student"
-        ],
-        "platform": [
-          "macos",
-          "windows"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "education"
-        ]
-      },
-      "confidence": 0.73,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "sub:系统工具",
-        "audience:designer",
-        "audience:student",
-        "platform:macos",
-        "platform:windows",
-        "capabilities:education"
-      ]
-    },
-    {
-      "productId": "94b9ec37773853",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具"
-      ]
-    },
-    {
-      "productId": "6a95fa94abe652",
-      "primaryCategory": "education",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:education",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "dd4e094cd1b46e",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "analytics"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:developer-tools",
-        "category:开发工具",
-        "platform:web",
-        "capabilities:analytics"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "developer-tools",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "b149ea612ff5d2",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [
-        "存储与备份"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "android"
-        ],
-        "productForm": [
-          "mobile-app"
-        ],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": [
-          "backup"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "category:基础设施能力标签",
-        "sub:存储与备份",
-        "platform:android",
-        "productForm:mobile-app",
-        "characteristics:open-source",
-        "capabilities:backup"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "infrastructure-security",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "c1d83487a8af8f",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "sharing"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "category:通用工具",
-        "capabilities:sharing"
-      ]
-    },
-    {
-      "productId": "6d221c0378f64c",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "转换工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "review:semantic-rule",
-        "review:primary:utilities",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "reviewed-rule"
-    },
-    {
-      "productId": "f394c3a353c039",
-      "primaryCategory": "social-community",
-      "subCategories": [
-        "社交网络"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "sharing"
-        ]
-      },
-      "confidence": 0.78,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:社交社区",
-        "sub:社交网络",
-        "audience:consumer",
-        "capabilities:sharing"
-      ]
-    },
-    {
-      "productId": "033d98fd5c93cb",
-      "primaryCategory": "games",
-      "subCategories": [
-        "游戏"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "music"
-        ]
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:游戏",
-        "category:来源游戏分类",
-        "sub:游戏",
-        "audience:consumer",
-        "platform:web",
-        "capabilities:music"
-      ]
-    },
-    {
-      "productId": "3a31e159cd2a6a",
-      "primaryCategory": "education",
-      "subCategories": [
-        "语言学习"
-      ],
-      "tags": {
-        "audience": [
-          "student",
-          "consumer"
-        ],
-        "platform": [
-          "browser",
-          "web"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": [
-          "education"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:education",
-        "category:教育能力标签",
-        "sub:语言学习",
-        "audience:student",
-        "audience:consumer",
-        "platform:browser",
-        "platform:web",
-        "productForm:browser-extension",
-        "productForm:plugin"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "education",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "a8969755f2a9f5",
-      "primaryCategory": "media-entertainment",
-      "subCategories": [
-        "播客"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "audio",
-          "podcast",
-          "markdown"
-        ]
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:媒体娱乐",
-        "category:媒体",
-        "sub:播客",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:audio"
-      ]
-    },
-    {
-      "productId": "712eca47de812c",
-      "primaryCategory": "education",
-      "subCategories": [
-        "课程"
-      ],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "video"
-        ]
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:教育学习",
-        "sub:课程",
-        "audience:developer",
-        "platform:web",
-        "capabilities:video"
-      ]
-    },
-    {
-      "productId": "315d3efd892579",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "wechat",
-          "web",
-          "browser"
-        ],
-        "productForm": [
-          "plugin",
-          "browser-extension"
-        ],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:通用工具兜底",
-        "platform:wechat",
-        "platform:web",
-        "productForm:plugin",
-        "productForm:browser-extension"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "51e0725748241c",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": [
-          "search"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:web",
-        "productForm:plugin",
-        "capabilities:search"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "b1ddde276981f3",
-      "primaryCategory": "design-creative",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "wechat"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:wechat"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "6cff235795f0c6",
-      "primaryCategory": "games",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:games",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "00793e2c50f3c4",
-      "primaryCategory": "games",
-      "subCategories": [
-        "游戏"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:游戏",
-        "category:来源游戏分类",
-        "sub:游戏",
-        "platform:web"
-      ]
-    },
-    {
-      "productId": "d2f15385980db3",
-      "primaryCategory": "social-community",
-      "subCategories": [
-        "社交网络"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:社交社区",
-        "sub:社交网络",
-        "audience:consumer"
-      ]
-    },
-    {
-      "productId": "ef56a7b1f8b136",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser",
-          "web"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": [
-          "search"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "category:通用工具兜底",
-        "platform:browser",
-        "platform:web",
-        "productForm:browser-extension",
-        "productForm:plugin",
-        "capabilities:search"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "cd025a499e6d32",
-      "primaryCategory": "games",
-      "subCategories": [
-        "游戏"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:游戏",
-        "category:来源游戏分类",
-        "sub:游戏",
-        "platform:web"
-      ]
-    },
-    {
-      "productId": "7ddd2cf7545464",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser",
-          "web"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "category:通用工具兜底",
-        "platform:browser",
-        "platform:web",
-        "productForm:browser-extension",
-        "productForm:plugin"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "a4f64f70994c52",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "open-source",
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "characteristics:open-source",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "5106abe16edda6",
-      "primaryCategory": "design-creative",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [
-          "wechat"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source",
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "category:AI",
-        "audience:developer",
-        "platform:wechat",
-        "characteristics:open-source",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "120cd64459294c",
-      "primaryCategory": "finance",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "student",
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "analytics",
-          "finance",
-          "education"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:finance",
-        "category:数据分析",
-        "sub:数据分析",
-        "sub:数据可视化",
-        "audience:student",
-        "audience:consumer",
-        "capabilities:analytics",
-        "capabilities:finance"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "data-analytics",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "3ec1dcb24fcc23",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "计时与计算"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "wechat"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "category:通用工具",
-        "sub:计时与计算",
-        "platform:wechat"
-      ]
-    },
-    {
-      "productId": "795ca7114fea58",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "文件工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "category:通用工具",
-        "sub:文件工具",
-        "platform:web"
-      ]
-    },
-    {
-      "productId": "ba12c0c2d71d04",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "文件工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "video"
-        ]
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "category:通用工具",
-        "sub:文件工具",
-        "capabilities:video"
-      ]
-    },
-    {
-      "productId": "628eeec42481d4",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "图像创作"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:设计创意",
-        "sub:图像创作",
-        "audience:consumer"
-      ]
-    },
-    {
-      "productId": "73e56317533a7e",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:效率场景",
-        "sub:个人效率"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "a29c3832eadaf9",
-      "primaryCategory": "design-creative",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "marketer",
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "category:商业运营",
-        "sub:营销",
-        "audience:marketer",
-        "audience:consumer",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "business-marketing",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "6340608aa616d2",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:来源程序员清单兜底",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "developer-tools",
-      "reviewPreviousMethod": "source-fallback"
-    },
-    {
-      "productId": "22a155e16826ea",
-      "primaryCategory": "media-entertainment",
-      "subCategories": [
-        "音乐"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "music"
-        ]
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:媒体娱乐",
-        "sub:音乐",
-        "audience:creator",
-        "audience:consumer",
-        "capabilities:music"
-      ]
-    },
-    {
-      "productId": "0e011b1ca47958",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.82,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:开发工具",
-        "category:来源程序员清单",
-        "audience:developer",
-        "characteristics:open-source"
-      ]
-    },
-    {
-      "productId": "b09ff3f0010581",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:utilities",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "431d83ab7375e8",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "截图与二维码"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "category:通用工具",
-        "sub:截图与二维码"
-      ]
-    },
-    {
-      "productId": "d8cc2ce5f8d03b",
-      "primaryCategory": "games",
-      "subCategories": [
-        "游戏"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "music"
-        ]
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:游戏",
-        "category:来源游戏分类",
-        "sub:游戏",
-        "audience:consumer",
-        "platform:web",
-        "capabilities:music"
-      ]
-    },
-    {
-      "productId": "dc4772e200c310",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [
-        "AI 助手"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "email"
-        ]
-      },
-      "confidence": 0.89,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "category:知识工作",
-        "sub:AI 助手",
-        "platform:web",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:email"
-      ]
-    },
-    {
-      "productId": "18d65433987956",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "platform:web"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "edc4f1e6c8991d",
-      "primaryCategory": "media-entertainment",
-      "subCategories": [
-        "视频",
-        "播放器"
-      ],
-      "tags": {
-        "audience": [
-          "designer"
-        ],
-        "platform": [
-          "macos",
-          "windows",
-          "linux",
-          "web"
-        ],
-        "productForm": [
-          "desktop-app"
-        ],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": [
-          "video"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:媒体娱乐",
-        "category:媒体",
-        "sub:视频",
-        "sub:播放器",
-        "audience:designer",
-        "platform:macos",
-        "platform:windows",
-        "productForm:desktop-app",
-        "characteristics:open-source",
-        "capabilities:video"
-      ]
-    },
-    {
-      "productId": "851825f5f2c046",
-      "primaryCategory": "developer-tools",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "open-source"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:developer-tools",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他",
-        "audience:consumer",
-        "platform:web",
-        "characteristics:open-source"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
-      "productId": "cc3e3cad821cfe",
-      "primaryCategory": "design-creative",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:design-creative",
-        "category:AI",
-        "audience:consumer",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "4ade5ec2f99627",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:生活健康",
-        "sub:旅行",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "lifestyle-health",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "f9a0cfa13f728d",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具"
-      ]
-    },
-    {
-      "productId": "b7d36704bbdf49",
-      "primaryCategory": "business-marketing",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:business-marketing",
-        "category:生活健康",
-        "sub:旅行",
-        "audience:consumer",
-        "platform:web",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "lifestyle-health",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "9efe2c8d57f506",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "图像创作"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": [
-          "image-generation"
-        ]
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:设计创意",
-        "sub:图像创作",
-        "capabilities:image-generation"
-      ]
-    },
-    {
-      "productId": "194f12cc819b72",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "系统工具"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [
-          "browser"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.73,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "sub:系统工具",
-        "audience:consumer",
-        "platform:browser"
-      ]
-    },
-    {
-      "productId": "ae89ab392c017f",
-      "primaryCategory": "utilities",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:通用工具",
-        "platform:web"
-      ]
-    },
-    {
-      "productId": "2946a345fa7268",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "文件工具",
-        "设备工具"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser",
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "privacy-focused"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "category:通用工具",
-        "category:通用工具",
-        "sub:文件工具",
-        "sub:设备工具",
-        "platform:browser",
-        "platform:web",
-        "characteristics:privacy-focused"
-      ]
-    },
-    {
-      "productId": "a91170bff4ee2e",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "platform:web",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "9234cdb0a5e59b",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [
-        "写作"
-      ],
-      "tags": {
-        "audience": [
-          "creator",
-          "student"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "writing"
-        ]
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "category:知识工作",
-        "sub:写作",
-        "audience:creator",
-        "audience:student",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:writing"
-      ]
-    },
-    {
-      "productId": "33784b59ed2307",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:AI",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "af51129d7a5739",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "计时与计算"
-      ],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.98,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "category:通用工具",
-        "sub:计时与计算",
-        "audience:consumer"
-      ]
-    },
-    {
-      "productId": "2176ad0c8060b9",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "计时与计算"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "sub:计时与计算"
-      ]
-    },
-    {
-      "productId": "50507bef77f4fa",
-      "primaryCategory": "lifestyle-health",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "consumer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:lifestyle-health",
-        "category:效率场景",
-        "sub:个人效率",
-        "audience:consumer"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "ai-productivity",
-      "reviewPreviousMethod": "rules"
-    },
-    {
-      "productId": "afc39f5802fead",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [],
-      "tags": {
-        "audience": [
-          "developer",
-          "consumer"
-        ],
-        "platform": [
-          "web"
-        ],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:content-knowledge",
-        "category:通用工具兜底",
-        "audience:developer",
-        "audience:consumer",
-        "platform:web"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "0547f9c491f2c6",
-      "primaryCategory": "utilities",
-      "subCategories": [
-        "计时与计算"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "browser"
-        ],
-        "productForm": [
-          "browser-extension",
-          "plugin"
-        ],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:实用工具",
-        "sub:计时与计算",
-        "platform:browser",
-        "productForm:browser-extension",
-        "productForm:plugin"
-      ]
-    },
-    {
-      "productId": "273914ffdedeb3",
-      "primaryCategory": "media-entertainment",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai"
-        ]
-      },
-      "confidence": 0.8,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:媒体娱乐",
-        "characteristics:ai-native",
-        "capabilities:ai"
-      ]
-    },
-    {
-      "productId": "db9fe5a04ff582",
-      "primaryCategory": "infrastructure-security",
-      "subCategories": [
-        "云与服务器",
-        "存储与备份"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [
-          "android",
-          "windows"
-        ],
-        "productForm": [
-          "mobile-app"
-        ],
-        "characteristics": [],
-        "capabilities": [
-          "backup"
-        ]
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:infrastructure-security",
-        "category:基础设施能力标签",
-        "sub:云与服务器",
-        "sub:存储与备份",
-        "platform:android",
-        "platform:windows",
-        "productForm:mobile-app",
-        "capabilities:backup"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "infrastructure-security",
-      "reviewPreviousMethod": "semantic-fallback"
-    },
-    {
-      "productId": "ba3ecf06f23c65",
-      "primaryCategory": "design-creative",
-      "subCategories": [
-        "图像创作",
-        "设计工具"
-      ],
-      "tags": {
-        "audience": [
-          "designer"
-        ],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [
-          "ai-native"
-        ],
-        "capabilities": [
-          "ai",
-          "image-generation"
-        ]
-      },
-      "confidence": 0.76,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:设计创意",
-        "sub:图像创作",
-        "sub:设计工具",
-        "audience:designer",
-        "characteristics:ai-native",
-        "capabilities:ai",
-        "capabilities:image-generation"
-      ]
-    },
-    {
-      "productId": "b6153891930635",
-      "primaryCategory": "content-knowledge",
-      "subCategories": [
-        "博客"
-      ],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [
-          "self-hosted"
-        ],
-        "characteristics": [
-          "self-hosted"
-        ],
-        "capabilities": []
-      },
-      "confidence": 0.84,
-      "classificationMethod": "rules",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "category:内容知识",
-        "sub:博客",
-        "productForm:self-hosted",
-        "characteristics:self-hosted"
-      ]
-    },
-    {
-      "productId": "139f9e365ee7cb",
-      "primaryCategory": "ai-productivity",
-      "subCategories": [],
-      "tags": {
-        "audience": [],
-        "platform": [],
-        "productForm": [],
-        "characteristics": [],
-        "capabilities": []
-      },
-      "confidence": 0.95,
-      "classificationMethod": "manual-review",
-      "taxonomyVersion": "1.1",
-      "signals": [
-        "review:manual",
-        "review:primary:ai-productivity",
-        "review:auto-other",
-        "category:未命中现有领域语义",
-        "sub:其他"
-      ],
-      "reviewStatus": "reviewed",
-      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "other",
-      "reviewPreviousMethod": "auto-review"
-    },
-    {
       "productId": "89aaa6ecd4b9c7",
       "primaryCategory": "content-knowledge",
       "subCategories": [],
@@ -63487,18 +63625,13 @@
       "reviewPreviousMethod": "auto-review"
     },
     {
-      "productId": "0b658fdd165c8b",
+      "productId": "7f28c76b077959",
       "primaryCategory": "design-creative",
       "subCategories": [],
       "tags": {
         "audience": [],
-        "platform": [
-          "browser"
-        ],
-        "productForm": [
-          "plugin",
-          "browser-extension"
-        ],
+        "platform": [],
+        "productForm": [],
         "characteristics": [],
         "capabilities": []
       },
@@ -63508,15 +63641,14 @@
       "signals": [
         "review:manual",
         "review:primary:design-creative",
-        "category:通用工具兜底",
-        "platform:browser",
-        "productForm:plugin",
-        "productForm:browser-extension"
+        "review:auto-other",
+        "category:未命中现有领域语义",
+        "sub:其他"
       ],
       "reviewStatus": "reviewed",
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
-      "reviewPreviousPrimaryCategory": "utilities",
-      "reviewPreviousMethod": "semantic-fallback"
+      "reviewPreviousPrimaryCategory": "other",
+      "reviewPreviousMethod": "auto-review"
     },
     {
       "productId": "4189cda9eeb01a",
@@ -63554,6 +63686,32 @@
       "reviewPreviousMethod": "auto-review"
     },
     {
+      "productId": "e32ac78d60e957",
+      "primaryCategory": "design-creative",
+      "subCategories": [
+        "设计工具"
+      ],
+      "tags": {
+        "audience": [
+          "developer",
+          "creator"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:设计创意",
+        "sub:设计工具",
+        "audience:developer",
+        "audience:creator"
+      ]
+    },
+    {
       "productId": "8990b8e89923c4",
       "primaryCategory": "ai-productivity",
       "subCategories": [
@@ -63582,6 +63740,317 @@
         "characteristics:ai-native",
         "capabilities:ai",
         "capabilities:search"
+      ]
+    },
+    {
+      "productId": "4c033943597735",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [
+        "笔记",
+        "博客"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": [
+          "note-taking",
+          "sharing"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:内容知识",
+        "sub:笔记",
+        "sub:博客",
+        "audience:consumer",
+        "characteristics:open-source",
+        "capabilities:note-taking",
+        "capabilities:sharing"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "content-knowledge",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "54d579a009115f",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer",
+          "student"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "education"
+        ]
+      },
+      "confidence": 0.78,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "category:来源程序员清单",
+        "audience:developer",
+        "audience:student",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:education"
+      ]
+    },
+    {
+      "productId": "b907833d6073a6",
+      "primaryCategory": "developer-tools",
+      "subCategories": [
+        "API 工具"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "ai-native",
+          "open-source"
+        ],
+        "capabilities": [
+          "ai",
+          "rss"
+        ]
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:工程能力",
+        "category:来源程序员清单",
+        "sub:API 工具",
+        "platform:web",
+        "characteristics:ai-native",
+        "characteristics:open-source",
+        "capabilities:ai",
+        "capabilities:rss"
+      ]
+    },
+    {
+      "productId": "033d98fd5c93cb",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "audience:consumer",
+        "platform:web",
+        "capabilities:music"
+      ]
+    },
+    {
+      "productId": "00793e2c50f3c4",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "cd025a499e6d32",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "platform:web"
+      ]
+    },
+    {
+      "productId": "5106abe16edda6",
+      "primaryCategory": "design-creative",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [
+          "wechat"
+        ],
+        "productForm": [],
+        "characteristics": [
+          "open-source",
+          "ai-native"
+        ],
+        "capabilities": [
+          "ai"
+        ]
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:design-creative",
+        "category:AI",
+        "audience:developer",
+        "platform:wechat",
+        "characteristics:open-source",
+        "characteristics:ai-native",
+        "capabilities:ai"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "ai-productivity",
+      "reviewPreviousMethod": "rules"
+    },
+    {
+      "productId": "6340608aa616d2",
+      "primaryCategory": "content-knowledge",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.95,
+      "classificationMethod": "manual-review",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "review:manual",
+        "review:primary:content-knowledge",
+        "category:来源程序员清单兜底",
+        "characteristics:open-source"
+      ],
+      "reviewStatus": "reviewed",
+      "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
+      "reviewPreviousPrimaryCategory": "developer-tools",
+      "reviewPreviousMethod": "source-fallback"
+    },
+    {
+      "productId": "0e011b1ca47958",
+      "primaryCategory": "developer-tools",
+      "subCategories": [],
+      "tags": {
+        "audience": [
+          "developer"
+        ],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [
+          "open-source"
+        ],
+        "capabilities": []
+      },
+      "confidence": 0.82,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:开发工具",
+        "category:来源程序员清单",
+        "audience:developer",
+        "characteristics:open-source"
+      ]
+    },
+    {
+      "productId": "d8cc2ce5f8d03b",
+      "primaryCategory": "games",
+      "subCategories": [
+        "游戏"
+      ],
+      "tags": {
+        "audience": [
+          "consumer"
+        ],
+        "platform": [
+          "web"
+        ],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": [
+          "music"
+        ]
+      },
+      "confidence": 0.98,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:游戏",
+        "category:来源游戏分类",
+        "sub:游戏",
+        "audience:consumer",
+        "platform:web",
+        "capabilities:music"
       ]
     },
     {
@@ -92885,6 +93354,24 @@
       "reviewReason": "Reviewed against the product name and description; primary category is intentionally fixed by taxonomy-overrides.json.",
       "reviewPreviousPrimaryCategory": "other",
       "reviewPreviousMethod": "auto-review"
+    },
+    {
+      "productId": "c1d83487a8af8f",
+      "primaryCategory": "utilities",
+      "subCategories": [],
+      "tags": {
+        "audience": [],
+        "platform": [],
+        "productForm": [],
+        "characteristics": [],
+        "capabilities": []
+      },
+      "confidence": 0.76,
+      "classificationMethod": "rules",
+      "taxonomyVersion": "1.1",
+      "signals": [
+        "category:通用工具"
+      ]
     },
     {
       "productId": "5ffabe5a940aa3",
